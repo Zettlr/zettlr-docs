@@ -22,7 +22,7 @@ New pages in our documentation will require some structural adjustments, which y
 
 All source files reside in the `docs` directory. The images reside in the `assets` directory within the `docs`-directory. The names of the files should speak for themselves.
 
-You can use the root directory to store additional files that you may need, as there's a `.gitkeep`-file set to only push this `README.md`, the `mkdocs.yml` configuration file, and the `docs`-directory. So any notes or additional scripts can be placed in the root directory.
+You can create a `resources` directory to store additional files that you may need, as the `.gitignore` file will not commit this directory.
 
 ## Testing and Building
 
