@@ -1,4 +1,6 @@
 !.gitignore
-!/docs
-!mkdocs.yml
-!README.md
+/build/
+/resources/
+
+# Hidden files and stuff
+/**/.DS_Store
