@@ -18,17 +18,17 @@ If snippets are not visible, both directories and files will be shown as one-lin
 
 The additional information shown by your files in the file list can be beneficial for a number of reasons. First, you can check whether or not the ID of the file looks right. Sometimes, Zettlr may detect a wrong ID, and this is the first way to check if Zettlr actually uses your ID, or just grabbed some part of a URL that contains a lot of numbers. Additionally, you can hover over the amount of tags to display them in a tooltip.
 
-![The possible meta information of files](https://zettlr.com/storage/app/media/docs/file_meta.png)
+![The possible meta information of files](img/file_meta.png)
 
 ### Writing Targets
 
 Since version 1.2, Zettlr supports setting writing targets. To set a target, right-click a file and choose "Set writing target …". Enter the amount of words or characters and click "Set". Zettlr will count towards your goal and show you the progress showing a small indicator if you have snippets activated. Hover over it to see the absolute number of words or characters that you've written.
 
-![Writing Targets Counter](https://zettlr.com/storage/app/media/docs/writing_targets.png)
+![Writing Targets Counter](img/writing_targets.png)
 
 To remove the writing target from a file, simply set the writing counter to zero words or characters.
 
-![Setting the Writing Target](https://zettlr.com/storage/app/media/docs/writing_targets_settings.png)
+![Setting the Writing Target](img/writing_targets_settings.png)
 
 
 If you want to sort directories, you can do this from within the file list. Simply move the mouse over any directory and two indicators will appear showing you the current state of sorting. Click on the first (with an arrow from A to Z) to toggle the sorting by name. The second toggles the sorting by the last modification time. Subdirectories will not be sorted this way — only files.

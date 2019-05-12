@@ -24,7 +24,7 @@ The next step is to actually export your library. Zotero's task is to manage you
 
 To export such a library that both Zettlr and pandoc's citeproc can use, first select the collection you want to export in the left sidebar. To always have all your items at your disposal and to prevent having to export multiple different libraries, you can select your entire library. (_As a measure: We've run tests with a library containing about 700 items, and we have not experienced any performance issues._)
 
-![Export your Library as Better CSL JSON](https://zettlr.com/storage/app/media/docs/export-to-csl-json.png)
+![Export your Library as Better CSL JSON](img/export-to-csl-json.png)
 
 Next, click on `File` and select `Export library …`. As the format, select `Better CSL JSON` (if you opted against installing BetterBibTex you may choose `CSL JSON`). If you check the checkbox labeled "Keep updated", BetterBibTex will make sure that every change in Zotero will automatically be exported to the file, keeping it in sync with Zotero (and, therefore, transmit your changes automatically to Zettlr, which in turn will always cite correctly).
 
@@ -34,7 +34,7 @@ If you ticked the checkbox, you can check the status of the library file by open
 
 Now it is time to import your library to Zettlr. To do so, simply open Zettlr's preferences, go to the `Export`-tab and click the small folder-icon right to the `CSL JSON Database`-input field. A dialog will appear that lets you navigate to your database file. Select it, save the preferences and Zettlr will automatically load the database. Now you are ready to cite!
 
-![Point Zettlr to your database file](https://zettlr.com/storage/app/media/docs/preferences-export.png)
+![Point Zettlr to your database file](img/settings_export.png)
 
 ## Citing in Zettlr
 
@@ -58,7 +58,7 @@ For more information on how to use citations in line with pandoc's citeproc engi
 
 After you're done citing and want to check that you've cited everything you planned to, you can open the `Attachment Sidebar` (Shortcut: `Ctrl/Cmd+3`). Beneath all files that are in your currently selected directory, Zettlr will display a list of all references it has found in your current file. If something's missing from there, it's probably not been cited in your file.
 
-![References in the Attachment Pane](https://zettlr.com/storage/app/media/docs/attachment-pane-references.png)
+![References in the Attachment Pane](img/attachment-pane-references.png)
 
 ## Changing the citation style
 

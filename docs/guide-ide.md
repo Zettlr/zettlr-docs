@@ -1,6 +1,6 @@
 # Guide: Zettlr as an Integrated Development Environment (IDE)
 
-![Zettlr as an IDE](https://zettlr.com/storage/app/media/docs/zettlr_ide.png)
+![Zettlr as an IDE](img/zettlr_ide.png)
 
 Zettlr is full with functions that help your workflow. You can use it as a small note-taking app, as a Zettelkasten, or, as explained in this guide, as a fully loaded integrated development (read: writing) environment. So let's get started!
 

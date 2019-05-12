@@ -1,6 +1,6 @@
 # Guide: Zettlr as a note-taking app
 
-![Zettlr as a Note-Taking app](https://zettlr.com/storage/app/media/docs/zettlr_notes.png)
+![Zettlr as a Note-Taking app](img/zettlr_notes.png)
 
 You want to use Zettlr as a means to take notes with. Although Zettlr has a lot more features, it is designed as a slim and minimal app, so configuring Zettlr as a note-taking app is easy. This guide shows you what settings you should use and how to actually take notes.
 

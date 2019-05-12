@@ -13,6 +13,31 @@ div[role="main"] a:visited {
   color: rgb(40, 80, 40);
 }
 
+blockquote {
+  color: white;
+  font-style: italic;
+  border: 1px solid #4f6e4f;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #80b480;
+  position: relative;
+  padding-left: 30px;
+}
+
+blockquote::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #4f6e4f;
+  font-style: normal;
+  content: "\f05a";
+}
+
+blockquote p {
+  margin-bottom: 0px;
+}
+
 .wy-side-nav-search {
   background-color: rgb(28, 178, 126);
 }

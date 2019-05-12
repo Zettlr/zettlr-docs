@@ -120,4 +120,4 @@ More languages can be implemented on your request. I did not want to implement _
 
 ## Resources on Markdown
 
-Do you want to learn _all_ about Markdown? That is great! A good resource that covers all elements is to be found on [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/)Markdown. If you want to get used to writing clean and unambiguous Markdown, [view the specifications by CommonMark](https://spec.commonmark.org/0.28/). Also, there's a "book" on the GitHub flavoured Markdown syntax. [View it here](https://gitbookio.gitbooks.io/markdown/content/)Markdown.
+Do you want to learn _all_ about Markdown? That is great! A good resource that covers all elements is to be found on [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). If you want to get used to writing clean and unambiguous Markdown, [view the specifications by CommonMark](https://spec.commonmark.org/0.28/). Also, there's a "book" on the GitHub flavoured Markdown syntax. [View it here](https://gitbookio.gitbooks.io/markdown/content/).

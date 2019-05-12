@@ -16,7 +16,7 @@ We welcome any help in translating the app in all languages of this planet. Tran
 
 Translating is simple. Just click on any language on the main page to see the list of all identifiers and all existing translations:
 
-![Translation Keys](https://zettlr.com/storage/app/media/docs/translations_list.png)
+![Translation Keys](img/translations_list.png)
 
 On the left side you'll see all translation IDs. They will mostly be self-explanatory. If you don't know where to start, simply have a look at the English translation and at the app. Then you'll know which translation IDs will correspond to which elements.
 

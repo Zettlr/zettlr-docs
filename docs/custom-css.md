@@ -70,7 +70,7 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 }
 ```
 
-![A preview of a Zettlr installation using above snippet](https://www.zettlr.com/storage/app/media/docs/custom_css_unsplash.png)
+![A preview of a Zettlr installation using above snippet](img/custom_css_unsplash.png)
 
 ### Visualising Line Endings
 

@@ -51,7 +51,7 @@ For plain HTML export, no. For all other export formats, yes. Zettlr depends on 
 
 **"How do I install Pandoc or LaTeX?"**
 
-Please refer to the guides on [installing Pandoc](install-pandoc.md) and where to [get LaTeX](install-latex.md).
+Please refer to the [setup guide](install.md) for instructions on how to set up Pandoc and LaTeX on your system.
 
 **"Zettlr does not seem to find Pandoc and LaTeX, which are nonetheless installed!"**
 

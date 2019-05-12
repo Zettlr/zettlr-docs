@@ -12,13 +12,13 @@ All exports in Zettlr, except HTML, are done using the free software packages Pa
 
 HTML-files are converted directly by Zettlr itself using the `Showdown.js`-package, which comes bundled with Zettlr. Therefore, to simply preview documents and print them, you do not need either Pandoc or LaTeX installed on your system.
 
-> Refer to the guides on how to [install Pandoc](install-pandoc.md) and how to [install LaTeX](install-latex.md) on your computer.
+> Refer to the [setup guide](install.md)  to install Pandoc and LaTeX on your computer.
 
 Zettlr will make reasonable efforts to locate both packages. If the app could not find the packages, it will throw an error.
 
 **In case you have installed both packages, but Zettlr still won't export**, take a look at your Preferences. In the "Advanced"-tab, there are two text fields that allow you to enter the paths to the Pandoc-executable and the "XeLaTeX"-executable. Simply put them in there, restart, and then it should work. If not, please let me know!
 
-![The advanced settings tab](https://zettlr.com/storage/app/media/docs/preferences_advanced.png)
+![The advanced settings tab](img/settings_advanced.png)
 
 ## Options for exporting
 

@@ -6,17 +6,19 @@ This repository holds the official documentation for the Zettlr markdown app. It
 
 ## How it Works
 
-The whole documentation is written in Markdown. Therefore, to contribute you only need to know a little bit of Markdown, and then you can modify the documentation! Before we get to the details, here's the list of steps for contributing to the documentation:
+The whole documentation is written in Markdown. Therefore, to contribute you only need to know a little bit of Markdown, and then you can modify the documentation! Simply browse the documentation, and click the "Edit on GitHub" button on the page you want to edit. Then, simply edit the page and create a Pull Request.
+
+For advanced editing, here's the list of steps for contributing to the documentation:
 
 1. Fork this repository.
 2. Modify the Markdown source files, and other files as necessary.
-3. Commit them and then open a Pull Request **to the develop branch**.
+3. Commit them and then open a Pull Request.
 
 As soon as we run a new build, your changes will automatically be included and are available at https://docs.zettlr.com/.
 
 ## New Pages and Changes to the Structure
 
-New pages in our documentation will require some structural adjustments, which you need to discuss beforehand. If you have an idea on how to structure the documentation, please discuss your structure on our forum. If your changes are reasonable, we will see to making the changes as soon as possible so that you can begin your work.
+New pages in our documentation will require some structural adjustments, which you need to discuss beforehand. If you have an idea on how to structure the documentation, please discuss your structure on our [forum](https:/7forum.zettlr.com). If your changes are reasonable, please feel free to open a pull request!
 
 ## The Structure
 
@@ -40,4 +42,8 @@ to start up a local development server which will watch the files as you go. To 
 $ mkdocs build
 ```
 
-Further commands and options are available at their homepage.
+Further commands and options are available at their [homepage](https://www.mkdocs.org/).
+
+## License
+
+This documentation is licensed via the GNU GPL v3 license.

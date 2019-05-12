@@ -1,6 +1,6 @@
 # Guide: Zettlr as Zettelkasten
 
-![Zettlr as a Zettelkasten](https://zettlr.com/storage/app/media/docs/zettlr_zettelkasten.png)
+![Zettlr as a Zettelkasten](img/zettlr_zettelkasten.png)
 
 Zettlr can be used as a sophisticated Zettelkasten system implementing a lot of features to organise and structure your files. To begin creating your own Zettelkasten, follow the following steps.
 

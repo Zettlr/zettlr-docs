@@ -15,7 +15,7 @@ You can display the general preference dialog using either the shortcut `Cmd/Ctr
 
 ### General
 
-![General Settings](https://zettlr.com/storage/app/media/docs/settings_general.png)
+![General Settings](img/settings_general.png)
 
 In the general tab you find options that you might want to adjust if you begin using Zettlr to fit it to your needs. The application language is pretty self-explanatory.
 
@@ -32,7 +32,7 @@ The sorting order determines how Zettlr will sort your files internally. The nat
 
 ### Editor
 
-![Editor Settings](https://zettlr.com/storage/app/media/docs/settings_editor.png)
+![Editor Settings](img/settings_editor.png)
 
 On the editor tab, you can enable or disable dictionaries. The list to the left contains all deselected dictionaries. You can filter them using the search bar at the top. Click a dictionary to enable it. Enabled dictionaries are listed to the right. Simply click a dictionary on the right to deselect it.
 
@@ -44,7 +44,7 @@ Automatically closing certain character pairs means that whenever you type one o
 
 ### Export
 
-![Export Settings](https://zettlr.com/storage/app/media/docs/settings_export.png)
+![Export Settings](img/settings_export.png)
 
 The export tab allows you to tweak all preferences concerning how your files are exported. To the left you have options concerning the Zettelkasten functionality.
 
@@ -62,7 +62,7 @@ The CSL JSON database field can be used to open a literature database. Zettlr wi
 
 ### Zettelkasten
 
-![Zettelkasten settings](https://zettlr.com/storage/app/media/docs/settings_zettelkasten.png)
+![Zettelkasten settings](img/settings_zettelkasten.png)
 
 In this tab you can customise the way Zettlr works with your existing Zettelkasten system. In most cases you won't need to touch these options, but it may be you want to use a custom system.
 
@@ -96,7 +96,7 @@ You can test both the generation of IDs and the detection of them by clicking th
 
 ### Display
 
-![Display Settings](https://zettlr.com/storage/app/media/docs/settings_display.png)
+![Display Settings](img/settings_display.png)
 
 This tab controls how the editor displays certain elements. Zettlr uses a semi-preview approach to Markdown and only renders some elements. On this tab you can control which elements will be rendered.
 
@@ -108,7 +108,7 @@ The vertical slider controls the maximum height of the images relative to the wi
 
 ### Advanced
 
-![Advanced Settings](https://zettlr.com/storage/app/media/docs/settings_advanced.png)
+![Advanced Settings](img/settings_advanced.png)
 
 The advanced tab contains options rarely used.
 
@@ -122,7 +122,7 @@ The text area to the right controls what files will be displayed in the attachme
 
 ## PDF Preferences
 
-![The Font tab of the PDF Settings dialog](https://zettlr.com/storage/app/media/docs/pdf_settings_font.png)
+![The Font tab of the PDF Settings dialog](img/pdf_settings_font.png)
 
 We've moved the PDF Preferences to another dialog because there are many you can use. These options control how the LaTeX-engine will render your files on PDF-exporting. They do not have any effect on all other export formats. You can bring up the dialog using either its shortcut `Cmd/Ctrl+Alt+,` or using the respective menu entry. The PDF options are also divided by tabs. Currently, there are three:
 
@@ -146,7 +146,7 @@ The font-size should be rather obvious. The line height specifies the spacing be
 
 ## Manage Tags
 
-![The Tags settings dialog](https://zettlr.com/storage/app/media/docs/tags_settings.png)
+![The Tags settings dialog](img/tags_settings.png)
 
 The tags dialog does not have a shortcut associated, so you'll need to call it using the respective menu item. Here you can assign colours and descriptions to tags.
 
