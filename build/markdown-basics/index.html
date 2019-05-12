@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hendrik ERz">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Markdown basics - Zettlr Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../assets/app.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Markdown basics";
+    var mkdocs_page_input_path = "markdown-basics.md";
+    var mkdocs_page_url = "/markdown-basics/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zettlr Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getting-started/">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../guides/">Guides</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../components/">Components</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../get-involved/">Get involved</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">FAQ</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zettlr Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Markdown basics</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Zettlr/zettlr-docs/edit/master/docs/markdown-basics.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="markdown-basics">Markdown basics<a class="headerlink" href="#markdown-basics" title="Permanent link">&para;</a></h1>
+<p>Zettlr makes, as a bunch of other apps, use of the now round about fourteen year old format <code>Markdown</code>, originally invented by John Gruber. Of course, over such a long period of time, a huge number of developments have taken place, that have created the possibilities of modern Markdown applications. In this document the following topics are covered:</p>
+<ol>
+<li>A brief history of Markdown</li>
+<li>Current implementations of Markdown (and differences in their syntax)</li>
+<li>How Zettlr implements Markdown</li>
+<li>Markdown 101: Headings, block elements, inline elements, links, images and footnotes</li>
+<li>Further resources</li>
+</ol>
+<h2 id="a-brief-history">A brief history<a class="headerlink" href="#a-brief-history" title="Permanent link">&para;</a></h2>
+<p>Since the personal computer became widely available in the 1990s, there were two groups of formats existing side-by-side: word processor documents, such as <code>.doc</code>, or <code>.odt</code> and code documents, such as <code>.js</code>, <code>.cpp</code> or <code>.py</code>. Both groups of documents contains human-readable text, but there was one simple, yet huge difference: While JavaScript-files or C++-files contained plain text (i.e. only the text that you would see when you open such a file), word processor documents contained a <em>lot</em> more stuff. Word processor documents always hold information about the page size (e.g., A4 or letter), how different blocks should be formatted (e.g., the font of headings or how much blockquotes are indented). If you open a Word/Office-document on your PC right now, you can see what I mean: You immediately see what is a heading based on the font-size font-weight of its text.</p>
+<p>For a long time, both these groups of documents stayed as distinct as would their users. Most office-workers only know how to use Microsoft Word or Excel, maybe also LibreOffice-implementations, while close to nobody coming from a STEM-background would voluntarily use Word or similar software. Those scientists, for instance, that work in STEM, have also developed a programming language called LaTeX, which allows them to create neatly formatted PDF-files from a bunch of code—they follow the same workflow as researchers from the arts and humanities or regular administrative officers, but use different documents for that.</p>
+<p>When Markdown was inaugurated by John Gruber in 2004, it was basically like saying: "Why not both?" Markdown combines both the clear reading experience from word processor documents with the benefits of software code documents, which is both versatile and easy to use—even for people that only know how to operate Word or Writer. One small example: While in word processors you would create a heading by typing some text and then selecting the <code>Heading 1</code> format from some menu, in Markdown you would simply type <code># some text</code>, where the hashtag-symbol tells you immediately: "This is a heading of first order!"</p>
+<p>At first, Markdown was basically a small script John Gruber wrote for himself to yield these benefits, and it contained a lot of inconsistencies and didn't support many different elements. But over the years, progress was made. Two dates are notable:</p>
+<ul>
+<li>2004: <a href="https://daringfireball.net/projects/markdown/">John Gruber</a> initially launches Markdown</li>
+<li>2012: A group of developers form <a href="https://spec.commonmark.org/">CommonMark</a> to standardise Markdown into an internationally accepted norm.</li>
+</ul>
+<h2 id="markdown-implementations">Markdown implementations<a class="headerlink" href="#markdown-implementations" title="Permanent link">&para;</a></h2>
+<p>Today, several implementations of the Markdown syntax exist. The most noteworthy are:</p>
+<ul>
+<li><strong>MultiMarkdown</strong>: Extends the initial syntax with footnotes, tables and some metadata</li>
+<li><strong>Markdown Extra</strong>: Again some additions to the initial syntax</li>
+<li><strong>GitHub Flavoured Markdown</strong>: This is a variety of Markdown invented by the hosting platform GitHub (which Zettlr is also hosted on!) and is today one of the most common syntaxes.</li>
+<li><strong>Pandoc Markdown</strong>: Pandoc Markdown is a superset of GitHub flavoured Markdown and adds support for even more elements.</li>
+<li><strong>CommonMark</strong>: Tries to implement all possible elements, while being unambiguous.</li>
+</ul>
+<h2 id="zettlr-and-markdown">Zettlr and Markdown<a class="headerlink" href="#zettlr-and-markdown" title="Permanent link">&para;</a></h2>
+<p>Zettlr itself implements a mixture. The editor itself highlights only GitHub flavoured Markdown (plus some extra-elements, which extends Markdown syntax with Zettelkasten elements. Those are described in the respective <a href="https://zettlr.com/docs/zkn-method">chapter on the Zettelkasten method</a>). If you export your documents to HTML, Zettlr will convert your documents using the <em>GitHub flavoured Markdown syntax</em>. If you export to Word, LibreOffice or PDF, Zettlr uses Pandoc, which itself converts your Markdown documents using its <em>Pandoc Markdown syntax</em>.</p>
+<p>But Zettlr doesn't confine you to writing Markdown. If you wish, you can also add <code>LaTeX</code>-commands. These commands are correctly interpreted when you convert to PDF. These are omitted when you convert to DOCX or ODT. And they are retained when you convert to HTML. Of course, you can at any position use plain HTML-code as well.</p>
+<h2 id="markdown-101-the-most-important-codes">Markdown 101: The most important codes<a class="headerlink" href="#markdown-101-the-most-important-codes" title="Permanent link">&para;</a></h2>
+<p>Although Markdown can do a lot of things, in this section I want to describe to you the most important elements that you will use the most, and how you can use them in Zettlr.</p>
+<h3 id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h3>
+<p>Headings are straightforward. They must be put on their own line and have to be indicated using a hashtag symbol. There are six levels of headings at your disposal:</p>
+<ul>
+<li><code># Heading text</code> — yields a heading of first order</li>
+<li><code>## Heading text</code> — yields a heading of second order</li>
+<li><code>### Heading text</code> — yields a heading of third order</li>
+<li><code>#### Heading text</code> — yields a heading of fourth order</li>
+<li><code>##### Heading text</code> — yields a heading of fifth order</li>
+<li><code>###### Heading text</code> — yields a heading of sixth order</li>
+</ul>
+<h3 id="inline-formatting">Inline-formatting<a class="headerlink" href="#inline-formatting" title="Permanent link">&para;</a></h3>
+<p>Of course, just as in word processors you can use inline-formatting, such as <strong>bold</strong> or <em>italic</em> text, or <code>monospaced</code> (code) text.</p>
+<ul>
+<li><code>**your text**</code> — yields bold text</li>
+<li><code>_your text_</code> — yields bold text</li>
+<li>`your text` — yields monospaced text</li>
+</ul>
+<h3 id="block-elements">Block elements<a class="headerlink" href="#block-elements" title="Permanent link">&para;</a></h3>
+<p>Sometimes, you may want to emphasise a whole block of text (such as a longer quote), or create lists. This is also possible and extremely simple using Markdown.</p>
+<ul>
+<li>Begin unsorted, itemised lists by simply beginning the line with a <code>-</code>, a <code>*</code> or a <code>+</code> character.</li>
+<li>Sorted lists need numbers in the format <code>1.</code> in font of them. <strong>Note</strong>: The numbers do <em>not</em> have to be in order. On each export, the converter will automatically correctly number them ascending, so a list containing the list numbers 1, 6, 14, 2 will be rendered as a list using the numbers 1, 2, 3, 4!</li>
+</ul>
+<h3 id="links-and-images">Links and images<a class="headerlink" href="#links-and-images" title="Permanent link">&para;</a></h3>
+<p>Links are inline-elements and images are block elements, so they follow the same semantics as the elements discussed above. Yet they deserve a little bit more attention, because they offer you more options.</p>
+<p>Links are set using the following syntax: <code>[This text will appear in your final document](http://this-is-your-actual-link.tld)</code> Zettlr will automatically convert this syntax to a clickable link (follow the link target by clicking on it while holding down the <code>ALT</code>-key) for the easy of access (and to shorten those rather long links).</p>
+<p>Images are placed exactly like links, with two differences: a) they have to be on their own line, and b) they start with an exclamation mark (!). Images of course also need a path, because you won't store them in a plain text document. Therefore you can use three different approaches to linking images in your document:</p>
+<ol>
+<li>Use an absolute web-URL, such as https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1000px-Markdown-mark.svg.pngMarkdown.</li>
+<li>Use an absolute path to a file on your own computer, such as <code>C:\Users\user-name\Pictures\my-image.jpg</code>.</li>
+<li>Use a relative path to a file on your own computer, such as <code>../img/my-image.png</code>.</li>
+</ol>
+<p>The relative path is always relative to the document in which you place it. The directory <code>..</code> tells Zettlr to look for the image in the parent directory (i.e. to traverse up one directory). If you store your documents in a cloud and access them on different devices, you would naturally use relative image paths, because the absolute paths will definitely differ (especially if you work with two different operating systems).</p>
+<blockquote>
+<p>Try to insert images and links always using their shortcuts, <code>Cmd/Ctrl+K</code> for links and <code>Cmd/Ctrl+Shift+I</code> for images. If you have a valid path in your clipboard, it will even automatically insert it for you, making your life easy. The best way to insert a link, for instance, would therefore be to first copy the link to your clipboard, then select the text you want to link and third press <code>Cmd/Ctrl+K</code>. Then the selected text will become the displayed link text and the link from your clipboard will be used as the link target.</p>
+</blockquote>
+<h3 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h3>
+<p>Footnotes are what most researchers in arts and humanities are of course interested in. So here some general rules for inserting footnotes and how Zettlr interacts with them. According to standard Markdown syntax, footnotes require two elements: First the reference somewhere in the text in the format <code>[^x]</code>. The <code>x</code> stands for a unique identifier. Basically, you can use anything you want, as long as this identifier is not used by a second footnote as well. But normally, you will want to stick with ascending numbers, of course. (Also: These numbers don't have to be in order—as long as you export your Markdown document using Pandoc to convert it into ODT, DOCX or PDF, Pandoc will automatically re-number the footnotes correctly. So if you decide to delete a footnote later on, don't worry that the numbers won't neatly match up in your document anymore.)</p>
+<p>The second element footnotes require is a block element, the footnote <em>reference text</em>. It is always in the following format: <code>[^x]: Your reference text.</code> As you can see, the identifier is a replica of your reference that appears in the text, only now it is followed by a colon. It is common sense that you put your references in a list at the very end of your document. Yet, this jumping back and forth between the reference text and your footnote reference is cumbersome, and therefore Zettlr tries to ease your life. For now, it does so by automatically showing to you what the reference text of a footnote is when you hover over the footnote. Also, you can simply add a footnote, which will put a reference to it at your current cursor position and add a footnote at the bottom of your document.</p>
+<h3 id="fenced-code-blocks">Fenced code blocks<a class="headerlink" href="#fenced-code-blocks" title="Permanent link">&para;</a></h3>
+<p>Zettlr also supports so-called "fenced code blocks." These are the block-version of the inline code element. To start a code block, type three backticks "`" in a row on an empty line. Close the code block again with three back ticks on an empty line. Everything in between those two "fences" will be rendered using monospace font to indicate that this is indeed code.</p>
+<p>Zettlr also supports advanced syntax highlighting for several script and programming languages. You have to tell Zettlr explicitly which language to use by simply adding its identifier <em>directly after the introducing code fence</em>. So to direct Zettlr to highlight a code fence using a JavaScript interpreter, you would need to begin the code block with three backticks, directly followed by the word "javascript" on an empty line.</p>
+<p>Currently, the following languages are supported by the engine (the names in braces are the identifiers you would need to use in Zettlr, as they do not contain special characters, which might upset an engine):</p>
+<ul>
+<li>C (c)</li>
+<li>C# (csharp)</li>
+<li>C++ (cpp)</li>
+<li>CSS (css)</li>
+<li>Go (go)</li>
+<li>Java (java)</li>
+<li>JavaScript (javascript)</li>
+<li>Kotlin (kotlin)</li>
+<li>LESS (less)</li>
+<li>Objective C (objectivec)</li>
+<li>PHP (php)</li>
+<li>Python (python)</li>
+<li>R (r)</li>
+<li>Ruby (ruby)</li>
+<li>SQL (sql)</li>
+<li>Swift (swift)</li>
+<li>Shell/Bash</li>
+<li>YAML (yaml)</li>
+</ul>
+<p>More languages can be implemented on your request. I did not want to implement <em>all</em> at first to not bloat the engine. If you need a specific language, please <a href="https://codemirror.net/mode/">refer to the available ones</a> and open up an issue on GitHub, so that I know which one I should include!</p>
+<h2 id="resources-on-markdown">Resources on Markdown<a class="headerlink" href="#resources-on-markdown" title="Permanent link">&para;</a></h2>
+<p>Do you want to learn <em>all</em> about Markdown? That is great! A good resource that covers all elements is to be found on <a href="https://learnxinyminutes.com/docs/markdown/">Learn X in Y minutes</a>Markdown. If you want to get used to writing clean and unambiguous Markdown, <a href="https://spec.commonmark.org/0.28/">view the specifications by CommonMark</a>. Also, there's a "book" on the GitHub flavoured Markdown syntax. <a href="https://gitbookio.gitbooks.io/markdown/content/">View it here</a>Markdown.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Zettlr/zettlr-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

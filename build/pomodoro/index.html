@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hendrik ERz">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Pomodoro-Timer - Zettlr Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../assets/app.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Pomodoro-Timer";
+    var mkdocs_page_input_path = "pomodoro.md";
+    var mkdocs_page_url = "/pomodoro/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zettlr Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getting-started/">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../guides/">Guides</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../components/">Components</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../get-involved/">Get involved</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">FAQ</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zettlr Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Pomodoro-Timer</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Zettlr/zettlr-docs/edit/master/docs/pomodoro.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="pomodoro-timer">Pomodoro-Timer<a class="headerlink" href="#pomodoro-timer" title="Permanent link">&para;</a></h1>
+<p>If you write a lot, the time may come that you need to organise your time better. The built-in Pomodoro-Timer can help you with this.</p>
+<p>Access the Pomodoro-Timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.</p>
+<p><img alt="Pomodoro Timer" src="https://zettlr.com/storage/app/media/docs/pomodoro_init.png" /></p>
+<p>Don't know what a pomodoro timer is? Then head over to <a href="https://francescocirillo.com/pages/pomodoro-technique">the official website</a>!</p>
+<h2 id="using-the-pomodoro-timer">Using the Pomodoro-Timer<a class="headerlink" href="#using-the-pomodoro-timer" title="Permanent link">&para;</a></h2>
+<p>Before you start the pomodoro timer, you can adapt some settings.</p>
+<p>The <strong>red</strong> number indicates the amount of minutes used to <em>work</em>. The default is 25 minutes.</p>
+<p>The <strong>yellow</strong> number indicates the duration of a <em>short</em> break that will divide portions of work. After each work-phase there will be a short break. The default is 5 minutes.</p>
+<p>The <strong>green</strong> number tells Zettlr, how long a <em>long</em> break should be. After every four tasks, there will be such a long break. The default duration is 20 minutes.</p>
+<p>Below, you can decide whether or not a sound should be played each time a phase has ended. The slider below the checkbox adjusts the volume. (<em>Attention</em>: This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent!)</p>
+<p>Click on <strong>Start</strong> to begin the timer. Then, the circle will be filled with the color of the current phase (either red, yellow, or green). Once it is full, the next phase will begin.</p>
+<p>To <strong>Stop</strong> the timer or simply review the current <strong>status</strong> of the timer, click on the circle again. A small popup will tell you the remaining amount of time for the current phase, the type of the current phase and give you the option to stop.</p>
+<p><img alt="Pomodoro Timer during Run" src="https://zettlr.com/storage/app/media/docs/pomodoro_run.png" /></p>
+<p>The <strong>cycle</strong> of the pomodoro timer is as follows:</p>
+<ol>
+<li>Work</li>
+<li>Short break</li>
+<li>Work</li>
+<li>Short break</li>
+<li>Work</li>
+<li>Short break</li>
+<li>Work</li>
+<li>Long break</li>
+<li><em>Repeat from step 1</em></li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Zettlr/zettlr-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

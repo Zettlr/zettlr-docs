@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hendrik ERz">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>The file list - Zettlr Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../assets/app.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "The file list";
+    var mkdocs_page_input_path = "file-list.md";
+    var mkdocs_page_url = "/file-list/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zettlr Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getting-started/">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../guides/">Guides</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../components/">Components</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../get-involved/">Get involved</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">FAQ</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zettlr Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>The file list</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Zettlr/zettlr-docs/edit/master/docs/file-list.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="the-file-list">The file list<a class="headerlink" href="#the-file-list" title="Permanent link">&para;</a></h1>
+<p>Next on is the file list. The file list is something very special because it bears powerful features that ease your work with a lot of files and directories. So let's have a look!</p>
+<h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h2>
+<p>You can always show/hide the list by pressing <code>Cmd/Ctrl+Shift+2</code>.</p>
+<blockquote>
+<p>Note that this shortcut has no effect if you are using the extended display mode of the sidebar. See the <a href="https://zettlr.com/docs/settings">Settings page</a> for more on this.</p>
+</blockquote>
+<p>The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: <strong>the file list treats all subdirectories as equals, and shows you all of them one after another!</strong> Therefore you don't need to traverse further into the directory tree to reach buried directories.</p>
+<p>If snippets are not visible, both directories and files will be shown as one-liners. If you activate the snippets, you will see additional information: directories will show you the amount of children they have. The files, on the other hand, show their last modification date. If they contain an ID or tags, this information will be displayed after the modification date. Hovering over the tag counter, you can see a small tooltip that shows you all tags that are in the file.</p>
+<blockquote>
+<p>You can toggle the snippets via the View-menu or by pressing <code>Cmd/Ctrl+Alt+S</code>.</p>
+</blockquote>
+<h3 id="file-ids-and-tags">File IDs and Tags<a class="headerlink" href="#file-ids-and-tags" title="Permanent link">&para;</a></h3>
+<p>The additional information shown by your files in the file list can be beneficial for a number of reasons. First, you can check whether or not the ID of the file looks right. Sometimes, Zettlr may detect a wrong ID, and this is the first way to check if Zettlr actually uses your ID, or just grabbed some part of a URL that contains a lot of numbers. Additionally, you can hover over the amount of tags to display them in a tooltip.</p>
+<p><img alt="The possible meta information of files" src="https://zettlr.com/storage/app/media/docs/file_meta.png" /></p>
+<h3 id="writing-targets">Writing Targets<a class="headerlink" href="#writing-targets" title="Permanent link">&para;</a></h3>
+<p>Since version 1.2, Zettlr supports setting writing targets. To set a target, right-click a file and choose "Set writing target …". Enter the amount of words or characters and click "Set". Zettlr will count towards your goal and show you the progress showing a small indicator if you have snippets activated. Hover over it to see the absolute number of words or characters that you've written.</p>
+<p><img alt="Writing Targets Counter" src="https://zettlr.com/storage/app/media/docs/writing_targets.png" /></p>
+<p>To remove the writing target from a file, simply set the writing counter to zero words or characters.</p>
+<p><img alt="Setting the Writing Target" src="https://zettlr.com/storage/app/media/docs/writing_targets_settings.png" /></p>
+<p>If you want to sort directories, you can do this from within the file list. Simply move the mouse over any directory and two indicators will appear showing you the current state of sorting. Click on the first (with an arrow from A to Z) to toggle the sorting by name. The second toggles the sorting by the last modification time. Subdirectories will not be sorted this way — only files.</p>
+<p>Also you can traverse the directory tree by clicking on the directories. A simple click will select the directory, while an <code>ALT</code>-click will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.</p>
+<h2 id="structural-implications">Structural implications<a class="headerlink" href="#structural-implications" title="Permanent link">&para;</a></h2>
+<p>Each time you select a directory in the tree view, the file list will display <em>all</em> files and directories in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the directory list into a one-dimensional list. The list will always change its contents whenever you select a different directory in the tree view.</p>
+<blockquote>
+<p>The list only displays <em>all</em> directories and files <em>within</em> the currently selected directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your root, this is a powerful way to only have those files in the list that you actually need.</p>
+</blockquote>
+<p>As the file list flattens your complex directory tree, it has to make some assumptions on how to adequately <em>display</em> the files. Therefore the following rules help you distinguish where the files are actually present on your disk:</p>
+<ol>
+<li>The currently selected directory will be on top of the list of files. Always.</li>
+<li>All files that are inside this directory are placed directly beneath this directory name.</li>
+<li>All subdirectories that are <em>inside</em> this directory will always be at the bottom of the file list, i.e. <em>after</em> the files in the selected directory.</li>
+<li>If directories are empty, they will be placed immediately after each other with no files in between.</li>
+</ol>
+<p>So what is important to remember is: All directories will be displayed as if they reside on the very same level; as if they weren't nested. To identify which directories contain which, please refer to the tree view.</p>
+<blockquote>
+<p>The files and directories in Zettlr are always <strong>sorted</strong> by name ascending. So a directory beginning with an "A" will always be higher than a "D". Also, directories containing a zero will always come first, those containing a nine afterwards. But remember that <strong>a "10" will be placed <em>before</em> a "2" because the sorting only looks at one single character at a time and 1 is smaller than 2.</strong> If you want to use numbers for sorting, <strong>add leading zeroes</strong>.</p>
+</blockquote>
+<h2 id="actions-in-the-file-list">Actions in the file list<a class="headerlink" href="#actions-in-the-file-list" title="Permanent link">&para;</a></h2>
+<p>There are many actions that refer to the list. First, just select a tile to open any file and display its contents in the editor.</p>
+<p>You can move your files into different locations. Just drag them from the file list onto a directory in the directory tree. The directory you are hovering over will receive a slight shimmer to indicate where your file is going to be moved. Just drop the file there, to move it or drop the file everywhere else to abort the moving and revert the file to its original position.</p>
+<p>If you drag a file outside of the app, you are able to share the file with other programs. To cancel this dragging-out, simply release the mouse over your app again.</p>
+<h2 id="search-heatmap">Search heatmap<a class="headerlink" href="#search-heatmap" title="Permanent link">&para;</a></h2>
+<p>Another useful feature of the file list is to help you distinguish what search results are the most relevant. Once you've executed a search, the list will change its colour like a chameleon. It will paint all files in 50 shades of green (yep, we've just made <em>that</em> joke). The greener a file is, the more relevant the file is to your current search.</p>
+<p>This is a feature one might call a "heatmap" for fulltext searches.</p>
+<p>Please remember that the list is highly adaptable and will morph a lot while you use the app. For instance, it will not only display all files and directories in the currently selected directory, but also hides files with no results from the preview list, when the list is in search-mode.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Zettlr/zettlr-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

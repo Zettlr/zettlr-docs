@@ -1,0 +1,29 @@
+site_name: Zettlr Docs
+site_url: https://docs.zettlr.com
+repo_url: https://github.com/Zettlr/zettlr-docs
+site_description: Our comprehensive documentation provides you with everything you need to know about how to make the most of Zettlr.
+site_author: Hendrik ERz
+site_copyright: Copyright 2017-2019 by Zettlr
+docs_dir: docs
+site_dir: build
+extra_css:
+  - assets/app.css
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Guides: guides.md
+  - Components: components.md
+  - Get involved: get-involved.md
+  - FAQ: faq.md
+theme:
+  name: readthedocs
+  highlightjs: True
+  hljs_languages:
+    - javascript
+    - css
+    - yaml
+markdown_extensions:
+    - toc:
+        permalink: True
+plugins:
+  - search

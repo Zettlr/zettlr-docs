@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hendrik ERz">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Guide: Zettlr as an Integrated Development Environment (IDE) - Zettlr Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../assets/app.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Guide: Zettlr as an Integrated Development Environment (IDE)";
+    var mkdocs_page_input_path = "guide-ide.md";
+    var mkdocs_page_url = "/guide-ide/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zettlr Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getting-started/">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../guides/">Guides</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../components/">Components</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../get-involved/">Get involved</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">FAQ</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zettlr Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Guide: Zettlr as an Integrated Development Environment (IDE)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Zettlr/zettlr-docs/edit/master/docs/guide-ide.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="guide-zettlr-as-an-integrated-development-environment-ide">Guide: Zettlr as an Integrated Development Environment (IDE)<a class="headerlink" href="#guide-zettlr-as-an-integrated-development-environment-ide" title="Permanent link">&para;</a></h1>
+<p><img alt="Zettlr as an IDE" src="https://zettlr.com/storage/app/media/docs/zettlr_ide.png" /></p>
+<p>Zettlr is full with functions that help your workflow. You can use it as a small note-taking app, as a Zettelkasten, or, as explained in this guide, as a fully loaded integrated development (read: writing) environment. So let's get started!</p>
+<blockquote>
+<p>Using this guide, you can set up Zettlr to be a replacement for apps such as Ulysses, Atom, or Sublime Text.</p>
+</blockquote>
+<h2 id="step-1-adjust-the-settings">Step 1: Adjust the Settings<a class="headerlink" href="#step-1-adjust-the-settings" title="Permanent link">&para;</a></h2>
+<p>The first step is to adjust some of the parameters of Zettlr. So hit <code>Cmd/Ctrl+,</code> or press the cog in the toolbar to open the settings dialog. Adjust the following settings:</p>
+<ul>
+<li>General Tab<ul>
+<li>Text Snippets: On</li>
+<li>Sidebar mode: Expanded</li>
+</ul>
+</li>
+<li>Editor Tab<ul>
+<li>Select all dictionaries for languages in which you will write (e.g., en-UK, de-DE, and fr-FR)</li>
+</ul>
+</li>
+<li>Export Tab<ul>
+<li>Select the Current Working Directory as the export directory</li>
+<li>Remove ZKN IDs: On</li>
+<li>Remove Tags: On</li>
+<li>Remove internal links completely</li>
+</ul>
+</li>
+<li>Zettelkasten Tab<ul>
+<li>Adjust the settings according to the Zettelkasten-Guide</li>
+</ul>
+</li>
+<li>Attachments Tab<ul>
+<li>Enter all file extensions of the files you are likely to be using. This way all of these files will show up in the attachment bar to the right of the app</li>
+</ul>
+</li>
+</ul>
+<p>After you are finished setting Zettlr up, hit "Save". Now Zettlr should look like a real IDE with three segments (directory tree, file list, and editor) and all settings active.</p>
+<h2 id="step-2-write">Step 2: Write!<a class="headerlink" href="#step-2-write" title="Permanent link">&para;</a></h2>
+<p>This guide is rather short, because it only shows you how you can set up Zettlr to create a fully loaded IDE. What you are then doing with it is completely up to you. A good point to start is to read the two guides on Zettelkästen and note-taking, because you will likely be using some concepts from these guides.</p>
+<p>Here are all resources that may be interesting for you:</p>
+<ul>
+<li><a href="https://www.zettlr.com/docs/guide-zettelkasten">Guide: Zettlr as Zettelkasten</a></li>
+<li><a href="https://www.zettlr.com/docs/guide-notes">Guide: Zettlr as Note-Taking App</a></li>
+<li><a href="https://www.zettlr.com/docs/projects">Zettlr Projects</a></li>
+<li><a href="https://www.zettlr.com/docs/virtual-directories">Virtual Directories</a></li>
+<li><a href="https://www.zettlr.com/docs/presentations">Create Presentations with Zettlr</a></li>
+<li><a href="https://www.zettlr.com/docs/markdown-basics">Markdown for Zettlr</a></li>
+<li><a href="https://www.zettlr.com/docs/export">Exporting to PDF</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Zettlr/zettlr-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

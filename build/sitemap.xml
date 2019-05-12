@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://docs.zettlr.com/</loc>
+     <lastmod>2019-05-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.zettlr.com/getting-started/</loc>
+     <lastmod>2019-05-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.zettlr.com/guides/</loc>
+     <lastmod>2019-05-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.zettlr.com/components/</loc>
+     <lastmod>2019-05-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.zettlr.com/get-involved/</loc>
+     <lastmod>2019-05-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.zettlr.com/faq/</loc>
+     <lastmod>2019-05-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>

@@ -1,0 +1,22 @@
+/* Override directives for readthedocs */
+
+a {
+  color: rgb(28, 178, 126);
+}
+
+div[role="main"] a:hover {
+  color: rgb(28, 178, 126);
+  text-decoration: underline;
+}
+
+div[role="main"] a:visited {
+  color: rgb(40, 80, 40);
+}
+
+.wy-side-nav-search {
+  background-color: rgb(28, 178, 126);
+}
+
+.wy-menu-vertical a:active {
+  background-color: rgb(28, 178, 126);
+}

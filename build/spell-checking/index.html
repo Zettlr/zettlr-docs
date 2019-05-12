@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hendrik ERz">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Dictionaries & Spell Checking - Zettlr Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../assets/app.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Dictionaries & Spell Checking";
+    var mkdocs_page_input_path = "spell-checking.md";
+    var mkdocs_page_url = "/spell-checking/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zettlr Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getting-started/">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../guides/">Guides</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../components/">Components</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../get-involved/">Get involved</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">FAQ</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zettlr Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Dictionaries & Spell Checking</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Zettlr/zettlr-docs/edit/master/docs/spell-checking.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="dictionaries-spell-checking">Dictionaries &amp; Spell Checking<a class="headerlink" href="#dictionaries-spell-checking" title="Permanent link">&para;</a></h1>
+<p>As with all modern writing app, Zettlr features a powerful spell checking engine at its heart. It is deactivated by default, as many users still would like to separate spell checking from the actual writing process, but you can activate it with ease. Additionally, Zettlr allows you to check against multiple languages at once, making it the ideal tool for writing bilingual texts (for instance, an English journal paper with some German quotations).</p>
+<h2 id="activate-spell-checking">Activate spell checking<a class="headerlink" href="#activate-spell-checking" title="Permanent link">&para;</a></h2>
+<p>To activate spell checking, open the preferences using either the menu item, the toolbar button or pressing <code>Cmd/Ctrl+,</code>. In the Editor tab, you can then select all dictionaries you would like to activate. To the left there is a list displaying all available dictionaries. Click one to move it to the right, where green ribbons indicate all active dictionaries. Click one of these green ribbons to deactivate the dictionary again.</p>
+<p>You can filter the list of available dictionaries by typing a search key into the upper text field. Zettlr will automatically hide all dictionaries whose name does not contain your search string. Remove any letters from the search field to display all dictionaries again.</p>
+<p>After saving the settings with your new spell checking configuration, Zettlr will automatically begin to load all dictionaries. You may experience some lag while Zettlr boots up the dictionaries; especially with huge dictionaries such as the Italian or German languages this may take some time. After you quit the app, Zettlr will load the dictionaries on each start after a short delay.</p>
+<h2 id="deactivate-spell-checking">Deactivate spell checking<a class="headerlink" href="#deactivate-spell-checking" title="Permanent link">&para;</a></h2>
+<p>To deactivate spell checking again, simply remove all active dictionaries by clicking all green ribbons on the right side of the Editor tab in the preferences window. If there are none activated, Zettlr won't attempt to perform spell checking on your texts.</p>
+<h2 id="custom-dictionary">Custom Dictionary<a class="headerlink" href="#custom-dictionary" title="Permanent link">&para;</a></h2>
+<p>From version <code>1.3.0</code> onward, Zettlr supports adding certain words to your user defined dictionary. Especially for names this is useful, as you can then mark them as correct to remove the small red line underneath those names. To add a word to the user dictionary, simply right-click a marked word or name, and select "Add to Dictionary". Zettlr will then never mark this word as wrong again.</p>
+<h2 id="add-new-dictionaries">Add new Dictionaries<a class="headerlink" href="#add-new-dictionaries" title="Permanent link">&para;</a></h2>
+<p>While Zettlr ships with several dictionaries on install, you may want to add new dictionaries for languages that you write in. To add such dictionaries, you'll need to search for hunspell-compatible dictionaries. Basically, these consist of folders containing two files -- a <code>.dic</code>-file and an <code>.aff</code>-file. The <code>.dic</code>-file contains all words in a language with so-called affixes, e.g. small flags that tell the algorithm that a certain word, for instance, may also feature a different ending (take for instance the word ending -- while the stem is "end", there may be both the words "ends",  and "ending" available in the language -- the affix flag would then indicate "this word can also have the <code>-ing</code>-ending!"). The <code>.aff</code>-file contains the definitions of these flags.</p>
+<p>So to add these dictionaries, go online to search for some. A good starting point is <a href="https://github.com/wooorm/dictionaries">this repository by the GitHub user wooorm</a>, which features a lot of languages. Simply download one of the folders to your computer. Then, in Zettlr, click File -&gt; "Import Dictionary …". This will open up your computer's file browser with the <code>dict</code>-folder in Zettlr open. Copy the whole dictionary folder that you just downloaded into the <code>dict</code>-folder. Then you can select this dictionary from the settings.</p>
+<p>Bear in mind that Zettlr will perform some basic tests to determine whether or not a dictionary is valid. To have Zettlr display the dictionary and being able to select it, the dictionary must follow the following rules:</p>
+<ol>
+<li>The folder containing the  <code>.dic</code>- and <code>.aff</code>-files must be named using the corresponding <a href="https://tools.ietf.org/html/bcp47">BCP-47 tag</a> of the language the dictionary contains. Although you may not be aware of the term "BCP-47", it's simply the common language tag, so for instance a German dictionary would be named <code>de-DE</code> (for German German) or <code>de-CH</code> (for Swiss German), or simply <code>it</code> (for Italian). A complete <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">list of all available languages can be found here</a>.</li>
+<li>Inside this folder, at least two files must be present: a <code>.dic</code>-file and a <code>.aff</code>-file. These must be named either using the BCP-47 tag of the folder, or <code>index.dic</code>/<code>index.aff</code>.</li>
+<li>The dictionary folder may contain other files (such as a list of authors, or a LICENSE). These will be ignored.</li>
+</ol>
+<p>To sum up, Zettlr will make sure a dictionary is valid by checking that the following paths exist:</p>
+<ul>
+<li><code>bcp-47/bcp-47.dic</code> and <code>bcp-47/bcp-47.aff</code> <em>or</em></li>
+<li><code>bcp-47/index.dic</code> and <code>bcp-47/index.aff</code></li>
+</ul>
+<blockquote>
+<p>Attention: The hunspell algorithms implemented in JavaScript are still not as powerful as the main algorithm used by LibreOffice, so it may very well be that some dictionaries simply prove to be too large to be loaded. If Zettlr hangs after loading a dictionary, simply force-quit the app and make sure the dictionary is deselected.</p>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Zettlr/zettlr-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

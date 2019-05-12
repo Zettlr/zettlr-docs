@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hendrik ERz">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Virtual Directories - Zettlr Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../assets/app.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Virtual Directories";
+    var mkdocs_page_input_path = "virtual-directories.md";
+    var mkdocs_page_url = "/virtual-directories/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zettlr Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getting-started/">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../guides/">Guides</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../components/">Components</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../get-involved/">Get involved</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">FAQ</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zettlr Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Virtual Directories</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Zettlr/zettlr-docs/edit/master/docs/virtual-directories.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="virtual-directories">Virtual Directories<a class="headerlink" href="#virtual-directories" title="Permanent link">&para;</a></h1>
+<p>Virtual Directories are a powerful feature of Zettlr that let you sort and collect files arbitrarily. They work as some kind of a box in which you can put files manually.</p>
+<h2 id="creating-virtual-directories">Creating virtual directories<a class="headerlink" href="#creating-virtual-directories" title="Permanent link">&para;</a></h2>
+<p>Virtual directories represent subsets of a certain directory. You can create them by right-clicking any directory and select "New Virtual Directory…". You can then give them a name just as you would do with any other directory. The same rules apply for virtual directory names as do for regular directories; not only to maintain a consistent look throughout the app, but also to be sure that the name is "<a href="https://en.wikipedia.org/wiki/JSON">JSON</a>-safe".</p>
+<p>Virtual directories then appear as subdirectories of the directory, in which you have created them. They will remain above all other subdirectories, making it easier for you to find them. Also, they are indicated by a small box-icon and are coloured differently than normal directories, indicating their special status.</p>
+<h2 id="adding-removing-and-working-with-files">Adding, removing and working with files<a class="headerlink" href="#adding-removing-and-working-with-files" title="Permanent link">&para;</a></h2>
+<p>After you have created a virtual directory, it acts mostly as a normal directory. You can drop files on them, rename and remove them. Yet, a noteworthy restriction applies:</p>
+<blockquote>
+<p>You can only add files that reside <em>inside</em> the directory in which you created the virtual directory. As virtual directories are supposed to represent subsets of a specific directory, that means that you cannot add files that are located <em>outside</em> of the directory.</p>
+</blockquote>
+<p>To remove files, right-click them inside the virtual directory (i.e. right click their purple representation, <strong>not</strong> the file itself!) and then select the option "Delete from virtual directory."</p>
+<p>Inside virtual directory, all operations of files are permitted, even moving them to different directories. If you rename a file inside a virtual directory, this change will be reflected both on disk (i.e. in their "actual" directory) and in the virtual directory. If you remove a file completely, it will also be removed from all virtual directories, in which it may have been.</p>
+<h2 id="other-restrictions-of-virtual-directories">Other restrictions of virtual directories<a class="headerlink" href="#other-restrictions-of-virtual-directories" title="Permanent link">&para;</a></h2>
+<p>Among not being able to hold files outside of their containing directory, a number of additional restrictions apply to working with virtual directories.</p>
+<ol>
+<li>You cannot move them since they are bound to the directory, in which you create them.</li>
+<li>Virtual directories are persistent (i.e. stored on disk), but of course not as a kind of directory. They are stored in a so-called <a href="https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory">Dot-file</a>, which bears some problems.</li>
+<li>First of all: on Windows systems you will always see the <code>.ztr-virtual-directory</code>-file, because Windows does not hide such files as all other systems.</li>
+<li>Secondly, many cloud services do not synchronise Dot-files out of security reasons (for instance, you have to explicitly tell Nextcloud-clients to sync Dot-files). This means that if you store your files using a cloud service to access them from multiple devices, chances are your virtual directories are not transferred.</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Zettlr/zettlr-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
