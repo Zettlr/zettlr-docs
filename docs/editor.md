@@ -59,7 +59,7 @@ To correct a word, simply right-click it and select a suggestion from the contex
 
 Are you writing bilingual? No problem! Simply load all dictionaries that you potentially write text in to check against all languages at once. Just remember that dictionaries can use up a lot of memory, so if you load too many, it may slow down the application.
 
-**How to disable spell checking**: To disable the spellchecker completely, simply uncheck all dictionaries in the preferences.
+> **Tip**: To disable the spellchecker completely, simply uncheck all dictionaries in the preferences.
 
 ## Working with footnotes
 

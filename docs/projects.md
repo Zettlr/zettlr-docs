@@ -2,6 +2,8 @@
 
 Since version `0.18`, Zettlr supports projects. Projects are a way to simplify the concatenation and export of more than a single file. They allow you to split up one single project into several different files to work on. You can portion your work into several files and only in the end glue them together and export them as one single PDF file. Also, Zettlr projects allow you to better finegrain your PDF exports. With projects you can, for instance, command Zettlr to create a title page or a table of contents as well.
 
+![project_directory.png](img/project_directory.png)
+
 ## Creating a project
 
 Zettlr Projects are basically just a bunch of additional features for directories. Therefore you can "convert" any directory into a project. Simply right-click the directory you want to make a project of and choose "Create project". Then the directory itself will be coloured red and a pencil-icon will appear to the left of its name, indicating that this directory has project features enabled. If you now right-click a directory, you have three additional context menu options at your disposal: "Project Settings", "Build Project" and "Remove Project".
@@ -9,6 +11,8 @@ Zettlr Projects are basically just a bunch of additional features for directorie
 ## Working with Projects
 
 Choose "Project Settings" from the context menu of a project directory to open the settings. In general, these are just a copy of the PDF preferences you have globally available for quickly exporting single Markdown files. The two differences are that projects enable you to fine grain the generation of a PDF document, and that these PDF settings only apply for exporting this specific directory. Therefore you can leave your global PDF options intact and use different settings for your project.
+
+![settings_project.png](img/settings_project.png)
 
 Now let us briefly explore the settings you got for projects. First the metadata tab:
 

@@ -1,21 +1,20 @@
 /* Override directives for readthedocs */
 
-a {
+section.wy-nav-content-wrap a {
   color: rgb(28, 178, 126);
 }
 
-div[role="main"] a:hover {
+section.wy-nav-content-wrap a:hover {
   color: rgb(28, 178, 126);
   text-decoration: underline;
 }
 
-div[role="main"] a:visited {
-  color: rgb(40, 80, 40);
+.wy-side-nav-search a, .wy-side-nav-search a:visited {
+  color: white;
 }
 
-blockquote {
+div[role="main"] blockquote {
   color: white;
-  font-style: italic;
   border: 1px solid #4f6e4f;
   border-radius: 5px;
   padding: 10px;
@@ -24,7 +23,7 @@ blockquote {
   padding-left: 30px;
 }
 
-blockquote::before {
+div[role="main"] blockquote::before {
   font-family: "FontAwesome";
   position: absolute;
   top: 10px;
@@ -34,8 +33,17 @@ blockquote::before {
   content: "\f05a";
 }
 
-blockquote p {
+div[role="main"] blockquote p {
   margin-bottom: 0px;
+}
+
+div[role="main"] blockquote a {
+  color: rgb(87, 87, 87);
+}
+
+div[role="main"] blockquote a:hover {
+  color: rgb(87, 87, 87);
+  text-decoration: underline;
 }
 
 .wy-side-nav-search {

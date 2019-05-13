@@ -4,17 +4,17 @@ Exporting files is an important interface between your notes and other people. W
 
 1. Preview a file, for instance as HTML, and also print it. (Printing a note using `Cmd/Ctrl+P` will internally export the note to HTML.)
 2. Export it to a format with which other people can work, such as Word or OpenDocument files.
-3. Export it to PDF to reach it in (such as seminar papers) or, also, print it.
+3. Export it to PDF to submit it (such as seminar papers) or, also, print it.
 
 ## Preparing exports
 
-All exports in Zettlr, except HTML, are done using the free software packages Pandoc and LaTeX. Pandoc is necessary for all exports, because everything will first be converted by it. LaTeX is only necessary for PDF export.
+All exports in Zettlr, are done using the free software packages Pandoc and LaTeX. Pandoc is necessary for all exports, because everything will first be converted by it. LaTeX is only necessary for PDF export.
 
-HTML-files are converted directly by Zettlr itself using the `Showdown.js`-package, which comes bundled with Zettlr. Therefore, to simply preview documents and print them, you do not need either Pandoc or LaTeX installed on your system.
+> If Pandoc is not installed on your system, you will still be able to export to HTML. In that case, Zettlr will internally parse the file using `Showdown.js`, but this library does not support as many features as Pandoc.
 
-> Refer to the [setup guide](install.md)  to install Pandoc and LaTeX on your computer.
+> Please refer to the [setup guide](install.md)  to install Pandoc and LaTeX on your computer.
 
-Zettlr will make reasonable efforts to locate both packages. If the app could not find the packages, it will throw an error.
+Zettlr will make reasonable efforts to locate both packages. If the app could not locate the binaries, it will throw an error.
 
 **In case you have installed both packages, but Zettlr still won't export**, take a look at your Preferences. In the "Advanced"-tab, there are two text fields that allow you to enter the paths to the Pandoc-executable and the "XeLaTeX"-executable. Simply put them in there, restart, and then it should work. If not, please let me know!
 

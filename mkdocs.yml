@@ -3,33 +3,33 @@ site_url: https://docs.zettlr.com
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: Our comprehensive documentation provides you with everything you need to know about how to make the most of Zettlr.
 site_author: Hendrik ERz
-copyright: Copyright 2017-2019 by Zettlr
+copyright: "&copy; 2017-2019 by Zettlr"
 docs_dir: docs
 site_dir: build
 extra_css:
   - assets/app.css
 nav:
   - Home: index.md
-  - Install: install.md
+  - Setup: install.md
   - Quick Start: 5-minutes.md
-  - Zettlr as a Notetaking app: guide-notes.md
+  - Zettlr as a note taking app: guide-notes.md
   - Zettlr as a Zettelkasten: guide-zettelkasten.md
   - Zettlr as an IDE: guide-ide.md
-  - Citations: citations.md
-  - Custom CSS: custom-css.md
   - The Editor: editor.md
-  - Exporting: export.md
-  - The File List: file-list.md
-  - Localisation: localisation.md
   - Markdown Basics: markdown-basics.md
-  - Pomodoro Timer: pomodoro.md
-  - Presentations: presentations.md
-  - Projects: projects.md
+  - The File List: file-list.md
   - Searching: search.md
   - Settings: settings.md
+  - Exporting: export.md
+  - Citations: citations.md
+  - Projects: projects.md
+  - Virtual Directories: virtual-directories.md
+  - Custom CSS: custom-css.md
+  - Localisation: localisation.md
+  - Pomodoro Timer: pomodoro.md
+  - Presentations: presentations.md
   - Shortcuts: shortcuts.md
   - Spell Checking: spell-checking.md
-  - Virtual Directories: virtual-directories.md
   - Zettelkasten Methods: zkn-method.md
   - Get involved: get-involved.md
   - FAQ: faq.md

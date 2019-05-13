@@ -15,36 +15,46 @@ You can display the general preference dialog using either the shortcut `Cmd/Ctr
 
 ### General
 
-![General Settings](img/settings_general.png)
+![settings_general.png](img/settings_general.png)
 
 In the general tab you find options that you might want to adjust if you begin using Zettlr to fit it to your needs. The application language is pretty self-explanatory.
 
-The "Night Mode" and "Snippets"-checkboxes control the display. The "Night Mode" is simply the dark theme Zettlr is capable of (and which you might want to control using the shortcut `Cmd/Ctrl+Alt+L` instead). Check the "Snippets"-checkbox to display text snippets in the preview pane (although you can control this behaviour as well using its respective shortcut `Cmd/Ctrl+Alt+S`).
+The "Night Mode" and "Snippets"-checkboxes control the display. The "Night Mode" is simply the dark theme Zettlr is capable of (and which you might want to control using the shortcut `Cmd/Ctrl+Alt+L` instead). Check the "Snippets"-checkbox to display meta information in the preview pane (although you can control this behaviour as well using its respective shortcut `Cmd/Ctrl+Alt+S`).
+
+If you check "Hide directories during global search", Zettlr will not display directories while performing a search.
 
 The sidebar mode controls how the sidebar is displayed to you. You have two options:
 
-* Thin: In thin mode, the sidebar only displays _either_ the list of files _or_ the directory list. You can switch between both using the shortcuts `Cmd/Ctrl+1` and `Cmd/Ctrl+2`.
-* Expanded: The expanded mode displays both the directory list and the file list side by side. In this mode, you have both lists always present.
+* Thin: In thin mode, the sidebar only displays _either_ the list of files _or_ the tree view. You can switch between both using the shortcut `Cmd/Ctrl+Shift+1`.
+* Expanded: The expanded mode displays both the tree view and the file list side by side. In this mode, you have both lists always present.
 
 If you want to hide the sidebar completely, please use the distraction-free mode (`Cmd/Ctrl+J`).
 
 The sorting order determines how Zettlr will sort your files internally. The natural order is recommended; ASCII ignores certain natural language implications.
 
+Last but not least Zettlr can automatically switch to light or dark mode depending on your operating system:
+
+* **Off**: switch between the modes manually
+* **Schedule**: Zettlr will enter and leave dark mode between the given time span (24 hours format)
+* **Follow Operating System**: On macOS and Windows, Zettlr can listen to operating system events notifying the applications currently running that the overall mode has changed.
+
 ### Editor
 
-![Editor Settings](img/settings_editor.png)
+![settings_editor.png](img/settings_editor.png)
 
-On the editor tab, you can enable or disable dictionaries. The list to the left contains all deselected dictionaries. You can filter them using the search bar at the top. Click a dictionary to enable it. Enabled dictionaries are listed to the right. Simply click a dictionary on the right to deselect it.
+The editor tab controls most functionality of the editor. The list to the left contains all available dictionaries that can be used for spell checking. Simply select the ones you want to use. You can use multiple dictionaries to check bilingual texts. Filter the list using the search box on top of the list.
 
-If you want to disable spell checking completely, simply deselect all dictionaries.
+> **Tip**: To disable spell checking, uncheck all dictionaries. To install additional dictionaries, refer to the [localisation manual](localisation.md).
 
-Muting non-focused lines in the distraction free mode means that only the line in which your cursor currently is will be displayed in full brightness, while all other lines will be dimmed. This helps you focus more on what you are currently doing.
+On the right hand side of the tab, you can see some checkboxes, a text input, and another list. First you can **mute non-focused lines** while you are in the distraction free mode. This means that Zettlr dims all lines except the one where your cursor is. The next option allows you to **automatically close certain character pairs**.
 
-Automatically closing certain character pairs means that whenever you type one of the character in the editor, for instance a backtick, Zettlr will automatically add the second backtick (or brackets).
+The **default image path** is a path you can use to tell Zettlr where it should put your images when you paste them from clipboard. It can be absolute or relative. If you provide the name `assets`, Zettlr would put images by default into the `assets` subdirectory of the directory where your file is. You can even tell it to use a directory relative to the parent directory, e.g. `../assets`. Remember that you can always select the directory for an image on a case-by-case basis.
+
+Finally, the list on the right hand side of the tab displays all the words you've added to your custom dictionary. Click them to remove them from your user dictionary.
 
 ### Export
 
-![Export Settings](img/settings_export.png)
+![settings_export.png](img/settings_export.png)
 
 The export tab allows you to tweak all preferences concerning how your files are exported. To the left you have options concerning the Zettelkasten functionality.
 
@@ -62,9 +72,9 @@ The CSL JSON database field can be used to open a literature database. Zettlr wi
 
 ### Zettelkasten
 
-![Zettelkasten settings](img/settings_zettelkasten.png)
+![settings_zettelkasten.png](img/settings_zettelkasten.png)
 
-In this tab you can customise the way Zettlr works with your existing Zettelkasten system. In most cases you won't need to touch these options, but it may be you want to use a custom system.
+In this tab you can customise the way Zettlr works with your existing Zettelkasten system. In most cases you won't need to touch these options, except you want to use a custom system.
 
 You have four options that are important for Zettelkästen: The ID regular expression, the link start and ending, and the generator pattern.
 
@@ -96,11 +106,11 @@ You can test both the generation of IDs and the detection of them by clicking th
 
 ### Display
 
-![Display Settings](img/settings_display.png)
+![settings_display.png](img/settings_display.png)
 
 This tab controls how the editor displays certain elements. Zettlr uses a semi-preview approach to Markdown and only renders some elements. On this tab you can control which elements will be rendered.
 
-> The iFrame-setting controls whether or not to render iFrames (for instance, YouTube-videos are embedded iFrames). 
+> The iFrame-setting controls whether or not to render iFrames (for instance, YouTube-videos are embedded iFrames).
 
 Additionally you can constrain the size of images, which is especially beneficial if you use a lot of portrait oriented images. The horizontal slider controls the maximum amount of width images are allowed to occupy. Setting this to 50 %, for instance, will keep images at half the width of the text body. 100 % disables this (images will never be wider than 100 % of the text body width).
 
@@ -108,17 +118,31 @@ The vertical slider controls the maximum height of the images relative to the wi
 
 ### Advanced
 
-![Advanced Settings](img/settings_advanced.png)
+![settings_advanced.png](img/settings_advanced.png)
 
-The advanced tab contains options rarely used.
+The advanced tab contains options that are helpful for advanced users.
 
-The pandoc- and xelatex-text fields are used in case Zettlr is unable to locate any of these two programs. As you know, Zettlr uses both to export your files. In rare cases it may be that Zettlr is unable to find them, although you installed them properly. If that happens, simply enter the **full, absolute path** to both programs in the textfields to help Zettlr find them.
+The **pandoc- and xelatex-text fields** are used in case Zettlr is unable to locate any of these two programs. As you know, Zettlr uses both to export your files. In rare cases it may be that Zettlr is unable to find them, although you installed them properly. If that happens, simply enter the **full, absolute path** to both programs in the textfields to help Zettlr find them.
 
-The debug option is used to control whether or not you are able to "reload" the graphical user interface (GUI) by pressing `F5` and display the Chrome developer tools to inspect what the app is doing. Naturally, you would want to do this as a developer.
+The **debug option** is used to control whether or not you are able to "reload" the graphical user interface (GUI) by pressing `F5` and display the Chrome developer tools to inspect what the app is doing. Naturally, you would want to do this as a developer.
 
-You can also help Zettlr by subscribing to beta releases. When you tick this option, Zettlr will notify you about new beta releases as well. You can then decide whether to use the beta version, or not.
+You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases as well. You can then decide whether to use the beta version, or not.
 
-The text area to the right controls what files will be displayed in the attachment sidebar. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions that are you might be using.
+The text area to the right controls what files will be displayed in the **attachment** sidebar. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions that are you might be using.
+
+The **Pandoc command** gives you full control over the export engine. The command in there will be run on export. You have a few variables at your disposal to customise your export:
+
+- `$infile$`: The full, absolute path to the file that is going to be exported.
+- `$outfile$`: The full, absolute path to the resulting file (including the correct extension).
+- `$citeproc$`: Contains directives for the `pandoc-citeproc` engine.
+- `$format$`: Contains the format (e.g. `html` or `docx`).
+- `$outflag$`: The formatting flag for pandoc (e.g. `-t docx`).
+- `$standalone$`: Will be `-s` in case the file needs to be exported standalone.
+- `$toc$`: Whether or not a table of contents will be generated.
+- `$tocdepth$`: A flag indicating the level up to which a table of contents should be generated.
+- `$tpl$`: A template directive for pandoc.
+
+> **Attention**: Many of these variables are tailored to the needs of pandoc. Of course, you can completely switch the program by replacing `pandoc` with the name of your desired exporting engine, but please beware that it will need to know how to parse pandoc flags.
 
 ## PDF Preferences
 
