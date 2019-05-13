@@ -4,6 +4,10 @@ section.wy-nav-content-wrap a {
   color: rgb(28, 178, 126);
 }
 
+nav.wy-nav-top a, nav.my-nav-top a:active {
+  color: white;
+}
+
 section.wy-nav-content-wrap a:hover {
   color: rgb(28, 178, 126);
   text-decoration: underline;
@@ -46,7 +50,7 @@ div[role="main"] blockquote a:hover {
   text-decoration: underline;
 }
 
-.wy-side-nav-search {
+.wy-side-nav-search, .wy-nav-top {
   background-color: rgb(28, 178, 126);
 }
 
