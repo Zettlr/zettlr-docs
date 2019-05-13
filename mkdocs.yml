@@ -9,28 +9,32 @@ site_dir: build
 extra_css:
   - assets/app.css
 nav:
-  - Home: index.md
+  - Welcome: index.md
   - Setup: install.md
   - Quick Start: 5-minutes.md
-  - Zettlr as a note taking app: guide-notes.md
-  - Zettlr as a Zettelkasten: guide-zettelkasten.md
-  - Zettlr as an IDE: guide-ide.md
-  - The Editor: editor.md
-  - Markdown Basics: markdown-basics.md
-  - The File List: file-list.md
-  - Searching: search.md
-  - Settings: settings.md
-  - Exporting: export.md
-  - Citations: citations.md
-  - Projects: projects.md
-  - Virtual Directories: virtual-directories.md
-  - Custom CSS: custom-css.md
-  - Localisation: localisation.md
-  - Pomodoro Timer: pomodoro.md
-  - Presentations: presentations.md
-  - Shortcuts: shortcuts.md
-  - Spell Checking: spell-checking.md
-  - Zettelkasten Methods: zkn-method.md
+  - Guides:
+    - Zettlr as a note taking app: guide-notes.md
+    - Zettlr as a Zettelkasten: guide-zettelkasten.md
+    - Zettlr as an IDE: guide-ide.md
+  - Core:
+    - The Editor: editor.md
+    - The File List: file-list.md
+    - Searching: search.md
+    - Exporting: export.md
+    - Virtual Directories: virtual-directories.md
+    - Custom CSS: custom-css.md
+    - Localisation: localisation.md
+  - Academic Tools:
+    - Citations: citations.md
+    - Projects: projects.md
+    - Zettelkasten Methods: zkn-method.md
+    - Presentations: presentations.md
+    - Pomodoro Timer: pomodoro.md
+  - References:
+    - Shortcuts: shortcuts.md
+    - Markdown Basics: markdown-basics.md
+    - Settings: settings.md
+    - Spell Checking: spell-checking.md
   - Get involved: get-involved.md
   - FAQ: faq.md
 theme:
@@ -40,6 +44,7 @@ theme:
     - javascript
     - css
     - yaml
+    - tex
 markdown_extensions:
     - toc:
         permalink: True
