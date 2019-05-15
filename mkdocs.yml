@@ -39,6 +39,7 @@ nav:
   - FAQ: faq.md
 theme:
   name: readthedocs
+  custom_dir: theme_override
   highlightjs: True
   hljs_languages:
     - javascript
