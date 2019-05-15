@@ -12,32 +12,32 @@ Don't want to waste time? Head over to our [very-quick start guide "Zettlr in 5 
 
 Have a look at our user guides so that you can learn all workflows. The guides are not focused around features, they are focused around workflows. Here you can read about popular workflows, step by step.
 
-* [Use Zettlr as a note taking app](guide-notes.md)
-* [Use Zettlr as a Zettelkasten system](guide-zettelkasten.md)
-* [Use Zettlr as a full IDE](guide-ide.md)
+* [Use Zettlr as a note taking app](guides/guide-notes.md)
+* [Use Zettlr as a Zettelkasten system](guides/guide-zettelkasten.md)
+* [Use Zettlr as a full IDE](guides/guide-ide.md)
 
 ## Core
 
 Everyone can become very quick and efficient at his or her workflow, but can you really excel without a deep knowledge about how certain features work? Shortcuts to mundane tasks and key combinations for speeding up common tasks as well as hidden features of Zettlr are explained in the rest of the documentation. Learn how to move whole paragraphs around with two clicks or how to link to websites with only one click in these advanced guides.
 
-* [The Editor](editor.md)
-* [Markdown Basics](markdown-basics.md)
-* [The File List](file-list.md)
-* [Searching](search.md)
-* [Exporting with Zettlr](export.md)
-* [Virtual Directories](virtual-directories.md)
-* [Custom CSS](custom-css.md)
-* [Localisation](localisation.md)
+* [The Editor](core/editor.md)
+* [Markdown Basics](reference/markdown-basics.md)
+* [The File List](core/file-list.md)
+* [Searching](core/search.md)
+* [Exporting with Zettlr](core/export.md)
+* [Virtual Directories](core/virtual-directories.md)
+* [Custom CSS](core/custom-css.md)
+* [Localisation](core/localisation.md)
 
 ## Academic Tools
 
 Zettlr has been developed with academic writing in mind. Therefore, it offers a lot of powerful tools to help you write academic texts right out of the box. You can explore the possibilities of Zettlr as an academic editor by browsing this category.
 
-* [Citations](citations.md)
-* [Projects](projects.md)
-* [Presentations](presentations.md)
-* [Pomodoro Timer](pomodoro.md)
-* [Zettelkasten Methods](zkn-method.md)
+* [Citations](academic/citations.md)
+* [Projects](academic/projects.md)
+* [Presentations](academic/presentations.md)
+* [Pomodoro Timer](academic/pomodoro.md)
+* [Zettelkasten Methods](academic/zkn-method.md)
 
 ## Get involved!
 

@@ -68,7 +68,7 @@ This will upgrade all installed formulae (as they are called) to the newest vers
 
 > Installing with Homebrew is recommended, as it is not only faster, but also more convenient.
 
-After pandoc is set up, you may want to install `citeproc` as well, as it provides you with the ability to [cite](citations.md) using Zettlr. On Windows, Citeproc is automatically installed, while on macOS you will have to install Pandoc Citeproc additionally. Simply use Homebrew for this as well:
+After pandoc is set up, you may want to install `citeproc` as well, as it provides you with the ability to [cite](academic/citations.md) using Zettlr. On Windows, Citeproc is automatically installed, while on macOS you will have to install Pandoc Citeproc additionally. Simply use Homebrew for this as well:
 
 ```bash
 $ brew install pandoc-citeproc

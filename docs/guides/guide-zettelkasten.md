@@ -1,6 +1,6 @@
 # Guide: Zettlr as Zettelkasten
 
-![Zettlr as a Zettelkasten](img/zettlr_zettelkasten.png)
+![Zettlr as a Zettelkasten](../img/zettlr_zettelkasten.png)
 
 Zettlr can be used as a sophisticated Zettelkasten system implementing a lot of features to organise and structure your files. To begin creating your own Zettelkasten, follow the following steps.
 
@@ -20,7 +20,7 @@ The first thing you want to do to create your Zettelkasten is to have a look at 
 - Export tab
     - Turn off the removal of Zettelkasten IDs and select to keep internal links untouched
 - Zettelkasten tab
-    - This is the most important tab for a Zettelkasten installation, because here you can adjust the settings of how Zettlr interacts with your Zettelkasten. Please refer to the section on the Zettelkasten tab [in the settings chapter ](settings.md)to learn about these options in detail.
+    - This is the most important tab for a Zettelkasten installation, because here you can adjust the settings of how Zettlr interacts with your Zettelkasten. Please refer to the section on the Zettelkasten tab [in the settings chapter ](../reference/settings.md)to learn about these options in detail.
 
 ## Step 2: Create a Directory
 

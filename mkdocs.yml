@@ -2,7 +2,7 @@ site_name: Zettlr Docs
 site_url: https://docs.zettlr.com
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: Our comprehensive documentation provides you with everything you need to know about how to make the most of Zettlr.
-site_author: Hendrik ERz
+site_author: Hendrik Erz
 copyright: "&copy; 2017-2019 by Zettlr"
 docs_dir: docs
 site_dir: build
@@ -13,34 +13,35 @@ nav:
   - Setup: install.md
   - Quick Start: 5-minutes.md
   - Guides:
-    - Zettlr as a note taking app: guide-notes.md
-    - Zettlr as a Zettelkasten: guide-zettelkasten.md
-    - Zettlr as an IDE: guide-ide.md
+    - Zettlr as a note taking app: guides/guide-notes.md
+    - Zettlr as a Zettelkasten: guides/guide-zettelkasten.md
+    - Zettlr as an IDE: guides/guide-ide.md
   - Core:
-    - The Editor: editor.md
-    - The File List: file-list.md
-    - Searching: search.md
-    - Exporting: export.md
-    - Virtual Directories: virtual-directories.md
-    - Custom CSS: custom-css.md
-    - Localisation: localisation.md
+    - The Editor: core/editor.md
+    - The File List: core/file-list.md
+    - Searching: core/search.md
+    - Exporting: core/export.md
+    - Virtual Directories: core/virtual-directories.md
+    - Custom CSS: core/custom-css.md
+    - Localisation: core/localisation.md
   - Academic Tools:
-    - Citations: citations.md
-    - Projects: projects.md
-    - Zettelkasten Methods: zkn-method.md
-    - Presentations: presentations.md
-    - Pomodoro Timer: pomodoro.md
+    - Citations: academic/citations.md
+    - Projects: academic/projects.md
+    - Zettelkasten Methods: academic/zkn-method.md
+    - Presentations: academic/presentations.md
+    - Pomodoro Timer: academic/pomodoro.md
   - References:
-    - Shortcuts: shortcuts.md
-    - Markdown Basics: markdown-basics.md
-    - Settings: settings.md
-    - Spell Checking: spell-checking.md
+    - Shortcuts: reference/shortcuts.md
+    - Markdown Basics: reference/markdown-basics.md
+    - Settings: reference/settings.md
+    - Spell Checking: reference/spell-checking.md
   - Get involved: get-involved.md
   - FAQ: faq.md
 theme:
   name: readthedocs
   custom_dir: theme_override
   highlightjs: True
+  prev_next_buttons_location: both
   hljs_languages:
     - javascript
     - css
@@ -50,4 +51,5 @@ markdown_extensions:
     - toc:
         permalink: True
 plugins:
-  - search
+  - search:
+      lang: en

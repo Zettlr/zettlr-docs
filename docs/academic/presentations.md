@@ -2,7 +2,7 @@
 
 Since version `0.19.0`, Zettlr is able to export your Markdown files directly as presentation files using the [reveal.js](https://revealjs.com/#/)-framework. `reveal.js` is a lightweight solution for creating super compatible presentations using plain `HTML` and `JavaScript`. Therefore, these presentations can be shown on _all_ computers that run a browser — nowadays this means: they run on _every_ computer.
 
-For exporting Markdown files to `reveal.js`, you have to make sure Pandoc is installed on your computer. Head over to the [section on exporting](export.md) to see how to install pandoc.
+For exporting Markdown files to `reveal.js`, you have to make sure Pandoc is installed on your computer. Head over to the [section on exporting](../core/export.md) to see how to install pandoc.
 
 If you first want to be impressed by an actual export from Zettlr into `reveal.js`, please have a look [at the demonstration presentation](https://zettlr.com/slides.revealjs.htm)! You can also read [the source file](https://www.zettlr.com/themes/zettlr/assets/slides.md) while following the instructions on this page.
 
@@ -36,7 +36,7 @@ This will create a list with three items. All items are "fragments", which means
 
 ### Presentation settings
 
-![presentations_scripts.png](img/presentations_scripts.png)
+![presentations_scripts.png](../img/presentations_scripts.png)
 
 Of course, the presentation itself also has settings that you can make use of. These are simple JavaScript directives that you can manipulate by inserting a `<script>`-tag as shown in the screenshot. You can override them by setting the attributes on the `zettlrRevealOptions`-object. These are the options you can set:
 
@@ -110,7 +110,7 @@ If none of the available themes appeal to you, or if you need to provide some ex
 
 You'll need some knowledge of CSS to finegrain the styling, but the appearance of the presentation itself should be satisfying on its own.
 
-![presentations_styles.png](img/presentations_styles.png)
+![presentations_styles.png](../img/presentations_styles.png)
 
 ### Images
 

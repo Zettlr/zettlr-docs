@@ -35,7 +35,7 @@ Today, several implementations of the Markdown syntax coexist. The most notewort
 
 ## Zettlr and Markdown
 
-Zettlr itself implements a mixture of different dialects. The editor itself highlights only GitHub flavoured Markdown (plus some extra-elements, which extends Markdown syntax with Zettelkasten elements. Those are described in the respective [chapter on the Zettelkasten method](zkn-method.md)). If you export your documents to HTML and don't have Pandoc installed, Zettlr will convert your documents using the _GitHub flavoured Markdown syntax_. If available, Zettlr uses Pandoc for exports, which itself reads your Markdown documents using its _Pandoc Markdown syntax_.
+Zettlr itself implements a mixture of different dialects. The editor itself highlights only GitHub flavoured Markdown (plus some extra-elements, which extends Markdown syntax with Zettelkasten elements. Those are described in the respective [chapter on the Zettelkasten method](../academic/zkn-method.md)). If you export your documents to HTML and don't have Pandoc installed, Zettlr will convert your documents using the _GitHub flavoured Markdown syntax_. If available, Zettlr uses Pandoc for exports, which itself reads your Markdown documents using its _Pandoc Markdown syntax_.
 
 But Zettlr doesn't confine you to writing Markdown. If you wish, you can also add `LaTeX`-commands. These commands are correctly interpreted when you convert to PDF. These are omitted when you convert to DOCX or ODT. And they are retained when you convert to HTML. Of course, you can at any position use plain HTML-code as well.
 

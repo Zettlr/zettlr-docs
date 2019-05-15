@@ -62,6 +62,6 @@ Three easy steps:
 
 Nope, you're good to go. If you want to dive deeper, be sure to check out our guides:
 
-- [Zettlr as a note-taking app](guide-notes.md)
-- [Zettlr as a Zettelkasten](guide-zettelkasten.md)
-- [Zettlr as an IDE](guide-ide.md)
+- [Zettlr as a note-taking app](guides/guide-notes.md)
+- [Zettlr as a Zettelkasten](guides/guide-zettelkasten.md)
+- [Zettlr as an IDE](guides/guide-ide.md)

@@ -14,7 +14,7 @@ If you don't want to write CSS for yourself and are only looking to **change the
 
 Zettlr comes with a lot of predefined classes and IDs. It follows the generally-acknowledged wisdom not to make use of `style`-tags to directly define properties. Therefore, you can use classes for literally anything.
 
-The styles of Zettlr are divided into both geometry and the actual theme, so you may want to stick with only changing the design of elements _without_ changing **any** geometry. Playing around with the geometry may be fun, but it may yield completely random behaviour, as some parts of the app depend upon the correct sizes of elements. In case you made a mistake, don't worry: Simply remove the `custom.css`-file from the data directory of Zettlr. You can find the data directory of your own system by looking at the paths provided in [the install documentation](install.md).
+The styles of Zettlr are divided into both geometry and the actual theme, so you may want to stick with only changing the design of elements _without_ changing **any** geometry. Playing around with the geometry may be fun, but it may yield completely random behaviour, as some parts of the app depend upon the correct sizes of elements. In case you made a mistake, don't worry: Simply remove the `custom.css`-file from the data directory of Zettlr. You can find the data directory of your own system by looking at the paths provided in [the install documentation](../install.md).
 
 Classes and IDs in Zettlr are always namespaced to the respective components (unless they're global), so to really override a rule you will have to use the complete namespace (or, if you don't want to add many rules and are lazy, use the `!important` override rule).
 
@@ -70,7 +70,7 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 }
 ```
 
-![A preview of a Zettlr installation using above snippet](img/custom_css_unsplash.png)
+![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash.png)
 
 ### Visualising Line Endings
 
@@ -83,7 +83,7 @@ In case you want to see where your linefeeds are, you can display the pilcrow sy
 }
 ```
 
-![A preview of Zettlr using above snippet](img/custom_css_pilcrow.png)
+![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
 
 ### Hide the Toolbar in Distraction Free
 

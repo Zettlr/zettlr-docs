@@ -15,7 +15,7 @@ You can display the general preference dialog using either the shortcut `Cmd/Ctr
 
 ### General
 
-![settings_general.png](img/settings_general.png)
+![settings_general.png](../img/settings_general.png)
 
 In the general tab you find options that you might want to adjust if you begin using Zettlr to fit it to your needs. The application language is pretty self-explanatory.
 
@@ -40,11 +40,11 @@ Last but not least Zettlr can automatically switch to light or dark mode dependi
 
 ### Editor
 
-![settings_editor.png](img/settings_editor.png)
+![settings_editor.png](../img/settings_editor.png)
 
 The editor tab controls most functionality of the editor. The list to the left contains all available dictionaries that can be used for spell checking. Simply select the ones you want to use. You can use multiple dictionaries to check bilingual texts. Filter the list using the search box on top of the list.
 
-> **Tip**: To disable spell checking, uncheck all dictionaries. To install additional dictionaries, refer to the [localisation manual](localisation.md).
+> **Tip**: To disable spell checking, uncheck all dictionaries. To install additional dictionaries, refer to the [localisation manual](../core/localisation.md).
 
 On the right hand side of the tab, you can see some checkboxes, a text input, and another list. First you can **mute non-focused lines** while you are in the distraction free mode. This means that Zettlr dims all lines except the one where your cursor is. The next option allows you to **automatically close certain character pairs**.
 
@@ -54,7 +54,7 @@ Finally, the list on the right hand side of the tab displays all the words you'v
 
 ### Export
 
-![settings_export.png](img/settings_export.png)
+![settings_export.png](../img/settings_export.png)
 
 The export tab allows you to tweak all preferences concerning how your files are exported. To the left you have options concerning the Zettelkasten functionality.
 
@@ -72,7 +72,7 @@ The CSL JSON database field can be used to open a literature database. Zettlr wi
 
 ### Zettelkasten
 
-![settings_zettelkasten.png](img/settings_zettelkasten.png)
+![settings_zettelkasten.png](../img/settings_zettelkasten.png)
 
 In this tab you can customise the way Zettlr works with your existing Zettelkasten system. In most cases you won't need to touch these options, except you want to use a custom system.
 
@@ -106,7 +106,7 @@ You can test both the generation of IDs and the detection of them by clicking th
 
 ### Display
 
-![settings_display.png](img/settings_display.png)
+![settings_display.png](../img/settings_display.png)
 
 This tab controls how the editor displays certain elements. Zettlr uses a semi-preview approach to Markdown and only renders some elements. On this tab you can control which elements will be rendered.
 
@@ -118,7 +118,7 @@ The vertical slider controls the maximum height of the images relative to the wi
 
 ### Advanced
 
-![settings_advanced.png](img/settings_advanced.png)
+![settings_advanced.png](../img/settings_advanced.png)
 
 The advanced tab contains options that are helpful for advanced users.
 
@@ -146,7 +146,7 @@ The **Pandoc command** gives you full control over the export engine. The comman
 
 ## PDF Preferences
 
-![The Font tab of the PDF Settings dialog](img/pdf_settings_font.png)
+![The Font tab of the PDF Settings dialog](../img/pdf_settings_font.png)
 
 We've moved the PDF Preferences to another dialog because there are many you can use. These options control how the LaTeX-engine will render your files on PDF-exporting. They do not have any effect on all other export formats. You can bring up the dialog using either its shortcut `Cmd/Ctrl+Alt+,` or using the respective menu entry. The PDF options are also divided by tabs. Currently, there are three:
 
@@ -170,7 +170,7 @@ The font-size should be rather obvious. The line height specifies the spacing be
 
 ## Manage Tags
 
-![The Tags settings dialog](img/tags_settings.png)
+![The Tags settings dialog](../img/tags_settings.png)
 
 The tags dialog does not have a shortcut associated, so you'll need to call it using the respective menu item. Here you can assign colours and descriptions to tags.
 

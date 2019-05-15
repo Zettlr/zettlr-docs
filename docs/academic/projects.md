@@ -2,7 +2,7 @@
 
 Since version `0.18`, Zettlr supports projects. Projects are a way to simplify the concatenation and export of more than a single file. They allow you to split up one single project into several different files to work on. You can portion your work into several files and only in the end glue them together and export them as one single PDF file. Also, Zettlr projects allow you to better finegrain your PDF exports. With projects you can, for instance, command Zettlr to create a title page or a table of contents as well.
 
-![project_directory.png](img/project_directory.png)
+![project_directory.png](../img/project_directory.png)
 
 ## Creating a project
 
@@ -12,7 +12,7 @@ Zettlr Projects are basically just a bunch of additional features for directorie
 
 Choose "Project Settings" from the context menu of a project directory to open the settings. In general, these are just a copy of the PDF preferences you have globally available for quickly exporting single Markdown files. The two differences are that projects enable you to fine grain the generation of a PDF document, and that these PDF settings only apply for exporting this specific directory. Therefore you can leave your global PDF options intact and use different settings for your project.
 
-![settings_project.png](img/settings_project.png)
+![settings_project.png](../img/settings_project.png)
 
 Now let us briefly explore the settings you got for projects. First the metadata tab:
 
@@ -23,7 +23,7 @@ Now let us briefly explore the settings you got for projects. First the metadata
 - **Generate Table of Contents**: If this checkbox is selected, Zettlr will direct Pandoc to generate a Table of Contents on the second page (if you told Zettlr to generate a title page, else on the first page).
 - **Evaluate until Level …**: With this dropdown list you can choose which headings will be part of your Table of Contents. The default "2" directs Pandoc to generate a table of contents using both first and second degree headers (i.e. `##` and `#`-headers). A 4 would include 1st, 2nd, 3d and 4th grade headers (i.e. `#`, `##`,`###`, and`####`). All other headings will still be present in the file, but they will not appear in the Table of Contents.
 
-Currently, both the page and the font tabs are exactly the same for projects and for your general export options, so please refer to the [settings](settings.md) page to get to know what they do.
+Currently, both the page and the font tabs are exactly the same for projects and for your general export options, so please refer to the [settings](../reference/settings.md) page to get to know what they do.
 
 ## Building Projects
 

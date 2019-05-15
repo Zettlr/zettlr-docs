@@ -6,7 +6,7 @@ Next on is the file list. The file list is something very special because it bea
 
 In the extended sidebar mode, both the tree view and the file list are visible. Using the thin sidebar mode, you can always show or hide the list by pressing `Cmd/Ctrl+Shift+1`.
 
-> **Note**: Please consult the [settings manual](settings.md) for more information on the sidebar modes.
+> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the sidebar modes.
 
 The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
 
@@ -18,23 +18,23 @@ If you turned off the meta information, both directories and files will be shown
 
 The additional information shown by your files in the file list can be beneficial for a number of reasons. First, you can check whether or not the ID of the file looks right. Sometimes, Zettlr may detect a wrong ID, and this is the first way to check if Zettlr actually uses your ID, or just grabbed some part of a URL that contains a lot of numbers. Additionally, you can hover over the amount of tags to display them in a tooltip.
 
-![The possible meta information of files](img/file_meta.png)
+![The possible meta information of files](../img/file_meta.png)
 
 ### Writing Targets
 
 Since version `1.2`, Zettlr supports writing targets. To set a target, right-click a file and choose "Set writing target …". Enter the amount of words or characters and click "Set". Zettlr will count towards your goal and show you the progress showing a small indicator if you have snippets activated. Hover over it to see the absolute number of words or characters that you've written.
 
-![Writing Targets Counter](img/writing_targets.png)
+![Writing Targets Counter](../img/writing_targets.png)
 
 > **Tip**: To remove the writing target from a file, simply set the writing counter to zero.
 
-![Setting the Writing Target](img/writing_targets_settings.png)
+![Setting the Writing Target](../img/writing_targets_settings.png)
 
 ### Sorting
 
 If you want to sort directories, you can do this from within the file list. Simply move the mouse over any directory and two indicators will appear showing you the current state of sorting. Click on the first (with an arrow from A to Z) to toggle the sorting by name. The second toggles the sorting by the last modification time. Subdirectories will not be sorted this way — only files.
 
-![sorting_indicators.png](img/sorting_indicators.png)
+![sorting_indicators.png](../img/sorting_indicators.png)
 
 
 Also you can traverse the directory tree by clicking on the directories. A simple click will select the directory, while an `ALT`-click will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.

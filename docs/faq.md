@@ -10,7 +10,7 @@ We are getting more and more requests concerning mobile versions of Zettlr. We a
 
 **What is Markdown?**
 
-Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](markdown-basics.md)!
+Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](reference/markdown-basics.md)!
 
 **If I don't want to use Zettlr anymore, what would I need to do to switch programs?**
 

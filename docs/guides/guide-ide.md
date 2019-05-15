@@ -1,6 +1,6 @@
 # Guide: Zettlr as an Integrated Development Environment (IDE)
 
-![Zettlr as an IDE](img/zettlr_ide.png)
+![Zettlr as an IDE](../img/zettlr_ide.png)
 
 Zettlr is full with functions that help your workflow. You can use it as a small note-taking app, as a Zettelkasten, or, as explained in this guide, as a fully loaded integrated development (read: writing) environment. So let's get started!
 
@@ -35,8 +35,8 @@ Here are all resources that may be interesting for you:
 
 - [Guide: Zettlr as Zettelkasten](guide-zettelkasten.md)
 - [Guide: Zettlr as Note-Taking App](guide-notes.md)
-- [Zettlr Projects](projects.md)
-- [Virtual Directories](virtual-directories.md)
-- [Create Presentations with Zettlr](presentations.md)
-- [Markdown for Zettlr](markdown-basics.md)
-- [Exporting to PDF](export.md)
+- [Zettlr Projects](../academic/projects.md)
+- [Virtual Directories](../core/virtual-directories.md)
+- [Create Presentations with Zettlr](../academic/presentations.md)
+- [Markdown for Zettlr](../reference/markdown-basics.md)
+- [Exporting to PDF](../core/export.md)

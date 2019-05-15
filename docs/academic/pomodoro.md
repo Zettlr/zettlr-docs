@@ -4,7 +4,7 @@ If you write a lot, the time may come that you need to organise your time better
 
 Access the Pomodoro-Timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
 
-![Pomodoro Timer](img/pomodoro_init.png)
+![Pomodoro Timer](../img/pomodoro_init.png)
 
 Don't know what a pomodoro timer is? Then head over to [the official website](https://francescocirillo.com/pages/pomodoro-technique)!
 
@@ -24,7 +24,7 @@ Click on **Start** to begin the timer. Then, the circle will be filled with the 
 
 To **Stop** the timer or simply review the current **status** of the timer, click on the circle again. A small popup will tell you the remaining amount of time for the current phase, the type of the current phase and give you the option to stop.
 
-![Pomodoro Timer during Run](img/pomodoro_run.png)
+![Pomodoro Timer during Run](../img/pomodoro_run.png)
 
 The **cycle** of the pomodoro timer is as follows:
 

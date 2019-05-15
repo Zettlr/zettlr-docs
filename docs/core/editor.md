@@ -19,7 +19,7 @@ A Markdown-Document only consists of pure text and comes with a lot of benefits:
 * Markdown documents only contain the bare necessity of formatting to help apps understand it. Therefore **Markdown documents are approximately ten times smaller than conventional word processor formats**!
 * And many more …
 
-> If you want to know exactly what Markdown can do and what it can't, refer to the [**Markdown** section](markdown-basics.md).
+> If you want to know exactly what Markdown can do and what it can't, refer to the [**Markdown** section](../reference/markdown-basics.md).
 
 ## Editing text
 
@@ -40,7 +40,7 @@ Of course it's mandatory that you can also work with formatted text. For instanc
 
 Next, at some point you want to copy some text from Zettlr but in a way that other apps can understand its format. To copy the text not as Markdown, but with a common format, you need to select `Copy as HTML`. The shortcut is `Cmd/Ctrl+Alt+C`.
 
-> Refer to the section on [Shortcuts](shortcuts.md), to get a list of all available shortcuts.
+> Refer to the section on [Shortcuts](../reference/shortcuts.md), to get a list of all available shortcuts.
 
 ## Special features of CodeMirror
 

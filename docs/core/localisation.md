@@ -33,4 +33,4 @@ The dictionary consists of two files, one is a `.dic`-file, and the other is an 
 
 ## Translate the App
 
-To help translate the app, please refer to the [Get Involved page](get-involved.md).
+To help translate the app, please refer to the [Get Involved page](../get-involved.md).

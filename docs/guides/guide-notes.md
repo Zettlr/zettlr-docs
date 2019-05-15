@@ -1,6 +1,6 @@
 # Guide: Zettlr as a note-taking app
 
-![Zettlr as a Note-Taking app](img/zettlr_notes.png)
+![Zettlr as a Note-Taking app](../img/zettlr_notes.png)
 
 You want to use Zettlr as a means to take notes with. Although Zettlr has a lot more features, it is designed as a slim and minimal app, so configuring Zettlr as a note-taking app is easy. This guide shows you what settings you should use and how to actually take notes.
 
@@ -60,4 +60,4 @@ Now that all your folders are set and you have a general idea of how your filena
 
 ## Next: Markdown Tutorial
 
-Now you may be interested in knowing how to write fast and efficiently using Zettlr. Head over to our [Markdown tutorial](markdown-basics.md)!
+Now you may be interested in knowing how to write fast and efficiently using Zettlr. Head over to our [Markdown tutorial](../reference/markdown-basics.md)!
