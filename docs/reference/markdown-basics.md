@@ -59,7 +59,7 @@ Headings are straightforward. They must be put on their own line and have to be 
 Of course, just as in word processors you can use inline-formatting, such as **bold** or _italic_ text, or `monospaced` (code) text.
 
 - `**your text**` — yields bold text
-- `_your text_` — yields bold text
+- `_your text_` — yields italic text
 - \`your text\` — yields monospaced text
 
 ### Block elements
