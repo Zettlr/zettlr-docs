@@ -16,7 +16,7 @@ The first step is to install [the BetterBibTex-plugin for Zotero](https://github
 
 After you've installed BetterBibTex, you may want to play around a little bit with the settings (for instance in how the IDs are generated).
 
-> **Attention!** There are two undocumented behaviours in BetterBibTex. First, the available variables you can use to generate your own citation IDs. They are only [documented in the JabRef documentation, which you can find here](http://help.jabref.org/en/BibtexKeyPatterns). The second behaviour is that BetterBibTex will automatically use letters from a to z to make citations from the same author in the same year unique (e.g. you'll have something like `Harvey2005a`, `Harvey2005b`, `Harvey2005c`, and so forth).
+> **Tip**: BetterBibTex automatically generates unique keys using an algorithm that you can customise. For most part, it makes use of the established [JabRef Patterns](http://help.jabref.org/en/BibtexKeyPatterns) but extends them significantly. It will even make sure that each entry is unique by optionally adding a suffix to puplications which yield the same keys (e.g. you'll have something like `Harvey2005a`, `Harvey2005b`, `Harvey2005c`, and so forth). You can find [all abilities of BetterBibTex in the plugin's extensive documentation](https://retorque.re/zotero-better-bibtex/citation-keys/).
 
 ### Step 2: Export your library
 
