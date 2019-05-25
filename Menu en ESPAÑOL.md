@@ -10,7 +10,7 @@ Author: Hendrik Erz
 (C) 2017-2019 by Zettlr
 
 Navegación:
-  - [Bienvenido](../../docs/index-es.md)
+  - [Bienvenido](tree/master/docs/index-es.md)
   - [Configuración](../../docs/install-es.md)
   - [Inicio rápido](../../docs/5-minutos-es.md)
   - Guías
