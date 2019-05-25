@@ -10,34 +10,34 @@ extra_css:
   - assets/app.css
 nav:
   - Bienvenido: index-es.md
-  - Configuración: install.md
-  - Inicio rápido: 5-minutos.md
+  - Configuración: install-es.md
+  - Inicio rápido: 5-minutos-es.md
   - Guías:
-    - Zettlr como aplicación para tomar notas: guides/guide-notes.md
-    - Zettlr as a Zettelkasten(fichero): guides/guide-zettelkasten.md
-    - Zettlr como IDE: guides/guide-ide.md
+    - Zettlr como aplicación para tomar notas: guides/guide-notes-es.md
+    - Zettlr as a Zettelkasten(fichero): guides/guide-zettelkasten-es.md
+    - Zettlr como IDE: guides/guide-ide-es.md
   - Núcleo:
 
-    - El Editor: core/editor.md
-    - La Lista de archivos: core/file-list.md
-    - Búsqueda: core/search.md
-    - Exportación: core/export.md
-    - Carpetas Virtuales: core/virtual-directories.md
-    - CSS personalizado: core/custom-css.md
-    - Localización: core/localisation.md
+    - El Editor: core/editor-es.md
+    - La Lista de archivos: core/file-list-es.md
+    - Búsqueda: core/search-es.md
+    - Exportación: core/export-es.md
+    - Carpetas Virtuales: core/virtual-directories-es.md
+    - CSS personalizado: core/custom-css-es.md
+    - Localización: core/localisation-es.md
   - Herramientas Académicas:
-    - Citas: academic/citations.md
-    - Proyectos: académico/proyectos.md
-    - Métodos de Zettelkasten: académico/zkn-method.md
-    - Presentaciones: académicas/presentaciones.md
-    - Temporizador Pomodoro: academic/pomodoro.md
+    - Citas: academic/citations-es.md
+    - Proyectos: academic/projects-es.md
+    - Métodos de Zettelkasten: academic/zkn-method-es.md
+    - Presentaciones: academic/presentacions-es.md
+    - Temporizador Pomodoro: academic/pomodoro-es.md
   - Referencias:
-    - Accesos directos: referencia/accesos directos.md
-    - Conceptos básicos de Markdown: reference/markdown-basics.md
-    - Ajustes: referencia/ajustes.md
-    - Corrección ortográfica: reference/spell-checking.md
-  - Participa: get-involved.md
-  - FAQ: faq.md
+    - Accesos directos: reference/shortcuts-es.md
+    - Conceptos básicos de Markdown: reference/markdown-basics-es.md
+    - Ajustes: reference/settings-es.md
+    - Corrección ortográfica: reference/spell-checking-es.md
+  - Participa: get-involved-es.md
+  - FAQ: faq-es.md
 tema:
   name: readthedocs
   custom_dir: theme_override
