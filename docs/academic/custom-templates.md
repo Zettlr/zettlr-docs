@@ -33,21 +33,21 @@ After the file has been prepared, it will be saved to a temporary location.
 
 After the file is ready, Zettlr will read in the template and write it to a temporary file. In this step, a number of variables within the template will be replaced. These are as follow:
 
-- `\$PAGE_NUMBERING$`: The pagenumbering that you've chosen in the PDF preferences, e.g. Arabic Numbers.
-- `\$PAPER_TYPE$`: The paper that you've chosen, e.g. `a4paper`.
-- `\$TOP_MARGIN$`: The top pagemargin that you've provided (e.g. 3cm).
-- `\$RIGHT_MARGIN$`: The right page margin that you've provided (e.g. 3cm).
-- `\$BOTTOM_MARGIN$`: The bottom page margin that you've provided (e.g. 3cm).
-- `\$LEFT_MARGIN$`: The left page margin that you've provided (e.g. 3cm).
-- `\$MAIN_FONT$`: The main font (for most text) that you've provided (e.g. Times New Roman)
-- `\$SANS_FONT$`: The secondary font (mostly for headings) that you've provided (e.g. Arial)
-- `\$LINE_SPACING$`: The line spacing, provided by you (e.g. 150 %).
-- `\$FONT_SIZE$`: The font size provided by you (e.g. 12pt).
-- `\$PDF_TITLE$`: The PDF title (either the filename or custom, if exporting a project).
-- `\$PDF_SUBJECT$`: The PDF subject.
-- `\$PDF_AUTHOR$`: The PDF author meta information.
-- `\$PDF_KEYWORDS$`: Keywords for the PDF file.
-- `\$TITLEPAGE$`: Either an empty string or `\\maketitle\n\\pagebreak\n`, if you're exporting a project with the titlepage option on.
+- `$PAGE_NUMBERING$`: The pagenumbering that you've chosen in the PDF preferences, e.g. Arabic Numbers.
+- `$PAPER_TYPE$`: The paper that you've chosen, e.g. `a4paper`.
+- `$TOP_MARGIN$`: The top pagemargin that you've provided (e.g. 3cm).
+- `$RIGHT_MARGIN$`: The right page margin that you've provided (e.g. 3cm).
+- `$BOTTOM_MARGIN$`: The bottom page margin that you've provided (e.g. 3cm).
+- `$LEFT_MARGIN$`: The left page margin that you've provided (e.g. 3cm).
+- `$MAIN_FONT$`: The main font (for most text) that you've provided (e.g. Times New Roman)
+- `$SANS_FONT$`: The secondary font (mostly for headings) that you've provided (e.g. Arial)
+- `$LINE_SPACING$`: The line spacing, provided by you (e.g. 150 %).
+- `$FONT_SIZE$`: The font size provided by you (e.g. 12pt).
+- `$PDF_TITLE$`: The PDF title (either the filename or custom, if exporting a project).
+- `$PDF_SUBJECT$`: The PDF subject.
+- `$PDF_AUTHOR$`: The PDF author meta information.
+- `$PDF_KEYWORDS$`: Keywords for the PDF file.
+- `$TITLEPAGE$`: Either an empty string or `\\maketitle\n\\pagebreak\n`, if you're exporting a project with the titlepage option on.
 - `\$GENERATE_TOC$`: Either an empty string or `\\setcounter{tocdepth}{<number>}\n\\tableofcontents\n\\pagebreak\n`, if you're exporting a project with the option checked to generate a table of contents. `<number>` will be replaced with the level (1 to 6).
 
 These variables will be replaced globally, meaning that if the variable `\$PDF_AUTHOR$` is found multiple times in the template, it will be replaced each time.
@@ -76,7 +76,7 @@ Now it's time to get to building a template! You can either use an external edit
 
 Oh boy, do we have good news. If you create a new file, but **provide as the file extension `.tex`**, Zettlr will not create a Markdown file but an actual LaTeX file! This file will be indicated with a small `TeX`-indicator in the file list (if file meta is turned on) and can be edited from within Zettlr. Hooray!
 
-![Zettlr with a TeX file open](/Users/hendrik/Nextcloud/zettlr-docs/docs/img/zettlt_tex_file.png)
+![Zettlr with a TeX file open](../img/zettlt_tex_file.png)
 
 Zettlr will automatically detect if it's a LaTeX file and even switch the code highlighting from Markdown to LaTeX to help you write the file!
 
