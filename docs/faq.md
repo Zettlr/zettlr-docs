@@ -63,6 +63,14 @@ On macOS you can easily find the path by opening up `Terminal.app` (it's in your
 
 On Linux distributions, you also need to open up a Command Line/Terminal and use the same commands as on macOS: `which pandoc` for Pandoc and `which xelatex` for LaTeX.
 
+**On Export, Zettlr says the PDF-Engine wasn't recognised!**
+
+This is a common Pandoc error, indicating that your Pandoc version is pre-2.x. When Zettlr presents you the following error message, it means you need to update to Pandoc 2.x:
+
+`pandoc: unrecognized option '--pdf-engine=xelatex' Try pandoc --help for more information.`
+
+The reason is that with Pandoc 2.0, the older option `--latex-engine` was renamed to `--pdf-engine`. [See more in Pandoc's changelog](https://github.com/jgm/pandoc/blob/master/changelog#L4349).
+
 **I found a bug!**
 
 That's great news! Well, not great, but it's good that you found it! In this case please head over to [GitHub](https://github.com/Zettlr/Zettlr/) and open up an issue so that we know what's up and can work to resolve the bug.
