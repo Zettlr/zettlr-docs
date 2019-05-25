@@ -1,6 +1,6 @@
 # Que demonios es un _Zettelkasten_ (fichero)?
 
-Mucha gente que encuentra nuestra página en busqueda de instrucciones sobre dicho tema, nos pregunta implícitamente qué es un [_Zettelkasten_](https://www.zettelkasten.de/) [enlace en inglés]. En este post tratamos de aclarar algunos conceptos erróneos comunes sobre lo que es un _Zettelkasten_  (fichero) y os invitamos a ver nuestro nuevo vídeo sobre lo que es de verdad (vídeo en inglés).[^1]
+Mucha gente que encuentra nuestra página en búsqueda de instrucciones sobre dicho tema, nos pregunta implícitamente qué es un [_Zettelkasten_](https://www.zettelkasten.de/) [enlace en inglés]. En este post tratamos de aclarar algunos conceptos erróneos comunes sobre lo que es un _Zettelkasten_  (fichero) y os invitamos a ver nuestro nuevo vídeo sobre lo que es de verdad (vídeo en inglés).[^1]
 
 Publicado en _Guías_ el 21 de Marzo, 2019
 
