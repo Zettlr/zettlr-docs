@@ -1,0 +1,56 @@
+site_name: Zettlr Docs
+site_url: https://docs.zettlr.com
+repo_url: https://github.com/Zettlr/zettlr-docs
+site_description: Nuestra documentación completa te proporciona todo lo que necesitas saber sobre cómo sacar el máximo provecho de Zettlr.
+site_author: Hendrik Erz
+copyright: "&copy; 2017-2019 by Zettlr"
+docs_dir: docs
+site_dir: build
+extra_css:
+  - assets/app.css
+nav:
+  - Bienvenido: index-es.md
+  - Configuración: install.md
+  - Inicio rápido: 5-minutos.md
+  - Guías:
+    - Zettlr como aplicación para tomar notas: guides/guide-notes.md
+    - Zettlr as a Zettelkasten(fichero): guides/guide-zettelkasten.md
+    - Zettlr como IDE: guides/guide-ide.md
+  - Núcleo:
+
+    - El Editor: core/editor.md
+    - La Lista de archivos: core/file-list.md
+    - Búsqueda: core/search.md
+    - Exportación: core/export.md
+    - Carpetas Virtuales: core/virtual-directories.md
+    - CSS personalizado: core/custom-css.md
+    - Localización: core/localisation.md
+  - Herramientas Académicas:
+    - Citas: academic/citations.md
+    - Proyectos: académico/proyectos.md
+    - Métodos de Zettelkasten: académico/zkn-method.md
+    - Presentaciones: académicas/presentaciones.md
+    - Temporizador Pomodoro: academic/pomodoro.md
+  - Referencias:
+    - Accesos directos: referencia/accesos directos.md
+    - Conceptos básicos de Markdown: reference/markdown-basics.md
+    - Ajustes: referencia/ajustes.md
+    - Corrección ortográfica: reference/spell-checking.md
+  - Participa: get-involved.md
+  - FAQ: faq.md
+tema:
+  name: readthedocs
+  custom_dir: theme_override
+  highlightjs: True
+  prev_next_buttons_location: both
+  hljs_languages:
+    - javascript
+    - css
+    - yaml
+    - tex
+markdown_extensions:
+    - toc:
+        permalink: True
+plugins:
+  - búsqueda:
+      lang: es
