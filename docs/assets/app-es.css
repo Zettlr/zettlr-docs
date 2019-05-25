@@ -1,0 +1,69 @@
+/* Anular directivas para readthedocs */
+
+/*
+ * Marcado general: Usemos el verde de Zettlr en lugar del azul por defecto
+ */
+section.wy-nav-content-wrap a { color: rgb(28, 178, 126); }
+nav.wy-nav-top a, nav.my-nav-top a:active { color: white; }
+.wy-side-nav-search a, .wy-side-nav-search a:visited { color: white; }
+
+section.wy-nav-content-wrap a:hover {
+  color: rgb(28, 178, 126);
+  text-decoration: underline;
+}
+
+/*
+ * Bloques de comillas son "mal utilizadas" como bloques de información.
+ */
+div[role="main"] blockquote {
+  color: white;
+  border: 1px solid #4f6e4f;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #80b480;
+  position: relative;
+  padding-left: 30px;
+}
+
+/*
+ * Como el tema usa FontAwesome de cualquier manera podemos hacer uso de él para
+ * mostrando un pequeño icono (i).
+ */
+div[role="main"] blockquote::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #4f6e4f;
+  font-style: normal;
+  content: "\f05a";
+}
+
+/*
+ * El analizador agrega un párrafo dentro del bloque de comillas, por lo que tenemos que eliminar la opción
+ * margen inferior en estos.
+ */
+div[role="main"] blockquote p { margin-bottom: 0px; }
+
+/*
+ * Los enlaces en estas cajas deben tener colores diferentes.
+ */
+div[role="main"] blockquote a { color: rgb(87, 87, 87); }
+div[role="main"] blockquote a:hover {
+  color: rgb(87, 87, 87);
+  text-decoration: underline;
+}
+
+/*
+ * Barra de navegación listo para móvil
+ */
+.wy-side-nav-search, .wy-nav-top { background-color: rgb(28, 178, 126); }
+.wy-menu-vertical a:active { background-color: rgb(28, 178, 126); }
+
+/*
+ * Esta es una animación para que el cambio de la navegación en el móvil se realice sin problemas.
+ */
+.wy-nav-side, .wy-nav-content-wrap { transition: 0.5s left ease; }
+
+/* Tenemos que preseleccionar el div con 0 a la izquierda para que la animación funcione */
+.wy-nav-content-wrap { left: 0%; }
