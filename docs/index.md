@@ -1,5 +1,7 @@
 # Zettlr Documentation
 
+> [Documentación Zettlr en español (mantenido por ScaredCoward)](https://github.com/ScaredCoward/zettlr-docs/blob/master/Menu%20en%20ESPA%C3%91OL.md)
+
 Thank you for choosing Zettlr as your reliable writing companion. On these pages, we help you get started with the app to supercharge your own writing. If you haven't yet gotten your own copy of Zettlr, [head over to the download page](https://www.zettlr.com/download) and get it for your operating system!
 
 ## Getting Started
