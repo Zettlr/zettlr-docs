@@ -2,7 +2,7 @@
 
 **Intenté instalar Zettlr en Windows/macOS, pero hay una advertencia de seguridad que dice que no debería instalar la aplicación.**
 
-Ambos, Windows y macOS requieren la llamada "firma de código" para poder confiar en la aplicación. Mientras eso es una excelente técnica para que código malicioso no dañe tu sistema, eso requiere una tasa anual de suscripción. Por dicha tasa los compilados de Zettlr _no_ están firmados y por eso producen advertencias. Está seguro instalar Zettlr e ignorar estás advertencias siempre y cuando descargas de nuestra pagina.
+Ambos, Windows y macOS requieren la llamada "firma de código" para poder confiar en la aplicación. Mientras eso es una excelente técnica para que código malicioso no dañe tu sistema, eso requiere una tasa anual de suscripción. Por dicha tasa los compilados de Zettlr _no_ están firmados y por eso producen advertencias. Es seguro instalar Zettlr e ignorar estás advertencias siempre y cuando descargas de nuestra pagina.
 
 **¿Hay planes para portar Zettlr a teléfonos móviles, tablets, a Android u iOS?**
 
