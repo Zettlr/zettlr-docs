@@ -44,7 +44,7 @@ Por último, pero por ello no menos importante, Zettlr puede cambiar automática
 
 La pestaña editor controla la mayoría de las funciones del editor. La lista a la izquierda contiene todos los diccionarios disponibles que se pueden usar para revisar la ortografía. Simplemente selecciona los que deseas utilizar. Puedes utilizar varios diccionarios ala vez para comprobar textos bilingües. Filtra la lista utilizando el cuadro de búsqueda en la parte superior de la lista.
 
-> Una pista: Para desactivar la corrección ortográfica, desmarca todos los diccionarios. Para instalar diccionarios adicionales, consulta el [manual de localización](.../core/localisation-es.md).
+> Una pista: Para desactivar la corrección ortográfica, desmarca todos los diccionarios. Para instalar diccionarios adicionales, consulta el [manual de localización](../core/localisation-es.md).
 
 En el lado derecho de la pestaña, puedes ver algunas casillas de verificación, una entrada de texto e otra lista. En primer lugar, puedes **oscurecer las líneas no enfocadas** mientras estás en el modo libre de distracción. Esto significa que Zettlr atenúa todas las líneas excepto aquella en la que se encuentra el cursor. La siguiente opción te permite **cerrar automáticamente ciertos pares de caracteres**.
 
