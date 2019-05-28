@@ -31,7 +31,7 @@ Escribir depende de ti, pero los accesos directos más importantes son los sigui
 Cosas que no son accesos directos, pero igualmente importante:
 
 - Usa símbolos `#` para crear títulos. La cantidad de símbolos `#` está equivalente al nivel del titulo. Lo máximo son 6.
-- Usa símbolos `>` para crear citas en bloque. También puedes usar multiples símbolos en cascada para crear símbolos de "más grande que" (p. ej. `> >`).
+- Usa símbolos `>` para crear citas en bloque. También puedes usar múltiples símbolos en cascada para crear símbolos de "más grande que" (p. ej. `> >`).
 - Usa símbolos `#` _sin_ espacio después para crear tags (etiquetas). Puedes usarlas para la búsqueda y navegación.
 
 ## 4. ¿Que más?
