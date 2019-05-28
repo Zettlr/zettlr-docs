@@ -62,11 +62,11 @@ Seleccionando "Eliminar los ID de ZKN (Zettelkasten; fichero) de los archivos" h
 
 > Te recomendamos que dejas desactivada la opción de eliminar los identificadores de Zettelkasten de tus archivos, a menos que sepas lo que está haciendo. Algunos sitios web producen enlaces que contienen 14 dígitos consecutivos, y Zettlr sólo caminará a través de los archivos eliminando todo lo que la expresión regular de tu ID detecte, ¡así que puede romper los enlaces!
 
-Debajo de estas opciones puedes elegir qué hacer con los enlaces internos (por defecto están encapsulados en `[[`` y `]]`). La primera opción los elimina por completo, la segunda sólo elimina el formato del enlace, mientras que la última opción los deja en paz.
+Debajo de estas opciones puedes elegir qué hacer con los enlaces internos (por defecto están encapsulados en `[[` y `]]`). La primera opción los elimina por completo, la segunda sólo elimina el formato del enlace, mientras que la última opción los deja en paz.
 
 En el lado derecho tienes opciones más generales para exportar. Puedes elegir exportar tus archivos al directorio temporal. Esto es recomendable, ya que te permite dejar los archivos en paz, ya que se eliminarán automáticamente. La segunda opción almacena los archivos renderizados en el directorio actual, sobrescribiendo los archivos existentes sin preguntar. Utiliza esta opción si necesitas que los archivos estén presentes en la barra lateral de archivos adjuntos.
 
-El cuadro de base de datos CSL JSON se puede utilizar para abrir una base de datos de literatura. Zettlr leerá en el archivo y habilitará la representación de citas en tus archivos. El Estilo CSL te permite sobrescribir el estilo de citación predeterminado (APA). Puedes utilizar cualquier archivo presente en el repositorio[Zotero style repository (Repositoria de Estilo de Zotero)](https://www.zotero.org/styles).
+El cuadro de base de datos CSL JSON se puede utilizar para abrir una base de datos de literatura. Zettlr leerá en el archivo y habilitará la representación de citas en tus archivos. El Estilo CSL te permite sobrescribir el estilo de citación predeterminado (APA). Puedes utilizar cualquier archivo presente en el repositorio[Zotero style repository (Repositorio de Estilo de Zotero)](https://www.zotero.org/styles).
 
 > Las opciones de citación pueden sobrescribirse para cada proyecto en la configuración del proyecto correspondiente.
 
