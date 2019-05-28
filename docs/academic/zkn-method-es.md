@@ -4,7 +4,7 @@ Tuve la idea para desarrollar Zettlr hace unos años cuando intentamos elaborar 
 
 Originalmente, el método se basa en el sociólogo alemán Niklas Luhmann, quién diseño su propio fichero (en aquel entonces análogo) conteniendo fichas con información y algunos números. Los números podían ser usados para localizar otras fichas con otra información en alguna manera relacionada con el contenido de la primera ficha. De esta manera Luhmann podía hacer referencia por atrás y por delante entre conjuntos de fichas hasta que la caja del fichero se llenó y llegó a una masa crítica que le permitió al fichero desarrollar una "vida propia", mostrando a Luhmann conexiónes entre ciertos conceptos que él, Luhmann, no había pensado.
 
-La idea basica es, por tanto, dejarte crear erlaciones entre fichas, pequeñas notas (o bien, para aquel asunto, archivos LARGOS) no solo para permitirte mover por delante o por atrás entre archivos, pero también permitirte identificar relaciones que emergen entre tus archivos.
+La idea basica es, por tanto, dejarte crear relaciones entre fichas, pequeñas notas (o bien, para aquel asunto, archivos LARGOS) no solo para permitirte mover por delante o por atrás entre archivos, pero también permitirte identificar relaciones que emergen entre tus archivos.
 
 ## Administrar un Zettelkasten (fichero) con Zettlr
 
