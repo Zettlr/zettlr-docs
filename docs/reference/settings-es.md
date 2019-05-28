@@ -84,7 +84,7 @@ Zettlr usa expresiones regulares internamente para filtrar la ID de un archivo. 
 
 La expresión regular predeterminada (que puedes restaurar pulsando el botón de reinicio junto al cuadro de texto) es `(\d{14})`. Esto significa que Zettlr buscará 14 dígitos consecutivos - exactamente el número de dígitos que obtienes cuando concatenas un año, un mes, un día, una hora, un minuto y un segundo; así: 20181012143724. Es extremadamente improbable que un archivo contenga una segunda cadena que incluya catorce (!) dígitos, por lo que es un gran método para utilizarlo como ID. Otra gran cosa es que la ID es único para el segundo. Así que cada segundo puedes crear una ID nueva y totalmente única.
 
-Las llaves alrededor del ``d{14}` crean un llamado "grupo de captura". El propósito de un grupo de captura es que la expresión regular no sólo coincida con una determinada cadena, sino que también extraiga una parte de ella, en este caso la coincidencia completa. De esta manera puedes utilizar casi cualquier estructura de IDs que deseas.
+Las llaves alrededor del `d{14}` crean un llamado "grupo de captura". El propósito de un grupo de captura es que la expresión regular no sólo coincida con una determinada cadena, sino que también extraiga una parte de ella, en este caso la coincidencia completa. De esta manera puedes utilizar casi cualquier estructura de IDs que deseas.
 
 > Ten en cuenta que puedes omitir las llaves del grupo de captura. Zettlr encapsulará tu RegEx internamente, si no hay grupo de captura.
 
