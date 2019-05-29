@@ -21,7 +21,7 @@ Cuando John Gruber inauguró Markdown en 2004, era básicamente como decir: "¿P
 Al principio, Markdown era básicamente un pequeño script que John Gruber escribió para sí mismo para obtener estos beneficios, y contenía muchas inconsistencias y no soportaba muchos elementos diferentes. Pero paso a paso, se hicieron progresos. Dos fechas son notables:
 
 - 2004: [John Gruber](https://daringfireball.net/projects/markdown/) lanza inicialmente Markdown
-- 2012: Un grupo de desarrolladores forman [CommonMark] (https://spec.commonmark.org/) para estandarizar Markdown en una norma aceptada internacionalmente.
+- 2012: Un grupo de desarrolladores forman [CommonMark](https://spec.commonmark.org/) para estandarizar Markdown en una norma aceptada internacionalmente.
 
 ## Dialectos de Markdown
 
@@ -126,4 +126,4 @@ Se pueden implementar más idiomas a petición del cliente. Si necesitas un idio
 
 ## Recursos Markdown
 
-¿Quieres saber todo sobre Markdown? ¡Eso es genial! Un buen recurso que cubre todos los elementos se encuentra en [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). Si deseas acostumbrarte a escribir Markdown limpio e inequívoco, [mira las especificaciones de CommonMark] (https://spec.commonmark.org/0.28/). Además, hay un "libro" sobre la sintaxis de Markdown estilo GitHub. [Míralo aquí] (https://gitbookio.gitbooks.io/markdown/content/).
+¿Quieres saber todo sobre Markdown? ¡Eso es genial! Un buen recurso que cubre todos los elementos se encuentra en [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). Si deseas acostumbrarte a escribir Markdown limpio e inequívoco, [mira las especificaciones de CommonMark](https://spec.commonmark.org/0.28/). Además, hay un "libro" sobre la sintaxis de Markdown estilo GitHub. [Míralo aquí](https://gitbookio.gitbooks.io/markdown/content/).
