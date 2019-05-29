@@ -5,7 +5,7 @@ Al igual que muchas otras aplicaciones, Zettlr hace uso de `Markdown`, originalm
 1. [Una breve historia de Markdown](#Una-breve-historia)
 2. [Dialectos de Markdown](#Dialectos-de-Markdown)
 3. [Como Zettlr implementa Markdown](#Zettlr-y-Markdown)
-4. Markdown 101: Encabezados, elementos de bloque, elementos en línea, enlaces, imágenes y notas a pie de página](#Markdown-101:-Los-códigos-más-importantes)
+4. [Markdown 101: Encabezados, elementos de bloque, elementos en línea, enlaces, imágenes y notas a pie de página](#Markdown-101:-Los-códigos-más-importantes)
 5. [Más recursos](#Recursos-Markdown)
 
 ***
