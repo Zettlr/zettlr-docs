@@ -8,6 +8,10 @@ Both Windows and macOS require so-called "code-signing" in order to be able to t
 
 We are getting more and more requests concerning mobile versions of Zettlr. We are very happy that you like Zettlr enough to want having it on all your devices, and we would love to fulfil this desire! Unfortunately, though, our resources are just enough to keep the development of Zettlr up and running, but adding more work is just not possible at the moment. Of course, as soon as this changes, we will get to it!
 
+**Do you consider supporting more Linux platforms except Debian and Fedora based ones?**
+
+Due to our limited resources, we cannot support more platforms out of the box. Debian and Fedora based distributions are by far the most popular platforms, which is why we support them officially. If you would like to take upon yourself the responsibility of building Zettlr for other platforms, please get in contact with us so that we can list the additional repository on our download page!
+
 **What is Markdown?**
 
 Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](reference/markdown-basics.md)!
