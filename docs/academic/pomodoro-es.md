@@ -6,7 +6,7 @@ Accede al temporizador Pomodoro haciendo clic en el círculo en la esquina super
 
 ![Temporizador Pomodoro](../img/pomodoro_init.png)
 
-¿No sabes lo que es un temporizador Pomodoro? Entonces dirígete al [sitio web oficial de la Técnica Pomodoro] (https://francescocirillo.com/pages/pomodoro-technique)!
+¿No sabes lo que es un temporizador Pomodoro? Entonces dirígete al [sitio web oficial de la Técnica Pomodoro](https://francescocirillo.com/pages/pomodoro-technique)!
 
 ## Usar el temporizador Pomodoro
 
