@@ -66,7 +66,7 @@ Por supuesto, al igual que en los procesadores de texto, puedes utilizar el form
 
 A veces, es posible que desees enfatizar todo un bloque de texto (como una cita más larga) o crear listas. Esto también es posible y extremadamente sencillo utilizando Markdown.
 
-- Crea listas de ítems adelantando cada línea con un carácter `-`, un ``*` o un `+`. Si lo quieres, puedes mezclar estos símbolos!
+- Crea listas de ítems adelantando cada línea con un carácter `-`, un `*` o un `+`. Si lo quieres, puedes mezclar estos símbolos!
 - Las listas ordenadas necesitan números en el formato `1.` delante de ellas.
 
 > **Note**: Los números no tienen que estar en orden. En cada exportación, el convertidor automáticamente los numerará correctamente de forma ascendente, por lo que una lista con los números de lista 1, 6, 14, 2 se mostrará como una lista usando los números 1, 2, 3, 4!
