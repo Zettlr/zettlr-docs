@@ -12,7 +12,7 @@ Author: Hendrik Erz
 
 Navegación:
   - [Bienvenido](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/index-es.md)
-  - [Configuración](https://github.com/ScaredCoward/zettlr-docs/tree/master/docsdocs/install-es.md)
+  - [Configuración](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/install-es.md)
   - [Inicio rápido](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/5-minutos-es.md)
   - Guías
     - [Zettlr como aplicación para tomar notas](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/guides/guide-notes-es.md)
