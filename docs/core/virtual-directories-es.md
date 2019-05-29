@@ -25,5 +25,5 @@ Entre no ser capaz de mantener archivos fuera de su carpeta superior, se aplican
 
 1. No se pueden mover ya que están vinculados al directorio en el que se crean.
 2. Las carpetas virtuales son persistentes (es decir, se almacenan en el disco), pero por supuesto no como una especie de directorio. Se almacenan en un llamado [Dot-file] (https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory), que presenta algunos problemas.
-  1. En primer lugar: en los sistemas Windows siempre verá el archivo ``.ztr-virtual-directory`-, porque Windows no oculta archivos como todos los demás sistemas.
+  1. En primer lugar: en los sistemas Windows siempre verá el archivo `.ztr-virtual-directory`-, porque Windows no oculta archivos como todos los demás sistemas.
   2. En segundo lugar, muchos servicios en la nube no sincronizan los archivos Dot por razones de seguridad (por ejemplo, debe indicarle explícitamente a los clientes de Nextcloud que sincronicen los archivos Dot). Esto significa que si almacenas tus archivos utilizando un servicio de nube para acceder a ellos desde varios dispositivos, es probable que tus carpetas virtuales no se transfieran.
