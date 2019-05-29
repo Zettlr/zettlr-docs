@@ -16,7 +16,7 @@ Zettlr viene con un montón de clases e IDs predefinidos. Sigue la sabiduría ge
 
 Los estilos de Zettlr se dividen tanto en geometría como en el tema actual, por lo que es posible que desee seguir cambiando sólo el diseño de los elementos _sin_ cambiar **ninguna** geometría. Jugar con la geometría puede ser divertido, pero puede producir un comportamiento completamente aleatorio, ya que algunas partes de la aplicación dependen del tamaño correcto de los elementos. En caso de que cometa un error, no te preocupes: Simplemente elimina el archivo `custom.css` del directorio de datos de Zettlr. Puedes encontrar el directorio de datos de tu propio sistema mirando las rutas proporcionadas en [la documentación de instalación](../install-es.md).
 
-Las clases y los IDs en Zettlr siempre están espaciados por nombres en los componentes respectivos (a menos que sean globales), así que para realmente anular una regla tendrás que usar el espacio de nombres completo (o, si no quieres añadir muchas reglas y eres perezoso, usa la regla de anulación `!important').
+Las clases y los IDs en Zettlr siempre están espaciados por nombres en los componentes respectivos (a menos que sean globales), así que para realmente anular una regla tendrás que usar el espacio de nombres completo (o, si no quieres añadir muchas reglas y eres perezoso, usa la regla de anulación `!important`).
 
 Todo está siempre espaciado con el nombre del `body` (cuerpo), que tiene una clase `.dark` si la aplicación está actualmente en modo oscuro. Así que para asegurarse de que una cierta regla sólo se aplica mientras la aplicación está en modo oscuro, asegúrate de ponerle el prefijo `body.dark`!
 
