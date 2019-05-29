@@ -34,7 +34,7 @@ El orden de clasificación determina cómo Zettlr ordenará tus archivos interna
 
 Por último, pero por ello no menos importante, Zettlr puede cambiar automáticamente a modo claro u oscuro dependiendo de su sistema operativo:
 
-** **Apagado**: cambiar entre los modos manualmente
+* **Apagado**: cambiar entre los modos manualmente
 * **Horario**: Zettlr entrará y saldrá del modo oscuro entre el período de tiempo dado (formato de 24 horas)
 * Siga el sistema operativo**: En macOS y Windows, Zettlr puede observar los eventos del sistema operativo notificando a las aplicaciones que se están ejecutando actualmente que el modo general ha cambiado.
 
@@ -66,7 +66,7 @@ Debajo de estas opciones puedes elegir qué hacer con los enlaces internos (por 
 
 En el lado derecho tienes opciones más generales para exportar. Puedes elegir exportar tus archivos al directorio temporal. Esto es recomendable, ya que te permite dejar los archivos en paz, ya que se eliminarán automáticamente. La segunda opción almacena los archivos renderizados en el directorio actual, sobrescribiendo los archivos existentes sin preguntar. Utiliza esta opción si necesitas que los archivos estén presentes en la barra lateral de archivos adjuntos.
 
-El cuadro de base de datos CSL JSON se puede utilizar para abrir una base de datos de literatura. Zettlr leerá en el archivo y habilitará la representación de citas en tus archivos. El Estilo CSL te permite sobrescribir el estilo de citación predeterminado (APA). Puedes utilizar cualquier archivo presente en el repositorio[Zotero style repository (Repositorio de Estilo de Zotero)](https://www.zotero.org/styles).
+El cuadro de base de datos CSL JSON se puede utilizar para abrir una base de datos de literatura. Zettlr leerá en el archivo y habilitará la representación de citas en tus archivos. El Estilo CSL te permite sobrescribir el estilo de citación predeterminado (APA). Puedes utilizar cualquier archivo presente en el repositorio [Zotero style repository (Repositorio de Estilo de Zotero)](https://www.zotero.org/styles).
 
 > Las opciones de citación pueden sobrescribirse para cada proyecto en la configuración del proyecto correspondiente.
 
@@ -132,15 +132,15 @@ El área de texto a la derecha controla qué archivos se mostrarán en la barra 
 
 El comando **Pandoc** te da control total sobre el motor de exportación. El comando de allí se ejecutará en la exportación. Dispones de algunas variables para personalizar tu exportación:
 
-- "$infile$": La ruta completa y absoluta al archivo que se va a exportar.
+- `$infile$`: La ruta completa y absoluta al archivo que se va a exportar.
 - `$outfile$`: La ruta completa y absoluta al archivo resultante (incluyendo la extensión correcta).
 - `$citeproc$`: Contiene directivas para el motor `pandoc-citeproc`.
 - `$formato$`: Contiene el formato (por ejemplo, `html` o `docx`).
 - `$outflag$`: El indicador de formato para el Pandoc (por ejemplo, `-t docx`).
 - `$standalone$`: Será `-s` en caso de que el archivo necesite ser exportado de forma independiente.
-- "$toc$": Si se generará o no un índice de contenidos.
-- "$tocdepth$": Un indicador que indica el nivel hasta el cual se debe generar un índice de contenido.
-- "$tpl$": Una directiva modelo para Pandoc.
+- `$toc$`: Si se generará o no un índice de contenidos.
+- `$tocdepth$`: Un indicador que indica el nivel hasta el cual se debe generar un índice de contenido.
+- `$tpl$`: Una directiva modelo para Pandoc.
 
 > **Atención**: Muchas de estas variables se adaptan a las necesidades de Pandoc. Por supuesto, puedes cambiar completamente el programa reemplazando `pandoc` por el nombre de tu motor de exportación deseado, pero por favor ten en cuenta que necesitarás saber cómo analizar las flags de Pandoc.
 
