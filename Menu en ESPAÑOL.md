@@ -30,7 +30,7 @@ Navegación:
     - [Citas](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/academic/citations-es.md)
     - [Proyectos](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/academic/projects-es.md)
     - [Métodos de Zettelkasten](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/academic/zkn-method-es.md)
-    - [Presentaciones](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/academic/presentacions-es.md)
+    - [Presentaciones](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/academic/presentations-es.md)
     - [Temporizador Pomodoro](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/academic/pomodoro-es.md)
   - Referencias:
     - [Accesos directos](https://github.com/ScaredCoward/zettlr-docs/tree/master/docs/reference/shortcuts-es.md)
