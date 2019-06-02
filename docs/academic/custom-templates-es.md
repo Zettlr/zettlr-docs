@@ -1,4 +1,4 @@
-# Custom Templates
+# Plantilla personalizada del documento impreso
 
 Mientras que [CSS personalizado](../core/custom-css-es.md) es una gran manera de personalizar Zettlr a tu manera en cambiar el aspecto de la app, no hace que tus documentos escritos/exportados sean realmente tuyos. Una vez que termines de escribir, la estética importa tanto como el contenido. Tus ideas valen mucho por sí solas, pero sin un gran diseño y una tipografía que te invite a leer, tus ideas sufrirán.
 
