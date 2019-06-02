@@ -110,5 +110,5 @@ Este comando copiará el archivo de salida final al Escritorio del usuario ficti
 
 ## Pensamientos finales
 
-Zettlr se esfuerza por dar a sus usuarios el control total sobre lo que pueden hacer con sus archivos. Lo que hemos descrito en esta página es sólo el comienzo. No hemos intentado volvernos locos nosotros mismos, pero realmente puedes hacer grandes cosas. ¿Cómo usas las posibilidades de Zettlr para hacer cosas raras? Tell us on [Twitter](https://www.twitter.com/Zettlr), the [Forum](https://forum.zettlr.com/), or on [Reddit](https://www.reddit.com/r/Zettlr)!
+Zettlr se esfuerza por dar a sus usuarios el control total sobre lo que pueden hacer con sus archivos. Lo que hemos descrito en esta página es sólo el comienzo. No hemos intentado volvernos locos nosotros mismos, pero realmente puedes hacer grandes cosas. ¿Cómo usas las posibilidades de Zettlr para hacer cosas raras? Cuéntanos en [Twitter](https://www.twitter.com/Zettlr), el [Foro](https://forum.zettlr.com/), o en [Reddit](https://www.reddit.com/r/Zettlr)!<
 
