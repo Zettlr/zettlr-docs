@@ -42,7 +42,7 @@ $ mkdocs serve
 para poner en marcha un servidor de desarrollo local que vigilará los archivos a medida que avanzas. Para construir la página localmente, ejecuta:
 
 ```bash
-$ mkdocs construir
+$ mkdocs build
 ```
 
 Más comandos y opciones están disponibles en su [página de inicio] (https://www.mkdocs.org/).
