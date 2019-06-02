@@ -3,7 +3,7 @@
 Este repositorio contiene la documentación traducida al Castellano de la [aplicación de Markdown Zettlr](https://www.zettlr.com/). 
 (La versión oficial en inglés se encuentra aquí: [https://github.com/Zettlr/zettlr-docs](https://github.com/Zettlr/zettlr-docs))  Está alojado públicamente en GitHub para darte la oportunidad de enviar fácilmente modificaciones y ayudar a que la documentación de Zettlr se mantenga comprensiva incluso para los nuevos usuarios que necesitan ayuda para familiarizarse con Zettlr.
 
-**Si encuentras errores tipográficos, errores en nuestra información obsoleta, o tiene alguna otra información para mejorar la documentación, apreciamos todas vuestras ideas.
+**Si encuentras errores tipográficos, errores en nuestra información obsoleta, o tiene alguna otra información para mejorar la documentación, apreciamos todas vuestras ideas.**
 
 ## Cómo funciona
 
