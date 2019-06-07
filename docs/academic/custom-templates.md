@@ -21,7 +21,7 @@ Afterwards, it will save the resulting file to the temporary directory and start
 
 ### 2. Read in the Source File
 
-The obvious thing to do for Zettlr is to read in your source file. It's either the file you want to export quickly using the `Share`-feature, or the generated, concatenated file from your project. While reading the file in, it will make all image paths absolute (it won't happen if you're exporting a project, as the image paths are already absolute).
+The obvious thing to do for Zettlr is to read in your source file. It's either the file you want to export quickly using the `Share`-feature, or the generated, concatenated file from your project (see step 1). While reading the file in, it will make all image paths absolute (it won't happen if you're exporting a project, as the image paths are already absolute from step 1).
 
 Next, it will replace all tags, if you've checked the corresponding option in the preferences. In this step, it will also treat your Zettelkasten links, if applicable. It will either remove the link formatting characters (`[[` and `]]` by default) or completely remove everything. If you've turned this feature off, it will leave the links untouched. Additionally, if you've specified the respective option, it will strip all IDs.
 

@@ -10,13 +10,11 @@ Exporting files is an important interface between your notes and other people. W
 
 All exports in Zettlr, are done using the free software packages Pandoc and LaTeX. Pandoc is necessary for all exports, because everything will first be converted by it. LaTeX is only necessary for PDF export.
 
-> If Pandoc is not installed on your system, you will still be able to export to HTML. In that case, Zettlr will internally parse the file using `Showdown.js`, but this library does not support as many features as Pandoc.
-
-> Please refer to the [setup guide](../install.md)  to install Pandoc and LaTeX on your computer.
+> If Pandoc is not installed on your system, you will still be able to export to HTML. In that case, Zettlr will internally parse the file using `Showdown.js`, but this library does not support as many features as Pandoc. Please refer to the [setup guide](../install.md)  to install Pandoc and LaTeX on your computer.
 
 Zettlr will make reasonable efforts to locate both packages. If the app could not locate the binaries, it will throw an error.
 
-**In case you have installed both packages, but Zettlr still won't export**, take a look at your Preferences. In the "Advanced"-tab, there are two text fields that allow you to enter the paths to the Pandoc-executable and the "XeLaTeX"-executable. Simply put them in there, restart, and then it should work. If not, please let me know!
+**In case you have installed both packages, but Zettlr still won't export**, take a look at your Preferences. In the "Advanced"-tab, there are two text fields that allow you to enter the paths to the Pandoc-executable and the "XeLaTeX"-executable. Simply put them in there, restart, and then it should work. If not, please let us know!
 
 ![The advanced settings tab](../img/settings_advanced.png)
 

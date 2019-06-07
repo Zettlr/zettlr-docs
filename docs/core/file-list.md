@@ -4,15 +4,15 @@ Next on is the file list. The file list is something very special because it bea
 
 ## General
 
-In the extended sidebar mode, both the tree view and the file list are visible. Using the thin sidebar mode, you can always show or hide the list by pressing `Cmd/Ctrl+Shift+1`.
+In the extended sidebar mode, both the tree view and the file list are visible. Using the thin sidebar mode, you can always show or hide the list by pressing `Cmd/Ctrl+!`.
 
 > **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the sidebar modes.
 
 The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
 
-If you turned off the meta information, both directories and files will be shown as one-liners. If you activate the meta information (called "Snippets"), you will see additional information: directories will show you the amount of children they have. The files, on the other hand, show their last modification date. If they contain an ID or tags, this information will be displayed after the modification date. Hovering over the tag counter, you can see a small tooltip that shows you all tags that are in the file.
+If you turned off the meta information, both directories and files will be shown as one-liners. If you display the file information, you will see additional information: directories will show you the amount of children they have. The files, on the other hand, show their last modification date. If they contain an ID or tags, this information will be displayed after the modification date. Hovering over the tag counter, you can see a small tooltip that shows you all tags that are in the file.
 
-> You can toggle the snippets via the "View" menu or by pressing `Cmd/Ctrl+Alt+S`.
+> You can toggle the file information via the "View" menu or by pressing `Cmd/Ctrl+Alt+S`.
 
 ### Meta Information on Files
 
@@ -26,7 +26,7 @@ Since version `1.2`, Zettlr supports writing targets. To set a target, right-cli
 
 ![Writing Targets Counter](../img/writing_targets.png)
 
-> **Tip**: To remove the writing target from a file, simply set the writing counter to zero.
+> To remove the writing target from a file, simply set the writing counter to zero.
 
 ![Setting the Writing Target](../img/writing_targets_settings.png)
 

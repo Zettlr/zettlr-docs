@@ -20,7 +20,7 @@ Have a look at our user guides so that you can learn all workflows. The guides a
 
 ## Core
 
-Everyone can become very quick and efficient at his or her workflow, but can you really excel without a deep knowledge about how certain features work? Shortcuts to mundane tasks and key combinations for speeding up common tasks as well as hidden features of Zettlr are explained in the rest of the documentation. Learn how to move whole paragraphs around with two clicks or how to link to websites with only one click in these advanced guides.
+Everyone can become very quick and efficient at his or her workflow, but can you really excel without a deep knowledge about how certain features work? Shortcuts to mundane tasks and key combinations for speeding up common tasks as well as hidden features of Zettlr are explained in the rest of the documentation. Learn how to move whole paragraphs around with two clicks or how to link to websites with only one click in this detailed documentation.
 
 * [The Editor](core/editor.md)
 * [Markdown Basics](reference/markdown-basics.md)
@@ -40,6 +40,7 @@ Zettlr has been developed with academic writing in mind. Therefore, it offers a 
 * [Presentations](academic/presentations.md)
 * [Pomodoro Timer](academic/pomodoro.md)
 * [Zettelkasten Methods](academic/zkn-method.md)
+* [Custom LaTeX Templates](academic/custom-templates.md)
 
 ## Get involved!
 

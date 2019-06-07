@@ -11,14 +11,12 @@ Zettlr is full with functions that help your workflow. You can use it as a small
 The first step is to adjust some of the parameters of Zettlr. So hit `Cmd/Ctrl+,` or press the cog in the toolbar to open the settings dialog. Adjust the following settings:
 
 - General Tab
-    - Text Snippets: On
+    - File Information: On
     - Sidebar mode: Expanded
 - Editor Tab
     - Select all dictionaries for languages in which you will write (e.g., en-UK, de-DE, and fr-FR)
 - Export Tab
     - Select the Current Working Directory as the export directory
-    - Remove ZKN IDs: On
-    - Remove Tags: On
     - Remove internal links completely
 - Zettelkasten Tab
     - Adjust the settings according to the Zettelkasten-Guide

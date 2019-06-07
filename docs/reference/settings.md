@@ -48,6 +48,8 @@ The editor tab controls most functionality of the editor. The list to the left c
 
 On the right hand side of the tab, you can see some checkboxes, a text input, and another list. First you can **mute non-focused lines** while you are in the distraction free mode. This means that Zettlr dims all lines except the one where your cursor is. The next option allows you to **automatically close certain character pairs**.
 
+The third option only applies to users using a keyboard that features the `Home` and `End` keys. If you press them, the default CodeMirror behaviour is to move the cursor to the beginning or end respectively of a whole paragraph (i.e.: the beginning and end of a _logical_ line). If you want CodeMirror to only move to the beginning and end of the _visible_ line, make sure to turn off this option. If you make use of the hard-wrap feature of Markdown, and always manually wrap a paragraph, this setting won't have any effect for you.
+
 The **default image path** is a path you can use to tell Zettlr where it should put your images when you paste them from clipboard. It can be absolute or relative. If you provide the name `assets`, Zettlr would put images by default into the `assets` subdirectory of the directory where your file is. You can even tell it to use a directory relative to the parent directory, e.g. `../assets`. Remember that you can always select the directory for an image on a case-by-case basis.
 
 Finally, the list on the right hand side of the tab displays all the words you've added to your custom dictionary. Click them to remove them from your user dictionary.

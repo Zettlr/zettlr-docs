@@ -13,7 +13,7 @@ Zettlr can be used as a sophisticated Zettelkasten system implementing a lot of 
 The first thing you want to do to create your Zettelkasten is to have a look at your preferences. The following settings convert Zettlr into a supercharged Zettelkasten:
 
 - General tab
-    - Turn the snippets on
+    - Turn the file information on
     - Sidebar: Thin mode.
 - Editor tab
     - Turn off all dictionaries

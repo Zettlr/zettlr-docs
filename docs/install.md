@@ -52,7 +52,7 @@ On macOS, Pandoc can be installed in a variety of ways.
 
 #### Recommended method: Homebrew
 
-The preferred method is [Homebrew](https://brew.sh/). Homebrew is a packet manager that makes it easy to install command line programs such as pandoc and makes it easy to maintain it. Make sure to [install Homebrew correctly](https://brew.sh/), and then simply run the following command in the Terminal:
+The preferred method is [Homebrew](https://brew.sh/). Homebrew is a packet manager that makes it easy to install command line programs such as pandoc and makes it easy to maintain it. Make sure to [install Homebrew](https://brew.sh/), and then simply run the following command in the Terminal:
 
 ```bash
 $ brew install pandoc

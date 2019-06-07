@@ -1,14 +1,18 @@
 # Citing with Zettlr
 
-Starting with version `1.0.0`, it's possible to cite sources directly using Zettlr. This feature makes writing academic papers a lot easier than in the past, because you don't need to circumvent the Zettlr export function to actually cite academic papers anymore, but use it directly!
+Starting with version `1.0.0`, it's possible to cite sources directly using Zettlr. This feature makes writing academic papers a lot easier than in the past, because you don't need to circumvent the Zettlr export function to actually cite academic papers anymore!
 
-Citing in Zettlr is done using `citeproc-js`, a library that works exactly like, for instance, pandoc's citeproc-engine, or Zotero. So what you will be seeing in Zettlr matches what Zotero's Word or LibreOffice plugins generate. Zettlr's citation engine is composed of three components: A CSL JSON library which contains all items that can be cited, optionally a CSL Stylesheet which can alter Zettlr's default citation style (which is the [American Psychological Association's 6th edition](https://www.apastyle.org/manual/index), short: APA), and a preview engine. This guide will help you enable citations and produce beautifully looking files (not just PDF!) that contain correct and consistent citations.
+Citing in Zettlr is done using `citeproc-js`, a library that works exactly like, for instance, pandoc's citeproc-engine, or Zotero. So what you will be seeing in Zettlr matches what Zotero's Word or LibreOffice plugins generate. Zettlr's citation engine is composed of three components: A CSL JSON or BibTex library which contains all items that can be cited, optionally a CSL Stylesheet which can alter Zettlr's default citation style (which is the [American Psychological Association's 6th edition](https://www.apastyle.org/manual/index), short: APA), and a preview engine. This guide will help you enable citations and produce beautifully looking files (not just PDF!) that contain correct and consistent citations.
+
+> Beginning from `1.3.0`, you can also use BibTex libraries to cite.
 
 ## Enabling Citations in Zettlr
 
-There are two different engines that belong to the realm of citing: the previews (citations can be previewed just as images or links) and the actual process of generating citations (which happens only on export). Both of these functions are triggered by selecting a CSL JSON library that contains references. Without such a library, Zettlr will still "preview" citations (so that you can see what will trigger pandoc's citeproc), but Zettlr won't replace the citation's contents with a generated citation. Also, if you do not specify such a library, Zettlr will _not_ run Pandoc with its citeproc-engine, and therefore will not parse the citations.
+There are two different engines that belong to the realm of citing: the previews (citations can be previewed just as images or links) and the actual process of generating citations (which happens only on export). Both of these functions are triggered by selecting a citation library that contains references. Without such a library, Zettlr will still "preview" citations (so that you can see what will trigger pandoc's citeproc), but Zettlr won't replace the citation's contents with a generated citation. Also, if you do not specify such a library, Zettlr will _not_ run Pandoc with its citeproc-engine, and therefore will not parse the citations.
 
 So the first step is to create such a file. Zotero is the recommended application for managing your library, so this tutorial will assume you use Zotero. If you use another program, please check out how to export from your software to the CSL JSON format.
+
+> If you use Mendeley, Citavi, or any other references management software that does not export to CSL JSON, you can simply use BibTex-files. They will work the same way as CSL JSON files.
 
 ### Step 1: Install BetterBibTex
 
@@ -32,7 +36,7 @@ If you ticked the checkbox, you can check the status of the library file by open
 
 ### Step 3: Open your library in Zettlr
 
-Now it is time to import your library to Zettlr. To do so, simply open Zettlr's preferences, go to the `Export`-tab and click the small folder-icon right to the `CSL JSON Database`-input field. A dialog will appear that lets you navigate to your database file. Select it, save the preferences and Zettlr will automatically load the database. Now you are ready to cite!
+Now it is time to import your library to Zettlr. To do so, simply open Zettlr's preferences, go to the `Export`-tab and click the small folder-icon right to the `Citation Database`-input field. A dialog will appear that lets you navigate to your database file. Select it, save the preferences and Zettlr will automatically load the database. Now you are ready to cite!
 
 ![Point Zettlr to your database file](../img/settings_export.png)
 

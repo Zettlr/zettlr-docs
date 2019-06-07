@@ -14,6 +14,8 @@ After opening a directory, you need a file. Hit `Cmd/Ctrl+N` to create a new fil
 
 ![create.png](img/create.png)
 
+> You can not only add Markdown files! If you do not provide an extension, Zettlr will add the extension `.md` for you. But you can also create `.txt`-files and `.tex`-files, you just need to provide that file extension!
+
 ## 3. Write!
 
 Writing is up to you, but here's the most important keystrokes to remember:
@@ -36,7 +38,7 @@ Things without keystrokes, but also important:
 
 ## 4. What else?
 
-Move the mouse to the top-left corner of the file list and click the arrow to show the directory tree. Or select the "extended" side pane mode to have both the file list and the directory tree visible at once. You can also use both `Cmd/Ctrl+1` and `Cmd/Ctrl+2`.
+If you use the thin sidebar mode (the default), you will see either the file list or the directory tree. Move the mouse to the top-left corner of the file list and click the arrow to show the directory tree. To toggle between file list and directory tree, you can also hit `Cmd/Ctrl+!`. Choose the extended sidebar mode in the preferences to have both the file list and the directory tree visible at once.
 
 ![back.png](img/back.png)
 

@@ -10,7 +10,7 @@ The first function has already been mentioned on multiple occasions. As the prev
 
 If you are searching for specific phrases or words inside your currently opened file, just press `Cmd/Ctrl+F`. A small popup will open underneath the magnification symbol providing you with the common search and replace options. Just type something and hit `Enter` repeatedly to cycle through the matches. Press `ESC` or click outside the popup to close the search.
 
-> **Tip**: You can also make use of powerful regular expressions for searching. Zettlr by default performs a default search, but when a regular expression is detected (i.e. your search is encapsulated with slashes), it will perform a RegExp-search. Once Zettlr has detected a regular expression, the search field will change its font to monospace to help you write your regular expression. To search for all digits, for instance, you'd search for `/\\d+/`. [Learn more about JavaScript regular expressions](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91) here.
+> **Tip**: You can also make use of powerful regular expressions for searching. Zettlr by default performs a default search, but when a regular expression is detected (i.e. your search is encapsulated with slashes), it will perform a RegExp-search. Once Zettlr has detected a regular expression, the search field will change its font to monospace to help you write your regular expression. To search for all digits, for instance, you'd search for `/\d+/`. [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
 
 If you press `Enter` while the replace input is focused, Zettlr will replace the current search result and automatically highlight the next occurrence of your search term. Hit `Enter` repeatedly to replace multiple occurrences. If you want to replace all occurrences at once, you can hit `Alt+Enter` while the replace input has focus.
 
@@ -32,7 +32,7 @@ Of course, you can chain all of these operators. So you could search for `"Boat 
 
 Don't worry if you do not remember the complete word you are searching for: Zettlr will try to match your search terms also to partial words, so the word "trooper" would also match "Stromtrooper" as well as "Troopership" as would the phrase "Boat Ship" also match a "Steamboat Ship". **Searches are also case-insensitive**. So you don't have to worry about little typos you may have in some files.
 
-While Zettlr is searching, it will display a search indicator to the right of the search box. Once it is done, it will colour all of your files. The more green-ish they are, the more relevant they are (i.e. the more high-quality matches have been inside that file). This is kind of a **heat map for search results** letting you easily identify the relevant files for your search.
+While Zettlr is searching, it will display a search indicator to the right of the search box. Once it is done, it will colour all of your files. The more green-ish they are, the more relevant they are (i.e. the more high-quality matches have been found inside that file). This is kind of a **heat map for search results** letting you easily identify the relevant files for your search.
 
 > Please note that Zettlr will hide all files in which the search terms did never match, as well as all directories.
 
