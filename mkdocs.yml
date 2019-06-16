@@ -21,6 +21,7 @@ nav:
     - The File List: core/file-list.md
     - Searching: core/search.md
     - Exporting: core/export.md
+    - Table Editor: core/tables.md
     - Virtual Directories: core/virtual-directories.md
     - Custom CSS: core/custom-css.md
     - Localisation: core/localisation.md

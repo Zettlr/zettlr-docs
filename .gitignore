@@ -4,3 +4,6 @@
 
 # Hidden files and stuff
 /**/.DS_Store
+
+# Ignore these pesky Zettlr directory files
+/**/.ztr-directory
