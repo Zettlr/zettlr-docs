@@ -25,13 +25,15 @@ nav:
     - Virtual Directories: core/virtual-directories.md
     - Custom CSS: core/custom-css.md
     - Localisation: core/localisation.md
+    - Attachment Sidebar: core/attachments.md
   - Academic Tools:
     - Citations: academic/citations.md
     - Projects: academic/projects.md
-    - Zettelkasten Methods: academic/zkn-method.md
-    - Custom Templates: academic/custom-templates.md
     - Presentations: academic/presentations.md
     - Pomodoro Timer: academic/pomodoro.md
+    - Readability: academic/readability.md
+    - Zettelkasten Methods: academic/zkn-method.md
+    - Custom Templates: academic/custom-templates.md
   - References:
     - Shortcuts: reference/shortcuts.md
     - Markdown Basics: reference/markdown-basics.md

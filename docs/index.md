@@ -30,6 +30,7 @@ Everyone can become very quick and efficient at his or her workflow, but can you
 * [Virtual Directories](core/virtual-directories.md)
 * [Custom CSS](core/custom-css.md)
 * [Localisation](core/localisation.md)
+* [The Attachment Sidebar](core/attachments.md)
 
 ## Academic Tools
 
@@ -39,6 +40,7 @@ Zettlr has been developed with academic writing in mind. Therefore, it offers a 
 * [Projects](academic/projects.md)
 * [Presentations](academic/presentations.md)
 * [Pomodoro Timer](academic/pomodoro.md)
+* [Readability-Mode](academic/readability.md)
 * [Zettelkasten Methods](academic/zkn-method.md)
 * [Custom LaTeX Templates](academic/custom-templates.md)
 
