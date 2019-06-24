@@ -18,7 +18,7 @@ To install Zettlr on macOS, simply download the dmg-file from the latest release
 
 To uninstall Zettlr, simply remove the Zettlr.app from your Applications directory. If you want to completely remove all data associated with the app, also remove the directory `/Users/<your-user-name>/Library/Application Support/Zettlr`.
 
-> You can also install Zettlr using [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew install zettlr`
+> You can also install Zettlr using [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew cask install zettlr`
 
 ## Linux (Debian 8/Ubuntu 12.04/Fedora 21 or newer)
 
