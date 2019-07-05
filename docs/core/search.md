@@ -14,6 +14,8 @@ If you are searching for specific phrases or words inside your currently opened 
 
 If you press `Enter` while the replace input is focused, Zettlr will replace the current search result and automatically highlight the next occurrence of your search term. Hit `Enter` repeatedly to replace multiple occurrences. If you want to replace all occurrences at once, you can hit `Alt+Enter` while the replace input has focus.
 
+> **Tip**: Just as in other editors, you can make use of variables while searching with a regular expression. If you search for something using a regular expression that contains at least one capturing group, you can use the variable `$1` inside your replacement text. Such variables will be replaced with the actual found content of the capturing groups. Multiple occurrences of the variable will be replaced as well. The number after the `\$` refers to the index of the capturing group (the second capturing group will be addressed using `\$2`, and so forth). [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
+
 Of course, you can also use the search in Quicklook windows. Therefore, just click into the content of the Quicklook you want to search (to give it focus and prevent that `Cmd/Ctrl+F` triggers the search on your main file) and press `Cmd/Ctrl+F` to begin searching.
 
 ## Searching globally
