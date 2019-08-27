@@ -49,7 +49,7 @@ Therefore, to aid you with writing tables, Zettlr is now shipping with a powerfu
 
 ![A table as displayed by the table editor](../img/zettlr_table.png)
 
-Much better, am I right? Zettlr's table editor takes all Markdown tables found in your document, converts them into an HTML representation with editable content cells, and displays these instead of the underlying Markdown. This completely hides the Markdown source, but as we said, in this case this approach is much more favorable.
+Much better, am I right? Zettlr's table editor takes all Markdown tables found in your document, converts them into an HTML representation with editable content cells, and displays these instead of the underlying Markdown. This completely hides the Markdown source, but as we said, in this case this approach is much more favourable.
 
 You can **enter the editing mode** simply by clicking into any of the cells inside the table and adding your content. The active cell will be highlighted for you. Additionally, the keyboard navigation that you know from famous word processors has also been implemented so that you can use `Tab`, `Return`, and the Arrow keys to navigate the table. Additionally, adding and removing columns and rows is also possible with the table editor's **edge buttons**. These are buttons that will appear when you hover over the table and let you perform various actions on the table.
 
@@ -75,7 +75,7 @@ Another goodie of the table editor are its so-called **edge buttons**. These are
 
 ![The table editor's edge buttons](../img/table_with_edge_buttons.png)
 
-They are transparent at the beginning to not cover up the content of your table. Move your cursor over an edge button to make it opaque. The buttons should be rather self-explanatory. The four `(+)`-buttons at the center of the edges of the table will **add a row or column respectively** at the indicated position. So click the left add button to prepend a column to the table, and click the bottom add button to append a row to the table.
+They are transparent at the beginning to not cover up the content of your table. Move your cursor over an edge button to make it opaque. The buttons should be rather self-explanatory. The four `(+)`-buttons at the center of the edges of the table will **add a row or column respectively** at the indicated position. So click the left add button to prepend a column to the left side of the currently active cell, and click the bottom add button to append a row below the currently active cell.
 
 At the top of each table, there are two additional button groups. The left button group contains three buttons that **align the currently active table column** left, center or right. Click one of the buttons to apply the alignment. The change will be displayed immediately for your visual confirmation.
 
