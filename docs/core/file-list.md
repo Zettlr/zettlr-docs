@@ -64,6 +64,8 @@ You can move your files into different locations. Just drag them from the file l
 
 If you drag a file outside of the app, you are able to share the file with other programs. To cancel this dragging-out, simply release the mouse over your app again.
 
+> To drag out a file into other applications, make sure to **hold the `Ctrl`-key or the `Alt`-key before dragging your file!** This will tell Zettlr that you don't want to move the file within Zettlr, but outside of the app.
+
 ## Search Heatmap
 
 Another useful feature of the file list is to help you distinguish what search results are the most relevant. Once you've executed a search, the list will change its colour like a chameleon. It will paint all files in 50 shades of green (yep, we've just made _that_ joke). The greener a file is, the more relevant the file is to your current search.
