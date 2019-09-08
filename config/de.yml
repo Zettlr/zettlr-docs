@@ -1,0 +1,62 @@
+site_name: Zettlr Docs
+site_url: https://docs.zettlr.com/de
+repo_url: https://github.com/Zettlr/zettlr-docs
+site_description: >-
+    Die Dokumentation für den Markdown-Editor Zettlr enthält alle Informationen
+    zum erfolgreichen Schreiben.
+site_author: Hendrik Erz
+copyright: "&copy; 2017-2019 by Zettlr"
+docs_dir: ../docs/de
+site_dir: ../build/de
+edit_uri: edit/master/docs/de
+extra_css:
+  - assets/app.css
+nav:
+  - Willkommen: index.md
+  - Installation: install.md
+  - Schnellstart: 5-minutes.md
+  - Anleitungen:
+    - Zettlr als Notizapp: guides/guide-notes.md
+    - Zettlr als Zettelkasten: guides/guide-zettelkasten.md
+    - Zettlr als IDE: guides/guide-ide.md
+  - Core:
+    - Editor: core/editor.md
+    - Dateiliste: core/file-list.md
+    - Suchen: core/search.md
+    - Exportieren: core/export.md
+    - Tabelleneditor: core/tables.md
+    - Virtuelle Verzeichnisse: core/virtual-directories.md
+    - Custom CSS: core/custom-css.md
+    - Lokalisation: core/localisation.md
+    - Seitenleiste: core/attachments.md
+  - Wissenschaftliche Werkzeuge:
+    - Zitationen: academic/citations.md
+    - Projekte: academic/projects.md
+    - Präsentationen: academic/presentations.md
+    - Pomodoro-Timer: academic/pomodoro.md
+    - Lesbarkeitsmodus: academic/readability.md
+    - Zettelkastenmethodologie: academic/zkn-method.md
+    - Eigene Vorlagen: academic/custom-templates.md
+  - Referenzen:
+    - Tastaturkürzel: reference/shortcuts.md
+    - Markdown-Grundlagen: reference/markdown-basics.md
+    - Einstellungen: reference/settings.md
+    - Rechtschreibprüfung: reference/spell-checking.md
+  - Mach mit!: get-involved.md
+  - FAQ: faq.md
+theme:
+  name: readthedocs
+  custom_dir: ../theme_override
+  highlightjs: True
+  prev_next_buttons_location: both
+  hljs_languages:
+    - javascript
+    - css
+    - yaml
+    - tex
+markdown_extensions:
+    - toc:
+        permalink: True
+plugins:
+  - search:
+      lang: de
