@@ -1,51 +1,51 @@
-# Get involved
+# Mitmachen
 
-Do you want to make Zettlr an even better app? That's great! Whether you are a user, want to provide a new translation, or get into developing, you've come to the right place!
+Du möchtest Zettlr zu einer noch besseren App machen? Das ist toll! Egal, ob du ein Nutzer bist, bei den Übersetzungen mithelfen willst oder gar entwickelst — du bist hier an der richtigen Stelle!
 
-## General Resources
+## Allgemeines
 
-Zettlr has a vibrant community helping each other all around the net. The following list contains the common places to start for any issue you might have.
+Zettlr hat eine große und aktive Community, die sich gegenseitig von überall auf der Welt hilft. Hier haben wir einmal die üblichen Orte aufgelistet, wo du Hilfe bekommen oder geben kannst:
 
-* [Zettlr user forum](https://forum.zettlr.com) — Go here to ask general questions, discuss workflows and concepts of Zettlr and even share your custom themes!
-* [Zettlr subreddit](https://www.reddit.com/r/Zettlr) — The Zettlr subreddit is meant for the redditors in the community.
-* [The official Twitter account](https://www.twitter.com/Zettlr) — Here you can follow the updates to the app in real time. It's the only place where we regularly announce everything we do. Additionally, we engage in most discussions, so if you have questions, you can drop them here.
-* [The official Facebook page](https://fb.me/Zettlrapp) — Here you can message us, if you don't have a Twitter account. Normally, we receive notifications and answer asap, but can't promise it. We only have this page because, well — one simply has a Facebook page, nowadays 🤷‍♂️
-* [Our YouTube channel](https://www.youtube.com/c/Zettlr) — If you are more like the visual type of person, you can find some introductory videos here.
-* [The GitHub issue tracker](https://github.com/Zettlr/Zettlr/issues) — This is the core of our endeavours to make the app better and better. If you spot a bug, have a suggestion or want to propose a feature, here's the right place. Nevertheless, especially when it comes to questions regarding the user workflow or new features, **it's best to discuss your ideas on the forum or on reddit first**.
+* [Das Forum](https://forum.zettlr.com) — Hier kannst du allgemeine Fragen stellen, Arbeitsabläufe diskutieren und sogar deine benutzerdefinierten Designs teilen!
+* [Zettlr Subreddit](https://www.reddit.com/r/Zettlr) — Das Zettlr Subreddit ist der perfekte Ort für die Redditnutzer in der Community.
+* [Der offizielle Twitteraccount](https://www.twitter.com/Zettlr) — Da wir Wissenschaftler sind, geben wir die meisten Infos über unseren offiziellen Twitteraccount heraus. Hier kannst du fast minuziös miterleben, was gerade passiert. Außerdem antworten wir gerne auf alle deine Fragen.
+* [Die offizielle Facebookseite](https://fb.me/Zettlrapp) — Natürlich haben wir auch eine Facebookseite. Wir sind da nicht allzu aktiv, aber wenn du eine Frage hast, beantworten wir sie dir natürlich auch hier!
+* [Unser YouTube-Kanal](https://www.youtube.com/c/Zettlr) — Wenn du eher der visuelle Typ bist, findest du hier ein paar Einführungsvideos.
+* [Der GitHub Issuetracker](https://github.com/Zettlr/Zettlr/issues) — Das ist der Kern unserer Versuche, die App besser zu machen. Bugs, Features, Verbesserungen und anderes kann hier platziert werden. Nichtsdestotrotz solltest du natürlich neue Features **immer zuerst auf Reddit oder dem Forum diskutieren**.
 
-## User Contributions
+## Hilf uns aus Nutzersicht
 
-As a user who wants a good-looking, well-working writing app, just keep your eyes open for any error the app might produce and, more importantly, tell us how to make the workflow more efficient! We can only judge for our own workflow, so to make the app better for you as well, we need to know how. Always remember: We cannot build a workflow as-is into the design but have to make concessions to other workflows, but we'll try to make features more accessible or working smoother as long as the trade-offs for the existing workflows and the new suggestion are not too hard.
+Es ist für viele Dinge sogar besser, wenn du nicht programmieren kannst und daher einen reinen Nutzerblick auf die App hast. Denn so fallen dir Probleme viel schneller auf als all jenen, die Programmieren können und daher wissen, wie man mit fehlerhafter Software umgehen muss. Wir können nur für uns sprechen und es hilft daher, Infos von Menschen zu bekommen, die anders als wir arbeiten. Zwar müssen wir bei Vorschlägen zu Arbeitsabläufen immer Kompromisse machen, damit wir nicht andere benachteiligen, versuchen aber, jeden Arbeitsablauf möglich zu machen!
 
-Please report bugs by opening up issues on the GitHub repository. This way we are able to to quickly respond to the report and directly get to handle the problem.
+Fehler berichtest du am besten direkt mit einem neuen Ticket auf GitHub. Dadurch ist es uns möglich, den Fehler schnell zu berichtigen.
 
-## Translating the App
+## Übersetzen
 
-We welcome any help in translating the app in all languages of this planet. Translations are managed on our Translation Server. To translate, you'll need to create an account, which is only used as an anti-spam measure. Additionally — but only if you want to — you will be credited using your username in all generated translations.
+Ein inklusives Programm zu schreiben heißt auch, es für alle einfach zu machen, die App auch zu verstehen. Daher brauchen wir immer motivierte Helfer, die die App in alle Sprachen der Welt übersetzen. Wir haben dafür mit Zettlr Translate auch ein eigenes Portal entwickelt, mit dem das Übersetzen super einfach ist. Dafür brauchst du allerdings einen Account (der allerdings nur dazu dient, Spam zu vermeiden). Allerdings kannst du dadurch natürlich auch deinen Namen in den "Über Zettlr"-Dialog zu bekommen, denn dort werden alle Übersetzer\*innen genannt, so sie es denn wünschen.
 
-Translating is simple. Just click on any language on the main page to see the list of all identifiers and all existing translations:
+Übersetzen ist sehr einfach. Auf Zettlr Translate kannst du einfach eine der Sprachen anwählen und siehst dann eine Liste mit allen Identifikationsnummern der einzelnen Zeichenketten:
 
 ![Translation Keys](img/translations_list.png)
 
-On the left side you'll see all translation IDs. They will mostly be self-explanatory. If you don't know where to start, simply have a look at the English translation and at the app. Then you'll know which translation IDs will correspond to which elements.
+Auf der linken Seite siehst du alle Übersetzungs-IDs sowie die englische Übersetzung als Hilfestellung. Meistens sind das schon alle Infos, die du brauchst. Wenn du dir nicht sicher bist, wo ein bestimmter String vorkommt, kannst du einfach die App anschauen. Meistens findest du die Infos dann sehr schnell.
 
-We've implemented a user-based quality management system in the service, which consists in you being able to vote on existing translations. So even if you don't want to translate yourself, you can look through all translations and vote for the one you deem correct. Whenever somebody downloads a translation, the system will take the best-rated translation strings to ensure all translations are verified by you, our users!
+Weiterhin haben wir in den Servive ein nutzerbasiertes Qualitätsmanagement-System eingebaut. Das besteht in einem einfachen Abstimmungs-Algorithmus. Wenn du denkst, dass eine Übersetzung richtig ist, kannst du sie "approven". Wenn keine richtig aussieht, kannst du auch eine neue Übersetzung vorschlagen. Die Übersetzung mit den meisten Stimmen schafft es dann in die App!
 
-[For more information, please see the short guide to our translation service](https://translate.zettlr.com/welcome).
+[Weitere Informationen darüber, wie das alles funktioniert, findest du auf unserer Einführung (Englisch).](https://translate.zettlr.com/welcome)
 
-## Developing
+## Entwickeln
 
-To start developing, simply [fork the repository](https://github.com/Zettlr/Zettlr), work on your features, bug fixes, etc. and then open pull-requests. Please remember to **only PR to the develop branch!** The master-branch is only pushed to once a new release is being drafted. So if you are developing a new feature and a new version of Zettlr is released, you can simply pull the `origin master` to be up to date again and continue writing your feature.
+Um mit dem Entwickeln zu beginnen, forke das Repository, arbeite an neuen Features und Bugfixes und öffne dann ein Pull-Request auf die Develop-branch des Repositories. Die Master-Branch wird nur aktualisiert, wenn wir kurz vor einem neuen Release stehen.
 
-If you are beginning to develop a feature, it also may be wise to announce that using a new issue to just let the rest know that somebody is already doing it to maximise efficiency!
+Wenn du beginnst, irgendetwas zu entwickeln, sage bitte den anderen Entwicklern bescheid mit einem Issue oder ähnlichem, sodass nicht zwei Leute das gleiche angehen und wir effizienter arbeiten können!
 
-### Starting to Develop
+### Mit dem Entwickeln beginnen
 
-To set everything up, make sure to start your favourite IDE and spin up your terminal. Zettlr is based on a [NodeJS](https://nodejs.org/)-stack, so you'll need to have the current Node-Server installed on your system, and a Node Package Manager. Zettlr prefers [Yarn](https://yarnpkg.com/), but of course you can also use NPM (this will be installed alongside Node).
+Um mit dem Entwickeln los zu legen, starte deinen Lieblings-Editor und fahre dein Terminal hoch. Zettlr basiert auf einem [NodeJS](https://nodejs.org/)-stack, das heißt, du brauchst Node auf deinem System installiert. Zettlr nutzt meistens nicht NPM, sondern Yarn, daher solltest du [Yarn](https://yarnpkg.com/) idealerweise auch installieren.
 
-Then make sure to initialise everything.
+Anschließend musst du die ganzen Ressourcen für die App erst einmal generieren, da diese nicht im Repository liegen. Zunächst installiere alle Module, die Zettlr braucht:
 
-**With Yarn**
+**Mit Yarn**
 
 ```bash
 $ git clone https://github.com/Zettlr/Zettlr.git
@@ -55,7 +55,7 @@ $ cd source
 $ yarn install
 ```
 
-**With NPM**
+**Mit NPM**
 
 ```bash
 $ git clone https://github.com/Zettlr/Zettlr.git
@@ -65,92 +65,88 @@ $ cd source
 $ npm install
 ```
 
-The second `install` in the source-directory is necessary, because we make use of [electron-builder](https://www.electron.build/)'s two-directories-structure.
+Der zweite `install`-Befehl im `source`-Verzeichnis ist notwendig, da wir von [electron-builder](https://www.electron.build/)'s zweifachen Verzeichnisstruktur Gebrauch machen.
 
-### CLI-Commands
+### Konsolenbefehle
 
-Zettlr ships with a lot of useful commands that you can make use of in your development process. Let's list all of them.
+Zettlr bringt von Haus aus einen Haufen nützlicher Befehle zum Entwickeln mit. Nachfolgend eine Liste aller Befehle. Die Befehle kannst du allesamt entweder mit `npm run <command>` oder `yarn <command>` starten. **Achte darauf, immer im Hauptverzeichnis zu sein!**
 
-> You can run any of these commands either with `npm run <command>` or `yarn <command>`, depending on your package manager. Make sure to run them from the Zettlr main-directory.
+* `start`: Starte die Anwendung.
+* `build:quick`: Erstellt die Anwendung für das aktuelle Betriebssystem und schreibt die Datei nach `/release`.
+* `release:this`: Das gleiche wie `build:quick`, aber die App wird ebenfalls in einen Installer gepackt (als `.dmg`-Datei auf macOS, ein `.exe`-Installer auf Windows, oder ein Linux-Paket).
+* `release:mac`: Baut einen Installer explizit für macOS.
+* `release:win`: Baut einen Installer explizit für Windows.
+* `release:linux`: Baut einen Installer explizit für Linux.
+* `less`: Konvertiert die Quelldateien für die Stylesheets in `/resources/less` in das finale CSS unter `source/common/assets/css`. Nach allen Änderungen der Designs solltest du diesen Befehl ausführen.
+* `less:extract`: Liest alle IDs und Klassen aus den Rohdateien aus und schreibt sie in die Datei `/resources/css_list.md`. Damit erstellen wir eigentlich nur unsere [Custom CSS Referenzliste](core/custom-css.md#complete-css-class-and-id-reference).
+* `handlebars`: Hiermit kompilierst du die Templates für Dialoge und Popups und schreibt sie nach`/source/common/assets/tpl`. Führe diesen Befehl immer aus, wenn du irgendetwas an den Templates geändert hast.
+* `lang:refresh`: Lädt die aktuellsten Versionen der vier Standardsprachen (Britisches Englisch, Amerikanisches Englisch, Deutsch und Französisch) herunter und schreibt sie in die entsprechenden Verzeichnisse. Muss mittlerweile eigentlich nur noch vor einem Release ausgeführt werden.
+* `reveal:build`: Baut die nötigen Templates und Dateien für die revealJS-Präsentationen neu.
 
-* `start`: Starts the application.
-* `build:quick`: Quickly builds the app for your operating system (if supported by electron-builder) and outputs it to `/release`.
-* `release:this`: The same as `build:quick`, but the app will also be packaged (as a `.dmg`-file on macOS, a `.exe`-installer on Windows, or a Linux package).
-* `release:mac`: Explicitly build a release for macOS.
-* `release:win`: Explicitly build a release for Windows.
-* `release:linux`: Explicitly build a release for Linux.
-* `less`: Runs the LESS converter to convert the source files in `/resources/less` to the final CSS files in `source/common/assets/css`. Whenever you make changes to the styles, you should run this command.
-* `less:extract`: Extracts all CSS IDs and classes from the source files and outputs them to `/resources/css_list.md`, one per line. This is only used to generate our [Custom CSS reference list](https://docs.zettlr.com/core/custom-css/#complete-css-class-and-id-reference).
-* `handlebars`: This starts up the Handlebars precompiler to convert the templates (for dialogs and popups) into those that will be shipped with the app in the directory`/source/common/assets/tpl`. Whenever you change anything in a file in `/resources/templates`, you should run this, lest your changes won't be visible.
-* `lang:refresh`: Downloads the most recent version of the default translations `German (Germany)`, `English (United States)`, `English (United Kingdom)`, and `French (France)` from [translate.zettlr.com](https://translate.zettlr.com/) and places them into the directory `/source/common/lang`.
-* `reveal:build`: Rebuilds the template for generating revealJS-presentations.
+Neben diesen Konsolenbefehlen gibt es einen "Hauptbefehl", den wir nutzen, um einen vollen Release-Cycle laufen zu lassen. Es handelt sich um `/scripts/make.sh` und ist ein Shell-Script, das die meisten der oben genannten Befehle ausführt, bevor es die App für sämtliche Betriebssysteme erstellt und eine `SHASUMS.txt`-Datei erstellt.
 
-Apart from these commands, there is one "master-command" that we use to run a full release cycle of Zettlr. It resides in `/scripts/make.sh` and is a Shell-command that will run most of the aforementioned commands to generate the installers for Windows, macOS, Debian-based Linux distributions, and Fedora-based Linux distributions. Additionally, it will generate a `SHASUMS.txt`-file containing checksums of all four installers.
+> Vorsicht: Aktuell verlangt das Script Yarn sowie macOS. Es funktioniert daher nicht mit NPM oder irgendeiner anderen Plattform. Das liegt am Programm, mit welchem die SHA256-Checksums erstellt werden. Das heißt nämlich auf macOS anders als auf Linux.
 
-> Attention: Currently the Make-script requires Yarn and macOS. It does not work with NPM or on any other platform. This is due to the command to generate SHA256 checksums, which differs between macOS and Linux distributions.
+### Projektstruktur
 
-### Project Structure
-
-Now to the real technical stuff: The project's structure! In most respects, the structure adheres to the best practices concerning Electron application development. Nevertheless, the application is _huge_, and therefore you'll need some guidance.
-
-Let's first cover the directory structure (this is a non-exhaustive list; only the folders and files you'll mostly be working on are covered):
+Nach diesen Einführungen jetzt zum eigentlich technischen Krams: Die Projektstruktur! Die Verzeichnisstruktur der App orientiert sich an vielen Best Practices. Nichtsdestotrotz ist die Anwendung natürlich extrem groß. Daher wollen wir hier eine kurze Anleitung geben. Die Liste enthält nicht alle, sondern nur die wichtigsten Verzeichnisse.
 
 ```
-Zettlr                 // The root directory
+Zettlr                 // Das Wurzelverzeichnis
 |
-+ release              // Will be created when you build the app.
++ release              // Hier liegen alle erstellten Binaries.
 |
-+ resources            // Contains everything for dev, but won't be shipped.
++ resources            // Dieser Ordner enthält viele Rohdaten.
 |  |
-|  + less              // Contains the source-files for the CSS
+|  + less              // Hier liegen die Quelldateien für CSS.
 |  |
-|  + templates         // Contains the dialog and popup templates.
+|  + templates         // Hier liegen die Templates für Dialoge und Popups.
 |
-+ scripts               // Contains dev-scripts as mentioned above.
++ scripts               // Hier liegen die ganzen Skripte.
 |
-+ source                // Contains the actual application source.
++ source                // Dieser Ordner wird tatsächlich mitgeliefert.
 |  |
-|  + common             // Commonly used files
+|  + common             // Allgemeine Dateien
 |  |  |
-|  |  + assets          // CSS, Fonts, HB-runtime, images, JS, templates.
+|  |  + assets          // CSS, Schriften, Bibliotheken, Bilder, JS, Templates.
 |  |  |
-|  |  + lang            // Default languages and the i18n module.
+|  |  + lang            // Standardsprachen und das i18n-Modul
 |  |  |
-|  |  + util            // Utility functions, used around the app.
+|  |  + util            // Helferfunktionen
 |  |  |
-|  |  + data.json       // Static data for the application.
+|  |  + data.json       // Statische Daten für die Anwendung
 |  |  |
-|  |  + validate.js     // The validation module
+|  |  + validate.js     // Das Verifikationsmodul
 |  |  |
-|  |  + validation.json // Validation rules.
+|  |  + validation.json // Verifikationsregeln
 |  |
-|  + main               // The main process files
+|  + main               // Dateien für den Hauptprozess
 |  |  |
-|  |  + assets          // Assets for the main process
+|  |  + assets          // Zusätzliche Dateien
 |  |  |
-|  |  + commands        // All commands that can be executed reside here.
+|  |  + commands        // Kommandos, die im Prozess ausgeführt werden.
 |  |  |
-|  |  + providers       // Contains service providers for the app.
+|  |  + providers       // Service Providers (Konfiguration oder Rechtschreibprüfung)
 |  |
-|  + print              // Source code for the print window
+|  + print              // Quellcode für das Druckvorschaufenster
 |  |
-|  + quicklook          // Source code for the QuickLooks.
+|  + quicklook          // Quellcode für die QuickLooks
 |  |
-|  + renderer           // The main window code.
+|  + renderer           // Der Renderer-Prozess (Das Hauptfenster)
 |  |  |
-|  |  + assets          // Some assets used only in the renderer process.
+|  |  + assets          // Zusätzliche Dateien
 |  |  |  |
-|  |  |  + codemirror   // Contains all CodeMirror plugins
+|  |  |  + codemirror   // CodeMirror-Plugins
 |  |  |  |
-|  |  |  + context      // All files needed for the context menu
+|  |  |  + context      // Kontextmenü
 |  |  |  |
-|  |  |  + toolbar      // Contains the toolbar template.
+|  |  |  + toolbar      // Toolbar-Template.
 |  |  |
-|  |  + dialog          // The modules for all dialogs in the app
+|  |  + dialog          // Code für die Dialoge
 |  |  |
-|  |  + util            // Utility functions solely used in the renderer.
+|  |  + util            // Hilfsfunktionen.
 |  |
-|  + main.js            // Entry point of the application.
+|  + main.js            // Das ist der Entry Point der Anwendung.
 |
-+ CHANGELOG.md          // Contains a detailed list of all changes.
++ CHANGELOG.md          // Hier werden alle Änderungen gelistet.
 ```

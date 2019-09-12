@@ -1,69 +1,69 @@
-# Zettlr in 5 Minutes
+# Zettlr in fünf Minuten
 
-Okay, you have downloaded and installed the app, got a clock set and are ready to roll? Then hit that countdown button and let's go!
+Zettlr ist installiert und du bist startbereit? Hier gibt's die Fünf-Minuten-Einführung in das wichtigste, was du wissen musst!
 
-## 1. Open directories and files
+## 1. Verzeichnisse und Dateien öffnen
 
-To open directories or files, simply drag them anywhere over the app's window. They will be opened automatically. You can also hit `Cmd/Ctrl+O` to open the directory select dialog, if that's faster for where you're going.
+Zettlr ist ordnerbasiert. Das heißt, du arbeitest immer in einem Verzeichnis. Ein Verzeichnis öffnest du, indem du es auf die App ziehst, mit dem Toolbar-Button oder mittels des Kürzels `Cmd/Ctrl+O`.
 
 ![open.png](img/open.png)
 
-## 2. Create files and directories
+## 2. Dateien und Ordner erstellen
 
-After opening a directory, you need a file. Hit `Cmd/Ctrl+N` to create a new file. Type a file name, hit `Return` and select the editor. Need another directory? `Cmd/Ctrl+Shift+N` will do the job.
+Nachdem du ein (oder mehrere) Verzeichnisse in der App offen hast, kannst du in ihnen natürlich weitere Dateien oder Ordner erstellen. Mit `Cmd/Ctrl+N` erstellst du eine neue Datei, mit `Cmd/Ctrl+Shift+N` kannst du ein neues Verzeichnis erstellen — und zwar immer im aktuell ausgewählten Verzeichnis.
 
 ![create.png](img/create.png)
 
-> You can not only add Markdown files! If you do not provide an extension, Zettlr will add the extension `.md` for you. But you can also create `.txt`-files and `.tex`-files, you just need to provide that file extension!
+> Du kannst nicht nur Markdown-Dateien erstellen! Wenn du die Dateiendung weg lässt, erstellt Zettlr immer eine Markdown-Datei, aber Zettlr erlaubt auch `.txt`- und `.tex`-Dateien, wenn du die Dateiendung explizit angibst!
 
-## 3. Write!
+## 3. Schreiben
 
-Writing is up to you, but here's the most important keystrokes to remember:
+Das Schreiben kann dir Zettlr leider nicht abnehmen, aber hier sind ein paar Kürzel, die dir die Arbeit wesentlich leichter machen werden:
 
-- `Cmd/Ctrl+I`: Make text \__italic_\_. Works just like in Word.
-- `Cmd/Ctrl+B`: Make text \*\***bold**\*\*. Also works just like in Word.
-- `Cmd+Alt+R` (macOS) `Ctrl+Alt+F` (Windows/Linux): Create a footnote.
-- `Alt/Ctrl+Click` (on a footnote reference): Edit a footnote. Hit `Shift+Enter` to finish editing.
-- `Cmd/Ctrl+K`: Insert a link. (`Alt/Ctrl+Click` it to open the link.)
-- `Cmd/Ctrl+J`: Enter the distraction-free mode.
-- `Cmd/Ctrl+Alt+L`: Toggle the theme between light and dark mode.
+- `Cmd/Ctrl+I`: Erstelle \__kursiven_\_ Text. Genau wie in Word.
+- `Cmd/Ctrl+B`: Erstelle \*\***fetten**\*\* Text. Ebenfalls wie in Word.
+- `Cmd+Alt+R` (macOS) `Ctrl+Alt+F` (Windows/Linux): Füge eine Fußnote ein.
+- `Alt/Ctrl+Click` (auf eine Fußnotenreferenz): Bearbeite die Fußnote. Mit `Shift+Enter` speicherst du deine Änderungen.
+- `Cmd/Ctrl+K`: Web-Link einfügen. (Mit `Alt/Ctrl+Click` kannst du ihn in deinem Browser öffnen.)
+- `Cmd/Ctrl+J`: Wechsle in den ablenkungsfreien Modus.
+- `Cmd/Ctrl+Alt+L`: Wechsle zwischen hellem und dunklem Modus der App.
 
 ![markdown.png](img/markdown.png)
 
-Things without keystrokes, but also important:
+Noch ein paar Dinge ohne Tastaturkürzel, die aber ebenfalls wichtig sind:
 
-- Use `#`-signs to create headings. The number of `#`-symbols equals the level of the heading. Maximum is 6.
-- Use `>`-signs to create blockquotes. You can also nest them using multiple greater-than-signs (e.g. `> >`).
-- Use `#`-signs _not_ followed by a space to create tags. You can use these tags for searching and navigating.
+- Mit `#`-Zeichen gefolgt von einem Leerzeichen erzeugst du Überschriften. Die Anzahl an `#`-Zeichen bestimmt, welche Ebene es wird. Maximal sechs.
+- Mit `>`-Zeichen erzeugst du eingerückte Zitate. Du kannst sie auch verschachteln (z.B. `> >`).
+- Mittels `#`-Zeichen, die _nicht_ von einem Leerzeichen gefolgt werden, erstellst du Tags, wie auf Twitter. Diese Tags kannst du zum Kategorisieren und Navigieren nutzen.
 
-## 4. What else?
+## 4. Was noch?
 
-If you use the thin sidebar mode (the default), you will see either the file list or the directory tree. Move the mouse to the top-left corner of the file list and click the arrow to show the directory tree. To toggle between file list and directory tree, you can also hit `Cmd/Ctrl+!`. Choose the extended sidebar mode in the preferences to have both the file list and the directory tree visible at once.
+Im dünnen Seitenleisten-Modus (das ist der Standard-Modus) siehst du _entweder_ die Dateiliste _oder_ den Verzeichnisbaum. Bewege die Maus zur oberen linken Ecke und klicke auf den erscheinenden Pfeil, um den Verzeichnisbaum anzuzeigen. Zwischen Dateiliste und Verzeichnisbaum kannst du auch mittels `Cmd/Ctrl+!` hin und her wechseln. Im erweiterten Seitenleisten-Modus werden beide gleichzeitig angezeigt.
 
 ![back.png](img/back.png)
 
-Zettlr is strictly context-based. Unless otherwise specified, new files and directories will be created inside the currently selected directory. File-based operations (renaming or deleting) will by default target the current file. Use the context menu by right-clicking any file or directory to select specific files/directories.
+In Zettlr funktionieren viele Aktionen Kontext-basiert. Die meisten Tastaturkürzel nutzen entweder die aktuelle Datei oder das aktuelle Verzeichnis als Basis. Erstellst du also mittels `Cmd/Ctrl+N` eine neue Datei, wird diese standardmäßig im aktuell ausgewählten Verzeichnis angelegt. Mittels des Kontext-Menüs kannst du aber natürlich auch spezifische Dateien und Verzeichnisse direkt ansprechen.
 
-Three simple rules of thumb:
+Drei Daumenregeln für die Verwendung von Tastaturkürzeln in Zettlr:
 
-1. The `Alt`(ernative) key triggers alternative actions on the same element.
-2. The `Shift` modifier key _shifts_ the target of an action to another element (mostly the directory instead of the file).
-3. All crucial actions are located in the toolbar. Left are general actions, middle are file-based actions, and to the right are other actions.
+1. Die `Alt`(ernative)-Taste kann für _andere_ Aktionen mit dem _selben_ Element genutzt werden.
+2. Die `Shift`-Taste verschiebt ("shift") das Ziel einer Aktion (von der aktuellen Datei auf das aktuelle Verzeichnis), ergo: die _selbe_ Aktion mit einem _anderen_ Element.
+3. Alle zentralen Funktionen befinden sich als Buttons in der Toolbar. Links befinden sich grundlegende Aktionen, in der Mitte Funktionen für die aktuelle Datei und rechts ein paar zusätzliche.
 
-## 5. Nice, I've finished writing. How do I share it?
+## 5. Wie teile ich meine schriftlichen Ergebnisse nun?
 
-Three easy steps:
+Drei einfache Schritte:
 
-1. Make sure Pandoc and LaTeX (only necessary for PDF) are installed.
-2. Click the share button in the toolbar (or hit `Cmd/Ctrl+E`) and select the target format. The aperture reveals the presentations (they are made using reveal.js — get the pun?)
-3. On export, Zettlr opens the exported file automatically in your preferred app. In there, hit `Cmd/Ctrl+Shift+S` (should work in most apps) to save it where ever you want.
+1. Stelle sicher, dass Pandoc und LaTeX (nur für PDF) installiert sind.
+2. Klicke auf den Teilen-Button (Kürzel: `Cmd/Ctrl+E`) und wähle das gewünschte Format aus. Die Blende blendet die Präsentations-Designs ein (im Englischen funktioniert der Wortwitz mit dem Namen des Werkzeugs, reveal.JS, im Deutschen leider nicht).
+3. Nach dem Export öffnet Zettlr die fertige Datei mit dem Programm deiner Wahl.
 
 ![export.png](img/export.png)
 
-## 6. Okay, the 5 mins are over, something else?
+## 6. Okay, das waren fünf Minuten. Sonst noch etwas?
 
-Nope, you're good to go. If you want to dive deeper, be sure to check out our guides:
+Nein, das war es schon! Wenn du mehr wissen willst, kannst du natürlich auch weiter schauen:
 
-- [Zettlr as a note-taking app](guides/guide-notes.md)
-- [Zettlr as a Zettelkasten](guides/guide-zettelkasten.md)
-- [Zettlr as an IDE](guides/guide-ide.md)
+- [Zettlr als Notizprogramm](guides/guide-notes.md)
+- [Zettlr als Zettelkasten](guides/guide-zettelkasten.md)
+- [Zettlr als volle Entwicklungsumgebung](guides/guide-ide.md)

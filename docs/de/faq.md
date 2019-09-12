@@ -1,90 +1,88 @@
-# Frequently Asked Questions
+# Häufig gestellte Fragen
 
-## I tried to install Zettlr on Windows/macOS, but there's a security warning saying I shouldn't install the app!
+## Ich wollte Zettlr auf Windows/macOS installieren, aber bekomme eine Warnung, dass ich es nicht installieren sollte!
 
-Both Windows and macOS require so-called "code-signing" in order to be able to trust the application. While this is a great technique of keeping malicious code from harming your system, it requires an annual subscription fee. This is why Zettlr-builds are _not_ code-signed and therefore produce warnings. You can safely install Zettlr, as long as you download them from the our page, and ignore these warnings.
+Sowohl Windows als auch macOS verlangen signierten Code, damit sie dem Programm automatisch vertrauen. Während die Idee dahinter sehr gut ist, um Schadcode aus dem System zu halten, kostet das jährlich eine ganze Menge. Daher sind Zettlr-Installationsdateien _nicht_ signiert und produzieren daher die Warnungen. Solange du Zettlr entweder von unserer Seite oder aus dem offiziellen GitHub-Repository heruntergeladen hast, kannst du die Warnungen getrost ignorieren.
 
-## Are there any plans of porting Zettlr to mobile phones and tables, for Android or iOS?
+## Gibt es Pläne für eine mobile Version von Zettlr?
 
-We are getting more and more requests concerning mobile versions of Zettlr. We are very happy that you like Zettlr enough to want having it on all your devices, and we would love to fulfil this desire! Unfortunately, though, our resources are just enough to keep the development of Zettlr up and running, but adding more work is just not possible at the moment. Of course, as soon as this changes, we will get to it!
+Wir erhalten mehr und mehr Anfragen nach einer solchen mobilen Version. Wir finden es gut, dass euch die App so gut gefällt! Leider haben wir nicht die Ressourcen, uns neben der Haupt-Anwendung auch noch um mobile Applikationen zu kümmern. Natürlich haben wir die Apps im Hinterkopf, für den Fall, dass das irgendwann mal anders wird!
 
-## Do you consider supporting more Linux platforms except Debian and Fedora based ones?
+## Plant ihr, auch weitere Linux-Distributionen außer Debian oder Fedora zu unterstützen?
 
-Due to our limited resources, we cannot support more platforms out of the box. Debian and Fedora based distributions are by far the most popular platforms, which is why we support them officially. If you would like to take upon yourself the responsibility of building Zettlr for other platforms, please get in contact with us so that we can list the additional repository on our download page!
+Aufgrund unserer fehlenden Ressourcen und Zeit können wir außer diesen Haupt-Distributionen keine weiteren unterstützen. Allerdings helfen uns viele Leute, die die App auf eigene Kosten immer auch für ArchLinux kompilieren. Wenn ihr ebenfalls eine Plattform unterstützen möchtet, sagt uns bescheid, damit wir einen Link zu dem Repository in unsere Download-Seite aufnehmen können!
 
-## What is Markdown?
+## Was ist Markdown?
 
-Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](reference/markdown-basics.md)!
+Markdown ist eine vereinfachte Auszeichnungssprache, die es dir ermöglicht, genauso komplexen Text zu verfassen, wie mit Office-Programmen, allerdings ohne den unnötigen Ballast. Anstatt immer manuell die Formatierungen auszuwählen, reicht es bei Markdown zum Beispiel aus, ein `#`-Zeichen voranzustellen, um eine Überschrift zu erzeugen! Wenn du mehr wissen willst, schau dir [unsere Dokumentation](reference/markdown-basics.md) dazu an.
 
-## If I don't want to use Zettlr anymore, what would I need to do to switch programs?
+## Was muss ich aufräumen, wenn ich Zettlr nicht mehr benutzen will?
 
-Simply uninstall Zettlr and begin using another one. Zettlr does not mess with your files. If you have been using Virtual Directories or Projects, there will be small files named `.ztr-directory` and `.ztr-projects` present in some folders. To remove them, simply delete any virtual directories, reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
+Deinstalliere Zettlr ganz normal und nutze einfach ein anderes Programm. Zettlr lässt deine Dateien in Frieden und macht keine komischen Dinge mit ihnen. Es kann sein, dass sich vereinzelt versteckte Dateien mit Konfigurations-Informationen finden, die `.ztr-directory` oder `.ztr-project` heißen. Diese kannst du natürlich dann entfernen.
 
-## I'm using Linux and deleting files doesn't move them to the trash!
+## Ich nutze Linux und habe das Problem, dass Zettlr meine gelöschten Dateien nicht in den Papierkorb verschiebt!
 
-Zettlr never completely removes your files. It always only moves them to the trash so in case you accidentally remove a file you need, you can always restore it. On macOS and Windows systems, the trash is activated by default, but on some Linux distributions, you need to activate the trash functionality manually. On Linux, Zettlr (to be more precise: the underlying framework electron) makes use of the binary `gvfs-trash` to move files to the trash. To avoid shock moments it'll never try to "fall back" to removing files completely. Therefore, to make use of this functionality, please make sure you have `gvfs-trash` installed! On Debian/Ubuntu you can do so by running the following code in a terminal:
+Zettlr wird niemals Dateien von dir direkt und unwiderruflich löschen. Es verschiebt diese _immer_ in den Papierkorb, für den Fall, dass du aus Versehen eine wichtige Datei gelöscht hast. Auf macOS und Windows ist der Papierkorb natürlich immer da, aber auf Linux kann es passieren, dass das nötige Programm erst noch installiert werden muss. Falls du also keine Dateien löschen kannst, schau, dass du `gvfs-trash` installiert hast. Dann sollte es funktionieren. Auf Debian/Ubuntu kannst du das zum Beispiel in der Eingabeaufforderung machen:
 
 ```bash
 $ sudo apt install gvfs-bin
 ```
 
-## The internal links do not open the respective file!
+## Die internen Links öffnen nicht die richtige Datei!
 
-In case the internal links that are used to interlink files to access them using a shortcut don't work as expected, please make sure you've done the following things:
+Interne Links können genutzt werden, um einzelne Dateien miteinander zu verknüpfen. Falls das nicht funktioniert, überprüfe bitte folgende Einstellungen:
 
-1. Is the link recognised? Zettlr enables you to define what internal links look like. By default, they are encapsulated by `[[` and `]]`. When Zettlr recognises an internal link, it will colour it and if you enter with your mouse, the contained text should become underlined. If it does not, Zettlr doesn't think that what you've written is a link. You can change this in the settings.
-2. Did you press the `Alt`- or `Ctrl`-key while clicking on the link? As clicking with your mouse somewhere in the text normally means that you intend to change something, you have to tell Zettlr that you actually want to follow the link.
-3. Did you use a valid filename or ID? Zettlr only opens files, if they report they _exactly_ have the given ID or the given filename. If nothing happens while clicking on the link, this surely means that a file with the given ID or filename does not exist in the system. Note that you must omit the extension: to link to `my-file.md`, you need to put only `my-file` inside the brackets.
-4. Is the file currently loaded into Zettlr? Internal linking obviously only works if Zettlr has read the file.
+1. Wird der Link erkannt? Zettlr erlaubt es, benutzerdefinierte Links zu erzeugen. Standardmäßig erstellst du solche Links mit `[[` und `]]`. Erkennt Zettlr den Link, färbt es ihn ein. Tut es das nicht, denkt Zettlr, dass es kein Link ist. In diesem Fall überprüfe bitte deine Einstellungen.
+2. Hast du entweder `Alt` oder `Strg` gedrückt? Ein einfacher Klick irgendwo in den Text bedeutet immer, dass Zettlr den Cursor dorthin verschiebt. Willst du einem Link folgen, musst du eine dieser Tasten gedrückt halten.
+3. Hast du den richtigen Dateinamen angegeben? Zettlr öffnet nur Dateien, die einen exakten Treffer zurück geben. Das heißt: Die ID muss stimmen, oder der Dateiname muss exakt der gleiche sein. Und vergiss nicht, dass du die Dateiendung weglassen musst!
+4. Ist die Datei überhaupt in Zettlr geladen? Damit interne Verlinkungen funktionieren, muss Zettlr die Datei natürlich kennen.
 
-## I know LaTeX and want to use it inside my Markdown files as well. Is this possible?
+## Ich kenne mich mit LaTeX aus und möchte es in meinen Markdown-Dateien verwenden. Geht das?
 
-Yes. Simply write your `LaTeX`-statements where you want them. As soon as you export to PDF, Pandoc will take care the statements will be interpreted by the PDF engine. Unfortunately, `LaTeX` syntax highlighting is not supported. Also, please note that Pandoc will clear all `LaTeX`-blocks prior to exporting to anything other than PDF, which means that blocks within `\begin` and `\end`, for instance, will be missing completely from the final Office file. On HTML-export, all `LaTeX`-blocks will retained, but not converted to something else.
+Aber natürlich. Du kannst überall einfach `LaTeX`-Kommandos einwerfen. Exportierst du die Datei dann nach PDF, stellt Pandoc sicher, dass die Befehle erhalten bleiben. Allerdings ist `LaTeX`-Syntaxhighlighting natürlich in Markdown-Dateien nicht unterstützt. Wenn du nicht nach PDF exportierst, entfernt Pandoc meistens `LaTeX`-Blöcke, manchmal bleiben sie aber auch erhalten wie sie sind.
 
-## I can't seem to align the text just or right!
+## Wieso kann ich Text nicht ausrichten?!
 
-It's not a bug, it's a feature: Markdown does not have the respective formatting signs because text should always be justified or aligned left and therefore it does not belong to the set of necessary block formats Markdown offers. Yet, you can still use `LaTeX`-commands to render them left or right. Simply enclose the text you want to align right or justify in `\begin{<option>}` and `\end{<option>}`, where `<option>` may either refer to `flushleft`, `flushright` or  put a `\justify` in front of a paragraph you want to be justified. [Learn more at sharelatex.com](https://www.sharelatex.com/learn/Text_alignment).
+Das ist kein Fehler, sondern so gewollt: Markdown trennt Format vom Text, und zum Format gehört auch das Ausrichten von Text. Die meisten Texte nutzen eh Blocksatz. Willst du dann doch Text rechtsbündig oder zentriert ausrichten, kannst du `LaTeX`-Befehle nutzen. Umschließe den Text einfach mit `\begin{<option>}` und `\end{<option>}`, wobei du `<option>` entweder mit `flushleft`, `flushright` ersetzen kannst. Mittels `\justify` vor dem Paragraphen kannst du explizit Blocksatz anfordern. [Mehr Informationen gibt es auf sharelatex.com](https://www.sharelatex.com/learn/Text_alignment).
 
-## I want to use single line breaks and not create new paragraphs. When I simply hit Enter once, it removes the single line break!
+## Ich möchte einen einzelnen Zeilenumbruch verwenden, aber wenn ich einfach Enter drücke, entfernt das Programm diesen!
 
-To force Pandoc to render single line breaks as such, end your line with a backslash (`\`) or two spaces. The backslash as well as the two spaces will not be rendered in the resulting file.
+Um Pandoc zu zwingen, einfache Zeilenumbrüche zu respektieren, ende deine Zeile einfach mit einem Backslash (`\`) oder zwei Leerzeichen. Backslash bzw. Leerzeichen werden dann beim Exportieren entfernt und der Zeilenumbruch bleibt erhalten.
 
-## Do I really need Pandoc or LaTeX?
+## Brauche ich wirklich Pandoc oder LaTeX?
 
-For plain HTML export, no. For all other export formats, yes. Zettlr depends on those programs to enable exporting of files. But don't worry: They are Open Source and therefore completely free of charge, and available on all Operating Systems!
+Wie bei allem im Leben: Es kommt darauf an. HTML funktioniert auch ohne alles, aber für die anderen Formate brauchst du Pandoc. Wenn du PDF-Dateien erstellen willst, brauchst du auch LaTeX. Aber keine Sorge: Beide Programme sind frei verfügbar, quelloffen und für alle Betriebssysteme erhältlich!
 
-## How do I install Pandoc or LaTeX?
+## Wie installiere ich Pandoc und LaTeX?
 
-Please refer to the [setup guide](install.md) for instructions on how to set up Pandoc and LaTeX on your system.
+Wir haben für diesen Zweck eine extra Sektion in der [Installationsanleitung](install.md) vorgesehen.
 
-## Zettlr does not seem to find Pandoc and LaTeX, which are nonetheless installed!
+## Zettlr scheint Pandoc und LaTeX nicht zu finden, obwohl sie installiert sind!
 
-This can happen in case your computer decided to install the software in a non-standard directory. Zettlr will try its best to locate the applications but may fail if they are buried somewhere. That's where the path-options in the preferences come into play. In case Zettlr does not find any of the binaries, you can enter the **full path** to them in the appropriate text fields in the `Advanced`-tab.
+Das kann passieren, wenn sich dein Computer entscheidet, sie an unmöglichen Orten zu verstecken. Zettlr versucht von sich aus, die Programme zu finden, aber hat auch nur bis zu einem bestimmten Punkt Erfolg. Wenn Zettlr die Programme partout nicht finden kann, kannst du den ganzen Pfad bis zu den Programmen in den Einstellungen hinterlegen.
 
-On Windows, you should never encounter this issue, as long as you leave the default installation path during install set to the default `Program Files` directory of Windows. If you wanted to install the programs to different locations, rendering Zettlr unable to find them, simply search your system using the Explorer for two files, the first being `pandoc.exe` and the second being `xelatex.exe`. Copy the full path (including the executable's name!) to the appropriate text field in the Zettlr preferences.
+Auf Windows solltest du dieses Problem im Normalfall gar nicht haben. Falls doch, müsstest du im Explorer nach `pandoc.exe` und `xelatex.exe` suchen — das sind die eigentlichen Programme, die Zettlr braucht.
 
-On macOS you can easily find the path by opening up `Terminal.app` (it's in your Applications folder under `Other`) and then type `which pandoc` _or_ `which xelatex`, depending on which software Zettlr does not find. Terminal will simply output the full path to the program.
+Auf macOS reicht es, die `Terminal.app` zu öffnen (unter den Anwendungen --> Andere) und dann `which pandoc` bzw. `which xelatex` einzutippen. Der Pfad bis zu den Programmen sollte dann im Terminal erscheinen. Genauso funktioniert das auch auf Linux.
 
-On Linux distributions, you also need to open up a Command Line/Terminal and use the same commands as on macOS: `which pandoc` for Pandoc and `which xelatex` for LaTeX.
+## Beim Exportieren hat Zettlr den Fehler ausgegeben, die PDF-Engine sei nicht erkannt worden!
 
-## On Export, Zettlr says the PDF-Engine wasn't recognised!
-
-This is a common Pandoc error, indicating that your Pandoc version is pre-2.x. When Zettlr presents you the following error message, it means you need to update to Pandoc 2.x:
+Das ist ein häufiger Pandoc-Fehler, der auftritt, wenn deine Pandoc-Version noch von vor 2.0 war. Wenn Zettlr also den folgenden Fehler ausgibt:
 
 `pandoc: unrecognized option '--pdf-engine=xelatex' Try pandoc --help for more information.`
 
-The reason is that with Pandoc 2.0, the older option `--latex-engine` was renamed to `--pdf-engine`. [See more in Pandoc's changelog](https://github.com/jgm/pandoc/blob/master/changelog#L4349).
+dann heißt das, dass du deine Pandoc-Version aktualisieren musst. Der Grund dafür ist, dass seit Pandoc 2.0 die ältere Option `--latex-engine` in `--pdf-engine` umbenannt wurde. Mehr Informationen gibt es im [Changelog von Pandoc](https://github.com/jgm/pandoc/blob/master/changelog#L4349).
 
-## I found a bug!
+## Ich habe einen Fehler gefunden!
 
-That's great news! Well, not great, but it's good that you found it! In this case please head over to [GitHub](https://github.com/Zettlr/Zettlr/) and open up an issue so that we know what's up and can work to resolve the bug.
+Sehr gut! Also, natürlich nicht gut, aber es ist gut, dass du ihn gefunden hast. Bitte [öffne auf GitHub einen neuen Fehlerbericht](https://github.com/Zettlr/Zettlr/), sodass wir uns direkt daran begeben können, den Fehler zu beheben!
 
-## I have a feature request! / I have a suggestion for making a feature more efficient!
+## Ich habe eine Idee für ein neues Feature oder um ein Feature zu verbessern!
 
-That's good to hear! We always depend on other people's experience with the app to improve its efficiency and its suitability for different situations. In this case, please head over to [GitHub](https://github.com/Zettlr/Zettlr/) and open up an issue so that we can get right to it.
+Das ist gut zu hören! Wir sind auf andere Personen angewiesen, deren Erfahrungen mit der App uns helfen, sie besser für alle zu machen. In diesem Fall öffne gerne auf [GitHub](https://github.com/Zettlr/Zettlr/) ein neues Ticket, indem du uns beschreibst, was du dir so gedacht hast.
 
-## What about my privacy? Does Zettlr transfer any data, or don't I have to worry?
+## Wie sieht es eigentlich mit meiner Privatsphäre aus? Schickt Zettlr Daten irgendwohin?
 
-Zettlr is privacy-first. It does not send any data, and it is fully functional offline. Yet, there is one instance where Zettlr sends data over the web: The update check. Whenever you open Zettlr, or use the menu item, Zettlr will connect to the Zettlr-API to retrieve a list of all releases. This list is then used to determine whether or not you are using the newest release, or not. During the connection, Zettlr will receive your IP-address and will know that an Electron-app is accessing the API. The app will also transmit your operating system type and the application ID.
+Zettlr achtet deine Privatsphäre. Als deutsche App müssen wir uns an die Datenschutzgrundverordnung (DSGVO) halten und tun das auch sehr gerne. Zettlr funktioniert offline und du musst auch kein Benutzerkonto einrichten oder dergleichen. Allerdings muss die App natürlich auch mit unserem Server kommunizieren. Immer, wenn du sie startest, überprüft sie, ob es eine neue Version gibt und schaut auch nach, ob irgendeine der Übersetzungen vielleicht aktualisiert worden ist. Während dieser Verbindung erfährt unser Server deine IP-Adresse und, dass eine Zettlr-Installation gerade mit dem Server kommuniziert. Die App überträgt auch dein Betriebssystem und die einzigartige Anwendungs-ID.
 
-This data will never be sold to third parties. It's just because we like statistics and we are always interested in finding out who's using the app. Nevertheless, we can't identify anyone based on that data, it's much too coarse for this. We're Open Source, not Facebook.
+Diese Daten werden niemals an Dritte verkauft oder geteilt. Diese Daten erheben wir nur, weil wir Statistiken mögen und immer daran interessiert sind, zu wissen, wie die App genutzt wird. Nichtsdestotrotz können wir niemanden identifizieren, da wir keine personenbezogenen Daten erheben. Wir sind schließlich Open Source und nicht Facebook.

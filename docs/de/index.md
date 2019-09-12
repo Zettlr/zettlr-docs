@@ -1,51 +1,49 @@
-# Zettlr Documentation
+# Zettlr Benutzerhandbuch
 
 > [Documentación Zettlr en español (mantenido por ScaredCoward)](https://github.com/ScaredCoward/zettlr-docs/blob/master/Menu%20en%20ESPA%C3%91OL.md)
 
-Thank you for choosing Zettlr as your reliable writing companion. On these pages, we help you get started with the app to supercharge your own writing. If you haven't yet gotten your own copy of Zettlr, [head over to the download page](https://www.zettlr.com/download) and get it for your operating system!
+Vielen Dank, dass du dich für Zettlr entschieden hast! Auf diesen Seiten helfen wir dir, erste Schritte mit der Software zu machen und deinen Schreibfluss zu verbessern. Wenn du noch keine Kopie von Zettlr hast, dann [lade sie dir hier herunter](https://www.zettlr.com/download)!
 
-## Getting Started
+## Erste Schritte
 
-To see how to install Zettlr on your system, please consult the [setup instructions](install.md). It is also recommended to set up Pandoc and LaTeX right away to enable all importing and exporting functionality of Zettlr. Don't worry, it's really easy!
+Wenn du Probleme mit dem Installieren der Software haben solltest, folge am besten unseren [Installationsanleitungen](install.md). Es ist auch empfohlen, direkt Pandoc und LaTeX zu installieren, damit du die App voll ausnutzen kannst. Keine Sorge: Es ist wirklich einfach!
 
-Don't want to waste time? Head over to our [very-quick start guide "Zettlr in 5 Minutes"](5-minutes.md)! After five minutes you'll know everything you need to know.
+Dann kannst du dich direkt schon in unseren wirklich schnellen Schnellstart-Guide ["Zettlr in fünf Minuten"](5-minutes.md) hereinwerfen. Denn nach fünf Minuten weißt du alles, was du wissen musst!
 
-## Guides
+## Anleitungen
 
-Have a look at our user guides so that you can learn all workflows. The guides are not focused around features, they are focused around workflows. Here you can read about popular workflows, step by step.
+Unsere ausführlichen Anleitungen sind beispielhafte Vorgaben, wie Zettlr aussehen kann für bestimmte Zwecke.
 
-* [Use Zettlr as a note taking app](guides/guide-notes.md)
-* [Use Zettlr as a Zettelkasten system](guides/guide-zettelkasten.md)
-* [Use Zettlr as a full IDE](guides/guide-ide.md)
+* [Zettlr als Notizprogramm](guides/guide-notes.md)
+* [Zettlr als Zettelkasten](guides/guide-zettelkasten.md)
+* [Zettlr als vollwertige Entwicklungsumgebung](guides/guide-ide.md)
 
 ## Core
 
-Everyone can become very quick and efficient at his or her workflow, but can you really excel without a deep knowledge about how certain features work? Shortcuts to mundane tasks and key combinations for speeding up common tasks as well as hidden features of Zettlr are explained in the rest of the documentation. Learn how to move whole paragraphs around with two clicks or how to link to websites with only one click in this detailed documentation.
+Jede\*r kann natürlich schnell gut mit bestimmten Arbeitsabläufen und Programmen werden. Aber kann man _wirklich_ gut in einem Programm werden, ohne die kleinen Tipps und Tricks zu kennen? Tastaturkürzel für häufig verwendete Aufgaben oder versteckte Features werden in der Core-Sektion erklärt. Erfahre, wie du ganze Absätze hin und her verschieben kannst oder Hyperlinks mit nur einem Klick einfügen kannst.
 
-* [The Editor](core/editor.md)
-* [Markdown Basics](reference/markdown-basics.md)
-* [The File List](core/file-list.md)
-* [Searching](core/search.md)
-* [Exporting with Zettlr](core/export.md)
-* [Virtual Directories](core/virtual-directories.md)
-* [Custom CSS](core/custom-css.md)
-* [Localisation](core/localisation.md)
-* [The Attachment Sidebar](core/attachments.md)
+* [Der Editor](core/editor.md)
+* [Markdown 101](reference/markdown-basics.md)
+* [Die Dateiliste](core/file-list.md)
+* [Suchen und Finden](core/search.md)
+* [Exportieren](core/export.md)
+* [Virtuelle Verzeichnisse](core/virtual-directories.md)
+* [Benutzerdefiniertes CSS](core/custom-css.md)
+* [Übersetzungen](core/localisation.md)
+* [Die linke Seitenleiste](core/attachments.md)
 
-## Academic Tools
+## Wissenschaftliches Arbeiten
 
-Zettlr has been developed with academic writing in mind. Therefore, it offers a lot of powerful tools to help you write academic texts right out of the box. You can explore the possibilities of Zettlr as an academic editor by browsing this category.
+Zettlr wird von Wissenschaftler\*innen für Wissenschaftler\*innen entwickelt. Daher gibt es besonders für diese Berufsgruppe viele nützliche Features. Du erfährst alles über die enge Integration mit Zotero und das Zitieren in diesen Anleitungen.
 
-* [Citations](academic/citations.md)
-* [Projects](academic/projects.md)
-* [Presentations](academic/presentations.md)
-* [Pomodoro Timer](academic/pomodoro.md)
-* [Readability-Mode](academic/readability.md)
-* [Zettelkasten Methods](academic/zkn-method.md)
-* [Custom LaTeX Templates](academic/custom-templates.md)
+* [Zitieren](academic/citations.md)
+* [Projekte nutzen](academic/projects.md)
+* [Präsentationen erstellen](academic/presentations.md)
+* [Pomodoro-Timer](academic/pomodoro.md)
+* [Lesbarkeits-Modus](academic/readability.md)
+* [Zettelkasten-Methoden](academic/zkn-method.md)
+* [Eigene LaTeX-Vorlagen](academic/custom-templates.md)
 
-## Get involved!
+## Mach mit!
 
-Currently, Zettlr is only available in a handful of languages. But according to the internet™, there are [roughly 6,500 spoken languages](https://www.infoplease.com/askeds/how-many-spoken-languages) on the world. So any help is welcome in translating the app. You can download all languages that have already been translated over at our [translation page](https://translate.zettlr.com/) and even get into into translating it yourself! **Do you want to translate the app into a language that is not offered at the page? Simply [drop us a note](mailto:info@zettlr.com), and we'll add it**!
-
-Head over to our [documentation on how to help](get-involved.md) us make the app better by translating!
+Als Open Source-Projekt arbeiten wir alle ehrenamtlich in unserer Freizeit an der App. Wir freuen uns über jede\*n, die\*der uns helfen will, Zettlr besser zu machen. Du kannst helfen, indem du regelmäßig die Beta-Versionen testest, die App in weitere Sprachen übersetzt oder sogar mit beim Programmieren helfen! Erfahre mehr in [unserer ausführlichen Dokumentation](get-involved.md)!
