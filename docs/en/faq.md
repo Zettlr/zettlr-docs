@@ -39,7 +39,7 @@ In case the internal links used to interlink files don't work as expected, pleas
 
 ## I know LaTeX and want to use it inside my Markdown files as well. Is this possible?
 
-Yes. Simply write your `LaTeX`-statements where you want them. As soon as you export to PDF, Pandoc will take care of the rest and the statements will be interpreted by the PDF engine. Unfortunately, `LaTeX` syntax highlighting is not supported. Also, please note that Pandoc will clear all `LaTeX`-blocks prior to exporting to anything other than PDF, which means that blocks within `\begin` and `\end`, for instance, will be missing completely from the final Office file. On HTML-export, all `LaTeX`-blocks will retained, but not converted to something else.
+Yes. Simply write your `LaTeX`-statements where you want them. As soon as you export to PDF, Pandoc will take care of the rest and the statements will be interpreted by the PDF engine. Unfortunately, `LaTeX` syntax highlighting is not supported. Also, please note that Pandoc will clear all `LaTeX`-blocks prior to exporting to anything other than PDF, which means that blocks within `\begin` and `\end`, for instance, will be missing completely from the final Office file. On HTML-export, all `LaTeX`-blocks will be retained, but not converted to something else.
 
 ## I can't seem to align the text just or right!
 
