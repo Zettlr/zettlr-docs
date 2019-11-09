@@ -2,7 +2,7 @@
 
 This repository holds the official documentation for the [Zettlr markdown app](https://www.zettlr.com/). It is hosted publicly on GitHub to give you the chance to easily submit modifications and help the Zettlr documentation stay comprehensive even for new users who need a hand in getting to grips with Zettlr.
 
-**Contributions from the Community are encouraged!** If you spot typos, wrong our outdated information, or have other good input to improve the documentation, we appreciate all your ideas.
+**Contributions from the Community are encouraged!** If you spot typos, wrong or outdated information, or have other good input to improve the documentation, we appreciate all your ideas.
 
 ## How it Works
 
