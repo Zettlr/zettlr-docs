@@ -4,29 +4,34 @@ Zettlr offers you a plethora of options to customise your experience with the ap
 
 ## General Preferences
 
-You can display the general preference dialog using either the shortcut `Cmd/Ctrl+,`, the toolbar button (the cog) or the respective menu item. The dialog will then show up and present to you all configuration options you may customise. They are ordered in six tabs that you can see at the top of the dialog.
+You can display the general preference dialog using either the shortcut `Cmd/Ctrl+,`, the toolbar button (the cog) or the respective menu item. The dialog will then show up and present to you all configuration options you may customise. They are ordered in nine tabs that you can see at the top of the dialog.
 
 * General: These options affect Zettlr as a whole.
 * Editor: These settings concern only the editor itself.
 * Export: Control how your files are exported in this tab.
 * Zettelkasten: Adapt Zettlr to match your Zettelkasten system.
 * Display: Control how the editor displays certain elements, such as images or links.
+* Theme: Select the theme for the app here.
+* Spellchecking: Find both the installed dictionaries and your user dictionary here.
+* AutoCorrect: Choose text to be replaced and also determine the quotes you’d like to use.
 * Advanced: Options for experienced users.
 
 ### General
 
 ![settings_general.png](../img/settings_general.png)
 
+
 In the general tab you find options that you might want to adjust if you begin using Zettlr to fit it to your needs. The application language is pretty self-explanatory.
 
-The "Night Mode" and "Snippets"-checkboxes control the display. The "Night Mode" is simply the dark theme Zettlr is capable of (and which you might want to control using the shortcut `Cmd/Ctrl+Alt+L` instead). Check the "Snippets"-checkbox to display meta information in the preview pane (although you can control this behaviour as well using its respective shortcut `Cmd/Ctrl+Alt+S`).
+The “Night Mode” and “File information”-checkboxes control the display. The “Night Mode” is simply the dark theme Zettlr is capable of (and which you might want to control using the shortcut `Cmd/Ctrl+Alt+L` instead). Check the “File information”-checkbox to display meta information in the file list (although you can control this behaviour as well using its respective shortcut `Cmd/Ctrl+Alt+S`).
 
-If you check "Hide directories during global search", Zettlr will not display directories while performing a search.
+If you check “Hide directories during global search,” Zettlr will not display directories while performing a search. by selecting “Always load remote changes to the current file”, Zettlr will not ask you whether you’d like to replace the file in the editor.
 
 The sidebar mode controls how the sidebar is displayed to you. You have two options:
 
 * Thin: In thin mode, the sidebar only displays _either_ the list of files _or_ the tree view. You can switch between both using the shortcut `Cmd/Ctrl+Shift+1`.
 * Expanded: The expanded mode displays both the tree view and the file list side by side. In this mode, you have both lists always present.
+* Combined: This makes the Sidebar look more like a traditional file browser, because it does not divide folders and files.
 
 If you want to hide the sidebar completely, please use the distraction-free mode (`Cmd/Ctrl+J`).
 
@@ -42,21 +47,20 @@ Last but not least Zettlr can automatically switch to light or dark mode dependi
 
 ![settings_editor.png](../img/settings_editor.png)
 
-The editor tab controls most functionality of the editor. The list to the left contains all available dictionaries that can be used for spell checking. Simply select the ones you want to use. You can use multiple dictionaries to check bilingual texts. Filter the list using the search box on top of the list.
+The editor tab controls most functionality of the editor. As Markdown allows both asterisks and underscores to make text bold and italic, you can choose your favourite flavour here. The **default image path** is a path you can use to tell Zettlr where it should put your images when you paste them from clipboard. It can be absolute or relative. If you provide the name `assets`, Zettlr would put images by default into the `assets` subdirectory of the directory where your file is. You can even tell it to use a directory relative to the parent directory, e.g. `../assets`. Remember that you can always select the directory for an image on a case-by-case basis.
 
-> **Tip**: To disable spell checking, uncheck all dictionaries. To install additional dictionaries, refer to the [localisation manual](../core/localisation.md).
+The indentation refers to the amount of spaces inserted when you, e.g., increase the level of lists.
 
-On the right hand side of the tab, you can see some checkboxes, a text input, and another list. First you can **mute non-focused lines** while you are in the distraction free mode. This means that Zettlr dims all lines except the one where your cursor is. The next option allows you to **automatically close certain character pairs**.
+The algorithm for the readability mode that Zettlr should use when you toggle the readability mode. For a short explanation of the different algorithms available, please head over to [our documentation on the readability mode](https://www.zettlr.com/readability).
+
+Further, you can **mute non-focused lines** while you are in the distraction free mode. This means that Zettlr dims all lines except the one where your cursor is. The next option allows you to **automatically close certain character pairs**.
 
 The third option only applies to users using a keyboard that features the `Home` and `End` keys. If you press them, the default CodeMirror behaviour is to move the cursor to the beginning or end respectively of a whole paragraph (i.e.: the beginning and end of a _logical_ line). If you want CodeMirror to only move to the beginning and end of the _visible_ line, make sure to turn off this option. If you make use of the hard-wrap feature of Markdown, and always manually wrap a paragraph, this setting won't have any effect for you.
-
-The **default image path** is a path you can use to tell Zettlr where it should put your images when you paste them from clipboard. It can be absolute or relative. If you provide the name `assets`, Zettlr would put images by default into the `assets` subdirectory of the directory where your file is. You can even tell it to use a directory relative to the parent directory, e.g. `../assets`. Remember that you can always select the directory for an image on a case-by-case basis.
-
-Finally, the list on the right hand side of the tab displays all the words you've added to your custom dictionary. Click them to remove them from your user dictionary.
 
 ### Export
 
 ![settings_export.png](../img/settings_export.png)
+
 
 The export tab allows you to tweak all preferences concerning how your files are exported. To the left you have options concerning the Zettelkasten functionality.
 
@@ -75,6 +79,7 @@ The CSL JSON database field can be used to open a literature database. Zettlr wi
 ### Zettelkasten
 
 ![settings_zettelkasten.png](../img/settings_zettelkasten.png)
+
 
 In this tab you can customise the way Zettlr works with your existing Zettelkasten system. In most cases you won't need to touch these options, except you want to use a custom system.
 
@@ -110,6 +115,7 @@ You can test both the generation of IDs and the detection of them by clicking th
 
 ![settings_display.png](../img/settings_display.png)
 
+
 This tab controls how the editor displays certain elements. Zettlr uses a semi-preview approach to Markdown and only renders some elements. On this tab you can control which elements will be rendered.
 
 > The iFrame-setting controls whether or not to render iFrames (for instance, YouTube-videos are embedded iFrames).
@@ -118,19 +124,49 @@ Additionally you can constrain the size of images, which is especially beneficia
 
 The vertical slider controls the maximum height of the images relative to the window size. 50 percent would mean that images will never be higher than half of the window's total size. 100 percent disables this behaviour. Unlike the width, images may very well exceed 100 percent of the viewport if they are large and thin.
 
+Last but not least you can determine which date you would like to see in the file metadata in the file list. This does not affect the sorting, if you’d like to sort by date. To change the time after which Zettlr should sort your files, please refer to the general tab.
+
+### Theme
+
+![settings_theme.png](../img/settings_theme.png)
+
+This tab should explain itself: Click on any of the previews to switch your application to that theme.
+
+### Spellchecking
+
+![settings_spellchecking.png](../img/settings_spellchecking.png)
+
+With the introduction of the user dictionary, the spellchecking functionality has moved to its dedicated tab. The list to the left contains all available dictionaries that can be used for spell checking. Simply select the ones you want to use. You can use multiple dictionaries to check bilingual texts. Filter the list using the search box on top of the list.
+
+> **Tip**: To disable spell checking, uncheck all dictionaries. To install additional dictionaries, refer to the [localisation manual](../core/localisation.md).
+
+Finally, the list on the right hand side of the tab displays all the words you've added to your custom dictionary. Click them to remove them from your user dictionary.
+
+### AutoCorrect
+
+![settings_autocorrect.png](../img/settings_autocorrect.png)
+
+This tab controls the AutoCorrect features you can use from version 1.5 onward that you might already know from LibreOffice or Word. You can choose to turn it off completely and choose the flavour you’d like. The main difference between the two styles is that Word is much quicker in replacing; it will replace when you type the last character, whereas LibreOffice only replaces when you hit Space or Return. LibreOffice is less harassing, but if you’re perfectly used to Word, you might find this mode easier.
+
+The “Magic Quotes” refer to exactly that: the primary and secondary quotes that you would like to use instead of the generic ASCII-quotes (`"` and `'`). We’ve included a lot of pairs used all around the world. If you would like to deactivate this feature, choose the **first** option (the ASCII-quotes) in both dropdowns.
+
+The last thing you can tweak is the replacement table to the right: These are simply characters you would like to replace with different ones. We’ve included a comprehensive list with most commonly needed tokens, so feel free to have a look around and also add or remove some!
+
 ### Advanced
 
 ![settings_advanced.png](../img/settings_advanced.png)
 
 The advanced tab contains options that are helpful for advanced users.
 
+The “pattern for new filenames” is what the textfield will look like when you create a new file. It will be prepopulated by whatever you type here. You can make use of the variables below (the ID following the pattern you have selected in the Zettelkasten-tab, year, month, day, hour, minute and second). If you tick the checkbox, Zettlr will not even ask you for a filename when you create a new file, which might speed up your workflow.
+
 The **pandoc- and xelatex-text fields** are used in case Zettlr is unable to locate any of these two programs. As you know, Zettlr uses both to export your files. In rare cases it may be that Zettlr is unable to find them, although you installed them properly. If that happens, simply enter the **full, absolute path** to both programs in the textfields to help Zettlr find them.
 
 The **debug option** is used to control whether or not you are able to "reload" the graphical user interface (GUI) by pressing `F5` and display the Chrome developer tools to inspect what the app is doing. Naturally, you would want to do this as a developer.
 
-You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases as well. You can then decide whether to use the beta version, or not.
+You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases as well. You can then decide whether to use the beta version, or not. Activate **RMarkdown file support** to enable the detection of `.rmd`-files used for R-Markdown. It is inactive by default, as some other programs (for instance, by Adobe) also use this extension to store binary data, which would cause problems.
 
-The text area to the right controls what files will be displayed in the **attachment** sidebar. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions that are you might be using.
+The text area to the right controls what files will be displayed in the **attachment** sidebar. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions you might be using.
 
 The **Pandoc command** gives you full control over the export engine. The command in there will be run on export. You have a few variables at your disposal to customise your export:
 
@@ -176,6 +212,6 @@ The font-size should be rather obvious. The line height specifies the spacing be
 
 The tags dialog does not have a shortcut associated, so you'll need to call it using the respective menu item. Here you can assign colours and descriptions to tags.
 
-To add a new tag-colour-relationship, simply press the `+`-button at the bottom of the dialog. In the first field, enter your tag without the preceding hashtag symbol (e.g. if you wanted to assign a colour to the hashtag `#todo`, simply enter `todo`). Next, choose a colour to be assigned to that tag. If you click the second bar after the tag name field, a color picker should appear that lets you choose a colour. In the third field, you can enter a short description for that tag. This description will be shown if you hover over the tag symbols in the preview pane.
+To add a new tag-colour-relationship, simply press the `+`-button at the bottom of the dialog. In the first field, enter your tag without the preceding hashtag symbol (e.g. if you wanted to assign a colour to the hashtag `#todo`, simply enter `todo`). Next, choose a colour to be assigned to that tag. If you click the second bar after the tag name field, a color picker should appear that lets you choose a colour. In the third field, you can enter a short description for that tag. This description will be shown if you hover over the tag symbols in the file list.
 
 If you want to remove a tag-colour-association, simply click the `-`-button at the end of such a tagline (pun intended).
