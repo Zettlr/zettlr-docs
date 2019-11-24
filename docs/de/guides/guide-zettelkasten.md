@@ -1,33 +1,33 @@
-# Guide: Zettlr as Zettelkasten
+# Anleitung: Zettlr als Zettelkasten-App
 
 ![Zettlr as a Zettelkasten](../img/zettlr_zettelkasten.png)
 
-Zettlr can be used as a sophisticated Zettelkasten system implementing a lot of features to organise and structure your files. To begin creating your own Zettelkasten, follow the following steps.
+Zettlr unterstützt viele Funktionen, um es ideal für einen Zettelkasten zu gestalten. Um sie einzig zu diesem Zweck zu gestalten, reicht es, den Angaben hier zu folgen.
 
-> Using this guide, you can set up Zettlr to be a replacement for apps such as nvALT, zkn, or The Archive.
+> Mit dieser Anleitung kann Zettlr als Alternative für Apps wie nvALT, zkn oder The Archive eingestellt werden.
 
-**Are you new to the concept of a Zettelkasten? Then we recommend you [read our post on how a successful Zettelkasten works](https://www.zettlr.com/post/what-is-a-zettelkasten) and [watch our accompanying video](https://youtu.be/c5Tst3-zcWI)!**
+**Neu in der Zettelkasten-Community? In diesem Fall empfehlen wir [unseren Artikel zu einem erfolgreichen Zettelkasten](https://www.zettlr.com/post/what-is-a-zettelkasten) und das [begleitende Video](https://youtu.be/c5Tst3-zcWI) (Englisch).**
 
-## Step 1: Adjust the settings
+## Schritt 1: Die Einstellungen
 
-The first thing you want to do to create your Zettelkasten is to have a look at your preferences. The following settings convert Zettlr into a supercharged Zettelkasten:
+Zunächst sollten die Einstellungen entsprechend angepasst werden:
 
-- General tab
-    - Turn the file information on
-    - Sidebar: Thin mode.
-- Editor tab
-    - Turn off all dictionaries
-- Export tab
-    - Turn off the removal of Zettelkasten IDs and select to keep internal links untouched
-- Zettelkasten tab
-    - This is the most important tab for a Zettelkasten installation, because here you can adjust the settings of how Zettlr interacts with your Zettelkasten. Please refer to the section on the Zettelkasten tab [in the settings chapter ](../reference/settings.md)to learn about these options in detail.
+- Allgemein
+    - Metainformationen einschalten
+    - Dünner Seitenleisten-Modus
+- Export
+    - Entfernen von Zettelkasten-IDs und internen Links ausschalten
+- Zettelkasten
+    - Hier können zahlreiche Einstellungen für Zettelkästen eingestellt werden. Bitte befolge die Anweisungen in der [Anleitung zu den Einstellungen](../reference/settings.md) für alle Informationen.
+- Anzeige
+    - Hier können die meisten Darstellungsoptionen deaktiviert werden
+- Wörterbücher
+    - Hier sollten alle Wörterbücher ausgeschaltet werden.
 
-## Step 2: Create a Directory
+## Schritt 2: Ein Zettelkasten-Verzeichnis erstellen
 
-After you have set up the basic variables that Zettlr uses for its Zettelkasten functionality, it is time to create a directory. It is common to only have one big directory in which you can throw everything and work with this, therefore one root directory should suffice. Then you'll have a huge list of all your files on every application start and can immediately begin to work.
+Zettelkästen sind zur Benutzung mit einzelnen Verzeichnissen gedacht, nach dem Motto „One Folder to Rule them All“. Daher bietet es sich vor dem Beginn mit einem Zettelkasten an, ein dezidiertes Verzeichnis für ihn anzulegen. Um ein neues Verzeichnis anzulegen kann das Kürzel `Strg/Cmd+O` benutzt werden.
 
-To add a new directory to Zettlr, hit `Cmd/Ctrl+O`, click the first toolbar button or drag the directory from Finder or Explorer onto the app.
+## Schritt 3: Schreib!
 
-## Step 3: Write!
-
-Now you'll be set to use Zettlr as your Zettelkasten management system. If you want to dig deeper into how a Zettelkasten should work and what it should look like, consult the immense amount of resources on Zettelkästen, available on the web. A good starting point is [Zettelkasten.de](https://www.zettelkasten.de/). The authors have assembled a large list of (english) blog posts on how to supercharge your writing using a Zettelkasten.
+Jetzt steht dem Beginn des Zettelkastens nichts mehr im Weg. Die Macht eines Zettelkastens liegt weniger in der Anzeige des Programms, sondern in der internen Struktur, also etwas, das völlig in deiner Macht liegt. Daher bietet es sich an, weitere Anleitungen zu konsultieren, um die beste Strategie herauszufinden. Ein guter Startpunkt hierfür ist [zettelkasten.de](https://www.zettelkasten.de/). Die Autoren haben eine große Liste englischer Artikel zu dem Thema erstellt.
