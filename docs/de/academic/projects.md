@@ -32,8 +32,6 @@ Zunächst wird Zettlr intern den gesamten Projektordner in eine Liste überführ
 
 > Beachte, dass Zettlr _alle_ Unterordner mit in das Projekt einbeziehen wird. Das ist als Komfortfunktion gedacht, damit große Projekte wie ganze Bücher in einzelne Unterordner aufgeteilt werden können. Das bedeutet aber auch, dass beispielsweise Notizen _nicht_ Teil des Projektordners sein sollten, da diese sonst mit exportiert werden. In diesem Fall bietet es sich an, im designierten Projektordner zwei weitere Verzeichnisse anzulegen, einmal für Notizen, und einmal für das eigentliche Projekt – nur dieser Ordner sollte in dem Falle zum Projekt deklariert werden.
 
-**TODO HERE**
-
 Nachdem die Dateien eingelesen wurden, werden sie angepasst (bspw. werden alle Pfade normalisiert, damit sowohl Pandoc als auch LaTeX die verlinkten Bilder finden) und zusammengefügt. Danach wird diese große Datei temporär auf der Festplatte gespeichert.
 
 Als nächstes wird Zettlr die Einstellungen des Projektes einlesen und ab hier dem gleichen Prozess folgen, wie die Standard-Exporte: Exporter starten, mit den Optionen füttern, auf die temporäre Datei verweisen und damit Pandoc starten. Nachdem das Projekt exportiert wurde, wird die finale Datei mit dem Systemstandard geöffnet.
