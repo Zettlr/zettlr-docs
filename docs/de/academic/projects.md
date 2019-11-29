@@ -1,48 +1,47 @@
-# Projects
+# Projekte
 
-Since version `0.18`, Zettlr supports projects. Projects are a way to simplify the concatenation and export of more than a single file. They allow you to split up one single project into several different files to work on. You can portion your work into several files and only in the end glue them together and export them as one single PDF file. Also, Zettlr projects allow you to better finegrain your PDF exports. With projects you can, for instance, command Zettlr to create a title page or a table of contents as well.
+Projekte ermöglichen es, mehr als nur eine Markdown-Datei in ein einziges Dokument zu exportieren. Daher können große Projekte in einzelne Dateien aufgesplittet werden, z.B. nach Kapiteln, und werden erst am Ende zu einer großen Datei zusammengefügt. Weiterhin ermöglichen es Projekte, Projekt-spezifische Einstellungen für den Export anzuwenden. Es ist mit Projekten beispielsweise möglich, eine Titelseite oder ein Inhaltsverzeichnis anzulegen.
 
 ![project_directory.png](../img/project_directory.png)
 
-## Creating a project
+## Ein Projekt erstellen
 
-Zettlr Projects are basically just a bunch of additional features for directories. Therefore you can "convert" any directory into a project. Simply right-click the directory you want to make a project of and choose "Create project". Then the directory itself will be coloured red and a pencil-icon will appear to the left of its name, indicating that this directory has project features enabled. If you now right-click a directory, you have three additional context menu options at your disposal: "Project Settings", "Build Project" and "Remove Project".
+Projekte sind in der Welt von Zettlr nicht viel mehr als ein zusätzlicher Satz an Einstellungen für Verzeichnisse. Daher können alle Verzeichnisse in Projekte „konvertiert“ werden. Es genügt ein Rechtsklick auf ein Verzeichnis und die Auswahl des Menüpunktes „Projekt erstellen“. Danach wird das Verzeichnis in rot mit einem Stift-Symbol gekennzeichnet, um anzuzeigen, dass es sich hierbei um ein Projekt handelt. Ein Rechtsklick auf ein solches Projektverzeichnis eröffnet drei zusätzliche Menüoptionen: „Projekteinstellungen“, „Projekt exportieren“ und „Projekt entfernen“.
 
-## Working with Projects
+## Mit Projekten arbeiten
 
-Choose "Project Settings" from the context menu of a project directory to open the settings. In general, these are just a copy of the PDF preferences you have globally available for quickly exporting single Markdown files. The two differences are that projects enable you to fine grain the generation of a PDF document, and that these PDF settings only apply for exporting this specific directory. Therefore you can leave your global PDF options intact and use different settings for your project.
+Mit einem Klick auf „Projekteinstellungen“ öffnen sich die Einstellungen des Projektes. Grundsätzlich handelt es sich hierbei um eine Kopie der globalen PDF-Einstellungen. Die zwei Unterschiede sind einerseits, dass es mehr Optionen als bei Standard-PDF-Exporten gibt, und dass die hier getroffenen Einstellungen nicht global, sondern ausschließlich für das jeweilige Projekt gelten.
 
 ![settings_project.png](../img/settings_project.png)
 
-Now let us briefly explore the settings you got for projects. First the metadata tab:
+Die Einstellungen auf dem Metadaten-Tab lauten wie folgt:
 
-- **Project Title**: This title will be used as the file name, the title (if you decide to create a title page) and the PDF title of your document. Default is the directory name.
-- **Project Author**: This will be written into the PDF metadata field for authors.
-- **Project Keywords**: These are keywords you may or may not use when exporting PDF documents.
-- **Generate Title Page**: If this checkbox is selected, Zettlr will direct the LaTeX-engine to generate a title page. It'll use the project title and the current date as well as your author name and write them to the first page of your document.
-- **Generate Table of Contents**: If this checkbox is selected, Zettlr will direct Pandoc to generate a Table of Contents on the second page (if you told Zettlr to generate a title page, else on the first page).
-- **Evaluate until Level …**: With this dropdown list you can choose which headings will be part of your Table of Contents. The default "2" directs Pandoc to generate a table of contents using both first and second degree headers (i.e. `##` and `#`-headers). A 4 would include 1st, 2nd, 3d and 4th grade headers (i.e. `#`, `##`,`###`, and`####`). All other headings will still be present in the file, but they will not appear in the Table of Contents.
+- **Projekttitel**: Wird als Dateiname, der Titel auf der Titelseite des Projektes und als PDF-Metadaten-Titel der exportierten Datei genutzt.
+- **Projekt-Autor**: Wird in die PDF-Metadaten als Autor geschrieben
+- **Schlagworte**: Diese sind eine Erweiterung der PDF-Metadaten und können optional ebenfalls genutzt werden.
+- **Titelseite erstellen**: Ist diese Option aktiv, erstellt Zettlr eine Titelseite und füllt sie (im Standard-Template) mit Titel, Autor\*innen-Namen sowie dem Datum des Exports.
+- **Inhaltsverzeichnis erstellen**: Diese Option steuert, ob Zettlr ein Inhaltsverzeichnis direkt nach der Titelseite erstellen wird. Die Dropdown-Liste gibt dabei an, welche Überschriften in das Inhaltsverzeichnis übernommen werden sollen – eine „2“ bedeutet, dass die Überschriften ersten und zweiten Grades (d.h. `#` und `##`) im Inhaltsverzeichnis auftauchen, während eine „4“ zusätzlich noch Grad drei und vier (d.h. `###` und `####`) mit einbezieht.
 
-Currently, both the page and the font tabs are exactly the same for projects and for your general export options, so please refer to the [settings](../reference/settings.md) page to get to know what they do.
+Mit den Optionen für ein benutzerdefiniertes Template und einen CSL-Stil können die entsprechenden Angaben der globalen PDF-Einstellungen überschrieben werden. Sowohl der „Seite“- als auch der „Schrift“-Tab sind exakt gleich wie die globalen PDF-Einstellungen gesetzt (vgl. die [PDF-Einstellungen](../reference/settings.md#pdf-einstellungen) für einen Überblick).
 
-## Building Projects
+## Projekte exportieren
 
-To build a project, Zettlr will follow the steps described below to generate your final PDF, so please read them carefully to know what to expect once you decide to export your project!
+Um ein Projekt zu exportieren, wird Zettlr den hier genannten Schritten folgen. Beachte sie daher, um zu wissen, nach welchen Regeln die fertige PDF aufgebaut sein wird!
 
-First, Zettlr will take the project directory and crunch the whole contents into a one-dimensional array. This means that **all subfolders and all files in it will be flattened down into a simple list.** What does that mean? Simply have a look at the file list. Internally, before exporting your files, Zettlr will arrange the files _exactly_ as in the preview pane. Therefore, if you check out your preview list, you will know exactly which file will come after which. This is by design so you don't have a nightmarish discovery once you've handed in a paper and realise a full folder with three chapters has been left out.
+Zunächst wird Zettlr intern den gesamten Projektordner in eine Liste überführen. Das bedeutet, dass sämtliche Dateien und Ordner im Projekt auf eine einzige Liste reduziert werden. Was das bedeutet, verrät ein Blick in die Dateiliste (im dünnen oder erweiterten Seitenleistenmodus): Diese zeigt die Ordnerinhalte exakt so an, wie sie später im Projekt aneinander gereiht werden. Daher können Sortier-Optionen der Verzeichnisse genutzt werden.
 
-> Please note that Zettlr will use _all_ subdirectories! This is meant as a convenience for people writing huge projects that they can use as many subdirectories as they want. Therefore, the preview list will be exactly exported as is (all directories will simply be omitted). So please do not create a second level subdirectory, crunch your notes in it and then wonder how your notes got into the final manuscript. If you want to use additional files that shouldn't be exported, simply create two more folders inside your project directory. In one you can then put all your working files, while you can convert the other into the project that can be exported.
+> Beachte, dass Zettlr _alle_ Unterordner mit in das Projekt einbeziehen wird. Das ist als Komfortfunktion gedacht, damit große Projekte wie ganze Bücher in einzelne Unterordner aufgeteilt werden können. Das bedeutet aber auch, dass beispielsweise Notizen _nicht_ Teil des Projektordners sein sollten, da diese sonst mit exportiert werden. In diesem Fall bietet es sich an, im designierten Projektordner zwei weitere Verzeichnisse anzulegen, einmal für Notizen, und einmal für das eigentliche Projekt – nur dieser Ordner sollte in dem Falle zum Projekt deklariert werden.
 
-After your files have been read, a small number of modifications to them is being made (all paths are normalised so that Pandoc and LaTeX may find all your images) before they are concatenated together. Then this huge file is written to disk into a temporary file.
+**TODO HERE**
 
-Next, Zettlr will read the settings you have given the project itself and basically follow the same process as generating single-document-PDFs: Start up the exporter, provide it with your settings, point it to the temporary file and let Pandoc and LaTeX do their work.
+Nachdem die Dateien eingelesen wurden, werden sie angepasst (bspw. werden alle Pfade normalisiert, damit sowohl Pandoc als auch LaTeX die verlinkten Bilder finden) und zusammengefügt. Danach wird diese große Datei temporär auf der Festplatte gespeichert.
 
-Once your project has been exported, it is automatically opened with your default PDF previewer and it is saved into the project directory.
+Als nächstes wird Zettlr die Einstellungen des Projektes einlesen und ab hier dem gleichen Prozess folgen, wie die Standard-Exporte: Exporter starten, mit den Optionen füttern, auf die temporäre Datei verweisen und damit Pandoc starten. Nachdem das Projekt exportiert wurde, wird die finale Datei mit dem Systemstandard geöffnet.
 
-> Please note that especially the generation of a table of contents from huge projects may take an extraordinary amount of time. If you wish to generate a table of contents, LaTeX has to actually build the PDF twice — first to detect on which pages your headings end up after the conversion to PDF, and then a second time to actually include the table of contents. In a test I did, on a new Windows 10 computer the generation of a whole directory of excerpts that rendered to about 150 pages took approximately five minutes in which it seems as if it didn't work. So please be patient — as long as Pandoc or LaTeX don't complain about anything, they are still working.
+> Bitte beachte, dass besonders das Erstellen eines Inhaltsverzeichnisses großer Projekte außergewöhnlich lange dauern kann. Beim Erstellen eines solchen Verzeichnissen muss LaTeX nämlich die Datei zweimal kompilieren — einmal, um zu errechnen, auf welchen Seiten die jeweiligen Überschriften in der fertigen PDF-Datei stehen werden, und ein zweites mal, um das Inhaltsverzeichnis tatsächlich zu generieren. In einem Test haben wir festgestellt, dass ein komplettes Verzeichnis mit Notizen rund 150 Seiten ergeben hat. Das Exportieren hat in diesem Falle mit Inhaltsverzeichnis rund fünf Minuten gedauert, währenddessen es so wirkt, als würde nichts passieren. Solange Pandoc oder LaTeX sich allerdings nicht beschweren, läuft im Hintergrund der Export.
 
-> **Pro-Tip**: As you may know from the FAQ-section, Zettlr and Pandoc will not attempt to filter out TeX-commands you have written into your markdown documents. Remember this while working on your projects: You can add additional pages or do other funky stuff with your files that will actually be present in the final document! You can also create `.tex`-documents by providing the extension when creating new files. These `.tex`-documents support LaTeX syntax highlighting and will be included in the export of your project! Make sure they have a file name that places the file exactly where you need it.
+> **Pro-Tip**: Auch beim Exportieren von Projekten wird Pandoc eventuelle LaTeX-Befehle nicht herausfiltern. Dies kann nützlich beim Erstellen von Projekten sein: So lassen sich beispielsweise am Ende von Dateien oder am Anfang zusätzliche Seitenumbrüche einfügen. Alternativ können sogar ganze Sektionen in `TeX` geschrieben sein, da Zettlr auch diese Dateien mit in die Haupt-Datei einfügen wird. Zudem unterstützen reine `TeX`-Dokumente natürlich auch das komfortable Syntax-Highlighting.
 
-## Removing Projects
+## Projekte entfernen
 
-To remove a project, simply right click it and choose to remove the project. What will be removed is plain and simple the settings file that indicates that your directory should be treated as a project (as in the case of virtual directories, your project settings are stored in a small file called `.ztr-project`). Therefore, if you remove a project, you actually only remove the settings of the project. If you re-create the project, the file will be present once again, but with the default settings. So remember, removing projects will finally delete your settings and you have to set them anew.
+Um ein Projekt wieder zu entfernen genügt ein Rechtsklick und die Auswahl des entsprechenden Kontextmenü-Eintrages. Was hierbei entfernt wird, ist lediglich die `.ztr-project`-Datei, welche Zettlr dazu anleitet, das entsprechende Verzeichnis als Projekt zu behandeln. Das heißt: Alle anderen Dateien in dem Projekt bleiben unangetastet. Nichtsdestotrotz gibt es keine Sicherung der Projekteinstellungen, das heißt: Wenn weg, dann weg.

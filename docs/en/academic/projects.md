@@ -1,6 +1,6 @@
 # Projects
 
-Since version `0.18`, Zettlr supports projects. Projects are a way to simplify the concatenation and export of more than a single file. They allow you to split up one single project into several different files to work on. You can portion your work into several files and only in the end glue them together and export them as one single PDF file. Also, Zettlr projects allow you to better finegrain your PDF exports. With projects you can, for instance, command Zettlr to create a title page or a table of contents as well.
+Projects are a way to simplify the concatenation and export of more than a single file. They allow you to split up one single project into several different files to work on. You can portion your work into several files and only in the end glue them together and export them as one single PDF file. Also, Zettlr projects allow you to better finegrain your PDF exports. With projects you can, for instance, command Zettlr to create a title page or a table of contents as well.
 
 ![project_directory.png](../img/project_directory.png)
 
@@ -20,10 +20,12 @@ Now let us briefly explore the settings you got for projects. First the metadata
 - **Project Author**: This will be written into the PDF metadata field for authors.
 - **Project Keywords**: These are keywords you may or may not use when exporting PDF documents.
 - **Generate Title Page**: If this checkbox is selected, Zettlr will direct the LaTeX-engine to generate a title page. It'll use the project title and the current date as well as your author name and write them to the first page of your document.
-- **Generate Table of Contents**: If this checkbox is selected, Zettlr will direct Pandoc to generate a Table of Contents on the second page (if you told Zettlr to generate a title page, else on the first page).
+- **Generate Table of Contents**: If this checkbox is selected, Zettlr will direct Pandoc to generate a Table of Contents on the second page (or on the first, if you do not want a title page).
 - **Evaluate until Level …**: With this dropdown list you can choose which headings will be part of your Table of Contents. The default "2" directs Pandoc to generate a table of contents using both first and second degree headers (i.e. `##` and `#`-headers). A 4 would include 1st, 2nd, 3d and 4th grade headers (i.e. `#`, `##`,`###`, and`####`). All other headings will still be present in the file, but they will not appear in the Table of Contents.
 
-Currently, both the page and the font tabs are exactly the same for projects and for your general export options, so please refer to the [settings](../reference/settings.md) page to get to know what they do.
+Additionally, you can choose a custom `TeX`-template to be used for this project (that is, e.g., a template provided by the journal you‘d like to submit your paper to, or a custom one). Furthermore, you can override the default CSL-Style from the general export settings to use a custom one.
+
+Currently, both the page and the font tabs are exactly the same for projects and for your general export options, so please refer to the [settings page](../reference/settings.md#pdf-preferences) to get to know what they do.
 
 ## Building Projects
 
@@ -45,4 +47,4 @@ Once your project has been exported, it is automatically opened with your defaul
 
 ## Removing Projects
 
-To remove a project, simply right click it and choose to remove the project. What will be removed is plain and simple the settings file that indicates that your directory should be treated as a project (as in the case of virtual directories, your project settings are stored in a small file called `.ztr-project`). Therefore, if you remove a project, you actually only remove the settings of the project. If you re-create the project, the file will be present once again, but with the default settings. So remember, removing projects will finally delete your settings and you have to set them anew.
+To remove a project, simply right click it and choose to remove the project. What will be removed is plain and simple the settings file that indicates that your directory should be treated as a project (called `.ztr-project`). Therefore, if you remove a project, you actually only remove the settings of the project. If you re-create the project, the file will be present once again, but with the default settings. So remember, removing projects will finally delete your settings and you have to set them anew.
