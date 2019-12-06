@@ -58,6 +58,7 @@ For remembering them easier, here are some thoughts we've put into assigning the
 * `Cmd/Ctrl+B`: Make the selection bold or insert new bold formatting characters.
 * `Cmd/Ctrl+I`: Make the selection italic or insert new italics formatting characters.
 * `Cmd/Ctrl+K`: Insert a new link template or convert the selected text into the caption of a new link. If the clipboard contains a recognisable link, also fill in the braces for the target.
+* `Cmd/Ctrl+T`: Make the current line a tasklist item.
 * `Cmd/Ctrl+F`: Opens the search popup inside the editor that has currently focus (either the main editor or a Quicklook window).
 * `Ctrl+Alt+F` (Windows/Linux) `Cmd+Alt+R` (macOS): Insert a new footnote at the current cursor position.
 * `Cmd/Ctrl+L`: Generate a new ID using the generator pattern from the settings dialog and insert it at the current cursor position.
