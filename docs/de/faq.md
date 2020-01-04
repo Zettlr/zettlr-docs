@@ -10,7 +10,7 @@ Wir erhalten mehr und mehr Anfragen nach einer solchen mobilen Version. Wir find
 
 ## Plant ihr, auch weitere Linux-Distributionen außer Debian oder Fedora zu unterstützen?
 
-Aufgrund unserer fehlenden Ressourcen und Zeit können wir außer diesen Haupt-Distributionen keine weiteren unterstützen. Allerdings helfen uns viele Leute, die die App auf eigene Kosten immer auch für ArchLinux kompilieren. Wenn ihr ebenfalls eine Plattform unterstützen möchtet, sagt uns bescheid, damit wir einen Link zu dem Repository in unsere Download-Seite aufnehmen können!
+Aufgrund unserer fehlenden Ressourcen und Zeit können wir außer diesen Haupt-Distributionen keine weiteren unterstützen. Für viele andere Distributionen ist es allerdings möglich, eine der AppImage-Versionen zu installieren, die wir seit 1.5 anbieten. Auch gibt es Unterstützer, die Zettlr für ArchLinux kompilieren. Wenn ihr ebenfalls eine Plattform unterstützen möchtet, sagt uns bescheid, damit wir einen Link zu dem Repository in unsere Download-Seite aufnehmen können!
 
 ## Was ist Markdown?
 
@@ -72,6 +72,18 @@ Das ist ein häufiger Pandoc-Fehler, der auftritt, wenn deine Pandoc-Version noc
 `pandoc: unrecognized option '--pdf-engine=xelatex' Try pandoc --help for more information.`
 
 dann heißt das, dass du deine Pandoc-Version aktualisieren musst. Der Grund dafür ist, dass seit Pandoc 2.0 die ältere Option `--latex-engine` in `--pdf-engine` umbenannt wurde. Mehr Informationen gibt es im [Changelog von Pandoc](https://github.com/jgm/pandoc/blob/master/changelog#L4349).
+
+## Beim Exportieren nach PDF erhalte ich ständig irgendwelche Fehlermeldungen!
+
+Bei den ersten Exporten ist das zu erwarten und nicht weiter schlimm. Zettlr gibt die Datei schlicht an Pandoc weiter und Pandoc gibt diese dann wiederum an die LaTeX-Engine weiter. Das Template jedoch, welches Zettlr verwendet, benötigt einige zusätzliche Pakete, die nicht immer mit installiert werden.
+
+Der häufigste Fehler sieht wie folgt aus:
+
+**LaTeX Error: File \<some name\>.sty not found.**
+
+Dies bedeutet, dass ein bestimmtes Paket nicht gefunden wurde. Auf Windows sollten die Pakete automatisch nachinstalliert werden, sobald sie benötigt werden; auf macOS und Linux lassen sie sich mittels des Befehls `tlmgr install <some name>` nachinstallieren.
+
+Für weitere Fehler erlaubt Zettlr es, Text aus der Fehlermeldung heraus zu kopieren, denn fast immer führt eine kurze Google-Suche nach dem Fehler direkt zu einer Lösung; in fast allen Fällen müssen schlicht nur Pakete nachinstalliert werden.
 
 ## Ich habe einen Fehler gefunden!
 

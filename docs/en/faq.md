@@ -10,7 +10,7 @@ We are getting more and more requests for mobile versions of Zettlr. We are very
 
 ## Do you consider supporting more Linux platforms except Debian and Fedora based ones?
 
-Due to our limited resources we cannot support more platforms out of the box. Debian- and Fedora-based distributions are by far the most popular platforms, which is why we support them officially. If you would like to take upon yourself the responsibility of building Zettlr for other platforms, please get in contact with us so that we can list the additional repository on our download page!
+Due to our limited resources we cannot support more platforms out of the box. Debian- and Fedora-based distributions are by far the most popular platforms, which is why we support them officially. All other Linux distributions are supported if they have AppImage support. If you would like to take upon yourself the responsibility of building Zettlr for other platforms, please get in contact with us so that we can list the additional repository on our download page!
 
 ## What is Markdown?
 
@@ -74,6 +74,18 @@ This is a common Pandoc error, indicating that your Pandoc version is pre-2.x. W
 `pandoc: unrecognized option '--pdf-engine=xelatex' Try pandoc --help for more information.`
 
 The reason is that with Pandoc 2.0, the older option `--latex-engine` was renamed to `--pdf-engine`. [See more in Pandoc's changelog](https://github.com/jgm/pandoc/blob/master/changelog#L4349).
+
+## On Export to PDF, I constantly get error messages!
+
+On the first few exports this is to be expected and completely normal. Zettlr simply passes the file to Pandoc, which passes it on to LaTeX. But the template that Zettlr uses for your PDF-exports requires some additional packets that are not always installed when installing LaTeX.
+
+The most common error looks like this:
+
+**LaTeX Error: File \<some name\>.sty not found.**
+
+This simply means that a certain packet was not found (they end in `.sty`). On Windows, these packets should be installed automatically as soon as they are needed; on macOS and Linux you simply need to run the command `tlmgr install <some name>`.
+
+In case of other errors, Zettlr enables you to copy and paste text from the error message, because in almost all cases, a short Google search leads to a solution; and in almost all cases the only action required is the installation of another packet.
 
 ## I found a bug!
 
