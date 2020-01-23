@@ -75,6 +75,8 @@ This is a common Pandoc error, indicating that your Pandoc version is pre-2.x. W
 
 The reason is that with Pandoc 2.0, the older option `--latex-engine` was renamed to `--pdf-engine`. [See more in Pandoc's changelog](https://github.com/jgm/pandoc/blob/master/changelog#L4349).
 
+If you installed the latest version of Pandoc that is available for your distribution, you may instead update the Pandoc command and replace the new option with the old one as noted above. You can do so the Advanced tab of the preferences.
+
 ## On Export to PDF, I constantly get error messages!
 
 On the first few exports this is to be expected and completely normal. Zettlr simply passes the file to Pandoc, which passes it on to LaTeX. But the template that Zettlr uses for your PDF-exports requires some additional packets that are not always installed when installing LaTeX.
