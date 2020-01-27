@@ -1,3 +1,4 @@
+# Builds and deploys the documentation on updates
 name: Build
 
 on:
