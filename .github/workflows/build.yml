@@ -26,3 +26,14 @@ jobs:
     # Now we can build the thing
     - name: Build the documentation
       run: ./scripts/build.sh
+
+    # Deploy to the server
+    - name: Deploy to production
+      uses: easingthemes/ssh-deploy@v2.0.7
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-vzhr"
+        SOURCE: "build/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.TARGET }}
