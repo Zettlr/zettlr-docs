@@ -1,0 +1,27 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    # For setup, see https://www.mkdocs.org/#installation
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.7'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install mkdocs
+        
+    # Now we can build the thing
+    - name: Build the documentation
+      run: ./scripts/build.sh
