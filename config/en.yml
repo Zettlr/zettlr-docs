@@ -5,7 +5,7 @@ site_description: >-
     Our comprehensive documentation provides you with everything you need to
     know about how to make the most of Zettlr.
 site_author: Hendrik Erz
-copyright: "&copy; 2017-2019 by Zettlr"
+copyright: "&copy; 2017-2020 by Zettlr"
 docs_dir: ../docs/en
 site_dir: ../build/en
 edit_uri: edit/master/docs/en
