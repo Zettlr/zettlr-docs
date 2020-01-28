@@ -3,6 +3,11 @@
 /*
  * General branding: Let's use the Zettlr green instead of the default blue
  */
+
+.section a { 
+  text-decoration: underline; 
+  color: #404040;
+}
 section.wy-nav-content-wrap a { color: black;}/*rgb(28, 178, 126); }*/
 nav.wy-nav-top a, nav.my-nav-top a:active { color: white; }
 .wy-side-nav-search a, .wy-side-nav-search a:visited { color: white; }
