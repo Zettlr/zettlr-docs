@@ -67,3 +67,6 @@ div[role="main"] blockquote a:hover {
 
 /* We have to preset the div with left 0 for the animation to work */
 .wy-nav-content-wrap { left: 0%; }
+
+/* Links are hard to identify in paragraphs, so we underline them */
+.section a { text-decoration: underline; }
