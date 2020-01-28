@@ -3,6 +3,11 @@
 /*
  * General branding: Let's use the Zettlr green instead of the default blue
  */
+
+.section a { 
+  text-decoration: underline; 
+  color: #404040;
+}
 section.wy-nav-content-wrap a { color: black;}/*rgb(28, 178, 126); }*/
 nav.wy-nav-top a, nav.my-nav-top a:active { color: white; }
 .wy-side-nav-search a, .wy-side-nav-search a:visited { color: white; }
@@ -67,6 +72,3 @@ div[role="main"] blockquote a:hover {
 
 /* We have to preset the div with left 0 for the animation to work */
 .wy-nav-content-wrap { left: 0%; }
-
-/* Links are hard to identify in paragraphs, so we underline them */
-.section a { text-decoration: underline; }
