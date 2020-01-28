@@ -5,7 +5,7 @@ site_description: >-
     Die Dokumentation für den Markdown-Editor Zettlr enthält alle Informationen
     zum erfolgreichen Schreiben.
 site_author: Hendrik Erz
-copyright: "&copy; 2017-2019 by Zettlr"
+copyright: "&copy; 2017-2020 by Zettlr"
 docs_dir: ../docs/de
 site_dir: ../build/de
 edit_uri: edit/master/docs/de
