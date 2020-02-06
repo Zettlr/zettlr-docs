@@ -8,10 +8,6 @@ Sowohl Windows als auch macOS verlangen signierten Code, damit sie dem Programm 
 
 Wir erhalten mehr und mehr Anfragen nach einer solchen mobilen Version. Wir finden es gut, dass euch die App so gut gefällt! Leider haben wir nicht die Ressourcen, uns neben der Haupt-Anwendung auch noch um mobile Applikationen zu kümmern. Natürlich haben wir die Apps im Hinterkopf, für den Fall, dass das irgendwann mal anders wird!
 
-## Plant ihr, auch weitere Linux-Distributionen außer Debian oder Fedora zu unterstützen?
-
-Aufgrund unserer fehlenden Ressourcen und Zeit können wir außer diesen Haupt-Distributionen keine weiteren unterstützen. Für viele andere Distributionen ist es allerdings möglich, eine der AppImage-Versionen zu installieren, die wir seit 1.5 anbieten. Auch gibt es Unterstützer, die Zettlr für ArchLinux kompilieren. Wenn ihr ebenfalls eine Plattform unterstützen möchtet, sagt uns bescheid, damit wir einen Link zu dem Repository in unsere Download-Seite aufnehmen können!
-
 ## Was ist Markdown?
 
 Markdown ist eine vereinfachte Auszeichnungssprache, die es dir ermöglicht, genauso komplexen Text zu verfassen, wie mit Office-Programmen, allerdings ohne den unnötigen Ballast. Anstatt immer manuell die Formatierungen auszuwählen, reicht es bei Markdown zum Beispiel aus, ein `#`-Zeichen voranzustellen, um eine Überschrift zu erzeugen! Wenn du mehr wissen willst, schau dir [unsere Dokumentation](reference/markdown-basics.md) dazu an.
@@ -44,6 +40,22 @@ Aber natürlich. Du kannst überall einfach `LaTeX`-Kommandos einwerfen. Exporti
 ## Wieso kann ich Text nicht ausrichten?!
 
 Das ist kein Fehler, sondern so gewollt: Markdown trennt Format vom Text, und zum Format gehört auch das Ausrichten von Text. Die meisten Texte nutzen eh Blocksatz. Willst du dann doch Text rechtsbündig oder zentriert ausrichten, kannst du `LaTeX`-Befehle nutzen. Umschließe den Text einfach mit `\begin{<option>}` und `\end{<option>}`, wobei du `<option>` entweder mit `flushleft`, `flushright` ersetzen kannst. Mittels `\justify` vor dem Paragraphen kannst du explizit Blocksatz anfordern. [Mehr Informationen gibt es auf sharelatex.com](https://www.sharelatex.com/learn/Text_alignment).
+
+## Wie kann ich bestimmte Überschriften im PDF-Export aus dem Inhaltsverzeichnis herausnehmen, oder die Nummerierung unterdrücken?
+
+Das ist ein spezielles Feature von Pandoc. Die spezifischen Klassen `-` (Minus) und `.unlisted` verhindern dies. Das Minus verhindert die Überschriftennummerierung, während „unlisted“ verhindert, dass die Überschrift im Inhaltsverzeichnis erscheint. Beachte, dass dies nur auf PDF zutrifft.
+
+Beispiele:
+
+```
+# Diese Überschrift ist nicht nummeriert, aber im Inhaltsverzeichnis {-}
+
+# Diese Überschrift ist nummeriert, aber nicht im Inhaltsverzeichnis {.unlisted}
+
+# Diese Überschrift ist weder nummeriert, noch im Inhaltsverzeichnis {- .unlisted}
+```
+
+> Diese speziellen Klassen müssen das _letzte_ auf der Zeile sein. Selbst Kommentare, die eh herausgefiltert werden, verhindern dieses Verhalten.
 
 ## Ich möchte einen einzelnen Zeilenumbruch verwenden, aber wenn ich einfach Enter drücke, entfernt das Programm diesen!
 

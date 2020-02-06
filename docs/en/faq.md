@@ -8,10 +8,6 @@ Both Windows and macOS require so-called "code-signing" in order to be able to t
 
 We are getting more and more requests for mobile versions of Zettlr. We are very happy that you like Zettlr enough to want it on all your devices, and we would love to fulfil your wish! Unfortunately, though, our resources are just enough to keep the development of Zettlr up and running, and adding more work is just not possible at the moment. Of course, as soon as this changes, we will get to it!
 
-## Do you consider supporting more Linux platforms except Debian and Fedora based ones?
-
-Due to our limited resources we cannot support more platforms out of the box. Debian- and Fedora-based distributions are by far the most popular platforms, which is why we support them officially. All other Linux distributions are supported if they have AppImage support. If you would like to take upon yourself the responsibility of building Zettlr for other platforms, please get in contact with us so that we can list the additional repository on our download page!
-
 ## What is Markdown?
 
 Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](reference/markdown-basics.md)!
@@ -44,6 +40,22 @@ Yes. Simply write your `LaTeX`-statements where you want them. As soon as you ex
 ## I can't seem to align the text just or right!
 
 It's not a bug, it's a feature: Markdown does not have the respective formatting signs because text should always be justified or aligned left and therefore it does not belong to the set of necessary block formats Markdown offers. Yet, you can still use `LaTeX`-commands to render them left or right. Simply enclose the text you want to align right or justify in `\begin{<option>}` and `\end{<option>}`, where `<option>` may either refer to `flushleft`, `flushright` or  put a `\justify` in front of a paragraph you want to be justified. [Learn more at sharelatex.com](https://www.sharelatex.com/learn/Text_alignment).
+
+## In PDF output, I want certain headings to be unnumbered/not listed in the Table of Contents
+
+This is a special feature of Pandoc. Add the special classes `-` (simply a minus) or `.unlisted` respectively. The minus prevents numbers, while “unlisted” prevents the heading to appear in the table of contents. Note that this only applies to PDF output.
+
+Examples:
+
+```
+# This heading will be unnumbered, but in the ToC {-}
+
+# This heading will be numbered, but not in the ToC {.unlisted}
+
+# This heading will both be unnumbered, and hidden from the ToC {- .unlisted}
+```
+
+> Note that the special classes need to be the last thing on the line. Even comments will break this behaviour.
 
 ## I want to use single line breaks and not create new paragraphs. When I simply hit Enter once, it removes the single line break!
 
