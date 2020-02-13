@@ -89,15 +89,15 @@ The reason is that with Pandoc 2.0, the older option `--latex-engine` was rename
 
 ## On Export to PDF, I constantly get error messages!
 
-On the first few exports this is to be expected and completely normal. Zettlr simply passes the file to Pandoc, which passes it on to LaTeX. But the template that Zettlr uses for your PDF-exports requires some additional packets that are not always installed when installing LaTeX.
+On the first few exports this is to be expected and completely normal. Zettlr simply passes the file to Pandoc, which passes it on to LaTeX. But the template that Zettlr uses for your PDF-exports requires some additional packages that are not always installed when installing LaTeX.
 
 The most common error looks like this:
 
 **LaTeX Error: File \<some name\>.sty not found.**
 
-This simply means that a certain packet was not found (they end in `.sty`). On Windows, these packets should be installed automatically as soon as they are needed; on macOS and Linux you simply need to run the command `tlmgr install <some name>`.
+This simply means that a certain package was not found (they end in `.sty`). On Windows, these packages should be installed automatically as soon as they are needed; on macOS and Linux you simply need to run the command `tlmgr install <some name>`.
 
-In case of other errors, Zettlr enables you to copy and paste text from the error message, because in almost all cases, a short Google search leads to a solution; and in almost all cases the only action required is the installation of another packet.
+In case of other errors, Zettlr enables you to copy and paste text from the error message, because in almost all cases, a short Google search leads to a solution; and in almost all cases the only action required is the installation of another package.
 
 ## I found a bug!
 

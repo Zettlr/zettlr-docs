@@ -20,7 +20,7 @@ The first step is to install [the BetterBibTex-plugin for Zotero](https://github
 
 After you've installed BetterBibTex, you may want to play around a little bit with the settings (for instance in how the IDs are generated).
 
-> **Tip**: BetterBibTex automatically generates unique keys using an algorithm that you can customise. For most part, it makes use of the established [JabRef Patterns](http://help.jabref.org/en/BibtexKeyPatterns) but extends them significantly. It will even make sure that each entry is unique by optionally adding a suffix to puplications which yield the same keys (e.g. you'll have something like `Harvey2005a`, `Harvey2005b`, `Harvey2005c`, and so forth). You can find [all abilities of BetterBibTex in the plugin's extensive documentation](https://retorque.re/zotero-better-bibtex/citation-keys/).
+> **Tip**: BetterBibTex automatically generates unique keys using an algorithm that you can customise. For most part, it makes use of the established [JabRef Patterns](http://help.jabref.org/en/BibtexKeyPatterns) but extends them significantly. It will even make sure that each entry is unique by optionally adding a suffix to publications which yield the same keys (e.g. you'll have something like `Harvey2005a`, `Harvey2005b`, `Harvey2005c`, and so forth). You can find [all abilities of BetterBibTex in the plugin's extensive documentation](https://retorque.re/zotero-better-bibtex/citation-keys/).
 
 ### Step 2: Export your library
 

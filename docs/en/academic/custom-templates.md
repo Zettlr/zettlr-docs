@@ -106,7 +106,7 @@ Let's assume you want to pass the temporary Markdown file to a custom script to 
 pandoc "$infile$" -f markdown $outflag$ $tpl$ $toc$ $tocdepth$ $citeproc$ $standalone$ --pdf-engine=xelatex -o "$outfile$" && cp "$outfile$" /Users/zettlr/Desktop/Final.pdf
 ```
 
-This command would copy the final output file to the Desktop of the ficitional user "zettlr" and name it "Final.pdf" (assuming you run on macOS). Instead of using a simple shell command like `cp`, you could also pass whole scripts that would run afterwards. The sky really is the limit!
+This command would copy the final output file to the Desktop of the fictional user "zettlr" and name it "Final.pdf" (assuming you run on macOS). Instead of using a simple shell command like `cp`, you could also pass whole scripts that would run afterwards. The sky really is the limit!
 
 ## Final Thoughts
 
