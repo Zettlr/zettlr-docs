@@ -52,7 +52,7 @@ On macOS, Pandoc can be installed in a variety of ways.
 
 #### Recommended method: Homebrew
 
-The preferred method is [Homebrew](https://brew.sh/). Homebrew is a packet manager that makes it easy to install command line programs such as pandoc and makes it easy to maintain it. Make sure to [install Homebrew](https://brew.sh/), and then simply run the following command in the Terminal:
+The preferred method is [Homebrew](https://brew.sh/). Homebrew is a package manager that makes it easy to install command line programs such as pandoc and makes it easy to maintain it. Make sure to [install Homebrew](https://brew.sh/), and then simply run the following command in the Terminal:
 
 ```bash
 $ brew install pandoc
@@ -80,7 +80,7 @@ To install Pandoc the old way, simply head over to the [download page](https://g
 
 ### Linux
 
-On Linux, installing Pandoc is hilariously simple. Simply use your packet manager to search for, and install Pandoc. The provided packages aren't always up-to-date, but they should fit. If you want to install the newest version, you'd have to [download the Linux installer](https://github.com/jgm/pandoc/releases/latest) and follow the [install instructions](https://pandoc.org/installing.html) on the Pandoc site.
+On Linux, installing Pandoc is hilariously simple. Simply use your package manager to search for, and install Pandoc. The provided packages aren't always up-to-date, but they should fit. If you want to install the newest version, you'd have to [download the Linux installer](https://github.com/jgm/pandoc/releases/latest) and follow the [install instructions](https://pandoc.org/installing.html) on the Pandoc site.
 
 > You may need to set up `pandoc-citeproc` manually by installing it using the preferred method on your operating system.
 
@@ -88,12 +88,12 @@ On Linux, installing Pandoc is hilariously simple. Simply use your packet manage
 
 Markdown works best if combined with `LaTeX` to create beautiful PDF files. To do so, you'd have to install a `TeX`-distribution along Zettlr. Don't worry: You won't need to learn any `LaTeX` to use it. But you'd have to install it.
 
-Installing the software works exactly the same as any other software: On Windows and macOS you'll need the installer package, while on Linux you can use your packet manager to install a distribution.
+Installing the software works exactly the same as any other software: On Windows and macOS you'll need the installer package, while on Linux you can use your package manager to install a distribution.
 
 The recommended distributions are:
 
 - Windows: [MikTeX](https://miktex.org/download)
 - macOS: [MacTex](https://www.tug.org/mactex/morepackages.html) (_Attention: It suffices to install the Basic Tex, which is much smaller than the full version!_)
-- Linux: [TeX Live](https://www.tug.org/texlive/) (install the texlive-base packet: `sudo apt install texlive-base`)
+- Linux: [TeX Live](https://www.tug.org/texlive/) (install the texlive-base package: `sudo apt install texlive-base`)
 
 > You can install LaTeX at a later time. Simply use the menu item from the Help menu to open up the overview page where you can immediately see all available distributions.
