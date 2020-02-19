@@ -30,4 +30,9 @@ To add a new directory to Zettlr, hit `Cmd/Ctrl+O`, click the first toolbar butt
 
 ## Step 3: Write!
 
-Now you'll be set to use Zettlr as your Zettelkasten management system. If you want to dig deeper into how a Zettelkasten should work and what it should look like, consult the immense amount of resources on Zettelkästen, available on the web. A good starting point is [Zettelkasten.de](https://www.zettelkasten.de/). The authors have assembled a large list of (english) blog posts on how to supercharge your writing using a Zettelkasten.
+Now you'll be set to use Zettlr as your Zettelkasten management system. Two operations are important in a Zettelkasten:
+
+1. Creating an identifier to a note, so that you can link to it: You can do this by pressing `Ctrl + L` while editing any note, which will paste a generated ID to your note.
+2. Linking to other notes: Pressing `[[` while editing will display a list of notes you can link to (those who have an idenfitier in them).
+
+If you want to dig deeper into how a Zettelkasten should work and what it should look like, consult the immense amount of resources on Zettelkästen, available on the web. A good starting point is [Zettelkasten.de](https://www.zettelkasten.de/). The authors have assembled a large list of (english) blog posts on how to supercharge your writing using a Zettelkasten.
