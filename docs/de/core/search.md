@@ -29,6 +29,9 @@ The search itself is rather powerful. You can make use of several different oper
 * **AND-operator:** Type `Boat Ship` to only display the files that contain _both_ the term "boat" and the term "ship". Each space is interpreted as "AND".
 * **OR-operator:** Type `Boat | Ship` (| is the Pipe-operator, inserted by `Alt+7` on macOS or `AltGr+<` on other systems) to select all files that contain _either_ the word "boat" _or_ the word "ship"
 * **Exact-Match-operator:** Type `"Boat Ship"` to search your files for that exact phrase.
+* **NOT-operator:** Typ `!Boat` to search only for files _not_ containing that term. Works with exact matches as well: `!"Boat Ship"` would exclude all files containing the exact phrase "Boat Ship".
+
+> **Attention**: While the AND-, OR-, and Exact-Match-operators work by assigning weights (a file that fulfills all search criteria will be coloured bright, while files which do not match all search terms have a faded background), the NOT-operator definitely excludes files. So while a search for `boat ship` would also include files containing only one of the two terms (albeit with a much lower weight), a search for `!boat ship` will definitely exclude all files containing the word boat.
 
 Of course, you can chain all of these operators. So you could search for `"Boat Ship" | vessel captain` to display only files that either contain the exact phrase "Boat Ship" or the word "vessel", and which also include the word "captain".
 
