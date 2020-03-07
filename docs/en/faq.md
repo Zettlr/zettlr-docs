@@ -16,6 +16,15 @@ Markdown is a simple markup language that enables you to write text just as comp
 
 Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Virtual Directories or Projects, there will be small files named `.ztr-directory` and `.ztr-projects` present in some folders. To remove them, simply delete any virtual directories, reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
 
+## Sometimes I don't want AutoCorrect — how can I make it stop autocorrecting in a specific instance?
+
+While AutoCorrect is a great tool, there are these few instances where we don't want it to apply. One often-cited instance is the YAML-frontmatter. If you write the closing three dots or dashes, Zettlr's AutoCorrect will transform them to an ellipse or an em-dash, depending on the characters used. This will cause Zettlr to parse the whole file as YAML, not as Markdown. In order to prevent Zettlr AutoCorrect from applying, here's how it goes:
+
+1. If you use the LibreOffice-style AutoCorrect, simply hold down the Shift-key while pressing Space or Return (the AutoCorrect only applies on Space or Return). This will prompt Zettlr not to automatically "correct" in that instance.
+2. If you use the Word-style AutoCorrect, simply press Backspace as soon as you typed a space after AutoCorrect applied. This will undo the Autocorrect and restore the original characters.
+
+If you find some characters should most of the time never be replaced, only on rare occasions, consider removing them from the default table of AutoCorrect replacements.
+
 ## I'm using Linux and deleting files doesn't move them to the trash!
 
 Zettlr never completely removes your files. It always only moves them to the trash so in case you accidentally remove a file you need, you can always restore it. On macOS and Windows systems, the trash is activated by default, but on some Linux distributions, you need to activate the trash functionality manually. On Linux, Zettlr (to be more precise: the underlying Electron framework) makes use of the binary `gvfs-trash` to move files to the trash. To avoid shock moments it'll never try to "fall back" to removing files completely. Therefore, to make use of this functionality, please make sure you have `gvfs-trash` installed! On Debian/Ubuntu you can do so by running the following code in a terminal:
