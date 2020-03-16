@@ -1,12 +1,12 @@
 # Frequently Asked Questions
 
-## I tried to install Zettlr on Windows/macOS, but there's a security warning saying I shouldn't install the app!
+## I tried to install Zettlr on Windows, but there's a security warning saying I shouldn't install the app!
 
-Both Windows and macOS require so-called "code-signing" in order to be able to trust the application. While this is a great technique of keeping malicious code from harming your system, it requires an annual subscription fee. This is why Zettlr builds are _not_ code-signed and therefore produce warnings. You can safely ignore these warnings and install Zettlr, as long as you download it from our official page.
+Both Windows and macOS require so-called "code-signing" in order to be able to trust the application. While this is a great technique of keeping malicious code from harming your system, it requires a code signing certificate. While our macOS builds are already code signed, we are still in the process of applying for a Windows code signing certificate. Until then you can safely ignore these warnings and install Zettlr, as long as you download it from our official page.
 
 ## Are there any plans of porting Zettlr to mobile phones and tables, for Android or iOS?
 
-We are getting more and more requests for mobile versions of Zettlr. We are very happy that you like Zettlr enough to want it on all your devices, and we would love to fulfil your wish! Unfortunately, though, our resources are just enough to keep the development of Zettlr up and running, and adding more work is just not possible at the moment. Of course, as soon as this changes, we will get to it!
+We are getting more and more requests for mobile versions of Zettlr. We are very happy that you like Zettlr enough to want it on all your devices, and we would love to fulfil your wish! Unfortunately, though, our resources are just enough to keep the development of Zettlr up and running, and adding more work is just not possible at the moment.
 
 ## What is Markdown?
 
@@ -14,7 +14,7 @@ Markdown is a simple markup language that enables you to write text just as comp
 
 ## If I don't want to use Zettlr anymore, what would I need to do to switch programs?
 
-Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Virtual Directories or Projects, there will be small files named `.ztr-directory` and `.ztr-projects` present in some folders. To remove them, simply delete any virtual directories, reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
+Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Virtual Directories or Projects, there will be small files named `.ztr-directory` present in some folders. To remove them, simply delete any virtual directories, reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
 
 ## Sometimes I don't want AutoCorrect — how can I make it stop autocorrecting in a specific instance?
 
@@ -32,6 +32,18 @@ Zettlr never completely removes your files. It always only moves them to the tra
 ```bash
 $ sudo apt install gvfs-bin
 ```
+
+## How should regular Markdown links look like to work as intended?
+
+By default, Zettlr renders Markdown links in the format `[Your Link Text](your-link)` to be clickable (when holding down `Ctrl` or `Alt`). However, Markdown links can point both to websites and to other files on your computer. You can omit a lot of information from your link, and Zettlr makes use of a heuristic to determine the information on its own, but it might infer false context for what you intend. Here's how it works:
+
+- Links with all information present (a protocol and a fully qualified path) will not be altered. Examples: `file:///home/foo/documents/test.md` and `http://www.example.com/`.
+- Relative links with the `file://`-protocol will be converted to absolute. Example: `file://./relative/file.md` will become `file:///home/foo/documents/relative/file.md`.
+- Links without a protocol will be assumed to have `https://`. Example: `www.zettlr.com` will become `https://www.zettlr.com`.
+- Absolute file paths, but without the `file://`-protocol will have that prefixed. Example: `/home/bar/documents/absolute.md` will become `file:///home/bar/documents/absolute.md`.
+- Relative file paths with and without the relative-indicator (`./`) will be converted to absolute file paths. Example: `./more/relative.md` and `more/relative.md` will become `file:///home/foo/documents/more/relative.md`. **Exception**: They reside in the same folder: `file.extension` will in that case be treated like an URI (except the file is `.md`).
+
+To sum up: If you worry about how your links are treated, be more explicit. Two general rules of thumb can be used to force Zettlr to treat a link as a file or web-link: Prepend a `./` to explicitly request a _file_ link, and append `/` to explicitly request a _web_ link.
 
 ## The internal links do not open the respective file!
 
