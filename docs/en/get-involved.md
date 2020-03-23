@@ -35,7 +35,7 @@ We've implemented a user-based quality management system in the service, which c
 
 ## Developing
 
-To start developing, simply [fork the repository](https://github.com/Zettlr/Zettlr), work on your features, bug fixes, etc. and then open pull-requests. Please remember to **only PR to the develop branch!** The master-branch is only pushed to once a new release is being drafted. So if you are developing a new feature and a new version of Zettlr is released, you can simply pull the `origin master` to be up to date again and continue writing your feature.
+To start developing, simply [fork the repository](https://github.com/Zettlr/Zettlr), work on your features, bug fixes, etc. and then open pull-requests. Please remember to **only PR to the develop branch!** The master-branch is only pushed to once a new release is being drafted. So if you are developing a new feature and a new version of Zettlr is released, you can simply pull the `upstream master` to be up to date again and continue writing your feature.
 
 If you are beginning to develop a feature, it also may be wise to announce that using a new issue to just let the rest know that somebody is already doing it to maximise efficiency!
 
@@ -53,6 +53,12 @@ $ cd Zettlr
 $ yarn install
 $ cd source
 $ yarn install
+$ cd ..
+$ yarn less
+$ yarn handlebars
+$ yarn wp:dev
+$ yarn reveal:build
+$ yarn build:quick
 ```
 
 **With NPM**
@@ -63,9 +69,16 @@ $ cd Zettlr
 $ npm install
 $ cd source
 $ npm install
+$ cd ..
+$ npm run less
+$ npm run handlebars
+$ npm run wp:dev
+$ npm run reveal:build
+$ npm run build:quick
 ```
 
 The second `install` in the source-directory is necessary, because we make use of [electron-builder](https://www.electron.build/)'s two-directories-structure.
+After you run these commands, the successful build can be found in the `release` directory.
 
 ### CLI-Commands
 
