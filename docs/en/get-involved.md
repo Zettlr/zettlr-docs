@@ -77,7 +77,7 @@ $ npm run reveal:build
 $ npm run build:quick
 ```
 
-The second `install` in the source-directory is necessary, because we make use of [electron-builder](https://www.electron.build/)'s two-directories-structure.
+The second `install` in the source-directory is necessary, because we make use of [electron-builder](https://www.electron.build/)'s [two-directories-structure](https://www.electron.build/tutorials/two-package-structure).
 After you run these commands, the successful build can be found in the `release` directory.
 
 ### CLI-Commands
