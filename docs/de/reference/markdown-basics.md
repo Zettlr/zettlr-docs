@@ -35,7 +35,7 @@ Today, several implementations of the Markdown syntax coexist. The most notewort
 
 ## Zettlr and Markdown
 
-Zettlr itself implements a mixture of different dialects. The editor itself highlights only GitHub flavoured Markdown (plus some extra-elements, which extends Markdown syntax with Zettelkasten elements. Those are described in the respective [chapter on the Zettelkasten method](../academic/zkn-method.md)). If you export your documents to HTML and don't have Pandoc installed, Zettlr will convert your documents using the _GitHub flavoured Markdown syntax_. If available, Zettlr uses Pandoc for exports, which itself reads your Markdown documents using its _Pandoc Markdown syntax_.
+Zettlr itself implements a mixture of different dialects. The editor itself highlights only GitHub flavoured Markdown (plus some Markdown extensions for Zettelkasten elements and other conveniences. The Zettelkasten elements are described in the respective [chapter on the Zettelkasten method](../academic/zkn-method.md), the others are described below). If you export your documents to HTML and don't have Pandoc installed, Zettlr will convert your documents using the _GitHub flavoured Markdown syntax_. If available, Zettlr uses Pandoc for exports, which itself reads your Markdown documents using its _Pandoc Markdown syntax_.
 
 But Zettlr doesn't confine you to writing Markdown. If you wish, you can also add `LaTeX`-commands. These commands are correctly interpreted when you convert to PDF. These are omitted when you convert to DOCX or ODT. And they are retained when you convert to HTML. Of course, you can at any position use plain HTML-code as well.
 
@@ -123,6 +123,29 @@ Currently, the following languages are supported by the engine (the names in bra
 - YAML (yaml)
 
 More languages can be implemented on your request. If you need a specific language, please [refer to the available ones](https://codemirror.net/mode/) and open up an issue on GitHub, so that we know which one we should add!
+
+## Zettlr Markdown additions
+
+In addition to GitHub flavored markdown extensions (marked with "(extension)" in the [spec](https://github.github.com/gfm/)), Zettlr provides the following:
+
+ - Support for `<iframe src="https://example.com></iframe>` elements
+
+   > **Warning**: pages in iframes can get unrestricted access to your local filesystem! 'Frame-busting' techniques can be used by pages to escape the iframe and [interact with the Electron backend directly](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - you should assume any pages in iframes (or an attacker of that page) have access to all of the data on your computer.
+
+ - KaTeX equation rendering via either inline (`$`) or fenced (`$$`) blocks: `$x/y$` or
+
+        $$
+        x / y
+        $$
+
+ - [mermaid.js](https://mermaid-js.github.io/mermaid/) diagram rendering via fenced code blocks:
+
+        ```mermaid
+        graph TD
+            A[Client] --> B[Load Balancer]
+            B --> C[Server01]
+            B --> D[Server02]
+        ```
 
 ## Resources on Markdown
 
