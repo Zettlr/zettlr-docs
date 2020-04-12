@@ -37,7 +37,7 @@ placeholderは、設定したフォントが見つからない場合に、同等
 Zettlrには、セリフ体フォント、サンセリフ体フォント、等幅フォントが同梱されています。現代的なセリフ体フォントの`Crimson`、もしくは美しい等幅フォントの`Liberation Mono`を使うことができます。(デフォルトは`Lato`ですが、これを指定することはないでしょう。)
 
 ```css
-#editor {
+#editor * {
     font-family: '<your-font-name here>', <placeholder>;
 }
 ```

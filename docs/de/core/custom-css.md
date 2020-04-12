@@ -37,7 +37,7 @@ The placeholder will make sure that even if your font cannot be found, an equiva
 Zettlr already ships a serif font, a sans-serif font and a monospace font! To use the bundled fonts, you can use `Crimson` for a modern serif font or `Liberation Mono` for a nice looking monospace font. (Lato is the default, so you probably don't want to put it there.)
 
 ```css
-#editor {
+#editor * {
     font-family: '<your-font-name here>', <placeholder>;
 }
 ```
