@@ -1,0 +1,62 @@
+site_name: Guida di Zettlr
+site_url: https://docs.zettlr.com/it
+repo_url: https://github.com/Zettlr/zettlr-docs
+site_description: >-
+    La nostra guida completa ti dice tutto quello che devi sapere
+    per sfruttare Zettlr al massimo.
+site_author: Hendrik Erz
+copyright: "&copy; 2017-2020 by Zettlr"
+docs_dir: ../docs/it
+site_dir: ../build/it
+edit_uri: edit/master/docs/it
+extra_css:
+  - assets/app.css
+nav:
+  - Benvenuti: index.md
+  - Configurazione: install.md
+  - Guida veloce: 5-minutes.md
+  - Guide:
+    - Zettlr come sistema di appunti: guides/guide-notes.md
+    - Zettlr come Zettelkasten: guides/guide-zettelkasten.md
+    - Zettlr come IDE: guides/guide-ide.md
+  - Le Basi:
+    - L'Editor: core/editor.md
+    - La lista dei file: core/file-list.md
+    - Ricerca: core/search.md
+    - Esportazione: core/export.md
+    - Editor delle tabelle: core/tables.md
+    - Cartelle virtuali: core/virtual-directories.md
+    - CSS personalizzato: core/custom-css.md
+    - Localizzazione: core/localisation.md
+    - Pannello degli allegati: core/attachments.md
+  - Strumenti accademici:
+    - Citazioni: academic/citations.md
+    - Progetti: academic/projects.md
+    - Presentazioni: academic/presentations.md
+    - Timer Pomodoro: academic/pomodoro.md
+    - Leggibilità: academic/readability.md
+    - Il metodo Zettelkasten: academic/zkn-method.md
+    - Template personalizzati: academic/custom-templates.md
+  - Riferimenti:
+    - Scorciatoie: reference/shortcuts.md
+    - Fondamenti di Markdown: reference/markdown-basics.md
+    - Impostazioni: reference/settings.md
+    - Controllo ortografico: reference/spell-checking.md
+  - Partecipa: get-involved.md
+  - FAQ: faq.md
+theme:
+  name: readthedocs
+  custom_dir: ../theme_override
+  highlightjs: True
+  prev_next_buttons_location: both
+  hljs_languages:
+    - javascript
+    - css
+    - yaml
+    - tex
+markdown_extensions:
+    - toc:
+        permalink: True
+plugins:
+  - search:
+      lang: en
