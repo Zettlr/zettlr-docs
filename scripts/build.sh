@@ -17,3 +17,5 @@ done
 
 # Add the index-file with language selection
 cp ./assets/index.html ./build
+# ... as well as the logo
+cp ./assets/logo.png ./build
