@@ -1,0 +1,74 @@
+/* Override directives for readthedocs */
+
+/*
+ * General branding: Let's use the Zettlr green instead of the default blue
+ */
+
+.section a { 
+  text-decoration: underline; 
+  color: #404040;
+}
+section.wy-nav-content-wrap a { color: black;}/*rgb(28, 178, 126); }*/
+nav.wy-nav-top a, nav.my-nav-top a:active { color: white; }
+.wy-side-nav-search a, .wy-side-nav-search a:visited { color: white; }
+
+section.wy-nav-content-wrap a:hover {
+  color: rgb(28, 178, 126);
+  text-decoration: underline;
+}
+
+/*
+ * Blockquotes are "misused" as info blocks
+ */
+div[role="main"] blockquote {
+  color: white;
+  border: 1px solid #4f6e4f;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #80b480;
+  position: relative;
+  padding-left: 30px;
+}
+
+/*
+ * As the theme is using Font Awesome either way we can make use of it for
+ * displaying a small (i) icon.
+ */
+div[role="main"] blockquote::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #4f6e4f;
+  font-style: normal;
+  content: "\f05a";
+}
+
+/*
+ * The parser adds a paragraph inside the blockquote, so we have to remove the
+ * bottom margin on these.
+ */
+div[role="main"] blockquote p { margin-bottom: 0px; }
+
+/*
+ * Links in these boxes should have different colours.
+ */
+div[role="main"] blockquote a { color: rgb(87, 87, 87); }
+div[role="main"] blockquote a:hover {
+  color: rgb(87, 87, 87);
+  text-decoration: underline;
+}
+
+/*
+ * Mobile ready navbar
+ */
+.wy-side-nav-search, .wy-nav-top { background-color: rgb(28, 178, 126); }
+.wy-menu-vertical a:active { background-color: rgb(28, 178, 126); }
+
+/*
+ * This is an animation so that the switching of the nav on mobile is smooth
+ */
+.wy-nav-side, .wy-nav-content-wrap { transition: 0.5s left ease; }
+
+/* We have to preset the div with left 0 for the animation to work */
+.wy-nav-content-wrap { left: 0%; }
