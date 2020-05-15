@@ -1,10 +1,10 @@
-# Zettlr in 5 Minutes
+# Zettlr en 5 Minutes
 
-Bon, vous avez téléchargé et installé l'application, vous avez réglé l'horloge et vous êtes prêt à commencer ? Alors, appuyez sur le bouton du compte à rebours et c'est parti !
+Bon, vous avez téléchargé et installé l'application, vous avez réglé la minuterie et vous êtes prêt à commencer ? Alors, appuyez sur le bouton du compte à rebours et c'est parti !
 
 ## 1. Ouvrir des répertoires et des fichiers
 
-Pour ouvrir des répertoires ou des fichiers, il suffit de les faire glisser n'importe où sur la fenêtre de l'application. Ils s'ouvriront automatiquement. Vous pouvez également cliquer sur `Cmd/Ctrl+O` pour ouvrir le dialogue de sélection du répertoire, si cela est plus rapide pour vous.
+Pour ouvrir des répertoires ou des fichiers, il suffit de les faire glisser n'importe où sur la fenêtre de l'application. Ils s'ouvriront automatiquement. Vous pouvez également utiliser le raccourci `Cmd/Ctrl+O` pour ouvrir la fenêtre de dialogue de sélection du répertoire.
 
 ![open.png](img/open.png)
 
@@ -14,11 +14,11 @@ Après avoir ouvert un répertoire, vous avez besoin d'un fichier. Exécutez `Cm
 
 ![create.png](img/create.png)
 
-> You can not only add Markdown files! If you do not provide an extension, Zettlr will add the extension `.md` for you. But you can also create `.txt`-files and `.tex`-files, you just need to provide that file extension!
+> Vous n'êtes pas limité aux fichiers Markdown! Si nous ne précisez pas l'extension, Zettlr ajoutera l'extension `.md` pour vous. mais vous pouvez aussi créer des fichiers `.txt` et des fichiers `.tex`, vous devez juste préciser l'extension de fichier!
 
 ## 3. Ecrire !
 
-L'écriture dépend de vous, mais voici les touches les plus importantes à retenir :
+L'écriture c'est votre job, mais voici les raccourcis les plus importants à retenir :
 
 - `Cmd/Ctrl+I`: Passez en \__italique_\_. Comme dans Word.
 - `Cmd/Ctrl+B`: Passez en \*\***gras**\*\*. Comme dans Word.
@@ -30,7 +30,7 @@ L'écriture dépend de vous, mais voici les touches les plus importantes à rete
 
 ![markdown.png](img/markdown.png)
 
-Des choses sans frappe, mais aussi importantes :
+Des choses sans raccourcis, mais aussi importantes :
 
 - Utiliser le signe `#`pour créer des titres. Le nombre de symboles `#`correspond au niveau de titre. Le maximum est 6.
 - Utiliser le signe `>`pour créer des blocs de citations. Vous pouvez également les emboîter en utilisant plusieurs signes supérieurs (par exemple `> >`).
@@ -50,7 +50,7 @@ Trois règles simples :
 2. Le modificateur de touche `Shift` _shifts_ (déplace ?) la cible d'une action vers un autre élément (le plus souvent le répertoire au lieu du fichier).
 3. Toutes les actions cruciales se trouvent dans la barre d'outils. À gauche se trouvent les actions générales, au milieu les actions basées sur des fichiers et à droite les autres actions.
 
-## 5. Bien, j'ai fini d'écrire. Comment puis-je le partager ?
+## 5. Bien, j'ai fini d'écrire. Comment puis-je le partager (exporter) ?
 
 Trois étapes faciles :
 
@@ -62,7 +62,7 @@ Trois étapes faciles :
 
 ## 6. Ok, les 5 minutes sont terminées, autre chose ?
 
-Non, vous pouvez y aller. Si vous voulez plonger plus profondément, n'oubliez pas de consulter nos guides :
+Non, vous pouvez y aller. Si vous voulez approfondir le sujet, n'oubliez pas de consulter nos guides :
 
 - [Zettlr as a note-taking app](guides/guide-notes.md)
 - [Zettlr as a Zettelkasten](guides/guide-zettelkasten.md)
