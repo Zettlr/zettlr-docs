@@ -22,7 +22,7 @@ One of the biggest problems in writing apps that try to leave files untouched wi
 
 The default ID is a good call, because it uses the date in the format YYYYMMDDHHMMSS, which is unique to the second. Also, our own experiences show that when one doesn't use easy-to-recognise IDs, one is less prone to assume stuff, making them better suited to cross-link files. Just try it yourself!
 
-Zettlr will automatically try to find an ID for a file by searching through its contents. If it has found an ID that is _not_ encapsulated by a Wiki-Link (more on that below), it will assume this ID internally to refer to the file. If there is more than one valid ID in the file, **the first ID will take prevalence**. This way, even in long files, if you can't find the ID, simply drop a new ID on top of the file to make this assume the role of a general ID for the file.
+Zettlr will automatically try to find an ID for a file by searching through its contents. If it has found an ID that is _not_ encapsulated by a Wiki-Link (more on that below), it will assume this ID internally to refer to the file. If there is more than one valid ID in the file, **the first ID will take precedence**. This way, even in long files, if you can't find the ID, simply drop a new ID on top of the file to make this assume the role of a general ID for the file.
 
 ### Internal linking
 
