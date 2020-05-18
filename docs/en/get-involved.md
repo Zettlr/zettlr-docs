@@ -145,6 +145,20 @@ Compiles the [Vue.js](https://vuejs.org/)-assets from the resources-directory. T
 
 Compiles the Vue-assets from the resources-directory. This tells Webpack to compile in production mode, which decreases logging and makes the generated scripts run faster. It is recommended to run `wp:dev` in case you need to debug the Vue-files.
 
+### Command-Line Flags
+
+Zettlr also includes some command-line flags that can be used both on the development version and on the final build. Simply run the app passing the flag. During development, it suffices to use `yarn start --flag` (replace "flag" with the corresponding flag).
+
+#### `--config <configFile.json>`
+
+Pass this flag to temporarily use a different configuration file. The configuration file needs to be in the correct format that Zettlr expects (see the ConfigProvider class in the codebase), but it can also be a stub, i.e. only containing the necessary options you want to use. All options that Zettlr expects and that are not set in that stub will be set to their respective default. This is extremely useful if you want to quickly switch the file tree that will be loaded by the app, e.g. for testing purposes. The `test-gui`-command makes use of the `--config`-flag in order to quickly exchange the loaded files to harmless ones that you can play with.
+
+> Note: The flag expects an absolute path, so make sure to pass an absolute path to it! Relative paths might not work as expected (Good: `--config /Users/name/Documents/custom-config.json`; Bad: `--config ../resources/my-custom-config.json`).
+
+#### `--clear-cache`
+
+Pass this flag to force Zettlr to clear the FSAL cache. This is especially useful if you change something in the underlying architecture of the file system, as changes will not be detected without modifying the file (that is, the app will behave as if you did not add the additional properties, because it will always fall back to the cache). Also, this might help when unexpected problems occur.
+
 ### Project Structure
 
 Now to the real technical stuff: The project's structure! In most respects, the structure adheres to the best practices concerning Electron application development. Nevertheless, the application is _huge_, and therefore you'll need some guidance.
