@@ -12,37 +12,37 @@ edit_uri: edit/master/docs/fr
 extra_css:
   - assets/app.css
 nav:
-  - Bonjour: index.md
+  - Accueil: index.md
   - Installation: install.md
-  - Zettlr dans 5 minutes: 5-minutes.md
+  - Zettlr en 5 minutes: 5-minutes.md
   - Guides:
     - Zettlr comme application de prise de notes: guides/guide-notes.md
     - Zettlr comme Zettelkasten: guides/guide-zettelkasten.md
-    - Zettlr en tant qu'environnement de développement intégré (IDE): guides/guide-ide.md
-  - Core:
+    - Zettlr comme environnement de développement intégré (IDE): guides/guide-ide.md
+  - Fonctionnalités de base:
     - L'éditeur: core/editor.md
     - La liste de fichiers: core/file-list.md
-    - Recherche: core/search.md
-    - Exporter dans Zettlr: core/export.md
+    - Rechercher: core/search.md
+    - Exporter avec Zettlr: core/export.md
     - Les tableaux dans Zettlr: core/tables.md
     - Répertoires virtuels: core/virtual-directories.md
-    - CSS Personnalisés: core/custom-css.md
-    - Localisation: core/localisation.md
-    - L'encadré (sidebar) des pièces jointes: core/attachments.md
-  - Academic Tools:
-    - Citer avec Zettlr: academic/citations.md
+    - CSS personnalisée: core/custom-css.md
+    - Localisation linguistique: core/localisation.md
+    - Le panneau des annexes: core/attachments.md
+  - Outils académiques:
+    - Citations: academic/citations.md
     - Projets: academic/projects.md
-    - Presentations: academic/presentations.md
-    - Pomodoro Timer: academic/pomodoro.md
+    - Présentations: academic/presentations.md
+    - Minuteur Pomodoro: academic/pomodoro.md
     - Lisibilité: academic/readability.md
-    - La méthode Zettelkasten: academic/zkn-method.md
+    - Méthode Zettelkasten: academic/zkn-method.md
     - Modèles personnalisés: academic/custom-templates.md
-  - References:
+  - Références:
     - Raccourcis: reference/shortcuts.md
-    - Bases Markdown: reference/markdown-basics.md
+    - Les bases de Markdown: reference/markdown-basics.md
     - Paramétrage: reference/settings.md
     - Dictionnaires et vérification orthographique: reference/spell-checking.md
-  - Get involved: get-involved.md
+  - Impliquez-vous: get-involved.md
   - FAQ: faq.md
 theme:
   name: readthedocs
