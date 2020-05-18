@@ -1,9 +1,9 @@
 site_name: Zettlr Docs
-site_url: https://docs.zettlr.com/en
+site_url: https://docs.zettlr.com/fr
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: >-
-    Our comprehensive documentation provides you with everything you need to
-    know about how to make the most of Zettlr.
+    Notre documentation complète vous fournit tout ce que vous devez savoir
+    pour tirer le meilleur parti de Zettlr.
 site_author: Hendrik Erz
 copyright: "&copy; 2017-2020 by Zettlr"
 docs_dir: ../docs/fr
