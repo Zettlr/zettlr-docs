@@ -1,99 +1,101 @@
 # Installation
 
-The installation of Zettlr is very easy and takes only a step on every operating system. Zettlr is cross-platform, so it will run on your system, no matter which one. Zettlr comes pre-built for macOS, Windows and Debian-based and RedHat-based Linux systems (Ubuntu, Gnome, Xubuntu, Kubuntu, Fedora, RedHat and the like).
+L'installation de Zettlr est très facile et ne nécessite qu'une étape sur chaque système d'exploitation. Zettlr est multiplateforme, il fonctionnera donc sur votre système, quel qu'il soit. Zettlr est pré-conçu pour les systèmes d'exploitation MacOS, Windows, ainsi que Linux basés sur Debian et RedHat (Ubuntu, Gnome, Xubuntu, Kubuntu, Fedora, RedHat et autres).
 
-If you want to run Zettlr on other Linux-Systems like Arch or on ARM-devices (such as a Raspberry), you'd have to create a package by yourself. There's plenty of easy tutorials on how to build electron apps on the web. Please refer to the [supported platforms for electron apps](https://github.com/electron/electron/blob/master/docs/tutorial/support.md) to stay up to date which platforms are supported.
+Si vous voulez faire fonctionner Zettlr sur d'autres systèmes Linux comme Arch ou bien sur des dispositifs ARM (comme un Raspberry), vous devrez créer un paquet vous-même. Il existe de nombreux tutoriels pour la création d'applications Electron sur le web. Veuillez consulter [la liste des plateformes supportées par Electron](https://github.com/electron/electron/blob/master/docs/tutorial/support.md) pour savoir lesquelles sont compatibles.
 
-> There is a community-maintained package for Arch Linux available. [You can find it on the official AUR repositories](https://aur.archlinux.org/packages/zettlr-bin/). Please note that this package is community-maintained and we do not take any responsibility in its stability, safety or offered version.
+> Il existe un paquet maintenu par la communauté pour Arch Linux. [Vous pouvez le trouver sur les dépôts officiels AUR](https://aur.archlinux.org/packages/zettlr-bin/). Veuillez noter que ce paquet est maintenu par la communauté et que nous ne sommes pas responsables quant à sa stabilité, sa sécurité ou la version proposée.
 
-## Windows (7 or newer)
+## Windows (7 ou plus récents)
 
-To install Zettlr on Windows, just download the app from the [download page](https://www.zettlr.com/download) and double click to open it. If you wish to install Zettlr for all users, it is installed to the main `Program Files`-Directory—in this case you'd have to give it elevated rights during setup (it will automatically ask for your permission). You don't need any rights if you install it for yourself.
+Pour installer Zettlr sur Windows, il suffit de télécharger l'application à partir de la [page de téléchargement](https://www.zettlr.com/download) et de double-cliquer pour l'ouvrir. Si vous souhaitez installer Zettlr pour tous les utilisateurs, il est installé dans le répertoire "Program Files" principal – dans ce cas, vous devrez lui donner les droits lors de l'installation (il vous demandera automatiquement votre autorisation). Vous n'avez pas besoin de lui donner de droits plus élevés si vous l'installez uniquement pour un utilisateur.
 
-To uninstall Zettlr, simply run the Uninstall.exe either from the directory itself or use the comfortable option in your system's settings. If you want to completely remove all data associated with the app, also remove the directory `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`.
+Pour désinstaller Zettlr, il suffit d'exécuter le fichier Uninstall.exe soit à partir du répertoire lui-même, soit en utilisant l'option appropriée dans les paramètres de votre système. Si vous souhaitez supprimer complètement toutes les données associées à l'application, supprimez également le répertoire `C:\Users\<votre-nom-d-utilisateur>\AppData\Roaming\Zettlr`.
 
-## macOS (10.10 or newer)
+## macOS (10.10 ou plus récents)
 
-To install Zettlr on macOS, simply download the dmg-file from the latest release and mount it. Then drag the Zettlr-icon into your Applications directory and you're done!
+Pour installer Zettlr sur macOS, il suffit de télécharger le fichier dmg de la dernière version et de le monter. Ensuite, faites glisser l'icône Zettlr dans votre répertoire Applications et vous avez terminé !
 
-To uninstall Zettlr, simply remove the Zettlr.app from your Applications directory. If you want to completely remove all data associated with the app, also remove the directory `/Users/<your-user-name>/Library/Application Support/Zettlr`.
+Pour désinstaller Zettlr, il suffit de supprimer le fichier Zettlr.app de votre répertoire Applications. Si vous souhaitez supprimer complètement toutes les données associées à l'application, supprimez également le répertoire `/Users/<votre-nom-d-utilisateur>/Library/Application Support/Zettlr`.
 
-> You can also install Zettlr using [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew cask install zettlr`
+> Vous pouvez également installer Zettlr en utilisant [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew cask install zettlr`
 
-## Linux (Debian 8/Ubuntu 12.04/Fedora 21 or newer)
+## Linux (Debian 8/Ubuntu 12.04/Fedora 21 ou plus récents)
 
-There are prebuilt `deb`- and `rpm`-packages for linux systems. Simply install the package on your system.
+Il y a des paquets `deb` et `rpm` pré-construits pour les systèmes Linux. Il suffit d'installer le paquet sur votre système.
 
-To uninstall, follow the usual steps it takes to remove a package (usually through the graphical installer application or via `dpkg`). If you also want to remove all data associated with the app, also delete the `/home/<your-user-name>/.config/Zettlr` directory.
+Pour désinstaller Zettlr, suivez les étapes habituelles pour supprimer un paquet (généralement via l'interface graphique d'installation d'applications, ou via `dpkg`). Si vous souhaitez également supprimer toutes les données associées à l'application, supprimez également le répertoire `/home/<votre-nom-d-utilisateur>/.config/Zettlr`.
 
-## Updating the app
+## Mettre à jour l'application
 
 The application checks for new updates each time you start the app. You can also manually trigger the search for updates by using the respective menu item from the Help-menu. If there is a new version available, Zettlr will show you a dialog that contains both the new version's number, your current version and a changelog with all features and bug fixes the new version contains. You can then open the download page to download the new package. Simply install it over your current installation, it will take care of removing the old version first. All data will be retained and migrated to the new version.
 
-> If you are interested in cutting-edge releases, make sure to tick the checkbox "Notify me about beta releases" in the advanced tab of the preferences dialog!
+L'application vérifie les nouvelles mises à jour chaque fois que vous démarrez l'application. Vous pouvez également déclencher manuellement la recherche de mises à jour en utilisant l'option correspondante dans le menu Aide. Si une nouvelle version est disponible, Zettlr affichera un dialogue qui contient à la fois le numéro de la nouvelle version, votre version actuelle et un journal des modifications avec toutes les fonctionnalités et les corrections de bogues que la nouvelle version contient. Vous pouvez ensuite ouvrir la page de téléchargement pour télécharger le nouveau paquet. Il suffit de l'installer par-dessus votre installation actuelle, il se chargera automatiquement de supprimer l'ancienne version. Toutes les données seront conservées et migrées vers la nouvelle version.
 
-## Installing Pandoc
+> Si vous êtes intéressé par les versions les plus avancées, assurez-vous de cocher la case "M'avertir des versions bêta" dans l'onglet "Avancé" des Préférences !
 
-What makes Zettlr interact with other software such as Microsoft Word, Wiki-systems or OpenOffice is an additional software package called `Pandoc`. Pandoc is free and Open Source and it allows you to use all exporting and importing features of Zettlr, making it the ideal choice to be the interface between other programs and co-workers who do not use Markdown.
+## Installer Pandoc
 
-Installing Pandoc is easy on all platforms.
+Ce qui permet à Zettlr de coexister avec d'autres logiciels tels que Microsoft Word, LibreOffice ou même un Wiki, est un logiciel distinct appelé `Pandoc`. Pandoc est gratuit et *open source* et vous permet d'utiliser toutes les fonctionnalités d'exportation et d'importation de Zettlr, ce qui en fait le choix idéal pour servir d'interface avec d'autres programmes et de partager son travail avec des collègues qui n'utilisent pas Markdown.
 
-> You can install Pandoc at any time. Simply use the menu item from the Help menu to open up the installation instructions.
+L'installation de Pandoc est facile sur toutes les plateformes.
+
+> Vous pouvez installer Pandoc à tout moment. Il vous suffit d'utiliser l'élément correspondant du menu Aide pour ouvrir les instructions d'installation.
 
 ### Windows
 
-On Windows, Pandoc can be installed by visiting the [download page](https://github.com/jgm/pandoc/releases/latest) and retrieving the Windows installer. Simply execute it. Afterwards, it should be installed correctly. Try to export something. If it works, you're done!
+Sous Windows, Pandoc peut être installé en visitant sa [page de téléchargement](https://github.com/jgm/pandoc/releases/latest) et en récupérant le programme d'installation pour Windows. Il suffit de l'exécuter. Ensuite, il devrait être installé correctement. Essayez d'exporter quelque chose. Si cela fonctionne, vous avez terminé !
 
-> Please note that due to the fact that Pandoc is a CLI-program (Command Line Interface), it cannot show you whether or not there is an update available. You'll have to do this yourself. Simply visit the download page from time to time.
+> Pandoc est un programme exécutable en ligne de commande, il ne peut donc pas vous indiquer si une mise à jour est disponible ou non. Vous devrez le faire vous-même. Il vous suffit de visiter sa page de téléchargement de temps en temps.
 
 ### macOS
 
-On macOS, Pandoc can be installed in a variety of ways.
+Sur macOS, Pandoc peut être installé de différentes manières.
 
-#### Recommended method: Homebrew
+#### Méthode recommandée : Homebrew
 
-The preferred method is [Homebrew](https://brew.sh/). Homebrew is a package manager that makes it easy to install command line programs such as pandoc and makes it easy to maintain it. Make sure to [install Homebrew](https://brew.sh/), and then simply run the following command in the Terminal:
+La méthode recommandée est d'utiliser [Homebrew](https://brew.sh/). Homebrew est un gestionnaire de paquets qui facilite l'installation et la maintenance de programmes en ligne de commande tels que Pandoc. Assurez-vous d'installer [Homebrew](https://brew.sh/), puis exécutez simplement la commande suivante dans le Terminal :
 
 ```bash
 $ brew install pandoc
 ```
 
-To update pandoc from time to time, use this command:
+Pour mettre à jour Pandoc de temps en temps, utilisez cette commande :
 
 ```bash
 $ brew upgrade
 ```
 
-This will upgrade all installed formulae (as they are called) to the newest version.
+Cela permettra de mettre à niveau toutes les "formules" installées (ainsi que les appelle Homebrew) vers leur version la plus récente.
 
-> Installing with Homebrew is recommended, as it is not only faster, but also more convenient.
+> L'installation avec Homebrew est recommandée, car elle est non seulement plus rapide, mais aussi plus pratique.
 
-After pandoc is set up, you may want to install `citeproc` as well, as it provides you with the ability to [cite](academic/citations.md) using Zettlr. On Windows, Citeproc is automatically installed, while on macOS you will have to install Pandoc Citeproc additionally. Simply use Homebrew for this as well:
+Après la mise en place de Pandoc, vous voudrez probablement installer son filtre `citeproc`, car il vous permet de [citer](academic/citations.md) dans Zettlr. Sous Windows, Citeproc est automatiquement installé, tandis que sous macOS, vous devrez installer Citeproc en plus. Il suffit d'utiliser Homebrew pour cela aussi :
 
 ```bash
 $ brew install pandoc-citeproc
 ```
 
-#### Install using the official installer
+#### Utiliser l'installateur officiel
 
-To install Pandoc the old way, simply head over to the [download page](https://github.com/jgm/pandoc/releases/latest) and get the macOS installer. Once it is done, pandoc should be available on your system. Try to export something. If it works, you're done!
+Pour installer Pandoc à l'ancienne, il suffit de se rendre sur la [page de téléchargement](https://github.com/jgm/pandoc/releases/latest) et de télécharger l'installateur macOS. Une fois l'installation terminée, Pandoc devrait être disponible sur votre système. Essayez d'exporter quelque chose. Si cela fonctionne, vous avez terminé !
 
 ### Linux
 
-On Linux, installing Pandoc is hilariously simple. Simply use your package manager to search for, and install Pandoc. The provided packages aren't always up-to-date, but they should fit. If you want to install the newest version, you'd have to [download the Linux installer](https://github.com/jgm/pandoc/releases/latest) and follow the [install instructions](https://pandoc.org/installing.html) on the Pandoc site.
+Sous Linux, l'installation de Pandoc est d'une grande simplicité. Il suffit d'utiliser votre gestionnaire de paquets pour rechercher et installer Pandoc. Les paquets fournis ne sont pas toujours à jour, mais ils devraient convenir. Si vous souhaitez installer la dernière version, vous devez [télécharger l'installateur Linux](https://github.com/jgm/pandoc/releases/latest) et suivre les [instructions d'installation](https://pandoc.org/installing.html) sur le site de Pandoc.
 
-> You may need to set up `pandoc-citeproc` manually by installing it using the preferred method on your operating system.
+> Vous pouvez avoir besoin de configurer `pandoc-citeproc` manuellement en l'installant via la méthode préférée de votre distribution.
 
-## Installing LaTeX
+## Installer LaTeX
 
-Markdown works best if combined with `LaTeX` to create beautiful PDF files. To do so, you'd have to install a `TeX`-distribution along Zettlr. Don't worry: You won't need to learn any `LaTeX` to use it. But you'd have to install it.
+Markdown peut être combiné avec `LaTeX` pour créer de beaux fichiers PDF, avec Pandoc comme intermédiaire. Pour ce faire, vous devez installer une distribution `TeX` en même temps que Zettlr. Ne vous inquiétez pas : vous n'aurez pas besoin d'apprendre à utiliser LaTeX immédiatement. Mais son installation reste nécessaire, et ouvre la possibilité de réutiliser les nombreux modèles de documents produits par la communauté LaTeX.
 
-Installing the software works exactly the same as any other software: On Windows and macOS you'll need the installer package, while on Linux you can use your package manager to install a distribution.
+L'installation du logiciel fonctionne exactement de la même façon que n'importe quel autre logiciel : sous Windows et MacOS, vous aurez besoin d'un installateur, tandis que sous Linux, vous pourrez utiliser votre gestionnaire de paquets pour installer la distribution.
 
-The recommended distributions are:
+Les distributions recommandées sont :
 
-- Windows: [MikTeX](https://miktex.org/download)
-- macOS: [MacTex](https://www.tug.org/mactex/morepackages.html) (_Attention: It suffices to install the Basic Tex, which is much smaller than the full version!_)
-- Linux: [TeX Live](https://www.tug.org/texlive/) (install the texlive-base package: `sudo apt install texlive-base`)
+- Windows : [MikTeX](https://miktex.org/download)
+- macOS : [MacTex](https://www.tug.org/mactex/morepackages.html)
+- Linux : [TeX Live](https://www.tug.org/texlive/) (installez le paquet texlive-base : `sudo apt install texlive-base`)
 
-> You can install LaTeX at a later time. Simply use the menu item from the Help menu to open up the overview page where you can immediately see all available distributions.
+> Vous pouvez installer LaTeX ultérieurement. Utilisez simplement l'élément correspondant du menu Aide pour ouvrir une page d'aperçu où vous pouvez consulter les distributions disponibles.

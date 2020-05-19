@@ -14,7 +14,7 @@ Consultez nos guides d'utilisation afin de découvrir les différents flux de tr
 
 * [Utiliser Zettlr comme application de prise de notes](guides/guide-notes.md)
 * [Utiliser Zettlr comme Zettelkasten](guides/guide-zettelkasten.md)
-* [Utiliser Zettlr comme environnement de développement complet (IDE)](guides/guide-ide.md)
+* [Utiliser Zettlr comme environnement de développement intégré (IDE)](guides/guide-ide.md)
 
 ## Fonctionnalités de base
 
