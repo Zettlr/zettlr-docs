@@ -11,7 +11,7 @@ You want to use Zettlr as a means to take notes with. Although Zettlr has a lot 
 First, head over to the settings tab (press `Cmd/Ctrl+,` or click the cog in the toolbar). In the settings, make sure you set the settings according to this list:
 
 - General tab
-    - Snippets: Off
+    - File Information: Off
     - Sidebar: Thin
 - Editor tab
     - Dictionaries: Select none (they slow down the app start and aren't necessary for simple notes)
