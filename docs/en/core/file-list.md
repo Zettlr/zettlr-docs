@@ -10,8 +10,6 @@ In the extended sidebar mode, both the tree view and the file list are visible. 
 
 The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
 
-> Note: since version `1.3.0` the "text snippets" feature is now known as "file information"
-
 If you turned off the meta information, both directories and files will be shown as one-liners. If you display the *file information*, you will see additional information: directories will show you the amount of children they have. The files, on the other hand, show their last modification date. If they contain an ID or tags, this information will be displayed after the modification date. Hovering over the tag counter, you can see a small tooltip that shows you all tags that are in the file.
 
 > You can toggle the file information via the "View" menu, by pressing `Cmd/Ctrl+Alt+S`, or the relevant setting in the preferences dialog under the General section
