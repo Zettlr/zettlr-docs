@@ -27,7 +27,7 @@ For remembering them easier, here are some thoughts we've put into assigning the
 * `Cmd/Ctrl+Shift+E`: Gives focus to the editing window.
 * `Cmd/Ctrl+Shift+T`: Gives focus to the tree window.
 * `Cmd/Ctrl+Alt+L`: Switches the theme between light and dark mode.
-* `Cmd/Ctrl+Alt+S`: Toggles display of the text snippets.
+* `Cmd/Ctrl+Alt+S`: Toggles display of file information in the File List.
 * `Cmd/Ctrl+Shift+1`: Toggles the sidebar mode to either view the file list or the tree view. Disabled in extended sidebar mode.
 * `Cmd/Ctrl+?`: Toggles display of the attachment sidebar.
 * `Cmd/Ctrl+[0-9]`: Open recent document at position 0 to 9 in the recent documents list (File->Recent Documents).
