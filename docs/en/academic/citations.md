@@ -40,6 +40,12 @@ Now it is time to import your library to Zettlr. To do so, simply open Zettlr's 
 
 ![Point Zettlr to your database file](../img/settings_export.png)
 
+### Step 4: Enable *Render Citations*
+
+In the *Display* section of the preferences, you will find the option *Render Citations* which has to be enabled for the citations to actually work in the editor. Usually, once you check this option, it will be enabled even after updating Zettlr.
+
+
+
 ## Citing in Zettlr
 
 Citing in Zettlr is very easy. Zettlr supports pandoc's citeproc-syntax for writing citations, so you'll have two options on how to write citations. First, you can simply throw a single identifier somewhere in your text to simply render a citation for this key. It should look like this: `@Harvey2005a`. All citation keys begin with an `@` followed by the citation key.
