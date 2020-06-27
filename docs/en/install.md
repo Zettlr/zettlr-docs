@@ -94,6 +94,6 @@ The recommended distributions are:
 
 - Windows: [MikTeX](https://miktex.org/download)
 - macOS: [MacTex](https://www.tug.org/mactex/morepackages.html) (_Attention: It suffices to install the Basic Tex, which is much smaller than the full version!_)
-- Linux: [TeX Live](https://www.tug.org/texlive/) (install the texlive-xetex package: `sudo apt install texlive-xetex`)
+- Linux: [TeX Live](https://www.tug.org/texlive/) (on Debian-based distributions installing the `texlive-xetex`-package takes care of all you need: `sudo apt install texlive-xetex`)
 
 > You can install LaTeX at a later time. Simply use the menu item from the Help menu to open up the overview page where you can immediately see all available distributions.
