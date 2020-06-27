@@ -101,26 +101,46 @@ Zettlr also supports so-called "fenced code blocks." These are the block-version
 
 Zettlr supports syntax highlighting for several script and programming languages. You have to tell Zettlr explicitly which language to use by simply adding its identifier _directly after the introducing code fence_. So to direct Zettlr to highlight a code fence using a JavaScript interpreter, you would need to begin the code block with three backticks, directly followed by the word "javascript" on an empty line.
 
-Currently, the following languages are supported by the engine (the names in braces are the identifiers you would need to use in Zettlr, as they do not contain special characters, which might upset an engine):
+Currently, the following languages are supported by the engine (the names in braces are the identifiers you'd need to indicate the language):
 
-- C (c)
-- C# (csharp)
-- C++ (cpp)
-- CSS (css)
-- Go (go)
-- Java (java)
-- JavaScript (javascript)
-- Kotlin (kotlin)
-- LESS (less)
-- Objective C (objectivec)
-- PHP (php)
-- Python (python)
-- R (r)
-- Ruby (ruby)
-- SQL (sql)
-- Swift (swift)
-- Shell/Bash
-- YAML (yaml)
+- C (`c`)
+- C# (`c#`; `csharp`; `cs`)
+- C++ ( `c++`; `cpp`)
+- Common Lisp (`clisp`; `commonlisp`)
+- CSS (`css`)
+- Elm (`elm`)
+- F# (`f#`; `fsharp`)
+- Go (`go`)
+- Haskell (`haskell`; `hs`)
+- HTML (`html`)
+- Java (`java`)
+- JavaScript (`javascript`; `js`; `node`)
+- JSON (`json`)
+- Julia (`julia`; `jl`)
+- Kotlin (`kotlin`; `kt`)
+- LESS (`less`)
+- Markdown (`markdown`; `md`)
+- Objective C (`objective-c`; `objectivec`, `objc`)
+- PHP (`php`)
+- Python (`python`; `py`)
+- R (`r`)
+- Ruby (`ruby`; `rb`)
+- Rust (`rust`; `rs`)
+- Scala (`scala`)
+- Scheme (`scheme`)
+- Shell (`shell`; `sh`; `bash`)
+- SparQL (`sparql`)
+- SQL (`sql`)
+- Swift (`swift`)
+- SystemVerilog (`systemverilog`; `sv`)
+- Tcl (`tcl`)
+- Turtle (`turtle`; `ttl`)
+- TypeScript (`typescript`; `ts`)
+- Verilog (`verilog`; `v`)
+- VHDL (`vhdl`; `vhd`)
+- Visual Basic (`vb.net`; `vb`; `visualbasic`)
+- XML (`xml`)
+- YAML (`yaml`; `yml`)
 
 More languages can be implemented on your request. If you need a specific language, please [refer to the available ones](https://codemirror.net/mode/) and open up an issue on GitHub, so that we know which one we should add!
 
@@ -128,9 +148,9 @@ More languages can be implemented on your request. If you need a specific langua
 
 In addition to GitHub flavored markdown extensions (marked with "(extension)" in the [spec](https://github.github.com/gfm/)), Zettlr provides the following:
 
- - Support for `<iframe src="https://example.com></iframe>` elements
+ - Support for `<iframe src="https://example.com"></iframe>` elements
 
-   > **Warning**: pages in iframes can get unrestricted access to your local filesystem! 'Frame-busting' techniques can be used by pages to escape the iframe and [interact with the Electron backend directly](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - you should assume any pages in iframes (or an attacker of that page) have access to all of the data on your computer.
+   > **Warning**: Pages in iframes can get unrestricted access to your local filesystem! 'Frame-busting' techniques can be used by pages to escape the iframe and [interact with the Electron backend directly](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - you should assume any pages in iframes (or an attacker of that page) have access to all of the data on your computer.
 
  - KaTeX equation rendering via either inline (`$`) or fenced (`$$`) blocks: `$x/y$` or
 

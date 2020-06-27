@@ -25,7 +25,7 @@ All'inizio Markdown era solo un piccolo script che John Gruber scrisse per sé s
 
 ## Dialetti di Markdown
 
-Ad oggi, coesistono diverse implementazioni della sintassi di Markdown. Le più importanti sono: 
+Ad oggi, coesistono diverse implementazioni della sintassi di Markdown. Le più importanti sono:
 
 - **MultiMarkdown**: Amplifica la sintassi iniziale per aggiungere le note a piè di pagina, le tabelle, e alcuni dati aggiuntivi (metadata).
 - **Markdown Extra**: Di nuovo, aggiunte alla sintassi iniziale.
@@ -45,7 +45,7 @@ Anche se Markdown può fare un sacco di cose, in questa sezione vogliamo descriv
 
 ### Titoli
 
-I titoli sono banali. Devono possedere una riga loro e devono essere segnalate con un cancelletto. Hai a disposizione sei livelli di titoli: 
+I titoli sono banali. Devono possedere una riga loro e devono essere segnalate con un cancelletto. Hai a disposizione sei livelli di titoli:
 
 - `# Testo titolo` — restituisce un titolo di primo livello
 - `## Testo titolo` — restituisce un titolo di secondo livello
@@ -69,7 +69,7 @@ A volte hai bisogno di enfatizzare un intero paragrafo (per esempio una lunga ci
 - crea elementi di un elenco anteponendo per ogni riga il carattere `-`, `*` oppure `+` . Se ti piace puoi anche scambiarli!
 - per gli elenchi numerati è necessario anteporre numeri, nel formato `1.`
 
-> **Attenzione**: I numeri _non_ devono essere in ordine. Ad ogni esportazione il convertitore correggerà automaticamente i numeri in una sequenza crescente, per cui ad esempio una lista di numeri 1, 6, 14, 2 sarà convertita nei numeri 1, 2, 3, 4! 
+> **Attenzione**: I numeri _non_ devono essere in ordine. Ad ogni esportazione il convertitore correggerà automaticamente i numeri in una sequenza crescente, per cui ad esempio una lista di numeri 1, 6, 14, 2 sarà convertita nei numeri 1, 2, 3, 4!
 
 ### Collegamenti e immagini
 
@@ -103,24 +103,44 @@ Zettlr supporta l'evidenziatura della sintassi per numerosi script e linguaggi d
 
 Al momento, sono supportati i seguenti linguaggi (tra parentesi sono riportati gli identificatori da usare in Zettlr, i quali non contengono caratteri speciali che potrebbero creare problemi all'interpretazione):
 
-- C (c)
-- C# (csharp)
-- C++ (cpp)
-- CSS (css)
-- Go (go)
-- Java (java)
-- JavaScript (javascript)
-- Kotlin (kotlin)
-- LESS (less)
-- Objective C (objectivec)
-- PHP (php)
-- Python (python)
-- R (r)
-- Ruby (ruby)
-- SQL (sql)
-- Swift (swift)
-- Shell/Bash
-- YAML (yaml)
+- C (`c`)
+- C# (`c#`; `csharp`; `cs`)
+- C++ ( `c++`; `cpp`)
+- Common Lisp (`clisp`; `commonlisp`)
+- CSS (`css`)
+- Elm (`elm`)
+- F# (`f#`; `fsharp`)
+- Go (`go`)
+- Haskell (`haskell`; `hs`)
+- HTML (`html`)
+- Java (`java`)
+- JavaScript (`javascript`; `js`; `node`)
+- JSON (`json`)
+- Julia (`julia`; `jl`)
+- Kotlin (`kotlin`; `kt`)
+- LESS (`less`)
+- Markdown (`markdown`; `md`)
+- Objective C (`objective-c`; `objectivec`, `objc`)
+- PHP (`php`)
+- Python (`python`; `py`)
+- R (`r`)
+- Ruby (`ruby`; `rb`)
+- Rust (`rust`; `rs`)
+- Scala (`scala`)
+- Scheme (`scheme`)
+- Shell (`shell`; `sh`; `bash`)
+- SparQL (`sparql`)
+- SQL (`sql`)
+- Swift (`swift`)
+- SystemVerilog (`systemverilog`; `sv`)
+- Tcl (`tcl`)
+- Turtle (`turtle`; `ttl`)
+- TypeScript (`typescript`; `ts`)
+- Verilog (`verilog`; `v`)
+- VHDL (`vhdl`; `vhd`)
+- Visual Basic (`vb.net`; `vb`; `visualbasic`)
+- XML (`xml`)
+- YAML (`yaml`; `yml`)
 
 Possono essere implementati più linguaggi di programmazione se lo richiedi. Se hai bisogno di un linguaggio specifico, ti preghiamo di [fare riferimento a quelli disponibili]((https://codemirror.net/mode/) e di aprire una issue su GitHub così da sapere quali aggiungere!
 
