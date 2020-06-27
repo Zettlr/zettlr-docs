@@ -88,6 +88,6 @@ Hier sind Links zu allen Basisversionen für die verschiedenen Betriebssysteme:
 
 - Windows: [MikTeX](https://miktex.org/download)
 - macOS: [MacTex](https://www.tug.org/mactex/morepackages.html) (_Achtung: Hier gibt es auf der Seite die große als auch die kleine Version von LaTeX. Die Basisversion heißt Basic Tex!_)
-- Linux: [TeX Live](https://www.tug.org/texlive/) (mittels Paketmanager: `sudo apt install texlive-base texlive-xetex`)
+- Linux: [TeX Live](https://www.tug.org/texlive/) (mittels Paketmanager für auf Debian basierende Distributionen: `sudo apt install texlive-xetex`)
 
 > Wenn du LaTeX später installieren willst, kannst du die Versionen auch über das Hilfe-Menü finden.
