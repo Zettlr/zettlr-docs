@@ -1,7 +1,5 @@
 # Zettlrドキュメンテーション
 
-> [Documentación Zettlr en español (mantenido por ScaredCoward)](https://github.com/ScaredCoward/zettlr-docs/blob/master/Menu%20en%20ESPA%C3%91OL.md)
-
 Zettlrをご利用いただきありがとうございます。ここではアプリケーションを使い始めるための手助けを行い、あなたの執筆活動を強力にサポートします。まだZettlrが手元にないという方は、[ダウンロードページ](https://www.zettlr.com/download)へ行って、ご使用のOSに合わせたZettlrを入手してください。
 
 ## はじめに

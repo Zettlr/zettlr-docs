@@ -1,7 +1,5 @@
 # Zettlr Benutzerhandbuch
 
-> [Documentación Zettlr en español (mantenido por ScaredCoward)](https://github.com/ScaredCoward/zettlr-docs/blob/master/Menu%20en%20ESPA%C3%91OL.md)
-
 Vielen Dank, dass du dich für Zettlr entschieden hast! Auf diesen Seiten helfen wir dir, erste Schritte mit der Software zu machen und deinen Schreibfluss zu verbessern. Wenn du noch keine Kopie von Zettlr hast, dann [lade sie dir hier herunter](https://www.zettlr.com/download)!
 
 ## Erste Schritte
