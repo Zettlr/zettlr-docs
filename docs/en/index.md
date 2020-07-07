@@ -25,7 +25,6 @@ Everyone can become very quick and efficient at his or her workflow, but can you
 * [The File List](core/file-list.md)
 * [Searching](core/search.md)
 * [Exporting with Zettlr](core/export.md)
-* [Virtual Directories](core/virtual-directories.md)
 * [Custom CSS](core/custom-css.md)
 * [Localisation](core/localisation.md)
 * [The Attachment Sidebar](core/attachments.md)

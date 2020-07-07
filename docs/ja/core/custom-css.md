@@ -176,14 +176,12 @@ classの名前を抽出するのに、外部パッケージを使っているこ
 .id
 .tags
 .tex-indicator
-.virtual-directories
 .target-progress-indicator
 .filename
 .taglist
 .tag
 .tagspacer
 .directory
-.virtual-directory
 .sorter
 .sortName
 .sortTime

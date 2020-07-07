@@ -34,7 +34,6 @@ Zettlrはあなたのワークフローに役立つ数多くの機能を有し�
 - [ガイド: ZettelkastenシステムとしてのZettlr](guide-zettelkasten.md)
 - [ガイド: ノート取りアプリとしてのZettlr](guide-notes.md)
 - [Zettlrのプロジェクト](../academic/projects.md)
-- [仮想ディレクトリ](../core/virtual-directories.md)
 - [Zettlrでプレゼンを作る](../academic/presentations.md)
 - [Zettlrのマークダウン](../reference/markdown-basics.md)
 - [PDFにエクスポートする](../core/export.md)

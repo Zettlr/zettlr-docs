@@ -25,7 +25,6 @@ Chiunque può diventare molto veloce ed efficente nel suo flusso di lavoro, ma s
 * [La lista File](core/file-list.md)
 * [Ricerca](core/search.md)
 * [Esportare ccon Zettlr](core/export.md)
-* [Cartelle Virtuali](core/virtual-directories.md)
 * [CSS personalizzato](core/custom-css.md)
 * [Localizzazione](core/localisation.md)
 * [Il pannello degli allegati](core/attachments.md)

@@ -24,7 +24,6 @@ nav:
     - 検索: core/search.md
     - エクスポート: core/export.md
     - テーブル編集: core/tables.md
-    - 仮想ディレクトリ: core/virtual-directories.md
     - カスタムCSS: core/custom-css.md
     - ローカライゼーション: core/localisation.md
     - 添付ファイルサイドバー: core/attachments.md

@@ -25,7 +25,6 @@ nav:
     - Suchen: core/search.md
     - Exportieren: core/export.md
     - Tabelleneditor: core/tables.md
-    - Virtuelle Verzeichnisse: core/virtual-directories.md
     - Custom CSS: core/custom-css.md
     - Lokalisation: core/localisation.md
     - Seitenleiste: core/attachments.md

@@ -25,7 +25,6 @@ nav:
     - Rechercher: core/search.md
     - Exporter avec Zettlr: core/export.md
     - Les tableaux dans Zettlr: core/tables.md
-    - Répertoires virtuels: core/virtual-directories.md
     - CSS personnalisée: core/custom-css.md
     - Localisation linguistique: core/localisation.md
     - Le panneau des annexes: core/attachments.md
