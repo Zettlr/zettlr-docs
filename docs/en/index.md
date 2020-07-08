@@ -4,13 +4,13 @@ This is the official documentation for the Zettlr Markdown Editor. This document
 
 ## On this Documentation
 
-This documentation is structured with its extensive feature set and target group in mind. We have sorted all available features into a few central categories. If you know exactly what you are looking for, the search bar in the top right is the right starting point for you, otherwise, please follow the descriptions below:
+This documentation is structured with Zettlr's extensive feature set and target group in mind. We have sorted all available features into a few central categories. If you know exactly what you are looking for, the search bar at the top right is the right starting point for you, otherwise, please follow the descriptions below:
 
-- The **Introduction** section contains instructions on how to set up everything necessary to start working with Zettlr. It also provides a short getting started-guide in case you want to see what the app offers.
+- The **Introduction** section contains instructions on how to set up everything necessary to start working with Zettlr. It also provides a short "getting started" guide in case you want to see what the app offers.
 - A section on **concepts** familiarizes you with a few concepts that form the basis of how Zettlr works. It is recommended to read through these documents carefully.
-- **Guides** contain a few guides for quickly setting up Zettlr for broadly described use-cases. You will likely need to modify the presented settings to match your own workflow, but these are great starting points to have Zettlr work for you.
-- The **Core** describes the central writing and file managing feature sets of Zettlr: What it can do, how it can do it, and where you can customize it.
-- **Academic Tools** focuses on features that are especially useful to – but not limited to! – students and academics.
+- **Guides** contain a few guides for quickly setting up Zettlr for broadly described use cases. You will likely need to modify the presented settings to match your own workflow, but these are great starting points to have Zettlr work for you.
+- The **Core** describes the central writing and file management feature sets of Zettlr: What it can do, how it can do it, and where you can customize it.
+- **Academic Tools** focuses on features that are especially useful to –but not limited to!– students and academics.
 - **References** contain information on general topics (such as an explanation of all available settings) which serve as a quick reference for you.
 
 ## Get Involved!

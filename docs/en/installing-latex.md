@@ -1,6 +1,6 @@
 # Installing LaTeX
 
-For importing and exporting, Zettlr relies upon Pandoc, but when it comes to exporting PDF files, Pandoc itself relies on yet another free and Open Source software package: LaTeX. Pandoc itself can convert Markdown files into LaTeX files, but in order to create PDF-files, these LaTeX files need to be processed by a different program.
+For importing and exporting, Zettlr relies upon Pandoc, but when it comes to exporting PDF files, Pandoc itself relies on yet another free and Open Source software package: LaTeX. Pandoc can convert Markdown files into LaTeX files, but in order to create PDF files, these LaTeX files need to be processed by a different program.
 
 > LaTeX distributions regularly come with a host of software applications that are intended to make working with the LaTeX source files easier. If you do not intend to write LaTeX code yourself, you do not need these full (and therefore big) packages. LaTeX also offers smaller packages that only include the necessary compiler (the xetex binary).
 
@@ -18,10 +18,10 @@ If you want to also have additional applications that allow you to work with LaT
 
 ## Linux
 
-Linux distributions commonly have several LaTeX-packages available to install directly from your package manager. Generally, you'd want to install the XeTeX-package. Possibly, you need to install the base package as well, in case the XeTeX-package does not install it as a dependency. You can do this either by using a graphical software application, if your distribution provides one, or install it using the command line:
+Linux distributions commonly have several LaTeX packages available to install directly from your package manager. Generally, you'd want to install the XeTeX package. Possibly, you need to install the base package as well, in case the XeTeX package does not install it as a dependency. You can do this either by using a graphical software application, if your distribution provides one, or install it using the command line:
 
 ```shell
 $ sudo apt install texlive-base texlive-xetex # for Debian-based distributions
 ```
 
-Please consult the manual for your distribution for more information on how to install these packages. Make sure that the `xetex`-binary is being installed.
+Please consult the manual for your distribution for more information on how to install these packages. Make sure that the `xetex` binary is being installed.

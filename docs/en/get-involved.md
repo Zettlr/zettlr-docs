@@ -1,6 +1,6 @@
 # Get involved
 
-Do you want to make Zettlr an even better app? That's great! Whether you are a user, want to provide a new translation, or get into developing, you've come to the right place!
+Do you want to make Zettlr an even better app? That's great! Whether you are a user, want to provide a new translation, or get into development of the application, you've come to the right place!
 
 ## General Resources
 
@@ -15,13 +15,13 @@ Zettlr has a vibrant community helping each other all around the net. The follow
 
 ## User Contributions
 
-As a user who wants a good-looking, well-working writing app, just keep your eyes open for any error the app might produce and, more importantly, tell us how to make the workflow more efficient! We can only judge for our own workflow, so to make the app better for you as well, we need to know how. Always remember: We cannot build a workflow as-is into the design but have to make concessions to other workflows, but we'll try to make features more accessible or working smoother as long as the trade-offs for the existing workflows and the new suggestion are not too hard.
+As a user who wants a good looking, well-working writing app, just keep your eyes open for any error the app might produce and, more importantly, tell us how to make the workflow more efficient! We can only judge for our own workflow, so to make the app better for you as well, we need to know how. Always remember: We cannot build a workflow as-is into the design but have to make concessions to other workflows, but we'll try to make features more accessible or working smoother as long as the trade-offs for the existing workflows and the new suggestion are not too hard.
 
 Please report bugs by opening up issues on the GitHub repository. This way we are able to to quickly respond to the report and directly get to handle the problem.
 
 ## Translating the App
 
-We welcome any help in translating the app in all languages of this planet. Translations are managed on our Translation Server. To translate, you'll need to create an account, which is only used as an anti-spam measure. Additionally — but only if you want to — you will be credited using your username in all generated translations.
+We welcome any help in translating the app in all languages of this planet. Translations are managed on our Translation Server. To translate, you'll need to create an account, which is only used as an anti-spam measure. Additionally —but only if you want to— you will be credited using your username in all generated translations.
 
 Translating is simple. Just click on any language on the main page to see the list of all identifiers and all existing translations:
 
@@ -55,49 +55,49 @@ $ cd source
 $ yarn install
 ```
 
-The second `install` in the source-directory is necessary, because we make use of [electron-builder](https://www.electron.build/)'s two-directories-structure.
+The second `install` in the `source` directory is necessary, because we make use of [electron-builder](https://www.electron.build/)'s two-directories-structure.
 
-> The `install`-commands will pre-compile all assets for the first time so that you can immediately `start` the application. However, if you change these assets, you will need to recompile them again in order to see the changes. Refer to the section on development commands to find out which commands you can use!
+> The `install` commands will pre-compile all assets for the first time so that you can immediately `start` the application. However, if you change these assets, you will need to recompile them again in order to see the changes. Refer to the section on development commands to find out which commands you can use!
 
 ### Development Commands
 
-This section lists all available commands that you can use during application development. These are defined within the `package.json` and can be run from the command line by prefixing them either with `npm run` or `yarn`, depending on which package manager you use. Run them from within the base directory of the repository.
+This section lists all available commands that you can use during application development. These are defined within `package.json` and can be run from the command line by prefixing them either with `npm run` or `yarn`, depending on which package manager you use. Run them from within the base directory of the repository.
 
 #### `build:quick`
 
-This command builds the app locally without packing it. This means that within the `release`-directory you will find a pre-built binary, depending on your operating system.
+This command builds the app locally without packing it. This means that within the `release` directory you will find a pre-built binary, depending on your operating system.
 
 #### `csl:refresh`
 
-This downloads the [Citation Style Language](https://citationstyles.org/) (CSL) files with which the application is shipped, and places them in the `source/main/assets/csl-locales`- and `source/main/assets/csl-styles`-directories respectively. You can occasionally run this command to pull potential updates from the repositories.
+This downloads the [Citation Style Language](https://citationstyles.org/) (CSL) files with which the application is shipped, and places them in the `source/main/assets/csl-locales` and `source/main/assets/csl-styles` directories respectively. You can occasionally run this command to pull potential updates from the repositories.
 
 #### `handlebars`
 
-This re-compiles the [Handlebars.js](https://handlebarsjs.com/) template files and places the pre-compiled templates in the `source/common/assets/handlebars`-directory.
+This re-compiles the [Handlebars.js](https://handlebarsjs.com/) template files and places the pre-compiled templates in the `source/common/assets/handlebars` directory.
 
 #### `lang:refresh`
 
-This downloads the four default translations of the application from [Zettlr Translate](https://translate.zettlr.com/), with which it is shipped by default. It places the files in the `source/common/lang`-directory. Currently, the default languages are: German (Germany), English (USA), English (UK), and French (France).
+This downloads the four default translations of the application from [Zettlr Translate](https://translate.zettlr.com/), with which it is shipped by default. It places the files in the `source/common/lang` directory. Currently, the default languages are: German (Germany), English (USA), English (UK), and French (France).
 
 #### `less`
 
-This re-generates the CSS files from the [LESS](http://lesscss.org/)-source and places the final stylesheets in the `source/common/assets/css`-directory. You need to run this command every time you modify the LESS-source in order to see the changes reflected in the app's appearance. _Note: During heavy development, it might be easier to watch the LESS files and automatically recompile them. You can do so by running the command `watch`._
+This re-generates the CSS files from the [LESS](http://lesscss.org/) source and places the final stylesheets in the `source/common/assets/css` directory. You need to run this command every time you modify the LESS-source in order to see the changes reflected in the app's appearance. _Note: During heavy development, it might be easier to watch the LESS files and automatically recompile them. You can do so by running the command `watch`._
 
 #### `lint`
 
-This simply runs [ESLint](https://eslint.org/) with the configuration and outputs a file `eslint_report.htm` into the base directory of the repository with the results. Apps such as [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/) will automatically run ESLint in the background, but if you want to be extra-safe, make sure to run this command prior to submitting a Pull Request.
+This simply runs [ESLint](https://eslint.org/) with the configuration and outputs a file `eslint_report.htm` into the base directory of the repository with the results. Apps such as [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/) will automatically run ESLint in the background, but if you want to be extra safe, make sure to run this command prior to submitting a Pull Request.
 
 #### `release:this`
 
-This command is basically `build:quick`, but additionally packages it for your platform. That means, it will spit out a `.deb`, `.rpm`, `.dmg` or `.exe`-installer, depending on your operating system.
+This command is basically `build:quick`, but additionally packages it for your platform. That means, it will spit out a `.deb`, `.rpm`, `.dmg` or `.exe` package, depending on your operating system.
 
 #### `release:app-image`
 
-Explicitly creates [AppImage](https://appimage.org/) installer. This command compiles both 32bit and 64bit versions.
+Explicitly creates [AppImage](https://appimage.org/) installer. This command compiles both 32-bit and 64-bit versions.
 
 #### `release:linux`
 
-Explicitly creates installer packages for Linux, that is: One `.deb`-package and one `.rpm`-package.
+Explicitly creates installer packages for Linux, that is: One `.deb` package and one `.rpm` package.
 
 #### `release:mac`
 
@@ -105,11 +105,11 @@ Explicitly creates a release for macOS. _Note: This command only works on macOS.
 
 #### `release:win`
 
-Explicitly creates an installer for Windows. The installer package is significantly bigger than the other installers, as `electron-builder` ships the installer with both 32bit and 64bit versions of the app. _Note: This command requires either a Windows-based operating system or a Linux distribution. As long as the developers of [WINE](https://www.winehq.org/) do not port their library to 64 bit, this command will fail on macOS Catalina and newer._
+Explicitly creates an installer for Windows. The installer package is significantly bigger than the other installers, as `electron-builder` ships the installer with both 32-bit and 64-bit versions of the app. _Note: This command requires either a Windows-based operating system or a Linux distribution. As long as the developers of [WINE](https://www.winehq.org/) do not port their library to 64-bit, this command will fail on macOS Catalina and newer._
 
 #### `reveal:build`
 
-This re-compiles the source-files needed by the exporter for building [reveal.js](https://revealjs.com/)-presentations. Due to the nature of how [Pandoc](https://pandoc.org/) creates such presentations, Zettlr needs to modify the output by Pandoc, which is why these files need to be pre-compiled.
+This re-compiles the source-files needed by the exporter for building [reveal.js](https://revealjs.com/) presentations. Due to the nature of how [Pandoc](https://pandoc.org/) creates such presentations, Zettlr needs to modify the output by Pandoc, which is why these files need to be pre-compiled.
 
 #### `start`
 
@@ -121,7 +121,7 @@ This runs the unit tests in the directory `./test`. Make sure to run this comman
 
 #### `test-gui`
 
-This prepares a test-directory (placed into your `./resources`-directory) and tells Zettlr to run with a modified simple configuration. This way you can test some things that might destroy files without actually touching your own files.
+This prepares a test-directory (placed into your `./resources` directory) and tells Zettlr to run with a modified simple configuration. This way you can test some things that might destroy files without actually touching your own files.
 
 #### `watch`
 
@@ -129,7 +129,7 @@ This spins up a process that watches the LESS-source for changes. As long as thi
 
 #### `wp:dev`
 
-Compiles the [Vue.js](https://vuejs.org/)-assets from the resources-directory. This tells [Webpack](https://webpack.js.org/) to compile in development mode, which increases logging and makes debugging easier. Please make sure to run `wp:prod` if you want to create a release.
+Compiles the [Vue.js](https://vuejs.org/) assets from the `resources` directory. This tells [Webpack](https://webpack.js.org/) to compile in development mode, which increases logging and makes debugging easier. Please make sure to run `wp:prod` if you want to create a release.
 
 #### `wp:prod`
 
@@ -141,7 +141,7 @@ Zettlr also includes some command-line flags that can be used both on the develo
 
 #### `--config <configFile.json>`
 
-Pass this flag to temporarily use a different configuration file. The configuration file needs to be in the correct format that Zettlr expects (see the ConfigProvider class in the codebase), but it can also be a stub, i.e. only containing the necessary options you want to use. All options that Zettlr expects and that are not set in that stub will be set to their respective default. This is extremely useful if you want to quickly switch the file tree that will be loaded by the app, e.g. for testing purposes. The `test-gui`-command makes use of the `--config`-flag in order to quickly exchange the loaded files to harmless ones that you can play with.
+Pass this flag to temporarily use a different configuration file. The configuration file needs to be in the correct format that Zettlr expects (see the ConfigProvider class in the codebase), but it can also be a stub, i.e., only containing the necessary options you want to use. All options that Zettlr expects and that are not set in that stub will be set to their respective default. This is extremely useful if you want to quickly switch the file tree that will be loaded by the app, e.g., for testing purposes. The `test-gui` command makes use of the `--config` flag in order to quickly exchange the loaded files to harmless ones that you can play with.
 
 > Note: The flag expects an absolute path, so make sure to pass an absolute path to it! Relative paths might not work as expected (Good: `--config /Users/name/Documents/custom-config.json`; Bad: `--config ../resources/my-custom-config.json`).
 
@@ -245,15 +245,15 @@ While Zettlr generally follows the definition of modules as seen on [NPM](https:
 
 #### Service Provider
 
-A service provider is a class which is instantiated during boot and then keeps running until the app is shut down. These providers provide functionality by attaching certain functional objects (some sort of internal API) to the `global`-object. One example is the log provider which can be used for logging, e.g. `global.log.verbose('A message!')`. Another one is the configuration, which can be accessed similarly, e.g. `global.config.get('config.value')`.
+A service provider is a class which is instantiated during boot and then keeps running until the app is shut down. These providers provide functionality by attaching certain functional objects (some sort of internal API) to the `global` object. One example is the log provider which can be used for logging, e.g., `global.log.verbose('A message!')`. Another one is the configuration, which can be accessed similarly, e.g., `global.config.get('config.value')`.
 
 #### Command
 
-While a command within the Zettlr-ecosystem mainly denotes the thing you'd generally associate with the term in a software engineering context, there is one class of `commands` that is special. Mostly, if we talk about commands, we mean one of the commands in the `source/main/commands`-subdirectory. These commands are called whenever the user performs a conscious action that does something, such as opening a file, exporting, or saving the file.
+While a command within the Zettlr ecosystem mainly denotes the thing you'd generally associate with the term in a software engineering context, there is one class of `commands` that is special. Mostly, if we talk about commands, we mean one of the commands in the `source/main/commands` subdirectory. These commands are called whenever the user performs a conscious action that does something, such as opening a file, exporting, or saving the file.
 
 #### Window
 
-In the Zettlr-context, a window not only comprises a literal window that can be opened by the app, but much more. In general, due to the structure of Electron-applications, a window consists of one control class in the main process, one control class in the respective renderer process that is started for each window, and an accompanying HTML-file that is loaded into the window.
+In the Zettlr context, a window not only comprises a literal window that can be opened by the app, but much more. In general, due to the structure of Electron applications, a window consists of one control class in the main process, one control class in the respective renderer process that is started for each window, and an accompanying HTML file that is loaded into the window.
 
 #### Dialog
 
@@ -281,7 +281,7 @@ Similarly to the macOS QuickLook-feature, these are smaller (native) windows tha
 
 #### DevTools / Development Tools
 
-The development tools are the ones you can open in Zettlr windows that enable you to debug the GUI. They work the same as the devtools shipped with Chrome-browsers and can be opened when debug-mode is enabled.
+The development tools are the ones you can open in Zettlr windows that enable you to debug the GUI. They work the same as the devtools shipped with Chrome browsers and can be opened when debug mode is enabled.
 
 #### Theme
 

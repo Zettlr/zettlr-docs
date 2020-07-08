@@ -6,7 +6,7 @@ Both Windows and macOS require so-called "code-signing" in order to be able to t
 
 ## Are there any plans of porting Zettlr to mobile phones and tables, for Android or iOS?
 
-We are getting more and more requests for mobile versions of Zettlr. We are very happy that you like Zettlr enough to want it on all your devices, and we would love to fulfil your wish! Unfortunately, though, our resources are just enough to keep the development of Zettlr up and running, and adding more work is just not possible at the moment.
+We are getting more and more requests for mobile versions of Zettlr. We are very happy that you like Zettlr enough to want it on all your devices, and we would love to fulfill your wish! Unfortunately, though, our resources are just enough to keep the development of Zettlr up and running, and adding more work is just not possible at the moment.
 
 ## What is Markdown?
 
@@ -18,7 +18,7 @@ Simply uninstall Zettlr and begin using another program of your choice. Zettlr d
 
 ## Sometimes I don't want AutoCorrect — how can I make it stop autocorrecting in a specific instance?
 
-While AutoCorrect is a great tool, there are these few instances where we don't want it to apply. One often-cited instance is the YAML-frontmatter. If you write the closing three dots or dashes, Zettlr's AutoCorrect will transform them to an ellipse or an em-dash, depending on the characters used. This will cause Zettlr to parse the whole file as YAML, not as Markdown. In order to prevent Zettlr AutoCorrect from applying, here's how it goes:
+While AutoCorrect is a great tool, there are these few instances where we don't want it to apply. One often-cited instance is the YAML-frontmatter. If you write the closing three dots or dashes, Zettlr's AutoCorrect will transform them to an ellipsis or an em-dash, depending on the characters used. This will cause Zettlr to parse the whole file as YAML, not as Markdown. In order to prevent Zettlr AutoCorrect from applying, here's how it goes:
 
 1. If you use the LibreOffice-style AutoCorrect, simply hold down the Shift-key while pressing Space or Return (the AutoCorrect only applies on Space or Return). This will prompt Zettlr not to automatically "correct" in that instance.
 2. If you use the Word-style AutoCorrect, simply press Backspace as soon as you typed a space after AutoCorrect applied. This will undo the Autocorrect and restore the original characters.
@@ -33,7 +33,7 @@ Zettlr never completely removes your files. It always only moves them to the tra
 $ sudo apt install gvfs-bin
 ```
 
-## How should regular Markdown links look like to work as intended?
+## What is the correct URI formatting for Markdown links?
 
 By default, Zettlr renders Markdown links in the format `[Your Link Text](your-link)` to be clickable (when holding down `Ctrl` or `Alt`). However, Markdown links can point both to websites and to other files on your computer. You can omit a lot of information from your link, and Zettlr makes use of a heuristic to determine the information on its own, but it might infer false context for what you intend. Here's how it works:
 
@@ -49,18 +49,18 @@ To sum up: If you worry about how your links are treated, be more explicit. Two 
 
 In case the internal links used to interlink files don't work as expected, please make sure you've done the following things:
 
-1. Is the link recognised? Zettlr enables you to define what internal links look like. By default, they are encapsulated by `[[` and `]]`. When Zettlr recognises an internal link, it will colour it and if you hover over it with your mouse, the contained text should become underlined. If it does not, Zettlr doesn't think that what you've written is a link. You can change this in the settings.
-2. Did you press the `Alt`- or `Ctrl`-key while clicking on the link? As clicking with your mouse somewhere in the text normally means that you intend to change something, you have to tell Zettlr that you actually want to follow the link.
+1. Is the link recognised? Zettlr enables you to define what internal links look like. By default, they are encapsulated by `[[` and `]]`. When Zettlr recognises an internal link, it will colour it and if you hover over it with your mouse cursor, the contained text should become underlined. If it does not, Zettlr doesn't think that what you've written is a link. You can change this in the settings.
+2. Did you press the `Alt` or `Ctrl` key while clicking on the link? As clicking with your mouse somewhere in the text normally means that you intend to change something, you have to tell Zettlr that you actually want to follow the link.
 3. Did you use a valid filename or ID? Zettlr only opens files, if they report they _exactly_ have the given ID or the given filename. If nothing happens while clicking on the link, this surely means that a file with the given ID or filename does not exist in the system. Note that you must omit the file extension when creating a link. For example, to link to `my-file.md`, you only need to put `my-file` inside the brackets.
 4. Is the file currently loaded into Zettlr? Internal linking obviously only works if Zettlr has read the file.
 
 ## I know LaTeX and want to use it inside my Markdown files as well. Is this possible?
 
-Yes. Simply write your `LaTeX`-statements where you want them. As soon as you export to PDF, Pandoc will take care of the rest and the statements will be interpreted by the PDF engine. Unfortunately, `LaTeX` syntax highlighting is not supported. Also, please note that Pandoc will clear all `LaTeX`-blocks prior to exporting to anything other than PDF, which means that blocks within `\begin` and `\end`, for instance, will be missing completely from the final Office file. On HTML-export, all `LaTeX`-blocks will be retained, but not converted to something else.
+Yes. Simply write your `LaTeX` statements where you want them. As soon as you export to PDF, Pandoc will take care of the rest and the statements will be interpreted by the PDF engine. Unfortunately, `LaTeX` syntax highlighting is not supported. Also, please note that Pandoc will clear all `LaTeX` blocks prior to exporting to anything other than PDF, which means that blocks within `\begin` and `\end`, for instance, will be missing completely from the final Office file. On HTML-export, all `LaTeX` blocks will be retained, but not converted to something else.
 
 ## I can't seem to align the text just or right!
 
-It's not a bug, it's a feature: Markdown does not have the respective formatting signs because text should always be justified or aligned left and therefore it does not belong to the set of necessary block formats Markdown offers. Yet, you can still use `LaTeX`-commands to render them left or right. Simply enclose the text you want to align right or justify in `\begin{<option>}` and `\end{<option>}`, where `<option>` may either refer to `flushleft`, `flushright` or  put a `\justify` in front of a paragraph you want to be justified. [Learn more at sharelatex.com](https://www.sharelatex.com/learn/Text_alignment).
+It's not a bug, it's a feature: Markdown does not have the respective formatting signs because text should always be justified or aligned left (for LTR languages) and therefore it does not belong to the set of necessary block formats Markdown offers. Yet, you can still use `LaTeX` commands to render them left or right. Simply enclose the text you want to align right or justify in `\begin{<option>}` and `\end{<option>}`, where `<option>` may either refer to `flushleft`, `flushright` or  put a `\justify` in front of a paragraph you want to be justified. [Learn more at sharelatex.com](https://www.sharelatex.com/learn/Text_alignment).
 
 ## In PDF output, I want certain headings to be unnumbered/not listed in the Table of Contents
 
@@ -88,11 +88,11 @@ For plain HTML export, no. For all other export formats, yes. Zettlr depends on 
 
 ## How do I install Pandoc or LaTeX?
 
-Please refer to the [setup guide](install.md) for instructions on how to set up Pandoc and LaTeX on your system.
+Please refer to documentation sections specifically created to assist with this: [Installing Pandoc](installing-pandoc.md) and [Installing LaTeX](installing-latex.md).
 
 ## Zettlr does not seem to find Pandoc and LaTeX, which are nonetheless installed!
 
-This can happen in case your computer decided to install the software in a non-standard directory. Zettlr will try its best to locate the applications but may fail if they are buried somewhere. That's where the path-options in the preferences come into play. In case Zettlr does not find any of the binaries, you can enter the **full path** to them in the appropriate text fields in the `Advanced`-tab.
+This can happen in case your computer decided to install the software in a non-standard directory. Zettlr will try its best to locate the applications but may fail if they are buried somewhere. That's where the path-options in the preferences come into play. In case Zettlr does not find any of the binaries, you can enter the **full path** to them in the appropriate text fields in the `Advanced` tab.
 
 On Windows, you should never encounter this issue, as long as you leave the default installation path during install set to the default `Program Files` directory of Windows. If you wanted to install the programs to different locations, rendering Zettlr unable to find them, simply search your system using the Explorer for two files, the first being `pandoc.exe` and the second being `xelatex.exe`. Copy the full path (including the executable's name!) to the appropriate text field in the Zettlr preferences.
 
@@ -130,6 +130,6 @@ That's good to hear! We always depend on other people's experience with the app 
 
 ## What about my privacy? Does Zettlr transfer any data, or don't I have to worry?
 
-Zettlr is privacy-first. It does not send any data, and it is fully functional offline. Yet, there is one instance where Zettlr sends data over the web: The update check. Whenever you open Zettlr, or use the menu item, Zettlr will connect to the Zettlr-API to retrieve a list of all releases. This list is then used to determine whether or not you are using the newest release, or not. During the connection, Zettlr will receive your IP-address and will know that an Electron app is accessing the API. The app will also transmit your operating system type and the application ID.
+Zettlr is privacy-first. It does not send any data, and it is fully functional offline. Yet, there is one instance where Zettlr sends data over the web: the update check. Whenever you open Zettlr, or use the menu item, Zettlr will connect to the Zettlr-API to retrieve a list of all releases. This list is then used to determine whether or not you are using the newest release. During the connection, Zettlr will receive your IP-address and will know that an Electron app is accessing the API. The app will also transmit your operating system type and the application ID.
 
 This data will never be sold to third parties. It's just because we like statistics and we are always interested in finding out who's using the app. Nevertheless, we can't identify anyone based on that data, it's much too coarse for this. We're Open Source, not Facebook.
