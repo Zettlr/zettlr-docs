@@ -14,7 +14,7 @@ Markdown is a simple markup language that enables you to write text just as comp
 
 ## If I don't want to use Zettlr anymore, what would I need to do to switch programs?
 
-Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Virtual Directories or Projects, there will be small files named `.ztr-directory` present in some folders. To remove them, simply delete any virtual directories, reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
+Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Projects or and old feature called Virtual Directories, there will be small files named `.ztr-directory` present in some folders. To remove them, simply delete any virtual directories, reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
 
 ## Sometimes I don't want AutoCorrect — how can I make it stop autocorrecting in a specific instance?
 

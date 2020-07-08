@@ -25,7 +25,6 @@ Jede\*r kann natürlich schnell gut mit bestimmten Arbeitsabläufen und Programm
 * [Die Dateiliste](core/file-list.md)
 * [Suchen und Finden](core/search.md)
 * [Exportieren](core/export.md)
-* [Virtuelle Verzeichnisse](core/virtual-directories.md)
 * [Benutzerdefiniertes CSS](core/custom-css.md)
 * [Übersetzungen](core/localisation.md)
 * [Die linke Seitenleiste](core/attachments.md)

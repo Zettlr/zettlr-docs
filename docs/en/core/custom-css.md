@@ -176,14 +176,12 @@ Please note that we used an external package to extract the class names. We have
 .id
 .tags
 .tex-indicator
-.virtual-directories
 .target-progress-indicator
 .filename
 .taglist
 .tag
 .tagspacer
 .directory
-.virtual-directory
 .sorter
 .sortName
 .sortTime

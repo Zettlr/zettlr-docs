@@ -32,7 +32,6 @@ Voici toutes les ressources qui peuvent être intéressantes pour vous :
 - [Guide: Zettlr as Zettelkasten](guide-zettelkasten.md)
 - [Guide: Zettlr as Note-Taking App](guide-notes.md)
 - [Zettlr Projects](../academic/projects.md)
-- [Virtual Directories](../core/virtual-directories.md)
 - [Create Presentations with Zettlr](../academic/presentations.md)
 - [Markdown for Zettlr](../reference/markdown-basics.md)
 - [Exporting to PDF](../core/export.md)

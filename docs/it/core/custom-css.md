@@ -176,14 +176,12 @@ Ti preghiamo di notare che abbiamo usato un pacchetto esterno per estrarre i nom
 .id
 .tags
 .tex-indicator
-.virtual-directories
 .target-progress-indicator
 .filename
 .taglist
 .tag
 .tagspacer
 .directory
-.virtual-directory
 .sorter
 .sortName
 .sortTime

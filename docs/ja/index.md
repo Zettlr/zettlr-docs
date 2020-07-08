@@ -26,7 +26,6 @@ Zettlrのインストール方法については、[セットアップ手順](in
 * [ファイルリスト](core/file-list.md)
 * [検索](core/search.md)
 * [Zettlrからのエクスポート](core/export.md)
-* [仮想ディレクトリ](core/virtual-directories.md)
 * [カスタムCSS](core/custom-css.md)
 * [ローカライゼーション](core/localisation.md)
 

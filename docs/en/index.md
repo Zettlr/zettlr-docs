@@ -19,7 +19,7 @@ If you have any questions that do not seem to be answered in this documentation,
 
 > The interactive tutorial will suggest to install Pandoc and LaTeX on your computer. Zettlr depends on these programs for importing and exporting files. Without Pandoc, you will only be able to export HTML documents and importing is disabled. Without LaTeX you will not be able to export PDF files. But if you do not intend to import or export anything, you do not need them – they can be installed at any time, should you change your mind.
 
-## Get involved!
+## Get Involved!
 
 Zettlr is a free and open source software, which means that its source code is publicly available, and the application comes at no cost. However, this also means that there is no paid staff behind the app – it is completely managed by the community. This means that **we actively encourage users to get involved with the app**! Depending on your skills and what you like most, there are various ways in which you can help Zettlr out:
 

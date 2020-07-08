@@ -25,7 +25,6 @@ Chacun peut devenir très rapide et efficace en reproduisant les processus de ba
 * [La liste de fichiers](core/file-list.md)
 * [Rechercher](core/search.md)
 * [Exporter avec Zettlr](core/export.md)
-* [Répertoires virtuels](core/virtual-directories.md)
 * [Personnaliser l'interface avec CSS](core/custom-css.md)
 * [Localisation linguistique](core/localisation.md)
 * [Le panneau des Annexes](core/attachments.md)
