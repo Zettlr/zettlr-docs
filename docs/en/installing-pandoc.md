@@ -1,6 +1,6 @@
 # Installing Pandoc
 
-Pandoc is a small program that has the ability to convert document files from one format into another. It is extremely powerful and has a lot of options. In order to enable Zettlr to import and export files, Pandoc needs to be installed on your computer. Zettlr itself does not have the capability of importing or exporting in itself. The reason for this is that Pandoc does this job extremely well, it is also free and Open Source, and is available on all platforms that Zettlr supports.
+Pandoc is a small program that has the ability to convert document files from one format into another. It is extremely powerful and has a lot of options. In order to enable Zettlr to import and export files, Pandoc needs to be installed on your computer. Zettlr does not have the capability of importing or exporting in itself. The reason for this is that Pandoc does this job extremely well, it is also free and Open Source, and is available on all platforms that Zettlr supports.
 
 > Zettlr requires Pandoc version 2.0 or higher. Some Linux repositories still have older versions available. If this is the case for you, please install Pandoc from the [download page](https://github.com/jgm/pandoc/releases/latest).
 
@@ -42,7 +42,7 @@ $ brew install pandoc-citeproc
 
 ### Install using the official installer
 
-To install Pandoc the old way, simply head over to the [download page](https://github.com/jgm/pandoc/releases/latest) and get the macOS installer. Once it is done, pandoc should be available on your system. Please remember that by installing Pandoc this way, you need to check for updates manually.
+To install Pandoc the old way, simply head over to the [download page](https://github.com/jgm/pandoc/releases/latest) and get the macOS installer. Once it is done, Pandoc should be available on your system. Please remember that by installing Pandoc this way, you need to check for updates manually.
 
 ## Linux
 

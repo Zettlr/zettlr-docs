@@ -1,6 +1,6 @@
 # Get Started
 
-After setting up Zettlr, you may very likely want to get started with it right away. On the first start, Zettlr will copy a special directory into your Documents-folder that contains a very useful interactive tutorial that leads you natively through the first steps with the app. Just follow the instructions there; it will even point you to specific sections of this documentation where you can learn more on the app!
+After setting up Zettlr, you may very likely want to get started with it right away. On the first start, Zettlr will copy a special directory into your Documents folder that contains a very useful interactive tutorial that leads you natively through the first steps with the app. Just follow the instructions there; it will even point you to specific sections of this documentation where you can learn more about the app!
 
 If you have any questions that do not seem to be answered in this documentation, make sure to consult the [Frequently Asked Questions](faq.md) and ask the community on [Reddit](https://www.reddit.com/r/Zettlr/) and the [forum](https://forum.zettlr.com/)! We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools.
 
