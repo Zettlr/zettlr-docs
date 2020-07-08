@@ -6,20 +6,19 @@ Zettlr offers you a plethora of options to customise your experience with the ap
 
 You can display the general preference dialog using either the shortcut `Cmd/Ctrl+,`, the toolbar button (the cog) or the respective menu item. The dialog will then show up and present to you all configuration options you may customise. They are ordered in nine tabs that you can see at the top of the dialog.
 
-* General: These options affect Zettlr as a whole.
-* Editor: These settings concern only the editor itself.
-* Export: Control how your files are exported in this tab.
-* Zettelkasten: Adapt Zettlr to match your Zettelkasten system.
-* Display: Control how the editor displays certain elements, such as images or links.
-* Theme: Select the theme for the app here.
-* Spellchecking: Find both the installed dictionaries and your user dictionary here.
-* AutoCorrect: Choose text to be replaced and also determine the quotes you’d like to use.
-* Advanced: Options for experienced users.
+* [General](#general): These options affect Zettlr as a whole.
+* [Editor](#editor): These settings concern only the editor itself.
+* [Export](#export): Control how your files are exported in this tab.
+* [Zettelkasten](#zettelkasten): Adapt Zettlr to match your Zettelkasten system.
+* [Display](#display): Control how the editor displays certain elements, such as images or links.
+* [Theme](#theme): Select the theme for the app here.
+* [Spellchecking](#spellchecking): Find both the installed dictionaries and your user dictionary here.
+* [AutoCorrect](#autocorrect): Choose text to be replaced and also determine the quotes you’d like to use.
+* [Advanced](#advanced): Options for experienced users.
 
 ### General
 
 ![settings_general.png](../img/settings_general.png)
-
 
 In the general tab you find options that you might want to adjust if you begin using Zettlr to fit it to your needs. The application language is pretty self-explanatory.
 
@@ -61,7 +60,6 @@ The third option only applies to users using a keyboard that features the `Home`
 
 ![settings_export.png](../img/settings_export.png)
 
-
 The export tab allows you to tweak all preferences concerning how your files are exported. To the left you have options concerning the Zettelkasten functionality.
 
 Selecting "Remove ZKN IDs from files" makes Zettlr remove all IDs that it finds in your files prior to export. "Remove tags from files" does the same but with tags.
@@ -79,7 +77,6 @@ The CSL JSON database field can be used to open a literature database. Zettlr wi
 ### Zettelkasten
 
 ![settings_zettelkasten.png](../img/settings_zettelkasten.png)
-
 
 In this tab you can customise the way Zettlr works with your existing Zettelkasten system. In most cases you won't need to touch these options, except you want to use a custom system.
 
@@ -99,7 +96,7 @@ The braces around the `\d{14}` create a so-called "capturing group". A capturing
 
 The internal links are explained pretty quick: Simply choose how you'd like to write internal links. The default are Wiki-Style-Links: [[your-link]]. You could also use curly brackets: {{your-link}}. Or you could use exclamation marks: !your-link!. Whatever suits you!
 
-The internal links are used for two things: First, if they either contain an existing file name or an existing ID, clicking them will directly open the respective file (identified either by its name without the extension, or by its ID). Second, if they don't contain any of that, they won't open any file, but they will work as a search function, so `ALT`-clicking them will start a search — this is great for saving searches you do often!
+The internal links are used for two things: First, if they either contain an existing file name or an existing ID, clicking them will directly open the respective file (identified either by its name without the extension, or by its ID). Second, if they don't contain any of that, they won't open any file, but they will work as a search function, so `Cmd/Ctrl`-clicking them will start a search — this is great for saving searches you do often!
 
 > Note that files will not assume any link as an ID. If a file finds an ID that is surrounded by the internal link formatting, it will not use this ID.
 
@@ -114,7 +111,6 @@ You can test both the generation of IDs and the detection of them by clicking th
 ### Display
 
 ![settings_display.png](../img/settings_display.png)
-
 
 This tab controls how the editor displays certain elements. Zettlr uses a semi-preview approach to Markdown and only renders some elements. On this tab you can control which elements will be rendered.
 

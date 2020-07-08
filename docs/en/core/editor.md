@@ -6,9 +6,7 @@ In this document, you will learn about writing Markdown, available commands, som
 
 ## Writing Markdown
 
-The idea behind Zettlr is to remove unnecessary markup and styling from your writing process. During the writing process, what matters is the _content_ you produce, not the form in which it is presented. A little bit of formatting is provided, of course. But if it comes to colours and text align, nobody really needs plenty of options to get writing. The formatting is what happens _afterwards_.
-
-Therefore Zettlr lets you write `Markdown`-files. Markdown is a very simple markup language that only contains a small amount of formatting symbols that you may already know! In recent years, more and more apps have discovered the power of Markdown, and even WhatsApp uses it to enable simple formatting of messages.
+The idea behind Zettlr is to remove unnecessary markup and styling from your writing process. During the writing process, what matters is the _content_ you produce, not the form in which it is presented. Therefore Zettlr lets you write `Markdown`-files. Markdown is a very simple markup language that only contains a small amount of formatting symbols that you may already know. In recent years, more and more apps have discovered the power of Markdown, and even WhatsApp uses it to enable simple formatting of messages.
 
 A Markdown-Document only consists of pure text and comes with a lot of benefits:
 
@@ -51,6 +49,10 @@ Because CodeMirror is so powerful, there are also other great options that you c
 * If you have nothing selected, pressing `Cmd/Ctrl+X` will **cut the full line**. Pressing `Cmd/Ctrl+V` afterwards will **insert this whole line above the line, in which your cursor is**.
 * CodeMirror **auto-closes quotes and brackets** to save you time! Whenever you type a "- or a (-character, it will present you with the closing character automatically. And when you are done with your quote, just type " or ), it will _not add the character a second time_ but just "jump" over it! This also works with selected text. If you have something selected and press one of these characters, it will encapsulate your selection with the character pair.
 
+## Emacs and Vim Editing Modes
+
+Some people prefer a different way to insert text into the editor, and therefore like to use vim- or Emacs-keybindings. This input mode can be activated in the [settings](../reference/settings.md) and allows you to insert text differently than normal. This setting is recommended for advanced users only.
+
 ## Spellchecking
 
 Zettlr also features spellchecking. In your Preferences, you can select all languages, that your text should be checked for. The dictionaries are loaded on app start and your editor content is checked against it. Zettlr will move through all dictionaries to check a word, and only if none of the loaded dictionaries can find it, it will be marked as wrong with a small dashed line.
@@ -67,4 +69,4 @@ Footnotes are a notoriously difficult thing in Markdown, because they require so
 
 1. You can use a shortcut to place footnotes: `Cmd+Alt+R` (macOS only) or `Ctrl+Alt+F` (macOS/Windows/Linux).
 2. The reference text (that is, the content of the footnote) will be displayed at the bottom end of the editor window when you hover over a footnote.
-3. If you `Alt`- or `Ctrl`-Click a footnote anchor somewhere in your text, a popup will show up that lets you edit the footnote in place. After you are finished editing your footnote, simply press `Shift+Enter` to close the popup and replace the text of the footnote.
+3. If you `Cmd`- or `Ctrl`-Click a footnote anchor somewhere in your text, a popup will show up that lets you edit the footnote in place. After you are finished editing your footnote, simply press `Shift+Enter` to close the popup and replace the text of the footnote.

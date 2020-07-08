@@ -6,18 +6,12 @@ This is the official documentation for the Zettlr Markdown Editor. This document
 
 This documentation is structured with its extensive feature set and target group in mind. We have sorted all available features into a few central categories. If you know exactly what you are looking for, the search bar in the top right is the right starting point for you, otherwise, please follow the descriptions below:
 
+- The **Introduction** section contains instructions on how to set up everything necessary to start working with Zettlr. It also provides a short getting started-guide in case you want to see what the app offers.
+- A section on **concepts** familiarizes you with a few concepts that form the basis of how Zettlr works. It is recommended to read through these documents carefully.
 - **Guides** contain a few guides for quickly setting up Zettlr for broadly described use-cases. You will likely need to modify the presented settings to match your own workflow, but these are great starting points to have Zettlr work for you.
 - The **Core** describes the central writing and file managing feature sets of Zettlr: What it can do, how it can do it, and where you can customize it.
 - **Academic Tools** focuses on features that are especially useful to – but not limited to! – students and academics.
 - **References** contain information on general topics (such as an explanation of all available settings) which serve as a quick reference for you.
-
-## Getting Started
-
-After setting up Zettlr, you may very likely want to get started with it right away. On the first start, Zettlr will copy a special directory into your Documents-folder that contains a very useful interactive tutorial that leads you natively through the first steps with the app. Just follow the instructions there; it will even point you to specific sections of this documentation where you can learn more on the app!
-
-If you have any questions that do not seem to be answered in this documentation, make sure to consult the [Frequently Asked Questions](faq.md) and ask the community on [Reddit](https://www.reddit.com/r/Zettlr/) and the [forum](https://forum.zettlr.com/)! We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools.
-
-> The interactive tutorial will suggest to install Pandoc and LaTeX on your computer. Zettlr depends on these programs for importing and exporting files. Without Pandoc, you will only be able to export HTML documents and importing is disabled. Without LaTeX you will not be able to export PDF files. But if you do not intend to import or export anything, you do not need them – they can be installed at any time, should you change your mind.
 
 ## Get Involved!
 

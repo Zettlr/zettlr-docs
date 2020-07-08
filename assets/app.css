@@ -1,31 +1,39 @@
 /* Override directives for readthedocs */
 
-/*
- * General branding: Let's use the Zettlr green instead of the default blue
+
+/**
+ * Branding: Zettlr green: #1cb27e
+ * Shade color (darker green): #127e58
  */
 
-.section a { 
-  text-decoration: underline; 
-  color: #404040;
+ /* Main section links */
+ section.wy-nav-content-wrap a {
+  color: #1cb27e;
 }
-section.wy-nav-content-wrap a { color: black;}/*rgb(28, 178, 126); }*/
-nav.wy-nav-top a, nav.my-nav-top a:active { color: white; }
-.wy-side-nav-search a, .wy-side-nav-search a:visited { color: white; }
 
 section.wy-nav-content-wrap a:hover {
-  color: rgb(28, 178, 126);
-  text-decoration: underline;
+  color: #127e58;
+}
+
+nav.wy-nav-top a,
+nav.my-nav-top a:active {
+  color: white;
+}
+
+.wy-side-nav-search a,
+.wy-side-nav-search a:visited {
+  color: white;
 }
 
 /*
  * Blockquotes are "misused" as info blocks
  */
 div[role="main"] blockquote {
-  color: white;
-  border: 1px solid #4f6e4f;
+  color: #ffffff;
+  border: 1px solid #127e58;
   border-radius: 5px;
   padding: 10px;
-  background-color: #80b480;
+  background-color: #1cb27e;
   position: relative;
   padding-left: 30px;
 }
@@ -39,7 +47,7 @@ div[role="main"] blockquote::before {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: #4f6e4f;
+  color: #127e58;
   font-style: normal;
   content: "\f05a";
 }
@@ -53,10 +61,14 @@ div[role="main"] blockquote p { margin-bottom: 0px; }
 /*
  * Links in these boxes should have different colours.
  */
-div[role="main"] blockquote a { color: rgb(87, 87, 87); }
-div[role="main"] blockquote a:hover {
-  color: rgb(87, 87, 87);
+div[role="main"] blockquote a {
+  color: #ffffff;
   text-decoration: underline;
+}
+
+div[role="main"] blockquote a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*

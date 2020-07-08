@@ -18,7 +18,9 @@ The **yellow** number indicates the duration of a _short_ break that will divide
 
 The **green** number tells Zettlr, how long a _long_ break should be. After every four tasks, there will be such a long break. The default duration is 20 minutes.
 
-Below, you can decide whether or not a sound should be played each time a phase has ended. The slider below the checkbox adjusts the volume. (_Attention_: This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent!)
+Below, you can decide whether or not a sound should be played each time a phase has ended. Adjust the volume with the slider (0 % means the sound will be muted).
+
+> This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
 
 Click on **Start** to begin the timer. Then, the circle will be filled with the color of the current phase (either red, yellow, or green). Once it is full, the next phase will begin.
 

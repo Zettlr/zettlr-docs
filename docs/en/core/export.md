@@ -6,25 +6,28 @@ Exporting files is an important interface between your notes and other people. W
 2. Export it to a format with which other people can work, such as Word or OpenDocument files.
 3. Export it to PDF to submit it (such as seminar papers) or, also, print it.
 
-## Preparing exports
+> Zettlr depends on Pandoc to export to anything other than HTML, and additionaly on LaTeX to export to PDF. Please refer to the setup guides to install [Pandoc](../installing-pandoc.md) and [LaTeX](../installing-latex.md) on your computer.
 
-All exports in Zettlr, are done using the free software packages Pandoc and LaTeX. Pandoc is necessary for all exports, because everything will first be converted by it. LaTeX is only necessary for PDF export.
+## Exporting files
 
-> If Pandoc is not installed on your system, you will still be able to export to HTML. In that case, Zettlr will internally parse the file using `Showdown.js`, but this library does not support as many features as Pandoc. Please refer to the [setup guide](../install.md)  to install Pandoc and LaTeX on your computer.
+There are two ways you can export files with Zettlr: Single file exports, and project exports. The single page export is located in the toolbar and can be opened with `Cmd/Ctrl+E`. It allows you to export in a variety of formats (the full name is shown on mouse over). The shutter-icon reveals the different themes available for the built-in revealJS-export.
 
-Zettlr will make reasonable efforts to locate both packages. If the app could not locate the binaries, it will throw an error.
+![The export](../img/export.png)
 
-**In case you have installed both packages, but Zettlr still won't export**, take a look at your Preferences. In the "Advanced"-tab, there are two text fields that allow you to enter the paths to the Pandoc-executable and the "XeLaTeX"-executable. Simply put them in there, restart, and then it should work. If not, please let us know!
+The second method to export files is to export whole [projects](../academic/projects.md). You can export a project by right-clicking the project directory, and choosing the export option.
 
-![The advanced settings tab](../img/settings_advanced.png)
+> Note that exporting to PDF may yield errors in the form of `file <name>.sty not found`. These can be resolved by installing the missing LaTeX packages. Please refer to, e.g., [this guide](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages) on how to install additional LaTeX packages.
 
-## Options for exporting
+## Choosing the Destination
 
-Starting from version `0.17`, Zettlr provides you with a plethora of options to export documents according to your needs. They are split in two different dialogs. The general options for exporting are located within the preferences window. Open it, and navigate to the "Export"-tab. There you have two sections letting you customise the exports. First, you can select in which directory the resulting files should be stored.
+Zettlr needs to know where to store your exported files. There are two options that you have: exporting them to your **temporary directory**, or to the **file's directory**. Both have their advantages and disadvantages.
 
-- Selecting the temporary directory will make Zettlr save your export documents to the temporary directory. The temporary directory is a special folder on every operating system that is used for temporary files and is expunged as soon as a file is not needed anymore. This is good if you don't want to store exported files anywhere on your system. If you export your files to the temporary directory, you will have to save them explicitly somewhere else to make it persistent.
-- Choosing the current working directory (cwd) makes Zettlr save your exported documents to the currently selected directory. This way, you don't have to explicitly save your documents out of the temporary directory to make them persistently accessible. **Please note that the exporting engine will not ask for your confirmation if it is about to overwrite a file!**
+> You can set the corresponding [setting](../reference/settings.md) in the Export-tab.
 
-The second section features options to tell Zettlr what to do with the Zettelkasten-elements it supports. If you want to know what these elements are for, please consult the [respective section of the docs](../academic/zkn-method.md). This section enables you to retain or remove those elements on export, because under most circumstances they are only useful and needed within the app itself, and should not appear in exported documents.
+Exporting to the temporary directory allows you to export a file multiple times without you having to worry to remove the file again afterwards, because your temporary directory is regularly emptied by your computer. As Zettlr opens the file immediately with the default application (e.g. Word for `.docx`-files), you can use the "Save as …"-option to save the file to another location as soon as you are happy with the result.
 
-A second section that contains preferences for exports is located in the `PDF Preferences` dialog. You can open it using the menu (it is located directly under the regular preferences menu item) or using the shortcut `Cmd/Ctrl+Alt+,`. This dialog features options for PDF exports. You can choose a bunch of formatting options, such as the paper type, page margins, the font or font size, and whether or not you want page numbers, and if so, which ones. Most exporting options will be self-explanatory and resemble those given in standard word processors.
+If you don't worry about having exported files in between your Markdown files, you can also tell Zettlr to save the file in your current directory. Please note that Zettlr will always overwrite exported files without asking for a confirmation.
+
+## Customizing Exports
+
+The default templates Zettlr ships with are made to provide a good first impression while being compatible, but as you get more adept in working with Zettlr, you may wish to customize the way the files are layouted. There is a [comprehensive guide on templating](../academic/custom-templates.md) with Zettlr in the documentation.

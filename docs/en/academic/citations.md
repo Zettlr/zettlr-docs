@@ -1,10 +1,6 @@
 # Citing with Zettlr
 
-Starting with version `1.0.0`, it's possible to cite sources directly using Zettlr. This feature makes writing academic papers a lot easier than in the past, because you don't need to circumvent the Zettlr export function to actually cite academic papers anymore!
-
 Citing in Zettlr is done using `citeproc-js`, a library that works exactly like, for instance, pandoc's citeproc-engine, or Zotero. So what you will be seeing in Zettlr matches what Zotero's Word or LibreOffice plugins generate. Zettlr's citation engine is composed of three components: A CSL JSON or BibTex library which contains all items that can be cited, optionally a CSL Stylesheet which can alter Zettlr's default citation style (which is the [American Psychological Association's 6th edition](https://www.apastyle.org/manual/index), short: APA), and a preview engine. This guide will help you enable citations and produce beautifully looking files (not just PDF!) that contain correct and consistent citations.
-
-> Beginning from `1.3.0`, you can also use BibTex libraries to cite.
 
 ## Enabling Citations in Zettlr
 
