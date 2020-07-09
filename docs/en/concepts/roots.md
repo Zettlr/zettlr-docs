@@ -8,7 +8,7 @@ Zettlr contains a full file manager based on our custom file system abstraction 
 
 A root directory forms the foundation for a single file tree. As you may know, files are saved hierarchically in folders on your computer. Each directory on your computer that you open with Zettlr is called a "root" directory, because it forms the root for all of its contents.
 
-You can load several root directories at the same time, for instance if you want to separate different chunks of work (e.g. one root directory named "Zettelkasten" and another named "Projects"). If you would like to implement the so-called "PARA"-principle for document archiving, it makes sense to create four folders on your computer, "Projects," "Archive," "Resources," and "Areas" and load each one as their own root into the application (see the screenshot).
+You can load several root directories at the same time, for instance if you want to separate different chunks of work (e.g. one root directory named "Zettelkasten" and another named "Projects"). If you would like to implement the so-called "PARA" principle for document archiving, it makes sense to create four folders on your computer, "Projects," "Archive," "Resources," and "Areas" and load each one as their own root into the application (see the screenshot).
 
 ![A screenshot of an application with multiple root directories and files, with the last directory opened](../img/file_tree_roots.png)
 
@@ -24,4 +24,4 @@ You cannot open root files directly from within the app. Rather, they are opened
 
 Root files are always sorted on top of the root directories, where you have easy access to them. You can also "close" them, which means they will simply be unloaded from the application, but left untouched, or remove them, which means that Zettlr will unload them from the application and also move them to the trash bin.
 
-> This behavior makes it simple to load one or two additional Markdown files into the application which do not reside within one of the root directories. This makes sense, e.g., for software developers who only want to edit the Readme-file of their project without loading the full directory into Zettlr.
+> This behavior makes it simple to load one or two additional Markdown files into the application which do not reside within one of the root directories. This makes sense, e.g., for software developers who only want to edit the Readme file of their project without loading the full directory into Zettlr.
