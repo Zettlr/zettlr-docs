@@ -1,6 +1,6 @@
 # Citing with Zettlr
 
-Citing in Zettlr is done using `citeproc-js`, a library that works exactly like, for instance, pandoc's citeproc-engine, or Zotero. So what you will be seeing in Zettlr matches what Zotero's Word or LibreOffice plugins generate. Zettlr's citation engine is composed of three components: A CSL JSON or BibTex library which contains all items that can be cited, optionally a CSL Stylesheet which can alter Zettlr's default citation style (which is the [American Psychological Association's 6th edition](https://www.apastyle.org/manual/index), short: APA), and a preview engine. This guide will help you enable citations and produce beautifully looking files (not just PDF!) that contain correct and consistent citations.
+Citing in Zettlr is done using `citeproc-js`, a library that works exactly like, for instance, pandoc's citeproc-engine, or Zotero. So what you will be seeing in Zettlr matches what Zotero's Word or LibreOffice plugins generate. Zettlr's citation engine is composed of three components: A CSL JSON or BibTex library which contains all items that can be cited, optionally a CSL stylesheet which can alter Zettlr's default citation style (which is the [Chicago Manual of Style, 17th edition](http://www.chicagomanualofstyle.org/tools_citationguide.html)), and a preview engine. This guide will help you enable citations and produce beautifully looking files (not just PDF!) that contain correct and consistent citations.
 
 ## Enabling Citations in Zettlr
 
@@ -66,7 +66,7 @@ After you're done citing and want to check that you've cited everything you plan
 
 ## Changing the citation style
 
-Internally, Zettlr will always only use the APA-style to generate citations. Therefore, your previewed citations will always be "in-text," and never in footnote-style. This is meant as a convenience for you to simply see that everything works out.
+Internally, Zettlr will always only use the Chicago-style to generate citations. Therefore, your previewed citations will always be "in-text," and never in footnote-style. This is meant as a convenience for you to simply see that everything works out.
 
 But of course you can also use different citation styles, depending on either the journal requirements for which you are writing, or your personal preferences. To change the style in which pandoc's citeproc will render your citations, you'll need to download the respective CSL-file. A very good starting point is the [Zotero style repository](https://www.zotero.org/styles). There you can search for specific citation styles, preview them and download them.
 
@@ -93,3 +93,7 @@ Simply re-set them to what looks nicely to you. The following code snippet gives
 The above example would render the bibliography with a negative indentation of minus one centimetre. Additionally it'll apply an overall indentation of half a centimetre (relative to the page margins, so if your left page margin is set to 3 centimetres, the bibliography paragraphs will be offset 3.5 centimetres as opposed to the normal paragraphs, which are offset only 3 centimetres). The last value (`parskip`) controls the spacing _between_ paragraphs, so each one will be 10 millimetres away from each other.
 
 Simply start from there, maybe search for more lengths to tweak and adjust these lengths to your liking.
+
+## Controlling Pandoc Citeproc with the YAML frontmatter
+
+You can control certain aspects of Pandoc Citeproc with a few variables that you can set in your YAML frontmatter. Make sure to read the [corresponding page](../core/yaml-frontmatter.md) to see, e.g., how to change the language of your references list.
