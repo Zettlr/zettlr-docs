@@ -1,6 +1,7 @@
 # Document Tabs
 
-Zettlr offers to open multiple documents at the same time in tabs.
+Zettlr allows opening multiple documents at the same time in tabs.
+
 These tabs have similarities with tabs in other applications, but some of their features differ from tabs in browser for example.
 
 All tabs are restored when you reopen the application.

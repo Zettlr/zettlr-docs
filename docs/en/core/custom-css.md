@@ -8,7 +8,7 @@ If you are unfamiliar with CSS, but don't want to simply copy & paste the guides
 
 ## Writing CSS for Zettlr
 
-The styles of Zettlr are divided into both geometry and the actual theme, so you may want to stick with only changing the design of elements _without_ changing **any** geometry. Playing around with the geometry may be fun, but it may yield completely random behaviour, as some parts of the app depend upon the correct sizes of elements. In case you made a mistake, don't worry: Simply remove the `custom.css`-file from the data directory of Zettlr. You can find the data directory of your own system by looking at the paths provided in [the setup guide](../install.md).
+The styles of Zettlr are divided into both geometry and the actual theme, so you may want to stick with only changing the design of elements _without_ changing **any** geometry. Playing around with the geometry may be fun, but it may yield completely random behaviour, as some parts of the app depend upon the correct sizes of elements. In case you made a mistake, don't worry: Simply remove the `custom.css` file from the data directory of Zettlr. You can find the data directory of your own system by looking at the paths provided in [the setup guide](../install.md).
 
 Classes and IDs in Zettlr are always namespaced to the respective components (unless they're global), so to really override a rule you will have to use the complete namespace (you can also use the `!important` override rule, but this is widely regarded as bad practice).
 
@@ -18,7 +18,7 @@ Everything is always namespaced to the `body`, which has a class `.dark` if the 
 
 Zettlr's styles are subject to constant changes. While they should remain fairly stable, changes can be introduced in any version, and therefore, instead of providing you with ready-made examples, this page covers how you can find the correct selectors easily.
 
-First of all, make sure to enable the debug mode in the advanced [preferences](../reference/settings.md) in order to enable the Develop-menu. Next, open the developer tools from within this menu and make sure to select the "Element" tab.
+First of all, make sure to enable the debug mode in the advanced [preferences](../reference/settings.md) in order to enable the Develop menu. Next, open the developer tools from within this menu and make sure to select the "Elements" tab.
 
 ![Zettlr with the developer tools open](../img/zettlr_developer_tools.png)
 
@@ -46,7 +46,7 @@ In case you do not like the default font delivered with Zettlr, or need to chang
 - In case your font is **sans serif**, such as Arial or Helvetica, please use `sans-serif`
 - In case you want to switch to the classic **monospace**, please use the placeholder `monospace`
 
-The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback. Also, if your font name contains spaces, make sure to surround it with quotation marks, e.g. `"Times New Roman"`.
+The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback. Also, if your font name contains spaces, make sure to surround it with quotation marks, e.g., `"Times New Roman"`.
 
 ```css
 body #editor .CodeMirror {

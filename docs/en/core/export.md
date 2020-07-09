@@ -22,9 +22,9 @@ The second method to export files is to export whole [projects](../academic/proj
 
 Zettlr needs to know where to store your exported files. There are two options that you have: exporting them to your **temporary directory**, or to the **file's directory**. Both have their advantages and disadvantages.
 
-> You can set the corresponding [setting](../reference/settings.md) in the Export-tab.
+> You can set the corresponding [setting](../reference/settings.md) in the Export tab.
 
-Exporting to the temporary directory allows you to export a file multiple times without you having to worry to remove the file again afterwards, because your temporary directory is regularly emptied by your computer. As Zettlr opens the file immediately with the default application (e.g. Word for `.docx`-files), you can use the "Save as …"-option to save the file to another location as soon as you are happy with the result.
+Exporting to the temporary directory allows you to export a file multiple times without you having to worry about removing the file again afterwards, because your temporary directory is regularly emptied by your computer. As Zettlr opens the file immediately with the default application (e.g., Word for `.docx` files), you can use the "Save as …" option to save the file to another location as soon as you are happy with the result.
 
 If you don't worry about having exported files in between your Markdown files, you can also tell Zettlr to save the file in your current directory. Please note that Zettlr will always overwrite exported files without asking for a confirmation.
 

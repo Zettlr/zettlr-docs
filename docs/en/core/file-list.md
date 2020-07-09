@@ -12,7 +12,7 @@ The file list shows you all directories and files inside the directory that is c
 
 If you turned off the meta information, both directories and files will be shown as one-liners. If you display the *file information*, you will see additional information: directories will show you the amount of children they have. The files, on the other hand, show their last modification date. If they contain an ID or tags, this information will be displayed after the modification date. Hovering over the tag counter, you can see a small tooltip that shows you all tags that are in the file.
 
-> You can toggle the file information via the "View" menu, by pressing `Cmd/Ctrl+Alt+S`, or the relevant setting in the preferences dialog under the General section
+> You can toggle the file information via the "View" menu, by pressing `Cmd/Ctrl+Alt+S`, or the relevant setting in the preferences dialog under the General tab
 
 ### Meta Information on Files
 
@@ -37,7 +37,7 @@ If you want to sort directories, you can do this from within the file list. Simp
 ![sorting_indicators.png](../img/sorting_indicators.png)
 
 
-Also you can traverse the directory tree by clicking on the directories. A simple click will select the directory, while an `ALT`-click will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.
+Also you can traverse the directory tree by clicking on the directories. A simple click will select the directory, while an `ALT` click will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.
 
 ## Structural implications
 
@@ -49,12 +49,12 @@ As the file list flattens your complex directory tree, it has to make some assum
 
 1. The currently selected directory will be on top of the list of files. Always.
 2. All files that are inside this directory are placed directly beneath this directory name.
-3. All subdirectories that are _inside_ this directory will always be at the bottom of the file list, i.e. _after_ the files in the selected directory.
+3. All subdirectories that are _inside_ this directory will always be at the bottom of the file list, i.e., _after_ the files in the selected directory.
 4. If directories are empty, they will be placed immediately after each other with no files in between.
 
 So what is important to remember is: All directories will be displayed as if they reside on the very same level; as if they weren't nested. To identify which directories contain which, please refer to the tree view.
 
-> If you do not like the "natural" sorting of Zettlr (so that 10 comes after 2), you can switch to "ASCII" sorting in the settings (so that 2 comes after 10).
+> If you do not like the "natural" sorting of Zettlr (so that 10 comes after 2), you can switch to "ASCII" sorting in the General tab of the settings dialog (so that 2 comes after 10).
 
 ## Actions in the file list
 
@@ -64,7 +64,7 @@ You can move your files into different locations. Just drag them from the file l
 
 If you drag a file outside of the app, you are able to share the file with other programs. To cancel this dragging-out, simply release the mouse over your app again.
 
-> To drag out a file into other applications, make sure to **hold the `Ctrl`-key or the `Alt`-key before dragging your file!** This will tell Zettlr that you don't want to move the file within Zettlr, but outside of the app.
+> To drag out a file into other applications, make sure to **hold the `Ctrl` key or the `Alt` key before dragging your file!** This will tell Zettlr that you don't want to move the file within Zettlr, but outside of the app.
 
 ## Search Heatmap
 
