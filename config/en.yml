@@ -40,6 +40,9 @@ nav:
     - Custom CSS: core/custom-css.md
     - Localisation: core/localisation.md
     - Sidebar: core/attachments.md
+    - YAML Frontmatter: core/yaml-frontmatter.md
+    - Print and Preview: core/print-preview.md
+    - Math: core/math.md
   - Academic Tools:
     - Citations: academic/citations.md
     - Projects: academic/projects.md
