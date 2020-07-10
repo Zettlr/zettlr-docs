@@ -21,7 +21,7 @@ title: "Your document's title"
 keywords:
   - A keyword
   - Another keyword
-authors:
+author:
   - The Zettlr Team
 ```
 
