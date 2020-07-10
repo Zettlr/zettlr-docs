@@ -11,22 +11,37 @@ edit_uri: edit/master/docs/ja
 extra_css:
   - assets/app.css
 nav:
-  - はじめに: index.md
-  - インストール: install.md
-  - クイックスタート: 5-minutes.md
-  - ユーザーガイド:
+  - ようこそ: index.md
+  - 最初のステップ:
+    - インストール: install.md
+    - Pandocのインストール: installing-pandoc.md
+    - LaTeXのインストール: installing-latex.md
+    - 最初の一歩: get-started.md
+    - ご協力ください: get-involved.md
+    - よくある質問: faq.md
+  - 概念:
+    - ファイル管理: concepts/roots.md
+    - コンテキスト: concepts/context.md
+    - WYSIWYM: concepts/wysiwym.md
+  - ガイド:
     - Zettlrでノートを取る: guides/guide-notes.md
     - ZettlrをZettelkastenシステムとして使う: guides/guide-zettelkasten.md
     - ZettlrをIDEとして使う: guides/guide-ide.md
   - 主要機能:
     - エディタ: core/editor.md
+    - ドキュメントタブ: core/tabs.md
     - ファイルリスト: core/file-list.md
+    - オートコレクトとマジッククォート: core/autocorrect.md
     - 検索: core/search.md
+    - インポート: core/import.md
     - エクスポート: core/export.md
     - テーブル編集: core/tables.md
     - カスタムCSS: core/custom-css.md
     - ローカライゼーション: core/localisation.md
-    - 添付ファイルサイドバー: core/attachments.md
+    - サイドバー: core/attachments.md
+    - YAML Frontmatter: core/yaml-frontmatter.md
+    - 印刷とプレビュー: core/print-preview.md
+    - 数式: core/math.md
   - 学術ツール:
     - 参考文献: academic/citations.md
     - プロジェクト: academic/projects.md
@@ -36,12 +51,10 @@ nav:
     - Zettelkastenメソッド: academic/zkn-method.md
     - カスタムテンプレート: academic/custom-templates.md
   - 参考資料:
-    - ショートカット: reference/shortcuts.md
+    - キーボードショートカット: reference/keyboard-shortcuts.md
     - Markdownの基本: reference/markdown-basics.md
     - 設定: reference/settings.md
     - スペルチェック: reference/spell-checking.md
-  - ご協力ください: get-involved.md
-  - FAQ: faq.md
 theme:
   name: readthedocs
   custom_dir: ../theme_override
