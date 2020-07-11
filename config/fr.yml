@@ -24,6 +24,7 @@ nav:
     - La liste de fichiers: core/file-list.md
     - Auto-correction et guillemets magiques: core/autocorrect.md
     - Rechercher: core/search.md
+    - Importer des fichiers: core/import.md
     - Exporter avec Zettlr: core/export.md
     - Les tableaux dans Zettlr: core/tables.md
     - CSS personnalisée: core/custom-css.md
