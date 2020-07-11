@@ -21,7 +21,7 @@ title: "Your document's title"
 keywords:
   - A keyword
   - Another keyword
-authors:
+author:
   - The Zettlr Team
 ```
 
@@ -56,11 +56,11 @@ author:
     affiliation: University Y
 ```
 
-> Note the indentation of the property `affiliation`: It aligns with the `name`-property. Indentation of YAML values is important and thus you should take care.
+> Note the indentation of the property `affiliation`: It aligns with the `name` property. Indentation of YAML values is important and thus you should take care.
 
 ### Variable `keywords`
 
-The `keywords`-variable contains keywords, or tags, that can be used by Pandoc to fill in, e.g., the PDF keywords field (note: if you use the default template for PDF exports, the PDF keywords field is controlled in the [PDF settings](../reference/settings.md#pdf-preferences)).
+The `keywords` variable contains keywords, or tags, that can be used by Pandoc to fill in, e.g., the PDF keywords field (note: if you use the default template for PDF exports, the PDF keywords field is controlled in the [PDF settings](../reference/settings.md#pdf-preferences)).
 
 These keywords can be used to circumvent one restriction of the common in-text tags Zettlr supports: You can define arbitrary keywords that can also include spaces. These keywords are recognized by Zettlr and added to the list of tags of the file.
 
@@ -70,7 +70,7 @@ This variable controls the language output for Pandoc citeproc. This is most use
 
 If you do not set this variable, the language of references will be taken from the default language field in the CSL style used, which might be undesirable in case your text is in a different language.
 
-Valid values for this field are [BCP-47](https://tools.ietf.org/html/bcp47) compatible language identifiers (e.g. `en-US`, `de-AT`, or `it`).
+Valid values for this field are [BCP-47](https://tools.ietf.org/html/bcp47) compatible language identifiers (e.g., `en-US`, `de-AT`, or `it`).
 
 ### Variable `nocite`
 
@@ -82,4 +82,4 @@ Use this variable to define a heading for your list of references. This has the 
 
 ### Variable `notes-after-punctuation`
 
-This can be used to direct citeproc to move footnotes with your citations after punctuation (e.g. if you cite `something [@citekey].`, it will become `something.[^1]` in the output).
+This can be used to direct citeproc to move footnotes with your citations after punctuation (e.g., if you cite `something [@citekey].`, it will become `something.[^1]` in the output).

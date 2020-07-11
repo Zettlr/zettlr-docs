@@ -6,7 +6,7 @@ Projects are a way to simplify the concatenation and export of more than a singl
 
 ## Creating a project
 
-Zettlr Projects are basically just a bunch of additional features for directories. Therefore you can "convert" any directory into a project. Simply right-click the directory you want to make a project of and choose "Create project". Then the directory itself will be coloured red and a pencil-icon will appear to the left of its name, indicating that this directory has project features enabled. If you now right-click a directory, you have three additional context menu options at your disposal: "Project Settings", "Build Project" and "Remove Project".
+Zettlr Projects are basically just a bunch of additional features for directories. Therefore you can "convert" any directory into a project. Simply right-click the directory you want to make a project of and choose "Create project". Then the directory itself will be coloured red and a pencil icon will appear to the left of its name, indicating that this directory has project features enabled. If you now right-click a directory, you have three additional context menu options at your disposal: "Project Settings", "Build Project" and "Remove Project".
 
 ## Working with Projects
 
@@ -19,11 +19,11 @@ Now let us briefly explore the settings you got for projects. First the metadata
 - **Project Title**: This title will be used as the file name, the title (if you decide to create a title page) and the PDF title of your document. Default is the directory name.
 - **Project Author**: This will be written into the PDF metadata field for authors.
 - **Project Keywords**: These are keywords you may or may not use when exporting PDF documents.
-- **Generate Title Page**: If this checkbox is selected, Zettlr will direct the LaTeX-engine to generate a title page. It'll use the project title and the current date as well as your author name and write them to the first page of your document.
+- **Generate Title Page**: If this checkbox is selected, Zettlr will direct the LaTeX engine to generate a title page. It'll use the project title and the current date as well as your author name and write them to the first page of your document.
 - **Generate Table of Contents**: If this checkbox is selected, Zettlr will direct Pandoc to generate a Table of Contents on the second page (or on the first, if you do not want a title page).
-- **Evaluate until Level …**: With this dropdown list you can choose which headings will be part of your Table of Contents. The default "2" directs Pandoc to generate a table of contents using both first and second degree headers (i.e. `##` and `#`-headers). A 4 would include 1st, 2nd, 3d and 4th grade headers (i.e. `#`, `##`,`###`, and`####`). All other headings will still be present in the file, but they will not appear in the Table of Contents.
+- **Evaluate until Level …**: With this dropdown list you can choose which headings will be part of your Table of Contents. The default "2" directs Pandoc to generate a table of contents using both first and second degree headers (i.e., `##` and `#` headers). A 4 would include 1st, 2nd, 3d and 4th grade headers (i.e., `#`, `##`,`###`, and`####`). All other headings will still be present in the file, but they will not appear in the Table of Contents.
 
-Additionally, you can choose a custom `TeX`-template to be used for this project (that is, e.g., a template provided by the journal you‘d like to submit your paper to, or a custom one). Furthermore, you can override the default CSL-Style from the general export settings to use a custom one.
+Additionally, you can choose a custom `TeX` template to be used for this project (e.g., a template provided by the journal you‘d like to submit your paper to, or a custom one). Furthermore, you can override the default CSL style from the general export settings to use a custom one.
 
 Currently, both the page and the font tabs are exactly the same for projects and for your general export options, so please refer to the [settings page](../reference/settings.md#pdf-preferences) to get to know what they do.
 
@@ -41,9 +41,9 @@ Next, Zettlr will read the settings you have given the project itself and basica
 
 Once your project has been exported, it is automatically opened with your default PDF previewer and it is saved into the project directory.
 
-> Please note that especially the generation of a table of contents from huge projects may take an extraordinary amount of time. If you wish to generate a table of contents, LaTeX has to actually build the PDF twice — first to detect on which pages your headings end up after the conversion to PDF, and then a second time to actually include the table of contents. In a test I did, on a new Windows 10 computer the generation of a whole directory of excerpts that rendered to about 150 pages took approximately five minutes in which it seems as if it didn't work. So please be patient — as long as Pandoc or LaTeX don't complain about anything, they are still working.
+> Please note that especially the generation of a table of contents from huge projects may take an extraordinary amount of time. If you wish to generate a table of contents, LaTeX has to actually build the PDF twice — first to detect on which pages your headings end up after the conversion to PDF, and then a second time to actually include the table of contents. In a test I did, on a new Windows 10 computer the generation of a whole directory of excerpts that rendered to about 150 pages took approximately five minutes in which it seemed as if it didn't work. So please be patient — as long as Pandoc or LaTeX don't complain about anything, they are still working.
 
-> **Pro-Tip**: As you may know from the FAQ-section, Zettlr and Pandoc will not attempt to filter out TeX-commands you have written into your markdown documents. Remember this while working on your projects: You can add additional pages or do other funky stuff with your files that will actually be present in the final document! You can also create `.tex`-documents by providing the extension when creating new files. These `.tex`-documents support LaTeX syntax highlighting and will be included in the export of your project! Make sure they have a file name that places the file exactly where you need it.
+> **Pro-Tip**: As you may know from the FAQ section, Zettlr and Pandoc will not attempt to filter out TeX commands you have written into your markdown documents. Remember this while working on your projects: You can add additional pages or do other funky stuff with your files that will actually be present in the final document! You can also create `.tex` documents by providing the extension when creating new files. These `.tex` documents support LaTeX syntax highlighting and will be included in the export of your project! Make sure they have a file name that places the file exactly where you need it.
 
 ## Removing Projects
 

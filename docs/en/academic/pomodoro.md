@@ -1,16 +1,16 @@
-# Pomodoro-Timer
+# Pomodoro Timer
 
-If you write a lot, the time may come that you need to organise your time better. The built-in Pomodoro-Timer can help you with this.
+If you write a lot, the time may come that you need to organise your time better. The built-in Pomodoro Timer can help you with this.
 
-Access the Pomodoro-Timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
+Access the Pomodoro Timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
 
 ![Pomodoro Timer](../img/pomodoro_init.png)
 
 Don't know what a pomodoro timer is? Then head over to [the official website](https://francescocirillo.com/pages/pomodoro-technique)!
 
-## Using the Pomodoro-Timer
+## Using the Pomodoro timer
 
-Before you start the pomodoro timer, you can adapt some settings.
+Before you start the Pomodoro Timer, you can adapt some settings.
 
 The **red** number indicates the amount of minutes used to _work_. The default is 25 minutes.
 
@@ -18,7 +18,7 @@ The **yellow** number indicates the duration of a _short_ break that will divide
 
 The **green** number tells Zettlr, how long a _long_ break should be. After every four tasks, there will be such a long break. The default duration is 20 minutes.
 
-Below, you can decide whether or not a sound should be played each time a phase has ended. Adjust the volume with the slider (0 % means the sound will be muted).
+Below, you can decide whether or not a sound should be played each time a phase has ended. Adjust the volume with the slider (0% means the sound will be muted).
 
 > This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
 

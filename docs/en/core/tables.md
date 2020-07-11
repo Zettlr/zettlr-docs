@@ -1,6 +1,6 @@
 # Tables in Zettlr
 
-Markdown tables are a notoriously difficult thing. Due to the nature of Markdown to be as simple as possible, complexity is what suffers most. Markdown is the perfect choice for writing text and most of what we use during writing (e.g. links, images, headings, or quotes) is handled perfectly in Markdown. Yet, from time to time, we also want to include some data in our works, or tables are simply a better way of visualising ideas.
+Markdown tables are a notoriously difficult thing. Due to the nature of Markdown to be as simple as possible, complexity is what suffers most. Markdown is the perfect choice for writing text and most of what we use during writing (e.g., links, images, headings, or quotes) is handled perfectly in Markdown. Yet, from time to time, we also want to include some data in our works, or tables are simply a better way of visualising ideas.
 
 ## Introduction to Tables
 
@@ -45,13 +45,13 @@ Obviously, writing Markdown tables is sometimes unavoidable, but always painful.
 
 While Zettlr maintains a strict policy on [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) ("What You See Is What You Get"), as it tends to blur your perception of what you are actually writing, tables are exempt from this policy. Because even though the [WYSIWYM](https://en.wikipedia.org/wiki/WYSIWYM) ("What You See Is What You Mean") approach is superior to WYSIWYG, there's simply no use in applying this to tables.
 
-Therefore, to aid you with writing tables, Zettlr is now shipping with a powerful table editor that brings to you everything you need to not completely lose your mind while creating tables in your documents. With the table editor, the above-mentioned table looks like this:
+Therefore, to aid you with writing tables, Zettlr is now shipping with a powerful table editor that brings to you everything you need to not completely lose your mind while creating tables in your documents. With the table editor, the above mentioned table looks like this:
 
 ![A table as displayed by the table editor](../img/zettlr_table.png)
 
 Much better, am I right? Zettlr's table editor takes all Markdown tables found in your document, converts them into an HTML representation with editable content cells, and displays these instead of the underlying Markdown. This completely hides the Markdown source, but as we said, in this case this approach is much more favourable.
 
-You can **enter the editing mode** simply by clicking into any of the cells inside the table and adding your content. The active cell will be highlighted for you. Additionally, the keyboard navigation that you know from famous word processors has also been implemented so that you can use `Tab`, `Return`, and the Arrow keys to navigate the table. Additionally, adding and removing columns and rows is also possible with the table editor's **edge buttons**. These are buttons that will appear when you hover over the table and let you perform various actions on the table.
+Table editor needs to be enabled in Preferences, under the `Editor` tab. When enabled, it will recognize the tables in the active document and make them easily editable. You can **enter the editing mode** simply by clicking into any of the cells inside the table and adding your content. The active cell will be highlighted for you. Additionally, the keyboard navigation that you know from famous word processors has also been implemented so that you can use `Tab`, `Return`, and the Arrow keys to navigate the table. Additionally, adding and removing columns and rows is also possible with the table editor's **edge buttons**. These are buttons that will appear when you hover over the table and let you perform various actions on the table.
 
 > Attention! When you activate the table by clicking inside one of the cells, you are entering the edit mode. To save your changes, make sure to **click outside of the table once you are done**, to exit the editing mode! Only then will the changes you've made to the table be applied to the underlying Markdown table.
 
@@ -75,7 +75,7 @@ Another goodie of the table editor are its so-called **edge buttons**. These are
 
 ![The table editor's edge buttons](../img/table_with_edge_buttons.png)
 
-They are transparent at the beginning to not cover up the content of your table. Move your cursor over an edge button to make it opaque. The buttons should be rather self-explanatory. The four `(+)`-buttons at the center of the edges of the table will **add a row or column respectively** at the indicated position. So click the left add button to prepend a column to the left side of the currently active cell, and click the bottom add button to append a row below the currently active cell.
+They are transparent at the beginning to not cover up the content of your table. Move your cursor over an edge button to make it opaque. The buttons should be rather self-explanatory. The four `(+)` buttons at the center of the edges of the table will **add a row or column respectively** at the indicated position. So click the left add button to prepend a column to the left side of the currently active cell, and click the bottom add button to append a row below the currently active cell.
 
 At the top of each table, there are two additional button groups. The left button group contains three buttons that **align the currently active table column** left, center or right. Click one of the buttons to apply the alignment. The change will be displayed immediately for your visual confirmation.
 
@@ -89,7 +89,7 @@ The right button group contains two buttons for **removing the currently active 
 
 Until now we've only covered basic tables. But what if you need to display more complex tables? Then, even the table editor is at its end. Cells spanning multiple rows or columns are simply impossible given the limited syntax of Markdown tables. To add these, you'll have to use native HTML or LaTeX commands. These give you the maximum amount of freedom to do whatever you like.
 
-Always remember: Tables in Markdown are used as an _aid_ to your _writing_. This means if you are dealing with complex datasets which you need to add to a paper, e.g. in the sources section, there are great tools out there to [transform your RDataset](https://tex.stackexchange.com/questions/364225/export-tables-from-r-to-latex) or Stata datafile into LaTeX or HTML.
+Always remember: Tables in Markdown are used as an _aid_ to your _writing_. This means if you are dealing with complex datasets which you need to add to a paper, e.g., in the sources section, there are great tools out there to [transform your RDataset](https://tex.stackexchange.com/questions/364225/export-tables-from-r-to-latex) or Stata datafile into LaTeX or HTML.
 
 One idea to insert datasets into your papers without much copying and pasting would be to combine several features of Zettlr:
 

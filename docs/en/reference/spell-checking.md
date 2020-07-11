@@ -4,7 +4,7 @@ As with all modern writing app, Zettlr features a powerful spell checking engine
 
 ## Activate spell checking
 
-To activate spell checking, open the preferences using either the menu item, the toolbar button or pressing `Cmd/Ctrl+,`. In the Editor tab, you can then select all dictionaries you would like to activate. To the left there is a list displaying all available dictionaries. Click one to move it to the right, where green ribbons indicate all active dictionaries. Click one of these green ribbons to deactivate the dictionary again.
+To activate spell checking, open Preferences using either the menu item, the toolbar button or pressing `Cmd/Ctrl+,`. In the Spellchecking tab, you can then select all dictionaries you would like to activate. Yuo can activate/deactivate a dictionary using the toggle switch next to its name.
 
 You can filter the list of available dictionaries by typing a search key into the upper text field. Zettlr will automatically hide all dictionaries whose name does not contain your search string. Remove any letters from the search field to display all dictionaries again.
 
@@ -12,7 +12,7 @@ After saving the settings with your new spell checking configuration, Zettlr wil
 
 ## Deactivate spell checking
 
-To deactivate spell checking again, simply remove all active dictionaries by clicking all green ribbons on the right side of the Editor tab in the preferences window. If there are none activated, Zettlr won't attempt to perform spell checking on your texts.
+To deactivate spell checking again, simply deactivate all dictionaries via their toggle swtiches. If there are no dictionaries are activated, Zettlr won't attempt to perform spell checking on your texts.
 
 ## Custom Dictionary
 
@@ -20,14 +20,14 @@ From version `1.3.0` onward, Zettlr supports adding certain words to your user d
 
 ## Add new Dictionaries
 
-While Zettlr ships with several dictionaries on install, you may want to add new dictionaries for languages that you write in. To add such dictionaries, you'll need to search for hunspell-compatible dictionaries. Basically, these consist of folders containing two files -- a `.dic`-file and an `.aff`-file. The `.dic`-file contains all words in a language with so-called affixes, e.g. small flags that tell the algorithm that a certain word, for instance, may also feature a different ending (take for instance the word ending -- while the stem is "end", there may be both the words "ends",  and "ending" available in the language -- the affix flag would then indicate "this word can also have the `-ing`-ending!"). The `.aff`-file contains the definitions of these flags.
+While Zettlr ships with several dictionaries on install, you may want to add new dictionaries for languages that you write in. To add such dictionaries, you'll need to search for Hunspell compatible dictionaries. Basically, these consist of folders containing two files – a `.dic` file and an `.aff` file. The `.dic` file contains all words in a language with so-called affixes, e.g., small flags that tell the algorithm that a certain word, for instance, may also feature a different ending (take for instance the word "ending" – while the stem is "end", there may be both the words "ends", and "ending" available in the language – the affix flag would then indicate "this word can also have the `-ing` ending!"). The `.aff` file contains the definitions of these flags.
 
-So to add these dictionaries, go online to search for some. A good starting point is [this repository by the GitHub user wooorm](https://github.com/wooorm/dictionaries), which features a lot of languages. Simply download one of the folders to your computer. Then, in Zettlr, click File -> "Import Dictionary …". This will open up your computer's file browser with the `dict`-folder in Zettlr open. Copy the whole dictionary folder that you just downloaded into the `dict`-folder. Then you can select this dictionary from the settings.
+So to add these dictionaries, go online to search for some. A good starting point is [this repository by the GitHub user wooorm](https://github.com/wooorm/dictionaries), which features a lot of languages. Simply download one of the folders to your computer. Then, in Zettlr, click File -> "Import Dictionary …". This will open up your computer's file browser with the `dict` folder in Zettlr open. Copy the whole dictionary folder that you just downloaded into the `dict` folder. Then you can select this dictionary from the settings.
 
 Bear in mind that Zettlr will perform some basic tests to determine whether or not a dictionary is valid. To have Zettlr display the dictionary and being able to select it, the dictionary must follow the following rules:
 
-1. The folder containing the  `.dic`- and `.aff`-files must be named using the corresponding [BCP-47 tag](https://tools.ietf.org/html/bcp47) of the language the dictionary contains. Although you may not be aware of the term "BCP-47", it's simply the common language tag, so for instance a German dictionary would be named `de-DE` (for German German) or `de-CH` (for Swiss German), or simply `it` (for Italian). A complete [list of all available languages can be found here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-2. Inside this folder, at least two files must be present: a `.dic`-file and a `.aff`-file. These must be named either using the BCP-47 tag of the folder, or `index.dic`/`index.aff`.
+1. The folder containing the `.dic` and `.aff` files must be named using the corresponding [BCP-47 tag](https://tools.ietf.org/html/bcp47) of the language the dictionary contains. Although you may not be aware of the term "BCP-47", it's simply the common language tag, so for instance, a German dictionary would be named `de-DE` (for German German) or `de-CH` (for Swiss German), or simply `it` (for Italian). A complete [list of all available languages can be found here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+2. Inside this folder, at least two files must be present: a `.dic` file and an `.aff` file. These must be named either using the BCP-47 tag of the folder, or `index.dic`/`index.aff`.
 3. The dictionary folder may contain other files (such as a list of authors, or a LICENSE). These will be ignored.
 
 To sum up, Zettlr will make sure a dictionary is valid by checking that the following paths exist:
@@ -35,4 +35,4 @@ To sum up, Zettlr will make sure a dictionary is valid by checking that the foll
 - `bcp-47/bcp-47.dic` and `bcp-47/bcp-47.aff` _or_
 - `bcp-47/index.dic` and `bcp-47/index.aff`
 
-> Attention: The hunspell algorithms implemented in JavaScript are still not as powerful as the main algorithm used by LibreOffice, so it may very well be that some dictionaries simply prove to be too large to be loaded. If Zettlr hangs after loading a dictionary, simply force-quit the app and make sure the dictionary is deselected.
+> Attention: The Hunspell algorithms implemented in JavaScript are still not as powerful as the main algorithm used by LibreOffice, so it may very well be that some dictionaries simply prove to be too large to be loaded. If Zettlr hangs after loading a dictionary, simply force-quit the app and make sure the dictionary is deselected.

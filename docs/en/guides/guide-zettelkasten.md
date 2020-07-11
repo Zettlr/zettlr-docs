@@ -15,10 +15,11 @@ The first thing you want to do to create your Zettelkasten is to have a look at 
 - General tab
     - File Information: On
     - Sidebar: Thin mode.
-- Editor tab
+- Spellchecking tab
     - Turn off all dictionaries
 - Export tab
-    - Turn off the removal of Zettelkasten IDs and select to keep internal links untouched
+    - Turn off the removal of Zettelkasten IDs
+    - Turn on "Don't touch internal links"
 - Zettelkasten tab
     - This is the most important tab for a Zettelkasten installation, because here you can adjust the settings of how Zettlr interacts with your Zettelkasten. Please refer to the section on the Zettelkasten tab [in the settings chapter ](../reference/settings.md)to learn about these options in detail.
 
@@ -35,4 +36,4 @@ Now you'll be set to use Zettlr as your Zettelkasten management system. Two oper
 1. Creating an identifier to a note, so that you can link to it: You can do this by pressing `Cmd/Ctrl+L` while editing any note, which will paste a generated ID to your note.
 2. Linking to other notes: Insert the link opening (default: `[[`) while editing to display the auto-complete dropdown, from which you can choose a note to link to.
 
-If you want to dig deeper into how a Zettelkasten should work and what it should look like, consult the immense amount of resources on Zettelkästen, available on the web. A good starting point is [Zettelkasten.de](https://www.zettelkasten.de/). The authors have assembled a large list of (english) blog posts on how to supercharge your writing using a Zettelkasten.
+If you want to dig deeper into how a Zettelkasten should work and what it should look like, consult the immense amount of resources on Zettelkästen, available on the web. A good starting point is [Zettelkasten.de](https://www.zettelkasten.de/). The authors have assembled a large list of blog posts on how to supercharge your writing using a Zettelkasten.

@@ -12,9 +12,13 @@ We are getting more and more requests for mobile versions of Zettlr. We are very
 
 Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](reference/markdown-basics.md)!
 
+## On PDF export, I have problems regarding the font. What should I do?
+
+LaTeX can be picky when it comes to fonts. But don't worry: We got you covered in the [section on PDF-preferences](https://docs.zettlr.com/en/reference/settings/#pdf-preferences).
+
 ## If I don't want to use Zettlr anymore, what would I need to do to switch programs?
 
-Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Projects or and old feature called Virtual Directories, there will be small files named `.ztr-directory` present in some folders. To remove them, simply delete any virtual directories, reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
+Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Projects or modified the directories, there will be small files named `.ztr-directory` present in some folders. To remove them, simply reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
 
 ## Sometimes I don't want AutoCorrect — how can I make it stop autocorrecting in a specific instance?
 

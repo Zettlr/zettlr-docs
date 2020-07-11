@@ -13,23 +13,23 @@ The first step is to adjust some of the parameters of Zettlr. So hit `Cmd/Ctrl+,
 - General Tab
     - File Information: On
     - Sidebar mode: Expanded
-- Editor Tab
+- Spellchecking Tab
     - Select all dictionaries for languages in which you will write (e.g., en-UK, de-DE, and fr-FR)
 - Export Tab
     - Select the Current Working Directory as the export directory
     - Remove internal links completely
 - Zettelkasten Tab
-    - Adjust the settings according to the Zettelkasten-Guide
-- Attachments Tab
+    - Adjust the settings according to the Zettelkasten Guide
+- Advanced Tab
     - Enter all file extensions of the files you are likely to be using. This way all of these files will show up in the attachment bar to the right of the app
 
 After you are finished setting Zettlr up, hit "Save". Now Zettlr should look like a real IDE with three segments (directory tree, file list, and editor) and all settings active.
 
 ## Step 2: Write!
 
-This guide is rather short, because it only shows you how you can set up Zettlr to create a fully loaded IDE. What you are then doing with it is completely up to you. A good point to start is to read the two guides on Zettelkästen and note-taking, because you will likely be using some concepts from these guides.
+This guide is rather short, because it only shows you how you can set up Zettlr to create a fully loaded IDE. What you are then doing with it is completely up to you. A good point to start is to read the two guides on Zettelkasten and note-taking, because you will likely be using some concepts from these guides.
 
-Here are all resources that may be interesting for you:
+Here are some resources that may be interesting for you:
 
 - [Guide: Zettlr as Zettelkasten](guide-zettelkasten.md)
 - [Guide: Zettlr as Note-Taking App](guide-notes.md)
