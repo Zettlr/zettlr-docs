@@ -1,4 +1,4 @@
-# Shortcuts
+# Keyboard Shortcuts
 
 This page contains a list of all shortcuts available throughout the app.
 
