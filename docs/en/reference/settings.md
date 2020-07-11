@@ -1,6 +1,6 @@
 # Settings
 
-Zettlr offers you a plethora of options to customise your experience with the app. It comes with three different settings-dialogs that will be explained in detail here, so you know which option does what.
+Zettlr offers you a plethora of options to customise your experience with the app. It comes with three different settings dialogs that will be explained in detail here, so you know which option does what.
 
 ## General Preferences
 
@@ -22,7 +22,7 @@ You can display the general preference dialog using either the shortcut `Cmd/Ctr
 
 In the general tab you find options that you might want to adjust if you begin using Zettlr to fit it to your needs. The application language is pretty self-explanatory.
 
-The “Night Mode” and “File information”-checkboxes control the display. The “Night Mode” is simply the dark theme Zettlr is capable of (and which you might want to control using the shortcut `Cmd/Ctrl+Alt+L` instead). Check the “File information”-checkbox to display meta information in the file list (although you can control this behaviour as well using its respective shortcut `Cmd/Ctrl+Alt+S`).
+The “Night Mode” and “File information” checkboxes control the display. The “Night Mode” is simply the dark theme Zettlr is capable of (and which you might want to control using the shortcut `Cmd/Ctrl+Alt+L` instead). Check the “File information” checkbox to display meta information in the file list (although you can control this behaviour as well using its respective shortcut `Cmd/Ctrl+Alt+S`).
 
 If you check “Hide directories during global search,” Zettlr will not display directories while performing a search. by selecting “Always load remote changes to the current file”, Zettlr will not ask you whether you’d like to replace the file in the editor.
 
@@ -46,7 +46,7 @@ Last but not least Zettlr can automatically switch to light or dark mode dependi
 
 ![settings_editor.png](../img/settings_editor.png)
 
-The editor tab controls most functionality of the editor. As Markdown allows both asterisks and underscores to make text bold and italic, you can choose your favourite flavour here. The **default image path** is a path you can use to tell Zettlr where it should put your images when you paste them from clipboard. It can be absolute or relative. If you provide the name `assets`, Zettlr would put images by default into the `assets` subdirectory of the directory where your file is. You can even tell it to use a directory relative to the parent directory, e.g. `../assets`. Remember that you can always select the directory for an image on a case-by-case basis.
+The editor tab controls most functionality of the editor. As Markdown allows both asterisks and underscores to make text bold and italic, you can choose your favourite flavour here. The **default image path** is a path you can use to tell Zettlr where it should put your images when you paste them from clipboard. It can be absolute or relative. If you provide the name `assets`, Zettlr would put images by default into the `assets` subdirectory of the directory where your file is. You can even tell it to use a directory relative to the parent directory, e.g., `../assets`. Remember that you can always select the directory for an image on a case-by-case basis.
 
 The indentation refers to the amount of spaces inserted when you, e.g., increase the level of lists.
 
@@ -54,7 +54,7 @@ The algorithm for the readability mode that Zettlr should use when you toggle th
 
 Further, you can **mute non-focused lines** while you are in the distraction free mode. This means that Zettlr dims all lines except the one where your cursor is. The next option allows you to **automatically close certain character pairs**.
 
-The third option only applies to users using a keyboard that features the `Home` and `End` keys. If you press them, the default CodeMirror behaviour is to move the cursor to the beginning or end respectively of a whole paragraph (i.e.: the beginning and end of a _logical_ line). If you want CodeMirror to only move to the beginning and end of the _visible_ line, make sure to turn off this option. If you make use of the hard-wrap feature of Markdown, and always manually wrap a paragraph, this setting won't have any effect for you.
+The third option only applies to users using a keyboard that features the `Home` and `End` keys. If you press them, the default CodeMirror behaviour is to move the cursor to the beginning or end respectively of a whole paragraph (i.e., the beginning and end of a _logical_ line). If you want CodeMirror to only move to the beginning and end of the _visible_ line, make sure to turn off this option. If you make use of the hard-wrap feature of Markdown, and always manually wrap a paragraph, this setting won't have any effect for you.
 
 ### Export
 
@@ -64,7 +64,7 @@ The export tab allows you to tweak all preferences concerning how your files are
 
 Selecting "Remove ZKN IDs from files" makes Zettlr remove all IDs that it finds in your files prior to export. "Remove tags from files" does the same but with tags.
 
-> We recommend leaving the option to remove Zettelkasten IDs from your files off unless you know what you are doing. Some websites produce links that contain 14 consecutive digits, and Zettlr will only stroll through the files removing everything your ID regular expression will detect, so it may break links!
+> We recommend leaving the option to remove Zettelkasten IDs from your files off unless you know what you are doing. Some websites produce links that contain 14 consecutive digits, and Zettlr will only stroll through the files removing everything your ID regular expression will detect, so it may break links! One way to work around this may be to use an ID pattern that is unique enough (e.g., with a specific prefix) that Zettlr will not remove anything else. Specifying a pattern and a regular expression is explained in the next section.
 
 Below these options you can choose what to do with internal links (by default they are encapsulated in `[[` and `]]`). The first option completely removes them, the second only removes the link formatting, while the last option leaves them alone.
 
@@ -80,7 +80,7 @@ The CSL JSON database field can be used to open a literature database. Zettlr wi
 
 In this tab you can customise the way Zettlr works with your existing Zettelkasten system. In most cases you won't need to touch these options, except you want to use a custom system.
 
-You have four options that are important for Zettelkästen: The ID regular expression, the link start and ending, and the generator pattern.
+You have four options that are important for Zettelkasten: The ID regular expression, the link start and ending, and the generator pattern.
 
 #### The ID RegEx
 
@@ -94,19 +94,19 @@ The braces around the `\d{14}` create a so-called "capturing group". A capturing
 
 #### The Internal Links
 
-The internal links are explained pretty quick: Simply choose how you'd like to write internal links. The default are Wiki-Style-Links: [[your-link]]. You could also use curly brackets: {{your-link}}. Or you could use exclamation marks: !your-link!. Whatever suits you!
+There is a quick explanation for the internal links: Simply choose how you'd like to write internal links. The default are Wiki style links: `[[your-link]]`. You could also use curly brackets: `{{your-link}}`. Or you could use exclamation marks: `!your-link!`. Whatever suits you!
 
-The internal links are used for two things: First, if they either contain an existing file name or an existing ID, clicking them will directly open the respective file (identified either by its name without the extension, or by its ID). Second, if they don't contain any of that, they won't open any file, but they will work as a search function, so `Cmd/Ctrl`-clicking them will start a search — this is great for saving searches you do often!
+The internal links are used for two things: First, if they either contain an existing file name or an existing ID, clicking them will directly open the respective file (identified either by its name without the extension, or by its ID). Second, if they don't contain any of that, they won't open any file, but they will work as a search function, so `Cmd/Ctrl` clicking them will start a search — this is great for saving searches you do often!
 
 > Note that files will not assume any link as an ID. If a file finds an ID that is surrounded by the internal link formatting, it will not use this ID.
 
 #### The ID Generator
 
-The last field in the Zettelkasten tab in the preferences window concerns the way the IDs are generated. It is a simple string that may contain variables that are replaced when an ID is generated. Currently, you have the current year, month, day, hour, minute, and second available. The default ID generator pattern is: `%Y%M%D%h%m%s`, which means it will replace `%Y` with the current year (4 digits), `%M` with the current month (with leading zeroes), and so forth. You could also include some static part in your IDs, if you wish. So with the ID pattern set to `%Y-%M-%D_%h:%m:%s` Zettlr would generate an ID like this: `2018-10-12_12:03:56`. You can also reuse the variables in your pattern, e.g. to use only seconds as your ID. You could use something like this: `%s%s%s` and would get `565656`.
+The last field in the Zettelkasten tab in the preferences window concerns the way the IDs are generated. It is a simple string that may contain variables that are replaced when an ID is generated. Currently, you have the current year, month, day, hour, minute, and second available. The default ID generator pattern is: `%Y%M%D%h%m%s`, which means it will replace `%Y` with the current year (4 digits), `%M` with the current month (with leading zeroes), and so forth. You could also include some static part in your IDs, if you wish. So with the ID pattern set to `%Y-%M-%D_%h:%m:%s` Zettlr would generate an ID like this: `2018-10-12_12:03:56`. You can also reuse the variables in your pattern, e.g., to use only seconds as your ID. You could use something like this: `%s%s%s` and would get `565656`.
 
 Always remember to adapt your regular expression so that it matches what the ID generator spits out. To successfully identify the ID with the pattern, `%Y-%M-%D_%h:%m:%s`, Zettlr would need the following regular expression: `(\d{4}-\d{2}-\d{2}_\d{2}:\d{2}:\d{2})`. If you use `%uuid4`, you can use the following RegEx: `[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-4[a-fA-F0-9]{3}-[89aAbB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}`.
 
-You can test both the generation of IDs and the detection of them by clicking the Test-button below the text fields. Zettlr will then generate an ID and immediately tries to match it using your custom regular expression. Whether or not Zettlr was able to detect the ID will be indicated.
+You can test both the generation of IDs and the detection of them by clicking the Test button below the text fields. Zettlr will then generate an ID and immediately tries to match it using your custom regular expression. Whether or not Zettlr was able to detect the ID will be indicated.
 
 ### Display
 
@@ -114,13 +114,13 @@ You can test both the generation of IDs and the detection of them by clicking th
 
 This tab controls how the editor displays certain elements. Zettlr uses a semi-preview approach to Markdown and only renders some elements. On this tab you can control which elements will be rendered.
 
-> The iFrame-setting controls whether or not to render iFrames (for instance, YouTube-videos are embedded iFrames).
+> The iFrame setting controls whether or not to render iFrames (for instance, YouTube videos are embedded iFrames).
 
-Additionally you can constrain the size of images, which is especially beneficial if you use a lot of portrait oriented images. The horizontal slider controls the maximum amount of width images are allowed to occupy. Setting this to 50 %, for instance, will keep images at half the width of the text body. 100 % disables this (images will never be wider than 100 % of the text body width).
+Additionally you can constrain the size of images, which is especially beneficial if you use a lot of portrait oriented images. The horizontal slider controls the maximum amount of width images are allowed to occupy. Setting this to 50%, for instance, will keep images at half the width of the text body. 100% disables this (images will never be wider than 100% of the text body width).
 
 The vertical slider controls the maximum height of the images relative to the window size. 50 percent would mean that images will never be higher than half of the window's total size. 100 percent disables this behaviour. Unlike the width, images may very well exceed 100 percent of the viewport if they are large and thin.
 
-Last but not least you can determine which date you would like to see in the file metadata in the file list. This does not affect the sorting, if you’d like to sort by date. To change the time after which Zettlr should sort your files, please refer to the general tab.
+Last but not least, you can determine which date you would like to see in the file metadata in the file list. This does not affect the sorting, if you’d like to sort by date. To change the time after which Zettlr should sort your files, please refer to the general tab.
 
 ### Theme
 
@@ -136,7 +136,7 @@ With the introduction of the user dictionary, the spellchecking functionality ha
 
 > **Tip**: To disable spell checking, uncheck all dictionaries. To install additional dictionaries, refer to the [localisation manual](../core/localisation.md).
 
-Finally, the list on the right hand side of the tab displays all the words you've added to your custom dictionary. Click them to remove them from your user dictionary.
+Finally, the list on the right hand side of the tab displays all the words you've added to your custom dictionary. You can remove an item from your custom dictionary by clicking on it.
 
 ### AutoCorrect
 
@@ -152,15 +152,15 @@ The last thing you can tweak is the replacement table to the right: These are si
 
 ![settings_advanced.png](../img/settings_advanced.png)
 
-The advanced tab contains options that are helpful for advanced users.
+The advanced tab contains options that are helpful for advanced tasks.
 
-The “pattern for new filenames” is what the textfield will look like when you create a new file. It will be prepopulated by whatever you type here. You can make use of the variables below (the ID following the pattern you have selected in the Zettelkasten-tab, year, month, day, hour, minute and second). If you tick the checkbox, Zettlr will not even ask you for a filename when you create a new file, which might speed up your workflow.
+The “pattern for new filenames” is what the textfield will look like when you create a new file. It will be prepopulated by whatever you type here. You can make use of the variables below (the ID following the pattern you have selected in the Zettelkasten tab, year, month, day, hour, minute and second). If you tick the checkbox, Zettlr will not even ask you for a filename when you create a new file, which might speed up your workflow.
 
-The **pandoc- and xelatex-text fields** are used in case Zettlr is unable to locate any of these two programs. As you know, Zettlr uses both to export your files. In rare cases it may be that Zettlr is unable to find them, although you installed them properly. If that happens, simply enter the **full, absolute path** to both programs in the textfields to help Zettlr find them.
+The **pandoc and xelatex text fields** are used in case Zettlr is unable to locate any of these two programs. As you know, Zettlr uses both to export your files. In rare cases, it may be that Zettlr is unable to find them, although you installed them properly. If that happens, simply enter the **full, absolute path** to both programs in the textfields to help Zettlr find them.
 
 The **debug option** is used to control whether or not you are able to "reload" the graphical user interface (GUI) by pressing `F5` and display the Chrome developer tools to inspect what the app is doing. Naturally, you would want to do this as a developer.
 
-You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases as well. You can then decide whether to use the beta version, or not. Activate **RMarkdown file support** to enable the detection of `.rmd`-files used for R-Markdown. It is inactive by default, as some other programs (for instance, by Adobe) also use this extension to store binary data, which would cause problems.
+You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases in addition to normal releases. You can then decide whether to use the beta version, or not. Activate **RMarkdown file support** to enable the detection of `.rmd` files used for R-Markdown. It is inactive by default, as some other programs (for instance, by Adobe) also use this extension to store binary data, which would cause problems.
 
 The text area to the right controls what files will be displayed in the **attachment** sidebar. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions you might be using.
 
@@ -176,13 +176,13 @@ The **Pandoc command** gives you full control over the export engine. The comman
 - `$tocdepth$`: A flag indicating the level up to which a table of contents should be generated.
 - `$tpl$`: A template directive for pandoc.
 
-> **Attention**: Many of these variables are tailored to the needs of pandoc. Of course, you can completely switch the program by replacing `pandoc` with the name of your desired exporting engine, but please beware that it will need to know how to parse pandoc flags.
+> **Attention**: Many of these variables are tailored to the needs of Pandoc. Of course, you can completely switch the program by replacing `pandoc` with the name of your desired exporting engine, but please beware that it will need to know how to parse Pandoc flags.
 
 ## PDF Preferences
 
 ![The Font tab of the PDF Settings dialog](../img/pdf_settings_font.png)
 
-We've moved the PDF Preferences to another dialog because there are many you can use. These options control how the LaTeX-engine will render your files on PDF-exporting. They do not have any effect on all other export formats. You can bring up the dialog using either its shortcut `Cmd/Ctrl+Alt+,` or using the respective menu entry. The PDF options are also divided by tabs. Currently, there are three:
+We've moved the PDF Preferences to another dialog because there are many you can use. These options control how the LaTeX engine will render your files when exporting to PDF. They do not have any effect on all other export formats. You can bring up the dialog using either its shortcut `Cmd/Ctrl+Alt+,` or using the respective menu entry. The PDF options are also divided by tabs. Currently, there are three:
 
 * Metadata: This controls the metadata field of PDF files.
 * Page: Adjust the layout of pages using this tab.
@@ -198,9 +198,9 @@ In this tab you can control the layout of the page. These options work just as y
 
 ### Font
 
-Here you can control how the font is displayed. The main font is the font used for all text. The LaTeX-engine will fetch this directly, so the name you type here must match exactly a font installed on your computer. **If the LaTeX-engine is unable to locate the font, it will spit out an error. To know whether you've encountered such an error or another error that does not relate to the font, simply search for the font name you typed here in the error message. If your font name appears, there is a high chance that the font is called differently. Then please open your operating system's font preferences and check the name.**
+Here you can control how the font is displayed. The main font is the font used for all text. The LaTeX engine will fetch this directly, so the name you type here must match exactly a font installed on your computer. **If the LaTeX engine is unable to locate the font, it will spit out an error. To know whether you've encountered such an error or another error that does not relate to the font, simply search for the font name you typed here in the error message. If your font name appears, there is a high chance that the font is called differently. Then please open your operating system's font preferences and check the name.**
 
-The font-size should be rather obvious. The line height specifies the spacing between lines (this only applies to paragraphs). For instance a line height of 150 percent would create a space of half a line between the lines (i.e. each line is followed by a space 50 percent of a normal line height before the next line begins).
+The font size should be rather obvious. The line height specifies the spacing between lines (this only applies to paragraphs). For instance a line height of 150 percent would create a space of half a line between the lines (i.e., each line is followed by a space 50 percent of a normal line height before the next line begins).
 
 ## Manage Tags
 
@@ -208,6 +208,6 @@ The font-size should be rather obvious. The line height specifies the spacing be
 
 The tags dialog does not have a shortcut associated, so you'll need to call it using the respective menu item. Here you can assign colours and descriptions to tags.
 
-To add a new tag-colour-relationship, simply press the `+`-button at the bottom of the dialog. In the first field, enter your tag without the preceding hashtag symbol (e.g. if you wanted to assign a colour to the hashtag `#todo`, simply enter `todo`). Next, choose a colour to be assigned to that tag. If you click the second bar after the tag name field, a color picker should appear that lets you choose a colour. In the third field, you can enter a short description for that tag. This description will be shown if you hover over the tag symbols in the file list.
+To add a new tag-colour-relationship, simply press the `+` button at the bottom of the dialog. In the first field, enter your tag without the preceding hashtag symbol (e.g., if you wanted to assign a colour to the hashtag `#todo`, simply enter `todo`). Next, choose a colour to be assigned to that tag. If you click the second bar after the tag name field, a color picker should appear that lets you choose a colour. In the third field, you can enter a short description for that tag. This description will be shown if you hover over the tag symbols in the file list.
 
-If you want to remove a tag-colour-association, simply click the `-`-button at the end of such a tagline (pun intended).
+If you want to remove a tag-colour-association, simply click the `-` button at the end of such a tagline (pun intended).
