@@ -21,6 +21,7 @@ nav:
     - Zettlr comme environnement de développement intégré (IDE): guides/guide-ide.md
   - Fonctionnalités de base:
     - L'éditeur: core/editor.md
+    - Les onglets: core/tabs.md
     - La liste de fichiers: core/file-list.md
     - Auto-correction et guillemets magiques: core/autocorrect.md
     - Rechercher: core/search.md
