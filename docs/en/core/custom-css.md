@@ -106,3 +106,24 @@ Simply paste the following line of CSS into the Custom CSS dialog, and from then
 ```css
 #editor.fullscreen, .CodeMirror-fullscreen { top: 0px; }
 ```
+
+### Set a maximum width for the text
+
+If you have a large screen, you may find that lines of your text are very long.
+If you wish to have shorter lines in the editor, with margins on both sides, you can use the following CSS snippet:
+
+```css
+#editor {
+  --side-margin: calc( 50vw - 30em ); 
+}
+
+#editor .CodeMirror {
+  margin-left: var(--side-margin);
+}
+
+#editor .CodeMirror-scroll {
+  padding-right: var(--side-margin);
+}
+```
+
+![A preview of Zettlr using above snippet](../img/custom_css_maxwidth.png)
