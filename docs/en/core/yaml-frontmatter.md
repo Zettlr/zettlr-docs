@@ -25,6 +25,9 @@ author:
   - The Zettlr Team
 ```
 
+> **Attention**: In YAML specification, tab (tabulator) character is not allowed to be used as indentation. For your YAML frontmatter to be valid, use spaces for indentation.
+
+
 ## Frontmatter variables
 
 The frontmatter serves to hold a lot of useful information for both Pandoc and Pandoc citeproc. With such a frontmatter, you can control many aspects of how your document will be rendered, such as the language of the list of references. Zettlr currently supports a subset of these variables. The support for certain variables such as `nocite` or `lang` will increase in the future.
