@@ -1,18 +1,12 @@
 # カスタムCSS
 
-Zettlrバージョン`1.1`以降では、カスタムCSS([Cascading Style Sheets](https://ja.wikipedia.org/wiki/Cascading_Style_Sheets))を使って、アプリケーションの見た目を完全に変えられるようになりました。これは、長らく要望されていた機能で、アプリケーションをカスタマイズする多くの可能性を拓きました。(そして、このアプリケーションでおそらく初めてのユーザー生成コンテンツでもあります。)
+> カスタムCSSは上級者向けの機能です。カスタマイズについては、公式にサポートしているわけではなく、すべて自己責任となります。何か問題が起きたら、Zettlrのデータディレクトリから`custom.css`を削除して、カスタムCSSをリセットしてください。
 
-カスタムCSSエディタは、`Zettlr->カスタムCSS...`(macOSの場合)、または`ファイル->カスタムCSS...`(WindowsとLinuxの場合)にあります。
+CSS([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets))を利用して、アプリケーションの見た目を変更することができます。カスタムCSSエディタは、`Zettlr->カスタムCSS...`(macOSの場合)、または`ファイル->カスタムCSS...`(WindowsとLinuxの場合)にあります。
 
 CSSはよくわからないけれど、このページのガイドをただコピー＆ペーストするだけでは嫌だという場合は、簡単な[CSSチュートリアル](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)を見てみるという選択肢もあります。インターネット上には多くのチュートリアルがあり、ちょっとGoogleで検索すればチュートリアル動画なども見つかります。
 
-以下では、まず、CSS作成についての一般的な導入を示します。次に、簡単にコピー＆ペーストしてアプリケーションの見た目を変更できるいくつかの例を挙げます。最後に、**classの完全な一覧**があります。
-
 ## Zettlr向けにCSSを書く
-
-自分でCSSを書くのではなくて、ただ**フォントを変えようとしている**のであれば、ここは飛ばして次のセクションに行ってください。
-
-Zettlrは、多くの定義済みclassとIDを持っています。これは、`style`を使って直接プロパティを設定するべきではないという、良く知られた知見にしたがったものです。したがって、何をするにしてもclassを使います。
 
 Zettlrのスタイルは、形状と実際のテーマの2つに分けられます。変更する場合は、要素のデザインのみを変更し、**決して**形状を変更**しないで**ください。形をいじりまわすのは楽しいかもしれませんが、予想できない振る舞いをもたらす可能性があります。これは、アプリケーションの一部で、要素のサイズが正しいことに依存しているためです。もし間違えてしまった場合も安心してください。Zettlrのデータディレクトリから`custom.css`を取り除くだけです。[インストール手順のドキュメント](../install.md)に書かれているパスを調べると、お使いのシステムでのデータディレクトリを見つけることができます。
 
@@ -20,7 +14,27 @@ ZettlrにおけるすべてのclassとIDは、それぞれのコンポーネン�
 
 すべての要素が常に`body`の名前空間に属していて、アプリケーションがダークモードの場合には、`.dark`のクラスが付きます。なので、ダークモードの時のみに適用したいルールがある場合は、`body.dark`のプレフィックスを付けるようにしてください。
 
-このページの下の方に、すべてのclassとID参照の一覧があるので、アプリケーションをつつきまわす必要はありません。(これは、ZettlrのCSSプリコンパイルで作られた、ただのダンプであることを、先に謝っておきます。)
+## セレクタを見つけるヒント
+
+Zettlrのスタイルは常に変化にさらされています。かなり安定しているはずですが、バージョンアップ時に変更が加えられる可能性があります。そのため、ここでは既成の例を示すのではなく、目的のセレクタを簡単に見つける方法を示します。
+
+まず最初に、[高度な設定](../reference/settings.md)でデバッグモードを有効化し、開発メニューを表示します。次に、開発メニューから開発者ツールを表示して、「Element」タブを選択します。
+
+![Zettlr with the developer tools open](../img/zettlr_developer_tools.png)
+
+それから、開発者ツールの左上の矢印をクリックします。そして、アプリケーション上の要素をクリックすると、その要素を開発者ツール上でフォーカスすることができます。要素に指定されているすべてのCSSスタイルが、開発者ツールの下部に表示されます。
+
+![The CSS directives in the developer tools](../img/zettlr_developer_tools.png)
+
+上に表示されたルールは下に表示されたものよりも常に優先されます。つまり、注目すべきなのは次の個所です:
+
+```css
+body .cm-quote, body .cm-link, body .cm-strong, body .cm-em {
+    color: var(--c-primary);
+}
+```
+
+このようなセレクタをカスタムCSSダイアログにコピーして、お好みのスタイルを設定します。この設定は見ての通り、ブロック引用、リンク、太字、斜体のテキストの色をテーマのプライマリカラーに設定しています。
 
 ## CSSコードスニペット
 
@@ -32,9 +46,7 @@ Zettlrのデフォルトフォントが気に入らない、もしくは変更�
 - Arial、Helveticaなどの**サンセリフ体**フォントを使いたい場合は、`sans-serif`を使います。
 - クラシックな**等幅フォント**を使いたい場合は、`monospace`を使います。
 
-placeholderは、設定したフォントが見つからない場合に、同等のフォントを表示する、フォールバックとして機能します。
-
-Zettlrには、セリフ体フォント、サンセリフ体フォント、等幅フォントが同梱されています。現代的なセリフ体フォントの`Crimson`、もしくは美しい等幅フォントの`Liberation Mono`を使うことができます。(デフォルトは`Lato`ですが、これを指定することはないでしょう。)
+placeholderは、設定したフォントが見つからない場合に、同等のフォントを表示する、フォールバックとして機能します。また、フォント名にスペースが含まれている場合は`"Times New Roman"`のようにクォーテーションマークで囲ってください。
 
 ```css
 #editor {
@@ -95,386 +107,23 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 #editor.fullscreen, .CodeMirror-fullscreen { top: 0px; }
 ```
 
-### 独自のアイディア
+### テキストの最大幅を設定する
 
-他にもZettlrの見た目を変えるアイディアがありますか？もし、そのまま使えそうなCSSスニペットがあれば、ここで紹介できるように、[私たちに共有](mailto:info@zettlr.com)してください。
-
-## CSS classとID参照の完全なリスト
-
-以下に、*すべての*CSS classとIDを網羅したリストがあります。今数えてみたところ、300個を超えています。
-
-classの名前を抽出するのに、外部パッケージを使っていることにご注意ください。クラス以外のもの(例えば、色や、ドットで始まる`.5%`のような値)は、ほとんど取り除いてありますが、すべて見つけられたかどうかは保証しません。
-
-**注意: 以下の参照一覧は将来的に変更される可能性があります。DOMやclass/ID名の変更により、Zettlrのあるバージョンで使えたclassが、他のバージョンでは使えないかもしれません。**
+大きなディスプレイを使うと、一行がとても長く表示されてしまいます。
+エディタ内の行を短くしたい場合、次のCSSのように両側にマージンを設定します。
 
 ```css
-.eot
-#iefix
-.ttf
-.woff2
-.otf
-.woff
-.dragger
-.popup
-.clearfix
-.modal
-.dialog
-.uuid
-.image-preview
-#app-lang
-.inline
-.time
-.info
-.button
-.request-file
-.file-select-group
-.changelog
-.code
-.clear
-.box-left
-.box-right
-.paper
-.a4paper
-.set-target
-.bmargin
-.lmargin
-.rmargin
-.tmargin
-.image-size
-.image
-.png
-#file-list
-#imageWidth
-#imageHeight
-#preview-image-sizes
-.pdf-preview
-.error
-.projects
-#prefs-taglist
-.flex
-#next-sheet
-#prev-sheet
-.ui-tabs-nav
-.ui-tabs-tab
-.dicts-list
-.user-dict
-.dicts-list-item
-.user-dict-item
-.dicts-list-search
-.selected-dict
-.clusterize-scroll
-.clusterize-extra-row
-.clusterize-keep-parity
-.clusterize-content
-.clusterize-no-data
-.hidden
-.list-item
-.meta
-.date
-.directories
-.files
-.id
-.tags
-.tex-indicator
-.target-progress-indicator
-.filename
-.taglist
-.tag
-.tagspacer
-.directory
-.sorter
-.sortName
-.sortTime
-.empty-directory
-.empty-file-list
-#file-tree
-#directories-dirs-header
-#directories-files-header
-.collapse-indicator
-.collapsed
-.dead-directory
-.project
-.display-search-results
-.empty-tree
-#editor
-#sidebar
-#component-container
-.expanded
-#arrow-button
-#sidebar-inner-resizer
-#sidebar-resize
-.fullscreen
-.ui-resizable-handle
-.ui-resizable-autohide
-.ui-resizable-disabled
-.ui-resizable-w
-.CodeMirror
-.CodeMirror-code
-.mute
-.CodeMirror-scroll
-.CodeMirror-fullscreen
-.cm-readability-0
-.cm-readability-1
-.cm-readability-2
-.cm-readability-3
-.cm-readability-4
-.cm-readability-5
-.cm-readability-6
-.cm-readability-7
-.cm-readability-8
-.cm-readability-10
-.cm-readability-9
-.CodeMirror-vscrollbar
-.CodeMirror-sizer
-.CodeMirror-empty
-.svg
-.search-result
-.cm-table
-.size-header-1
-.pomodoro
-.CodeMirror-gutter-elt
-.size-header-2
-.size-header-3
-.size-header-4
-.size-header-5
-.size-header-6
-.cm-comment
-.cm-fenced-code
-.cm-formatting-task
-.CodeMirror-cursor
-.cm-escape-char
-.cm-formatting-code
-.cm-formatting-code-block
-.cm-formatting-em
-.cm-formatting-quote
-.cm-formatting-strong
-.cm-formatting-list-ol
-.cm-formatting-list-ul
-.cm-link
-.cm-url
-.cm-zkn-link
-.meta-key
-.cm-zkn-tag
-.cma
-.CodeMirror-gutters
-.CodeMirror-foldgutter
-.CodeMirror-foldgutter-folded
-.CodeMirror-foldgutter-open
-.heading-tag
-.CodeMirror-foldmarker
-.CodeMirror-hints
-.CodeMirror-hint
-.cm-hint-colour
-.sk-circle
-.sk-child
-.sk-circle2
-.sk-circle3
-.sk-circle4
-.sk-circle5
-.sk-circle6
-.sk-circle7
-.sk-circle8
-.sk-circle9
-.sk-circle10
-.sk-circle11
-.sk-circle12
-.sk-three-bounce
-.sk-bounce1
-.sk-bounce2
-.print-window
-.quicklook-standalone
-#init-print
-.title
-.find
-.body
-#toolbar
-.content
-.darwin
-.win32
-.linux
-.file-info
-.searchbar
-#search-progress-indicator
-.menu-popup
-.dir-open
-.file-new
-.stats
-.tag-cloud
-.preferences
-.file-save
-.file-delete
-.file-rename
-.formatting
-.readability
-.share
-.show-toc
-.toggle-attachments
-.spacer
-.separator
-.end-search
-.notify
-.popup-arrow
-.down
-.up
-.left
-.right
-.toc-link
-.small
-#header-formatting
-.row
-.table-generator
-.cell
-.btn-share
-.htm
-.pdf
-.docx
-.odt
-.plain
-.tex
-.revealjs
-.revealjs-beige
-.revealjs-black
-.revealjs-league
-.revealjs-moon
-.revealjs-serif
-.revealjs-sky
-.revealjs-solarized
-.revealjs-white
-.rst
-.rtf
-.org
-.textbundle
-.textpack
-#reveal-themes
-.markdownHeading1
-.markdownHeading2
-.markdownHeading3
-.markdownHeading4
-.markdownHeading5
-.markdownHeading6
-.markdownBlockquote
-.markdownLink
-.markdownImage
-.markdownCode
-.markdownComment
-.markdownMakeOrderedList
-.markdownMakeUnorderedList
-.markdownMakeTaskList
-.markdownInsertTable
-.markdownDivider
-.insertFootnote
-.markdownBold
-.markdownItalic
-.removeFootnote
-.search
-.footnote-edit
-.regexp
-#searchNext
-#replaceNext
-#replaceAll
-#attachments
-#open-dir-external
-.csl-bib-body
-.csl-entry
-.cb-toggle
-.radio-toggle
-.toggle
-.cb-group
-.linux-window-controls
-.windows-window-controls
-.close
-.minimise
-.resize
-.maximise
-.theme-container
-.theme-container-item
-.theme-mockup
-.traffic-lights
-.traffic-light-close
-.traffic-light-full
-.traffic-light-min
-.toolbar
-.file-list
-.file-list-item
-.editor
-#theme-berlin-mockup
-#theme-frankfurt-mockup
-#theme-bielefeld-mockup
-#theme-karl-marx-stadt-mockup
-.cm-meta
-.cm-def
-.sb-annotation
-.alert
-.success
-.warning
-.quicklook
-.cm-stex-mode
-.cm-css-mode
-.cm-attribute
-.cm-builtin
-.cm-string
-.cm-string-2
-.cm-variable
-.cm-variable-2
-.cm-keyword
-.cm-property
-.cm-type
-.cm-atom
-.cm-number
-.CodeMirror-focused
-.CodeMirror-selected
-.cm-formatting
-.cm-tag
-.cm-bracket
-.cm-formatting-header-1
-.cm-formatting-header-2
-.cm-formatting-header-3
-.cm-formatting-header-4
-.cm-formatting-header-5
-.cm-formatting-header-6
-.cm-quote
-.cm-strong
-.cm-em
-.cm-spell-error
-.cm-zkn-id
-.citeproc-citation
-.cm-hr
-.CodeMirror-guttermarker-subtle
-.CodeMirror-hint-active
-.selected
-.alias
-.file
-.highlight
-.dir
-.root
-.active
-#searchWhat
-.not-found
-#replaceWhat
-.pomodoro-task
-.pomodoro-short
-.pomodoro-long
-.pomodoro-meter
-.pomodoro-value
-.task
-.short
-.long
-.indicator-meter
-.indicator-value
-.error-info
-.has-error
-.form-inline-buttons
-.prefs-submit-group
-.ui-tabs-active
-.tippy-popper
-.table-helper-align-button-container
-.table-helper-remove-button-container
-.table-helper-add-button
-.table-helper-align-button-line
-.table-helper-remove-button-line
-.table-helper
-.dark
-.container
-.cm-formatting-escape
-.maximise-svg
+#editor {
+  --side-margin: calc( 50vw - 30em );
+}
+
+#editor .CodeMirror {
+  margin-left: var(--side-margin);
+}
+
+#editor .CodeMirror-scroll {
+  padding-right: var(--side-margin);
+}
 ```
+
+![A preview of Zettlr using above snippet](../img/custom_css_maxwidth.png)

@@ -1,4 +1,4 @@
-# ガイド: ZettelkastenシステムとしてのZettlr
+# ガイド: ZettlrをZettelkastenシステムとして使う
 
 ![ZettelkastenシステムとしてのZettlr](../img/zettlr_zettelkasten.png)
 

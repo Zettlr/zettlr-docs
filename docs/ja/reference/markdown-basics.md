@@ -93,7 +93,7 @@ Markdownは数多くのことができますが、この章では最も重要で
 
 脚注は、芸術や人文科学の多くの研究者が関心を持っているものです。ここでは、脚注を挿入する基本的なルールと、Zettlrでそれらを取り扱う方法について学びましょう。標準的なMarkdown文法では、脚注は2つの要素を必要とします。一つ目はテキスト中に現れる参照`[^x]`です。`x`は一意な識別子です。基本的には、重複しない限り好きなものを使うことができます。しかし普通は連番を付けようとするはずです。(番号は順番通りになっている必要はありません。Markdown文書をエクスポートすれば、Pandocが自動的に脚注の番号を振りなおしてくれます。なので、後から脚注を削除することになっても番号がきちんとあっているかを気にする必要がありません。)
 
-脚注の二つ目の要素はブロック要素である、脚注の**参照テキスト**です。これは、`[^x]: 参照テキスト。`のようなフォーマットです。見ての通り、テキスト中の参照と同じ識別子を使い、その後にコロンを置きます。常識的には、文書の一番最後のリストに参照テキストを書きます。しかし、参照テキストと脚注参照を行ったり来たりするのは面倒なので、Zettlrはその対策を用意しています。マウスカーソルを脚注参照に合わせると参照テキストが表示されます。`Alt`または`Ctrl`を押しながらそれをクリックすると、脚注を編集することができます。`Shift+Enter`で変更を保存します。
+脚注の二つ目の要素はブロック要素である、脚注の**参照テキスト**です。これは、`[^x]: 参照テキスト。`のようなフォーマットです。見ての通り、テキスト中の参照と同じ識別子を使い、その後にコロンを置きます。常識的には、文書の一番最後のリストに参照テキストを書きます。しかし、参照テキストと脚注参照を行ったり来たりするのは面倒なので、Zettlrはその対策を用意しています。マウスカーソルを脚注参照に合わせると参照テキストが表示されます。`Cmd`または`Ctrl`を押しながらそれをクリックすると、脚注を編集することができます。`Shift+Enter`で変更を保存します。
 
 ### フェンスコードブロック
 
@@ -144,6 +144,29 @@ Zettlrはいくつかのスクリプトとプログラム言語について、�
 
 要望に応じて追加の言語を実装します。必要なものがあれば、[利用可能な言語かどうか確認して](https://codemirror.net/mode/)GitHubにイシューをあげて、追加すべきものを知らせてください。
 
+## ZettlrのMarkdown追加機能
+
+GitHub flavored Markdownの拡張([仕様](https://github.github.com/gfm/)に「(extension)」と書かれているもの)に加えて、Zettlrでは次の機能を追加しています:
+
+ - `<iframe src="https://example.com"></iframe>`要素のサポート
+
+   > **警告**: iframe内のページからは、ローカルファイルシステムに制限なくアクセスされる恐れがあります。Frame Bustingという技術を使用すると、iframeから[Electronのバックエンドに直接干渉する](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content)ことができてしまいます。iframe内のページ(および、そのページに対する攻撃者)は、コンピュータ内のすべてのデータにアクセス可能であると考えたほうが良いでしょう。
+
+ - インライン(`$`)、およびブロック(`$$`)形式のKaTeX数式の表示: `$x/y$`、または、
+
+        $$
+        x / y
+        $$
+
+ - コードブロック内に記述した[mermaid.js](https://mermaid-js.github.io/mermaid/)図表の表示:
+
+        ```mermaid
+        graph TD
+            A[Client] --> B[Load Balancer]
+            B --> C[Server01]
+            B --> D[Server02]
+        ```
+
 ## Markdownについてのリソース
 
-Markdownの**すべて**を学びたいですか？それは素晴らしい！すべての要素について書かれた資料が、[Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/)にあります。クリーンであいまいさのないMarkdownを書きたいなら、[CommonMarkの仕様](https://spec.commonmark.org/0.28/)を参照してください。また、GitHub Flavoured Markdownについての「本」を、[ここで読むことができます](https://gitbookio.gitbooks.io/markdown/content/)。
+Markdownの**すべて**を学びたいですか？それは素晴らしい！すべての要素について書かれた資料が、[Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/)にあります。クリーンであいまいさのないMarkdownを書きたいなら、[CommonMarkの仕様](https://spec.commonmark.org/current/)を参照してください。また、GitHub Flavoured Markdownについての「本」を、[ここで読むことができます](https://gitbookio.gitbooks.io/markdown/content/)。
