@@ -24,7 +24,7 @@ First of all, make sure to enable the debug mode in the advanced [preferences](.
 
 Then click the arrow in the top-right corner of the developer tools. Now you can click any element in the application to focus it in the developer tools. In the bottom area of the developer tools, you will then see the CSS directives used to style all elements of this particular shape.
 
-![The CSS directives in the developer tools](../img/zettlr_developer_tools.png)
+![The CSS directives in the developer tools](../img/zettlr_developer_tools_css.png)
 
 The top rules always override the bottom rules, so what you are interested in is the following directive:
 

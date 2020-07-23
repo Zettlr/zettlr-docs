@@ -6,7 +6,7 @@ Merci d'avoir choisi Zettlr comme compagnon d'écriture. Sur ces pages, nous vou
 
 Pour savoir comment installer Zettlr sur votre système, veuillez consulter les [instructions d'installation](install.md). Il est également recommandé d'installer Pandoc ainsi que LaTeX pour activer toutes les fonctionnalités d'importation et d'exportation de Zettlr. Ne vous inquiétez pas, pour ces logiciels aussi l'installation est expliquée !
 
-Vous voulez un tour d'horizon accéléré ? Consultez notre [guide de démarrage rapide "Zettlr en 5 minutes"](5 minutes.md) ! Au bout de cinq minutes, vous saurez tout ce que vous devez savoir pour commencer à utiliser l'application.
+Vous voulez un tour d'horizon accéléré ? Consultez notre [guide de démarrage rapide "Zettlr en 5 minutes"](5-minutes.md) ! Au bout de cinq minutes, vous saurez tout ce que vous devez savoir pour commencer à utiliser l'application.
 
 ## Guides
 
