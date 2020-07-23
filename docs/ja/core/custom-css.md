@@ -24,7 +24,7 @@ Zettlrのスタイルは常に変化にさらされています。かなり安�
 
 それから、開発者ツールの左上の矢印をクリックします。そして、アプリケーション上の要素をクリックすると、その要素を開発者ツール上でフォーカスすることができます。要素に指定されているすべてのCSSスタイルが、開発者ツールの下部に表示されます。
 
-![The CSS directives in the developer tools](../img/zettlr_developer_tools.png)
+![The CSS directives in the developer tools](../img/zettlr_developer_tools_css.png)
 
 上に表示されたルールは下に表示されたものよりも常に優先されます。つまり、注目すべきなのは次の個所です:
 
