@@ -8,7 +8,7 @@ Tous les onglets sont restaurés lorsque vous ouvrez à nouveau Zettlr.
 
 ## Éphémérité
 
-Il y a deux types d'ongles : les « normaux », où le nom de fichier apparaît avec un style standard, et les onglets dits « éphémères », où le nom de fichier est écrit en italique.
+Il y a deux types d'onglets : les « normaux », où le nom de fichier apparaît avec un style standard, et les onglets dits « éphémères », où le nom de fichier est écrit en italique.
 Un onglet éphémère devient normal si le fichier qu'il contient est modifié.
 
 Si l'onglet actif est éphémère, l'ouverture d'un nouveau document ne se passera pas dans un nouvel onglet, mais remplacera le document affiché dans cet onglet.
