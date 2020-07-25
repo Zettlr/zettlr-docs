@@ -2,7 +2,7 @@
 
 Ensuite, il y a la liste des dossiers. La liste de fichiers est quelque chose de très spécial car elle comporte des fonctions puissantes qui facilitent votre travail avec de nombreux fichiers et répertoires. Alors, jetons-y un coup d'œil !
 
-## Generalités
+## Généralités
 
 En mode barre latérale étendue, l'arborescence et la liste des fichiers sont toutes deux visibles. En mode barre latérale fine, vous pouvez toujours afficher ou masquer la liste en appuyant sur `Cmd/Ctrl+!`.
 
