@@ -4,6 +4,8 @@ At the heart of Zettlr sits a powerful Markdown editor. It uses a highly sophist
 
 In this document, you will learn about writing Markdown, available commands, some special features of CodeMirror and how spellchecking works.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gnRMlm3_O5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Writing Markdown
 
 The idea behind Zettlr is to remove unnecessary markup and styling from your writing process. During the writing process, what matters is the _content_ you produce, not the form in which it is presented. Therefore Zettlr lets you write `Markdown` files. Markdown is a very simple markup language that only contains a small amount of formatting symbols that you may already know. In recent years, more and more apps have discovered the power of Markdown, and even WhatsApp uses it to enable simple formatting of messages.
