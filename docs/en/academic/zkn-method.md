@@ -32,6 +32,9 @@ An internal link is written with the syntax of `[[This is the link]]`. If you `C
 
 The second function triggered by such a link is a global search inside your currently selected directory. It will merely take the link contents, place it in your search field and automatically "press Enter", to initiate the search. This way you can not only open exact files, but also find all other files that link to the file you just opened. So a link in the format `[[<your-id>]]` would open that specific file and also search for all files that link back to this file.
 
+> **Tip**: It is possible to utilize the standard markdown link syntax to set a title for an internal link. For example, `[My text]([[<my-doc-id>]])` will render as if it was a regular link. When you click on it once, it will enter edit mode and reveal the title text and the internal link. Then, you can `Cmd/Ctrl + click` the internal link to trigger its functionality. This 'hack' has two caveats, though: 1) When exporting your document, this may create empty links (depending on your export preferences); 2) If you `Cmd/Ctrl + click` the link (without clicking on it once to reveal the internal link), Zettlr will display an error saying that it could not open the it.
+![](../img/internal_linking_tip.gif)
+
 ### Tagging
 
 Tagging may be the easiest form of internal searching. If you `Cmd` or `Ctrl` click on a tag, this will simply render a search for all files in your current directory that are tagged with this tag. As tags in the form `#keyword` are not used anywhere in the markdown syntax, using this approach enables Zettlr to use such tags as the perfect means to create a tagging system.
