@@ -2,6 +2,8 @@
 
 AutoCorrect is a well-known feature that is also supported in Zettlr. You have a plethora of settings at hand to customize the way AutoCorrect works. You can enable and disable it in the [preferences](../reference/settings.md).
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iPRDPTtJuCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## AutoCorrect
 
 AutoCorrect works by constantly checking what you type and, as soon as it encounters a sequence of characters from the replacement table, it will replace that sequence of characters with the replacement you have specified.
