@@ -4,6 +4,8 @@ After setting up Zettlr, you may very likely want to get started with it right a
 
 If you have any questions that do not seem to be answered in this documentation, make sure to consult the [Frequently Asked Questions](faq.md) and ask the community on [Reddit](https://www.reddit.com/r/Zettlr/) and the [forum](https://forum.zettlr.com/)! We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools.
 
+You can view a series of introductory videos following [this link to our Zettlr HowTo playlist](https://www.youtube.com/playlist?list=PL2ydvDwV-1u5ncnkxQWZhbHQdwpY2fx5f).
+
 > The interactive tutorial will suggest to install Pandoc and LaTeX on your computer. Zettlr depends on these programs for importing and exporting files. Without Pandoc, you will only be able to export HTML documents and importing is disabled. Without LaTeX you will not be able to export PDF files. But if you do not intend to import or export anything, you do not need them – they can be installed at any time, should you change your mind.
 
 ![An impression of the application on first start on macOS](img/first_start.png)
