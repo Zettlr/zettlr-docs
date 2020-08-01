@@ -2,6 +2,8 @@
 
 Zettlr contains a full file manager based on our custom file system abstraction layer (FSAL). This is no coincidence, as Zettlr was built with immersion as a guiding principle. What this translates to in practice is that Zettlr expects you to choose a folder somewhere on your computer, in which you'll be performing most of your work with Zettlr.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2YX5n8-XVbU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 > Throughout the documentation, we will be using the terms "folder" and "directory" interchangeably as they refer to the same thing. The only difference is that "folder" is the term most users will know, whereas "directory" is the technical term for folders on your computer.
 
 ## Root directories
