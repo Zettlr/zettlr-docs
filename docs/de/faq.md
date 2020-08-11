@@ -1,8 +1,12 @@
 # Häufig gestellte Fragen
 
-## Ich wollte Zettlr auf Windows/macOS installieren, aber bekomme eine Warnung, dass ich es nicht installieren sollte!
+## Wenn ich versuche, Zettlr auf Windows zu installieren, bekomme ich eine Warnung, dass ich es nicht installieren sollte!
 
-Sowohl Windows als auch macOS verlangen signierten Code, damit sie dem Programm automatisch vertrauen. Während die Idee dahinter sehr gut ist, um Schadcode aus dem System zu halten, kostet das jährlich eine ganze Menge. Daher sind Zettlr-Installationsdateien _nicht_ signiert und produzieren daher die Warnungen. Solange du Zettlr entweder von unserer Seite oder aus dem offiziellen GitHub-Repository heruntergeladen hast, kannst du die Warnungen getrost ignorieren.
+Sowohl Windows als auch macOS verlangen, dass Programme digital signiert sind, um installiert zu werden. Die Anwendungsdaten von Zettlr werden sowohl für macOS als auch für Windows signiert, doch auf Windows benötigen wir derzeit noch mehr Downloads, damit Windows Defender die Anwendung zweifelsfrei als sicher anerkennt. Bis es soweit ist, werden sowohl Windows Defender als auch eventuelle AntiVir-Programme eine Warnung ausgeben, dass nicht genügend Informationen vorliegen, um die Datei wirklich als sicher einzustufen. Falls du Zettlr von [unserer Homepage](https://www.zettlr.com/download) oder [von GitHub](https://github.com/Zettlr/Zettlr/releases) heruntergeladen hast, kannst du diese Warnungen ohne Gefahr ignorieren.
+
+## Ich kann die Warnung meines AntiVir nicht ignorieren und daher die App nicht installieren!
+
+Während auf privaten Rechnern solche Sicherheitsmeldungen recht einfach ignoriert werden können, etablieren viele Firmen auf ihren Arbeitsrechnern wesentlich striktere Regelungen, sodass beispielsweise Warnungen der Antivirus-Software nicht ignoriert werden können. Falls du in einem so eingeschränkten Umfeld arbeitest, ist es am einfachsten, mit der EDV-Abteilung zu sprechen und die System-Administrator\*innen zu bitten, Zettlr auf eine Whitelist zu setzen, sodass du (oder die Admins) es installieren können. Sollten diese Fragen bezüglich der Herkunft und/oder Vertrauenswürdigkeit von Zettlr haben, ist es vermutlich am einfachsten, sie auf das [offizielle GitHub Repository von Zettlr](https://github.com/Zettlr/Zettlr) zu verweisen.
 
 ## Gibt es Pläne für eine mobile Version von Zettlr?
 
