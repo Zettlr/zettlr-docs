@@ -2,7 +2,11 @@
 
 ## I tried to install Zettlr on Windows, but there's a security warning saying I shouldn't install the app!
 
-Both Windows and macOS require so-called "code-signing" in order to be able to trust the application. While this is a great technique of keeping malicious code from harming your system, it requires a code signing certificate. While our macOS builds are already code signed, we are still in the process of applying for a Windows code signing certificate. Until then you can safely ignore these warnings and install Zettlr, as long as you download it from our official page.
+Both Windows and macOS require so-called "code-signing" in order to be able to trust the application. While this is a great technique of keeping malicious code from harming your system, it requires a code signing certificate. Zettlr's binaries are currently code-signed on macOS and Windows, but we are currently in the process of gaining enough installations on Windows in order to receive enough "trust" so that both Windows Defender and optional AntiVir software allow the installation without any warnings. Until then, many AntiVir software packages will at least issue a warning, reading "We do not have sufficient information on the origins of this file" (or similar). In case you downloaded Zettlr either [from our homepage](https://www.zettlr.com/download) or from the [GitHub releases page](https://github.com/Zettlr/Zettlr/releases) (both are the same files, as the Zettlr homepage redirects you to the corresponding GitHub release) you can safely install the application and dismiss the warning.
+
+## I cannot dismiss the security warning on Windows and therefore cannot install the app!
+
+Getting a security warning on Windows is one thing, but in many companies the IT department puts additional restrictions in place so that you cannot dismiss such a security warning on your own and therefore cannot install the app. If you work in such a restricted environment, it may be best to just talk to your IT department and ask them to whitelist Zettlr so that you (or your admins) can install the app. If they have questions regarding the origins and/or trustworthyness, it may be best to point them [to Zettlr's GitHub repository](https://github.com/Zettlr/Zettlr).
 
 ## Are there any plans of porting Zettlr to mobile phones and tables, for Android or iOS?
 
