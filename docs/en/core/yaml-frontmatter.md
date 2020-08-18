@@ -67,6 +67,9 @@ The `keywords` variable contains keywords, or tags, that can be used by Pandoc t
 
 These keywords can be used to circumvent one restriction of the common in-text tags Zettlr supports: You can define arbitrary keywords that can also include spaces. These keywords are recognized by Zettlr and added to the list of tags of the file.
 
+> **Attention**: Using spaces in a keyword may have consequences that may be useful to know.
+![Using spaces in keywords/tags](../img/spaces_in_keywords.png)
+
 ### Variable `lang`
 
 This variable controls the language output for Pandoc citeproc. This is most useful for controlling in which language the references of your file will show up.
