@@ -8,7 +8,7 @@ En mode barre latérale étendue, l'arborescence et la liste des fichiers sont t
 
 > **Note** : Veuillez consulter le [manuel des paramètres](../reference/settings.md) pour plus d'informations sur les modes de la barre latérale.
 
-The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: La liste des fichiers vous montre tous les répertoires et fichiers à l'intérieur du répertoire qui est actuellement sélectionné dans l'arborescence, mais pas comme un navigateur de fichiers normal : **la liste des fichiers traite tous les sous-répertoires comme des égaux et vous les montre tous l'un après l'autre **  Il n'est donc pas nécessaire d'aller plus loin dans l'arborescence pour atteindre les répertoires enfouis.
+La liste des fichiers vous montre tous les répertoires et fichiers à l'intérieur du répertoire qui est actuellement sélectionné dans l'arborescence, mais pas comme un navigateur de fichiers normal : **la liste des fichiers traite tous les sous-répertoires comme des égaux et vous les montre tous l'un après l'autre**  Il n'est donc pas nécessaire d'aller plus loin dans l'arborescence pour atteindre les répertoires enfouis.
 
 Si vous avez désactivé les méta-informations, les répertoires et les fichiers seront affichés sous la forme d'une seule ligne (?). Si vous affichez les informations sur les fichiers, vous verrez des informations supplémentaires : les répertoires vous indiqueront le nombre d'enfants qu'ils ont. Les fichiers, en revanche, affichent leur date de dernière modification. S'ils contiennent un identifiant ou des étiquettes, ces informations seront affichées après la date de modification. En survolant le compteur de balises, vous pouvez voir une petite infobulle qui vous montre toutes les balises présentes dans le fichier.
 
@@ -20,13 +20,13 @@ Les informations supplémentaires que vos dossiers font apparaître dans la list
 
 ![The possible meta information of files](../img/file_meta.png)
 
-### Writing Targets
+### Cibles d'écriture
 
-Since version `1.2`, Zettlr supports writing targets. To set a target, right-click a file and choose "Set writing target …". Enter the amount of words or characters and click "Set". Zettlr will count towards your goal and show you the progress showing a small indicator if you have snippets activated. Hover over it to see the absolute number of words or characters that you've written.
+Depuis la verion `1.2`, Zettlr prend en charge des cibles d'écriture. Pour définir une cible, click-droit sur un fichier et choisir "Définir la cible d'écriture …". Saisir le nombre de mots ou caractères et cliquez sur "Set". Zettlr comptera vers votre objectif et montrera votre progression via un petit indicateur si vous avez les snippets activées. Passez la souris dessus pour voir le nombre aboslu de mots ou caractères que vous avez écrits.
 
 ![Writing Targets Counter](../img/writing_targets.png)
 
-> To remove the writing target from a file, simply set the writing counter to zero.
+> Pour supprimer la cible d'écriture d'un fichier, valorisez simplement le compteur d'écriture à zéro.
 
 ![Setting the Writing Target](../img/writing_targets_settings.png)
 
