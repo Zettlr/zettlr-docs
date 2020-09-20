@@ -18,7 +18,9 @@ Le nombre **jaune** indique la durée d'une _courte_ pause qui divisera des port
 
 Le chiffre **vert** indique à Zettlr la durée d'une _longue_ pause. Après quatre tâches, il y aura une pause aussi longue. La durée par défaut est de 20 minutes.
 
-Ci-dessous, vous pouvez décider si un son doit être joué ou non à chaque fois qu'une phase est terminée. Le curseur situé sous la case à cocher permet de régler le volume. (_Attention_ : Ce n'est pas le volume de votre système, donc si le volume de votre système n'est qu'à 20 pour cent, même un volume de 100 pour cent à l'intérieur de Zettlr ne sonnera que jusqu'à 20 pour cent !)
+Dessous, vous pouvez décider si un son doit être joué ou non à chaque fois qu'une phase est terminée. Le curseur permet de régler le volume. 
+
+> Ce n'est pas le volume de votre système, donc si le volume de votre système n'est qu'à 20 pour cent, même un volume de 100 pour cent à l'intérieur de Zettlr ne sonnera que jusqu'à 20 pour cent.
 
 Cliquez sur **Démarrer** pour lancer le chronomètre. Ensuite, le cercle sera rempli avec la couleur de la phase en cours (soit rouge, jaune ou vert). Une fois qu'il est rempli, la phase suivante commence.
 
