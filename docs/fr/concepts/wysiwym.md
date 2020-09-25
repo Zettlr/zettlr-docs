@@ -1,0 +1,5 @@
+# What You See Is What You Mean (WYSIWYM)
+
+Markdown est un langage basé sur le paradigme appelé ["Ce que vous voyez est ce que vous voulez dire"] (https://fr.wikipedia.org/wiki/What_you_see_is_what_you_mean) (WYSIWYM, prononcé / ˈwɪziwɪm /). Cela signifie que Markdown vous permet de définir la _structure_ d'un texte (par exemple, définir des en-têtes, du texte en gras, des guillemets et des liens) mais pas à quoi il ressemble. Les fichiers Markdown doivent être traités pour publication. En bref: les fichiers Markdown sont des fichiers "bruts" qui doivent être compilés dans un format final pour la publication.
+
+Cela signifie que Zettlr n'est pas un éditeur WYSIWYG tel que Microsoft Word ou LibreOffice, et n'affiche donc pas une version mise en page de votre texte. Au lieu de cela, il vous montrera la structure de votre texte. Cependant, il tentera de pré-rendre quelques éléments avec lesquels il est plus facile de travailler dans un tel état. Par exemple, il pré-rendra les liens Markdown, car il est plus facile de relire votre texte lorsque l'URL liée est masquée.
