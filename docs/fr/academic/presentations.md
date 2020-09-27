@@ -1,10 +1,8 @@
 # Presentations
 
-Depuis la version `0.19.0`, Zettlr est en mesure d'exporter vos fichiers Markdown directement sous forme de fichiers de présentation en utilisant le cadre [reveal.js](https://revealjs.com/#/). `reveal.js` est une solution légère pour créer des présentations super compatibles en utilisant `HTML` et `JavaScript`. Par conséquent, ces présentations peuvent être affichées sur _tous_ les ordinateurs qui utilisent un navigateur - de nos jours, cela signifie : elles s'exécutent sur _tous_ les ordinateurs.
+Zettlr est en mesure d'exporter vos fichiers Markdown directement sous forme de fichiers de présentation en utilisant le cadre [reveal.js](https://revealjs.com/#/). `reveal.js` est une solution légère pour créer des présentations super compatibles en utilisant `HTML` et `JavaScript`. Par conséquent, ces présentations peuvent être affichées sur _tous_ les ordinateurs qui utilisent un navigateur - de nos jours, cela signifie : elles s'exécutent sur _tous_ les ordinateurs.
 
 Pour exporter des fichiers Markdown vers `reveal.js`, vous devez vous assurer que Pandoc est installé sur votre ordinateur. Rendez-vous dans la [section sur l'exportation](../core/export.md) pour voir comment installer Pandoc.
-
-Si vous voulez d'abord être impressionné par une exportation concrète de Zettlr vers `reveal.js`, veuillez consulter  [la présentation de démonstration](https://zettlr.com/slides.revealjs.htm) ! Vous pouvez également lire [le fichier source](https://www.zettlr.com/themes/zettlr/assets/slides.md) en suivant les instructions sur cette page.
 
 ## Considérations préalables
 
@@ -26,13 +24,13 @@ Bien sûr, `reveal.js` Les présentations ont également la même polyvalence qu
 
 ```html
 <ul>
-    <li class="fragment fade-in">This item will fade in.</li>
-    <li class="fragment highlight-blue">This will be highlighted blue.</li>
-    <li class="fragment highlight-red">All available transitions are documented [here](https://github.com/hakimel/reveal.js/#fragments).</li>
+    <li class="fragment fade-in">Cet élément disparaitra.</li>
+    <li class="fragment highlight-blue">Cela sera surligné en bleu.</li>
+    <li class="fragment highlight-red">Toutes les transitions disponibles sont documentées [ici](https://github.com/hakimel/reveal.js/#fragments).</li>
 </ul>
 ```
 
-Cela permettra de créer une liste de trois éléments. Tous les éléments sont des "fragments", ce qui signifie qu'en appuyant sur le raccourci de la diapositive suivante, le premier `fade-in`(_fondu enchaîné_), comme le veut la classe. À la prochaine pression sur la touche fléchée droite, le deuxième élément sera mis en évidence en bleu. La troisième pression sur la touche fléchée droite mettra en évidence le dernier élément en rouge. Et à la quatrième pression sur la touche fléchée, la diapositive suivante s'affiche.
+Cela permettra de créer une liste de trois éléments. Tous les éléments sont des "fragments", ce qui signifie qu'en appuyant sur le raccourci de la diapositive suivante, le premier `fade-in`(_fondu enchaîné_), comme le veut la classe. À la prochaine pression sur la touche fléchée droite, le deuxième élément sera mis en évidence en bleu. La troisième pression sur la touche fléchée droite mettra en évidence le dernier élément en rouge. Et à la quatrième pression sur la touche fléchée, la diapositive suivante s'affichera.
 
 ### Paramètres de présentation
 
@@ -73,33 +71,33 @@ const zettlrRevealOptions = {
 	    help: true,
 	    // Signale si les notes de l'orateur doivent être visibles par tous les téléspectateurs
 	    showNotes: false,
-	    // Global override for autolaying embedded media (video/audio/iframe)
-	    // - null: Media will only autoplay if data-autoplay is present
-	    // - true: All media will autoplay, regardless of individual setting
-	    // - false: No media will autoplay, regardless of individual setting
+	    // Surcharge globale pour la lecture automatique de media embarqué (video/audio/iframe)
+	    // - null: Le media ne sera lu que si data-autoplay est présent
+	    // - true: tous les media seront lus automatiquement, quels que que soient les paramètres individuels
+	    // - false: Aucun media ne sera lu automatiquement, quels que que soient les paramètres individuels
 	    autoPlayMedia: null,
-	    // Number of milliseconds between automatically proceeding to the
-	    // next slide, disabled when set to 0, this value can be overwritten
-	    // by using a data-autoslide attribute on your slides
+        // Nombre de millisecondes avant d'afficher le slide suivant
+	    // désactivé quand valorisé à 0, peut être surchargé
+	    // en valorisant un attribut data-autoslide dans vos diapositives
 	    autoSlide: 0,
-    // Stop auto-sliding after user input
+        // Arrête le défilement automatique après une saisie
 	    autoSlideStoppable: true,
-	    // Enable slide navigation via mouse wheel
+	    // Active la navigation avec la molette de la souris
 	    mouseWheel: false,
-	    // Hides the address bar on mobile devices
+	    // Cache la barre d'adresse sur les appareils mobiles
 	    hideAddressBar: true,
 	    // Opens links in an iframe preview overlay
     	previewLinks: false,
-	    // Transition style
+	    // Style de transition
 	    transition: 'convex', // none/fade/slide/convex/concave/zoom
-	    // Transition speed
+	    // Vitesse de transition
 	    transitionSpeed: 'default', // default/fast/slow
 	    // Transition style for full page slide backgrounds
     	backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-	    // Number of slides away from the current that are visible
-    viewDistance: 3,
-    // The display mode that will be used to show slides
-    display: 'block'
+	    // Number of slides away from the current that are visible 
+        viewDistance: 3,
+        // le mode d'affichage qui sera utilisé pour afficher les diapositives
+        display: 'block'
 };
 ```
 

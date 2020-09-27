@@ -1,10 +1,6 @@
 # Citer avec Zettlr
 
-A partir de la version `1.0.0`, il est possible de citer les sources directement en utilisant Zettlr. Cette fonctionnalité rend la rédaction d'articles universitaires beaucoup plus facile que par le passé, car il n'est plus nécessaire de contourner la fonction d'exportation de Zettlr pour citer réellement des articles universitaires !
-
-La citation dans Zettlr se fait en utilisant `citeproc-js`, une bibliothèque qui fonctionne exactement comme, par exemple, le moteur citeproc de pandoc, ou Zotero. Ainsi, ce que vous verrez dans Zettlr correspond à ce que les plugins Word ou LibreOffice de Zotero génèrent. Le moteur de citation de Zettlr est composé de trois éléments : une bibliothèque CSL JSON ou BibTex qui contient tous les éléments pouvant être cités, et éventuellement une feuille de style CSL qui peut modifier le style de citation par défaut de Zettlr (qui est le [American Psychological Association's 6th edition](https://www.apastyle.org/manual/index), en abrégé : APA), et un moteur de prévisualisation. Ce guide vous aidera à activer les citations et à produire des fichiers de belle apparence (pas seulement en PDF !) qui contiennent des citations correctes et cohérentes.
-
-> A partir de la version `1.3.0`, vous pouvez également utiliser les bibliothèques BibTex pour les citations.
+La citation dans Zettlr se fait en utilisant `citeproc-js`, une bibliothèque qui fonctionne exactement comme, par exemple, le moteur citeproc de pandoc, ou Zotero. Ainsi, ce que vous verrez dans Zettlr correspond à ce que les plugins Word ou LibreOffice de Zotero génèrent. Le moteur de citation de Zettlr est composé de trois éléments : une bibliothèque CSL JSON ou BibTex qui contient tous les éléments pouvant être cités, et éventuellement une feuille de style CSL qui peut modifier le style de citation par défaut de Zettlr (qui est le [Chicago Manual of Style, 17th edition](http://www.chicagomanualofstyle.org/tools_citationguide.html)), et un moteur de prévisualisation. Ce guide vous aidera à activer les citations et à produire des fichiers de belle apparence (pas seulement en PDF !) qui contiennent des citations correctes et cohérentes.
 
 ## Permettre les citations dans Zettlr
 
@@ -40,6 +36,10 @@ Il est maintenant temps d'importer votre bibliothèque sur Zettlr. Pour ce faire
 
 ![Point Zettlr to your database file](../img/settings_export.png)
 
+### Etape 4 : Activer *Afficher les citations*
+
+Dans la section *Affichage des préférences vous trouverez l'option *Afficher les citation* qui doit être activée pour que les citations fonctionnent avec l'éditeur. Généralement, une fois que cette option sera activée, elle restera activée même après la mise à jour de Zetllr.
+
 ## Citer dans Zettlr
 
 Citer dans Zettlr est très facile. Zettlr prend en charge la syntaxe citeproc de pandoc pour la rédaction des citations. Vous aurez donc deux options pour rédiger vos citations. Premièrement, vous pouvez simplement lancer un identifiant unique quelque part dans votre texte pour rendre simplement une citation pour cette clé. Cela devrait ressembler à ceci : `@Harvey2005a`. Toutes les clés de citation commencent par un `@` suivi de la clé de citation.
@@ -66,7 +66,7 @@ Lorsque vous avez fini de citer et que vous voulez vérifier que vous avez bien 
 
 ## Changer le style de citation
 
-En interne, Zettlr n'utilisera toujours que le style APA pour générer des citations. Par conséquent, vos citations prévisualisées seront toujours "dans le texte", et jamais sous forme de notes de bas de page. Cela vous permet de vous assurer que tout fonctionne bien.
+En interne, Zettlr utilisera toujours le style chicago pour générer des citations. Par conséquent, vos citations prévisualisées seront toujours "dans le texte", et jamais sous forme de notes de bas de page. Cela vous permet de vous assurer que tout fonctionne bien.
 
 Mais bien sûr, vous pouvez également utiliser différents styles de citation, en fonction des exigences du journal pour lequel vous écrivez ou de vos préférences personnelles. Pour modifier le style dans lequel citeproc de pandoc rendra vos citations, vous devrez télécharger le fichier CSL correspondant. Un très bon point de départ est le [Dépôt de style zéro](https://www.zotero.org/styles). Vous pouvez y rechercher des styles de citation spécifiques, les prévisualiser et les télécharger.
 
@@ -80,7 +80,7 @@ Bien sûr, dès que vous citez des ouvrages de référence dans vos fichiers, vo
 
 LaTeX utilise les longueurs pour déterminer les mesures globales du PDF exporté. Ces longueurs sont normalement fixées globalement, mais peuvent être transformées dans le fichier source. L'une de ces longueurs est `parindent`, qui contrôle le retrait de tous les paragraphes. Il existe des longueurs supplémentaires pour les paragraphes qui suivent un titre, par exemple, mais nous ne nous en occuperons pas pour l'instant.
 
-La variable `parindent`peut être défini à l'aide des options PDF de Zettlr, mais il ne sera défini que globalement pour tous les paragraphes. Comme les références sont également formatées en utilisant des styles de paragraphes généraux, elles seront mises en retrait de la même manière que tous les autres paragraphes. Mais il y a une petite astuce que vous pouvez utiliser pour rendre la bibliographie agréable : il suffit d'écraser les longueurs de paragraphe _après_ votre document, c'est-à-dire : après le titre`## References` (ou quel que soit le nom que vous lui donnez dans votre dossier).
+La variable `parindent` peut être défini à l'aide des options PDF de Zettlr, mais il ne sera défini que globalement pour tous les paragraphes. Comme les références sont également formatées en utilisant des styles de paragraphes généraux, elles seront mises en retrait de la même manière que tous les autres paragraphes. Mais il y a une petite astuce que vous pouvez utiliser pour rendre la bibliographie agréable : il suffit d'écraser les longueurs de paragraphe _après_ votre document, c'est-à-dire : après le titre`## References` (ou quel que soit le nom que vous lui donnez dans votre dossier).
 
 Il suffit de les remettre à ce qui vous semble le mieux. L'extrait de code suivant vous donne un exemple :
 
@@ -93,3 +93,7 @@ Il suffit de les remettre à ce qui vous semble le mieux. L'extrait de code suiv
 L'exemple ci-dessus rendrait la bibliographie avec une indentation négative de moins un centimètre. De plus, il appliquera une indentation globale d'un demi-centimètre (par rapport aux marges de la page, donc si la marge de votre page gauche est fixée à 3 centimètres, les paragraphes de la bibliographie seront décalés de 3,5 centimètres, contrairement aux paragraphes normaux, qui ne sont décalés que de 3 centimètres). La dernière valeur (`parskip`) contrôle l'espacement _entre_ paragraphes, donc chacun sera à 10 millimètres de distance de l'autre.
 
 Il suffit de partir de là, peut-être de chercher d'autres longueurs à peaufiner et d'ajuster ces longueurs à votre convenance.
+
+## Controller Pandoc Citeproc avec YAML frontmatter
+
+Vous pouvez controller certains aspects de Pandoc Citeproc avec quelques variables que vous pouvez valoriser dans votre YAML frontmatter. Assurez-vous de lire la [page correspondante](../core/yaml-frontmatter.md) pour voir, par exemple, comment changer la langue dans votre liste de références.
