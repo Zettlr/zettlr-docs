@@ -1,6 +1,6 @@
 # Recherche
 
-L'un des grands avantages du passage à la notation pour la rédaction de documents est que les documents eux-mêmes sont consultables grâce à la recherche intégrée de votre système d'exploitation (par exemple Cortana sur Windows, Spotlight sur MacOS ou Dash sur les systèmes Linux). Mais bien sûr, cela aide beaucoup si vous n'avez pas à quitter le programme lorsque vous cherchez quelque chose. C'est là que la recherche entre en jeu ! Il y a en fait trois fonctions de recherche distinctes : Une fonction de filtrage rapide que vous utilisez chaque fois que vous sélectionnez un autre répertoire dans la liste de gauche, une recherche dans l'ensemble du document et une recherche globale.
+L'un des grands avantages du passage au Markfown pour la rédaction de documents est que les documents eux-mêmes sont consultables grâce à la recherche intégrée de votre système d'exploitation (par exemple Cortana sur Windows, Spotlight sur MacOS ou Dash sur les systèmes Linux). Mais bien sûr, cela aide beaucoup si vous n'avez pas à quitter le programme lorsque vous cherchez quelque chose. C'est là que la recherche entre en jeu ! Il y a en fait trois fonctions de recherche distinctes : Une fonction de filtrage rapide que vous utilisez chaque fois que vous sélectionnez un autre répertoire dans la liste de gauche, une recherche dans l'ensemble du document et une recherche globale.
 
 ## Filtrage des fichiers
 
@@ -16,18 +16,18 @@ Si vous appuyez `Enter` pendant que la saisie de remplacement est ciblée, Zettl
 
 > **Conseil** : Tout comme dans les autres éditeurs, vous pouvez utiliser des variables lors d'une recherche avec une expression régulière. Si vous recherchez quelque chose à l'aide d'une expression régulière qui contient au moins un groupe de capture, vous pouvez utiliser la variable `$1` à l'intérieur de votre texte de remplacement. Ces variables seront remplacées par le contenu réel trouvé des groupes de capture. Les occurrences multiples de la variable seront également remplacées. Le nombre après le `\$` se réfère à l'index du groupe de capture (le deuxième groupe de capture sera traité en utilisant `\$2`, et ainsi de suite). [Pour en savoir plus sur les expressions régulières JavaScript, cliquez ici](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
 
-Bien entendu, vous pouvez également utiliser la recherche dans les fenêtres Quicklook. Il vous suffit donc de cliquer sur le contenu de la fenêtre Quicklook que vous souhaitez rechercher (pour lui donner du relief et éviter que `Cmd/Ctrl+F` déclenche la recherche sur votre dossier principal) et appuyez sur `Cmd/Ctrl+F` pour commencer la recherche.
+Bien entendu, vous pouvez également utiliser la recherche dans les fenêtres d'aperçu. Il vous suffit donc de cliquer sur le contenu de la fenêtre d'aperçu que vous souhaitez rechercher (pour lui donner du relief et éviter que `Cmd/Ctrl+F` déclenche la recherche sur votre dossier principal) et appuyez sur `Cmd/Ctrl+F` pour commencer la recherche.
 
 ## Recherche globale
 
-L'aspect le plus important de la recherche est, en fait, la recherche globale que vous pouvez déclencher en tapant `Cmd/Ctrl+Shift+F`. La saisie de recherche dans la barre d'outils sera ciblée, ce qui vous permettra de rechercher un sous-ensemble spécifique de fichiers dans votre répertoire racine : seuls ceux qui sont actuellement visibles dans le volet. Cela signifie que vous pouvez choisir les fichiers qui seront recherchés en sélectionnant un répertoire approprié dans la liste --- utilisez la fonction de filtrage à votre avantage !
+L'aspect le plus important de la recherche est, en fait, la recherche globale que vous pouvez déclencher en tapant `Cmd/Ctrl+Shift+F`. Le curseur se déplacera dans la zone de saisie de recherche dans la barre d'outils, ce qui vous permettra de rechercher un sous-ensemble spécifique de fichiers dans votre répertoire racine : seuls ceux qui sont actuellement visibles dans le volet. Cela signifie que vous pouvez choisir les fichiers qui seront recherchés en sélectionnant un répertoire approprié dans la liste - utilisez la fonction de filtrage à votre avantage !
 
 Si vous souhaitez rechercher _tous_ les fichiers à la fois, sélectionnez un répertoire racine. Si vous ne souhaitez rechercher que dans un répertoire spécifique, sélectionnez celui-ci avant de lancer la recherche. Dans la plupart des cas, vous avez une idée de l'endroit où se trouve le texte dont vous avez besoin. Par exemple, si vous recherchez une citation sur un certain sujet qui peut être cité dans la recherche scientifique, vous ne voudrez peut-être pas chercher dans toutes vos pensées et idées, mais limiter votre recherche au répertoire où vous stockez vos extraits de textes et d'articles scientifiques.
 
 La recherche elle-même est assez puissante. Vous pouvez utiliser plusieurs opérateurs différents pour spécifier exactement ce que vous recherchez :
 
-* **AND-operator:** tapez `Boat Ship` pour n'afficher que les fichiers qui contiennent _à la fois_ le terme " boat " et le terme " ship ". Chaque espace est interprété comme "ET"..
-* **OR-operator:** tapez `Boat | Ship` (| est le "Pipe-operator", inséré par `Alt+7` sur macOS ou `AltGr+<` sur d'autres systèmes) pour sélectionner tous les fichiers qui contiennent _soit_ le mot " boat " _soit_ le mot " ship"
+* **AND-operator:** tapez `Boat Ship` pour n'afficher que les fichiers qui contiennent _à la fois_ le terme "boat" et le terme "ship". Chaque espace est interprété comme "ET"..
+* **OR-operator:** tapez `Boat | Ship` (| est le "Pipe-operator", inséré par `Alt+7` sur macOS ou `AltGr+<` sur d'autres systèmes) pour sélectionner tous les fichiers qui contiennent _soit_ le mot "boat" _soit_ le mot "ship"
 * **Exact-Match-operator:** tapez `"Boat Ship"` pour rechercher cette expression exacte dans vos fichiers.
 * **NOT-operator:** tapez `!Boat` pour rechercher uniquement les fichiers _ne_ contenant _pas_ ce terme. Fonctionne également avec des correspondances exactes : `!"Boat Ship"` excluerait tous les fichiers contenant l'expression exacte "bateau".
 
@@ -35,7 +35,7 @@ La recherche elle-même est assez puissante. Vous pouvez utiliser plusieurs opé
 
 Bien sûr, vous pouvez enchaîner tous ces opérateurs. Ainsi, vous pouvez rechercher `"Boat Ship" | vessel captain` pour afficher uniquement les fichiers qui contiennent soit l'expression exacte "Boat Ship", soit le mot "vessel", et qui comprennent également le mot "captain".
 
-Ne vous inquiétez pas si vous ne vous souvenez pas du mot complet que vous recherchez : Zettlr essaiera de faire correspondre vos termes de recherche à des mots partiels, ainsi le mot " trooper " correspondra aussi à " Stromtrooper " ainsi qu'à " Troopership ", tout comme l'expression " Boat Ship " correspondra aussi à un " Steamboat Ship ". **Les recherches sont également insensibles à la casse**. Vous n'avez donc pas à vous soucier des petites fautes de frappe que vous pourriez avoir dans certains fichiers.
+Ne vous inquiétez pas si vous ne vous souvenez pas du mot complet que vous recherchez : Zettlr essaiera de faire correspondre vos termes de recherche à des mots partiels, ainsi le mot "trooper" correspondra aussi à "Stromtrooper" ainsi qu'à "Troopership", tout comme l'expression "Boat Ship" correspondra aussi à un "Steamboat Ship". **Les recherches sont également insensibles à la casse**. Vous n'avez donc pas à vous soucier des petites fautes de frappe que vous pourriez avoir dans certains fichiers.
 
 Lorsque Zettlr effectue une recherche, il affiche un indicateur de recherche à droite de la boîte de recherche. Une fois la recherche effectuée, il colorera tous vos fichiers. Plus ils sont verts, plus ils sont pertinents (c'est-à-dire que plus le fichier contient de correspondances de haute qualité). Il s'agit d'une sorte de **carte de chaleur pour les résultats de recherche** qui vous permet d'identifier facilement les dossiers pertinents pour votre recherche.
 

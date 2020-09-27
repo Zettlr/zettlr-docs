@@ -2,29 +2,32 @@
 
 L'exportation de fichiers est une interface importante entre vos notes et d'autres personnes. Grâce à l'option d'exportation, vous pouvez :
 
-1. Prévisualisez un fichier, par exemple au format HTML, et imprimez-le également. (L'impression d'une note à l'aide de `Cmd/Ctrl+P` exportera la note en interne au format HTML.)
-2. Exportez-le dans un format avec lequel d'autres personnes peuvent travailler, comme des fichiers Word ou OpenDocument.
-3. Exportez-le au format PDF pour le soumettre (par exemple, des documents de séminaire) ou, également, pour l'imprimer.
+1. Prévisualisez un fichier, par exemple au format HTML, et l'imprimer également. (L'impression d'une note à l'aide de `Cmd/Ctrl+P` exportera la note en interne au format HTML.)
+2. L'exporter dans un format avec lequel d'autres personnes peuvent travailler, comme des fichiers Word ou OpenDocument.
+3. L'exporter au format PDF pour le soumettre (par exemple, des travaux de séminaire) ou, également, pour l'imprimer.
 
-## Préparer les exportations
+> Zettlr dépend de Pandoc pour exporter vers autre chose que HTML, et en plus de LaTeX pour exporter vers PDF. Veuillez vous référer aux guides de configuration pour installer [Pandoc](../ installing-pandoc.md) et [LaTeX](../ installing-latex.md) sur votre ordinateur.
 
-Toutes les exportations dans Zettlr, sont faites en utilisant les logiciels libres Pandoc et LaTeX. Pandoc est nécessaire pour toutes les exportations, car tout sera d'abord converti par lui. LaTeX n'est nécessaire que pour l'exportation au format PDF.
+## Exporter des fichiers
 
-> Si Pandoc n'est pas installé sur votre système, vous pourrez toujours exporter vers le format HTML. Dans ce cas, Zettlr analysera le fichier en interne en utilisant `Showdown.js`, mais cette bibliothèque ne supporte pas autant de fonctionnalités que Pandoc. Veuillez consulter le [guide d'installation](../install.md) pour installer Pandoc et LaTeX sur votre ordinateur.
+Il existe deux façons d'exporter des fichiers avec Zettlr: les exportations de fichiers uniques et les exportations de projets. L'exportation d'une seule page se trouve dans la barre d'outils et peut être ouverte avec `Cmd / Ctrl + E`. Cela vous permet d'exporter dans une variété de formats (le nom complet est affiché au survol de la souris). L'icône d'export révèle les différents thèmes disponibles pour l'export revealJS intégré.
 
-Zettlr fera des efforts raisonnables pour localiser les deux paquets. Si l'application n'a pas pu localiser les binaires, elle lancera une erreur.
+![L'export](../img/export.png)
 
-**Au cas où vous auriez installé les deux paquets, mais que Zettlr ne veut toujours pas exporter**, jetez un coup d'oeil à vos préférences. Dans l'onglet "Avancé", il y a deux champs de texte qui vous permettent d'entrer les chemins d'accès à l'exécutable Pandoc et à l'exécutable XeLaTeX. Il suffit de les y placer, de redémarrer, et cela devrait fonctionner. Si ce n'est pas le cas, veuillez nous le faire savoir !
+La deuxième méthode pour exporter des fichiers consiste à exporter des [projets](../academic/projects.md) entiers. Vous pouvez exporter un projet en cliquant avec le bouton droit sur le répertoire du projet et en choisissant l'option d'exportation.
 
-![The advanced settings tab](../img/settings_advanced.png)
+> Notez que l'exportation au format PDF peut générer des erreurs sous la forme de `fichier <nom> .sty not found`. Celles-ci peuvent être résolues en installant les packages LaTeX manquants. Veuillez consulter, par exemple, [ce guide](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages) pour savoir comment installer des packages LaTeX supplémentaires.
 
-## Options d'exportation
+## Choisir la destination
 
-Depuis la version `0.17`, Zettlr vous offre une pléthore d'options pour exporter des documents en fonction de vos besoins. Elles sont réparties dans deux dialogues différents. Les options générales d'exportation se trouvent dans la fenêtre des préférences. Ouvrez-la, et naviguez jusqu'à l'onglet "Exporter". Vous y trouverez deux sections vous permettant de personnaliser les exportations. Premièrement, vous pouvez sélectionner le répertoire dans lequel les fichiers résultants doivent être stockés.
+Zettlr a besoin de savoir où stocker vos fichiers exportés. Deux options s'offrent à vous: les exporter vers votre **répertoire temporaire**, ou vers le **répertoire du fichier**. Chacun a ses avantages et ses inconvénients.
 
-- En sélectionnant le répertoire temporaire, Zettlr enregistrera vos documents d'exportation dans le répertoire temporaire. Le répertoire temporaire est un dossier spécial sur chaque système d'exploitation qui est utilisé pour les fichiers temporaires et qui est expurgé dès qu'un fichier n'est plus nécessaire. C'est une bonne chose si vous ne voulez pas stocker les fichiers exportés où que ce soit sur votre système. Si vous exportez vos fichiers dans le répertoire temporaire, vous devrez les enregistrer explicitement ailleurs pour le rendre persistant.
-- En choisissant le répertoire de travail actuel (cwd), Zettlr enregistre vos documents exportés dans le répertoire actuellement sélectionné. De cette façon, vous n'avez pas besoin de sauvegarder explicitement vos documents hors du répertoire temporaire pour les rendre accessibles en permanence. **Veuillez noter que le moteur d'exportation ne vous demandera pas de confirmer s'il est sur le point d'écraser un fichier !**
+> Vous pouvez définir le [paramètre](../reference/settings.md) correspondant dans l'onglet Exporter.
 
-La deuxième section propose des options pour indiquer à Zettlr ce qu'il doit faire des éléments du Zettelkasten qu'il prend en charge. Si vous souhaitez savoir à quoi servent ces éléments, veuillez consulter la [section respective des documents](../academic/zkn-method.md). Cette section vous permet de conserver ou de supprimer ces éléments lors de l'exportation, car dans la plupart des cas, ils ne sont utiles et nécessaires que dans l'application elle-même, et ne doivent pas apparaître dans les documents exportés.
+L'exportation vers le répertoire temporaire vous permet d'exporter un fichier plusieurs fois sans que vous ayez à vous soucier de supprimer à nouveau le fichier par la suite, car votre répertoire temporaire est régulièrement vidé par votre ordinateur. Comme Zettlr ouvre le fichier immédiatement avec l'application par défaut (par exemple, Word pour les fichiers `.docx`), vous pouvez utiliser l'option" Enregistrer sous ..." pour enregistrer le fichier dans un autre emplacement dès que vous êtes satisfait du résultat.
 
-Une deuxième section qui contient les préférences pour les exportations est située dans la boite de dialogue `PDF Preferences`. Vous pouvez l'ouvrir en utilisant le menu (il est situé directement sous l'élément de menu des préférences normales) ou en utilisant le raccourci `Cmd/Ctrl+Alt+,`. Cette boîte de dialogue propose des options pour les exportations au format PDF. Vous pouvez choisir un ensemble d'options de formatage, telles que le type de papier, les marges des pages, la police ou la taille de la police, et si vous voulez ou non des numéros de page, et si oui, lesquels. La plupart des options d'exportation seront explicites et ressembleront à celles des traitements de texte standard.
+Si vous ne vous inquiétez pas d'avoir des fichiers exportés parmi vos fichiers Markdown, vous pouvez également dire à Zettlr d'enregistrer le fichier dans votre répertoire actuel. Veuillez noter que Zettlr écrasera toujours les fichiers exportés sans demander de confirmation.
+
+## Personnaliser les exports
+
+Les modèles par défaut fournis par Zettlr sont conçus pour donner une bonne première impression tout en étant compatibles, mais à mesure que vous maîtriserez mieux Zettlr, vous souhaiterez peut-être personnaliser la façon dont les fichiers sont mis en page. Il existe un [guide complet sur la création de modèles] (../academic/custom-templates.md) avec Zettlr dans la documentation.

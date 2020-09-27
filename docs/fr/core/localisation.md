@@ -1,36 +1,36 @@
 # Localisation
 
-Zettlr is not only capable of importing and exporting a lot of different formats, it also provides you with the possibility to translate the GUI and use your preferred spellchecking dictionaries. You can easily import new dictionaries and translate the user interface to your likings.
+Zettlr n'est pas seulement capable d'importer et d'exporter un grand nombre de formats différents, il vous offre également la possibilité de traduire l'interface graphique et d'utiliser vos dictionnaires de vérification orthographique préférés. Vous pouvez facilement importer de nouveaux dictionnaires et traduire l'interface utilisateur à votre guise.
 
-Zettlr comes shipped with the following languages:
+Zettlr est livré avec les langues suivantes :
 
-- English (United Kingdom)
-- English (United States)
-- German (Germany)
-- French (France)
+- Anglais (Royaume Uni)
+- Anglais (Etats-Unis)
+- Allemand (Allemagne)
+- Français (France)
 
-The app includes the following dictionaries:
+L'application comprend les dictionnaires suivants:
 
-- English (United Kingdom)
-- English (United States)
-- German (Germany)
-- French (France)
-- Spanish (Spain)
-- Dutch (Netherlands)
-- Turkish
-- Russian
-- Ukrainian
+- Anglais (Royaume Uni)
+- Anglais (Etats-Unis)
+- Allemand (Allemagne)
+- Français (France)
+- Espagnol (Espagne)
+- Néerlandais (Pays-Bas)
+- Turque
+- Russe
+- Ukrainien
 
-## Install new dictionaries
+## Installer des nouveaux dictionnaire
 
-Of course, you may want to install new dictionaries for languages you write in that are not shipped with the app. It is easy to do so. Zettlr uses the popular Hunspell dictionaries that are also used by well-known software such as LibreOffice or Mozilla apps.
+Bien sûr, vous souhaiterez peut-être installer de nouveaux dictionnaires pour les langues dans lesquelles vous écrivez et qui ne sont pas fournis avec l'application. C'est facile à faire. Zettlr utilise les dictionnaires populaires Hunspell qui sont également utilisés par des logiciels bien connus tels que les applications LibreOffice ou Mozilla.
 
-To enable spell-checking for a specific language, simply open the user dictionary folder by selecting `File`->`Import Dictionary …` from the menu. Zettlr will then open up the folder in which you need to place the dictionary files.
+Pour activer la vérification orthographique pour une langue spécifique, ouvrez simplement le dossier du dictionnaire utilisateur en sélectionnant `Fichier` -> `Importer un fichier de traduction…` dans le menu. Zettlr ouvrira alors le dossier dans lequel vous devez placer les fichiers de dictionnaire.
 
-The dictionary consists of two files, one is a `.dic`-file, and the other is an `.aff`-file. They need to be placed inside a folder that is named after the language you want to import. Let us assume you want to import the dictionary for Portuguese. You need to grab it from some repository, for instance [the GitHub user wooorm has an extensive set](https://github.com/wooorm/dictionaries/tree/main/dictionaries). Then you simply need to make sure the folder is named `pt-PT` and the two files are named `pt-PT.dic` and `pt-PT.aff`. Other files inside the directory will be ignored by Zettlr. As soon as you have placed your files inside the `dict`-directory, open the preferences and Zettlr should list your newly imported dictionary!
+Le dictionnaire se compose de deux fichiers, l'un est un fichier `.dic` et l'autre est un fichier `.aff`. Ils doivent être placés dans un dossier nommé d'après la langue que vous souhaitez importer. Supposons que vous souhaitiez importer le dictionnaire pour le portugais. Vous devez le récupérer à partir d'un référentiel, par exemple [le repository GitHub de l'utilisateur wooorm a un ensemble complet](https://github.com/wooorm/dictionaries/tree/main/dictionaries). Ensuite, vous devez simplement vous assurer que le dossier est nommé `pt-PT` et que les deux fichiers sont nommés` pt-PT.dic` et `pt-PT.aff`. Les autres fichiers à l'intérieur du répertoire seront ignorés par Zettlr. Dès que vous avez placé vos fichiers dans le répertoire `dict`, ouvrez les préférences et Zettlr devrait lister votre dictionnaire nouvellement importé!
 
-> **Hint:** Zettlr tries to translate the language strings automatically, but in some cases it may happen that Zettlr does not contain translations for specific languages. In this case, Zettlr will fallback to the language code and display it as, e.g., `pt-PT`.
+> **Astuce :** Zettlr essaie de traduire automatiquement les chaînes de caractères de la langue, mais dans certains cas, il peut arriver que Zettlr ne contienne pas de traduction pour des langues spécifiques. Dans ce cas, Zettlr se replie sur le code de langue et l'affiche comme, par exemple, «pt-PT».
 
-## Translate the App
+## Traduire l'application
 
-To help translate the app, please refer to the [Get Involved page](../get-involved.md).
+Pour aider à traduire l'application, veuillez consulter la [page Impliquez-vous](../get-involved.md).

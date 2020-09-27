@@ -10,25 +10,25 @@ En mode barre latérale étendue, l'arborescence et la liste des fichiers sont t
 
 La liste des fichiers vous montre tous les répertoires et fichiers à l'intérieur du répertoire qui est actuellement sélectionné dans l'arborescence, mais pas comme un navigateur de fichiers normal : **la liste des fichiers traite tous les sous-répertoires comme des égaux et vous les montre tous l'un après l'autre**  Il n'est donc pas nécessaire d'aller plus loin dans l'arborescence pour atteindre les répertoires enfouis.
 
-Si vous avez désactivé les méta-informations, les répertoires et les fichiers seront affichés sous la forme d'une seule ligne (?). Si vous affichez les informations sur les fichiers, vous verrez des informations supplémentaires : les répertoires vous indiqueront le nombre d'enfants qu'ils ont. Les fichiers, en revanche, affichent leur date de dernière modification. S'ils contiennent un identifiant ou des étiquettes, ces informations seront affichées après la date de modification. En survolant le compteur de balises, vous pouvez voir une petite infobulle qui vous montre toutes les balises présentes dans le fichier.
+Si vous avez désactivé les méta-informations, les répertoires et les fichiers seront affichés en une seule ligne. Si vous affichez les informations sur les fichiers, vous verrez des informations supplémentaires : les répertoires vous indiqueront le nombre d'enfants qu'ils ont. Les fichiers, en revanche, affichent leur date de dernière modification. S'ils contiennent un identifiant ou des étiquettes, ces informations seront affichées après la date de modification. En survolant le compteur de balises, vous pouvez voir une petite infobulle qui vous montre toutes les balises présentes dans le fichier.
 
-> Vous pouvez basculer les informations du dossier via le menu "Affichage" ou en appuyant sur `Cmd/Ctrl+Alt+S`.
+> Vous pouvez activer/désactiver les informations du fichier via le menu "Affichage" ou en appuyant sur `Cmd/Ctrl+Alt+S`.
 
 ### Méta-information sur les fichiers
 
-Les informations supplémentaires que vos dossiers font apparaître dans la liste des dossiers peuvent être utiles pour plusieurs raisons. Tout d'abord, vous pouvez vérifier si l'identification du dossier est correcte ou non. Parfois, Zettlr peut détecter une mauvaise ID, et c'est la première façon de vérifier si Zettlr utilise réellement votre ID, ou s'il a simplement saisi une partie d'une URL qui contient beaucoup de chiffres. De plus, vous pouvez survoler le nombre de balises pour les afficher dans une info-bulle.
+Les informations supplémentaires sur vos fichiers dans la liste des fichier peuvent être utiles pour plusieurs raisons. Tout d'abord, vous pouvez vérifier si l'identification du fichier est correcte ou non. Parfois, Zettlr peut détecter un mauvaise ID, et c'est la première façon de vérifier si Zettlr utilise réellement votre ID, ou s'il a simplement saisi une partie d'une URL qui contient beaucoup de chiffres. De plus, vous pouvez survoler l'ensemble des balises pour les afficher dans une info-bulle.
 
 ![The possible meta information of files](../img/file_meta.png)
 
 ### Cibles d'écriture
 
-Depuis la verion `1.2`, Zettlr prend en charge des cibles d'écriture. Pour définir une cible, click-droit sur un fichier et choisir "Définir la cible d'écriture …". Saisir le nombre de mots ou caractères et cliquez sur "Set". Zettlr comptera vers votre objectif et montrera votre progression via un petit indicateur si vous avez les snippets activées. Passez la souris dessus pour voir le nombre aboslu de mots ou caractères que vous avez écrits.
+Depuis la verion `1.2`, Zettlr prend en charge des cibles d'écriture. Pour définir une cible, click-droit sur un fichier et choisir "Définir la cible d'écriture …". Saisir le nombre de mots ou caractères et cliquez sur "Ok". Zettlr comptera vers votre objectif et montrera votre progression via un petit indicateur si vous avez les snippets activées. Passez la souris dessus pour voir le nombre absolu de mots ou caractères que vous avez écrits.
 
-![Writing Targets Counter](../img/writing_targets.png)
+![Compteur des cibles d'écriture](../img/writing_targets.png)
 
 > Pour supprimer la cible d'écriture d'un fichier, valorisez simplement le compteur d'écriture à zéro.
 
-![Setting the Writing Target](../img/writing_targets_settings.png)
+![Définir la cible d'écriture](../img/writing_targets_settings.png)
 
 ### Trier
 
@@ -37,13 +37,13 @@ Si vous souhaitez trier des répertoires, vous pouvez le faire à partir de la l
 ![sorting_indicators.png](../img/sorting_indicators.png)
 
 
-Vous pouvez également parcourir l'arborescence des répertoires en cliquant sur les répertoires. Un simple clic permet de sélectionner le répertoire, tandis qu'un `ALT`-click sélectionnera son répertoire parent. Ceci est utile si vous devez changer de répertoire souvent, mais préférez le mode fin de la barre latérale et ne voulez pas passer à l'arborescence de façon répétée.
+Vous pouvez également parcourir l'arborescence des répertoires en cliquant sur les répertoires. Un simple clic permet de sélectionner le répertoire, tandis qu'un `ALT`-click sélectionnera son répertoire parent. C'est utile si vous devez changer de répertoire souvent, mais préférez le mode fin de la barre latérale et ne pas passer à vue avec arborescence de façon répétée.
 
 ## Implications structurelles
 
 Chaque fois que vous sélectionnez un répertoire dans l'arborescence, la liste des fichiers affichera _tous_ les fichiers et répertoires de ce répertoire. En termes simples, cela aplatit tous vos différents sous-répertoires et fichiers de la structure arborescente que la liste des répertoires rassemble en une liste unidimensionnelle. La liste changera toujours de contenu chaque fois que vous sélectionnerez un répertoire différent dans l'arborescence.
 
-> La liste n'affiche _tous_ les répertoires et fichiers que _dans_ le répertoire actuellement sélectionné. Elle fonctionne donc un peu comme une fonction de recherche très rapide. Vous ne voyez que les fichiers dans un répertoire spécifique et, lorsque vous descendez de niveau en niveau, de moins en moins de fichiers sont visibles jusqu'à ce qu'un seul répertoire et ses fichiers soient visibles. Avec une bonne structure à l'intérieur de votre racine, c'est un moyen efficace de n'avoir dans la liste que les fichiers dont vous avez réellement besoin.
+> La liste affiche _tous_ les répertoires et fichiers uniquement _dans_ le répertoire actuellement sélectionné. Elle fonctionne donc un peu comme une fonction de recherche très rapide. Vous ne voyez que les fichiers dans un répertoire spécifique et, lorsque vous descendez de niveau en niveau, de moins en moins de fichiers sont visibles jusqu'à ce qu'un seul répertoire et ses fichiers soient visibles. Avec une bonne structure à l'intérieur de votre racine, c'est un moyen efficace de n'avoir dans la liste que les fichiers dont vous avez réellement besoin.
 
 Comme la liste de fichiers aplatit votre arborescence complexe de répertoires, elle doit faire quelques suppositions sur la façon d' _afficher_ correctement les fichiers. Les règles suivantes vous aident donc à distinguer où les fichiers sont réellement présents sur votre disque :
 
