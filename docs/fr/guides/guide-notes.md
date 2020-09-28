@@ -11,11 +11,10 @@ Vous voulez utiliser Zettlr comme outil de prise de notes. Bien que Zettlr dispo
 Tout d'abord, allez dans l'onglet "Paramètres" (appuyez sur `Cmd/Ctrl+,` ou cliquez sur l'engrenage dans la barre d'outils). Dans les paramètres, réglez les paramètres comme ci-dessous :
 
 - Onglet General
-    - Snippets (_bribes, brèves_) : Off
-    - Barre latérale : Thin (_étroite_)
+    - Propriétés du fichier : Désactivé
+    - Barre latérale : Etroite
 - Onglet Editeur
     - Dictionnaires : n'en sélectionner aucun (ils ralentissent le démarrage de l'application et ne sont pas nécessaires pour les notes simples)
-    - Lignes muettes : Off
 
 Les autres paramètres ne sont pas nécessaires pour une application de prise de notes et peuvent donc être ignorés.
 
@@ -23,17 +22,17 @@ Les autres paramètres ne sont pas nécessaires pour une application de prise de
 
 Il est maintenant temps de créer un dossier pour vos notes. L'idéal serait de le placer dans un dossier synchronisé en ligne afin que vous puissiez y accéder de partout, et pas seulement de votre ordinateur actuel. Le nom de ce dossier est arbitraire, mais "Notes" peut être un bon point de départ. Si vous souhaitez utiliser différentes catégories pour les notes, vous pouvez créer des dossiers racine supplémentaires et les garder ouverts. De cette façon, vous pouvez nommer vos catégories en fonction de ce que vous y stockez :
 
-- Students: "University", "Lectures", "Private"
-- Teachers: "School"/"University", "Courses"
-- Researcher: "University", "Research", "My Research Project"
-- Journalist: "Topic 1", "Topic 2", "Topic 3", "Press Conferences"
-- Writer: "My Novel", "Thoughts and Ideas", "Characters"
-- Administrative Worker: "ToDo", "Meetings"
+- Etudiant: "Université", "Lectures", "Privé"
+- Enseignant: "Ecole"/"Université", "Cours"
+- Chercheur: "Université", "Recherche", "Mon Projet De Recherche"
+- Journaliste: "Sujet 1", "Sujet 2", "Sujet 3", "Conférences de Presse"
+- Ecrivain : "Mon roman", "Pensées et idées", "Personnages"
+- Employé administraf: "A Faire", "Réunions"
 - etc. …
 
 Choisissez des dossiers en utilisant les catégories dont vous avez usage. N'oubliez pas que vous pouvez toujours réorganiser cela et faire glisser les fichiers si votre flux de travail change. L'avantage d'utiliser différents dossiers racines est que chaque dossier est indépendant de l'autre. Ainsi, vous pouvez toujours garder la liste des répertoires cachée et ne la remonter que si vous devez changer de " bloc-notes ".
 
-**Alternative**: Au lieu d'utiliser plusieurs dossiers racine, vous pouvez également adopter l'approche par sous-dossiers. De cette façon, la liste des dossiers ne ressemble pas à une collection de catégories ou de "cahiers", mais ressemble à un véritable répertoire (je parle de la façon dont cela vous _apparaît_, car le visuel est également un aspect important pour une écriture efficace). Mais l'avantage de cette approche est que vous n'avez jamais besoin de sortir la liste des répertoires, mais vous pouvez changer de " bloc-notes " en commençant par cliquer avec `ALT`- or `Ctrl`sur le "bloc notes"/répertoire courant puis en cliquant sur un autre bloc-notes. Zettlr utilisera alors ce dernier comme répertoire courant dans lequel vous pourrez stocker des notes.
+**Alternative**: Au lieu d'utiliser plusieurs dossiers racine, vous pouvez également adopter l'approche par sous-dossiers. De cette façon, la liste des dossiers ne ressemble pas à une collection de catégories ou de "cahiers", mais ressemble à un véritable répertoire (je parle de la façon dont cela vous _apparaît_, car le visuel est également un aspect important pour une écriture efficace). Mais l'avantage de cette approche est que vous n'avez jamais besoin de sortir la liste des répertoires, mais vous pouvez changer de "bloc-notes" en commençant par cliquer avec `ALT`- or `Ctrl`sur le "bloc notes"/répertoire courant puis en cliquant sur un autre bloc-notes. Zettlr utilisera alors ce dernier comme répertoire courant dans lequel vous pourrez stocker des notes.
 
 ## Étape 3 : Pensez à un système de nommage de vos notes
 
@@ -50,7 +49,7 @@ Si la date n'est pas importante, une autre approche est indispensable. Si vous c
 - HowTo - Meetings - Beamer
 - HowTo - Meetings - Conference Call
 
-De cette façon, vous pouvez facilement trouver ce que vous cherchez en cherchant d'abord les fichiers qui commencent par " HowTo " et ensuite en faisant défiler jusqu'à ce que vous trouviez le processus (Finances, Réunions, Directives pour le courrier, etc...).
+De cette façon, vous pouvez facilement trouver ce que vous cherchez en cherchant d'abord les fichiers qui commencent par "HowTo" et ensuite en faisant défiler jusqu'à ce que vous trouviez le processus (Finances, Réunions, Directives pour le courrier, etc...).
 
 Vous pouvez même utiliser une combinaison de ces éléments. Le résultat final est le suivant : Gardez toujours à l'esprit que Zettlr trie par nom de fichier, donc nommez vos fichiers en conséquence pour minimiser le temps de recherche d'un fichier.
 

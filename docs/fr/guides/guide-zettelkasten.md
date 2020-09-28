@@ -10,12 +10,12 @@ Zettlr peut être utilisé comme un système Zettelkasten sophistiqué mettant e
 
 ## Étape 1 : Ajustement des paramètres
 
-La première chose que vous souhaitez faire pour créer votre Zettelkasten est de consulter vos préférences. Les paramètres suivants permettent de convertir le Zettlr en un Zettelkasten suralimenté :
+La première chose que vous souhaitez faire pour créer votre Zettelkasten est de consulter vos préférences. Les paramètres suivants permettent de convertir Zettlr en un Zettelkasten boosté :
 
-- OngletGeneral
+- Onglet General
     - Activer les informations sur le fichier
-    - Barre latérale : Mode fin.
-- Onglet Editeur
+    - Barre latérale : Mode fin / étroit.
+- Onglet Vérification Orthographique
     - Éteindre tous les dictionnaires
 - Onglet Export
     - Désactivez la suppression des identifiants Zettelkasten et choisissez de ne pas toucher aux liens internes
@@ -35,4 +35,4 @@ Vous allez maintenant utiliser Zettlr comme système de gestion du Zettelkasten.
 1. Création d'un identifiant pour une note, afin de pouvoir établir un lien avec celle-ci : Vous pouvez le faire en appuyant sur `Cmd/Ctrl+L` lors de l'édition de n'importe quelle note, qui collera un identifiant généré à votre note.
 2. Lien vers d'autres notes : Insérer l'ouverture du lien (par défaut : `[[`) en cours d'édition pour afficher la liste déroulante d'auto-complétion, dans laquelle vous pouvez choisir une note à lier.
 
-Si vous souhaitez approfondir la question du fonctionnement et de l'apparence d'un Zettelkasten, consultez l'immense quantité de ressources sur les Zettelkästen, disponibles sur le web. Un bon point de départ est [Zettelkasten.de](https://www.zettelkasten.de/). Les auteurs ont rassemblé une longue liste d'articles de blog (en anglais) sur la manière d'enrichir vos écrits à l'aide d'un Zettelkasten.
+Si vous souhaitez approfondir la question du fonctionnement et de l'apparence d'un Zettelkasten, consultez l'immense quantité de ressources sur les Zettelkasten, disponibles sur le web. Un bon point de départ est [Zettelkasten.de](https://www.zettelkasten.de/). Les auteurs ont rassemblé une longue liste d'articles de blog (en anglais) sur la manière d'enrichir vos écrits à l'aide d'un Zettelkasten.
