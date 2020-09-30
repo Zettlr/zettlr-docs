@@ -1,0 +1,7 @@
+# Context
+
+Zettlr est très fortement basé sur  la notion de contexte. En fonction de différents contextes, vous préférerez probablement que différentes informations soient disponibles. Par exemple, vous pourriez vouloir toujours voir la bibliographie de votre fichier en cours d'édition, ou les fichiers non Markdown du répertoire sélectionné. Une grande partie de ce que vous voyez ou de ce que vous ne voyez pas est basée sur la notion de contexte. 
+
+Il y a deux contextes importants que vous pourriez vouloir garder à l'esprit pendant que vous travaillez avec Zettlr : Le **fichier actif** que l'éditeur vous montre est le fichier de base du contexte. Beaucoup d'informations liées au contenu du fichier (comme le compteur de mots, ou la liste des références dans la barre latérale) seront mises à jour pour refléter le contexte du fichier courant. 
+
+Le second context est le **répetoire courant**. Le répertoire que vous avez sélectionné détermine de nombreuses fonctionnalités: la recherche globale par défaut recherche dans ce répertoire, et si vous créez de nouveaux fichiers en utilisant le raccourci plutôt que le menu contextuel, l'application prendra comme répertoire cible celui actuellement sélectionné.

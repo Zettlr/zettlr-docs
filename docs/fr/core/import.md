@@ -1,9 +1,9 @@
 # Importer des fichiers
 
 De temps en temps, vous pouvez tomber sur des fichiers qui sont dans un format que Zettlr ne reconnait pas, comme par exemple des documents Word ou OpenDocument.
-Si vous avez bedoin d'éditer ces fichiers et que vous voulez le faire dans Zettlr, vous avez la possibilité d'importer ces fichiers en choisissant l'option correspondante dans le menu `Fichier`.
+Si vous avez besoin d'éditer ces fichiers et que vous voulez le faire dans Zettlr, vous avez la possibilité d'importer ces fichiers en choisissant l'option correspondante dans le menu `Fichier`.
 
-> **Note** : importer des fichiers nécessite une installation fonctionnelle de Pandoc.
+> **Note** : importer des fichiers nécessite une installation fonctionnelle de Pandoc.
 Veuillez consulter [les instructions d'installation de Pandoc](../installing-pandoc.md)
 pour votre système d'exploitation.
 

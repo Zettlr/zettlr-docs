@@ -1,11 +1,11 @@
 # En-têtes YAML
 
 Comme Pandoc, Zettlr prend en charge les en-têtes YAML (_YAML frontmatters_) pour vos fichiers Markdown.
-Un en-tête YAML, appelé [« bloc de métadonnées »](https://pandoc.org/MANUAL.html#metadata-blocks) dans le jargon de Pandoc, est une série de métavariables qui fournissent des informations sur le fichiers qui ne font pas partie du contenu à proprement parler, comme les auteurs, les mots-clés, et le titre.
+Un en-tête YAML, appelé [« bloc de métadonnées »](https://pandoc.org/MANUAL.html#metadata-blocks) dans le jargon de Pandoc, est une série de métavariables qui fournissent des informations sur le fichiers qui ne font pas partie du contenu à proprement parler, comme les auteurs, les mots-clés, et le titre.
 
 Un en-tête YAML peut être défini au début du fichier, en le commençant sur la première ligne avec trois tirets (`---`) et en le terminant soit avec trois tirets, ou trois points (la seconde version est la plus courante).
 
-> Astuce : si l'auto-correction est activée, Zettlr va essayer de remplacer les trois points finaux par le caractère de points de suspension, cassant ainsi la mise en valeur syntaxique. Pour empêcher cela, appuyez sur `Shift+Enter` lors de la création d'un nouvel en-tête (si vous utilisez le mode LibreOffice d'auto-correction).
+> Astuce : si l'auto-correction est activée, Zettlr va essayer de remplacer les trois points finaux par le caractère de points de suspension, cassant ainsi la mise en valeur syntaxique. Pour empêcher cela, appuyez sur `Shift+Enter` lors de la création d'un nouvel en-tête (si vous utilisez le mode LibreOffice d'auto-correction).
 
 L'en-tête contient du YAML valide et peut être utilisé pour définir toutes sortes de variables, qui peuvent être utiles dans des situations diverses.
 
@@ -28,6 +28,8 @@ author:
   - l'équipe Zettlr
 ```
 
+> ** Attention **: Dans la spécification YAML, le caractère de tabulation n'est pas autorisé à être utilisé comme indentation. Pour que votre frontmatter YAML soit valide, utilisez des espaces pour l'indentation.
+
 ## Variables d'en-tête
 
 Le but de l'en-tête est de fournir des informations utiles pour Pandoc et Pandoc-citeproc.
@@ -38,7 +40,7 @@ La prise en charge pour certaines variables telles que `nocite` ou `lang` augmen
 Pour une liste complète des variables disponibles et pour plus d'instructions sur leur utilisation, veuillez consulter la
 [section sur les blocs de métadonnées](https://pandoc.org/MANUAL.html#metadata-blocks) dans le manuel de Pandoc, ainsi que le [manuel de Pandoc citeproc](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md).
 
-> Astuce : sur cette page, nous n'indiquons que quelques variables importantes pour Pandoc, mais les en-têtes YAML sont aussi pris en charge par d'autres moteurs, tels que [le générateur de sites web statiques Jekyll](https://jekyllrb.com/docs/front-matter/).
+> Astuce : sur cette page, nous n'indiquons que quelques variables importantes pour Pandoc, mais les en-têtes YAML sont aussi pris en charge par d'autres moteurs, tels que [le générateur de sites web statiques Jekyll](https://jekyllrb.com/docs/front-matter/).
 Si vous comptez utiliser un autre outil pour convertir vos fichiers Markdown, veuillez consulter leur documentation pour connaître la liste des variables.
 
 ### Variable `title`
@@ -67,14 +69,14 @@ author:
     affiliation: Université Y
 ```
 
-> Remarquez que l'indentation de la propriété `affiliation` : elle est alignée avec la propriété `name`.
+> Remarquez que l'indentation de la propriété `affiliation` : elle est alignée avec la propriété `name`.
 L'indentation des valeurs YAML est importante et vous devez y faire attention.
 
 ### Variable `keywords`
 
-Cette variable contient des mots-clés ou étiquettes, qui peuvent être utilisés par Pandoc pour remplir par exemple le champs de mots-clés d'un PDF (remarque : si vous utilisez le modèle par défaut pour l'exportation en PDF, le champs des mots-clés PDF est contrôlé dans les [paramètres PDF](../reference/settings.md#pdf-preferences)).
+Cette variable contient des mots-clés ou étiquettes, qui peuvent être utilisés par Pandoc pour remplir par exemple le champs de mots-clés d'un PDF (remarque : si vous utilisez le modèle par défaut pour l'exportation en PDF, le champs des mots-clés PDF est contrôlé dans les [paramètres PDF](../reference/settings.md#pdf-preferences)).
 
-Ces mots-clés peuvent être utilisés pour contourner la limitation des étiquettes habituelles dans le texte que Zettlr prend en charge : vous pouvez définir ici des mots-clés avec des espaces.
+Ces mots-clés peuvent être utilisés pour contourner la limitation des étiquettes habituelles dans le texte que Zettlr prend en charge : vous pouvez définir ici des mots-clés avec des espaces.
 Ces mots-clés sont reconnus par Zettlr et ajoutés à la liste des étiquettes du fichier.
 
 ### Variable `lang`

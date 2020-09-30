@@ -1,7 +1,7 @@
 # Aperçu et impression
 
 Comme Zettlr est un éditeur WYSIWYM, vous définissez la structure du document, mais pas son rendu dans le document final.
-Alors qu'[exporter dans un répertoire temporaire](export.md#choosing-the-destination) est une méthode puissante pour vérifier que le document final ressemble à vos attentes, il peut être plus facile dans certains cas d'utiliser l'aperçu avant impression.
+Alors qu'[exporter dans un répertoire temporaire](export.md#choisir-la-destination) est une méthode puissante pour vérifier que le document final ressemble à vos attentes, il peut être plus facile dans certains cas d'utiliser l'aperçu avant impression.
 
 ## Aperçu avant impression
 

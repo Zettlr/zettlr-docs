@@ -6,7 +6,7 @@ La barre latérale des pièces jointes est un élément contextuel qui affiche d
 
 Dans la barre latérale, il y a deux zones. La première est intitulée "Pièces jointes" et contient une liste de tous les fichiers supplémentaires, non Markdown, qui se trouvent dans le répertoire que vous avez sélectionné. Il peut s'agir d'images, de documents Word, de fichiers PDF et littéralement de tout autre type de fichier. Vous pouvez choisir les fichiers qui y seront affichés en ajoutant l'extension du type de fichier dans l'option des préférences respectives, que vous trouverez dans l'onglet "Avancé". Les extensions ne sont pas sensibles à la casse, donc l'ajout de `.jpeg` montrera les fichiers `.jpeg` tout comme `.JPEG` et `.JpEg`.
 
-![In the advanced settings, you can choose all extensions that you would like to see in the sidebar.](../img/settings_advanced.png)
+![Dans les paramètres avancés, vous pouvez choisir toutes les extensions que vous souhaitez voir dans la barre latérale.](../img/settings_advanced.png)
 
 La deuxième zone, intitulée "Références", contient une liste de toutes les entrées bibliographiques que vous avez utilisées dans votre fichier Markdown actuel. Elle ressemble à la liste de références qui sera générée par `pandoc-citeproc` une fois que vous aurez exporté votre fichier Markdown. Vous pouvez ainsi vérifier si vous avez utilisé les bonnes clés de citation pour référencer vos sources.
 
@@ -14,7 +14,7 @@ La deuxième zone, intitulée "Références", contient une liste de toutes les e
 
 Considérez les fichiers affichés dans la barre latérale des pièces jointes comme une alternative à l'ouverture permanente d'une fenêtre de navigateur de fichiers. De cette façon, vous pouvez voir les fichiers avec lesquels vous pourriez avoir besoin de travailler également à partir de Zettlr, ce qui vous permet de gérer les contraintes de votre flux de travail.
 
-![With a folder selected that contains images, you can easily add them to your document by dragging them into the editor.](../img/attachment_sidebar_images.png)
+![Avec un dossier sélectionné contenant des images, vous pouvez facilement les ajouter à votre document en les faisant glisser dans l'éditeur.](../img/attachment_sidebar_images.png)
 
 Si vous avez besoin de voir tous les fichiers du répertoire sélectionné, vous pouvez ouvrir le répertoire en cliquant sur l'icône pop-out à côté du titre. Cela ouvrira le dossier avec votre navigateur de fichiers par défaut.
 

@@ -68,7 +68,7 @@ Lorsque vous avez fini de citer et que vous voulez vérifier que vous avez bien 
 
 En interne, Zettlr utilisera toujours le style chicago pour générer des citations. Par conséquent, vos citations prévisualisées seront toujours "dans le texte", et jamais sous forme de notes de bas de page. Cela vous permet de vous assurer que tout fonctionne bien.
 
-Mais bien sûr, vous pouvez également utiliser différents styles de citation, en fonction des exigences du journal pour lequel vous écrivez ou de vos préférences personnelles. Pour modifier le style dans lequel citeproc de pandoc rendra vos citations, vous devrez télécharger le fichier CSL correspondant. Un très bon point de départ est le [Dépôt de style zéro](https://www.zotero.org/styles). Vous pouvez y rechercher des styles de citation spécifiques, les prévisualiser et les télécharger.
+Mais bien sûr, vous pouvez également utiliser différents styles de citation, en fonction des exigences du journal pour lequel vous écrivez ou de vos préférences personnelles. Pour modifier le style dans lequel citeproc de pandoc rendra vos citations, vous devrez télécharger le fichier CSL correspondant. Un très bon point de départ est le [dépôt des styles de zotero](https://www.zotero.org/styles). Vous pouvez y rechercher des styles de citation spécifiques, les prévisualiser et les télécharger.
 
 Vous pouvez faire pointer Zettlr vers ces fichiers CSL à deux endroits évidents. Tout d'abord dans les préférences générales. Dans l'onglet `Export`, sous le champ pour votre fichier de base de données de citations, vous pouvez sélectionner votre style CSL préféré qui sera ensuite utilisé pour toutes les exportations de pages uniques que vous exporterez à l'aide du bouton de la barre d'outils.
 

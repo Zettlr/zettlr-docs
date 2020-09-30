@@ -9,6 +9,8 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 3. **Autres actions** : Nous prenons au sérieux la signification sémantique de la touche `Alt`. Par conséquent, prenez un raccourci de haute priorité, ajoutez-y un `Alt` et vous aurez normalement tendance à déclencher une action alternative sur la même cible. Les exceptions notables à cette règle sont le panneau des développeurs (qui s'ouvre avec `Cmd/Ctrl+Alt+I`), tandis que `Cmd/Ctrl+I` rend le texte en italique. **C'est vrai pour _toutes_ les actions que vous pouvez déclencher en utilisant des clics de souris. Toutes les actions alternatives de la souris sont déclenchées par un `Alt+Click`. Au cas où les `Alt-Click`s ne donnent pas les résultats attendus, les `Ctrl+Click`s fonctionnent également**.
 4. **Cibles alternatives** : Si vous voulez effectuer la même _action_, mais sur une cible différente, essayez d'utiliser une touche `Maj`. Dans la plupart des applications, les commandes `Shift` changent la cible du fichier sélectionné au répertoire sélectionné. La recherche utilise également cette fonction (`Cmd/Ctrl+F` recherche le fichier, tandis que `Cmd/Ctrl+Shift+F` recherche le répertoire entier).
 
+> Les actions dans l'éditeur qui nécessitent la souris impliquent généralement d'appuyer sur `Cmd / Ctrl` tout en cliquant, par exemple pour suivre les liens dans l'éditeur.
+
 ## Raccourcis à l'échelle de l'application
 
 * `Cmd/Ctrl+,`: Ouvrir les préférences
@@ -24,11 +26,12 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 * `Cmd/Ctrl+Delete`: Supprimez le fichier en cours. Si aucun n'est sélectionné, la commande est désactivée.
 * `Cmd/Ctrl+Shift+Delete`: Supprimez le répertoire actuel. Si aucun n'est sélectionné, la commande est désactivée.
 * `Cmd/Ctrl+Shift+F`: Permet de focaliser la recherche au niveau global.
+* `Cmd/Ctrl+Shift+E`: Donne le focus à l'éditeur.
+* `Cmd/Ctrl+Shift+T`: Donne le focus à l'arborescence.
 * `Cmd/Ctrl+Alt+L`: Bascule le thème entre le mode clair et le mode foncé (_NdT : attention avec Ubuntu - verrouille l'écran_).
 * `Cmd/Ctrl+Alt+S`: Bascule l'affichage des bribes de texte (NdT ?).
 * `Cmd/Ctrl+Shift+1`: Bascule le mode barre latérale pour afficher soit la liste des fichiers, soit l'arborescence. Désactivé en mode barre latérale étendue.
 * `Cmd/Ctrl+?`: Affichage alterné de la barre latérale des pièces jointes.
-* `Cmd/Ctrl+[0-9]`: Ouvrez le document récent à la position 0 à 9 dans la liste des documents récents (Fichier->Documents récents).
 * `Cmd+Ctrl+F` (macOS) `F11` (windows/Linux): Basculer en plein écran
 * `Cmd/Ctrl+W`: Fermez la fenêtre de l'application. Sous Windows et Linux, l'application se fermera également.
 * `Cmd/Ctrl+M`: Réduisez la fenêtre de l'application.
@@ -37,7 +40,7 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 **Si le mode de débogage est activé**
 
 * `F5`: Rechargez l'interface utilisateur graphique.
-* `Cmd+Alt+I` (macOs) `Ctrl+Shift+I` (Windows/Linux): Ouvrez les outils de développement Chrome.
+* `Cmd+Alt+I` (macOs) `Ctrl+Shift+I` (Windows/Linux): Ouvrir les outils de développement Chrome.
 
 ## Raccourcis de l'application liés aux champs de texte
 
@@ -63,10 +66,11 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 * `Ctrl+Alt+F` (Windows/Linux) `Cmd+Alt+R` (macOS): Insérez une nouvelle note de bas de page à la position actuelle du curseur.
 * `Cmd/Ctrl+L`: Générez un nouvel ID à l'aide du modèle de générateur de la boîte de dialogue des paramètres et insérez-le à la position actuelle du curseur.
 * `Cmd/Ctrl+0`: Remettre la taille de la police de l'éditeur à la valeur standard.
-* `Cmd+Plus` (macOS) `Ctrl+Shift+Plus` (Windows/Linux): Augmenter la taille de la police de l'éditeur.
+* `Cmd/Ctrl+[1-9]`: Sélectionner les onglets de 1 à 9.
 * `Cmd/Ctrl+Minus`: Diminuer la taille de la police de l'éditeur.
 * `Tab`: Indenter une liste.
 * `Shift-Tab`: Désindenter une liste.
+* `Cmd+Plus` (macOS) `Ctrl+Shift+Plus` (Windows/Linux): Augmenter la taille de la police de l'éditeur.
 * `Shift-Enter`: Lors de l'édition d'une note de bas de page, enregistre le texte de référence. Sinon, cela empêchera l'insertion automatique d'un nouvel élément de liste.
 * `Ctrl-Enter`: Insérez une ligne sous celle dans laquelle votre curseur se trouve actuellement, et placez le curseur au début de celle-ci.
 * `Ctrl-Shift-Enter`: Insérez une ligne au-dessus de celle où se trouve actuellement votre curseur, et placez le curseur au début de celle-ci.
