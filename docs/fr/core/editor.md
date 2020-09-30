@@ -41,7 +41,7 @@ Bien entendu, il est obligatoire que vous puissiez également travailler avec du
 
 Ensuite, à un moment donné, vous souhaitez copier un texte de Zettlr mais de manière à ce que d'autres applications puissent comprendre son format. Pour copier le texte non pas comme Markdown, mais avec un format commun, vous devez sélectionner `Copy as HTML`. Le raccourci est `Cmd/Ctrl+Alt+C`.
 
-> Reportez-vous à la section [Raccourcis](../reference/shortcuts.md), pour obtenir une liste de tous les raccourcis disponibles.
+> Reportez-vous à la section [Raccourcis](../reference/keyboard-shortcuts.md), pour obtenir une liste de tous les raccourcis disponibles.
 
 ## Particularités du CodeMirror
 

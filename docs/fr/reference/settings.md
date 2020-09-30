@@ -6,15 +6,15 @@ Zettlr vous offre une pléthore d'options pour personnaliser votre expérience a
 
 Vous pouvez afficher le dialogue des préférences générales en utilisant soit le raccourci `Cmd/Ctrl+, `, le bouton de la barre d'outils (le rouage) ou l'élément de menu correspondant. La boîte de dialogue s'affiche alors et vous présente toutes les options de configuration que vous pouvez personnaliser. Elles sont classées en neuf onglets que vous pouvez voir en haut de la boîte de dialogue.
 
-* Général : Ces options affectent Zettlr dans son ensemble.
-* Editeur : Ces paramètres ne concernent que l'éditeur lui-même.
-* Export : Contrôlez la façon dont vos fichiers sont exportés dans cet onglet.
-* Zettelkasten : Adaptez Zettlr pour qu'il corresponde à votre système Zettelkasten.
-* Affichage : Contrôlez la façon dont l'éditeur affiche certains éléments, tels que les images ou les liens.
-* Thème : Sélectionnez le thème de l'application ici.
+* [Général](#general) : Ces options affectent Zettlr dans son ensemble.
+* [Editeur](#editeur) : Ces paramètres ne concernent que l'éditeur lui-même.
+* [Export](#export) : Contrôlez la façon dont vos fichiers sont exportés dans cet onglet.
+* [Zettelkasten](#zettelkasten) : Adaptez Zettlr pour qu'il corresponde à votre système Zettelkasten.
+* [Affichage](#affichage) : Contrôlez la façon dont l'éditeur affiche certains éléments, tels que les images ou les liens.
+* [Thème](#theme) : Sélectionnez le thème de l'application ici.
 * Vérification de l'orthographe : Trouvez les dictionnaires installés et votre dictionnaire utilisateur ici.
-* AutoCorrection : Choisissez le texte à remplacer et déterminez également les citations que vous souhaitez utiliser.
-* Avancé : Options pour les utilisateurs expérimentés.
+* [AutoCorrection](#verification-orthographique) : Choisissez le texte à remplacer et déterminez également les citations que vous souhaitez utiliser.
+* [Avancé](#autocorrection) : Options pour les utilisateurs expérimentés.
 
 ### Général
 
@@ -47,7 +47,7 @@ Enfin et surtout, Zettlr peut passer automatiquement en mode clair ou foncé sel
 
 ![settings_editor.png](../img/settings_editor.png)
 
-L'onglet éditeur contrôle la plupart des fonctionnalités de l'éditeur. Comme la fonction de marquage permet de mettre le texte en gras et en italique avec des astérisques et des traits de soulignement, vous pouvez choisir ici votre saveur préférée. Le **chemin d'image par défaut** est un chemin que vous pouvez utiliser pour indiquer à Zettlr où il doit placer vos images lorsque vous les collez à partir du presse-papiers. Il peut être absolu ou relatif. Si vous fournissez le nom `assets`, Zettlr mettra les images par défaut dans le sous-répertoire `assets` du répertoire où se trouve votre fichier. Vous pouvez même lui dire d'utiliser un répertoire relatif au répertoire parent, par exemple `../assets`. Rappelez-vous que vous pouvez toujours sélectionner le répertoire d'une image au cas par cas.
+L'onglet éditeur contrôle la plupart des fonctionnalités de l'éditeur. Comme le Markdown permet de mettre le texte en gras et en italique avec des astérisques et tirets bas (_), vous pouvez choisir ici votre préférence. Le **chemin d'image par défaut** est un chemin que vous pouvez utiliser pour indiquer à Zettlr où il doit placer vos images lorsque vous les collez à partir du presse-papiers. Il peut être absolu ou relatif. Si vous fournissez le nom `assets`, Zettlr mettra les images par défaut dans le sous-répertoire `assets` du répertoire où se trouve votre fichier. Vous pouvez même lui dire d'utiliser un répertoire relatif au répertoire parent, par exemple `../assets`. Rappelez-vous que vous pouvez toujours sélectionner le répertoire d'une image au cas par cas.
 
 L'indentation fait référence à la quantité d'espaces insérés lorsque vous, par exemple, augmentez le niveau des listes.
 
@@ -91,7 +91,7 @@ Zettlr utilise des expressions régulières en interne pour filtrer l'ID d'un fi
 
 L'expression régulière par défaut (que vous pouvez restaurer en appuyant sur le bouton de réinitialisation à côté du champ de texte) est `(\d{14})`. Cela signifie que Zettlr cherchera 14 chiffres consécutifs -- exactement le nombre de chiffres que vous obtenez lorsque vous concaténez une année, un mois, un jour, une heure, une minute et une seconde ; comme ceci : 20181012143724. Il est extrêmement peu probable qu'un fichier contienne une deuxième chaîne de caractères comprenant quatorze ( !) chiffres, c'est donc une excellente méthode d'identification. Autre avantage, l'ID est unique à la seconde. Vous pouvez donc créer à chaque seconde un nouvel identifiant totalement unique.
 
-Les croisillons autour du `\d{14}` créent ce qu'on appelle un "groupe de capture". Le but d'un groupe de capture est que l'expression régulière ne corresponde pas seulement à une certaine chaîne, mais en extrait aussi une partie - dans ce cas la correspondance complète. De cette façon, vous pouvez utiliser presque toutes les structures d'ID que vous souhaitez.
+Les parenthèses autour du `\d{14}` créent ce qu'on appelle un "groupe de capture". Le but d'un groupe de capture est que l'expression régulière ne corresponde pas seulement à une certaine chaîne, mais en extrait aussi une partie - dans ce cas la correspondance complète. De cette façon, vous pouvez utiliser presque toutes les structures d'ID que vous souhaitez.
 
 > Notez que vous pouvez omettre les accolades du groupe de capture. Zettlr encapsulera votre RegEx en interne, s'il n'y a pas de groupe de capture.
 
@@ -116,7 +116,7 @@ Vous pouvez tester à la fois la génération des identifiants et leur détectio
 ![settings_display.png](../img/settings_display.png)
 
 
-Cet onglet contrôle la façon dont l'éditeur affiche certains éléments. Zettlr utilise une approche de semi-prévisualisation de la démarque et ne rend que certains éléments. Dans cet onglet, vous pouvez contrôler quels éléments seront rendus.
+Cet onglet contrôle la façon dont l'éditeur affiche certains éléments. Zettlr utilise une approche de semi-prévisualisation de Markdown et ne rend que certains éléments. Dans cet onglet, vous pouvez contrôler quels éléments seront rendus.
 
 > Le paramètre iFrame définit si les iFrames doivent être rendues ou non (par exemple, les vidéos YouTube sont des iFrames intégrées).
 

@@ -1,12 +1,12 @@
 # Bases Markdown
 
-Comme beaucoup d'autres applications, Zettlr utilise `Markdown`, inventé à l'origine par [John Gruber] (https://daringfireball.net/). Bien sûr, sur une si longue période, un grand nombre de développements ont eu lieu, qui ont créé les possibilités des applications modernes de la démarque. Le présent document aborde les sujets suivants :
+Comme beaucoup d'autres applications, Zettlr utilise `Markdown`, inventé à l'origine par [John Gruber] (https://daringfireball.net/). Bien sûr, sur une si longue période, un grand nombre de développements ont eu lieu, qui ont créé les possibilités des applications modernes utilisant Markdown. Cette page aborde les sujets suivants :
 
-1. [A brief history of Markdown](#a-brief-history)
-2. [Dialects of Markdown](#markdown-dialects)
-3. [How Zettlr implements Markdown](#zettlr-and-markdown)
-4. [Markdown 101: Headings, block elements, inline elements, links, images and footnotes](#markdown-101-the-most-important-codes)
-5. [Further resources](#resources-on-markdown)
+1. [Une brève histoire de Mardown](#un-bref-historique)
+2. [Les dialectes de Markdown](#dialectes-markdown)
+3. [Comment Zettlr implémente Markdown](#zettlr-et-markdown)
+4. [Markdown 101: Titres, blocs, éléments en ligne, liens, images et notes de base de page](#markdown-101-les-codes-les-plus-importants)
+5. [Ressources pour aller plus loin](#markdown-101-les-codes-les-plus-importants)
 
 ***
 
@@ -18,7 +18,7 @@ Pendant longtemps, ces deux groupes de documents sont restés aussi distincts qu
 
 Quand Markdown a été inauguré par John Gruber en 2004, c'était comme si on disait "Pourquoi pas les deux ?" Markdown combine à la fois l'expérience de lecture claire des documents de traitement de texte et les avantages des documents de code logiciel, qui sont à la fois polyvalents et faciles à utiliser - même pour les personnes qui ne savent que faire fonctionner Word ou Writer. Un petit exemple : Dans un traitement de texte, vous créez un titre en tapant "du texte" et en sélectionnant le format `Titre 1` dans un menu, alors que dans Markdown, vous tapez simplement `# some texte`, ce que le symbole hashtag vous indique immédiatement : "C'est un titre de premier niveau !"
 
-Au début, Markdown était essentiellement un petit script que John Gruber avait écrit pour lui-même afin de produire ces bénéfices, et il contenait beaucoup d'incohérences et ne soutenait pas beaucoup d'éléments différents. Mais au fil des ans, des progrès ont été réalisés. Deux dates sont à noter :
+Au début, Markdown était essentiellement un petit script que John Gruber avait écrit pour lui-même afin de produire ces bénéfices, et il contenait beaucoup d'incohérences et ne supportait pas beaucoup d'éléments différents. Mais au fil des ans, des progrès ont été réalisés. Deux dates sont à noter :
 
 - 2004: [John Gruber](https://daringfireball.net/projects/markdown/) lance dans un premier temps le programme Markdown
 - 2012: Un groupe de développeurs forme [CommonMark](https://spec.commonmark.org/) pour normaliser Markdown en une norme acceptée au niveau international.
@@ -144,6 +144,29 @@ Actuellement, les langues suivantes sont prises en charge par le moteur (les nom
 
 D'autres langues peuvent être mises en œuvre à votre demande. Si vous avez besoin d'une langue spécifique, veuillez [consulter les langues disponibles](https://codemirror.net/mode/) et ouvrir un numéro sur GitHub, afin que nous sachions laquelle nous devons ajouter !
 
+## Ajouts à MArdown de Zettlr
+
+En addition aux extensions du mardown de Github (marquées avec "(extension)" dans la spec [spec](https://github.github.com/gfm/)), Zettlr support ce qui suit :
+
+ - Support des éléments `<iframe src="https://example.com"></iframe>`
+
+   > **Attention**: Les pages dans les iframes peuvent accéder à votre système de fichier sans restriction ! Les techniques dites de 'Frame-busting' peuvent être utilisées par des pages pour s'échapper de l'iframe et [interagir avec le backend Electron directement](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - vous devez assumer que toute page dans une iframe (ou un attaquant de cette page) a accès à toutes les données de votre ordinateur.
+
+ - Rendu d'équation KaTeX via soit des blocs en ligne (`$`) ou fermés (`$$`) : `$x/y$` ou
+
+        $$
+        x / y
+        $$
+
+ - [mermaid.js](https://mermaid-js.github.io/mermaid/) rendu de diagrammes avec des blocks de code :
+
+        ```mermaid
+        graph TD
+            A[Client] --> B[Load Balancer]
+            B --> C[Server01]
+            B --> D[Server02]
+        ```
+
 ## Ressources sur Markdown
 
-Vous voulez _tout_ apprendre sur la démarque ? C'est génial ! Une bonne ressource qui couvre tous les éléments se trouve sur [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). Si vous voulez vous habituer à écrire des notes claires et nettes, [voir les spécifications de CommonMark](https://spec.commonmark.org/0.28/). Il existe également un "livre" sur la syntaxe GitHub de la démarque. [Voir ici](https://gitbookio.gitbooks.io/markdown/content/).
+Vous voulez _tout_ apprendre sur Markdown ? C'est génial ! Une bonne ressource qui couvre tous les éléments se trouve sur [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). Si vous voulez vous habituer à écrire des notes claires et nettes, [voir les spécifications de CommonMark](https://spec.commonmark.org/0.28/). Il existe également un "livre" sur la syntaxe GitHub de la démarque. [Voir ici](https://gitbookio.gitbooks.io/markdown/content/).
