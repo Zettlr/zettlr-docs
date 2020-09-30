@@ -2,8 +2,8 @@ site_name: Zettlr Docs
 site_url: https://docs.zettlr.com/fr
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: >-
-    Notre documentation complète vous fournit tout ce que vous devez savoir
-    pour tirer le meilleur parti de Zettlr.
+  Notre documentation complète vous fournit tout ce que vous devez savoir
+  pour tirer le meilleur parti de Zettlr.
 site_author: Hendrik Erz
 copyright: "&copy; 2017-2020 by Zettlr"
 docs_dir: ../docs/fr
@@ -13,49 +13,49 @@ extra_css:
   - assets/app.css
 nav:
   - Accueil: index.md
- - Premiers pas:
-   - Installation: install.md
-   - Installer Pandoc: installing-pandoc.md
-   - Installer LaTeX: installing-latex.md
-   - Démarrage rapide: get-started.md
-   - Engagez-vous: get-involved.md
-   - FAQ: faq.md
- - Concepts:
-     - Gestion de fichier: concepts/roots.md
-     - Contexts: concepts/context.md
-     - WYSIWYM: concepts/wysiwym.md
+  - Premiers pas:
+  - Installation: install.md
+  - Installer Pandoc: installing-pandoc.md
+  - Installer LaTeX: installing-latex.md
+  - Démarrage rapide: get-started.md
+  - Engagez-vous: get-involved.md
+  - FAQ: faq.md
+  - Concepts:
+      - Gestion de fichier: concepts/roots.md
+      - Contexts: concepts/context.md
+      - WYSIWYM: concepts/wysiwym.md
   - Guides:
-    - Zettlr comme application de prise de notes: guides/guide-notes.md
-    - Zettlr comme Zettelkasten: guides/guide-zettelkasten.md
-    - Zettlr comme environnement de développement intégré (IDE): guides/guide-ide.md
+      - Zettlr comme application de prise de notes: guides/guide-notes.md
+      - Zettlr comme Zettelkasten: guides/guide-zettelkasten.md
+      - Zettlr comme environnement de développement intégré (IDE): guides/guide-ide.md
   - Fonctionnalités de base:
-    - L'éditeur: core/editor.md
-    - Les onglets: core/tabs.md
-    - La liste de fichiers: core/file-list.md
-    - Auto-correction et guillemets magiques: core/autocorrect.md
-    - Rechercher: core/search.md
-    - Importer des fichiers: core/import.md
-    - Exporter avec Zettlr: core/export.md
-    - Les tableaux dans Zettlr: core/tables.md
-    - CSS personnalisée: core/custom-css.md
-    - Localisation linguistique: core/localisation.md
-    - Le panneau des annexes: core/attachments.md
-    - En-tête YAML: core/yaml-frontmatter.md
-    - Aperçu et impression: core/print-preview.md
-    - Mathématiques: core/math.md
+      - L'éditeur: core/editor.md
+      - Les onglets: core/tabs.md
+      - La liste de fichiers: core/file-list.md
+      - Auto-correction et guillemets magiques: core/autocorrect.md
+      - Rechercher: core/search.md
+      - Importer des fichiers: core/import.md
+      - Exporter avec Zettlr: core/export.md
+      - Les tableaux dans Zettlr: core/tables.md
+      - CSS personnalisée: core/custom-css.md
+      - Localisation linguistique: core/localisation.md
+      - Le panneau des annexes: core/attachments.md
+      - En-tête YAML: core/yaml-frontmatter.md
+      - Aperçu et impression: core/print-preview.md
+      - Mathématiques: core/math.md
   - Outils académiques:
-    - Citations: academic/citations.md
-    - Projets: academic/projects.md
-    - Présentations: academic/presentations.md
-    - Minuteur Pomodoro: academic/pomodoro.md
-    - Lisibilité: academic/readability.md
-    - Méthode Zettelkasten: academic/zkn-method.md
-    - Modèles personnalisés: academic/custom-templates.md
+      - Citations: academic/citations.md
+      - Projets: academic/projects.md
+      - Présentations: academic/presentations.md
+      - Minuteur Pomodoro: academic/pomodoro.md
+      - Lisibilité: academic/readability.md
+      - Méthode Zettelkasten: academic/zkn-method.md
+      - Modèles personnalisés: academic/custom-templates.md
   - Références:
-    - Raccourcis: reference/keyboard-shortcuts.md
-    - Les bases de Markdown: reference/markdown-basics.md
-    - Paramétrage: reference/settings.md
-    - Dictionnaires et vérification orthographique: reference/spell-checking.md
+      - Raccourcis: reference/keyboard-shortcuts.md
+      - Les bases de Markdown: reference/markdown-basics.md
+      - Paramétrage: reference/settings.md
+      - Dictionnaires et vérification orthographique: reference/spell-checking.md
   - Impliquez-vous: get-involved.md
   - FAQ: faq.md
 theme:
@@ -69,8 +69,8 @@ theme:
     - yaml
     - tex
 markdown_extensions:
-    - toc:
-        permalink: True
+  - toc:
+      permalink: True
 plugins:
   - search:
       lang: fr
