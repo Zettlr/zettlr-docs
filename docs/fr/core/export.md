@@ -6,7 +6,7 @@ L'exportation de fichiers est une interface importante entre vos notes et d'autr
 2. L'exporter dans un format avec lequel d'autres personnes peuvent travailler, comme des fichiers Word ou OpenDocument.
 3. L'exporter au format PDF pour le soumettre (par exemple, des travaux de séminaire) ou, également, pour l'imprimer.
 
-> Zettlr dépend de Pandoc pour exporter vers autre chose que HTML, et en plus de LaTeX pour exporter vers PDF. Veuillez vous référer aux guides de configuration pour installer [Pandoc](../ installing-pandoc.md) et [LaTeX](../ installing-latex.md) sur votre ordinateur.
+> Zettlr dépend de Pandoc pour exporter vers autre chose que HTML, et en plus de LaTeX pour exporter vers PDF. Veuillez vous référer aux guides de configuration pour installer [Pandoc](../installing-pandoc.md) et [LaTeX](../installing-latex.md) sur votre ordinateur.
 
 ## Exporter des fichiers
 

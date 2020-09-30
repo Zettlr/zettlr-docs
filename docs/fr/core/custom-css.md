@@ -21,7 +21,7 @@ Tout est toujours dans l'espace de nom (namespace) du `body`, qui a une classe` 
 
 Les styles de Zettlr sont soumis à des changements constants. Bien qu'ils devraient rester assez stables, des modifications peuvent être introduites dans n'importe quelle version et, par conséquent, au lieu de vous fournir des exemples prêts à l'emploi, cette page explique comment trouver facilement les bons sélecteurs.
 
-Tout d'abord, assurez-vous d'activer le mode débogage dans les [préférences](../ reference / settings.md) avancées afin d'activer le menu Développer. Ensuite, ouvrez les outils de développement à partir de ce menu et assurez-vous de sélectionner l'onglet "Éléments".
+Tout d'abord, assurez-vous d'activer le mode débogage dans les [préférences](../reference/settings.md) avancées afin d'activer le menu Développer. Ensuite, ouvrez les outils de développement à partir de ce menu et assurez-vous de sélectionner l'onglet "Éléments".
 
 ![Zettlr avec les outils de développement ouverts](../img/zettlr_developer_tools.png)
 

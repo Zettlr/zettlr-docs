@@ -1,4 +1,4 @@
-# Installing Pandoc
+# Installer Pandoc
 
 Pandoc est un petit programme qui a la capacité de convertir des fichiers de document d'un format à un autre. Il est extrêmement puissant et offre de nombreuses options. Afin de permettre à Zettlr d'importer et d'exporter des fichiers, Pandoc doit être installé sur votre ordinateur. Zettlr n'a pas la capacité d'importer ou d'exporter en soi. La raison en est que Pandoc fait extrêmement bien ce travail, il est également gratuit et Open Source, et est disponible sur toutes les plates-formes prises en charge par Zettlr.
 

@@ -54,7 +54,7 @@ Le CodeMirror étant très puissant, il existe d'autres options intéressantes q
 
 ## Modes d'édition Vim et Emacs
 
-Certaines personnes préfèrent une manière différente d'insérer du texte dans l'éditeur, et aiment donc utiliser les raccourcis clavier Vim ou Emacs. Ce mode de saisie peut être activé dans les [settings](../ reference / settings.md) et vous permet d'insérer du texte différemment de la normale. Ce paramètre est recommandé uniquement aux utilisateurs avancés.
+Certaines personnes préfèrent une manière différente d'insérer du texte dans l'éditeur, et aiment donc utiliser les raccourcis clavier Vim ou Emacs. Ce mode de saisie peut être activé dans les [settings](../reference/settings.md) et vous permet d'insérer du texte différemment de la normale. Ce paramètre est recommandé uniquement aux utilisateurs avancés.
 
 ## Vérification orthographique
 

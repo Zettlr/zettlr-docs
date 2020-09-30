@@ -1,6 +1,6 @@
-# Documentation de Zettlr
+# Bienvenue
 
-Merci d'avoir choisi Zettlr comme compagnon d'écriture. Sur ces pages, nous vous aidons à démarrer avec l'application conçue pour donner un coup de pouce à votre pratique d'écriture. Si vous n'avez pas encore installé  Zettlr, [rendez-vous sur la page de téléchargement](https://www.zettlr.com/download) et obtenez-le pour votre système d'exploitation !
+Ceci est la documentation officielle de l'éditeur Zettlr Markdown. Cette documentation décrit les fonctionnalités offertes par Zettlr pour écrire du texte et organiser vos fichiers, ainsi que pour personnaliser votre expérience utilisateur. Si vous n'avez pas encore téléchargé Zettlr, vous pouvez le faire maintenant en vous rendant sur [notre page de téléchargement](https://www.zettlr.com/download). Zettlr est actuellement pris en charge sur Windows (7 ou plus récent), macOS (10.10 ou plus récent) et diverses distributions Linux. Veuillez consulter les [instructions de configuration](install.md) pour des instructions spécifiques à la plate-forme sur l'installation de l'application sur votre ordinateur.
 
 ## Dans cette documentation
 
@@ -12,12 +12,6 @@ Cette documentation est structurée en gardant à l'esprit le vaste ensemble de 
 - Le **Core** décrit les ensembles de fonctionnalités centrales d'écriture  et de gestion de fichiers de Zettlr: ce qu'il peut faire, comment il peut le faire et où vous pouvez le personnaliser.
 - **Les outils académiques** se concentre sur les fonctionnalités qui sont particulièrement utiles pour - mais sans s'y limiter! - les étudiants et les universitaires.
 - **Les références** contiennent des informations sur des sujets généraux (comme une explication de tous les paramètres disponibles) qui servent de référence rapide pour vous.
-
-## Pour commencer
-
-Pour savoir comment installer Zettlr sur votre système, veuillez consulter les [instructions d'installation](install.md). Il est également recommandé d'installer Pandoc ainsi que LaTeX pour activer toutes les fonctionnalités d'importation et d'exportation de Zettlr. Ne vous inquiétez pas, pour ces logiciels aussi l'installation est expliquée !
-
-Vous voulez un tour d'horizon accéléré ? Consultez notre [guide de démarrage rapide "Zettlr en 5 minutes"](5-minutes.md) ! Au bout de cinq minutes, vous saurez tout ce que vous devez savoir pour commencer à utiliser l'application.
 
 ## Engagez-vous !
 

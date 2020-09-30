@@ -13,17 +13,17 @@ extra_css:
   - assets/app.css
 nav:
   - Accueil: index.md
-  - Premiers pas:
-  - Installation: install.md
-  - Installer Pandoc: installing-pandoc.md
-  - Installer LaTeX: installing-latex.md
-  - Démarrage rapide: get-started.md
-  - Engagez-vous: get-involved.md
-  - FAQ: faq.md
+  - Premier pas:
+    - Installation: install.md
+    - Installer Pandoc: installing-pandoc.md
+    - Installer LaTeX: installing-latex.md
+    - Démarrage rapide: get-started.md
+    - Engagez-vous: get-involved.md
+    - FAQ: faq.md
   - Concepts:
-      - Gestion de fichier: concepts/roots.md
-      - Contexts: concepts/context.md
-      - WYSIWYM: concepts/wysiwym.md
+    - Gestion de fichier: concepts/roots.md
+    - Contexts: concepts/context.md
+    - WYSIWYM: concepts/wysiwym.md
   - Guides:
       - Zettlr comme application de prise de notes: guides/guide-notes.md
       - Zettlr comme Zettelkasten: guides/guide-zettelkasten.md

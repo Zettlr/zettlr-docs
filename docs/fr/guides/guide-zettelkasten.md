@@ -6,7 +6,7 @@ Zettlr peut être utilisé comme un système Zettelkasten sophistiqué mettant e
 
 > Grâce à ce guide, vous pouvez configurer Zettlr pour remplacer des applications telles que nvALT, zkn ou The Archive.
 
-**Le concept de Zettelkasten est-il nouveau pour vous ? Alors nous vous recommandons de  [lire notre article sur le fonctionnement d'un Zettelkasten réussi](https://www.zettlr.com/post/what-is-a-zettelkasten) and [et [regardez notre vidéo d'accompagnement](https://youtu.be/c5Tst3-zcWI)!**
+**Le concept de Zettelkasten est-il nouveau pour vous ? Alors nous vous recommandons de  [lire notre article sur le fonctionnement d'un Zettelkasten réussi](https://www.zettlr.com/post/what-is-a-zettelkasten) et de [regardez notre vidéo d'accompagnement](https://youtu.be/c5Tst3-zcWI)!**
 
 ## Étape 1 : Ajustement des paramètres
 
