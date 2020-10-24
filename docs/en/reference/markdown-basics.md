@@ -27,11 +27,11 @@ At first, Markdown was basically a small script John Gruber wrote for himself to
 
 Today, several implementations of the Markdown syntax coexist. The most noteworthy are:
 
+- **Pandoc Markdown**: [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) provides additional syntax with support for tables, footnotes, metadata, and much more. It is the most useful Markdown variant for academic writing.
 - **MultiMarkdown**: Extends the initial syntax with footnotes, tables and some metadata.
 - **Markdown Extra**: Again some additions to the initial syntax.
 - **GitHub Flavoured Markdown**: This is a variety of Markdown invented by the hosting platform GitHub (which Zettlr is also hosted on!) and is today one of the most common dialects.
-- **Pandoc Markdown**: Pandoc Markdown is a superset of GitHub flavoured Markdown and adds support for even more elements.
-- **CommonMark**: Tries to implement all possible elements, while being unambiguous. Notably, CommonMark not yet includes a specification for footnotes.
+- **CommonMark**: Tries to implement all possible elements, while being unambiguous. Notably, CommonMark does not yet includes a specification for footnotes.
 
 ## Zettlr and Markdown
 
@@ -169,4 +169,4 @@ In addition to GitHub flavored markdown extensions (marked with "(extension)" in
 
 ## Resources on Markdown
 
-Do you want to learn _all_ about Markdown? That is great! A good resource that covers all elements is to be found on [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). If you want to get used to writing clean and unambiguous Markdown, [view the specifications by CommonMark](https://spec.commonmark.org/current/). Also, there's a "book" on the GitHub flavoured Markdown syntax. [View it here](https://gitbookio.gitbooks.io/markdown/content/).
+Do you want to learn _all_ about Markdown? That is great! A good resource that covers all elements is to be found on [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). If you want to get used to writing clean and unambiguous Markdown, [view the specifications by CommonMark](https://spec.commonmark.org/current/). Also, there's a "book" on the GitHub flavoured Markdown syntax. [View it here](https://gitbookio.gitbooks.io/markdown/content/).  For those engaged in scholarly writing, the [Pandoc manual's section on it's extended Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) is worth reading.
