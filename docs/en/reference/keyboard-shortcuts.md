@@ -31,6 +31,7 @@ For remembering them easier, here are some thoughts we've put into assigning the
 * `Cmd/Ctrl+Alt+L`: Switches the theme between light and dark mode.
 * `Cmd/Ctrl+Alt+S`: Toggles display of file information in the File List.
 * `Cmd/Ctrl+Shift+1`: Toggles the sidebar mode to either view the file list or the tree view. Disabled in extended sidebar mode.
+* `Cmd/Ctrl+Shift+L`: Copy the ID of the current file.
 * `Cmd/Ctrl+?`: Toggles display of the attachment sidebar.
 * `Cmd+Ctrl+F` (macOS) `F11` (windows/Linux): Toggle fullscreen
 * `Cmd/Ctrl+W`: Close the application window. On Windows and Linux this will also exit the app.
