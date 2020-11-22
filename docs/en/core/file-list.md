@@ -4,9 +4,9 @@ Next on is the file list. The file list is something very special because it bea
 
 ## General
 
-In the extended sidebar mode, both the tree view and the file list are visible. Using the thin sidebar mode, you can always show or hide the list by pressing `Cmd/Ctrl+!`.
+In the extended file manager mode, both the tree view and the file list are visible. Using the thin file manager mode, you can always show or hide the list by pressing `Cmd/Ctrl+!`.
 
-> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the sidebar modes.
+> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the file manager modes.
 
 The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
 
