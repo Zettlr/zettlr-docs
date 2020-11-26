@@ -12,7 +12,7 @@ First, head over to the settings tab (press `Cmd/Ctrl+,` or click the cog in the
 
 - General tab
     - File Information: Off
-    - Sidebar: Thin
+    - File Manager: Thin
 - Editor tab
     - Mute non-focused lines: Off
 - Spellchecking tab

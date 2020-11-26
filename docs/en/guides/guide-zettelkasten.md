@@ -14,7 +14,7 @@ The first thing you want to do to create your Zettelkasten is to have a look at 
 
 - General tab
     - File Information: On
-    - Sidebar: Thin mode.
+    - File Manager: Thin mode.
 - Spellchecking tab
     - Turn off all dictionaries
 - Export tab

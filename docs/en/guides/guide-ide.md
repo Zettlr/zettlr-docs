@@ -12,7 +12,7 @@ The first step is to adjust some of the parameters of Zettlr. So hit `Cmd/Ctrl+,
 
 - General Tab
     - File Information: On
-    - Sidebar mode: Expanded
+    - File manager mode: Expanded
 - Spellchecking Tab
     - Select all dictionaries for languages in which you will write (e.g., en-UK, de-DE, and fr-FR)
 - Export Tab

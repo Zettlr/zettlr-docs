@@ -10,6 +10,6 @@ You can view a series of introductory videos following [this link to our Zettlr 
 
 ![An impression of the application on first start on macOS](img/first_start.png)
 
-All the features used in this tutorial are described in the documentation, so in case you want to read more on them, simply look for the feature here. It is recommended that you follow the tutorial during your first start of the application to get used to different concepts such as the sidebar, the file tree, internal links and the document tabs.
+All the features used in this tutorial are described in the documentation, so in case you want to read more on them, simply look for the feature here. It is recommended that you follow the tutorial during your first start of the application to get used to different concepts such as the sidebar, the file manager, internal links and the document tabs.
 
 Once you are done with the tutorial, you can either close the directory to unload it from the app, completely delete it, and you can open another folder to work with.
