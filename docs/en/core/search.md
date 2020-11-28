@@ -4,7 +4,7 @@ One of the huge benefits of switching to Markdown to write documents is, that th
 
 ## Filtering files
 
-The first function has already been mentioned on multiple occasions. As the preview list only displays all files inside a given directory and all of its sub-directories, just select different directories to narrow down the list of all files to the ones you need to see. Or, select a root directory to get the full list.
+The first function has already been mentioned on multiple occasions. As the preview list only displays all files inside a given directory and all of its sub-directories, just select different directories to narrow down the list of all files to the ones you need to see. Or, select a workspace to get the full list.
 
 ## Searching in files
 
@@ -20,9 +20,9 @@ Of course, you can also use the search in Quicklook windows. Therefore, just cli
 
 ## Searching globally
 
-The most important aspect of searching is, in fact, the global search which you can trigger by hitting `Cmd/Ctrl+Shift+F`. The search input in the toolbar will receive focus, letting you search a specific subset of files in your root directory: Only those currently visible in the pane. That means you can choose which files will be searched by selecting an appropriate directory in the list -use the filtering function to your benefit!
+The most important aspect of searching is, in fact, the global search which you can trigger by hitting `Cmd/Ctrl+Shift+F`. The search input in the toolbar will receive focus, letting you search a specific subset of files in your workspace: Only those currently visible in the pane. That means you can choose which files will be searched by selecting an appropriate directory in the list -use the filtering function to your benefit!
 
-If you want to search _all_ files at once, select a root directory. If you only want to search in a specific directory, select that before searching. In most cases you have an idea where the text you need is located. For instance, if you are searching for a quote on a certain issue that can be cited in scientific research you may not want to search through all your thoughts and ideas, but limit your search to the directory where you store your excerpts of scientific texts and papers.
+If you want to search _all_ files at once, select a workspace. If you only want to search in a specific directory, select that before searching. In most cases you have an idea where the text you need is located. For instance, if you are searching for a quote on a certain issue that can be cited in scientific research you may not want to search through all your thoughts and ideas, but limit your search to the directory where you store your excerpts of scientific texts and papers.
 
 The search itself is rather powerful. You can make use of several different operators to specify exactly what you are searching for:
 

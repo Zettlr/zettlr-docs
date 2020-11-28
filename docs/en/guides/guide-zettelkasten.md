@@ -25,7 +25,7 @@ The first thing you want to do to create your Zettelkasten is to have a look at 
 
 ## Step 2: Create a Directory
 
-After you have set up the basic variables that Zettlr uses for its Zettelkasten functionality, it is time to create a directory. It is common to only have one big directory in which you can throw everything and work with this, therefore one root directory should suffice. Then you'll have a huge list of all your files on every application start and can immediately begin to work.
+After you have set up the basic variables that Zettlr uses for its Zettelkasten functionality, it is time to create a directory. It is common to only have one big directory in which you can throw everything and work with this, therefore one workspace should suffice. Then you'll have a huge list of all your files on every application start and can immediately begin to work.
 
 To add a new directory to Zettlr, hit `Cmd/Ctrl+O`, click the first toolbar button or drag the directory from Finder or Explorer onto the app.
 

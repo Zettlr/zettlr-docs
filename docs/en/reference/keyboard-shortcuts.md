@@ -41,7 +41,7 @@ For remembering them easier, here are some thoughts we've put into assigning the
 **If the debug mode is enabled**
 
 * `F5`: Reload the graphical user interface.
-* `Cmd+Alt+I` (macOs) `Ctrl+Shift+I` (Windows/Linux): Open the Chrome developer tools.
+* `Cmd+Alt+I` (macOs) `Ctrl+Alt+I` (Windows/Linux): Open the Chrome developer tools.
 
 ## Textfield related app-wide shortcuts
 

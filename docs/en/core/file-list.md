@@ -41,9 +41,9 @@ Also you can traverse the directory tree by clicking on the directories. A simpl
 
 ## Structural implications
 
-Each time you select a directory in the tree view, the file list will display _all_ files and directories in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the directory list into a one-dimensional list. The list will always change its contents whenever you select a different directory in the tree view.
+Each time you select a workspace or directory in the tree view, the file list will display _all_ files and directories in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the directory list into a one-dimensional list. The list will always change its contents whenever you select a different workspace or directory in the tree view.
 
-> The list only displays _all_ directories and files _within_ the currently selected directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your root, this is a powerful way to only have those files in the list that you actually need.
+> The list only displays _all_ directories and files _within_ the currently selected workspace or directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your workspace, this is a powerful way to only have those files in the list that you actually need.
 
 As the file list flattens your complex directory tree, it has to make some assumptions on how to adequately _display_ the files. Therefore the following rules help you distinguish where the files are actually present on your disk:
 
