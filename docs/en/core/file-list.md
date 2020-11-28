@@ -4,9 +4,9 @@ Next on is the file list. The file list is something very special because it bea
 
 ## General
 
-In the extended sidebar mode, both the tree view and the file list are visible. Using the thin sidebar mode, you can always show or hide the list by pressing `Cmd/Ctrl+!`.
+In the extended file manager mode, both the tree view and the file list are visible. Using the thin file manager mode, you can always show or hide the list by pressing `Cmd/Ctrl+!`.
 
-> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the sidebar modes.
+> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the file manager modes.
 
 The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
 
@@ -37,13 +37,13 @@ If you want to sort directories, you can do this from within the file list. Simp
 ![sorting_indicators.png](../img/sorting_indicators.png)
 
 
-Also you can traverse the directory tree by clicking on the directories. A simple click will select the directory, while an `ALT` click will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.
+Also you can traverse the directory tree by clicking on the directories. A simple click will select the directory, while an `ALT` click will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the file manager and don't want to switch to the tree view repeatedly.
 
 ## Structural implications
 
-Each time you select a directory in the tree view, the file list will display _all_ files and directories in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the directory list into a one-dimensional list. The list will always change its contents whenever you select a different directory in the tree view.
+Each time you select a workspace or directory in the tree view, the file list will display _all_ files and directories in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the directory list into a one-dimensional list. The list will always change its contents whenever you select a different workspace or directory in the tree view.
 
-> The list only displays _all_ directories and files _within_ the currently selected directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your root, this is a powerful way to only have those files in the list that you actually need.
+> The list only displays _all_ directories and files _within_ the currently selected workspace or directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your workspace, this is a powerful way to only have those files in the list that you actually need.
 
 As the file list flattens your complex directory tree, it has to make some assumptions on how to adequately _display_ the files. Therefore the following rules help you distinguish where the files are actually present on your disk:
 

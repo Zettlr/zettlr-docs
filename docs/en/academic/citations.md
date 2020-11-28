@@ -22,7 +22,7 @@ After you've installed BetterBibTex, you may want to play around a little bit wi
 
 The next step is to actually export your library. Zotero's task is to manage your references, but to cite them is another task, which is done by citeproc. And citeproc needs a separate file for that.
 
-To export such a library that both Zettlr and Pandoc's citeproc can use, first select the collection you want to export in the left sidebar. To always have all your items at your disposal and to prevent having to export multiple different libraries, you can select your entire library. (_As a measure: We've run tests with a library containing about 700 items, and we have not experienced any performance issues._)
+To export such a library that both Zettlr and Pandoc's citeproc can use, first select the collection you want to export in the file manager. To always have all your items at your disposal and to prevent having to export multiple different libraries, you can select your entire library. (_As a measure: We've run tests with a library containing about 700 items, and we have not experienced any performance issues._)
 
 ![Export your Library as Better CSL JSON](../img/export-to-csl-json.png)
 
@@ -60,7 +60,7 @@ For more information on how to use citations in line with Pandoc's citeproc engi
 
 ## Checking the references
 
-After you're done citing and want to check that you've cited everything you planned to, you can open the `Attachment Sidebar` (Shortcut: `Ctrl/Cmd+3`). Beneath all files that are in your currently selected directory, Zettlr will display a list of all references it has found in your current file. If something's missing from there, it's probably not been cited in your file.
+After you're done citing and want to check that you've cited everything you planned to, you can open the `Sidebar` (Shortcut: `Ctrl/Cmd+3`). Beneath all files that are in your currently selected directory, Zettlr will display a list of all references it has found in your current file. If something's missing from there, it's probably not been cited in your file.
 
 ![References in the Attachment Pane](../img/attachment-pane-references.png)
 

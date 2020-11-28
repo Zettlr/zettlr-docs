@@ -20,7 +20,7 @@ Everything is always namespaced to the `body`, which has a class `.dark` if the 
 
 Zettlr's styles are subject to constant changes. While they should remain fairly stable, changes can be introduced in any version, and therefore, instead of providing you with ready-made examples, this page covers how you can find the correct selectors easily.
 
-First of all, make sure to enable the debug mode in the advanced [preferences](../reference/settings.md) in order to enable the Develop menu. Next, open the developer tools from within this menu and make sure to select the "Elements" tab.
+First of all, make sure to enable the debug mode in the advanced [preferences](../reference/settings.md) in order to enable the Develop menu. Next, open the developer tools from within this menu, or hit `Ctrl/Cmd+Alt+I`, and make sure to select the "Elements" tab.
 
 ![Zettlr with the developer tools open](../img/zettlr_developer_tools.png)
 

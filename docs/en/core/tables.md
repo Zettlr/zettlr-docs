@@ -1,6 +1,6 @@
 # Tables in Zettlr
 
-Markdown tables are a notoriously difficult thing. Due to the nature of Markdown to be as simple as possible, complexity is what suffers most. Markdown is the perfect choice for writing text and most of what we use during writing (e.g., links, images, headings, or quotes) is handled perfectly in Markdown. Yet, from time to time, we also want to include some data in our works, or tables are simply a better way of visualising ideas.
+Markdown tables are a notoriously difficult thing. Due to the nature of Markdown to be as simple as possible, complexity is what suffers most. Markdown is the perfect choice for writing text and most of what we use during writing (e.g., links, images, headings, or quotes) is handled perfectly in Markdown. Yet, from time to time, we also want to include some data in our works, or tables are simply a better way of visualizing ideas.
 
 ## Introduction to Tables
 

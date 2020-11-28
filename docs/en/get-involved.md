@@ -156,7 +156,7 @@ Now to the real technical stuff: The project's structure! In most respects, the 
 Let's first cover the directory structure (this is a non-exhaustive list; only the folders and files you'll mostly be working on are covered):
 
 ```
-Zettlr                  // The root directory.
+Zettlr                  // The workspace.
 |
 + release               // Will be created when you build the app.
 |
@@ -229,11 +229,11 @@ Used interchangeably to denote folders on a file system. Mostly, Zettlr will try
 
 #### Sidebar
 
-Refers to the left sidebar in the GUI that contains the loaded root directories.
+Refers to the left sidebar in the GUI that contains the loaded workspace.
 
-#### Root (directory/file)
+#### Workspace (directory/file)
 
-This means a top-level directory that is visible in the app. This does _not_ mean a root of your overall file system. Example: While `/home` is a root-level directory on a Linux installation, `/home/user/Zettlr` is a root directory _in the context of Zettlr_, if it is loaded as a root-directory. All directories and files within that directory are not roots, then.
+This means a top-level directory that is visible in the app. A workspace is just a directory loaded at the top level in Zettlr. You can have many workspaces loaded at the top level and each one can have any number of files and folders inside of it.
 
 #### Attachment Sidebar
 
