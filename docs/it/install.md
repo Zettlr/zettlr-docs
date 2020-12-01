@@ -18,7 +18,7 @@ Per installare Zettlr su macOS, è sufficiente scaricare il file dmg dell'ultima
 
 Per disinstallare Zettlr è sufficiente rimuovere Zettlr.app dalla tua cartella Applicazioni. Se desideri rimuovere completamente i dati relativi al programma, rimuovi anche la cartella `/Users/<tuo-nome-utente/Library/Application Support/Zettlr]`.
 
-> Puoi installare Zettlr anche usando [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew cask install zettlr`
+> Puoi installare Zettlr anche usando [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew install --cask zettlr`
 
 ## Linux (Debian 8/Ubuntu 12.04/Fedora 21 o successivi)
 
@@ -34,7 +34,7 @@ Il programma verifica la disponibilità di nuovi aggiornamenti ogni volta che vi
 
 ## Installare Pandoc
 
-Ciò che rende capace Zettlr di interagire con altri software quali Microsoft Word, sistemi Wiki o OpenOffice è un pacchetto software aggiuntivo chiamato `Pandoc`. Pandoc è gratis e Open Source e ti permette di utilizzare tutte le funzionalità di esportazione e importazione di Zettlr, rendendolo la scelta ideale per l'interfaccia con altri programmi e con colleghi che non usano Markdown. 
+Ciò che rende capace Zettlr di interagire con altri software quali Microsoft Word, sistemi Wiki o OpenOffice è un pacchetto software aggiuntivo chiamato `Pandoc`. Pandoc è gratis e Open Source e ti permette di utilizzare tutte le funzionalità di esportazione e importazione di Zettlr, rendendolo la scelta ideale per l'interfaccia con altri programmi e con colleghi che non usano Markdown.
 
 Installare Pandoc è una semplice operazione per tutte le piattaforme.
 
@@ -80,7 +80,7 @@ Per installare Pandoc alla vecchia maniera, basta andare alla [pagina di downloa
 
 ### Linux
 
-Su Linux, installare Pandoc è incredibilmente semplice. Basta usare il tuo gestore di pacchetti per cercare e installare Pandoc. I pacchetti forniti non sono sempre aggiornati, ma dovrebbero andar bene. Se desideri installare la versione più recente, è necessario [scaricare l'installer per Linux](https://github.com/jgm/pandoc/releases/latest) e seguire le [istruzioni di installazione](https://pandoc.org/installing.html) sul sito di Pandoc. 
+Su Linux, installare Pandoc è incredibilmente semplice. Basta usare il tuo gestore di pacchetti per cercare e installare Pandoc. I pacchetti forniti non sono sempre aggiornati, ma dovrebbero andar bene. Se desideri installare la versione più recente, è necessario [scaricare l'installer per Linux](https://github.com/jgm/pandoc/releases/latest) e seguire le [istruzioni di installazione](https://pandoc.org/installing.html) sul sito di Pandoc.
 
 > Potresti dover configurare manualmente `pandoc-citeproc` usando il tuo metodo preferito sul tuo sistema operativo.
 
@@ -96,4 +96,4 @@ Le distribuzioni raccomandate sono:
 - macOS: [MacTex](https://www.tug.org/mactex/morepackages.html) (_attenzione: è sufficiente installare Basic Tex, che occupa molto meno spazio della versione completa!_)
 - Linux: [TeX Live](https://www.tug.org/texlive/) (installare il pacchetto texlive-base: `sudo apt install texlive-base`)
 
-> Puoi installare LaTeX in un secondo momento. Basta usare il menu Aiuto per aprire la pagina di panoramica dove puoi vedere tutte le distribuzioni disponibili. 
+> Puoi installare LaTeX in un secondo momento. Basta usare il menu Aiuto per aprire la pagina di panoramica dove puoi vedere tutte le distribuzioni disponibili.

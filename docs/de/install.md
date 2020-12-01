@@ -20,7 +20,7 @@ Auf macOS installierst du Zettlr, indem du die `.dmg`-Datei öffnest und die App
 
 Um Zettlr zu entfernen, lösche einfach die Zettlr.app aus deinem Programmverzeichnis. Wenn du auch die Einstellungen entfernen willst, lösche das Verzeichnis `/Users/<Dein Benutzername>/Library/Application Support/Zettlr`.
 
-> Hinweis: Du kannst Zettlr auch mittels [Homebrew](https://formulae.brew.sh/cask/zettlr) installieren: `$ brew cask install zettlr`
+> Hinweis: Du kannst Zettlr auch mittels [Homebrew](https://formulae.brew.sh/cask/zettlr) installieren: `$ brew install --cask zettlr`
 
 ## Linux (Debian 8/Ubuntu 12.04/Fedora 21 oder neuer)
 
