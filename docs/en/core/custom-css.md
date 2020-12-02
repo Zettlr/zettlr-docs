@@ -137,7 +137,7 @@ You can change the styling of the active line in Typewriter mode. Replace `top-b
 *Light mode*
 ```
 body #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
-  border-top: 1px solid `<top-border-hex-code>`;
+  border-top: 1px solid <top-border-hex-code>;
   border-bottom: 1px solid <bottom-border-hex-code>;
   background-color: <background-hex-code>;
 }
