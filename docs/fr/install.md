@@ -2,7 +2,6 @@
 
 L'installation de Zettlr est très facile et ne nécessite qu'une étape sur chaque système d'exploitation. Zettlr est multiplateforme, il fonctionnera donc sur votre système, quel qu'il soit. Zettlr est pré-conçu pour les systèmes d'exploitation MacOS, Windows, ainsi que beaucoup de distributions Linux.
 
-
 ## Windows (7 ou plus récents)
 
 Pour installer Zettlr sur Windows, il suffit de télécharger l'application à partir de la [page de téléchargement](https://www.zettlr.com/download) et de double-cliquer pour l'ouvrir. Si vous souhaitez installer Zettlr pour tous les utilisateurs, il est installé dans le répertoire "Program Files" principal – dans ce cas, vous devrez lui donner les droits lors de l'installation (il vous demandera automatiquement votre autorisation). Vous n'avez pas besoin de lui donner de droits plus élevés si vous l'installez uniquement pour un utilisateur.
@@ -17,7 +16,7 @@ Pour installer Zettlr sur macOS, il suffit de télécharger le fichier dmg de la
 
 Pour désinstaller Zettlr, il suffit de supprimer le fichier Zettlr.app de votre répertoire Applications. Si vous souhaitez supprimer complètement toutes les données associées à l'application, supprimez également le répertoire `/Users/<votre-nom-d-utilisateur>/Library/Application Support/Zettlr`.
 
-> Vous pouvez également installer Zettlr en utilisant [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew cask install zettlr`
+> Vous pouvez également installer Zettlr en utilisant [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew install --cask zettlr`
 
 ## Linux (Debian 8/Ubuntu 12.04/Fedora 21 ou plus récents)
 
