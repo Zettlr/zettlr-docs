@@ -135,7 +135,8 @@ If you wish to have shorter lines in the editor, with margins on both sides, you
 You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
 
 *Light mode*
-```
+
+```css
 body #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
   border-top: 1px solid <top-border-hex-code>;
   border-bottom: 1px solid <bottom-border-hex-code>;
@@ -144,7 +145,8 @@ body #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body
 ```
 
 *Dark mode*
-```
+
+```css
 body.dark #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body.dark .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body.dark .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
   border-top: 1px solid <top-border-hex-code>;
   border-bottom: 1px solid <bottom-border-hex-code>;
