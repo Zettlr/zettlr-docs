@@ -31,7 +31,7 @@ Today, several implementations of the Markdown syntax coexist. The most notewort
 - **MultiMarkdown**: Extends the initial syntax with footnotes, tables and some metadata.
 - **Markdown Extra**: Again some additions to the initial syntax.
 - **GitHub Flavoured Markdown**: This is a variety of Markdown invented by the hosting platform GitHub (which Zettlr is also hosted on!) and is today one of the most common dialects.
-- **CommonMark**: Tries to implement all possible elements, while being unambiguous. Notably, CommonMark does not yet includes a specification for footnotes.
+- **CommonMark**: Tries to implement all possible elements, while being unambiguous. Notably, CommonMark does not yet include a specification for footnotes.
 
 ## Zettlr and Markdown
 
