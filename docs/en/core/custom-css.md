@@ -106,7 +106,9 @@ Some people prefer the distraction free mode to be _really_ distraction-free. Ze
 Simply paste the following line of CSS into the Custom CSS dialog, and from then on the toolbar will always be hidden:
 
 ```css
-#editor.fullscreen, .CodeMirror-fullscreen { top: 0px; }
+body.show-menubar #editor.fullscreen, #editor.fullscreen, .CodeMirror-fullscreen {
+  top: 0px;
+}
 ```
 
 ### Set a maximum width for the text
