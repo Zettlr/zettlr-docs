@@ -86,6 +86,17 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 
 ![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash.png)
 
+### Local Background Images
+
+In order to use a local image as a background image, you can use the CSS code above and replace the
+```css
+background-image: url('https://source.unsplash.com/random');
+```
+by
+```css
+background-image: url('file:////absolute/path/to/your/file.jpg');
+```
+
 ### Visualising Line Endings
 
 In case you want to see where your linefeeds are, you can display the pilcrow symbol (¶) at the end of your lines by using the following Custom CSS:
