@@ -56,9 +56,11 @@ body #editor .CodeMirror {
 }
 ```
 
-### Random Unsplash Background Images
+### Custom Background Images
 
 With the following code, you can make your editor have a different background image everytime you start it. The images are taken from Unsplash.com, a nice site with free photos. It uses the `Source API`, which will simply spit out a different image every time the URL is visited. You can test it out by simply [visiting the page and refreshing a few times](https://source.unsplash.com/random)! Please refer to the [Unsplash Source API reference](https://source.unsplash.com/) for more options (such as using an image of the day).
+
+> You can also use a local image as a background image by replacing the corresponding line by `background-image: url('file:////absolute/path/to/your/file.jpg');`
 
 ```css
 /* Enter your custom CSS here */
@@ -85,17 +87,6 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 ```
 
 ![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash.png)
-
-### Local Background Images
-
-In order to use a local image as a background image, you can use the CSS code above and replace the
-```css
-background-image: url('https://source.unsplash.com/random');
-```
-by
-```css
-background-image: url('file:////absolute/path/to/your/file.jpg');
-```
 
 ### Visualising Line Endings
 

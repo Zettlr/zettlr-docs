@@ -61,6 +61,8 @@ body #editor .CodeMirror {
 
 Avec le code suivant, vous pouvez faire en sorte que votre éditeur ait une image d'arrière-plan différente chaque fois que vous le démarrez. Les images sont tirées de Unsplash.com, un joli site avec des photos gratuites. Il utilise la `Source API`, qui crachera simplement une image différente à chaque fois que l'URL est visitée. Vous pouvez le tester simplement [en visitant la page et en la rafraîchissant plusieurs fois](https://source.unsplash.com/random)! Veuillez vous référer à la [Unsplash Source API reference](https://source.unsplash.com/) pour plus d'options (comme l'utilisation d'une image du jour).
 
+> Vous pouvez aussi utiliser une image de fond locale en remplaçant la ligne correspondante par `background-image: url('file:////chemin/absolu/vers/mon/image.jpg');`
+
 ```css
 /* Enter your custom CSS here */
 
@@ -86,17 +88,6 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 ```
 
 ![Un aperçu d'une installation Zettlr utilisant l'extrait de code ci-dessus](../img/custom_css_unsplash.png)
-
-### Image de fond locale
-
-Afin d'utiliser une image de fond locale, vous pouvez utiliser le code CSS ci-dessus et remplacer
-```css
-background-image: url('https://source.unsplash.com/random');
-```
-par
-```css
-background-image: url('file:////chemin/absolu/vers/mon/image.jpg');
-```
 
 ### Visualisation des fins de ligne
 
