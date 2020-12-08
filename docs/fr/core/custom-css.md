@@ -87,6 +87,17 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 
 ![Un aperçu d'une installation Zettlr utilisant l'extrait de code ci-dessus](../img/custom_css_unsplash.png)
 
+### Image de fond locale
+
+Afin d'utiliser une image de fond locale, vous pouvez utiliser le code CSS ci-dessus et remplacer
+```css
+background-image: url('https://source.unsplash.com/random');
+```
+par
+```css
+background-image: url('file:////chemin/absolu/vers/mon/image.jpg');
+```
+
 ### Visualisation des fins de ligne
 
 Si vous souhaitez voir où se trouvent vos sauts de ligne, vous pouvez afficher le symbole ¶ à la fin de vos lignes en utilisant le CSS personnalisé suivant:
