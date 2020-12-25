@@ -35,3 +35,28 @@ Si vous n'utilisez ni une distribution Linux basée sur Debian ni sur Fedora, vo
 L'application recherche de nouvelles mises à jour chaque fois que vous démarrez l'application. Vous pouvez également déclencher manuellement la recherche de mises à jour en utilisant l'élément de menu correspondant dans le menu Aide. Si une nouvelle version est disponible, Zettlr vous montrera une boîte de dialogue contenant le numéro de la nouvelle version, votre version actuelle et un journal des modifications avec toutes les fonctionnalités et corrections de bogues contenues dans la nouvelle version. Vous pouvez ensuite ouvrir la page de téléchargement pour télécharger le nouveau package. Installez-le simplement sur votre installation actuelle, il s'occupera d'abord de supprimer l'ancienne version. Toutes les données seront conservées et migrées vers la nouvelle version.
 
 > Si vous êtes intéressé par les versions de beta, assurez-vous de cocher la case "M'avertir des versions bêta" dans l'onglet Avancé de la boîte de dialogue des préférences!
+
+## Réinitialiser l'application 
+
+Zettlr gère les préférences utilisateur et les métadonnées locales (mots-clefs définis par l'utilisateur, emplacement du répertoire racine, paramètres, etc.)  
+Dans certains cas, vous pouvez vouloir réinitialiser, lire ou modifier ces données (par exemple, lors une installation défectueuse ou d'une erreur dans la sélection du chemin de base, ...)
+
+Ces données sont situées dans le _chemin de données de l'application_, dont l'emplacement dépend de votre système d'exploitation :
+
+* **Windows:** `C:\Users\<your username>\AppData\Roaming\zettlr`
+* **macOS:** `/Users/<your username>/Library/Application Support/zettlr` (ouvrir une fenêtre du Finder, maintenir la touche "Alt" enfoncée tout en ouvrant le menu "Aller", et cliquer sur l'entrée "Bibliothèque" qui apparaît)
+* **Linux:** `/home/<your username>/.config/zettlr`
+
+Si vous souhaitez complètement réinitialiser votre installation locale de Zettlr, suivez les étapes suivantes :
+
+1. Assurez-vous d'abord que l'application est fermée (dans certains cas d'erreur, il peut y avoir un processus "zombie", que vous pourrez fermer depuis votre gestionnaire de tâches ou votre moniteur d'activité)
+2. Veillez à faire une sauvegarde facultative de ces fichiers :
+    * `stats.json` (vos statistiques d'écriture)
+    * `config.json` (les paramètres de l'application - y compris l'emplacement de votre répertoire base/racine)
+    * `custom.css` (votre CSS personnalisé, le cas échéant)
+    * `tags.json` (vos étiquettes/mots-clefs et codes couleurs)
+    * `targets.json` (vos objectifs d'écriture)
+    * `user.dic` (votre propre dictionnaire personnalisé)
+3. Sélectionnez tout ce qui se trouve dans ce répertoire et supprimez-le.
+4. Redémarrez l'application. Certains des fichiers ci-dessus seront recréés.
+
