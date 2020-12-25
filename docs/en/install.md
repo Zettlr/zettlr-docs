@@ -35,3 +35,30 @@ In case you use neither a Debian nor Fedora based Linux distribution, you can al
 The application checks for new updates each time you start the app. You can also manually trigger the search for updates by using the respective menu item from the Help menu. If a new version is available, Zettlr will show you a dialog that contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains. You can then open the download page to download the new package. Simply install it over your current installation, it will take care of removing the old version first. All data will be retained and migrated to the new version.
 
 > If you are interested in cutting-edge releases, make sure to tick the checkbox "Notify me about beta releases" in the Advanced tab of the preferences dialog!
+
+
+## Resetting the app 
+
+Zettlr maintains local settings and metadata (user-defined tags, base/root directory location, settings, etc.).  
+You may want to reset, read or modify these datas, in particular cases (e.g. broken install, mistake in base path selection, ...)
+
+This data is located in the _application data path_ whose location depends on your Operating System:
+
+* **Windows:** `C:\Users\<your username>\AppData\Roaming\zettlr`
+* **macOS:** `/Users/<your username>/Library/Application Support/zettlr` (open a Finder window, hold down "Alt" while opening the "Go"-menu, and click on the appearing "Library" entry)
+* **Linux:** `/home/<your username>/.config/zettlr`
+
+If you want to completely reset your local Zettlr installation, follow these steps:
+
+1. First ensure that the application is closed (in some error cases, there is a "zombie" process, which you can close from within your Task Manager or Activity Monitor)
+2. Make sure to optionally backup these files:
+    * `stats.json` (your writing statistics)
+    * `config.json` (the app settings — including the location of your base/root directory)
+    * `custom.css` (your custom CSS, if any)
+    * `tags.json` (your colour-coded tags)
+    * `targets.json` (your writing targets)
+    * `user.dic` (your own custom dictionary)
+3. Select everything in this directory and delete it.
+4. Restart the application. Some of these files will be re-created.
+
+
