@@ -40,9 +40,9 @@ The application checks for new updates each time you start the app. You can also
 ## Resetting the app 
 
 Zettlr maintains local settings and metadata (user-defined tags, base/root directory location, settings, etc.).  
-You may want to reset, read or modify those datas, in particular cases (e.g. broken install, mistake in base path selection, ...)
+You may want to reset, read or modify these datas, in particular cases (e.g. broken install, mistake in base path selection, ...)
 
-This data is located in in the _application data path_ whose location depends on your Operating System:
+This data is located in the _application data path_ whose location depends on your Operating System:
 
 * **Windows:** `C:\Users\<your username>\AppData\Roaming\zettlr`
 * **macOS:** `/Users/<your username>/Library/Application Support/zettlr` (open a Finder window, hold down "Alt" while opening the "Go"-menu, and click on the appearing "Library" entry)
