@@ -39,8 +39,8 @@ The application checks for new updates each time you start the app. You can also
 
 ## Resetting the app 
 
-Zettlr maintains local settings and metadata (user-defined tags, base/root directory location, settings, etc.).  
-You may want to reset, read or modify these datas, in particular cases (e.g. broken install, mistake in base path selection, ...)
+Zettlr maintains local settings and metadata (user-defined tags, workspace location, settings, etc.).  
+You may want to reset, read or modify this data in particular cases (e.g. broken install, mistake in workspace path, etc.).
 
 This data is located in the _application data path_ whose location depends on your Operating System:
 
@@ -53,7 +53,7 @@ If you want to completely reset your local Zettlr installation, follow these ste
 1. First ensure that the application is closed (in some error cases, there is a "zombie" process, which you can close from within your Task Manager or Activity Monitor)
 2. Make sure to optionally backup these files:
     * `stats.json` (your writing statistics)
-    * `config.json` (the app settings — including the location of your base/root directory)
+    * `config.json` (the app settings — including the location of your workspaces and open files)
     * `custom.css` (your custom CSS, if any)
     * `tags.json` (your colour-coded tags)
     * `targets.json` (your writing targets)
