@@ -2,7 +2,7 @@
 
 Pandoc és un petit programa que pot convertir fitxers de documents d’un format a un altre. És extremadament potent i té moltes opcions. Per tal de permetre a Zettlr importar i exportar fitxers, cal instal·lar Pandoc al vostre ordinador. Zettlr no té la capacitat d'importar o exportar per si mateix. El motiu d'això és que Pandoc fa aquesta feina molt bé, també és gratuït i de codi obert i està disponible a totes les plataformes que admet Zettlr.
 
-> Zettlr requereix Pandoc versió 2.0 o superior. Alguns dipòsits de Linux encara tenen versions anteriors disponibles. Si aquest és el vostre cas, instal·leu Pandoc des de la [pàgina de descàrrega](https://github.com/jgm/pandoc/releases/latest).
+> Zettlr requereix Pandoc versió 2.0 o superior. Alguns dipòsits de GNU / Linux encara tenen versions anteriors disponibles. Si aquest és el vostre cas, instal·leu Pandoc des de la [pàgina de descàrrega](https://github.com/jgm/pandoc/releases/latest).
 
 ## Windows
 
@@ -44,8 +44,8 @@ $ brew install pandoc-citeproc
 
 Per instal·lar Pandoc de la manera clàssica, aneu a la [pàgina de descàrrega](https://github.com/jgm/pandoc/releases/latest) i obteniu l'instal·lador de macOS. Un cop fet això, Pandoc hauria d’estar disponible al vostre sistema. Recordeu que, instal·lant Pandoc d’aquesta manera, heu de comprovar si hi ha actualitzacions manualment.
 
-## Linux
+## GNU / Linux
 
-A Linux, instal·lar Pandoc és molt senzill. Utilitzeu el gestor de paquets per cercar i instal·lar el Pandoc. Els paquets proporcionats no sempre estan actualitzats, però haurien d’adaptar-se. Si voleu instal·lar la versió més recent, haureu de [descarregar l’instal·lador de Linux](https://github.com/jgm/pandoc/releases/latest) i seguir les [instruccions d’instal·lació](https://pandoc.org/installation.html) de la pàgina web de Pandoc.
+A GNU / Linux, instal·lar Pandoc és molt senzill. Utilitzeu el gestor de paquets per cercar i instal·lar el Pandoc. Els paquets proporcionats no sempre estan actualitzats, però haurien d’adaptar-se. Si voleu instal·lar la versió més recent, haureu de [descarregar l’instal·lador de GNU / Linux](https://github.com/jgm/pandoc/releases/latest) i seguir les [instruccions d’instal·lació](https://pandoc.org/installation.html) de la pàgina web de Pandoc.
 
 > És possible que hàgiu de configurar `pandoc-citeproc` manualment, instal·lant-lo mitjançant el mètode preferit del vostre sistema operatiu.

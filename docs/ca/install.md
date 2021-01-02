@@ -1,6 +1,6 @@
 # Instal·lació
 
-La instal·lació de Zettlr és molt senzilla i només necessita un pas en tots els sistemes operatius. Zettlr és multiplataforma, de manera que s’executarà a la majoria d’ordinadors. Zettlr ve pre-construït per a macOS, Windows i molts sistemes Linux.
+La instal·lació de Zettlr és molt senzilla i només necessita un pas en tots els sistemes operatius. Zettlr és multiplataforma, de manera que s’executarà a la majoria d’ordinadors. Zettlr ve pre-construït per a macOS, Windows i molts sistemes GNU / Linux.
 
 ## Windows (7 o versions posteriors)
 
@@ -18,9 +18,9 @@ Per desinstal·lar Zettlr, només cal eliminar Zettlr.app del directori d'aplica
 
 > També podeu instal·lar Zettlr amb [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew install --cask zettlr`
 
-## Linux (Debian 8 / Ubuntu 12.04 / Fedora 21 o posterior)
+## GNU / Linux (Debian 8 / Ubuntu 12.04 / Fedora 21 o posterior)
 
-Hi ha paquets predefinits `deb` i `rpm` per a sistemes Linux. Simplement instal·leu el paquet al vostre sistema.
+Hi ha paquets predefinits `deb` i `rpm` per a sistemes GNU / Linux. Simplement instal·leu el paquet al vostre sistema.
 
 Per desinstal·lar-lo, seguiu els passos habituals que es necessiten per eliminar un paquet (normalment a través de l'aplicació de l'instal·lador gràfic o mitjançant `dpkg`). Si també voleu eliminar totes les dades associades a l'aplicació, també suprimiu el directori `/home/<el-vostre-nom-d'usuari>/.config/Zettlr`.
 
@@ -28,7 +28,7 @@ Per desinstal·lar-lo, seguiu els passos habituals que es necessiten per elimina
 
 ## AppImages
 
-Si no utilitzeu una distribució Linux basada en Debian ni Fedora, sempre podeu instal·lar els fitxers AppImage. Si us plau, [consulteu la seva guia sobre com instal·lar-los](https://appimage.org/). AppImages es proporcionen tant per a sistemes de 32 bits com de 64 bits.
+Si no utilitzeu una distribució GNU / Linux basada en Debian ni Fedora, sempre podeu instal·lar els fitxers AppImage. Si us plau, [consulteu la seva guia sobre com instal·lar-los](https://appimage.org/). AppImages es proporcionen tant per a sistemes de 32 bits com de 64 bits.
 
 ## Actualització de l'aplicació
 
@@ -46,7 +46,7 @@ Aquestes dades es troben a la _ruta d'accés de dades d'aplicació_, la ubicaci�
 
 * ** Windows: ** `C:\Users\<el-vostre-nom-d'usuari>\AppData\Roaming\zettlr`
 * ** macOS: ** `/Users/<el-vostre-nom-d'usuari>/Library/ Application Support/zettlr` (obriu una finestra del Finder, manteniu premuda la tecla "Alt" mentre obriu el menú "Go" i feu clic a "Library")
-* ** Linux: ** `/home/<el-vostre-nom-d'usuari>/.config/zettlr`
+* ** GNU / Linux: ** `/home/<el-vostre-nom-d'usuari>/.config/zettlr`
 
 Si voleu restablir completament la instal·lació local de Zettlr, seguiu aquests passos:
 

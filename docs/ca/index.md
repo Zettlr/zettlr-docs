@@ -1,6 +1,6 @@
 # Benvinguda
 
-Aquesta és la documentació oficial de l’editor de Markdown. Aquesta documentació descriu les funcions que ofereix per escriure texts i organitzar els vostres fitxers, així com personalitzar la vostra experiència. Si encara no heu rebut cap còpia de Zettlr, podeu fer-ho ara anant a [la nostra pàgina de descàrrega](https://www.zettlr.com/download). Zettlr és actualment compatible amb Windows (7 o versions posteriors), macOS (10.10 o versions posteriors) i diverses distribucions de Linux. Consulteu les [instruccions d'instal·lació](install.md) per obtenir instruccions específiques de la plataforma sobre com instal·lar l'aplicació al vostre ordinador.
+Aquesta és la documentació oficial de l’editor de Markdown. Aquesta documentació descriu les funcions que ofereix per escriure texts i organitzar els vostres fitxers, així com personalitzar la vostra experiència. Si encara no heu rebut cap còpia de Zettlr, podeu fer-ho ara anant a [la nostra pàgina de descàrrega](https://www.zettlr.com/download). Zettlr és actualment compatible amb Windows (7 o versions posteriors), macOS (10.10 o versions posteriors) i diverses distribucions de GNU / Linux. Consulteu les [instruccions d'instal·lació](install.md) per obtenir instruccions específiques de la plataforma sobre com instal·lar l'aplicació al vostre ordinador.
 
 ## Sobre aquesta documentació
 
