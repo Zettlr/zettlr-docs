@@ -1,61 +1,61 @@
 site_name: Zettlr Docs
-site_url: https://docs.zettlr.com/en
+site_url: https://docs.zettlr.com/ca
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: >-
     Our comprehensive documentation provides you with everything you need to
     know about how to make the most of Zettlr.
 site_author: Hendrik Erz
 copyright: "&copy; 2017-2020 by Zettlr"
-docs_dir: ../docs/en
-site_dir: ../build/en
-edit_uri: edit/master/docs/en
+docs_dir: ../docs/ca
+site_dir: ../build/ca
+edit_uri: edit/master/docs/ca
 extra_css:
   - assets/app.css
 nav:
-  - Welcome: index.md
-  - First Steps:
-    - Setup: install.md
-    - Installing Pandoc: installing-pandoc.md
-    - Installing LaTeX: installing-latex.md
-    - Getting Started: get-started.md
-    - Get involved: get-involved.md
-    - FAQ: faq.md
-  - Concepts:
-    - File management: concepts/roots.md
-    - Context: concepts/context.md
-    - WYSIWYM: concepts/wysiwym.md
-  - Guides:
-    - Zettlr as a note taking app: guides/guide-notes.md
-    - Zettlr as a Zettelkasten: guides/guide-zettelkasten.md
-    - Zettlr as an IDE: guides/guide-ide.md
-  - Core:
-    - The Editor: core/editor.md
-    - Document Tabs: core/tabs.md
-    - The File List: core/file-list.md
-    - AutoCorrect and MagicQuotes: core/autocorrect.md
-    - Searching: core/search.md
-    - Importing: core/import.md
-    - Exporting: core/export.md
-    - Table Editor: core/tables.md
-    - Custom CSS: core/custom-css.md
-    - Localisation: core/localisation.md
-    - Sidebar: core/attachments.md
-    - YAML Frontmatter: core/yaml-frontmatter.md
-    - Print and Preview: core/print-preview.md
-    - Math: core/math.md
-  - Academic Tools:
-    - Citations: academic/citations.md
-    - Projects: academic/projects.md
-    - Presentations: academic/presentations.md
-    - Pomodoro Timer: academic/pomodoro.md
-    - Readability: academic/readability.md
-    - Zettelkasten Methods: academic/zkn-method.md
-    - Custom Templates: academic/custom-templates.md
-  - References:
-    - Keyboard Shortcuts: reference/keyboard-shortcuts.md
-    - Markdown Basics: reference/markdown-basics.md
-    - Settings: reference/settings.md
-    - Spell Checking: reference/spell-checking.md
+  - Benvingut: index.md
+  - Primeres passes:
+    - Instal·lació: install.md
+    #- Installing Pandoc: installing-pandoc.md
+    #- Installing LaTeX: installing-latex.md
+    #- Getting Started: get-started.md
+    #- Get involved: get-involved.md
+    #- FAQ: faq.md
+  #- Concepts:
+  #  - File management: concepts/roots.md
+  #  - Context: concepts/context.md
+  #  - WYSIWYM: concepts/wysiwym.md
+  #- Guides:
+  #  - Zettlr as a note taking app: guides/guide-notes.md
+  #  - Zettlr as a Zettelkasten: guides/guide-zettelkasten.md
+  #  - Zettlr as an IDE: guides/guide-ide.md
+  #- Core:
+  #  - The Editor: core/editor.md
+  #  - Document Tabs: core/tabs.md
+  #  - The File List: core/file-list.md
+  #  - AutoCorrect and MagicQuotes: core/autocorrect.md
+  #  - Searching: core/search.md
+  #  - Importing: core/import.md
+  #  - Exporting: core/export.md
+  #  - Table Editor: core/tables.md
+  #  - Custom CSS: core/custom-css.md
+  # - Localisation: core/localisation.md
+  #  - Sidebar: core/attachments.md
+  #  - YAML Frontmatter: core/yaml-frontmatter.md
+  #  - Print and Preview: core/print-preview.md
+  #  - Math: core/math.md
+  #- Academic Tools:
+  #  - Citations: academic/citations.md
+  #  - Projects: academic/projects.md
+  # - Presentations: academic/presentations.md
+  #  - Pomodoro Timer: academic/pomodoro.md
+  #  - Readability: academic/readability.md
+  #  - Zettelkasten Methods: academic/zkn-method.md
+  #  - Custom Templates: academic/custom-templates.md
+  #- References:
+  #  - Keyboard Shortcuts: reference/keyboard-shortcuts.md
+  #  - Markdown Basics: reference/markdown-basics.md
+  #  - Settings: reference/settings.md
+  #  - Spell Checking: reference/spell-checking.md
 theme:
   name: readthedocs
   custom_dir: ../theme_override
