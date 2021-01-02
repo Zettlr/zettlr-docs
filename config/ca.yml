@@ -12,7 +12,7 @@ edit_uri: edit/master/docs/ca
 extra_css:
   - assets/app.css
 nav:
-  - Benvingut: index.md
+  - Benvinguda: index.md
   - Primeres passes:
     - Instal·lació: install.md
     #- Installing Pandoc: installing-pandoc.md
