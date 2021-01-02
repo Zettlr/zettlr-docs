@@ -2,8 +2,7 @@ site_name: Zettlr Docs
 site_url: https://docs.zettlr.com/ca
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: >-
-    Our comprehensive documentation provides you with everything you need to
-    know about how to make the most of Zettlr.
+    La nostra àmplia documentació ofereix tot el que necessiteu saber sobre com aprofitar al màxim Zettlr
 site_author: Hendrik Erz
 copyright: "&copy; 2017-2020 by Zettlr"
 docs_dir: ../docs/ca
@@ -17,7 +16,7 @@ nav:
     - Instal·lació: install.md
     - Instal·lar el Pandoc: installing-pandoc.md
     - Instal·lar LaTeX: installing-latex.md
-    #- Getting Started: get-started.md
+    - Per començar: get-started.md
     #- Get involved: get-involved.md
     #- FAQ: faq.md
   #- Concepts:
