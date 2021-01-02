@@ -15,7 +15,7 @@ nav:
   - Benvinguda: index.md
   - Primeres passes:
     - Instal·lació: install.md
-    #- Installing Pandoc: installing-pandoc.md
+    - Instal·lar el Pandoc: installing-pandoc.md
     #- Installing LaTeX: installing-latex.md
     #- Getting Started: get-started.md
     #- Get involved: get-involved.md

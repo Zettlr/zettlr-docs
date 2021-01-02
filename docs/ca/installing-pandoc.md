@@ -4,7 +4,7 @@ Pandoc és un petit programa que pot convertir fitxers de documents d’un forma
 
 > Zettlr requereix Pandoc versió 2.0 o superior. Alguns dipòsits de Linux encara tenen versions anteriors disponibles. Si aquest és el vostre cas, instal·leu Pandoc des de la [pàgina de descàrrega](https://github.com/jgm/pandoc/releases/latest).
 
-## Finestres
+## Windows
 
 A Windows, Pandoc es pot instal·lar visitant la [pàgina de descàrrega](https://github.com/jgm/pandoc/releases/latest) i recuperant l'instal·lador de Windows. Es pot instal·lar com qualsevol altre programa i hauria de ser reconegut immediatament i automàtica per Zettlr. Podeu provar si funciona intentant exportar o importar alguna cosa.
 
