@@ -17,8 +17,8 @@ nav:
     - Instal·lar el Pandoc: installing-pandoc.md
     - Instal·lar LaTeX: installing-latex.md
     - Per començar: get-started.md
-    #- Get involved: get-involved.md
-    #- FAQ: faq.md
+    - Get involved: get-involved.md
+    - Preguntes Més Freqüents (FAQ): faq.md
   #- Concepts:
   #  - File management: concepts/roots.md
   #  - Context: concepts/context.md
