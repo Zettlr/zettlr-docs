@@ -12,11 +12,13 @@ extra_css:
   - assets/app.css
 nav:
   - Benvinguda: index.md
-  - Primeres passes:
+  - Instal·lació:
     - Instal·lació: install.md
     - Instal·lar el Pandoc: installing-pandoc.md
     - Instal·lar LaTeX: installing-latex.md
+  - Per començar:
     - Per començar: get-started.md
+    - Zettlr en 5 minuts: 5-minutes.md
     - Get involved: get-involved.md
     - Preguntes Més Freqüents (FAQ): faq.md
   #- Concepts:
