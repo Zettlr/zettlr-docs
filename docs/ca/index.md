@@ -1,12 +1,17 @@
 # Benvinguda
 
-Aquesta és la documentació oficial de l’editor de Markdown. Aquesta documentació descriu les funcions que ofereix per escriure texts i organitzar els vostres fitxers, així com personalitzar la vostra experiència. Si encara no heu rebut cap còpia de Zettlr, podeu fer-ho ara anant a [la nostra pàgina de descàrrega](https://www.zettlr.com/download). Zettlr és actualment compatible amb Windows (7 o versions posteriors), macOS (10.10 o versions posteriors) i diverses distribucions de GNU / Linux. Consulteu les [instruccions d'instal·lació](install.md) per obtenir instruccions específiques de la plataforma sobre com instal·lar l'aplicació al vostre ordinador.
+> Aquesta traducció encara està en desenvolupament i només hem traduït una part. Paciència, tot arribarà! Mentres no haguem acabat, podeu:  
+  - consultar la documentació en [altres idiomes](https://docs.zettlr.com/).  
+  - ajudar-nos amb la traducció, per exemple deixant una incidència al [GitHub](https://github.com/Zettlr/zettlr-docs)
+
+Aquesta és la traducció al català de la documentació oficial de l’editor de Markdown. Aquesta documentació descriu les funcions que ofereix per escriure texts i organitzar els vostres fitxers, així com personalitzar la vostra experiència. Si encara no heu rebut cap còpia de Zettlr, podeu fer-ho ara anant a [la nostra pàgina de descàrrega](https://www.zettlr.com/download). Zettlr és actualment compatible amb Windows (7 o versions posteriors), macOS (10.10 o versions posteriors) i diverses distribucions de GNU / Linux. Consulteu les [instruccions d'instal·lació](install.md) per obtenir instruccions específiques de la plataforma sobre com instal·lar l'aplicació al vostre ordinador.
 
 ## Sobre aquesta documentació
 
 Aquesta documentació s’estructura tenint en compte l’extens conjunt de funcions i públic potencial de Zettlr. Hem ordenat totes les funcions disponibles en algunes categories centrals. Si sabeu exactament què esteu buscant, la barra de cerca de la part superior dreta és el punt de partida adequat per a vosaltres; en cas contrari, seguiu les descripcions següents:
 
-- La secció **Primeres passes** conté instruccions sobre com configurar tot el necessari per començar a treballar amb Zettlr. També proporciona una breu guia d'inici per si voleu veure què ofereix l'aplicació.
+- A **Instal·lació** us ajudem a instal·lar el Zettlr i els comlpements LaTeX i Pandoc
+- A **Per començar** trobareu guies generals i les preguntes més freqüents per començar a treballar a Zettlr sense donar-hi masses voltes, a més d'una guia per participar en la traducció o el desenvolupament del programa.
 - La secció **conceptes** us familiaritza amb alguns conceptes que constitueixen la base del funcionament de Zettlr. Es recomana llegir detingudament aquests documents.
 - Les **guies** contenen algunes guies per configurar ràpidament Zettlr per a diferents usos, que es descriuen àmpliament. Probablement haureu de modificar els paràmetres perquè coincideixin amb el vostre propi flux de treball, però també són excel·lents punts de partida per acpnseguir que Zettlr s'adapti a vosaltres.
 - El **Nucli** descriu el conjunt de funcions centrals d'escriptura i gestió de fitxers de Zettlr: què pot fer, com ho pot fer i on es pot personalitzar.
