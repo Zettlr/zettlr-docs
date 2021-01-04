@@ -21,8 +21,8 @@ nav:
     - Zettlr en 5 minuts: 5-minutes.md
     - Participeu: get-involved.md
     - Preguntes Més Freqüents (FAQ): faq.md
-  #- Concepts:
-  #  - File management: concepts/roots.md
+  - Conceptes:
+    - Gestió de fitxers: concepts/roots.md
   #  - Context: concepts/context.md
   #  - WYSIWYM: concepts/wysiwym.md
   #- Guides:
