@@ -12,7 +12,7 @@ Zettlr es basa en carpetes. Això significa que sempre treballeu en un directori
 
 Després d'obrir un (o més) directoris a l'aplicació, podeu crear fitxers o carpetes addicionals. Amb `Cmd/Ctrl + N` creeu un fitxer nou, amb` Cmd/Ctrl + Maj + N` podeu crear una carpeta nova, tot a la carpeta que tingueu seleccionada.
 
-![create.png](img/create.png)
+![create_tex_file.png](img/create_tex_file.png)
 
 > No només podeu crear fitxers Markdown. Si deixeu de banda l'extensió de fitxer, Zettlr sempre crea un fitxer Markdown, però Zettlr també permet els fitxers `.txt` i `.tex` si especifiqueu explícitament l'extensió de fitxer.
 
