@@ -25,7 +25,7 @@ Donem la benvinguda a qualsevol ajuda per traduir l'aplicació a tots els idiome
 
 Traduir és senzill. Simplement feu clic a qualsevol idioma de la pàgina principal per veure la llista de tots els identificadors i totes les traduccions existents:
 
-![Tecles de traducció](img/Translations_list.png)
+![Tecles de traducció](img/translations_list.png)
 
 A la part esquerra veureu tots els identificadors de traducció. La majoria s’expliquen per ells mateixos. Si no sabeu per on començar, només cal que mireu la traducció a l’anglès i l’aplicació. A continuació, sabreu quins identificadors de traducció es correspondran amb quins elements.
 
@@ -219,7 +219,7 @@ Zettlr                  // La carpeta arrel.
 + CHANGELOG.md          // Conté una llista detallada de tots els canvis.
 ```
 
-### Diccionari
+## Diccionari
 
 Un mòdul no sempre és necessàriament un mòdul, però els directoris i les carpetes poden significar el mateix. A causa de les ambigüitats semàntiques, vam decidir incloure aquesta secció de glossari perquè els termes que sovint s'utilitzen a l’ecosistema de Zettlr s’entenguin bé. _Nota: hem afegit en cursiva el terme en anglès_
 
