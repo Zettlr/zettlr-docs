@@ -1,6 +1,6 @@
 # Settings
 
-Zettlr offers you a plethora of options to customise your experience with the app. It comes with three different setting dialogs that will be explained in detail here, so you know which option does what.
+Zettlr offers you a plethora of options to customise your experience with the app. It comes with three different settings dialogs that will be explained in detail here, so you know which option does what.
 
 ## General Preferences
 

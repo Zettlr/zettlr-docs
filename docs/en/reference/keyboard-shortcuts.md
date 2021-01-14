@@ -30,6 +30,7 @@ For remembering them easier, here are some thoughts we've put into assigning the
 * `Cmd/Ctrl+Shift+T`: Gives focus to the tree window.
 * `Cmd/Ctrl+Alt+L`: Switches the theme between light and dark mode.
 * `Cmd/Ctrl+Alt+S`: Toggles display of file information in the File List.
+* `Cmd/Ctrl+Alt+T`: Toggles "Typewriter Mode" to keep the current current line in the editor always centered so that you have to move your eyes less while editing a text. This also works in combination with the distraction free mode so that you can fully focus on what you're editing right at the moment.
 * `Cmd/Ctrl+Shift+1`: Toggles the File Manager mode to either view the file list or the tree view. Disabled in extended File Manager mode.
 * `Cmd/Ctrl+Shift+L`: Copy the ID of the current file.
 * `Cmd/Ctrl+?`: Toggles display of the sidebar.
