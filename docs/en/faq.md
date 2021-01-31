@@ -2,11 +2,18 @@
 
 ## I tried to install Zettlr on Windows, but there's a security warning saying I shouldn't install the app!
 
-Both Windows and macOS require so-called "code-signing" in order to be able to trust the application. While this is a great technique of keeping malicious code from harming your system, it requires a code signing certificate. Zettlr's binaries are currently code-signed on macOS and Windows, but we are currently in the process of gaining enough installations on Windows in order to receive enough "trust" so that both Windows Defender and optional AntiVir software allow the installation without any warnings. Until then, many AntiVir software packages will at least issue a warning, reading "We do not have sufficient information on the origins of this file" (or similar). In case you downloaded Zettlr either [from our homepage](https://www.zettlr.com/download) or from the [GitHub releases page](https://github.com/Zettlr/Zettlr/releases) (both are the same files, as the Zettlr homepage redirects you to the corresponding GitHub release) you can safely install the application and dismiss the warning.
+Zettlr uses code signing as recommended by both Microsoft and Apple to ensure that you install only trustworthy software. However, on Windows, an application needs a sufficiently large amount of installations in order to suppress this security warning. This "trust" is assigned to a code signing certificate, not the application itself. As Zettlr uses private-issued certificates, these have a limited lifetime. The current certificate is valid until 2022, after which Zettlr will be signed using a new certificate which has to go through the whole process once again. As long as you download Zettlr either [from our homepage](https://www.zettlr.com/download) or from the [GitHub releases page](https://github.com/Zettlr/Zettlr/releases) (both are the same files) you can safely install the application and dismiss the warning.
 
 ## I cannot dismiss the security warning on Windows and therefore cannot install the app!
 
-Getting a security warning on Windows is one thing, but in many companies the IT department puts additional restrictions in place so that you cannot dismiss such a security warning on your own and therefore cannot install the app. If you work in such a restricted environment, it may be best to just talk to your IT department and ask them to whitelist Zettlr so that you (or your admins) can install the app. If they have questions regarding the origins and/or trustworthyness, it may be best to point them [to Zettlr's GitHub repository](https://github.com/Zettlr/Zettlr).
+In many companies the IT department puts restrictions in place so that you cannot dismiss a security warning on your own and therefore cannot install the app. If you work in such a restricted environment, it may be best to just talk to your IT department and ask them to whitelist Zettlr so that you (or your admins) can install the app. If they have questions regarding the origins and/or trustworthyness, it may be best to point them [to Zettlr's GitHub repository](https://github.com/Zettlr/Zettlr).
+
+## I removed the tutorial folder from my computer, and now I cannot get it back!
+
+When Zettlr detects it is being run for the very first time on a computer, it will automatically copy a folder with some Markdown files into your Documents-folder. These Markdown files contain some basic introduction on how to use Zettlr. However, they will only be copied once. In order to get these files if you later realised that you would like to revisit the tutorial, you have two options:
+
+1. Rename or remove the `config.json`-file from your application data directory. If that file is not there, Zettlr will think it is being run for the first time and copy the tutorial again.
+2. Simply [download the folder directly from source](https://github.com/Zettlr/Zettlr/tree/develop/source/main/assets/tutorial) (note that this location might change).
 
 ## Are there any plans of porting Zettlr to mobile phones and tables, for Android or iOS?
 
