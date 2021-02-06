@@ -16,74 +16,74 @@ Depuis que l'ordinateur personnel est devenu largement disponible dans les anné
 
 Pendant longtemps, ces deux groupes de documents sont restés aussi distincts que leurs utilisateurs. La plupart des employés de bureau ne savent utiliser que Microsoft Word ou Excel, voire des applications LibreOffice, alors que presque personne, dans le cadre d'une activité de STEM (_sciences et techniques..._), n'utiliserait volontairement Word ou un logiciel similaire. Ces scientifiques ont choisi une voie différente : ils ont développé un langage de programmation appelé LaTeX, qui leur permet de créer des fichiers PDF parfaitement formatés à partir d'un tas de codes - ils suivent le même flux de travail que les chercheurs en lettres et en sciences humaines ou les agents administratifs ordinaires, mais utilisent pour cela des documents différents.
 
-Quand Markdown a été inauguré par John Gruber en 2004, c'était comme si on disait "Pourquoi pas les deux ?" Markdown combine à la fois l'expérience de lecture claire des documents de traitement de texte et les avantages des documents de code logiciel, qui sont à la fois polyvalents et faciles à utiliser - même pour les personnes qui ne savent que faire fonctionner Word ou Writer. Un petit exemple : Dans un traitement de texte, vous créez un titre en tapant "du texte" et en sélectionnant le format `Titre 1` dans un menu, alors que dans Markdown, vous tapez simplement `# some texte`, ce que le symbole hashtag vous indique immédiatement : "C'est un titre de premier niveau !"
+Quand Markdown a été inauguré par John Gruber en 2004, c'était comme si on disait "Pourquoi pas les deux ?" Markdown combine à la fois l'expérience de lecture claire des documents de traitement de texte et les avantages des documents de code logiciel, qui sont à la fois polyvalents et faciles à utiliser - même pour les personnes qui ne savent que faire fonctionner Word ou Writer. Un petit exemple : Dans un traitement de texte, vous créez un titre en tapant "du texte" et en sélectionnant le format `Titre 1` dans un menu, alors que dans Markdown, vous tapez simplement `# du texte`, ce que le symbole hashtag vous indique immédiatement : "C'est un titre de premier niveau !"
 
 Au début, Markdown était essentiellement un petit script que John Gruber avait écrit pour lui-même afin de produire ces bénéfices, et il contenait beaucoup d'incohérences et ne supportait pas beaucoup d'éléments différents. Mais au fil des ans, des progrès ont été réalisés. Deux dates sont à noter :
 
-- 2004: [John Gruber](https://daringfireball.net/projects/markdown/) lance dans un premier temps le programme Markdown
+- 2004: [John Gruber](https://daringfireball.net/projects/markdown/) lance dans un premier temps le programme Markdown.
 - 2012: Un groupe de développeurs forme [CommonMark](https://spec.commonmark.org/) pour normaliser Markdown en une norme acceptée au niveau international.
 
 ## Dialectes Markdown
 
 Aujourd'hui, plusieurs implémentations de la syntaxe Markdown coexistent. Les plus notables sont :
 
-- **MultiMarkdown**: Étend la syntaxe initiale avec des notes de bas de page, des tableaux et quelques métadonnées.
-- **Markdown Extra**: Là encore, quelques ajouts à la syntaxe initiale.
-- **GitHub Flavoured Markdown**: Il s'agit d'une variété de Markdown inventée par la plateforme d'hébergement GitHub (sur laquelle Zettlr est également hébergé !) et qui est aujourd'hui l'un des dialectes les plus courants.
-- **Pandoc Markdown**: Pandoc Markdown est un sur-ensemble du Markdown aromatisé de GitHub et ajoute un support pour encore plus d'éléments.
-- **CommonMark**: Essaie de mettre en œuvre tous les éléments possibles, tout en étant sans ambiguïté. Notamment, CommonMark n'inclut pas encore de spécification pour les notes de bas de page.
+- **MultiMarkdown** : Étend la syntaxe initiale avec des notes de bas de page, des tableaux et quelques métadonnées.
+- **Markdown Extra** : Là encore, quelques ajouts à la syntaxe initiale.
+- **GitHub Flavoured Markdown** : Il s'agit d'une variété de Markdown inventée par la plateforme d'hébergement GitHub (sur laquelle Zettlr est également hébergé !) et qui est aujourd'hui l'un des dialectes les plus courants.
+- **Pandoc Markdown** : Pandoc Markdown est un sur-ensemble du Markdown aromatisé GitHub et ajoute un support pour encore plus d'éléments.
+- **CommonMark** : Essaie de mettre en œuvre tous les éléments possibles tout en évitant les ambiguïtés. Notamment, CommonMark n'inclut pas encore de spécification pour les notes de bas de page.
 
 ## Zettlr et Markdown
 
-Le Zettlr lui-même met en œuvre un mélange de différents dialectes. L'éditeur lui-même ne met en évidence que la version GitHub de Markdown (plus quelques éléments supplémentaires, qui étendent la syntaxe de Markdown aux éléments de Zettelkasten. Ceux-ci sont décrits dans le [chapitre sur la méthode Zettelkasten](../academic/zkn-method.md)). Si vous exportez vos documents au format HTML et que Pandoc n'est pas installé, Zettlr convertira vos documents en utilisant la syntaxe Markdown aromatisée _GitHub_. Si disponible, Zettlr utilise Pandoc pour les exportations, qui lui-même lit vos documents Markdown en utilisant sa syntaxe _Pandoc Markdown_.
+Zettlr lui-même met en œuvre un mélange de différents dialectes. L'éditeur lui-même ne met en évidence que la version GitHub de Markdown (plus quelques éléments supplémentaires, qui étendent la syntaxe de Markdown aux éléments de Zettelkasten. Ceux-ci sont décrits dans le [chapitre sur la méthode Zettelkasten](../academic/zkn-method.md)). Si vous exportez vos documents au format HTML et que Pandoc n'est pas installé, Zettlr convertira vos documents en utilisant la syntaxe Markdown aromatisée _GitHub_. Si disponible, Zettlr utilise Pandoc pour les exportations, qui lui-même lit vos documents Markdown en utilisant sa syntaxe _Pandoc Markdown_.
 
-Mais Zettlr ne se limite pas à écrire Markdown. Si vous le souhaitez, vous pouvez également ajouter des commandes `LaTeX`. Ces commandes sont correctement interprétées lorsque vous convertissez en PDF. Elles sont omises lorsque vous convertissez en DOCX ou ODT. Et elles sont conservées lorsque vous convertissez en HTML. Bien entendu, vous pouvez aussi utiliser le code HTML ordinaire à n'importe quel endroit.
+Mais Zettlr ne se limite pas à écrire en Markdown. Si vous le souhaitez, vous pouvez également ajouter des commandes `LaTeX`. Ces commandes sont correctement interprétées lorsque vous convertissez en PDF. Elles sont omises lorsque vous convertissez en DOCX ou ODT. Et elles sont conservées lorsque vous convertissez en HTML. Bien entendu, vous pouvez aussi utiliser du code HTML ordinaire à n'importe quel endroit.
 
 ## Markdown 101: Les codes les plus importants
 
-Bien que Markdown puisse faire beaucoup de choses, dans cette section je veux vous décrire les éléments les plus importants que vous utiliserez le plus, et comment vous pouvez les utiliser dans Zettlr.
+Bien que Markdown puisse faire beaucoup de choses, je ne vais vous décrire dans cette section que les éléments les plus importants que vous utiliserez le plus et comment vous pouvez les utiliser dans Zettlr.
 
 ### Titres
 
-Les titres sont simples. Ils doivent être placés sur leur propre ligne et doivent être indiqués à l'aide d'un symbole hashtag. Six niveaux de rubriques sont à votre disposition :
+Les titres sont simples. Ils doivent être placés sur leur propre ligne et indiqués à l'aide d'un symbole hashtag. Six niveaux de rubriques sont à votre disposition :
 
-- `# Heading text` — donne un titre de premier ordre
-- `## Heading text` — donne un titre de second ordre
-- `### Heading text` — donne un titre de troisième ordre
-- `#### Heading text` — donne un titre de quatrième ordre
-- `##### Heading text` — donne un titre de cinquième ordre
-- `###### Heading text` — donne un titre de sixième ordre
+- `# Texte de titre` — donne un titre de premier ordre
+- `## Texte de titre` — donne un titre de second ordre
+- `### Texte de titre` — donne un titre de troisième ordre
+- `#### Texte de titre` — donne un titre de quatrième ordre
+- `##### Texte de titre` — donne un titre de cinquième ordre
+- `###### Texte de titre` — donne un titre de sixième ordre
 
 ### Formatage en ligne
 
 Bien entendu, tout comme dans les traitements de texte, vous pouvez utiliser le formatage en ligne, tel que le texte en **gras** ou _italique_, ou le texte `monospaced` (pour le code).
 
-- `**your text**` — donne un texte en gras
-- `_your text_` — donne un texte en italique
-- \`your text\` — donne un texte à espacement fixe
+- `**votre texte**` — donne un texte en gras
+- `_votre texte_` — donne un texte en italique
+- \`votre texte\` — donne un texte à espacement fixe
 
 ### Blocs d'éléments
 
-Parfois, vous pouvez vouloir mettre l'accent sur un bloc entier de texte (comme une citation plus longue), ou créer des listes. C'est également possible et extrêmement simple en utilisant Markdown.
+Parfois, vous pouvez vouloir mettre l'accent sur un bloc entier de texte (comme une citation plus longue) ou créer des listes. C'est également possible et extrêmement simple en utilisant Markdown.
 
 - Créez des listes d'articles en ajoutant à chaque ligne un caractère `-`, un `*` ou un `+`. Si vous le souhaitez, vous pouvez mélanger ces symboles !
 - Les listes triées doivent être précédées de numéros au format `1.`.
 
-> **Note** : Les numéros ne doivent pas être dans l'ordre. A chaque exportation, le convertisseur les numérotera automatiquement et correctement en ordre croissant, de sorte qu'une liste contenant les numéros de liste 1, 6, 14, 2 sera rendue comme une liste utilisant les numéros 1, 2, 3, 4 !
+> **Note** : Les numéros ne doivent pas être dans l'ordre. À chaque exportation, le convertisseur les numérotera automatiquement et correctement en ordre croissant, de sorte qu'une liste contenant les numéros de liste 1, 6, 14, 2 sera rendue comme une liste utilisant les numéros 1, 2, 3, 4 !
 
 ### Liens et images
 
 Les liens sont des éléments en ligne et les images sont des éléments en bloc, ils suivent donc la même sémantique que les éléments évoqués ci-dessus. Pourtant, ils méritent un peu plus d'attention, car ils vous offrent plus d'options.
 
-Les liens sont établis en utilisant la syntaxe suivante : `[This text will appear in your final document](http://this-is-your-actual-link.tld)` Zettlr convertira automatiquement cette syntaxe en un lien cliquable (suivez la cible du lien en cliquant dessus tout en maintenant la touche `ALT` ou `Ctrl`) pour la facilité d'accès (et pour raccourcir ces liens plutôt longs).
+Les liens sont établis en utilisant la syntaxe suivante : `[Ce texte apparaîtra dans votre document final](http://voici-votre-lien-lui-meme.tld)` Zettlr convertira automatiquement cette syntaxe en un lien cliquable (suivez la cible du lien en cliquant dessus tout en maintenant la touche `ALT` ou `Ctrl`) pour la facilité d'accès (et pour raccourcir ces liens plutôt longs).
 
 Les images fonctionnent exactement comme les liens, sauf qu'elles commencent par un point d'exclamation ( !). Bien entendu, les images ont également besoin d'un chemin d'accès, car elles ne sont pas stockées dans un document en texte brut. Vous pouvez donc utiliser trois approches différentes pour relier les images dans votre document :
 
 1. Utilisez un URL Web absolu, tel que https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1000px-Markdown-mark.svg.pngMarkdown.
-2. Utilisez un chemin d'accès absolu à un fichier sur votre propre ordinateur, tel que `C:\Users\user-name\Pictures\my-image.jpg`.
-3. Utilisez un chemin d'accès relatif à un fichier sur votre propre ordinateur, tel que `../img/my-image.png`.
+2. Utilisez un chemin d'accès absolu à un fichier sur votre propre ordinateur, tel que `C:\Users\nom-utilisateur\Pictures\mon-image.jpg`.
+3. Utilisez un chemin d'accès relatif à un fichier sur votre propre ordinateur, tel que `../img/mon-image.png`.
 
-> **Astuce** : Vous pouvez fournir un chemin d'image par défaut dans l'onglet "Editeur" des préférences, que Zettlr utilisera toujours lorsque vous collerez une image dans l'éditeur.
+> **Astuce** : Vous pouvez fournir un chemin d'image par défaut dans l'onglet "Éditeur" des préférences, que Zettlr utilisera toujours lorsque vous collerez une image dans l'éditeur.
 
 Le cheminement relatif est toujours relatif au document dans lequel vous le placez. Le répertoire `..` indique à Zettlr de chercher l'image dans le répertoire parent (c'est-à-dire de remonter d'un répertoire). Si vous stockez vos documents dans un nuage et que vous y accédez sur différents périphériques, vous utiliserez naturellement les chemins relatifs des images, car les chemins absolus seront certainement différents (surtout si vous travaillez avec deux systèmes d'exploitation différents).
 
@@ -144,13 +144,13 @@ Actuellement, les langues suivantes sont prises en charge par le moteur (les nom
 
 D'autres langages peuvent être mis en œuvre à votre demande. Si vous avez besoin d'un langage spécifique, veuillez [consulter les langages disponibles](https://codemirror.net/mode/) et ouvrir un numéro sur GitHub afin que nous sachions laquelle nous devons ajouter !
 
-## Ajouts à MArdown de Zettlr
+## Ajouts à Markdown de Zettlr
 
-En addition aux extensions du mardown de Github (marquées avec "(extension)" dans la spec [spec](https://github.github.com/gfm/)), Zettlr support ce qui suit :
+En addition aux extensions du Markdown de Github (marquées avec "(extension)" dans la [spec](https://github.github.com/gfm/)), Zettlr support ce qui suit :
 
  - Support des éléments `<iframe src="https://example.com"></iframe>`
 
-   > **Attention**: Les pages dans les iframes peuvent accéder à votre système de fichier sans restriction ! Les techniques dites de 'Frame-busting' peuvent être utilisées par des pages pour s'échapper de l'iframe et [interagir avec le backend Electron directement](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - vous devez assumer que toute page dans une iframe (ou un attaquant de cette page) a accès à toutes les données de votre ordinateur.
+   > **Attention**: Les pages dans les iframes peuvent accéder à votre système de fichier sans restriction ! Les techniques dites de 'Frame-busting' peuvent être utilisées par des pages pour s'échapper de l'iframe et [interagir avec le backend Electron directement](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - vous devez considérer que toute page dans une iframe (ou un attaquant de cette page) a accès à toutes les données de votre ordinateur.
 
  - Rendu d'équation KaTeX via soit des blocs en ligne (`$`) ou fermés (`$$`) : `$x/y$` ou
 
