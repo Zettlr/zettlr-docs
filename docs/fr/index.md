@@ -10,12 +10,12 @@ Cette documentation est structurée en gardant à l'esprit le vaste ensemble de 
 - Une section sur les **concepts** vous familiarise avec quelques concepts qui constituent la base du fonctionnement de Zettlr. Il est recommandé de lire attentivement ces documents.
 - **Les guides** contiennent quelques guides pour configurer rapidement Zettlr pour les cas d'utilisation largement décrits. Vous devrez probablement modifier les paramètres présentés pour qu'ils correspondent à votre propre flux de travail, mais ce sont d'excellents points de départ pour que Zettlr marche comme vous le souhaitez.
 - Le **Core** décrit les ensembles de fonctionnalités centrales d'écriture  et de gestion de fichiers de Zettlr: ce qu'il peut faire, comment il peut le faire et où vous pouvez le personnaliser.
-- **Les outils académiques** se concentre sur les fonctionnalités qui sont particulièrement utiles pour - mais sans s'y limiter! - les étudiants et les universitaires.
+- **Les outils académiques** se concentre sur les fonctionnalités qui sont particulièrement utiles pour - mais sans s'y limiter ! - les étudiants et les universitaires.
 - **Les références** contiennent des informations sur des sujets généraux (comme une explication de tous les paramètres disponibles) qui servent de référence rapide pour vous.
 
 ## Engagez-vous !
 
-Zettlr est un logiciel gratuit et open source, ce qui signifie que son code source est accessible au public et que l'application est gratuite. Cependant, cela signifie également qu'il n'y a pas de personnel rémunéré derrière l'application - elle est entièrement gérée par la communauté. Cela signifie que **nous encourageons activement les utilisateurs à s'impliquer dans l'application**! En fonction de vos compétences et de ce que vous aimez le plus, vous pouvez aider Zettlr de différentes manières:
+Zettlr est un logiciel gratuit et open source, ce qui signifie que son code source est accessible au public et que l'application est gratuite. Cependant, cela signifie également qu'il n'y a pas de personnel rémunéré derrière l'application - elle est entièrement gérée par la communauté. Cela signifie que **nous encourageons activement les utilisateurs à s'impliquer dans l'application** ! En fonction de vos compétences et de ce que vous aimez le plus, vous pouvez aider Zettlr de différentes manières:
 
 - Vous pouvez [traduire l'application](https://translate.zettlr.com/) dans plus de langues et améliorer les traductions existantes.
 - Vous pouvez [traduire et améliorer la documentation](https://github.com/Zettlr/zettlr-docs/) (Compte GitHub requis)
