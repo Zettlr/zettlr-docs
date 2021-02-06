@@ -142,7 +142,7 @@ Actuellement, les langues suivantes sont prises en charge par le moteur (les nom
 - XML (`xml`)
 - YAML (`yaml`; `yml`)
 
-D'autres langues peuvent être mises en œuvre à votre demande. Si vous avez besoin d'une langue spécifique, veuillez [consulter les langues disponibles](https://codemirror.net/mode/) et ouvrir un numéro sur GitHub, afin que nous sachions laquelle nous devons ajouter !
+D'autres langages peuvent être mis en œuvre à votre demande. Si vous avez besoin d'un langage spécifique, veuillez [consulter les langages disponibles](https://codemirror.net/mode/) et ouvrir un numéro sur GitHub afin que nous sachions laquelle nous devons ajouter !
 
 ## Ajouts à MArdown de Zettlr
 
