@@ -106,6 +106,7 @@ Actuellement, les langues suivantes sont prises en charge par le moteur (les nom
 - C (`c`)
 - C# (`c#`; `csharp`; `cs`)
 - C++ ( `c++`; `cpp`)
+- Clojure ( `clojure` )
 - Common Lisp (`clisp`; `commonlisp`)
 - CSS (`css`)
 - Elm (`elm`)

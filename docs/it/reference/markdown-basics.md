@@ -106,6 +106,7 @@ Al momento, sono supportati i seguenti linguaggi (tra parentesi sono riportati g
 - C (`c`)
 - C# (`c#`; `csharp`; `cs`)
 - C++ ( `c++`; `cpp`)
+- Clojure ( `clojure` )
 - Common Lisp (`clisp`; `commonlisp`)
 - CSS (`css`)
 - Elm (`elm`)

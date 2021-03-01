@@ -106,6 +106,7 @@ Currently, the following languages are supported by the engine (the names in bra
 - C (`c`)
 - C# (`c#`; `csharp`; `cs`)
 - C++ ( `c++`; `cpp`)
+- Clojure ( `clojure` )
 - Common Lisp (`clisp`; `commonlisp`)
 - CSS (`css`)
 - Elm (`elm`)
