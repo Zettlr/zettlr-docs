@@ -99,7 +99,7 @@ The second element footnotes require is a block element, the footnote _reference
 
 Zettlr also supports so-called "fenced code blocks." These are the block-version of the inline code element. To start a code block, type three backticks "\`" in a row on an empty line. Close the code block again with three back ticks on an empty line. Everything in between those two "fences" will be rendered using monospace font to indicate that this is indeed code.
 
-Zettlr supports syntax highlighting for several script and programming languages. You have to tell Zettlr explicitly which language to use by simply adding its identifier _directly after the introducing code fence_. So to direct Zettlr to highlight a code fence using a JavaScript interpreter, you would need to begin the code block with three backticks, directly followed by the word "javascript" on an empty line.
+Zettlr supports syntax highlighting for several script and programming languages. You have to tell Zettlr explicitly which language to use by simply adding its identifier _directly after the introducing code fence_. So to direct Zettlr to highlight a code fence using a JavaScript interpreter, you would need to begin the code block with three backticks, directly followed by the word "javascript".
 
 Currently, the following languages are supported by the engine (the names in braces are the identifiers you'd need to indicate the language):
 

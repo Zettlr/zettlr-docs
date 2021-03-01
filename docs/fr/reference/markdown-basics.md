@@ -99,7 +99,7 @@ Le deuxième élément requis pour les notes de bas de page est un élément de 
 
 Zettlr soutient également ce qu'on appelle les "blocs de code clôturés". Il s'agit de la version en bloc de l'élément de code en ligne. Pour démarrer un bloc de code, tapez trois "\`" à la suite sur une ligne vide. Pour refermer le bloc de code, tapez trois backticks "\`" sur une ligne vide. Tout ce qui se trouve entre ces deux "clôtures" sera rendu en utilisant une police monospace pour indiquer qu'il s'agit bien de code.
 
-Zettlr prend en charge la coloration syntaxique pour plusieurs langages de script et de programmation. Vous devez indiquer explicitement à Zettlr quel langage utiliser en ajoutant simplement son identifiant _directement après l'introduction du code de clôture_. Ainsi, pour que Zettlr mette en évidence une clôture de code à l'aide d'un interpréteur JavaScript, il faudrait commencer le bloc de code par trois bâtons (_"backsticks"_), directement suivis du mot "javascript" sur une ligne vide.
+Zettlr prend en charge la coloration syntaxique pour plusieurs langages de script et de programmation. Vous devez indiquer explicitement à Zettlr quel langage utiliser en ajoutant simplement son identifiant _directement après l'introduction du code de clôture_. Ainsi, pour que Zettlr mette en évidence une clôture de code à l'aide d'un interpréteur JavaScript, il faudrait commencer le bloc de code par trois bâtons (_"backsticks"_), directement suivis du mot "javascript".
 
 Actuellement, les langues suivantes sont prises en charge par le moteur (les noms entre parenthèses sont les identifiants que vous devriez utiliser dans Zettlr, car ils ne contiennent pas de caractères spéciaux, ce qui pourrait perturber un moteur) :
 
