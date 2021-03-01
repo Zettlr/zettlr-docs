@@ -106,6 +106,7 @@ Zettlrはいくつかのスクリプトとプログラム言語について、�
 - C (`c`)
 - C# (`c#`; `csharp`; `cs`)
 - C++ ( `c++`; `cpp`)
+- Clojure ( `clojure` )
 - Common Lisp (`clisp`; `commonlisp`)
 - CSS (`css`)
 - Elm (`elm`)
