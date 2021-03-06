@@ -99,7 +99,7 @@ Il secondo elemento richiede un elemento a blocco, il _testo della nota a piè d
 
 Zettlr supporta anche i cosiddetti "blocchi di codice recintati". Questi sono delle varianti a blocco degli elementi di codice in-linea. Per iniziare un blocco di codice, digita tre "backtick" (accento grave) "\`" in una riga vuota. Chiudi il blocco di codice con altri tre backticks in una riga vuota. Tutto ciò che si troverà tra questi due "recinti" sarà reso con un carattere a spaziatura fissa per indicare che si tratta effettivamente di un codice.
 
-Zettlr supporta l'evidenziatura della sintassi per numerosi script e linguaggi di programmazione. Devi indicare esplicitamente a Zettlr quale linguaggio usare, semplicemente aggiungendo il suo identificativo _subito dopo il "recinto superiore"_. Per cui ad esempio per indicare a Zettlr di evidenziare un blocco di codice usando un interpreter di Javascript, dovrai iniziare il blocco di codice con i tre backticks in una riga vuota subito seguiti dalla parola "javascript".
+Zettlr supporta l'evidenziatura della sintassi per numerosi script e linguaggi di programmazione. Devi indicare esplicitamente a Zettlr quale linguaggio usare, semplicemente aggiungendo il suo identificativo _subito dopo il "recinto superiore"_. Per cui ad esempio per indicare a Zettlr di evidenziare un blocco di codice usando un interpreter di Javascript, dovrai iniziare il blocco di codice con i tre backticks subito seguiti dalla parola "javascript".
 
 Al momento, sono supportati i seguenti linguaggi (tra parentesi sono riportati gli identificatori da usare in Zettlr, i quali non contengono caratteri speciali che potrebbero creare problemi all'interpretazione):
 
