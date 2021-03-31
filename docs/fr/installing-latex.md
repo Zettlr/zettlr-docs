@@ -24,4 +24,4 @@ Les distributions Linux ont généralement plusieurs packages LaTeX disponibles 
 $ sudo apt install texlive-base texlive-xetex # Pour les distributions basées sur Debian
 ```
 
-Veuillez consulter le manuel de votre distribution pour plus d'informations sur l'installation de ces packages. Assurez-vous que le binaire `xetex` est en cours d'installation.
+Veuillez consulter le manuel de votre distribution pour plus d'informations sur l'installation de ces packages. Assurez-vous que le binaire `xetex` a bien été installé.
