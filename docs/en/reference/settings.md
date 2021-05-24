@@ -178,6 +178,8 @@ The **Pandoc command** gives you full control over the export engine. The comman
 
 > **Attention**: Many of these variables are tailored to the needs of Pandoc. Of course, you can completely switch the program by replacing `pandoc` with the name of your desired exporting engine, but please beware that it will need to know how to parse Pandoc flags.
 
+The **Show app in the notification area** is used to activiate tray function which allows you wake up and quit Zettlr easily by clicking the Zettlr icon in notifaction area. For more details, please refer to the [tray document](../reference/tray.md).
+
 ## PDF Preferences
 
 ![The Font tab of the PDF Settings dialog](../img/pdf_settings_font.png)
