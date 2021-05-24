@@ -9,6 +9,13 @@ Zettlr support tray function which allow you wake up and quit Zettlr easily by c
 ## Activate Tray
 To activate tray function, open **Preferences** using either the menu item or the toolbar button. In the Advanced tab, select `Show app in the notification area` to active tray function.
 
+- Windows & Linux
+![taskbar perference wins10 & Linux](../img/zettlr-preferences-Windows-10-Linux.png)
+- MacOS
+![taskbar perference macOS](../img/zettlr-taskbar-preferences-MacOS.png)
+
+
+
 ## Guide
 ### Windows 10
 1. Clicking `x` in the window's titlebar will close the window. Zettlr will not quit.
@@ -50,10 +57,10 @@ To activate tray function, open **Preferences** using either the menu item or th
 
 
     **KDE desktop**:
-    ![Design MacOS](../img/zettlr-design-taskbar-with-quit-Fedora-33-KDE.png)
+    ![Design MacOS](../img/zettlr-taskbar-with-quit-Fedora-33-KDE.png)
     
     **Gnome desktop**:
-    ![Design MacOS](../img/zettlr-design-taskbar-with-quit-Fedora-33-Gnome.png)
+    ![Design MacOS](../img/zettlr-taskbar-with-quit-Fedora-33-Gnome.png)
     
 **Notice**: 
 For Linux Gnome desktop, gnome-shell extension [AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/) is required in order to use tray function. If your computer does not install AppIndicator Support, you may see the following warning:
