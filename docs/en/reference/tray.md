@@ -1,5 +1,5 @@
 # Tray
-Zettlr support tray function which allow you wake up and quit Zettlr easily by clicking the Zettlr icon in notifaction area. 
+Optionally, Zettlr can show a tray with the Zettlr icon and a context menu in the system's notification area. When enabled, Zettlr will stay running after closing the editor window.
 
 ## Platform support
 - Windows 10
@@ -7,65 +7,26 @@ Zettlr support tray function which allow you wake up and quit Zettlr easily by c
 - Linux
 
 ## Activate Tray
-To activate tray function, open **Preferences** using either the menu item or the toolbar button. In the Advanced tab, select `Show app in the notification area` to active tray function.
-
-- Windows 10 & Linux
-![taskbar perference wins10 & Linux](../img/zettlr-preferences-Windows-10-Linux.png)
-- MacOS
-![taskbar perference macOS](../img/zettlr-taskbar-preferences-MacOS.png)
-
-
+To activate the tray, open Preferences using either the menu item, the toolbar button or pressing `Cmd/Ctrl+,`. In the Advanced tab, select **Show app in the notification area** (or **Show app in the notification area** when using MacOS).
 
 ## Guide
-### Windows 10
-1. Clicking `x` in the window's titlebar will close the window. Zettlr will not quit.
-
-2.  Left or Right click ![tray icon](https://github.com/Zettlr/Zettlr/blob/develop/resources/icons/png/16x16.png?raw=true) ➔ `Show Zettlr` will bring Zettlr window in front.
+1. When the tray is active, Zettlr will stay running after closing the editor window using `x`. 
 
     ![taskbar wins10](../img/zettlr-taskbar-Windows-10.png)
-        
-3. Left or Right click ![tray icon](https://github.com/Zettlr/Zettlr/blob/develop/resources/icons/png/16x16.png?raw=true) ➔ `Quit` will quit Zettlr. 
+
+2. To show the editor window again, select the Zettlr tray to display the context menu and select `Show Zettlr`.
+
+3. To quit Zettlr, select the Zettlr tray to display the context menu and select `Quit` or select `File` `Quit` using the main menu. 
 
     ![close taskbar wins10](../img/zettlr-taskbar-with-quit-Windows-10.png)
 
-    **If there are unsaved changes, Zettlr window will show and remind you to save changes.**
+    If there are unsaved changes, Zettlr will ask you if you want to save the changes.
 
     ![save change warning taskbar wins10](../img/zettlr-taskbar-change-save-warning-Windows-10.png)
 
-### MacOS
-1. Clicking `x` in the window's titlebar will close the Zettlr window. Zettlr will not quit.
-
-    ** Save changes before closing Zettlr window. If there are unsaved changes, Zettlr window will show and remind you to save changes.**  
-
-    ![save change warning taskbar wins10](../img/zettlr-taskbar-change-save-warning-MacOS.png)
-
-2. Left click ![tray MacOS icon](https://github.com/Zettlr/Zettlr/blob/develop/resources/icons/icns/icon.iconset/icon_16x16.png?raw=true) ➔ `Show Zettlr` will bring Zettlr window in front.
-
-3. Left click ![tray MacOS icon](https://github.com/Zettlr/Zettlr/blob/develop/resources/icons/icns/icon.iconset/icon_16x16.png?raw=true) ➔ `Quit` will quit Zettlr. 
-    
-    ![Design MacOS](../img/zettlr-taskbar-with-quit-MacOS.png)
-
-    
-
-    
-
-### Linux 
-
-1. Clicking `x` in the window's titlebar will close the window. Zettlr will not quit.
-
-2. Left click ![tray icon](https://github.com/Zettlr/Zettlr/blob/develop/resources/icons/png/16x16.png?raw=true) ➔ `Show Zettlr` will bring Zettlr window in front.
-
-3. Left click ![tray icon](https://github.com/Zettlr/Zettlr/blob/develop/resources/icons/png/16x16.png?raw=true) ➔ `Quit` will quit Zettlr. 
-
-    **If there are unsaved changes, Zettlr window will show and remind you to save changes.**  
-
-
-    **KDE desktop**:
-    ![Design MacOS](../img/zettlr-taskbar-with-quit-Fedora-33-KDE.png)
-    
-    **Gnome desktop**:
-    ![Design MacOS](../img/zettlr-taskbar-with-quit-Fedora-33-Gnome.png)
-    
 **Notice**: 
-For Linux Gnome desktop, gnome-shell extension [AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/) is required in order to use tray function. If your computer does not install AppIndicator Support, you may see the following warning:
-    ![Advanced Preferences](https://user-images.githubusercontent.com/5193990/117012082-b4992100-ad2d-11eb-8ee2-f03eb8923839.png)
+For Linux Gnome desktop, gnome-shell extension [AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/) is required to activate the tray. If not available you will see:
+
+'Tray is not supported. Gnome Extension "KStatusNotifierItem/AppIndicator Support" is required for Tray support on the Gnome Desktop.'
+
+![Extension Support Preferences Warning](../img/zettlr-taskbar-extension-support-warning.png)

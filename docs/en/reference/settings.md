@@ -178,7 +178,7 @@ The **Pandoc command** gives you full control over the export engine. The comman
 
 > **Attention**: Many of these variables are tailored to the needs of Pandoc. Of course, you can completely switch the program by replacing `pandoc` with the name of your desired exporting engine, but please beware that it will need to know how to parse Pandoc flags.
 
-The **Show app in the notification area** is used to activiate tray function which allows you wake up and quit Zettlr easily by clicking the Zettlr icon in notifaction area. For more details, please refer to the [tray document](../reference/tray.md).
+The **Leave app running in the notification area** (or **Show app in the notification area** when using MacOS) adds the Zettlr tray icon to the system notification area. Zettlr will stay running after closing the editor window. To show the editor window again, select the Zettlr tray to display the context menu and select `Show Zettlr`. To quit Zettlr, select the Zettlr tray to display the context menu and select `Quit` or select `File` `Quit` using the main menu. Please see [the tray](../core/tray.md) for more details.
 
 ## PDF Preferences
 
