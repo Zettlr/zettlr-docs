@@ -9,7 +9,7 @@ Zettlr support tray function which allow you wake up and quit Zettlr easily by c
 ## Activate Tray
 To activate tray function, open **Preferences** using either the menu item or the toolbar button. In the Advanced tab, select `Show app in the notification area` to active tray function.
 
-- Windows & Linux
+- Windows 10 & Linux
 ![taskbar perference wins10 & Linux](../img/zettlr-preferences-Windows-10-Linux.png)
 - MacOS
 ![taskbar perference macOS](../img/zettlr-taskbar-preferences-MacOS.png)
