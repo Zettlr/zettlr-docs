@@ -33,7 +33,11 @@ To activate tray function, open **Preferences** using either the menu item or th
     ![save change warning taskbar wins10](../img/zettlr-taskbar-change-save-warning-Windows-10.png)
 
 ### MacOS
-1. Clicking `x` in the window's titlebar will hide the Zettlr window. 
+1. Clicking `x` in the window's titlebar will close the Zettlr window. Zettlr will not quit.
+
+    ** Save changes before closing Zettlr window. If there are unsaved changes, Zettlr window will show and remind you to save changes.**  
+
+    ![save change warning taskbar wins10](../img/zettlr-taskbar-change-save-warning-MacOS.png)
 
 2. Left click ![tray MacOS icon](https://github.com/Zettlr/Zettlr/blob/develop/resources/icons/icns/icon.iconset/icon_16x16.png?raw=true) ➔ `Show Zettlr` will bring Zettlr window in front.
 
@@ -41,7 +45,7 @@ To activate tray function, open **Preferences** using either the menu item or th
     
     ![Design MacOS](../img/zettlr-taskbar-with-quit-MacOS.png)
 
-    **If there are unsaved changes, Zettlr window will show and remind you to save changes.**  
+    
 
     
 
