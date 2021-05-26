@@ -7,7 +7,7 @@ Optionally, Zettlr can show a tray with the Zettlr icon and a context menu in th
 - Linux
 
 ## Activate Tray
-To activate the tray, open Preferences using either the menu item, the toolbar button or pressing `Cmd/Ctrl+,`. In the Advanced tab, select **Show app in the notification area** (or **Show app in the notification area** when using MacOS).
+To activate the tray, open Preferences using either the menu item, the toolbar button or pressing `Cmd/Ctrl+,`. In the Advanced tab, select **Leave app running in the notification area** (or **Show app in the notification area** when using MacOS).
 
 ## Guide
 1. When the tray is active, Zettlr will stay running after closing the editor window using `x`. 
