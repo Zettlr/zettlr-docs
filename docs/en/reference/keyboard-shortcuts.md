@@ -73,17 +73,19 @@ For remembering them easier, here are some thoughts we've put into assigning the
 * `Cmd+Plus` (macOS) `Ctrl+Shift+Plus` (Windows/Linux): Increase the editor font size.
 * `Cmd/Ctrl+Minus`: Decrease the editor font size.
 * `Tab`: Indent a list.
-* `Shift-Tab`: Outdent a list.
-* `Shift-Enter`: When editing a footnote, saves the reference text. Otherwise it will prevent auto-insertion of a new list item.
-* `Ctrl-Enter`: Insert a line below the one your cursor is currently in, and place the cursor at the beginning of it.
-* `Ctrl-Shift-Enter`: Insert a line above the one where your cursor is currently, and place the cursor at the beginning of it.
+* `Shift+Tab`: Outdent a list.
+* `Shift+Enter`: When editing a footnote, saves the reference text. Otherwise it will prevent auto-insertion of a new list item.
+* `Ctrl+Enter`: Insert a line below the one your cursor is currently in, and place the cursor at the beginning of it.
+* `Ctrl+Shift+Enter`: Insert a line above the one where your cursor is currently, and place the cursor at the beginning of it.
+* `Option/Alt+Arrow Up`: Moves up the line where your cursor is currently.
+* `Option/Alt+Arrow Down`: Moves down the line where your cursor is currently.
 
 ## Table editor shortcuts
 
 These shortcuts work in each table editor once you enter the edit mode by clicking into the table.
 
 * `Tab`: Move to the next cell. If the last column is active, move to the first cell in the next row. If your cursor was in the last column of the last row, a new row will be added automatically.
-* `Shift-Tab`: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
+* `Shift+Tab`: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
 * `Return`: Move to the same column in the next row. If your cursor was in the last row, a new row will be added automatically.
 * `Arrow Up/Arrow Down`: Move to the same column in the previous/next row. No new rows will be added if you are in the first or last row.
 * `Arrow Left/Arrow Right`: Move the cursor left/right. If the cursor is at the beginning/end of the cell's contents, move to the previous/next cell.
