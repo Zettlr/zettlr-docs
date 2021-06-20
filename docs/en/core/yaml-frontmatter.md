@@ -69,15 +69,15 @@ These keywords can be used to circumvent one restriction of the common in-text t
 
 ### Variable `lang`
 
-This variable controls the language output for Pandoc citeproc. This is most useful for controlling in which language the references of your file will show up.
+This variable controls the language output for Pandoc citeproc, and other localisation settings such as how punctuation is handled.  For instance British English punctuation will be converted to US English punctuation standards during the export process unless `lang: en-GB` is set.
 
-If you do not set this variable, the language of references will be taken from the default language field in the CSL style used, which might be undesirable in case your text is in a different language.
+It is also useful for controlling in which language the references of your file will show up.  If you do not set this variable, the language of references will be taken from the default language field in the CSL style used, which might be undesirable in case your text is in a different language.
 
 Valid values for this field are [BCP-47](https://tools.ietf.org/html/bcp47) compatible language identifiers (e.g., `en-US`, `de-AT`, or `it`).
 
 ### Variable `nocite`
 
-This variable can be used to include works in your list of reference that have not been actually cited in your document. Place their respective citation keys in this variable.
+This variable can be used to include works in your list of reference that have not been actually cited in your document. Place their respective citation keys in this variable.  Remember to enclose the value in quotes if it contains an @ (as most citekeys do) as otherwise it will be interpreted as an instruction to Pandoc and other variables in the frontmatter may not work as expected (e.g. use `nocite: '@citekey'`).
 
 ### Variable `reference-section-title`
 
