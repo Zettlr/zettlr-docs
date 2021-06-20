@@ -69,7 +69,7 @@ These keywords can be used to circumvent one restriction of the common in-text t
 
 ### Variable `lang`
 
-This variable controls the language output for Pandoc citeproc, and other localisation settings such as how punctuation is handled.  For instance British English punctuation will be converted to US English punctuation standards during the export process unless `lang: en-GB` is set.
+This variable controls the locale to use during export (citations, quotation marks and punctuation). By default, Pandoc will use `en-US`. For instance British English punctuation will be converted to US English punctuation standards during the export process unless `lang: en-GB` is set.
 
 It is also useful for controlling in which language the references of your file will show up.  If you do not set this variable, the language of references will be taken from the default language field in the CSL style used, which might be undesirable in case your text is in a different language.
 
