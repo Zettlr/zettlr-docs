@@ -15,23 +15,19 @@ nav:
   - Welcome: index.md
   - First Steps:
     - Setup: install.md
-    - Installing Pandoc: installing-pandoc.md
     - Installing LaTeX: installing-latex.md
     - Getting Started: get-started.md
     - Get involved: get-involved.md
     - FAQ: faq.md
+    - Troubleshooting: troubleshooting.md
   - Concepts:
-    - File management: concepts/roots.md
+    - File management: concepts/workspaces.md
     - Context: concepts/context.md
     - WYSIWYM: concepts/wysiwym.md
-  - Guides:
-    - Zettlr as a note taking app: guides/guide-notes.md
-    - Zettlr as a Zettelkasten: guides/guide-zettelkasten.md
-    - Zettlr as an IDE: guides/guide-ide.md
   - Core:
-    - The Editor: core/editor.md
+    - Editor: core/editor.md
     - Document Tabs: core/tabs.md
-    - The File List: core/file-list.md
+    - File Manager: core/file-manager.md
     - AutoCorrect and MagicQuotes: core/autocorrect.md
     - Searching: core/search.md
     - Importing: core/import.md

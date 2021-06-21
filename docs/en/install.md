@@ -2,63 +2,50 @@
 
 The installation of Zettlr is very easy and takes only a step on every operating system. Zettlr is cross-platform, so it will run on most computers. Zettlr comes pre-built for macOS, Windows and many Linux systems.
 
+> Please note that especially the supported macOS and Linux versions may change at any time. If you use an operating system that is barely supported and you encounter problems, the most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/tutorial/support#supported-platforms).
+
 ## Windows (7 or newer)
 
 To install Zettlr on Windows, just download the app from the [download page](https://www.zettlr.com/download) and double click to open the installer. If you wish to install Zettlr for all users, it is installed to the main `Program Files` directory and in this case you'd have to give it elevated rights during setup (it will automatically ask for your permission). You don't need any rights if you install it for the logged in user.
 
 To uninstall Zettlr, simply run the Uninstall.exe either from the directory itself or use the appropriate add/remove program interface in your system's settings. If you want to completely remove all data associated with the app, also remove the directory `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`.
 
-> The Windows installer contains both a 32-bit version and a 64-bit version of the program, and will install whichever fits your operating system.
+> At the time of writing, the Windows ARM installer does not come with Pandoc bundled. This means that exports may not work. You have to install Pandoc manually. If Pandoc is installed on your computer, Zettlr for Windows ARM will automatically use that one.
 
-## macOS (10.10 or newer)
+## macOS (10.11 or newer)
 
-To install Zettlr on macOS, simply download the dmg-file from the latest release and mount it. Then drag the Zettlr icon into your Applications directory and you're done!
+To install Zettlr on macOS, simply download the dmg-file and mount it by double-clicking it. Then drag the Zettlr icon into your Applications directory and you're done!
 
 To uninstall Zettlr, simply remove the Zettlr.app from your Applications directory. If you want to completely remove all data associated with the app, also remove the directory `/Users/<your-user-name>/Library/Application Support/Zettlr`.
 
 > You can also install Zettlr using [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew install --cask zettlr`
 
-## Linux (Debian 8/Ubuntu 12.04/Fedora 21 or newer)
+## Linux (Debian 8/Ubuntu 12.04/Fedora 24 or newer)
 
-There are prebuilt `deb` and `rpm` packages for linux systems. Simply install the package on your system.
+There are prebuilt `deb` and `rpm` packages as well as `AppImage` bundles for Linux systems. Simply install the package on your system according to which of these you have downloaded. For installing AppImage bundles, please [refer to this guide on how to install them](https://appimage.org/).
 
 To uninstall, follow the usual steps it takes to remove a package (usually through the graphical installer application or via `dpkg`). If you also want to remove all data associated with the app, also delete the `/home/<your-user-name>/.config/Zettlr` directory.
 
 > There is a community-maintained package for Arch Linux available. [You can find it on the official AUR repositories](https://aur.archlinux.org/packages/zettlr-bin/). Please note that this package is community-maintained and we do not take any responsibility in its stability, safety or offered version.
 
-## AppImages
+## Updating Zettlr
 
-In case you use neither a Debian nor Fedora based Linux distribution, you can always install AppImage files. Please [refer to their guide on how to install them](https://appimage.org/). AppImages are provided for both 32-bit and 64-bit systems.
+The application checks for new updates each time you start the app. You can also manually trigger the search for updates by using the respective menu item from the Help menu. If a new version is available, Zettlr will show you a dialog that contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
 
-## Updating the app
+To update, you simply have to click the version appropriate for your architecture (that is, either the 64bit version or the ARM version). Zettlr will automatically start downloading the appropriate installer into your Downloads folder and, once it's finished, you can click "Begin Update", after which Zettlr will quit and open the downloaded file.
 
-The application checks for new updates each time you start the app. You can also manually trigger the search for updates by using the respective menu item from the Help menu. If a new version is available, Zettlr will show you a dialog that contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains. You can then open the download page to download the new package. Simply install it over your current installation, it will take care of removing the old version first. All data will be retained and migrated to the new version.
+Zettlr automatically downloads the same files which you can find on our download page. To update manually, just download the appropriated installer and run it. It will automatically overwrite the existing version, but keep your configuration.
 
-> If you are interested in cutting-edge releases, make sure to tick the checkbox "Notify me about beta releases" in the Advanced tab of the preferences dialog!
+> If you are interested in cutting-edge releases, make sure to tick the checkbox "Notify me about beta releases" in the Advanced tab of the preferences dialog. Zettlr will then also offer you beta releases which might be not as polished as the regular releases, but you get new features earlier than others!
 
+## Nightly Releases
 
-## Resetting the app 
+Since 2.0.0, we also offer so-called nightly releases. Nightlies are releases that are being built automatically every Friday at noon (UTC) (but sometimes we build them manually). They contain the most recent changes to the code base. This means that they are even more recent than the beta releases, **but** this also means that they may contain serious bugs which we haven't found yet.
 
-Zettlr maintains local settings and metadata (user-defined tags, workspace location, settings, etc.).  
-You may want to reset, read or modify this data in particular cases (e.g. broken install, mistake in workspace path, etc.).
+Nightly releases are for advanced users only who understand the risks in using these. If you keep your settings, the writing statistics, and your files backed up regularly, it might be safe to use nightlies. We do appreciate every one who uses nightlies and informs us about bugs they encounter.
 
-This data is located in the _application data path_ whose location depends on your Operating System:
+To install a nightly release, you need to manually download them from <https://nightly.zettlr.com/>. Your updater will not notify you about new releases, but since they are being automatically built every Friday, you can be sure that every Friday there will be a new release.
 
-* **Windows:** `C:\Users\<your username>\AppData\Roaming\zettlr`
-* **macOS:** `/Users/<your username>/Library/Application Support/zettlr` (open a Finder window, hold down "Alt" while opening the "Go"-menu, and click on the appearing "Library" entry)
-* **Linux:** `/home/<your username>/.config/zettlr`
+> **ATTENTION**: We do not guarantee any degree of stability. Nightly releases are being built automatically, so if we accidentally introduce a severe bug shortly before the automated build commences, and fix it an hour later, that week's nightlies _will_ contain that bug. Normally, the worst that can happen is that the app does not start and you have to revert to a previous version, but it might be possible that these builds can damage your operating system. By using nightly releases you agree that you understand these risks.
 
-If you want to completely reset your local Zettlr installation, follow these steps:
-
-1. First ensure that the application is closed (in some error cases, there is a "zombie" process, which you can close from within your Task Manager or Activity Monitor)
-2. Make sure to optionally backup these files:
-    * `stats.json` (your writing statistics)
-    * `config.json` (the app settings — including the location of your workspaces and open files)
-    * `custom.css` (your custom CSS, if any)
-    * `tags.json` (your colour-coded tags)
-    * `targets.json` (your writing targets)
-    * `user.dic` (your own custom dictionary)
-3. Select everything in this directory and delete it.
-4. Restart the application. Some of these files will be re-created.
-
-
+Please also note that we do not retain any previous nightly builds. Each week's nightly will simply replace the previous one. If a nightly is unusable, feel free to notify us so we can manually schedule a new build after we have fixed the bug.

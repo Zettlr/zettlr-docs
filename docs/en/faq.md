@@ -13,7 +13,7 @@ In many companies the IT department puts restrictions in place so that you canno
 When Zettlr detects it is being run for the very first time on a computer, it will automatically copy a folder with some Markdown files into your Documents-folder. These Markdown files contain some basic introduction on how to use Zettlr. However, they will only be copied once. In order to get these files if you later realised that you would like to revisit the tutorial, you have two options:
 
 1. Rename or remove the `config.json`-file from your application data directory. If that file is not there, Zettlr will think it is being run for the first time and copy the tutorial again.
-2. Simply [download the folder directly from source](https://github.com/Zettlr/Zettlr/tree/develop/source/main/assets/tutorial) (note that this location might change).
+2. Simply [download the folder directly from source](https://github.com/Zettlr/Zettlr/tree/develop/static/tutorial) (note that this location might change).
 
 ## Are there any plans of porting Zettlr to mobile phones and tables, for Android or iOS?
 
@@ -31,26 +31,19 @@ LaTeX can be picky when it comes to fonts. But don't worry: We got you covered i
 
 Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Projects or modified the directories, there will be small files named `.ztr-directory` present in some folders. To remove them, simply reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
 
-## Sometimes I don't want AutoCorrect — how can I make it stop autocorrecting in a specific instance?
-
-While AutoCorrect is a great tool, there are these few instances where we don't want it to apply. One often-cited instance is the YAML-frontmatter. If you write the closing three dots or dashes, Zettlr's AutoCorrect will transform them to an ellipsis or an em-dash, depending on the characters used. This will cause Zettlr to parse the whole file as YAML, not as Markdown. In order to prevent Zettlr AutoCorrect from applying, here's how it goes:
-
-1. If you use the LibreOffice-style AutoCorrect, simply hold down the Shift-key while pressing Space or Return (the AutoCorrect only applies on Space or Return). This will prompt Zettlr not to automatically "correct" in that instance.
-2. If you use the Word-style AutoCorrect, simply press Backspace as soon as you typed a space after AutoCorrect applied. This will undo the Autocorrect and restore the original characters.
-
-If you find some characters should most of the time never be replaced, only on rare occasions, consider removing them from the default table of AutoCorrect replacements.
-
 ## I'm using Linux and deleting files doesn't move them to the trash!
 
-Zettlr never completely removes your files. It always only moves them to the trash so in case you accidentally remove a file you need, you can always restore it. On macOS and Windows systems, the trash is activated by default, but on some Linux distributions, you need to activate the trash functionality manually. On Linux, Zettlr (to be more precise: the underlying Electron framework) makes use of the binary `gvfs-trash` to move files to the trash. To avoid shock moments it'll never try to "fall back" to removing files completely. Therefore, to make use of this functionality, please make sure you have `gvfs-trash` installed! On Debian/Ubuntu you can do so by running the following code in a terminal:
+Zettlr never completely removes your files. It always only moves them to the trash so in case you accidentally remove a file you need, you can always restore it. On macOS and Windows systems, the trash is activated by default, but on some Linux distributions, you need to activate the trash functionality manually. On Linux, Zettlr (to be more precise: the underlying Electron framework) makes use of the binary `gvfs-trash` to move files to the trash. To make use of this functionality, please make sure you have `gvfs-trash` installed! On Debian/Ubuntu you can do so by running the following code in a terminal:
 
 ```bash
 $ sudo apt install gvfs-bin
 ```
 
+> If you do not want to use the trash functionality, you can also enable the setting in the advanced preferences telling Zettlr to terminally remove a file if moving it to the trash fails. Please note that this will remove files irreversibly!
+
 ## What is the correct URI formatting for Markdown links?
 
-By default, Zettlr renders Markdown links in the format `[Your Link Text](your-link)` to be clickable (when holding down `Ctrl` or `Alt`). However, Markdown links can point both to websites and to other files on your computer. You can omit a lot of information from your link, and Zettlr makes use of a heuristic to determine the information on its own, but it might infer false context for what you intend. Here's how it works:
+By default, Zettlr renders Markdown links in the format `[Your Link Text](your-link)` to be clickable (when holding down `Cmd` or `Ctrl`). However, Markdown links can point both to websites and to other files on your computer. You can omit a lot of information from your link, and Zettlr makes use of a heuristic to determine the information on its own, but it might infer false context for what you intend. Here's how it works:
 
 - Links with all information present (a protocol and a fully qualified path) will not be altered. Examples: `file:///home/foo/documents/test.md` and `http://www.example.com/`.
 - Relative links with the `file://`-protocol will be converted to absolute. Example: `file://./relative/file.md` will become `file:///home/foo/documents/relative/file.md`.
@@ -65,9 +58,9 @@ To sum up: If you worry about how your links are treated, be more explicit. Two 
 In case the internal links used to interlink files don't work as expected, please make sure you've done the following things:
 
 1. Is the link recognised? Zettlr enables you to define what internal links look like. By default, they are encapsulated by `[[` and `]]`. When Zettlr recognises an internal link, it will colour it and if you hover over it with your mouse cursor, the contained text should become underlined. If it does not, Zettlr doesn't think that what you've written is a link. You can change this in the settings.
-2. Did you press the `Alt` or `Ctrl` key while clicking on the link? As clicking with your mouse somewhere in the text normally means that you intend to change something, you have to tell Zettlr that you actually want to follow the link.
+2. Did you press the `Cmd` or `Ctrl` key while clicking on the link? Clicking with your mouse somewhere in the text means that you intend to edit the text, so you have to tell Zettlr that you actually want to follow the link.
 3. Did you use a valid filename or ID? Zettlr only opens files, if they report they _exactly_ have the given ID or the given filename. If nothing happens while clicking on the link, this surely means that a file with the given ID or filename does not exist in the system. Note that you must omit the file extension when creating a link. For example, to link to `my-file.md`, you only need to put `my-file` inside the brackets.
-4. Is the file currently loaded into Zettlr? Internal linking obviously only works if Zettlr has read the file.
+4. Is the file currently loaded into Zettlr? Internal linking only works if Zettlr has read in the file.
 
 ## I know LaTeX and want to use it inside my Markdown files as well. Is this possible?
 
@@ -83,7 +76,7 @@ This is a special feature of Pandoc. Add the special classes `-` (simply a minus
 
 Examples:
 
-```
+```markdown
 # This heading will be unnumbered, but in the ToC {-}
 
 # This heading will be numbered, but not in the ToC {.unlisted}
@@ -95,45 +88,25 @@ Examples:
 
 ## I want to use single line breaks and not create new paragraphs. When I simply hit Enter once, it removes the single line break!
 
-To force Pandoc to render single line breaks as such, end your line with a backslash (`\`) or two spaces. The backslash as well as the two spaces will not be rendered in the resulting file.
+To force Pandoc to render single line breaks as such, end your line with a backslash (`\`) or two spaces. The backslash as well as the two spaces will not be rendered in the exported file.
 
-## Do I really need Pandoc or LaTeX?
+## Zettlr does not seem to find LaTeX, which is nonetheless installed!
 
-For plain HTML export, no. For all other export formats, yes. Zettlr depends on those programs to enable exporting of files. But don't worry: They are Open Source and therefore completely free of charge, and available on all operating systems!
-
-## How do I install Pandoc or LaTeX?
-
-Please refer to documentation sections specifically created to assist with this: [Installing Pandoc](installing-pandoc.md) and [Installing LaTeX](installing-latex.md).
-
-## Zettlr does not seem to find Pandoc and LaTeX, which are nonetheless installed!
-
-This can happen in case your computer decided to install the software in a non-standard directory. Zettlr will try its best to locate the applications but may fail if they are buried somewhere. That's where the path-options in the preferences come into play. In case Zettlr does not find any of the binaries, you can enter the **full path** to them in the appropriate text fields in the `Advanced` tab.
-
-On Windows, you should never encounter this issue, as long as you leave the default installation path during install set to the default `Program Files` directory of Windows. If you wanted to install the programs to different locations, rendering Zettlr unable to find them, simply search your system using the Explorer for two files, the first being `pandoc.exe` and the second being `xelatex.exe`. Copy the full path (including the executable's name!) to the appropriate text field in the Zettlr preferences.
-
-On macOS you can easily find the path by opening up `Terminal.app` (it's in your Applications folder under `Other`) and then type `which pandoc` _or_ `which xelatex`, depending on which software Zettlr does not find. Terminal will simply output the full path to the program.
-
-On Linux distributions, you also need to open up a Command Line/Terminal and use the same commands as on macOS: `which pandoc` for Pandoc and `which xelatex` for LaTeX.
-
-## On Export, Zettlr says the PDF-Engine wasn't recognised!
-
-This is a common Pandoc error, indicating that your Pandoc version is pre-2.x. When Zettlr presents you the following error message, it means you need to update to Pandoc 2.x:
-
-`pandoc: unrecognized option '--pdf-engine=xelatex' Try pandoc --help for more information.`
-
-The reason is that with Pandoc 2.0, the older option `--latex-engine` was renamed to `--pdf-engine`. [See more in Pandoc's changelog](https://github.com/jgm/pandoc/blob/master/changelog#L4349).
+This can happen in case your computer decided to install the software in a non-standard directory. Zettlr will try its best to locate the applications but may fail if they are buried somewhere. Make sure the xelatex binary is within your PATH.
 
 ## On Export to PDF, I constantly get error messages!
 
-On the first few exports this is to be expected and completely normal. Zettlr simply passes the file to Pandoc, which passes it on to LaTeX. But the template that Zettlr uses for your PDF-exports requires some additional packages that are not always installed when installing LaTeX.
+It might happen that you get certain errors when trying to export your files. There are two common types of errors, which you can solve by yourself.
 
 The most common error looks like this:
 
 **LaTeX Error: File \<some name\>.sty not found.**
 
-This simply means that a certain package was not found (they end in `.sty`). On Windows, these packages should be installed automatically as soon as they are needed; on macOS and Linux you simply need to run the command `tlmgr install <some name>`.
+This simply means that a certain package was not found (they end in `.sty`). On Windows, these packages should be installed automatically as soon as they are needed (a window might pop up asking you for confirmation); on macOS and Linux you simply need to run the command `tlmgr install <some name>`.
 
-In case of other errors, Zettlr enables you to copy and paste text from the error message, because in almost all cases, a short Google search leads to a solution; and in almost all cases the only action required is the installation of another package.
+> Note that some `.sty`-files are part of larger packages. The easiest way to find out which package to install, go to [the CTAN homepage](https://ctan.org/) and search for the package name (the file name without the `.sty`). You will then see in the "Contained in"-section the actual name of the package you have to install. Example: [The `footnote.sty`-package](https://ctan.org/pkg/footnote) is contained in the package `mdwtools`, so instead of running `tlmgr install footnote` you must run `tlmgr install mdwtools`.
+
+In case of other errors, Zettlr enables you to copy and paste text from the error message, because in almost all cases, a short Google search leads to a solution. And if it doesn't the community can better help you if they see the error you are getting.
 
 ## I found a bug!
 
@@ -141,7 +114,7 @@ That's great news! Well, not great, but it's good that you found it! In this cas
 
 ## I have a feature request! / I have a suggestion for making a feature more efficient!
 
-That's good to hear! We always depend on other people's experience with the app to improve its efficiency and its suitability for different situations. In this case, please head over to [GitHub](https://github.com/Zettlr/Zettlr/) and open up an issue so that we can get right to it.
+That's good to hear! We always depend on other people's experience with the app to improve its efficiency and its usability for different situations. In this case, please head over to [GitHub](https://github.com/Zettlr/Zettlr/) and open up an issue so that we can get right to it.
 
 ## What about my privacy? Does Zettlr transfer any data, or don't I have to worry?
 

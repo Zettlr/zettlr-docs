@@ -1,6 +1,6 @@
 # The Editor
 
-At the heart of Zettlr sits a powerful Markdown editor. It uses a highly sophisticated software called **[CodeMirror](https://codemirror.net/)** and therefore offers a lot of features out of the box.
+At the heart of Zettlr sits a powerful Markdown editor. It uses a highly sophisticated software called **[CodeMirror](https://codemirror.net/)** and offers a lot of features out of the box.
 
 In this document, you will learn about writing Markdown, available commands, some special features of CodeMirror and how spellchecking works.
 
@@ -57,11 +57,11 @@ Some people prefer a different way to insert text into the editor, and therefore
 
 ## Spellchecking
 
-Zettlr also features spellchecking. In your Preferences, you can select all languages, that your text should be checked for. The dictionaries are loaded on app start and your editor content is checked against it. Zettlr will move through all dictionaries to check a word, and only if none of the loaded dictionaries can find it, it will be marked as wrong with a small dashed line.
+Zettlr also features spellchecking. In your Preferences, you can select all languages, that your text should be checked for. Zettlr will move through all dictionaries to check a word, and only if none of the loaded dictionaries can find it, it will be marked as wrong with a small dashed line.
 
 To correct a word, simply right-click it and select a suggestion from the context menu, if there are any. You can also add a word to your user dictionary.
 
-Are you writing bilingual? No problem! Simply load all dictionaries that you potentially write text in to check against all languages at once. Just remember that dictionaries can use up a lot of memory, so if you load too many, it may slow down the application.
+Are you writing bilingual? No problem! Simply load all dictionaries that you potentially write text in to check against all languages at once. Just remember that dictionaries can use up a lot of memory, so if you load too many, it may slow down the application. We recommend at most three dictionaries at a time.
 
 > **Tip**: To disable the spellchecker completely, simply uncheck all dictionaries in the preferences.
 
