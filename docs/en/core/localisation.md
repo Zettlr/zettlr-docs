@@ -2,6 +2,8 @@
 
 Zettlr is not only capable of importing and exporting a lot of different formats, it also provides you with the possibility to translate the GUI and use your preferred spellchecking dictionaries. You can easily import new dictionaries and translate the user interface to your likings.
 
+> For localisation of output files, see the [YAML Frontmatter variable `lang`](https://docs.zettlr.com/en/core/yaml-frontmatter/#variable-lang)
+
 Zettlr comes shipped with the following languages:
 
 - English (United Kingdom)
