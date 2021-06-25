@@ -1,27 +1,47 @@
 # Installing LaTeX
 
-For importing and exporting, Zettlr relies upon Pandoc, but when it comes to exporting PDF files, Pandoc itself relies on yet another free and Open Source software package: LaTeX. Pandoc can convert Markdown files into LaTeX files, but in order to create PDF files, these LaTeX files need to be processed by a different program.
+Zettlr uses Pandoc, a small program that can convert documents into other formats, for importing and exporting your files. Zettlr also features a built-in PDF exporter. However, if you are an advanced user or would like to customise your PDF exports further, you may want to install a LaTeX-distribution on your computer.
 
-> LaTeX distributions regularly come with a host of software applications that are intended to make working with the LaTeX source files easier. If you do not intend to write LaTeX code yourself, you do not need these full (and therefore big) packages. LaTeX also offers smaller packages that only include the necessary compiler (the xetex binary).
+LaTeX is an advanced typesetting language that allows you to do more or less anything with your files. When you export a document to PDF using such a LaTeX distribution, you have many, many more options to customise your exported files than with the built-in exporter.
+
+> LaTeX distributions come in two flavors: A "full" installation featuring a host of graphical programs for writing TeX directly, and a "minimal" installation that only contains the actual compilers. Zettlr is happy with only a minimal installation (because it just needs the compiler), but if you want to fiddle around with LaTeX more you are free to also install the full package.
 
 ## Windows
 
-On Windows, you can install LaTeX by downloading the popular MikTex distribution. You can [download it here](https://miktex.org/download). MikTex does not include any additional programs, but comes with the necessary binaries, so this is recommended.
-
-If you want to install more tools for working with LaTeX code, you can also install [TexLive](https://www.tug.org/texlive/). However, this LaTeX distribution is very large, as it includes several additional software applications that allow you to work with LaTeX directly.
+* The minimal setup: MikTeX ([download](https://miktex.org/download))
+* The full setup: TeX Live ([download](https://www.tug.org/texlive/))
 
 ## macOS
 
-On macOS, we recommend the [MacTex](https://www.tug.org/mactex/morepackages.html) distribution. Make sure you download the **BasicTex** distribution, which is smaller than the regular installer (similar to the distinction between MikTex and TexLive on Windows).
-
-If you want to also have additional applications that allow you to work with LaTeX directly, you can install [the full MacTex distribution](https://www.tug.org/mactex/mactex-download.html).
+* The minimal setup: Basic TeX ([download](https://www.tug.org/mactex/morepackages.html))
+* The full setup: MacTeX ([download](https://www.tug.org/mactex/mactex-download.html))
 
 ## Linux
 
-Linux distributions commonly have several LaTeX packages available to install directly from your package manager. Generally, you'd want to install the XeTeX package. Possibly, you need to install the base package as well, in case the XeTeX package does not install it as a dependency. You can do this either by using a graphical software application, if your distribution provides one, or install it using the command line:
+Linux distributions commonly have several LaTeX packages available to install directly from your software manager. There are also minimal and full packages. We list options for common distributions below.
+
+> It doesn't really matter which of the versions you install, but there is one requirement: You need to install the `xetex` binary, since that is the compiler that Zettlr uses. If in doubt, consult your distribution's manual for more information on how to correctly install TeX.
+
+### Debian/Ubuntu
+
+The minimal setup with the XeLaTeX compiler:
 
 ```shell
-$ sudo apt install texlive-base texlive-xetex # for Debian-based distributions
+$ sudo apt install texlive-base texlive-xetex
 ```
 
-Please consult the manual for your distribution for more information on how to install these packages. Make sure that the `xetex` binary is being installed.
+The full setup:
+
+```shell
+$ sudo apt install texlive-full
+```
+
+### Fedora/RHEL
+
+Fedora offers three distributions, basic, medium, and full. Install one of these:
+
+```shell
+$ sudo dnf install texlive-scheme-basic
+$ sudo dnf install texlive-scheme-medium
+$ sudo dnf install texlive-scheme-full
+```

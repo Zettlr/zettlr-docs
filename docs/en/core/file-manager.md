@@ -1,12 +1,22 @@
-# The File List
+# The File Manager
 
-Next on is the file list. The file list is something very special because it bears powerful features that ease your work with a lot of files and directories. So let's have a look!
+Next on is the file manager. The file manager is basically a built-in Explorer (or Finder, if you are on a Mac) tuned to the needs of Zettlr. It is one of the core components of the app.
 
 ## General
 
-In the extended sidebar mode, both the tree view and the file list are visible. Using the thin sidebar mode, you can always show or hide the list by pressing `Cmd/Ctrl+!`.
+In the preferences, you can choose the file manager mode:
 
-> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the sidebar modes.
+* Extended: In the extended mode, both the file _tree_ and the file _list_ will be visible. The file tree does not show individual files (except standalone files).
+* Combined: In the combined mode, you will only see the file tree which also includes all files.
+* Thin: In the thin mode, you have access to both the file tree and the file list, but only one will be shown at a time.
+
+The thin mode allows several ways to switch between your file tree and the file list. If you currently see the file tree, but want to see the file list, simply click any directory. Zettlr will then switch to the file list, showing you all files within that directory. If you currently see the file list, simply move your mouse over the top area of the file list. An arrow will appear that you can click to move back to the file tree.
+
+If you have a trackpad or a mouse that supports horizontal scrolling, you can also make use of horizontal scrolling to switch back and forth, which in many cases is much faster than clicking somewhere.
+
+> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the file manager modes.
+
+## The File List
 
 The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
 

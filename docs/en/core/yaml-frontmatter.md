@@ -1,12 +1,10 @@
 # YAML Frontmatter
 
-Like Pandoc, Zettlr supports YAML frontmatters for your Markdown files. A YAML frontmatter, in Pandoc's terms ["metadata block"](https://pandoc.org/MANUAL.html#metadata-blocks) is a series of meta variables that can be defined to describe information of the file that normally is not part of the text contents themselves, such as authors, keywords, and the title.
+Like Pandoc, Zettlr supports YAML frontmatters for your Markdown files. A [YAML frontmatter](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block) is a series of meta variables that can be defined to describe information of the file that normally is not part of the text contents themselves, such as authors, keywords, and the title.
 
-YAML frontmatters can be defined at the beginning of a file, by starting on the first line with three dashes (`---`) and ending the frontmatter either with three dashes or three dots (the latter variant is more common).
+YAML frontmatters can be defined at the beginning of a file, by starting on the first line with three dashes (`---`) and ending the frontmatter either with three dashes or three dots (the former variant is more common). They contain valid YAML and can be used to define arbitrary variables. They come in handy for a variety of use cases.
 
-> Tip: If you have AutoCorrect enabled, Zettlr will attempt to replace the three ending dots with an ellipsis character, breaking the syntax highlighting. To prevent this, press `Shift+Enter` when creating a new line (if you use the LibreOffice AutoCorrect mode).
-
-They contain valid YAML and can be used to define arbitrary variables. They come in handy for a variety of use cases.
+> For a more concise documentation of what you can do with YAML frontmatters, please refer to the [Pandoc documentation](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block).
 
 ## Defining a YAML frontmatter
 
@@ -27,6 +25,9 @@ author:
 
 > **Attention**: In YAML specification, tab (tabulator) character is not allowed to be used as indentation. For your YAML frontmatter to be valid, use spaces for indentation.
 
+## Frontmatters versus Defaults files
+
+Frontmatters can be used to override defaults set by either Pandoc internally or one of the defaults files which Zettlr uses to export your files. For more information, make sure to read the [documentation on defaults files](defaults-files.md) completely to avoid confusion!
 
 ## Frontmatter variables
 
