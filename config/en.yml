@@ -28,12 +28,15 @@ nav:
     - Editor: core/editor.md
     - Document Tabs: core/tabs.md
     - File Manager: core/file-manager.md
+    - Assets Manager: core/assets-manager.md
+    - Defaults Files: core/defaults-files.md
+    - Custom CSS: core/custom-css.md
+    - Snippets: core/snippets.md
     - AutoCorrect and MagicQuotes: core/autocorrect.md
     - Searching: core/search.md
     - Importing: core/import.md
     - Exporting: core/export.md
     - Table Editor: core/tables.md
-    - Custom CSS: core/custom-css.md
     - Localisation: core/localisation.md
     - Sidebar: core/attachments.md
     - YAML Frontmatter: core/yaml-frontmatter.md
