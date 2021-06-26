@@ -18,7 +18,7 @@ Everything that follows the heading or the divider will end up being the content
 
 Inside the slides, you can use all Markdown elements. They will be rendered as you would expect them. You can even use footnotes which will then be placed on their own, respective slide at the end!
 
-### Advanced Tools
+## Advanced Tools
 
 Of course, `reveal.js` presentations also have the same versatility as PowerPoint or Impress when it comes to controlling your presentation. For instance, you can use CSS classes to tell the presentation that certain elements should be triggered before forwarding the presentation. These are called "fragments". Due to limitations in Pandoc's engine, you'll have to use plain HTML to achieve this. Consider, for instance, the HTML code from the demo presentation:
 
@@ -32,11 +32,13 @@ Of course, `reveal.js` presentations also have the same versatility as PowerPoin
 
 This will create a list with three items. All items are "fragments", which means that by pressing the shortcut for the next slide, the first will `fade-in`, as the class says. On the next press of the right arrow key, the second item will be highlighted in blue color. The third press of the right arrow key will highlight the last item red. And on the fourth press of the arrow key the next slide will be shown.
 
-### Presentation settings
+## Presentation settings
+
+Of course, the presentation itself also has settings that you can make use of. These are simple JavaScript directives that you can manipulate by inserting a `<script>` tag as shown in the screenshot. You can override them by setting the attributes on the `zettlrRevealOptions` object.
 
 ![presentations_scripts.png](../img/presentations_scripts.png)
 
-Of course, the presentation itself also has settings that you can make use of. These are simple JavaScript directives that you can manipulate by inserting a `<script>` tag as shown in the screenshot. You can override them by setting the attributes on the `zettlrRevealOptions` object. These are the options you can set:
+These are the options you can set:
 
 ```javascript
 const zettlrRevealOptions = {
@@ -102,7 +104,7 @@ const zettlrRevealOptions = {
 };
 ```
 
-### Presentation Styling
+## Presentation Styling
 
 If none of the available themes appeal to you, or if you need to provide some extra CSS, you can do so simply by dropping in a `<style>` tag somewhere in your presentation.
 
@@ -110,9 +112,9 @@ You'll need some knowledge of CSS to finegrain the styling, but the appearance o
 
 ![presentations_styles.png](../img/presentations_styles.png)
 
-### Images
+## Images
 
-One of the big drawbacks of such HTML presentations is that images cannot be contained in the resulting file. (More accurately, they _can_ be included, but that would increase the file size by the size of all images multiplied by the factor 1.3.)
+One of the drawbacks of such HTML presentations is that images cannot be contained in the resulting file. (More accurately, they _can_ be included, but that would increase the file size by the size of all images multiplied by the factor 1.3.)
 
 So you need to decide where to put the images. There are basically three feasible methods.
 
@@ -120,4 +122,6 @@ So you need to decide where to put the images. There are basically three feasibl
 2. Simply put all images inside the same directory as your presentation file. Then linking to them using their file name should suffice.
 3. Upload them to the web, for instance unto an image hosting service, and link their URLs. Only drawback: You would need to rely on a working internet connection at the place where you hold your presentation.
 
-A rule of thumb is: If Zettlr correctly displays your images, so will your presentation, as long as you make sure the presentation is in _exactly_ the same directory as your source file relative to the images.
+A rule of thumb is: If Zettlr correctly displays your images, so will your presentation, as long as you make sure the presentation is in _exactly_ the right place relative to your image files.
+
+> If you really must, you can tell Pandoc to include all images directly in the HTML file by setting the variable `self-contained` to `true` in your defaults file (it does not work inside the frontmatter). But remember that many images in your presentation could easily result in an HTML file of dozens of Megabyte. However, then you'd have a truly self-contained presentation file.

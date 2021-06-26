@@ -51,9 +51,11 @@ Because CodeMirror is so powerful, there are also other great options that you c
 * If you have nothing selected, pressing `Cmd/Ctrl+X` will **cut the full line**. Pressing `Cmd/Ctrl+V` afterwards will **insert this whole line above the line, in which your cursor is**.
 * CodeMirror **auto-closes quotes and brackets** to save you time! Whenever you type a `"` or a `(` character, it will present you with the closing character automatically. And when you are done with your quote, just type `"` or `)`, it will _not add the character a second time_ but just "jump" over it! This also works with selected text. If you have something selected and press one of these characters, it will encapsulate your selection with the character pair.
 
-## Emacs and Vim Editing Modes
+## Emacs Editing Mode
 
 Some people prefer a different way to insert text into the editor, and therefore like to use Vim or Emacs key bindings. This input mode can be activated in the [settings](../reference/settings.md) and allows you to insert text differently than normal. This setting is recommended for advanced users only.
+
+> We had to disable CodeMirror's built-in VIM-mode since it does not work currently. If you would like to get it back to running, please refer to the [official CodeMirror repository](https://github.com/codemirror/CodeMirror/).
 
 ## Spellchecking
 
@@ -69,6 +71,6 @@ Are you writing bilingual? No problem! Simply load all dictionaries that you pot
 
 Footnotes are a notoriously difficult thing in Markdown, because they require some special characters to realise them, and also need you to work at two positions in the document at once: Where you want to put your footnote and at the bottom, where the reference text resides. Zettlr tries its best to ease your pain with these in the following ways:
 
-1. You can use a shortcut to place footnotes: `Cmd+Alt+R` (macOS only) or `Ctrl+Alt+F` (macOS/Windows/Linux).
+1. You can use a shortcut to place footnotes: `Cmd+Alt+R` (macOS) or `Ctrl+Alt+F` (macOS/Windows/Linux).
 2. The reference text (that is, the content of the footnote) will be displayed at the bottom end of the editor window when you hover over a footnote.
 3. If you `Cmd` or `Ctrl` click a footnote anchor somewhere in your text, a popup will show up that lets you edit the footnote in place. After you are finished editing your footnote, simply press `Shift+Enter` to close the popup and replace the text of the footnote.

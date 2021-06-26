@@ -2,15 +2,17 @@
 
 One of the huge benefits of switching to Markdown to write documents is, that the documents themselves are searchable through your operating system's built-in search (e.g., Cortana on Windows, Spotlight on macOS or Dash on Linux systems). But of course it helps a lot if you don't have to leave the program when you are searching for something. That's where the search comes in! There are basically three distinct search functions: A fast filtering function that you use every time you select another directory in the list on the left, a document-wide search and a global search.
 
-## Filtering files
+## Filtering Files
 
-The first function has already been mentioned on multiple occasions. As the preview list only displays all files inside a given directory and all of its sub-directories, just select different directories to narrow down the list of all files to the ones you need to see. Or, select a root directory to get the full list.
+The first function has already been mentioned on multiple occasions. As the file list only displays all files inside a given directory and all of its sub-directories, just select different directories to narrow down the list of all files to the ones you need to see. Or, select a root directory to get the full list.
 
-## Searching in files
+You can also filter this list further using the text field on top of the file list.
 
-If you are searching for specific phrases or words inside your currently opened file, just press `Cmd/Ctrl+F`. A small popup will open underneath the magnification symbol providing you with the common search and replace options. Just type something and hit `Enter` repeatedly to cycle through the matches. Press `ESC` or click outside the popup to close the search.
+## Searching in Files
 
-> **Tip**: You can also make use of powerful regular expressions for searching. Zettlr by default performs a default search, but when a regular expression is detected (i.e., your search is encapsulated with slashes), it will perform a RegEx search. Once Zettlr has detected a regular expression, the search field will change its font to monospace to help you write your regular expression. To search for all digits, for instance, you'd search for `/\d+/`. [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
+If you are searching for specific phrases or words inside your currently opened file, just press `Cmd/Ctrl+F`. The search will open in the top-right corner of the editor. Just type something and hit `Enter` repeatedly to cycle through the matches. Click the small "x" button to close the search.
+
+> **Tip**: You can also make use of powerful regular expressions for searching. Zettlr by default performs a default search, but when a regular expression is detected (i.e., your search is encapsulated with forward slashes), it will perform a RegEx search. Once Zettlr has detected a regular expression, the search field will change its font to monospace to help you write your regular expression. To search for all digits, for instance, you'd search for `/\d+/`. [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
 
 If you press `Enter` while the replace input is focused, Zettlr will replace the current search result and automatically highlight the next occurrence of your search term. Hit `Enter` repeatedly to replace multiple occurrences. If you want to replace all occurrences at once, you can hit `Alt+Enter` while the replace input has focus.
 

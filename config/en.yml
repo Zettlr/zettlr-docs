@@ -38,7 +38,7 @@ nav:
     - Exporting: core/export.md
     - Table Editor: core/tables.md
     - Localisation: core/localisation.md
-    - Sidebar: core/attachments.md
+    - Sidebar: core/sidebar.md
     - YAML Frontmatter: core/yaml-frontmatter.md
     - Print and Preview: core/print-preview.md
     - Math: core/math.md
