@@ -15,6 +15,7 @@ nav:
   - Welcome: index.md
   - First Steps:
     - Setup: install.md
+    - Portable App: portable.md
     - Installing LaTeX: installing-latex.md
     - Getting Started: get-started.md
     - Get involved: get-involved.md
