@@ -4,15 +4,15 @@ Citing in Zettlr is done using `citeproc-js`, a library that works like Pandoc's
 
 ## Enabling Citations in Zettlr
 
-There are two engines related to citations: previews (citations can be previewed as images or links) and the actual process of generating citations (which happens only on export). Both of these engines are triggered by selecting a citation library that contains references. Without such a library, Zettlr will preview citations (so that you can see what will trigger Pandoc's citeproc), but won't replace them with formatted citations. Also, if you do not specify such a library, Zettlr will _not_ run Pandoc with its citeproc-engine, and therefore will not parse the citations.
+The citation engine that powers Zettlr is triggered when you point Zettlr to a citation library containing references. If a citation library is not specified, Zettlr will _not_ run Pandoc with its citeproc-engine, and therefore will not parse the citations.
 
-So the first step is to create citation library. Zotero is the recommended application for managing your library, so this tutorial assume's you are using Zotero. If you use another program, you will need to figure out how to export to the CSL JSON format.
+Zotero is the recommended application for managing your library and generating your citation library. If you use another program, you will need to figure out how to export to the CSL JSON format.
 
 > If you use Mendeley, Citavi, or any other references management software that does not export to CSL JSON, you can export to BibTex.
 
 ### Step 1: Install BetterBibTex
 
-The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). The main benefit of this plugin is that it keeps your citation IDs (called CiteKeys) unique throughout your library. 
+The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). The main benefit of this plugin is that it keeps your citation IDs (called CiteKeys) unique throughout your library.
 
 > **Why is this important?** For example, if you realise the publication date of a references has been saved wrong, you can change it in Zotero and citeproc will use the citation with the corrected information. However, without BetterBibTex, the same ID may be issued multiple times. This would could lead to an overt error, which is good because there is actually something wrong. However, it could also lead to a silent error, where citeproc uses the first item that matches the ID; this is bad because it is hard to spot erroneous citations after export.
 
@@ -24,7 +24,7 @@ After you've installed BetterBibTex, you may want to play around with the settin
 
 The next step is to export your library. Zotero manages your references, but citing  them is done with Pandoc's citeproc, which needs a separate file.
 
-To export your library so that both Zettlr and citeproc can use, select the collection you want to export in the left sidebar. To have all your references at your disposal and prevent export to multiple libraries, you can select your entire library. 
+To export your library so that both Zettlr and citeproc can use, select the collection you want to export in the left sidebar. To have all your references at your disposal and prevent export to multiple libraries, you can select your entire library.
 
 > We've run tests with a library containing about 700 items, and we have not experienced any performance issues.
 
@@ -42,7 +42,7 @@ Now it is time to import your library to Zettlr. To do so, open Zettlr's prefere
 
 ### Step 4: Enable *Render Citations*
 
-In the *Display* section of the preferences, you will find the option *Render Citations*. This option has to be enabled to view formatted citations in the editor. 
+In the *Display* section of the preferences, you will find the option *Render Citations*. This option has to be enabled to view formatted citations in the editor.
 
 ## Citing in Zettlr
 
@@ -60,7 +60,7 @@ To cite multiple authors, simply divide the blocks with semicolons:
 
 For more information on how to use citations in line with Pandoc's citeproc engine, [please refer to the guide](http://pandoc.org/demo/example19/Extension-citations.html).
 
-> **Please note.** Zettlr's citeproc-engine is **only for preview purposes**. For simplicity reasons, Zettlr does not perfectly parse all citations. It is there to **check that your citations are detected correctly so that you don't have missing citations on export**. But be assured, Pandoc's citeproc will render the citation correctly on export.  
+> **Please note.** Zettlr's citeproc-engine is **only for preview purposes**. For simplicity reasons, Zettlr does not perfectly parse all citations. It is there to **check that your citations are detected correctly so that you don't have missing citations on export**. But be assured, Pandoc's citeproc will render the citation correctly on export.
 
 ## Checking the references
 
@@ -84,7 +84,7 @@ When you add citations to your files, you want to ensure the references are form
 
 LaTeX uses lengths to determine the overall measurements of the exported PDF. These lengths are normally set globally, but they can be changed for different parts of document. One of these lengths is `parindent`, which controls the hanging indent of all paragraphs.
 
-The `parindent` variable can be set using Zettlr's PDF options. However, this will set it globally for all paragraphs, including the references. However, there is a hack you can use to make the reference list look nice: overwrite the paragraph lengths _after_ your document. That is, after the heading `## References` (or however you call it in your file). Re-set the paragraph lengths to what looks nice to you. 
+The `parindent` variable can be set using Zettlr's PDF options. However, this will set it globally for all paragraphs, including the references. However, there is a hack you can use to make the reference list look nice: overwrite the paragraph lengths _after_ your document. That is, after the heading `## References` (or however you call it in your file). Re-set the paragraph lengths to what looks nice to you.
 
 The following code snippet gives you an example:
 
