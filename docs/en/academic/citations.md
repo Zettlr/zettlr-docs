@@ -6,9 +6,9 @@ Citing in Zettlr is done using `citeproc-js`, a library that works like Pandoc's
 
 The citation engine that powers Zettlr is triggered when you point Zettlr to a citation library containing references. If a citation library is not specified, Zettlr will _not_ run Pandoc with its citeproc-engine, and therefore will not parse the citations.
 
-Zotero is the recommended application for managing your library and generating your citation library. If you use another program, you will need to figure out how to export to the CSL JSON format.
+[Zotero](https://www.zotero.org/) is the recommended application for managing your library and generating your citation library. If you use another program, you will need to figure out how to export to the CSL JSON format.
 
-> If you use Mendeley, Citavi, or any other references management software that does not export to CSL JSON, you can export to BibTex.
+> If you use Mendeley, Citavi, JabRef or any other references management software that does not export to CSL JSON, you can export to BibTex.
 
 ### Step 1: Install BetterBibTex
 
