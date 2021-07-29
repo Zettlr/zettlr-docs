@@ -26,13 +26,13 @@ The “Night Mode” and “File information” checkboxes control the display. 
 
 If you check “Hide directories during global search,” Zettlr will not display directories while performing a search. by selecting “Always load remote changes to the current file”, Zettlr will not ask you whether you’d like to replace the file in the editor.
 
-The sidebar mode controls how the sidebar is displayed to you. You have two options:
+The file manager mode controls how the file manager is displayed to you. You have two options:
 
-* Thin: In thin mode, the sidebar only displays _either_ the list of files _or_ the tree view. You can switch between both using the shortcut `Cmd/Ctrl+Shift+1`.
+* Thin: In thin mode, the file manager displays _either_ the list of files _or_ the tree view. You can switch between both using the shortcut `Cmd/Ctrl+Shift+1`.
 * Expanded: The expanded mode displays both the tree view and the file list side by side. In this mode, you have both lists always present.
-* Combined: This makes the Sidebar look more like a traditional file browser, because it does not divide folders and files.
+* Combined: This makes the file manager look more like a traditional file browser, because it does not divide folders and files.
 
-If you want to hide the sidebar completely, please use the distraction-free mode (`Cmd/Ctrl+J`).
+If you want to hide the file manager completely, please use the distraction-free mode (`Cmd/Ctrl+J`).
 
 The sorting order determines how Zettlr will sort your files internally. The natural order is recommended; ASCII ignores certain natural language implications.
 
@@ -68,7 +68,7 @@ Selecting "Remove ZKN IDs from files" makes Zettlr remove all IDs that it finds 
 
 Below these options you can choose what to do with internal links (by default they are encapsulated in `[[` and `]]`). The first option completely removes them, the second only removes the link formatting, while the last option leaves them alone.
 
-On the right side you have more general options for exporting. You can choose to export your files to the temporary directory. This is recommended, as it allows you to leave the files alone, because they will be deleted automatically. The second option stores the rendered files in the current directory, overwriting existing files without asking. Use this option if you need the files be present in the attachment sidebar.
+On the right side you have more general options for exporting. You can choose to export your files to the temporary directory. This is recommended, as it allows you to leave the files alone, because they will be deleted automatically. The second option stores the rendered files in the current directory, overwriting existing files without asking. Use this option if you need the files be present in the sidebar.
 
 The CSL JSON database field can be used to open a literature database. Zettlr will read in the file and enable citation rendering in your files. The CSL Style lets you overwrite the default citation style (APA). You can use any file present in the [Zotero style repository](https://www.zotero.org/styles).
 
@@ -162,7 +162,7 @@ The **debug option** is used to control whether or not you are able to "reload" 
 
 You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases in addition to normal releases. You can then decide whether to use the beta version, or not. Activate **RMarkdown file support** to enable the detection of `.rmd` files used for R-Markdown. It is inactive by default, as some other programs (for instance, by Adobe) also use this extension to store binary data, which would cause problems.
 
-The text area to the right controls what files will be displayed in the **attachment** sidebar. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions you might be using.
+The text area to the right controls what files will be displayed in the **sidebar**. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions you might be using.
 
 The **Pandoc command** gives you full control over the export engine. The command in there will be run on export. You have a few variables at your disposal to customise your export:
 
