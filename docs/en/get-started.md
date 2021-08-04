@@ -1,4 +1,4 @@
-# Get Started
+# Getting Started
 
 After setting up Zettlr, you may very likely want to get started with it right away. On the first start, Zettlr will copy a special directory into your Documents folder that contains a very useful interactive tutorial that leads you natively through the first steps with the app. Just follow the instructions there; it will even point you to specific sections of this documentation where you can learn more about the app!
 
@@ -6,10 +6,10 @@ If you have any questions that do not seem to be answered in this documentation,
 
 You can view a series of introductory videos following [this link to our Zettlr HowTo playlist](https://www.youtube.com/playlist?list=PL2ydvDwV-1u5ncnkxQWZhbHQdwpY2fx5f).
 
-> The interactive tutorial will suggest to install Pandoc and LaTeX on your computer. Zettlr depends on these programs for importing and exporting files. Without Pandoc, you will only be able to export HTML documents and importing is disabled. Without LaTeX you will not be able to export PDF files. But if you do not intend to import or export anything, you do not need them – they can be installed at any time, should you change your mind.
+> The interactive tutorial will suggest to install LaTeX on your computer. Zettlr depends on LaTeX for exporting advanced PDF files. Without LaTeX you will still be able to export PDF files, but only simple ones. If you do not intend to export advanced PDF files, you do not need LaTeX. It can be installed at any time, should you change your mind.
 
 ![An impression of the application on first start on macOS](img/first_start.png)
 
-All the features used in this tutorial are described in the documentation, so in case you want to read more on them, simply look for the feature here. It is recommended that you follow the tutorial during your first start of the application to get used to different concepts such as the sidebar, the file tree, internal links and the document tabs.
+All the features used in the tutorial are described in this documentation, so in case you want to read more on them, simply look for the feature here. It is recommended that you follow the tutorial during your first start of the application to get used to different concepts such as the sidebar, the file tree, internal links and the document tabs.
 
-Once you are done with the tutorial, you can either close the directory to unload it from the app, completely delete it, and you can open another folder to work with.
+Once you are done with the tutorial, you can either close the directory to unload it from the app or completely delete it, and you can open another folder to work with.

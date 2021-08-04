@@ -1,19 +1,17 @@
 # Document Tabs
 
-Zettlr allows opening multiple documents at the same time in tabs.
+Zettlr allows opening multiple documents at the same time in tabs. If you work with more than one document regularly, you will certainly love this feature! All open tabs are saved when you quit the app, and they are restored upon start (if the files still exist, that is). This way they work pretty much like browser tabs.
 
-These tabs have similarities with tabs in other applications, but some of their features differ from tabs in browser for example.
+## Tab Behavior
 
-All tabs are restored when you reopen the application.
+There are two kinds of people: Those who like to have many tabs open at once, and those who don't. Zettlr pays tribute to both: In the preferences you can tell Zettlr to avoid opening new tabs if possible.
 
-## Transiency
+If you enable that setting, Zettlr will always attempt to close the currently active tab and replace it with a new one whenever you open a file. However, if the file in your active tab is edited and contains unsaved changes, Zettlr will still open a new file in a new tab. To force Zettlr to open a new tab regardless of this setting, simply click with your **middle mouse button**. If you are using a trackpad, the context menu allows you to open files in a new tab as well.
 
-There are two kinds of tabs: the "normal" ones, where the filename appears with a regular font, and the so-called "transient" ones, where the filename is written in italics.
-A transient tab looses its "transiency" when the file it contains is modified.
+If you disable that setting, Zettlr will always open any new file in a new tab and never close your old ones.
 
-If the currently active tab is transient, opening a new document will not occur in a new tab, but instead will replace the document displayed in that tab.
-On the contrary, if the tab is not transient, the new document will be opened in a new tab.
+> You can close tabs either by clicking the "x"-icon or by clicking a tab with your middle mouse button.
 
-![An example of transient tabs](../img/transient_tabs.png)
+## The tab context menu
 
-This is useful when you want to quickly skim through multiple documents, as these documents will override one another unless you modify one.
+Every tab gives you some options for working with your tabs: You can either close the current tab, or you can close all tabs. You can also close every tab except the one you clicked.

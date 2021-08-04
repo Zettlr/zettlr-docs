@@ -15,31 +15,31 @@ nav:
   - Welcome: index.md
   - First Steps:
     - Setup: install.md
-    - Installing Pandoc: installing-pandoc.md
+    - Portable App: portable.md
     - Installing LaTeX: installing-latex.md
     - Getting Started: get-started.md
     - Get involved: get-involved.md
     - FAQ: faq.md
+    - Troubleshooting: troubleshooting.md
   - Concepts:
-    - File management: concepts/roots.md
+    - File management: concepts/workspaces.md
     - Context: concepts/context.md
     - WYSIWYM: concepts/wysiwym.md
-  - Guides:
-    - Zettlr as a note taking app: guides/guide-notes.md
-    - Zettlr as a Zettelkasten: guides/guide-zettelkasten.md
-    - Zettlr as an IDE: guides/guide-ide.md
   - Core:
-    - The Editor: core/editor.md
+    - Editor: core/editor.md
     - Document Tabs: core/tabs.md
-    - The File List: core/file-list.md
+    - File Manager: core/file-manager.md
+    - Assets Manager: core/assets-manager.md
+    - Defaults Files: core/defaults-files.md
+    - Custom CSS: core/custom-css.md
+    - Snippets: core/snippets.md
     - AutoCorrect and MagicQuotes: core/autocorrect.md
     - Searching: core/search.md
     - Importing: core/import.md
     - Exporting: core/export.md
     - Table Editor: core/tables.md
-    - Custom CSS: core/custom-css.md
     - Localisation: core/localisation.md
-    - Sidebar: core/attachments.md
+    - Sidebar: core/sidebar.md
     - YAML Frontmatter: core/yaml-frontmatter.md
     - Print and Preview: core/print-preview.md
     - Math: core/math.md

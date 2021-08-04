@@ -4,27 +4,27 @@ Citing in Zettlr is done using `citeproc-js`, a library that works like Pandoc's
 
 ## Enabling Citations in Zettlr
 
-The citation engine that powers Zettlr is activated when you point Zettlr to a citation library containing references. If a citation library is not specified, Zettlr will _not_ run Pandoc with its citeproc-engine, and therefore will not parse the citations.
+There are two different engines that belong to the realm of citing: the previews (citations can be previewed just as images or links) and the actual process of generating citations (which happens only on export). Both of these functions are triggered by selecting a citation library that contains references. Without such a library, Zettlr will still "preview" citations (so that you can see what will trigger Pandoc's citeproc), but Zettlr won't replace the citation's contents with a generated citation.
 
-[Zotero](https://www.zotero.org/) is the recommended application for managing your library and generating your citation library, and CSL JSON is the recommended format for your library. However, BibTex files are also supported. You can use whichever software you prefer, as long as it supports exporting citations either as CSL JSON or BibTex.
+So the first step is to create such a file. Zotero and JabRef are both recommended applications for managing your library.
 
-> Unfortunately, BibLaTex files are not yet supported. You can still load those and during export, Pandoc will be able to use BibLaTex files to render your citations, but Zettlr itself might throw errors and the preview functionality might break.
+> To keep things simple, **this tutorial assumes that you use Zotero**. If you use another reference manager, please check its manual on how to export from to either CSL JSON or BibTex format.
+
+If you use Mendeley, Citavi, EndNote, or any other references management software that does not support CSL JSON, you can use BibTex files. They will work the same way as CSL JSON files. Internally, Zettlr will convert BibTex to CSL JSON.
 
 ### Step 1: Install BetterBibTex
 
-The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). The main benefit of this plugin is that it keeps your citation IDs (called CiteKeys) unique throughout your library.
+The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). Using BetterBibTex has two important benefits over not using it: First, it keeps all of your citation keys unique across your entire library. Second, it allows you to keep your exported library file up to date so you do not have to re-export it every time something changes.
+
+Each citation item has its own unique ID. This is necessary so that when you, for instance, realise that the publication date has been saved wrong, you can easily change it in Zotero and afterwards citeproc will use the corrected information. If you do not use BetterBibTex, it may happen that an ID is issued multiple times, which would either generate errors (the good way, because you know there's something wrong) or simply cause citeproc to use the first item that matches this ID (the bad way, because then you'd have to be lucky to spot the wrong citation after export).
 
 > **Why is this important?** For example, if you realise the publication date of a references has been saved wrong, you can change it in Zotero and citeproc will use the citation with the corrected information. However, without BetterBibTex, the same ID may be issued multiple times. This could lead to an overt error, which is good because there is actually something wrong. However, it could also lead to a silent error, where citeproc uses the first item that matches the ID; this is bad because it is hard to spot erroneous citations after export.
 
-After you've installed BetterBibTex, you may want to play around with the settings. For example, you may want alter how the IDs are generated.
-
-> **Tip**: BetterBibTex automatically generates unique IDs using an algorithm that you can customise. For the most part, BetterBibTex makes use of the established [JabRef Patterns](http://help.jabref.org/en/BibtexKeyPatterns). For example, BetterBibTex will make sure each entry is unique by optionally adding a suffix to publications that yield the same ID (e.g. `Harvey2005a`, `Harvey2005b`, `Harvey2005c`). You can read about [this plugin's functionality in its extensive documentation](https://retorque.re/zotero-better-bibtex/citation-keys/).
+> **Tip**: BetterBibTex automatically generates unique keys using an algorithm that you can customise. BetterBibTex is compatible with [JabRef's citekey patterns](https://docs.jabref.org/setup/citationkeypatterns). It will make sure that each entry is unique by optionally adding a suffix to publications which yield the same keys (e.g. you'll have something like `Harvey2005a`, `Harvey2005b`, `Harvey2005c`, and so forth). You can find [all abilities of BetterBibTex in the plugin's extensive documentation](https://retorque.re/zotero-better-bibtex/citation-keys/).
 
 ### Step 2: Export your library
 
-The next step is to export your library. Zotero manages your references, but citing them is done with Pandoc's citeproc, which needs a separate file.
-
-To export your library so that both Zettlr and citeproc can use it, select the collection you want to export in the left sidebar. To have all your references at your disposal and prevent export to multiple libraries, you can select your entire library.
+The next step is to actually export your library. Zotero's task is to manage your references, but in order for Zettlr to be able to use them in preview as well as exported files, you need to export them into a standalone file.
 
 > We've run tests with a library containing about 700 items, and we have not experienced any performance issues exporting all of them in total.
 
@@ -39,6 +39,8 @@ Next, click on `File` and select `Export library …`. Select `Better CSL JSON` 
 Now it is time to import your library to Zettlr. To do so, open Zettlr's preferences, go to the `Export` tab and click the small folder icon located to the right to the `Citation Database` input field. A dialog will appear that lets you navigate to your database file (i.e. `CSL JSON` or `BibTex`). Select your database file, save the preferences and Zettlr will automatically load the database. You are now ready to cite!
 
 ![Point Zettlr to your database file](../img/settings_export.png)
+
+> Please note that you can also add bibliography files to the defaults files. These, however, will not be loaded by Zettlr, so it will not preview any citekeys defined there.
 
 ### Step 4: Enable *Render Citations*
 
@@ -64,9 +66,21 @@ For more information on how to use citations in line with Pandoc's citeproc engi
 
 ## Checking the references
 
-Once you are done writing and want to check you have cited everything you planned to cite by openning `Sidebar` (Shortcut: `Ctrl/Cmd+?`) and selecting the middle `References` tab. Zettlr will display a list of all references it has found in your current file. If a reference is missing from this list, it probably has not been cited in your file.
+After you're done citing and want to check that you've cited everything you planned to, you can open the [Sidebar](../core/sidebar.md) and switch to the references section. If something's missing from there, it's probably not been cited in your file.
 
-![References in the Attachment Pane](../img/references-pane-sidebar.png)
+## Using a file-specific library
+
+You can also use a specific bibliography file that is only used for one of your files. To do so, you must add the bibliography file to your file's YAML frontmatter. If Zettlr detects the `bibliography` property in a file's frontmatter, it will automatically load that file and offer you items from that file instead of your main library.
+
+Example:
+
+```yaml
+---
+title: "My document"
+tags: tag1, tag2, tag3
+bibliography: ./assets/references.json
+---
+```
 
 ## Changing the citation style
 

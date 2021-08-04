@@ -16,6 +16,6 @@ AutoCorrect comes in two flavors: You can either choose the "Word" mode, or the 
 
 ## MagicQuotes
 
-MagicQuotes is an extension that helps you write typographically correct quotation marks, instead of the default (" and '). You can either choose them from a dropdown list, or select a pre-defined set for a few languages by pressing the corresponding button in the preferences. Selecting the first option (or the "None" option button) restores the default quotation marks.
+MagicQuotes is an extension that helps you write typographically correct quotation marks, instead of the default (`"` and `'`). You can either choose them from a dropdown list, or select a pre-defined set for a few languages by pressing the corresponding button in the preferences. Selecting the first option (or the "None" option button) restores the default quotation marks.
 
 > MagicQuotes is automatically active as long as AutoCorrect is active. If you choose to deactivate AutoCorrect, this also deactivates MagicQuotes. To selectively disable MagicQuotes while keeping the AutoCorrect functionality, set the MagicQuotes to the default quotation marks.
