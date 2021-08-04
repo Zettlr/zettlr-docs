@@ -28,6 +28,8 @@ As we write this, Zettlr is available in 25 languages. A few more languages are 
 
 Have a look at [our translation service](https://translate.zettlr.com/) to see an up-to-date list.
 
+> For localisation of output files, see the [YAML Frontmatter variable `lang`](https://docs.zettlr.com/en/core/yaml-frontmatter/#variable-lang)
+
 Furthermore, Zettlr ships with a few spellchecking dictionaries. Due to their size only a limited amount is available, but you can add new ones easily.
 
 ## Changing the Language and Enabling Spellchecking
