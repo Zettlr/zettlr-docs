@@ -60,6 +60,8 @@ A final preconsideration is the differentiation between templates and reference 
 
 Now it's time to get to building a template! You can either use an external editor to write your template or use Zettlr itself. Zettlr allows you to write LaTeX templates directly inside it, so you don't have to use an external editor for that.
 
+> Most of you might want to simply take the default template and begin customizing it instead of writing your own from scratch. [The default Pandoc template can be found here](https://github.com/jgm/pandoc/blob/master/data/templates/default.latex).
+
 ![Create TeX-Files by appending the appropriate extension](../img/create_tex_file.png)
 
 If you create a new file, but **provide `.tex` as the file extension**, Zettlr will not create a Markdown file but an actual LaTeX file! This file will be indicated with a small `TeX` indicator in the file list (if file meta is turned on) and can be edited from within Zettlr. Hooray!
