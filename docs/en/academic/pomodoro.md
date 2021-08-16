@@ -1,41 +1,34 @@
 # Pomodoro Timer
 
-If you write a lot, the time may come that you need to organise your time better. The built-in Pomodoro Timer can help you with this.
+If you write a lot, you likely have experienced writing fatigue due to excessive long hours working. To combat this, Francesco Cirillo devised a technique called the [Pomodoro technique](https://francescocirillo.com/pages/pomodoro-technique) which breaks down long sessions into intervals (with breaks). This allows the brain to refresh itself and helps avoids burn-out. This works as follows:
 
-Access the Pomodoro Timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
+1. Work (typically 25 minutes)
+2. Short break (typically 5 - 10 minutes)
+3. Repeat (3 times)
+4. Long break (typically 25 - 30 minutes)
+5. Repeat from Step 1
 
-![Pomodoro Timer](../img/pomodoro_init.png)
+Zettlr simplifies this processing with a built-in Pomodoro timer.
 
-Don't know what a pomodoro timer is? Then head over to [the official website](https://francescocirillo.com/pages/pomodoro-technique)!
 
 ## Using the Pomodoro timer
+Access the Pomodoro timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
 
-Before you start the Pomodoro Timer, you can adapt some settings.
+The Pomodoro timer, has 3 core settings that can be altered.
 
-The **red** number indicates the amount of minutes used to _work_. The default is 25 minutes.
-
-The **yellow** number indicates the duration of a _short_ break that will divide portions of work. After each work-phase there will be a short break. The default is 5 minutes.
-
-The **green** number tells Zettlr, how long a _long_ break should be. After every four tasks, there will be such a long break. The default duration is 20 minutes.
-
-Below, you can decide whether or not a sound should be played each time a phase has ended. Adjust the volume with the slider (0% means the sound will be muted).
+- The length of the **Work**, **Short Break** and **Break** duration's are adjusted by entering the desired time (minutes) in their respective text boxes.
+- After each phase a **Sound Effect** is played. This are chosen using the drop down menu (Glass, Digital Alarm and Chime).
+- The **volume of the chosen sound** is adjusted using the volume slider (fully left is no sound). This can be either dragged of clicked to chose the desired level (this also previews the sound at the selected volume).
 
 > This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
 
-Click on **Start** to begin the timer. Then, the circle will be filled with the color of the current phase (either red, yellow, or green). Once it is full, the next phase will begin.
 
-To **Stop** the timer or simply review the current **status** of the timer, click on the circle again. A small popup will tell you the remaining amount of time for the current phase, the type of the current phase and give you the option to stop.
+![Timer.png](images/Timer.png)
 
-![Pomodoro Timer during Run](../img/pomodoro_run.png)
+The timer is started by pressing the  **Start** button. The circle is then filled incrementally (in relation to the time remaining) with the color of the current phase (red for work, yellow for a short break and green for a longer break). Once the circle is filled, the next phase begins and an alert is played (presuming the volume is up).
 
-The **cycle** of the pomodoro timer is as follows:
+To **Stop** the timer or simply review the current **status** of the timer, the circle is clicked again. A small popup shows the remaining amount of time for the current phase, the type of the current phase and gives the option to stop session.
 
-1. Work
-2. Short break
-3. Work
-4. Short break
-5. Work
-6. Short break
-7. Work
-8. Long break
-9. _Repeat from step 1_
+![Pomodoro Timer running](images/pomodoro_ran.png)
+
+
