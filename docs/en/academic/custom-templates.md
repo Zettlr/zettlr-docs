@@ -6,7 +6,7 @@ In addition to giving you the freedom to use tools like Pandoc and LaTeX, a core
 
 ## Preconsiderations
 
-The Zettlr exporting engine performs a variety of tasks before handing off your documents to Pandoc, which will use LaTeX to typset your document. Understanding these tasks is important to produce consistent output and prevent problems, especially when using more advanced templating.
+The Zettlr exporting engine performs a variety of tasks before handing off your documents to Pandoc, which will use LaTeX to typeset your document. Understanding these tasks is important to produce consistent output and prevent problems, especially when using more advanced templating.
 
 ### 1. Concatenate All Input Files (Only Applies to Projects)
 
@@ -27,10 +27,6 @@ Then, depending on whether it is relevant and also what is selected in the prefe
     * `Remove internal links completely`
     * `Unlink internal links` will strip the link formatting characters (`[[` and `]]` by default)
     * `Don't touch internal links` 
-
-<!-- TOCHECK: Is the next point still valid in v2? This option seems to have been removed. -->
-* Strip Zettelkasten IDs.
-    * This feature is off by default because removing IDs generated in the default format (14 digits) may unintentionally break web links that also contain 14 consecutive digits. 
 
 ![](../img/settings_export_links.png)
 Zettlr then saves the revised source file to a temporary directory.
@@ -66,19 +62,16 @@ With the source and template files prepared, Zettlr will prepopulate the Pandoc 
 
 > Many of the commands in the default Pandoc template require additional LaTeX packages. To not confuse users who only need the basics, Zettlr's default template strives for maximum compatibility, not perfect PDFs.
 
-<!-- TO CHECK: Regarding the next line, I was not able to find the 'table of contents' option in the project propertie; it seems to be much simpler and only asks about what format to export the project in and also about what files to ignore via a glob pattern (there is also a lot of little icons visible at the botton of this project properties menu that seem to not do anything...).-->
+If you indicate that you want a table of contents for PDF documents (Preferences -> Assets Manager), the relevant command will be included in the Pandoc command variables. This will cause XeLaTeX to run **twice**: once to build the PDF and determine where the headings will be located, and once to build the PDF with the table of contents included. 
 
-If you indicated in your project settings that you want a table of contents, the relevant command will be included in the Pandoc command variables. This will cause XeLaTeX to run **twice**: once to build the PDF and determine where the headings will be located, and once to build the PDF with the table of contents included. 
+![Adding or removing table of contents for PDF outputs](../img/asset_manager_pdf_toc.png)
 
-<!-- TO CHECK: Regarding the next line, the TOC flag and the whole Pandoc command found in the Advanced tab in the Preferences does not seem to exist anymore. Should the line be deleted? Or does this line now refer to PDF  in Preferences -> Asset Manager? If so, the --toc flag is set to false, which does not fit with the line below. -->
-
-> In general, you should keep the table of contents flag (i.e. `$toc$`) in the Pandoc command used by Zettlr (it can be edited in the Advanced tab in the Preferences). If you remove it, you will lose the ability to generate a table of contents (even if you indicate you want one).
 
 ### 5. Run the Command!
 
 With all preconditions met, Zettlr will run the Pandoc command. If it runs successfully, your output file will open using your system's default application for your chosen output format (e.g. default PDF reader for a PDF document; default web browser for an HTML document). 
 
-If Pandoc exited with an error, Zettlr will show you the error message, which you can cut-and-paste into Google to troubleshoot the problem. If the error occured in LaTeX, the full LaTeX console output will be displayed. This can be quite verbose and confusing for newcomers. For example, if a LaTeX package is missing, you need to spot the relevant error message (i.e. `File <package-name>.sty is missing`) amongst all the other output text.
+If Pandoc exited with an error, Zettlr will show you the error message, which you can cut-and-paste into Google to troubleshoot the problem. If the error occurred in LaTeX, the full LaTeX console output will be displayed. This can be quite verbose and confusing for newcomers. For example, if a LaTeX package is missing, you need to spot the relevant error message (i.e. `File <package-name>.sty is missing`) amongst all the other output text.
 
 > **Attention:**  If you use the default template and avoid using LaTeX commands in your Markdown file, you should not encounter any errors. If you do, it indicates there is a problem with the default template, which should be reported to Zettlr's maintainers. 
 
@@ -86,20 +79,16 @@ If Pandoc exited with an error, Zettlr will show you the error message, which yo
 
 Let's write your first LaTeX template, which can be done directly in Zettlr! When complete, your template file will be passed to Zettlr, Citeproc (if applicable), Pandoc, and then finally LaTeX. 
 
-<!-- TO CHECK: On 2.0.0.0-beta on a Linux machine, I do not see a + symbol to add a new file where I can type in the filename with extension. Also, if I select   File -> New File , A file is automatically generated with an ID as its name; it is not intuitive that one has to add some text, then try to save the file in order to be able to rename the file to, for example, 'my-template.tex'. Is this the intended way to create a new file with a specific name?
 
-A new figure is likely needed if the + menu item is in fact gone; I am happy to make this change if my current interface, without the + is in fact correct.-->
+First, create a new file (File -> New File…). This will automatically create a Markdown file (`.md`) with a unique identifier as its temporary name. Start writing your LaTeX template and then save your file (File -> Save). At this point, you will be able to provide your file an appropriate name and file extension. For example, `my-template.tex`. 
 
-![Create TeX-Files by appending the appropriate extension](../img/create_tex_file.png)
+![Zettlr with a TeX file open](../img/custom_template.png)
 
-First, create a new file and **give it a `.tex` file extension**.  A small `TeX` indicator will appear beneath the filename in the file list.
+Zettlr will automatically switch code highlighting from Markdown to LaTeX, and a small `TeX` indicator will appear beneath the filename in the file list.
 
-<!-- TO CHECK: If I save a file with a file extension of .tex, then Zettlr will show the small 'TeX' indicator. However, if you rename an existing file and give it a .tex file extension, Zettlr will now show a small 'TeX' indicator. I would have expected the 'TeX' indicator to be show in both circumstances. 
+![Zettlr with a TeX file open](../img/tex_icon.png)
 
-A new figure is needed; however I am hesistant to replace the current one as my Zettlr interface looks different (which is to be expected given I am using 2.0.0.0-beta; however, I don't have the + symbol to add files...so I thought it best to wait to hear back on the the above comment before replacing the figure. -->
-![Zettlr with a TeX file open](../img/zettlt_tex_file.png)
 
-Zettlr will automatically switch code highlighting from Markdown to LaTeX.
 
 ## Necessary Contents
 
@@ -112,22 +101,6 @@ $body$
 Pandoc will replace this variable with the parsed contents of your Markdown file(s). If you leave it out, your content will not appear in the output file.
 
 > The default Zettlr template does not include many of the variables from the default Pandoc template. However, you are free to re-introduce some or all of them. This ability to use a combination of Pandoc and Zettlr variables makes template files truly powerful!
-
-## Hacking Your Templates!
-
-<!-- TO CHECK: Is still section relevant in V2? I could not find where in preferences you can amend the default Pandoc command used.  Has this functionality been removed from V2 or has it be moved? If it has been moved, then this section should be re-written by someone who knows how V2 is intented to work with this notion of hacking templates.-->
-
-In the preferences, you can amend the default Pandoc command used to generate the output file. This gives you ultimate control over the the exporting process. For instance, you can bypass the default processing done by the export engine (except parsing the source file(s)) by deleting the relevant Pandoc command line option.
-
-You could also place Pandoc variables in your Zettlr variables (for instance setting the PDF author in your project preferences to something that includes a Pandoc variable). Then, once Zettlr has run over your file, Pandoc will replace its own variable after the Zettlr variable has been replaced.
-
-But what if you want to _really_ hack everything? Have a second look at the Pandoc command in the preferences. It's the **full console command that will be run**! This means you can run custom scripts or logic before and after the Zettlr calls Pandoc. For examples, imagine you want to pass the temporary Markdown file to a custom script to perform additional preprocessing, and afterwards, move the file to another location? This could be achieved by including the following Pandoc command in the preferences:
-
-```shell
-pandoc "$infile$" -f markdown $outflag$ $tpl$ $toc$ $tocdepth$ $citeproc$ $standalone$ --pdf-engine=xelatex -o "$outfile$" && cp "$outfile$" /Users/zettlr/Desktop/Final.pdf
-```
-
-This command would copy the final output file to the Desktop of the fictional user "zettlr" and name it "Final.pdf" (assuming you are using macOS). Instead of using a simple shell command like `cp`, you could also pass whole scripts that would run afterwards. The sky really is the limit!
 
 ## Final Thoughts
 
