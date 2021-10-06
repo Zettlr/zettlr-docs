@@ -16,11 +16,13 @@ Zettlr requires a certain set of defaults files, since for each export or import
 
 ## Requirements for Defaults Files
 
-The defaults files as used by Zettlr have a certain set of requirements which you must keep in mind when editing them. First, never change the `writer` and `reader` properties. These properties can be set because you could, in theory, use a default file for several conversion strategies. However, since Zettlr allows you to export and import a certain set of files, it is smarter to offer you a range of defaults files where these properties are fixed. If you, for example, exchange a writer and a reader property, Pandoc might complain.
+The defaults files as used by Zettlr have a certain set of requirements which you must keep in mind when editing them. First, you should never change the `writer` and `reader` properties except for adding markdown extensions (see info box below). These properties can be set because you could, in theory, use a default file for several conversion strategies. However, since Zettlr allows you to export and import a certain set of files, it is smarter to offer you a range of defaults files where these properties are fixed. If you, for example, exchange a writer and a reader property, Pandoc might complain.
 
 Next, whenever Zettlr imports or exports a file, it will read in the corresponding defaults file and modify it in specific ways. In general, Zettlr will try to only amend the properties you define in a defaults file instead of replacing them. For example, Zettlr will check if you have already defined a bibliography in there, and add your main library to that array so that those citation libraries you have already defined will not be lost. The input and output files, however, will be replaced internally, so defining a few files in there will have no effect.
 
 Other than that, however, you are free to do whatever you need to the defaults files in order to adapt the imports and exports to your liking.
+
+> We mentioned that you should not change the `writer` or `reader` properties. However, there is a certain leverage. Pandoc supports Markdown extensions (i.e. for smart quotes, emojis, etc.). These are specified by adding them after the `reader` or `writer` properties using `+`-signs. So if you require extensions to the standard Markdown reader, you can of course add these to the `reader` or `writer` properties. Example: `reader: markdown+definition_lists+mmd_title_block+bracketed_spans+fenced_divs`. This will still use the same reader, but configure it (in this example) to additionally use definition lists, multi-markdown title blocks, bracketed spans, and fenced divs.
 
 ## Which Variable Overwrites Which?
 
