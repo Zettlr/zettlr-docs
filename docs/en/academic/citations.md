@@ -24,15 +24,15 @@ Each citation item has its own unique ID. This is necessary so that when you, fo
 
 ### Step 2: Export your library
 
-The next step is to actually export your library. Zotero's task is to manage your references, but in order for Zettlr to be able to use them in preview as well as exported files, you need to export them into a standalone file.
+The next step is to actually export your library. Zotero's task is to manage your references, but in order for Zettlr to be able to use them in preview as well as exported files, you need to export them into a standalone bibliography file.
 
 > We've run tests with a library containing about 700 items, and we have not experienced any performance issues exporting all of them in total.
 
-![Export your Library as Better CSL JSON](../img/export-to-csl-json.png)
+![Exporting your Library as Better CSL JSON](../img/export-to-csl-json.png)
 
-Next, click on `File` and select `Export library …`. Select `Better CSL JSON` as the format; if you opted to not install BetterBibTex, choose `CSL JSON`. By checking "Keep updated", BetterBibTex will ensure every change in Zotero will automatically update your `CSL JSON` file. In this way, Zettlr will always use the most up-to-date, correct citation.
+In Zotero, click on `File` and select `Export library …`. Select `Better CSL JSON`, `Better BibLaTex` or `Better BibTeX` as the format; if you opted to not install BetterBibTex, choose `CSL JSON`, `BibLaTex` or `BibTeX`. By checking "Keep updated", BetterBibTex will ensure every change in Zotero will automatically update your bibliography file. In this way, Zettlr will always use the most up-to-date, correct citation.
 
-> If you checked "Keep updated", you can verify the status of the `CSL JSON` by opening the Zotero Preferences, selecting the `BetterBibTex` tab, and selecting `Automatic Export`. Here you can finetune what is exported, and when.
+> If you checked "Keep updated", you can verify the status of the bibliography file by opening the Zotero Preferences, selecting the `BetterBibTex` tab, and selecting `Automatic Export`. Here you can fine tune what is exported, and when.
 
 ### Step 3: Open your library in Zettlr
 
