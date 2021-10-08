@@ -16,7 +16,7 @@ If you use Mendeley, Citavi, EndNote, or any other references management softwar
 
 The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). Using BetterBibTex has two important benefits over not using it: First, it keeps all of your citation keys unique across your entire library. Second, it allows you to keep your exported library file up to date so you do not have to re-export it every time something changes.
 
-Each citation item has its own unique ID. This is necessary so that when you, for instance, realise that the publication date has been saved wrong, you can easily change it in Zotero and afterwards citeproc will use the corrected information. If you do not use BetterBibTex, it may happen that an ID is issued multiple times, which would either generate errors (the good way, because you know there's something wrong) or simply cause citeproc to use the first item that matches this ID (the bad way, because then you'd have to be lucky to spot the wrong citation after export).
+Each citation item has its own unique ID. This is necessary so that when you, for instance, realise that the publication date has been saved wrong, you can easily change it in Zotero and afterwards citeproc will use the corrected information. If you do not use BetterBibTex, it may happen that an ID is issued multiple times, which would either generate errors (the good way, because you know there's something wrong) or simply cause citeproc to use the first item that matches this ID (the bad way, because then you'd have to be lucky to spot the wrong citation after export). 
 
 > **Why is this important?** For example, if you realise the publication date of a references has been saved wrong, you can change it in Zotero and citeproc will use the citation with the corrected information. However, without BetterBibTex, the same ID may be issued multiple times. This could lead to an overt error, which is good because there is actually something wrong. However, it could also lead to a silent error, where citeproc uses the first item that matches the ID; this is bad because it is hard to spot erroneous citations after export.
 
@@ -30,7 +30,11 @@ The next step is to actually export your library. Zotero's task is to manage you
 
 ![Exporting your Library as Better CSL JSON](../img/export-to-csl-json.png)
 
-In Zotero, click on `File` and select `Export library …`. Select `Better CSL JSON`, `Better BibLaTex` or `Better BibTeX` as the format; if you opted to not install BetterBibTex, choose `CSL JSON`, `BibLaTex` or `BibTeX`. By checking "Keep updated", BetterBibTex will ensure every change in Zotero will automatically update your bibliography file. In this way, Zettlr will always use the most up-to-date, correct citation.
+In Zotero, click on `File` and select `Export library …`. Select `Better CSL JSON`or `Better BibTeX` as the format; if you opted to not install BetterBibTex, choose `CSL JSON` or `BibTeX`.
+
+> BibLaTeX libraries (`Better BibLaTeX` and `BibLaTeX`) are not recommended, as this currently breaks the citation preview in Zettlr.
+
+By checking "Keep updated", BetterBibTex will ensure every change in Zotero will automatically update your bibliography file. This will ensures Zettlr will always use the most up-to-date, correct citation.
 
 > If you checked "Keep updated", you can verify the status of the bibliography file by opening the Zotero Preferences, selecting the `BetterBibTex` tab, and selecting `Automatic Export`. Here you can fine tune what is exported, and when.
 
@@ -74,13 +78,12 @@ You can also use a specific bibliography file that is only used for one of your 
 
 Example:
 
-```yaml
----
-title: "My document"
-tags: tag1, tag2, tag3
-bibliography: ./assets/references.json
----
-```
+```  
+-----
+tit  
+tag  
+bib  
+```  
 
 ## Changing the citation style
 
