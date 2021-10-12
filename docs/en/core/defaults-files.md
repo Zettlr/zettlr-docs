@@ -39,3 +39,43 @@ Third, Pandoc will parse the YAML frontmatter(s) of the file(s) you are currentl
 **Example**: Let us assume you have defined a `title` for all your Word exports in the defaults file for Docx. If you do not use any frontmatter, this variable will be used for each and every export to Docx. But if you specify the `title` property inside a YAML frontmatter, this file – when exported to Docx – will have its own title set.
 
 > One common use-case for defining variables inside a defaults file which you could also define on the level of YAML frontmatters would be the `lang`-property. By default, Pandoc sets the language of each import and each export to `en-US`, yielding US-American number delimiters and quotes. If you regularly export into, say, French, it might make sense to set the `lang` property directly in your defaults files to `fr` so that files are being exported using that locale by default. Then you can still overwrite the property to something different within individual files by setting the corresponding YAML frontmatter variable.
+
+## How To Customize Exports
+
+The defaults files are a very powerful, but at the same time very complex way of customizing your exports. In this section we want to give you a heads up of how to use defaults files to the fullest extent.
+
+> This section is still work in progress.
+
+### Preliminaries
+
+Pandoc contains a powerful **templating-system** to customize your exports. Within the default templates Pandoc provides (and uses, if you do not explicitly provide a custom template), you will find statements such as `$for(hyperrefoptions)$,$hyperrefoptions$$endfor$`. In this case, `hyperrefoptions` is a variable that you can set. Depending on the template, different variables are available. You can find a comprehensive list of all variables used in the default templates [here](https://pandoc.org/MANUAL.html#variables).
+
+### Setting Variables
+
+The default variables can sometimes be undesirable (Pandoc sets U.S. Letter as the default papersize, which is undesirable in other parts of the world; Zettlr changes this default to DIN A4, which also might not suit everyone), so you can set them to different values. There are two general ways of doing this:
+
+1. The YAML frontmatter of a file
+2. The corresponding defaults file
+
+If you were to change, say, the papersize variable only for a specific file, you can simply add that variable with the corresponding value as a top-level property. Example:
+
+```yaml
+---
+title: Document title
+author: John Doe
+papersize: legal
+---
+```
+
+This would set the papersize to "legal". Note that in the default template, the word `paper` is already set, so if you are somewhat familiar with LaTeX, `a4paper` would not work since in the template it would become `a4paperpaper` which is not a correct value.
+
+The second way to change a variable is to change it for every single export (unless overwritten by a frontmatter, that is). This you can do in the defaults file, but please note that in defaults files you have to put those variables under a special section called `variables`. Example:
+
+```yaml
+# ... snip ...
+variables:
+  papersize: legal
+# ... snip ...
+```
+
+You can also make use of this templating system yourself. If you want to write a custom template, you can add statements such as `$if(myvariable)$$myvariable$$endif$` and insert the variable `myvariable` into any frontmatter or defaults file, and it will be replaced with whatever value you set it to.
