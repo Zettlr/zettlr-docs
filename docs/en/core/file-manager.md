@@ -6,9 +6,9 @@ The file manager is basically a built-in Explorer (or Finder, if you are on a Ma
 
 In the preferences, you can choose the file manager mode:
 
-* Extended: In the extended mode, both the file _tree_ and the file _list_ will be visible. The file tree does not show individual files (except standalone files).
-* Combined: In the combined mode, you will only see the file tree which then will also include files.
-* Thin: In the thin mode, you have access to both the file tree and the file list, but only one will be shown at a time.
+* **Extended**: In the extended mode, both the file _tree_ and the file _list_ will be visible. The file tree does not show individual files (except standalone files).
+* **Combined**: In the combined mode, you will only see the file tree which then will also include files.
+* **Thin**: In the thin mode, you have access to both the file tree and the file list, but only one will be shown at a time.
 
 The thin mode allows several ways to switch between your file tree and the file list. If you currently see the file tree, but want to see the file list, simply click any directory. Zettlr will then switch to the file list, showing you all files within that directory. If you currently see the file list, simply move your mouse over the top area of the file list. An arrow will appear that you can click to move back to the file tree.
 
@@ -26,27 +26,23 @@ If you turned off the meta information, both directories and files will be shown
 
 ![The possible meta information of files](../img/file_meta.png)
 
-### Writing Targets
+Additionally, you can traverse the directory tree within the file list by clicking on the directories. A simple click will select the directory and move further down the tree, while `Alt+Click` will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.
 
-Since version `1.2`, Zettlr supports writing targets. To set a target, right-click a file and choose "Set writing target …". Enter the amount of words or characters and click "Set". Zettlr will count towards your goal and show you the progress showing a small indicator if you have "file information" activated. Hover over it to see the absolute number of words or characters that you've written.
+> Within the file manager, you can perform most actions that you can also perform in your Explorer/Finder/file browser as you would expect it, such as opening, duplicating, creating, and removing files, dragging them around, and more.
+
+### File and Folder Properties
+
+Each file and each folder also has properties. You can view them by right-clicking any file or folder, and choosing the corresponding menu item.
+
+![A properties dialog for a directory](../img/directory_properties.png)
+
+Each folder can be turned into a [Project](../academic/projects.md) by clicking the switch in its property popover. Afterwards you can fine-tune its project settings. Also, you can select a directory icon which makes it easier to identify the directory visually. Lastly, you can sort directories in their property popovers. Files, on the other hand, show you their tags, ID, and other useful information. You can also set writing targets in the properties of a file.
 
 ![Writing Targets Counter](../img/writing_targets.png)
 
 > To remove the writing target from a file, simply set the writing counter to zero.
 
-![Setting the Writing Target](../img/writing_targets_settings.png)
-
-### File and Folder Properties
-
-Each file and each folder also has properties. You can view them by right-clicking any file or folder, and choosing to view its properties.
-
-Each folder can be turned into a [Project](../academic/projects.md) by clicking the switch in its property popover. Afterwards you can fine-tune its project settings. Also, you can select a directory icon which makes it easier to identify the directory visually. Lastly, you can sort directories in their property popovers. Files, on the other hand, show you their tags, ID, and other useful information.
-
 Both file and folder property popovers show you some general information, like the last modification time, their creation time, and their size.
-
-Also you can traverse the directory tree by clicking on the directories. A simple click will select the directory, while `Alt+Click` will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.
-
-> Within the file manager, you can perform most actions that you can also perform in your Explorer/Finder/file browser as you would expect it, such as opening, duplicating, creating, and removing files, dragging them around, and more.
 
 ## Structural Implications for the File List
 

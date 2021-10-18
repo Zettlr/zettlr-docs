@@ -64,7 +64,7 @@ Now it's time to get to building a template! You can either use an external edit
 
 If you create a new file, but **provide `.tex` as the file extension**, Zettlr will not create a Markdown file but an actual LaTeX file! This file will be indicated with a small `TeX` indicator in the file list (if file meta is turned on) and can be edited from within Zettlr. Hooray!
 
-![Zettlr with a TeX file open](../img/zettlt_tex_file.png)
+![Zettlr with a TeX file open](../img/zettlr_tex_file.png)
 
 Zettlr will automatically detect if it's a LaTeX file and even switch the code highlighting from Markdown to LaTeX to help you write the file.
 
