@@ -12,8 +12,8 @@ In many companies the IT department puts restrictions in place so that you canno
 
 When Zettlr detects it is being run for the very first time on a computer, it will automatically copy a folder with some Markdown files into your Documents-folder. These Markdown files contain some basic introduction on how to use Zettlr. However, they will only be copied once. In order to get these files if you later realised that you would like to revisit the tutorial, you have two options:
 
-1. Rename or remove the `config.json`-file from your application data directory. If that file is not there, Zettlr will think it is being run for the first time and copy the tutorial again.
-2. Simply [download the folder directly from source](https://github.com/Zettlr/Zettlr/tree/develop/static/tutorial) (note that this location might change).
+* Rename or remove the `config.json`-file from your application data directory. If that file is not there, Zettlr will think it is being run for the first time and copy the tutorial again.
+* Simply [download the folder directly from source](https://github.com/Zettlr/Zettlr/tree/develop/static/tutorial) (note that this location might change).
 
 ## Are there any plans of porting Zettlr to mobile phones and tables, for Android or iOS?
 
@@ -36,6 +36,12 @@ $ sudo apt install gvfs-bin
 ```
 
 > If you do not want to use the trash functionality, you can also enable the setting in the advanced preferences telling Zettlr to terminally remove a file if moving it to the trash fails. Please note that this will remove files irreversibly!
+
+## My `Home` and `End`-keys behave weirdly! How do I fix that?
+
+Zettlr uses the code editor CodeMirror under the hood. By default, it assumes that pressing either the `Home` or `End`-key should move the cursor to the beginning and ending of the _actual_ line. An actual line is defined as a contiguous stream of characters _without a line break_. This means that what we _see_ as a paragraph is actually one single line that has been wrapped when it gets too long (that is: the editor automatically inserts linebreaks when the line gets too long).
+
+There is an option in the editor preferences that allows you to control this behavior. If the preferences option "Use CodeMirror default actions for `Home` and `End`" is checked, this means that pressing the `Home` and `End` key will move the cursor to the beginning/end of the _actual_ line (that is: the beginning/end of the paragraph you see). If the option is checked, the keys will move the cursor to the beginning/end of the _visible_ line (that is, it will respect the automatically inserted linebreaks).
 
 ## What is the correct URI formatting for Markdown links?
 

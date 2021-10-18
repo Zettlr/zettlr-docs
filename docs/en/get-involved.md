@@ -8,6 +8,7 @@ Zettlr has a vibrant community helping each other all around the net. The follow
 
 * [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) — Go here to ask general questions, discuss workflows and concepts of Zettlr and share your custom themes.
 * [Zettlr subreddit](https://www.reddit.com/r/Zettlr) — The Zettlr subreddit is meant for the redditors in the community.
+* [Zettlr Discord](https://discord.com/invite/PcfS3DM9Xj) — The Zettlr Discord is a place for the Discordians (there doesn’t appear to be an official term).
 * [The official Twitter account](https://www.twitter.com/Zettlr) — Here you can follow the updates to the app in real time. It's the only place where we regularly announce everything we do. Additionally, we engage in most discussions, so if you have questions, you can drop them here.
 * [The official Facebook page](https://fb.me/Zettlrapp) — Here you can message us, if you don't have a Twitter account.
 * [Our YouTube channel](https://www.youtube.com/c/Zettlr) — If you are more the visual type, you can find some introductory videos here.
