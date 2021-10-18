@@ -88,6 +88,7 @@ Zettlr will automatically switch code highlighting from Markdown to LaTeX, and a
 
 ![Zettlr with a TeX file open](../img/tex_icon.png)
 
+![Zettlr with a TeX file open](../img/zettlr_tex_file.png)
 
 
 ## Necessary Contents

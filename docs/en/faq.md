@@ -23,10 +23,6 @@ We are getting more and more requests for mobile versions of Zettlr. We are very
 
 Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](reference/markdown-basics.md)!
 
-## On PDF export, I have problems regarding the font. What should I do?
-
-LaTeX can be picky when it comes to fonts. But don't worry: We got you covered in the [section on PDF-preferences](https://docs.zettlr.com/en/reference/settings/#pdf-preferences).
-
 ## If I don't want to use Zettlr anymore, what would I need to do to switch programs?
 
 Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Projects or modified the directories, there will be small files named `.ztr-directory` present in some folders. To remove them, simply reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
@@ -124,6 +120,4 @@ That's good to hear! We always depend on other people's experience with the app 
 
 ## What about my privacy? Does Zettlr transfer any data, or don't I have to worry?
 
-Zettlr is privacy-first. It does not send any data, and it is fully functional offline. Yet, there is one instance where Zettlr sends data over the web: the update check. Whenever you open Zettlr, or use the menu item, Zettlr will connect to the Zettlr-API to retrieve a list of all releases. This list is then used to determine whether or not you are using the newest release. During the connection, Zettlr will receive your IP-address and will know that an Electron app is accessing the API. The app will also transmit your operating system type and the application ID.
-
-This data will never be sold to third parties. It's just because we like statistics and we are always interested in finding out who's using the app. Nevertheless, we can't identify anyone based on that data, it's much too coarse for this. We're Open Source, not Facebook.
+Zettlr is privacy-first. It does not send any data, and it is fully functional offline. However, whenever you open Zettlr, or use the corresponding menu item, Zettlr will connect to the Zettlr-API to retrieve a list of all releases. This list is then used to determine whether or not you are using the newest release. During the connection, the Zettlr server will receive your IP-address, and this information stored for a maximum of 30 days (using logrotation), which is pretty common among servers. This information will never leave our server and will only be used during incidents to determine what happened. After the 30 days, the access will be removed from the server logs. We're Open Source, not Facebook.

@@ -1,32 +1,6 @@
 # Localisation
 
-As we write this, Zettlr is available in 25 languages. A few more languages are being translated at the moment. This means that you can use Zettlr in your native language if you prefer. The languages currently supported are:
-
-- English (US and British)
-- German
-- French
-- Catalan
-- Spanish
-- Czech
-- Turkish
-- Korean
-- Japanese
-- Finnish
-- Danish
-- Russian
-- Italian
-- Ukrainian
-- Arabic
-- Polish
-- Basque
-- Chinese
-- Dutch
-- Indonesian
-- Portuguese (Portugal and Brazil)
-- Romanian
-- Hungarian
-
-Have a look at [our translation service](https://translate.zettlr.com/) to see an up-to-date list.
+As we write this, Zettlr is available in many languages. A few more languages are being translated at the moment. This means that you can use Zettlr in your native language if you prefer. Have a look at [our translation service](https://translate.zettlr.com/) to see an up-to-date list.
 
 > For localisation of output files, see the [YAML Frontmatter variable `lang`](https://docs.zettlr.com/en/core/yaml-frontmatter/#variable-lang)
 
