@@ -56,6 +56,7 @@ nav:
     - Markdown Basics: reference/markdown-basics.md
     - Settings: reference/settings.md
     - Spell Checking: reference/spell-checking.md
+    - Tray: reference/tray.md
 theme:
   name: readthedocs
   custom_dir: ../theme_override
