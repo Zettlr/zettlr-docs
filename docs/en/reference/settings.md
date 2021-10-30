@@ -4,14 +4,13 @@ Zettlr offers you a plethora of options to customise your experience with the ap
 
 ## General Preferences
 
-You can display the general preference dialog using either the shortcut `Cmd/Ctrl+,`, the toolbar button (the cog) or the respective menu item. The dialog will then show up and present to you all configuration options you may customise. They are ordered in nine tabs that you can see at the top of the dialog.
+You can display the general preference dialog using either the shortcut `Cmd/Ctrl+,`, the toolbar button (the cog) or the respective menu item. The dialog will then show up and present to you all configuration options you may customise. They are ordered in eight tabs that you can see at the top of the dialog.
 
 * [General](#general): These options affect Zettlr as a whole.
 * [Editor](#editor): These settings concern only the editor itself.
 * [Export](#export): Control how your files are exported in this tab.
 * [Zettelkasten](#zettelkasten): Adapt Zettlr to match your Zettelkasten system.
-* [Display](#display): Control how the editor displays certain elements, such as images or links.
-* [Theme](#theme): Select the theme for the app here.
+* [Display](#display): Control how the editor displays certain elements, such as images or links and select the visual theme for the app here.
 * [Spellchecking](#spellchecking): Find both the installed dictionaries and your user dictionary here.
 * [AutoCorrect](#autocorrect): Choose text to be replaced and also determine the quotes you’d like to use.
 * [Advanced](#advanced): Options for experienced users.
@@ -60,11 +59,7 @@ The third option only applies to users using a keyboard that features the `Home`
 
 ![settings_export.png](../img/settings_export.png)
 
-The export tab allows you to tweak all preferences concerning how your files are exported. To the left you have options concerning the Zettelkasten functionality.
-
-Selecting "Remove ZKN IDs from files" makes Zettlr remove all IDs that it finds in your files prior to export. "Remove tags from files" does the same but with tags.
-
-> We recommend leaving the option to remove Zettelkasten IDs from your files off unless you know what you are doing. Some websites produce links that contain 14 consecutive digits, and Zettlr will only stroll through the files removing everything your ID regular expression will detect, so it may break links! One way to work around this may be to use an ID pattern that is unique enough (e.g., with a specific prefix) that Zettlr will not remove anything else. Specifying a pattern and a regular expression is explained in the next section.
+The export tab allows you to tweak all preferences concerning how your files are exported. 
 
 Below these options you can choose what to do with internal links (by default they are encapsulated in `[[` and `]]`). The first option completely removes them, the second only removes the link formatting, while the last option leaves them alone.
 
@@ -82,7 +77,7 @@ In this tab you can customise the way Zettlr works with your existing Zettelkast
 
 You have four options that are important for Zettelkasten: The ID regular expression, the link start and ending, and the generator pattern.
 
-#### The ID RegEx
+#### ID Regular Expression (RegEx)
 
 Zettlr uses regular expressions internally to filter out the ID of a file. It looks for that pattern, and if it finds a string that matches this pattern, it assumes that as the ID of the file. **Please note that the first match in a file will be assumed the ID, never the last!** This means: If you choose to use only four digits as your ID, the regular expression would also match years inside your file. As Zettlr simply takes the first ID, make sure that the very first thing in your file is the ID of that file.
 
@@ -106,7 +101,6 @@ The last field in the Zettelkasten tab in the preferences window concerns the wa
 
 Always remember to adapt your regular expression so that it matches what the ID generator spits out. To successfully identify the ID with the pattern, `%Y-%M-%D_%h:%m:%s`, Zettlr would need the following regular expression: `(\d{4}-\d{2}-\d{2}_\d{2}:\d{2}:\d{2})`. If you use `%uuid4`, you can use the following RegEx: `[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-4[a-fA-F0-9]{3}-[89aAbB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}`.
 
-You can test both the generation of IDs and the detection of them by clicking the Test button below the text fields. Zettlr will then generate an ID and immediately tries to match it using your custom regular expression. Whether or not Zettlr was able to detect the ID will be indicated.
 
 ### Display
 
@@ -122,11 +116,11 @@ The vertical slider controls the maximum height of the images relative to the wi
 
 Last but not least, you can determine which date you would like to see in the file metadata in the file list. This does not affect the sorting, if you’d like to sort by date. To change the time after which Zettlr should sort your files, please refer to the general tab.
 
-### Theme
+#### Theme
 
 ![settings_theme.png](../img/settings_theme.png)
 
-This tab should explain itself: Click on any of the previews to switch your application to that theme.
+Click on any of the previews to switch your application to that theme.
 
 ### Spellchecking
 
