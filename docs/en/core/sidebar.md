@@ -4,19 +4,21 @@ The sidebar is a context-sensitive element that displays relevant additional inf
 
 > Please note that strictly speaking Zettlr features two sidebars: The sidebar to the left is referred to as the [File Manager](file-manager.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
 
-![The sidebar with one file and a list of references](../img/attachment_sidebar.png)
-
 After you open the sidebar, you can see that it has four tabs. These are (from left to right): Table of Contents, References, Related Files, and other files.
 
 ## Table of Contents
 
 The first tab shows you a table of contents for your current file. It gets updated in real time and allows you to see the structure of your document at a glance. The entries within the table of contents also support Markdown elements, so that your headings will be rendered to HTML.
 
+![The sidebar with the first tab open, the Table of Contents](../img/sidebar_toc.png)
+
 If you click one of these headings, the editor will directly jump to that specific heading. This way, the table of contents works almost exactly like the outline view from Microsoft Word or other text editors you might know.
 
 ## References
 
 The references tab contains a bibliography of all the references you cite within the document. It is generated whenever you save your document and gives you a preview of your bibliography section. Links will be rendered clickable so that you can open a related website directly from within the sidebar. You can also select text in this panel which allows you to copy the references.
+
+![The sidebar with the second tab open, the references section](../img/sidebar_references.png)
 
 To learn more about citing references with Zettlr, have a look at the documentation page for [citations](../academic/citations.md).
 
@@ -26,11 +28,15 @@ To learn more about citing references with Zettlr, have a look at the documentat
 
 The related files section has been added in 2.0 and contains files that Zettlr thinks are related to the current file. They are listed by relevancy descending, so the most relevant files will be on top of the list.
 
+![The sidebar with the third tab open, the related files](../img/sidebar_related_files.png)
+
 Which files are deemed relevant are determined by the tags they use. The more corresponding tags the other file has the more relevant it is for Zettlr. We plan on adding backlinks to the relevancy calculation as well. <!-- TODO: Fix this part as soon as it's implemented! -->
 
 ## Other Files
 
 The last section contains files that reside within the currently selected directory but are considered neither Markdown nor one of the supported code files. This could be images, PDF files, Excel spreadsheets, or any other file type which you would like to see there.
+
+![The sidebar with the fourth tab open, other files](../img/sidebar_other_files.png)
 
 You can determine which files are being listed here by adding the file extensions in the advanced preferences tab. Those file extensions are case-insensitive, so adding `.jpeg` will show `.jpeg` files as well as `.JPEG` and `.JpEg`.
 

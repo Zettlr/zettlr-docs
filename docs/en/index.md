@@ -20,7 +20,7 @@ Zettlr is free and open source software, which means that its source code is pub
 
 - You can [translate the app](https://translate.zettlr.com/) in more languages, and improve existing ones.
 - You can [translate and improve this very documentation](https://github.com/Zettlr/zettlr-docs/) (GitHub account required).
-- You can join the community on [Reddit](https://www.reddit.com/r/Zettlr/),  [Discord](https://discord.com/invite/PcfS3DM9Xj), and the [forum](https://forum.zettlr.com/) (deprecated) and help new and other users.
+- You can join the community on [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.com/invite/PcfS3DM9Xj), and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) and help new and other users. Note that the [forum](https://forum.zettlr.com/) is deprecated. 
 - You can [tackle open issues on GitHub](https://github.com/Zettlr/Zettlr/issues) and help develop the application itself.
 
 [More information on how to get involved can be found here in the documentation](get-involved.md).

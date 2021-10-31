@@ -25,7 +25,9 @@ The Pomodoro timer, has 3 core settings that can be altered.
 
 ![Timer.png](images/Timer.png)
 
-Start the timer by clicking the **Start** button. The circle is slowly filled (corresponding to the time remaining) with the colour of the current phase (red for work, yellow for a short break and green for a longer break). Once the circle is filled, the next phase begins and an alert is played (presuming the volume is up).
+Finally, you can also choose which sound Zettlr will play when a phase ends: The known, soft glass sound, an alarm clock, or a chime.
+
+Click on **Start** to begin the timer. Then, the circle will be filled with the color of the current phase (either red, yellow, or green). Once it is full, the next phase will begin.
 
 To **Stop** the timer or simply review the current **status** of the timer, click the circle. A small popup shows the remaining amount of time for the current phase, the type of the current phase and will give the option to stop session.
 
