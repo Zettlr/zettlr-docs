@@ -43,7 +43,7 @@ If you want to completely reset your local Zettlr installation, follow these ste
 
 ## 4. Ask the Community for Help
 
-If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active both on the [Zettlr subreddit](https://www.reddit.com/r/Zettlr) and on [the forum](https://forum.zettlr.com/), so you can choose which one you like.
+If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active both on the [Zettlr subreddit](https://www.reddit.com/r/Zettlr) and on [Discord](https://discord.com/invite/PcfS3DM9Xj), so you can choose which one you like.
 
 ## 5. Open a GitHub Issue
 
