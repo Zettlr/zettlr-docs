@@ -4,13 +4,13 @@ Zettlr offers you a plethora of options to customise your experience with the ap
 
 ## General Preferences
 
-You can display the general preference dialog using either the shortcut `Cmd/Ctrl+,`, the toolbar button (the cog) or the respective menu item. The dialog will then show up and present to you all configuration options you may customise. They are ordered in nine tabs that you can see at the top of the dialog.
+You can display the general preference dialog using either the shortcut `Cmd/Ctrl+,`, the toolbar button (the cog) or the respective menu item. The dialog will then show up and present to you all configuration options you may customise. They are ordered in eight tabs that you can see at the top of the dialog.
 
 * [General](#general): These options affect Zettlr as a whole.
 * [Editor](#editor): These settings concern only the editor itself.
 * [Export](#export): Control how your files are exported in this tab.
 * [Zettelkasten](#zettelkasten): Adapt Zettlr to match your Zettelkasten system.
-* [Display](#display): Control how the editor displays certain elements, such as images or links.
+* [Display](#display): Control how the editor displays certain elements, such as images or links and select the visual theme for the app here.
 * [Spellchecking](#spellchecking): Find both the installed dictionaries and your user dictionary here.
 * [AutoCorrect](#autocorrect): Choose text to be replaced and also determine the quotes you’d like to use.
 * [Advanced](#advanced): Options for experienced users.
@@ -85,12 +85,11 @@ The final setting allows you to choose whether you want to type from right to le
 
 ![settings_export.png](../img/settings_export.png)
 
-The export tab allows you to tweak preferences concerning how your files are exported. First, you will have a few checkboxes and options available:
+The export tab allows you to tweak all preferences concerning how your files are exported.
 
 * **Use the internal Pandoc for exports**: Zettlr ships with Pandoc bundled, so you don't need to install anything else for imports and exports. Should you ever need to use a system-wide Pandoc (must be in PATH), disable this setting and restart the app
 * **Remove tags from files**: If checked, Zettlr will run a special Lua-filter that removes tags which are defined within your files (not the ones in the YAML frontmatter)
 * **Internal Link Handling**: With the radio buttons you can choose what happens during export with internal links in double-square-brackets: Should they be completely removed, just unlinked (= remove the square brackets), or left alone?
-
 The **target directory** controls where Zettlr will put files after the exporter ran. If you choose the temporary directory, your files will not clutter your computer. This makes it easy to export a file several times and tweak, e.g., the layout of the file. Once you are happy with the results, you can simply save the file to another place (because your operating system will clean out the temporary directory without warning!). If you choose the current working directory, Zettlr will place the exported file next to your source Markdown file. Careful not to overwrite files!
 
 The CSL JSON database field can be used to open a literature database. Zettlr will read in the file and enable citation rendering in your files. You can select either a CSL JSON file (ends in `.json`) or a BibTeX file (`.bib`). BibLaTeX is unfortunately not yet supported.
@@ -109,7 +108,7 @@ In this tab you can customise the way Zettlr works with your existing Zettelkast
 
 You have four options that are important for Zettelkasten: The ID regular expression, the link start and ending, and the generator pattern.
 
-#### The ID RegEx
+#### ID Regular Expression (RegEx)
 
 Zettlr uses regular expressions internally to filter out the ID of a file. It looks for that pattern, and if it finds a string that matches this pattern, it assumes that as the ID of the file. **Please note that the first match in a file will be assumed the ID, never the last!** This means: If you choose to use only four digits as your ID, the regular expression would also match years inside your file. As Zettlr simply takes the first ID, make sure that the very first thing in your file is the ID of that file.
 
@@ -153,7 +152,11 @@ This tab controls how the editor displays certain elements. Zettlr uses a semi-p
 
 > The iFrame setting controls whether or not to render iFrames (for instance, YouTube videos are embedded iFrames).
 
-Then you can choose which theme to use. Currently, you have five to choose from. Each theme comes with a little explainer to tell you how it looks. But don't hesitate: Click yourself through until you find one that you like!
+#### Theme
+
+Next you can choose which theme to use. Currently, you have five to choose from. Each theme comes with a little explainer to tell you how it looks. But don't hesitate: Click yourself through until you find one that you like!
+
+Click on any of the previews to switch your application to that theme.
 
 Furthermore you can constrain the size of images, which is especially beneficial if you use a lot of portrait oriented images. The first slider controls the maximum amount of width images are allowed to occupy. Setting this to 50%, for instance, will keep images at half the width of the text body. 100% disables this (images will never be wider than 100% of the text body width). The second slider controls the maximum height of the images relative to the window size. 50 percent would mean that images will never be higher than half of the window's total size. 100 percent disables this behaviour. Unlike the width, images may very well exceed 100 percent of the viewport if they are large and thin.
 
@@ -183,7 +186,13 @@ The last thing you can tweak is the replacement table : These are simply charact
 
 The advanced tab contains options that are helpful for advanced tasks.
 
-The “pattern for new filenames” is what the textfield will look like when you create a new file. It will be prepopulated by whatever you type here. You can make use of a few variables (the ID following the pattern you have selected in the Zettelkasten tab, year, month, day, hour, minute and second). If you tick the checkbox, Zettlr will not even ask you for a filename when you create a new file, which might speed up your workflow.
+The “pattern for new filenames” is what the textfield will look like when you create a new file. It will be prepopulated by whatever you type here. You can make use of the variables below (the ID following the pattern you have selected in the Zettelkasten tab, year, month, day, hour, minute and second). If you tick the checkbox, Zettlr will not even ask you for a filename when you create a new file, which might speed up your workflow.
+
+The **debug option** is used to control whether or not you are able to "reload" the graphical user interface (GUI) by pressing `F5` and display the Chrome developer tools to inspect what the app is doing. Naturally, you would want to do this as a developer.
+
+You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases in addition to normal releases. You can then decide whether to use the beta version, or not. 
+
+The text area to the right controls what files will be displayed in the **attachment** sidebar. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions you might be using.
 
 Next you have, again, a few checkboxes:
 

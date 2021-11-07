@@ -4,7 +4,7 @@ As with all modern writing app, Zettlr features a powerful spell checking engine
 
 ## Activate spell checking
 
-To activate spell checking, open Preferences using either the menu item, the toolbar button or pressing `Cmd/Ctrl+,`. In the Spellchecking tab, you can then select all dictionaries you would like to activate. Yuo can activate/deactivate a dictionary using the toggle switch next to its name.
+To activate spell checking, open Preferences using either the menu item, the toolbar button or pressing `Cmd/Ctrl+,`. In the Spellchecking tab, you can then select all dictionaries you would like to activate. You can activate/deactivate a dictionary using the toggle switch next to its name.
 
 You can filter the list of available dictionaries by typing a search key into the upper text field. Zettlr will automatically hide all dictionaries whose name does not contain your search string. Remove any letters from the search field to display all dictionaries again.
 
