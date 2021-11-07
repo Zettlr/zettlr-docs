@@ -134,9 +134,7 @@ The last field in the Zettelkasten tab in the preferences window concerns the wa
 
 Always remember to adapt your regular expression so that it matches what the ID generator spits out. To successfully identify the ID with the pattern, `%Y-%M-%D_%h:%m:%s`, Zettlr would need the following regular expression: `(\d{4}-\d{2}-\d{2}_\d{2}:\d{2}:\d{2})`. If you use `%uuid4`, you can use the following RegEx: `[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-4[a-fA-F0-9]{3}-[89aAbB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}`.
 
-
 #### Other Options
-
 
 Lastly, you have the ability to choose when the filename of a file will be added after the actual link when you autocomplete such a link:
 
@@ -164,7 +162,6 @@ Click on any of the previews to switch your application to that theme.
 
 Furthermore you can constrain the size of images, which is especially beneficial if you use a lot of portrait oriented images. The first slider controls the maximum amount of width images are allowed to occupy. Setting this to 50%, for instance, will keep images at half the width of the text body. 100% disables this (images will never be wider than 100% of the text body width). The second slider controls the maximum height of the images relative to the window size. 50 percent would mean that images will never be higher than half of the window's total size. 100 percent disables this behaviour. Unlike the width, images may very well exceed 100 percent of the viewport if they are large and thin.
 
-
 ### Spellchecking
 
 ![settings_spellchecking.png](../img/settings_spellchecking.png)
@@ -191,13 +188,11 @@ The last thing you can tweak is the replacement table : These are simply charact
 
 The advanced tab contains options that are helpful for advanced tasks.
 
-
 The “pattern for new filenames” is what the textfield will look like when you create a new file. It will be prepopulated by whatever you type here. You can make use of the variables below (the ID following the pattern you have selected in the Zettelkasten tab, year, month, day, hour, minute and second). If you tick the checkbox, Zettlr will not even ask you for a filename when you create a new file, which might speed up your workflow.
-
 
 The **debug option** is used to control whether or not you are able to "reload" the graphical user interface (GUI) by pressing `F5` and display the Chrome developer tools to inspect what the app is doing. Naturally, you would want to do this as a developer.
 
-You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases in addition to normal releases. You can then decide whether to use the beta version, or not. Activate **RMarkdown file support** to enable the detection of `.rmd` files used for R-Markdown. It is inactive by default, as some other programs (for instance, by Adobe) also use this extension to store binary data, which would cause problems.
+You can also help Zettlr by **subscribing to beta releases**. When you tick this option, Zettlr will notify you about new beta releases in addition to normal releases. You can then decide whether to use the beta version, or not. 
 
 The text area to the right controls what files will be displayed in the **attachment** sidebar. It is simply a comma-separated list of all file extensions you would like to have at your disposal. The initial list should contain most extensions you might be using.
 
