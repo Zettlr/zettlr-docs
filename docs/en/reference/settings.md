@@ -85,14 +85,12 @@ The final setting allows you to choose whether you want to type from right to le
 
 ![settings_export.png](../img/settings_export.png)
 
-
 The export tab allows you to tweak all preferences concerning how your files are exported.
 
 * **Use the internal Pandoc for exports**: Zettlr ships with Pandoc bundled, so you don't need to install anything else for imports and exports. Should you ever need to use a system-wide Pandoc (must be in PATH), disable this setting and restart the app
 * **Remove tags from files**: If checked, Zettlr will run a special Lua-filter that removes tags which are defined within your files (not the ones in the YAML frontmatter)
 * **Internal Link Handling**: With the radio buttons you can choose what happens during export with internal links in double-square-brackets: Should they be completely removed, just unlinked (= remove the square brackets), or left alone?
 The **target directory** controls where Zettlr will put files after the exporter ran. If you choose the temporary directory, your files will not clutter your computer. This makes it easy to export a file several times and tweak, e.g., the layout of the file. Once you are happy with the results, you can simply save the file to another place (because your operating system will clean out the temporary directory without warning!). If you choose the current working directory, Zettlr will place the exported file next to your source Markdown file. Careful not to overwrite files!
-
 
 The CSL JSON database field can be used to open a literature database. Zettlr will read in the file and enable citation rendering in your files. You can select either a CSL JSON file (ends in `.json`) or a BibTeX file (`.bib`). BibLaTeX is unfortunately not yet supported.
 
