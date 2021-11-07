@@ -1,8 +1,8 @@
-# Writing Modes
+# Editor Modes
 
 In the View Menu, Zettlr features several Editor settings that may enhance your writing experience. Have a play and see what works for you!
 
-## Night Mode
+## Dark Mode
 
 Also commonly known as 'Dark Mode', clicking this option will change the background colour of the Editor to black and the default text colour to white.
 
