@@ -48,6 +48,19 @@ $body$
 
 Pandoc will replace this variable with the parsed contents of your Markdown file(s). If you leave it out, your content will not appear in the output file.
 
+## Activate your template
+
+In order to put your template to work, you must point Zettlr to it, via the PDF Defaults File in the Assets Manager. Navigate to the Assets Manager from Zettlr's Menu and select 'PDF' from the list of configurations ('Defaults Files') on the left. Next add `template: ` to the bottom of the configuration file. Note the space after the colon. Now Zettlr needs to know the path to your new template file. Locate your template file, which if you've created it in Zettlr, you may find by right-clicking on the file in Zettlr's file manager and select 'Show File'. Note that the name of the LaTeX file must end in `.tex`. Once you've found the file, you need to find it's location in your computer's directory structure – which is the file's 'path' or 'pathname'.
+1. On macOS, you can find the file's path by right-clicking the file in the Finder and hit the 'Option' key, which will change the 'Copy file' menu item to 'Copy as Pathname'. 
+2. On Ubuntu Linux, using the File Browser, you can find the path of the currently selected file using the keystroke combo __CTRL__ + __L__, which displays the file's path in the location bar.
+3. On Windows 10 and 11, select the file in File Explorer and use press and hold the __Shift__ on your keyboard while __Right-clicking__ on it. In the context menu that pops up, select “Copy As Path.” 
+
+Copy the pathname and paste it into the PDF Default File thus: `template: /path/to/your/template.tex`. 
+
+![Adding Your LaTeX Template to PDF Defaults File](../img/zettlr_add_LaTeX_template.png)
+
+Remember to leave a space between the colon and your pathname. Save the changes and enjoy your LaTeX template.
+
 ## Final Thoughts
 
 Zettlr strives to give you full command over what you can do with your files. What we've outlined on this page is only the start. How do you use Zettlr's possibilities to do weird things? Tell us on [Twitter](https://www.twitter.com/Zettlr), [Discord](https://discord.com/invite/PcfS3DM9Xj), or on [Reddit](https://www.reddit.com/r/Zettlr)!
