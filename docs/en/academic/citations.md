@@ -169,3 +169,11 @@ The above example is a good place to start. You can search for more lengths to t
 ## Controlling Pandoc Citeproc with the YAML frontmatter
 
 You can control certain aspects of Pandoc's citeproc using variables that can be set in your YAML frontmatter. Make sure to read the [corresponding page](../core/yaml-frontmatter.md) to see, e.g., how to change the language of your references list.
+
+## Accessing a Reference's PDF From Zettlr
+
+It will happen from time to time that you re-read something you have written and want to double-check a referenced work. You can do this by simply right-clicking a citation and opening the corresponding PDF file.
+
+For this to work, **Zotero needs to be running** (since Zettlr will query the app using the citekey and ask for the actual path to the PDF file) and you need to **have BetterBibTex installed** (since only BetterBibTex offers the corresponding API endpoint necessary for requesting the PDF path).
+
+Note that this does not apply for BibTex databases, since these already contain the full paths to linked PDF files (but note that these are optional, so you may need to explicitly tell your reference manager to add those paths) and as such Zettlr does not need to query an external program.
