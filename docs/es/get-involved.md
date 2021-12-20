@@ -1,10 +1,10 @@
-# Get involved
+# Involúcrate
 
-Do you want to make Zettlr an even better app? That's great! Whether you are a user, want to provide a new translation, or get into development of the application, you've come to the right place!
+¿Quieres hacer de Zettlr una aplicación mejor? ¡Genial! Si lo usas, quieres proveer una nueva traducción o involucrarte con el desarrollo de la aplicación ¡llegaste al lugar adecuado!
 
-## General Resources
+## Recursos generales
 
-Zettlr has a vibrant community helping each other all around the net. The following list contains the common places to start for any issue you might have.
+Zettlr tiene una comunidad vibrante que se ayuda mutuamente en la red. Las siguientes listas contienen lugares comunes para empezar si tiene algún problema.
 
 * [Zettlr Discord](https://discord.com/invite/PcfS3DM9Xj) — The Zettlr Discord is a place for the Discordians (there doesn’t appear to be an official term).
 
