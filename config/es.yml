@@ -19,43 +19,43 @@ nav:
     - Instalar LaTeX: installing-latex.md
     - Cómo empezar: get-started.md
     - Involúcrate: get-involved.md
-    - FAQ: faq.md
+    - Preguntas frecuentes: faq.md
     - ¿Problemas?: troubleshooting.md
   - Conceptos:
-    - File management: concepts/workspaces.md
-    - Context: concepts/context.md
-    - WYSIWYM: concepts/wysiwym.md
-  - Core:
+    - Gestión de archivos: concepts/workspaces.md
+    - Contexto: concepts/context.md
+    - LQVELQQD: concepts/wysiwym.md
+  - Núcleo:
     - Editor: core/editor.md
-    - Document Tabs: core/tabs.md
-    - File Manager: core/file-manager.md
-    - Assets Manager: core/assets-manager.md
-    - Defaults Files: core/defaults-files.md
-    - Custom CSS: core/custom-css.md
-    - Snippets: core/snippets.md
-    - AutoCorrect and MagicQuotes: core/autocorrect.md
-    - Searching: core/search.md
-    - Importing: core/import.md
-    - Exporting: core/export.md
-    - Table Editor: core/tables.md
-    - Localisation: core/localisation.md
-    - Sidebar: core/sidebar.md
-    - YAML Frontmatter: core/yaml-frontmatter.md
-    - Print and Preview: core/print-preview.md
-    - Math: core/math.md
-  - Academic Tools:
-    - Citations: academic/citations.md
-    - Projects: academic/projects.md
-    - Presentations: academic/presentations.md
-    - Pomodoro Timer: academic/pomodoro.md
-    - Readability: academic/readability.md
-    - Zettelkasten Methods: academic/zkn-method.md
-    - Custom Templates: academic/custom-templates.md
-  - References:
-    - Keyboard Shortcuts: reference/keyboard-shortcuts.md
-    - Markdown Basics: reference/markdown-basics.md
-    - Settings: reference/settings.md
-    - Spell Checking: reference/spell-checking.md
+    - Pestañas del document: core/tabs.md
+    - Gestión de archivos: core/file-manager.md
+    - Gestor de activos: core/assets-manager.md
+    - Archivos por defecto : core/defaults-files.md
+    - CSS personalizado: core/custom-css.md
+    - Fragmentos: core/snippets.md
+    - Autocorrector and MagicQuotes: core/autocorrect.md
+    - Búsqueda: core/search.md
+    - Importación: core/import.md
+    - Exportación: core/export.md
+    - Editor de tablas: core/tables.md
+    - Localización: core/localisation.md
+    - Barra lateral: core/sidebar.md
+    - Metadatos en YAML: core/yaml-frontmatter.md
+    - Impresión y vista previa: core/print-preview.md
+    - Matemáticas: core/math.md
+  - Herramientas académicas:
+    - Citas: academic/citations.md
+    - Proyectos: academic/projects.md
+    - Presentaciones: academic/presentations.md
+    - Temporizador pomodoro: academic/pomodoro.md
+    - Legibilidad: academic/readability.md
+    - Método Zettelkasten: academic/zkn-method.md
+    - Plantillas personalizadas: academic/custom-templates.md
+  - Referencias:
+    - Atajos de teclado: reference/keyboard-shortcuts.md
+    - Markdown básico: reference/markdown-basics.md
+    - Configuración: reference/settings.md
+    - Corrección ortográfica: reference/spell-checking.md
 theme:
   name: readthedocs
   custom_dir: ../theme_override
@@ -71,4 +71,4 @@ markdown_extensions:
         permalink: True
 plugins:
   - search:
-      lang: en
+      lang: es
