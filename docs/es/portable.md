@@ -1,43 +1,43 @@
-# Zettlr as a Portable App
+# Zettlr como una aplicación portable
 
-Even though most people will simply install and use Zettlr as a program like any other one, some of you might want to set it up to be used as a *portable* app. Here we describe how this works.
+Incluso si la mayoría de personas simplemente instalarán y usarán Zettlr como un programa como cualquier otro, algunas personas podrían querer configurarlo para ser usado como una aplicación *portable*. Aquí describimos cómo funciona.
 
-> Note that "portable app" only makes sense in the context of Windows. Though this guide should work cross-platform, it is very uncommon for a Mac or Linux user to use a portable app.
+> Note que "aplicación portable" solo tiene sentido en el contexto de Windows. Aunque esta guía debería funcionar entre diversas plataformas, es muy poco común que un usuario de  Mac o Linux use aplicaciones portables.
 
-## What is a Portable App?
+## ¿Qué es una aplicación portable?
 
-A portable app is basically a Windows application that is completely independent of the computer it runs on. Frequently, people use apps in a portable configuration in order to store them on USB keys which they can plug into different computers. This could be a debugging program for systems administrators, or simple writing apps such as Zettlr.
+Una aplicación portátil es básicamente una aplicación de  Windows que es completamente independiente del computador en el que se ejecuta. Frecuentemente,  la gente usa apps en una configuración portable  para almacenarlas en USBs para conectarlas a diferentes computadores. Estas puede ser un software de desarrollo para administradores de sistemas o simplemente aplicaciones de escritura como Zettlr.
 
-The main problem for making an app portable is that many things, such as settings, data files, and other important information the app needs to run are normally stored in a few default directories, mostly in the user account of the person currently running a program. However, these are always on the computer, and not on the USB key. The key to making an app portable is thus to teach the app to read and write its data not onto the computer, but onto the USB key.
+El principal problema de hacer una aplicación portable es que muchas cosas, como la configuración, archivos de datos y otra información importante de la app que necesita ejecutarse, se almacena normalmente en algunos directorios por defecto, principalmente en la cuenta de usuario de la persona que actualmente ejecuta el programa. Sin embargo, estos están siempre en el computador y no en la memoria USB. La clave para hacer una app portable es que se dirija a la app a que lea y escriba sus datos no en el computador que lo usa, sino en la memoria USB.
 
-> If you don't know whether a portable app is the right choice for you, we recommend you just install the app regularly. You can switch to a portable app at any time, as we outline below.
+> Si no sabe si una aplicación portable es la mejor elección para sumercé, le recomendamos que solo instale la versión estándar. Podrá cambiarse a la versión portable en cualquier momento, como describimos a continuación.
 
-## How to Set Up Zettlr as a Portable App
+## Cómo configurar Zettlr como una aplicación portable
 
-A portable app in principle is distinguished by just a few characters from a regular install. What we are explaining here basically makes use of a command line switch we use internally to debug the application, but it works perfectly well for maintaining a portable installation.
+Una aplicación portable en principio se distingue por apenas unas cuantas características de una instalación normal. Lo que explicaremos aquí básicamente hace uso de la línea de comandos que usamos internamente para desarrollar la aplicación, pero que funcionará perfectamente bien para mantener una instalación portable.
 
-The first step is to install the application regularly by downloading one of the Windows installers and executing it. However, instead of installing the app into a default location, you should install the app onto your thumb drive (or any other folder – since it will be a portable application, you can move the folder around later on).
+El primer paso para instalar la aplicación estándar para descargar uno de los instaladores de Windows y ejecutarlo. Como sea, en vez de instalar la app en la ubicación por defecto, deberías instalar la aplicación en tu memoria USB (o en otra carpeta - desde que sea una aplicación portable, puedes mover el folder a otro lugar más adelante).
 
-After the installer has run, you should be able to see all the required files – `Zettlr.exe`, the `app.asar` file and others – in the folder you have directed the installer to use.
+Después de haber ejecutado la aplicación, debería poder ver todos los archivos requeridos – `Zettlr.exe`, el archivo `app.asar` y otros – en la carpeta que hayas direccionado desde el instalador.
 
-Since Windows 10 does not support relative paths in shortcuts, using a simple shortcut will not work. So what we do next is create a BAT-file that you can run. So create a file that ends in `.bat` – for example, `Zettlr.bat` – and add the following contents:
-
-```
-Zettlr.exe --data-dir="./zettlr-config"
-```
-
-Now, whenever you start the Batch-file, it should open Zettlr and direct it to use the folder `zettlr-config` to store its data – right where your app is. Of course, you can choose any other folder name. Make sure you create that folder before starting the app!
-
-## Converting a Static Installation into a Portable App
-
-It is also possible to convert a static installation into a portable app. In order to do so, first copy over the **entire** application directory from Zettlr. All the files in there are necessary. Copy these into any folder you like.
-
-Next, search for the application data directory. It should be `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`, but you can find the correct path in the [setup instructions](install.md). Copy this directory – also in its entirety – into the copied application directory. You probably want to rename it so you know what's in there.
-
-Lastly, you also need to create a BAT-file like above:
+A partir de Windows 10 no hay soporte para rutas relavitas en accesos directos, usando un acceso directo simple esto no va a funcionar. Así que lo que hay que hacer a continuación es crear un archivo BAT que puedas ejecutar. Crea un archivo que termine en `.bat` – por ejemplo `Zettlr.bat` – e inclúyele lo siguiente:
 
 ```
 Zettlr.exe --data-dir="./zettlr-config"
 ```
 
-Remember to replace `zettlr-config` with the correct path.
+Ahora, cada vez que ejecutes el archivo BAT, debería abrir Zettlr y dirigirlo al usar la carpeta `zettlr-config` para almacenar sus datos – justo donde la aplicación está. Por supuesto, puedes escoger cualquier otro nombre de carpeta. ¡Asegúrate de crear la carpeta antes de iniciar la aplicación!
+
+## Convirtiendo una instalación estática en una aplicación portable
+
+También es posible convertir una instalación estática en una aplicación portable. Para hacerlo, primero copia  la carpeta de aplicación **completa**  de Zettlr. Todos los archivos de allí son necesarios. Copia esos archivos en cualquier otra carpeta que quieras.
+
+A continuación, busca el directorio de datos de la aplicación. Debería estar en `C:\Usuarios\<tu-nombre-de-usuario>\Datos de programa\Roaming\Zettlr`, pero puedes encontrar la dirección correcta en las [instrucciones de configuración](install.md). Copia este directorio – también en su totalidad – en la carpeta de aplicación copiada. Probablemente quieras renombrarla para que sepas qué hay allí.
+
+Finalmente, necesitarás crear el archivo BATcomo sigue:
+
+```
+Zettlr.exe --data-dir="./zettlr-config"
+```
+
+Recuerda reemplazar `zettlr-config` con la dirección correcta.
