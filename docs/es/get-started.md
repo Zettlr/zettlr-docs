@@ -1,15 +1,15 @@
-# Getting Started
+# Empezando
 
-After setting up Zettlr, you may very likely want to get started with it right away. On the first start, Zettlr will copy a special directory into your Documents folder that contains a very useful interactive tutorial that leads you natively through the first steps with the app. Just follow the instructions there; it will even point you to specific sections of this documentation where you can learn more about the app!
+Después de configurar  Zettlr, podrías querer empezar inmediatamente con él.  En su primer arranque, Zettlr copiará un directorio especial en su carpeta de  Documentos que contiene un muy útil tutorial interactivo que te lleva por  los primeros pasos de la aplicación de forma nativa. Solo sigue las instrucciones allí; que incluso te llevará a secciones específicas de esta documentación donde puede aprender más de esta app.
 
-If you have any questions that do not seem to be answered in this documentation, make sure to consult the [Frequently Asked Questions](faq.md) and ask the community on [Reddit](https://www.reddit.com/r/Zettlr/),[Discord](https://discord.com/invite/PcfS3DM9Xj) and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions)! We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools.
+Si tiene cualquier pregunta que no parece estar contestada en esta documentación, asegúrese de consultar las  [Preguntas frecuentes](faq.md) y preguntarle a la comunidad en  [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.com/invite/PcfS3DM9Xj)y [las discusiones de GitHub](https://github.com/Zettlr/Zettlr/discussions). También tenemos un  [Canal de YouTube](https://www.youtube.com/c/Zettlr/) donde ocasionalmente subimos videos sobre cómo usar la app y sus herramientas asociadas.
 
-You can view a series of introductory videos following [this link to our Zettlr HowTo playlist](https://www.youtube.com/playlist?list=PL2ydvDwV-1u5ncnkxQWZhbHQdwpY2fx5f).
+Puedes ver una serie de videos introductorios siguiendo [este enlace a nuestra lista de reproducción de Cómo hacer en  Zettlr](https://www.youtube.com/playlist?list=PL2ydvDwV-1u5ncnkxQWZhbHQdwpY2fx5f).
 
-> The interactive tutorial will suggest to install LaTeX on your computer. Zettlr depends on LaTeX for exporting advanced PDF files. Without LaTeX you will only be able to export basic PDF files. If you do not intend to export advanced PDF files, you do not need LaTeX. It can be installed at any time, should you change your mind.
+> El tutorial interactivo sugerirá instalar LaTeX en su computador. Zettlr depende de LaTeX para la exportación avanzada de PDFs. Sin LaTeX sólo será capaz de hacer la exportación básica de PDFs. Si no necesita la exportación avanzada de  PDFs, no necesitará LaTeX. Puede ser instalado en cualquier momento, en caso de que cambie de parecer.
 
-![An impression of the application on first start on macOS](img/first_start.png)
+![Una captura de pantalla de la aplicación en su primer arranque en  macOS](img/first_start.png)
 
-All the features used in the tutorial are described in this documentation, so in case you want to read more on them, simply look for the feature here. It is recommended that you follow the tutorial during your first start of the application to get used to different concepts such as the sidebar, the file tree, internal links and the document tabs.
+Todas estas características usadas en este tutorial se describen en esta documentación, así que en caso de que quiera leer más sobre ellas, simplemente busca la característica que necesitas aquí. Se recomienda que sigas el tutorial durante tu primer arranque de la aplicación para acostumbrarse a diferentes conceptos como la barra lateral, el árbol de archivos, los enlaces internos y las pestañas de documentos.
 
-Once you are done with the tutorial, you can either close the directory to unload it from the app or completely delete it, and you can open another folder to work with.
+Una vez que hayas terminado el tutorial, puedes o bien cerrar el directorio o eliminar la carpeta de la app o del computador y abrir una nueva carpeta para trabajar con ella.
