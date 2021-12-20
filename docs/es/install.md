@@ -1,51 +1,51 @@
-# Installation
+# Instalación
 
-The installation of Zettlr is very easy and takes only a step on every operating system. Zettlr is cross-platform, so it will run on most computers. Zettlr comes pre-built for macOS, Windows and many Linux systems.
+La instalación de  Zettlr es muy fácil y toma sólo un paso en cualquier sistema operativo. Zettlr es multiplataforma, así que funcionará en cualquier computador. Zettlr viene con una versión pre-instalada para macOS, Windows y muchas versiones de Linux.
 
-> Please note that especially the supported macOS and Linux versions may change at any time. If you use an operating system that is barely supported and you encounter problems, the most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/tutorial/support#supported-platforms).
+> Por favor ten en cuenta en especial que las versiones de  macOS y Linux pueden cambiar en cualquier momento. Si usas un sistema operativo que apenas tiene soporte técnico y encuentra problemas, la lista más reciente de plataformas que soporta se puede encontrar [aquí](https://www.electronjs.org/docs/tutorial/support#supported-platforms).
 
-## Windows (7 or newer)
+## Windows (7 posterior)
 
-To install Zettlr on Windows, just download the app from the [download page](https://www.zettlr.com/download) and double click to open the installer. If you wish to install Zettlr for all users, it is installed to the main `Program Files` directory and in this case you'd have to give it elevated rights during setup (it will automatically ask for your permission). You don't need any rights if you install it for the logged in user.
+Para instalar Zettlr en Windows, solo descargue la app desde la [página de descargas](https://www.zettlr.com/download) y abra con doble click el instalador. Si quiere instalar Zettlr para todos los usuarios, se instalará en la carpeta principal de `Archivos de programa` en caso de que tenga los permisos durante la configuración (le preguntará automáticamente por estos permisos). No necesitará ningún permiso para instalarlo como el usuario registrado.
 
-To uninstall Zettlr, simply run the Uninstall.exe either from the directory itself or use the appropriate add/remove program interface in your system's settings. If you want to completely remove all data associated with the app, also remove the directory `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`.
+Para desinstalar Zettlr, simplemente ejecute Uninstall.exe bien sea desde el directorio o use la interfaz del programa de agregar/eliminar software en su configuración del sistema. Si quiere remover completamente todos los datos asociados con la aplicación, borre también el directorio `C:\Usuarios\<su-nombre-de-usuario>\AppData\Roaming\Zettlr`.
 
-> At the time of writing, the Windows ARM installer does not come with Pandoc bundled. This means that exports may not work. You have to install Pandoc manually. If Pandoc is installed on your computer, Zettlr for Windows ARM will automatically use that one.
+> Al momento de escribir, el instalador ARM de Windows no viene con el empaquetado de  Pandoc. Esto quiere decir que la exportación podría no funcionar. Tienes que instalar Pandoc manualmente. Si Pandoc está instalado  en tu computador, Zettlr para Windows ARM utilizará automáticamente este.
 
-## macOS (10.11 or newer)
+## macOS (10.11 o posterior)
 
-To install Zettlr on macOS, simply download the dmg-file and mount it by double-clicking it. Then drag the Zettlr icon into your Applications directory and you're done!
+Para instalar  Zettlr en macOS, simplemente descarga el archivo dmg y móntalo haciéndole doble click. Luego arrastra el ícono de Zettlr a tu directorio de Aplicaciones ¡Y ya está!
 
-To uninstall Zettlr, simply remove the Zettlr.app from your Applications directory. If you want to completely remove all data associated with the app, also remove the directory `/Users/<your-user-name>/Library/Application Support/Zettlr`.
+Para desinstalar Zettlr, simplemente borra  Zettlr.app de tu directorio de Aplicaciones. Si quieres borrar completamente todos los datos asociados con la app, borra también el directorio `/Usuarios/<tu-nombre-de-usuario>/Library/Application Support/Zettlr`.
 
-> You can also install Zettlr using [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew install --cask zettlr`
+> También puedes instalar Zettlr usando [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew install --cask zettlr`
 
-## Linux (Debian 8/Ubuntu 12.04/Fedora 24 or newer)
+## Linux (Debian 8/Ubuntu 12.04/Fedora 24 o posteriores)
 
-There are prebuilt `deb` and `rpm` packages as well as `AppImage` bundles for Linux systems. Simply install the package on your system according to which of these you have downloaded. For installing AppImage bundles, please [refer to this guide on how to install them](https://appimage.org/).
+Hay  archivos `deb` y `rpm` así como paquetes preinstalados en `AppImage` para Linux.  Simplemente instala el paquete en tu sistema de acuerdo al que hayas descargado. Para instalar los paquetes AppImage, por favor [mira esta guía sobre cómo instalarlos](https://appimage.org/).
 
-To uninstall, follow the usual steps it takes to remove a package (usually through the graphical installer application or via `dpkg`). If you also want to remove all data associated with the app, also delete the `/home/<your-user-name>/.config/Zettlr` directory.
+Para desinstalar, sigue los pasos usuales para desinstalar un paquete (usualmente a través de la aplicación gráfica de instalaciones o vía`dpkg`).  Si además quieres borrar todos los datos asociados a la app, borra también el directorio `/home/<tu-nombre-de-usuario>/.config/Zettlr`.
 
-> There is a community-maintained package for Arch Linux available. [You can find it on the official AUR repositories](https://aur.archlinux.org/packages/zettlr-bin/). Please note that this package is community-maintained and we do not take any responsibility in its stability, safety or offered version.
+> Hay una comunidad de mantenimiento de paquetes para Arch Linux. [Puedes encontrarla en los repositorios oficiales de  AUR](https://aur.archlinux.org/packages/zettlr-bin/). Por favor ten en cuenta que esta es una comunidad de mantenimiento de paquetes y nosotros no tenemos ninguna responsabilidad en su estabiidad, seguridad o versión ofrecida.
 
-## Updating Zettlr
+## Actualizando Zettlr
 
-The application checks for new updates each time you start the app. You can also manually trigger the search for updates by using the respective menu item from the Help menu. If a new version is available, Zettlr will show you a dialog that contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
+La aplicación revisa las nuevas actualizaciones cada vez que arrancas la app. Puedes hacerlo también manualmente usando el respectivo ítem en el menú de Ayuda. Si hay una nueva versión disponible,  Zettlr mostrará un diálogo que contiene el número de la nueva versión y un registro de cambios con todas las nuevas características y correcciones de errores que la nueva versión tiene.
 
-To update, you simply have to click the version appropriate for your architecture (that is, either the 64bit version or the ARM version). Zettlr will automatically start downloading the appropriate installer into your Downloads folder and, once it's finished, you can click "Begin Update", after which Zettlr will quit and open the downloaded file.
+Para actualizar, simplemente tienes que hacer click en la versión apropiada para tu arquitectura (eso es, bien sea la versión de  64bit o la ARM). Zettlr comenzará automáticamente a bajar el instalador apropiado en su carpeta de Descargas y, una vez termine, puede darle  click a "Actualizar", donde después  Zettlr se cerrará y abrirá el archivo descargado.
 
-Zettlr automatically downloads the same files which you can find on our download page. To update manually, just download the appropriated installer and run it. It will automatically overwrite the existing version, but keep your configuration.
+Zettlr automáticamente descargará los mismos archivos que podrá encontrar en nuestra página de descargas. Para actualizar manualmente, solo descargue el instalador apropiado y ejecútelo. Esto sobreescribirá automáticamente la versión existente pero mantendrá su configuración.
 
-> If you are interested in cutting-edge releases, make sure to tick the checkbox "Notify me about beta releases" in the Advanced tab of the preferences dialog. Zettlr will then also offer you beta releases which might be not as polished as the regular releases, but you get new features earlier than others!
+> Si está interesado en las actualizaciones de prueba, asegúrese de marcar la casilla de "Notifíqueme sobre las versiones beta" en la pestaña de "Avanzado" en el diálogo de preferencias. Zettlr le ofrecerá las versiones en beta las cuales pueden no estar tan pulidas como las regulares, ¡pero obtendrá nuevas características antes que otras personas!
 
-## Nightly Releases
+## Lanzamientos nocturnos
 
-Since 2.0.0, we also offer so-called nightly releases. Nightlies are releases that are being built automatically every Friday at noon (UTC) (but sometimes we build them manually). They contain the most recent changes to the code base. This means that they are even more recent than the beta releases, **but** this also means that they may contain serious bugs which we haven't found yet.
+Desde la versión 2.0.0, estamos ofreciendo las así llamados lanzamientos nocturnos. Estos son los lanzamientos que se crean automáticamente cada viernes al mediodía (UTC) (pero a veces las creamos automáticamente).  Ellas contienen los cambios más recientes al código base. Esto quiere decir que hay actualizaciones incluso más recientes que las versiones beta , **pero** esto también quiere decir que pueden contener errores serios que todavía no hemos encontrado.
 
-Nightly releases are for advanced users only who understand the risks in using these. If you keep your settings, the writing statistics, and your files backed up regularly, it might be safe to use nightlies. We do appreciate every one who uses nightlies and informs us about bugs they encounter.
+Las actualizaciones nocturnas son solo para usuarios avanzados que entienden el riesgo de usarlas. Si mantiene su configuración, las estadísticas de escritura y copias de sus archivos regularmente,  podría ser seguro que use los lanzamientos nocturnos. Apreciamos a quienes los usan y nos informan de los errores que encuentran.
 
-To install a nightly release, you need to manually download them from <https://nightly.zettlr.com/>. Your updater will not notify you about new releases, but since they are being automatically built every Friday, you can be sure that every Friday there will be a new release.
+Para instalar los lanzamientos nocturnos, necesita bajarlos manualmente desde <https://nightly.zettlr.com/>. El mensaje de actualización no le notificará sobre nuevos lanzamientos, pero desde que se está construyendo cada viernes, puede estar seguro que cada viernes tendrá una nueva actualización.
 
-> **ATTENTION**: We do not guarantee any degree of stability. Nightly releases are being built automatically, so if we accidentally introduce a severe bug shortly before the automated build commences, and fix it an hour later, that week's nightlies _will_ contain that bug. Normally, the worst that can happen is that the app does not start and you have to revert to a previous version, but it might be possible that these builds can damage your operating system. By using nightly releases you agree that you understand these risks.
+> **ATENCIÓN**: No garantizamos ningún grado de estabilidad. Los lanzamientos nocturnos se crean de forma automática, así que si accidentalmente introducimos un error severo poco después de que la construcción de la automatización empiece y se arregla una hora después, las actualizaciones nocturnas de esa semana _continuarán manteniendo_ ese error. Normalmente, lo peor que puede pasar es que la app no arranca y tiene que volver a una versión previa de ella, pero podría ser posible que esa construcción pueda dañar tu sistema operativo. Al usar un lanzamiento nocturno acepta que entiende ese riesgo.
 
-Please also note that we do not retain any previous nightly builds. Each week's nightly will simply replace the previous one. If a nightly is unusable, feel free to notify us so we can manually schedule a new build after we have fixed the bug.
+Por favor note que no almacenamos ningún lanzamiento nocturno. Cada semana el lanzamiento nocturno reemplaza la versión anterior. Si un lanzamiento nocturno es inservible, siéntete libre de notificarnos para así programar manualmente una nueva construcción después de que hayamos arreglado el error.
