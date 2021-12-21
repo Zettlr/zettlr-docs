@@ -1,26 +1,27 @@
-# The File Manager
+# El gestor de archivos
 
-The file manager is basically a built-in Explorer (or Finder, if you are on a Mac) tuned to the needs of Zettlr. It is one of the core components of the app.
+El administrador de archivos es básicamente un Explorador integrado (o Finder, si está en una Mac) adaptado a las necesidades de Zettlr. Es uno de los componentes principales de la aplicación.
 
-## General
+## Generalidades
 
-In the preferences, you can choose the file manager mode:
+En las preferencias, puede elegir el modo de administrador de archivos:
 
-* **Extended**: In the extended mode, both the file _tree_ and the file _list_ will be visible. The file tree does not show individual files (except standalone files).
-* **Combined**: In the combined mode, you will only see the file tree which then will also include files.
-* **Thin**: In the thin mode, you have access to both the file tree and the file list, but only one will be shown at a time.
+* **Expandir**: En el modo extendido, tanto el archivo _árbol_ como el archivo _lista_ serán visibles. El árbol de archivos no muestra archivos individuales (excepto archivos independientes).
+* **Combinar**: En el modo combinado, solo verá el árbol de archivos que luego también incluirá archivos.
+* **Comprimir**: en el modo comprimido, tiene acceso tanto al árbol de archivos como a la lista de archivos, pero solo se mostrará uno a la vez.
 
-The thin mode allows several ways to switch between your file tree and the file list. If you currently see the file tree, but want to see the file list, simply click any directory. Zettlr will then switch to the file list, showing you all files within that directory. If you currently see the file list, simply move your mouse over the top area of the file list. An arrow will appear that you can click to move back to the file tree.
+El modo Comprimido se permiten varias formas de alternar entre su árbol de archivos y la lista de archivos. Si actualmente ve el árbol de archivos, pero desea ver la lista de archivos, simplemente haga click en cualquier directorio. Zettlr luego cambiará a la lista de archivos, mostrándote todos los archivos dentro de ese directorio. Si actualmente ve la lista de archivos, simplemente mueva el mouse sobre el área superior de la lista de archivos. Aparecerá una flecha en la que puede hacer clic para volver al árbol de archivos.
 
-If you have a trackpad or a mouse that supports horizontal scrolling, you can also make use of horizontal scrolling to switch back and forth, which in many cases is much faster than clicking somewhere.
+Si tiene un trackpad o un mouse que admita el desplazamiento horizontal, también puede hacer uso del desplazamiento horizontal para cambiar de un lado a otro, que en muchos casos es mucho más rápido que hacer clic en algún lugar.
 
-> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the file manager modes.
+> **Nota**:  Por favor consulte el [manual de configuración](../ reference / settings.md) para obtener más información sobre los modos del gestor de archivos. 
 
-## The File List
+## La lista de archivos
 
-The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
+La lista de archivos muestra todos los directorios y archivos dentro del directorio que está seleccionado actualmente en la vista de árbol, pero no como un navegador de archivos normal: **la lista de archivos trata todos los subdirectorios como iguales y los muestra todos uno tras otro.** Por lo tanto, no es necesario que se adentre más en el árbol de directorios para llegar a los directorios ocultos.
 
-If you turned off the meta information, both directories and files will be shown as one-liners. If you display the *file information*, you will see additional information: directories will show you the amount of files and folders they contain. The files, on the other hand, show their last modification date, any tags, an ID, and more.
+Si desactivó la metainformación, tanto los directorios como los archivos se mostrarán como una sola línea. Si muestra la *información del archivo*, verá información adicional: los directorios le mostrarán la cantidad de archivos y carpetas que contienen. Los archivos, por otro lado, muestran su última fecha de modificación, cualquier etiqueta, una identificación y más.
+
 
 > You can toggle the file information via the "View" menu, by pressing `Cmd/Ctrl+Alt+S`, or the relevant setting in the preferences dialog under the General tab
 
