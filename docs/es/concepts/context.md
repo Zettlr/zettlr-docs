@@ -1,7 +1,7 @@
-# Context
+# Contexto
 
-Zettlr is heavily based upon the notion of context. Depending on different contexts, you likely wish to see different information. For instance, you may want to always see the bibliography of your current file, or the non-Markdown files of the currently selected directory. A lot of what you see and what you do not see around the application is based upon this notion of context.
+Zettlr se basa muchísimo en el concepto de  contexto. Dependiendo de los diferentes contextos, podría desear ver información diferente. Por ejemplo, podría querer que siempre se vea la biografía de su archivo actual, o los archivos que no son Markdown de el directorio actual seleccionado.  Un montón de lo que ve y de lo que no ve alrededor de la aplicación se basa en la noción de contexto.
 
-There are two important contexts that you might want to keep in mind while working with Zettlr: The **active file** that the editor shows you is the file-based context. A lot of information with regard to file contents (such as the word counter, or the list of references in the sidebar) will update itself to reflect the context of the current file.
+Hay dos contextos importantes que debería tener en mente mientras trabaja con  Zettlr: El **archivo activo** que el editor te muestra es el contex o basado en el archivo. Un montón de información sobre los contenidos del archivo (como el contador de palabras, o la lista de referencias en la barra lateral) se actualizará para reflejar el contexto del archivo actual.
 
-The second context is the **current directory**. Whichever directory you have selected determines a different chunk of information that is being displayed to you in the file list.
+El segundo contexto es el  **directorio actual**. Cualquier directorio que haya seleccionado determina una porción diferente de información que se le mostrará en la lista de archivos.
