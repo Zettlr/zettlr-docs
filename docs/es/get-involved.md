@@ -6,26 +6,25 @@
 
 Zettlr tiene una comunidad vibrante que se ayuda mutuamente en la red. Las siguientes listas contienen lugares comunes para empezar si tiene algún problema.
 
-* [Zettlr Discord](https://discord.com/invite/PcfS3DM9Xj) — The Zettlr Discord is a place for the Discordians (there doesn’t appear to be an official term).
+* [El Discord de Zettlr](https://discord.com/invite/PcfS3DM9Xj) — El Discord de Zettlr es un lugar para los Discordantes (no parece haber un término oficial).
+* [El subreddit de Zettlr](https://www.reddit.com/r/Zettlr) — El subreddit de Zettlr se creó para los usuarios de Reddit de la comunidad.
+* [La cuenta oficial de Twitter](https://www.twitter.com/Zettlr) — Aquí puedes seguir las actualizaciones de la app en tiempo real. Es el único lugar donde se anuncia regularmente todo lo que hacemos. Adicionalmente, nos involucramos en varias discusiones, así que si tienes preguntas, puedes dejarlas acá.
+* [La página oficial de  Facebook](https://fb.me/Zettlrapp) — Aquí puedes dejarnos mensajes, en caso de que no tengas una cuenta en Twitter.
+* [Nuestro canal de YouTube](https://www.youtube.com/c/Zettlr) — Si eres más de lo visual, puedes encontrar videos introductorios acá.
+* [Foro de quienes usan Zettlr](https://forum.zettlr.com) — (Descontinuado)
+* [El registro de problemas de GitHub](https://github.com/Zettlr/Zettlr/issues) — Este es el núcleo de nuestros esfuerzos para hacer mejor la aplicación. Si encuentras un error, tienes sugerencias o quieres proponer una nueva funcionalidad, aquí estarás en el lugar adecuado. Sin embargo, especialmente cuando se trata de preguntas sobre el flujo de trabajo o nuevas funcionalidades, **es mejor discutir tus ideas en GitHub o Reddit primero**.
 
-* [Zettlr subreddit](https://www.reddit.com/r/Zettlr) — The Zettlr subreddit is meant for the Redditors in the community.
-* [The official Twitter account](https://www.twitter.com/Zettlr) — Here you can follow the updates to the app in real time. It's the only place where we regularly announce everything we do. Additionally, we engage in most discussions, so if you have questions, you can drop them here.
-* [The official Facebook page](https://fb.me/Zettlrapp) — Here you can message us, if you don't have a Twitter account.
-* [Our YouTube channel](https://www.youtube.com/c/Zettlr) — If you are more the visual type, you can find some introductory videos her
-* [Zettlr user forum](https://forum.zettlr.com) — (Deprecated)
-* [The GitHub issue tracker](https://github.com/Zettlr/Zettlr/issues) — This is the core of our endeavours to make the app better and better. If you spot a bug, have a suggestion or want to propose a feature, here's the right place. Nevertheless, especially when it comes to questions regarding the user workflow or new features, **it's best to discuss your ideas on the GitHub or on Reddit first**.
+## Contribuciones de usuarios
 
-## User Contributions
+Como usuario que quiere una aplicación bonita y bien trabajada aplicación para escribir, mantén tus ojos abiertos para encontrar errores que se pueden producir y, más importante,  dinos cómo hacer el flujo de trabajo más eficiente. No podemos juzgar solo por  nuestro propio flujo de trabajo para hacer mejor la app, sino que también necesitamos saber cómo. Siempre recuerda: no podemos crear un flujo de trabajo como se ha diseñado sin darle ciertas concesiones a otros flujos de trabajo, pero intentaremos hacer nuevas funcionalidades más accesibles o que funcionen mejor siempre y cuando las compensaciones de los flujo  de trabajo existentes y las nuevas sugerencias no sean muy difíciles.
 
-As a user who wants a good looking, well-working writing app, just keep your eyes open for any error the app might produce and, more importantly, tell us how to make the workflow more efficient! We can only judge for our own workflow, so to make the app better for you as well, we need to know how. Always remember: We cannot build a workflow as-is into the design but have to make concessions to other workflows, but we'll try to make features more accessible or working smoother as long as the trade-offs for the existing workflows and the new suggestion are not too hard.
+Por favor reporta los errores abriendo _issues_ en el repositorio de GitHub. Esta es la manera de que podamos responder rápidamente a un reporte y ponernos manos a la obra con el problema.
 
-Please report bugs by opening up issues on the GitHub repository. This way we are able to to quickly respond to the report and directly get to handle the problem.
+## Traduciendo la app
 
-## Translating the App
+Cualquier ayuda con la traducción de esta app en cualquier idioma del planeta es bienvenida. Las traducciones son gestionadas por nuestro Servidor de Traducciones. Para traducir, necesitarás crear una cuenta,  que solo se usa como medida anti SPAM. Adicionalmente - pero sólo si así lo quieres - aparecerás en los créditos usando tu nombre de usuario en todas las traducciones creadas.
 
-We welcome any help in translating the app in all languages of this planet. Translations are managed on our Translation Server. To translate, you'll need to create an account, which is only used as an anti-spam measure. Additionally —but only if you want to— you will be credited using your username in all generated translations.
-
-Translating is simple. Just click on any language on the main page to see the list of all identifiers and all existing translations:
+Traducir es simple.  Sólo  Just click on any language on the main page to see the list of all identifiers and all existing translations:
 
 ![Translation Keys](img/translations_list.png)
 
