@@ -1,52 +1,52 @@
 # Solución de problemas
 
-Like any software, Zettlr might have some problems here and there. If you encounter such problems, this page contains instructions on how to resolve the issues. We now have four years of experience with these problems, and as such the options listed below should work in most cases.
+Como cualquier otro  software, Zettlr podría tener algunos problemas aquí y allá. Si encuentra alguno de estos problemas, esta página contiene instrucciones sobre cómo resolverlos. Ahora tenemos cuatro años de experiencia con esos problemas, y alguna de las siguientes opciones debería funcionar en la mayoría de estos casos.
 
-> Please attempt the steps listed here and consult the FAQ first before asking on the Forum, Reddit, or opening a GitHub issue. By asking questions on these platforms that are already answered somewhere here, you are binding resources by us that we would love to spend developing the app.
+> Por favor intente los pasos listados aquí y  consulte las Preguntas frecuentes primero antes de preguntar en el Foro, Reddit, o abrir un _issue_ en GitHub. Al preguntar cosas en estas plataformas que ya han sido contestadas, estas desperdiciando recursos que nos encantaría invertir en desarrollar la app.
 
-## 1. Try Turning it Off and On Again
+## 1. Intenta apagar y encender de nuevo
 
-This might sound trivial, but many problems can be solved by simply quitting Zettlr and restarting it. If you encounter a problem, it often helps to just restart the app, sometimes also your computer.
+Esto puede sonar trivial, pero muchos de los problemas se pueden solucionar simplemente reiniciando Zettlr. Si encuentra un problema, frecuentemente se soluciona reiniciando la app, a veces reiniciando su computador.
 
-> If you can reliably reproduce the problem, that is: the problem _always_ appears after you perform a specific action, this might indicate that you've found a way to create what is called an "unrecoverable state". In that case, and only then, please open a GitHub issue providing us with a minimal example of how to reproduce the issue. We will then fix it.
+> Si puedes reproducir el problema, esto es: el problema _siempre_ aparece después de que re lizas una acción determinada, esto puede indicar que has encontrado una forma de crear lo que se conoce como "estado irrevocable". En ese caso, y sólo entonces, por favor abre un _issue_ en GitHub dándonos un ejemplo como mínimo con la forma de reproducirlo. Entonces lo arreglaremos.
 
-## 2. Install the Most Recent Version
+## 2. Instala la versión más reciente
 
-As soon as we hear about a problem, we fix it and some time later we release a new version. Make sure to always update to the newest version, because older versions do have bugs (otherwise they would be the most recent version ;).
+Tan pronto como escuchemos sobre un problema, lo arreglaremos y un tiempo después publicaremos una nueva versión. Asegúrate de siempre tener la última versión publicada, porque las versiones anteriores tienen errores (de lo contrario serían las versiones más nuevas ;).
 
-So make sure you always use the most recent version of Zettlr!
+¡Así que asegúrate de siempre tener la versión más actual de Zettlr!
 
-## 3. Try Resetting the App
+## 3. Intenta reiniciar la app
 
-We have heard many times that the app appears to be broken (it does not even start, for example). What we found is that sometimes clearing the cache helps. This seems to be related to the Electron framework we use. That one creates its own cache files, over which we do not have any control, and sometimes it helps to delete these.
+Hemos escuchado muchas veces que la app parece no funcionar (que por ejemplo no arranca). Lo que hemos encontrado es que a veces limpiar el cache ayuda. Esto parece estar relacionado con el  _framework_ de Electron que usamos. Él crea sus propios archivos de cache, sobre los cuales no tenemos control y aveces al borrarlos se solucionan los problemas.
 
-Zettlr maintains local settings and metadata (user-defined tags, workspace location, settings, etc.). You may want to reset, read, or modify this data in some cases (e.g. if your installation seems to be broken, if you accidentally loaded a bad workspace, etc.).
+Zettlr mantiene configuraciones locales y metadatos (etiquetas definidas por los usuarios, ubicaciones de lugares de trabajo, configuraciones, etc.). Podría querer reiniciar, leer, o modificar estos datos en algunos casos (por ejemplo si su instalación parece estar rota, si accidentalmente cargó un espacio de trabajo erróneo,  etc.).
 
-This data is located in the _application data path_ whose location depends on your Operating System:
+Estos datos están ubicados en la _dirección de aplicación de datos_ cuya ubicación depende de tu sistema operativo:
 
-* **Windows:** `C:\Users\<your username>\AppData\Roaming\Zettlr` (note that AppData is a hidden folder, so you might want to change the Explorer settings so it shows up)
-* **macOS:** `/Users/<your username>/Library/Application Support/Zettlr` (open a Finder window, hold down "Alt" while opening the "Go"-menu, and click on the appearing "Library" entry)
-* **Linux:** `/home/<your username>/.config/Zettlr` (note that `.config` is a hidden folder, so you might want to use a command line to open it)
+* **Windows:** `C:\Usuarios\<tu-nombre-de-usuario>\AppData\Roaming\Zettlr` (note que AppData es una carpeta oculta, así que debería cambiar la configuración de su explorador para que se muestre.
+* **macOS:** `/Usuarios/<tu-nombre-de-usuario>/Library/Application Support/Zettlr` (abre una ventana de _Finder_, presiona y mantén "Alt" mientras abres el menú "Go", y le das click en la entrada que aparece de  "Library")
+* **Linux:** `/home/<tu-nombre-de-usuario>/.config/Zettlr` (note que `.config` es un archivo oculto, por eso deberías acceder mediante líneas de comando para abrirlo)
 
-If you want to completely reset your local Zettlr installation, follow these steps:
+Si quieres reiniciar completamente tu instalación local de Zettlr, sigue estos pasos:
 
-1. First ensure that the application is closed (in some error cases, there is a "zombie" process, which you can close from within your Task Manager or Activity Monitor)
-2. Make sure to optionally backup these files:
-    * `stats.json` (your writing statistics)
-    * `config.json` (the app settings — including the location of your workspaces and open files)
-    * `custom.css` (your custom CSS, if any)
-    * `tags.json` (your colour-coded tags)
-    * `targets.json` (your writing targets)
-    * `user.dic` (your own custom dictionary)
-3. Select everything in this directory and delete it.
-4. Restart the application. Some of these files will be re-created.
+1. Primero asegúrate que Fa aplicación está cerrada (en algunos casos, hay un proceso "zombie", que puedes cerrar desde tu Gestor de tareas o Monitor de actividades)
+2. Asegúrate de opcionalmente tener una copia de seguridad de estos archivos:
+    * `stats.json` (tus estadísticas de escritura)
+    * `config.json` (la configuración de la app — incluyendo la ubicación de tu espacio de trabajo y archivos abiertos)
+    * `custom.css` (tus CSS's personalizados, si existe)
+    * `tags.json` (tus colores de etiquetas configurados)
+    * `targets.json` (tus objetivos de escritura)
+    * `user.dic` (tu propio diccionario personalizado)
+3. Selecciona todo lo que esté en este directorio y bórralo.
+4. Reinicia la aplicación. Algunos de estos archivos serán creados nuevamente.
 
-## 4. Ask the Community for Help
+## 4. Pídele ayuda a la comunidad
 
-If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active both on the [Zettlr subreddit](https://www.reddit.com/r/Zettlr) and on [Discord](https://discord.com/invite/PcfS3DM9Xj), so you can choose which one you like.
+Si ninguno de los pasos anteriores parece servir, puedes pedirle ayuda a la comunidad. A veces, alguien más ha encontrado un problema similar y podría ayudarte. La comunidad es activa tanto en  [el subreddit de Zettlr](https://www.reddit.com/r/Zettlr) como en [Discord](https://discord.com/invite/PcfS3DM9Xj), así que puedes escoger el que prefieras.
 
-## 5. Open a GitHub Issue
+## 5. Abrir un _issue_ de GitHub
 
-If the community couldn't help you, or if it turns out while discussion the issue that it seems to be an actual bug, please open an issue on GitHub. Make sure to include as much information as possible so that we can quickly address the issue.
+Si la comunidad no puede ayudarte, o si se trata de un tema que aparece en una discusión que parece ser más bien un error, por favor abre un _issue_ en GitHub. Asegúrate de incluir tanta información como sea posible para que podamos rápidamente atender el problema.
 
-> If you open an issue on GitHub, make sure you receive notifications. Almost always the developers have additional questions regarding your issue. The faster you respond, the faster we can ensure the issue is being fixed. If no one answers on your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
+> Si abres un _issue_ en GitHub, asegúrate de recibir notificaciones. Casi siempre los desarrolladores tienen preguntas adicionales sobre el problema. Entre más rápido respondas, más rápido te ayudaremos en corregir el error. Si nadie responde tu  _issue_, esto puede indicar que no estamos seguros sobre cómo ayudarte. En ese caso, podría ser de ayuda replantearlo o agregar información adicional.
