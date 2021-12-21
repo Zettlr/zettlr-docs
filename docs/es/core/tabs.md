@@ -1,17 +1,17 @@
-# Document Tabs
+# Pestañas de documentos
 
-Zettlr allows opening multiple documents at the same time in tabs. If you work with more than one document regularly, you will certainly love this feature! All open tabs are saved when you quit the app, and they are restored upon start (if the files still exist, that is). This way they work pretty much like browser tabs.
+Zettlr permite abrir varios documentos al mismo tiempo en pestañas. Si trabaja con más de un documento con regularidad, sin duda le encantará esta función. Todas las pestañas abiertas se guardan cuando sale de la aplicación y se restauran al iniciar (si los archivos aún existen, claro está). De esta forma, funcionan de forma muy similar a las pestañas del navegador.
 
-## Tab Behavior
+## Comportamiento de las pestañas
 
-There are two kinds of people: Those who like to have many tabs open at once, and those who don't. Zettlr pays tribute to both: In the preferences you can tell Zettlr to avoid opening new tabs if possible.
+Hay dos tipos de personas: las que les gusta tener muchas pestañas abiertas a la vez y a las que no. Zettlr rinde homenaje a ambos: en las preferencias puedes decirle a Zettlr que evite abrir nuevas pestañas si es posible.
 
-If you enable that setting, Zettlr will always attempt to close the currently active tab and replace it with a new one whenever you open a file. However, if the file in your active tab is edited and contains unsaved changes, Zettlr will still open a new file in a new tab. To force Zettlr to open a new tab regardless of this setting, simply click with your **middle mouse button**. If you are using a trackpad, the context menu allows you to open files in a new tab as well.
+Si habilita esa configuración, Zettlr siempre intentará cerrar la pestaña actualmente activa y reemplazarla por una nueva cada vez que abra un archivo. Sin embargo, si el archivo en su pestaña activa está editado y contiene cambios no guardados, Zettlr aún abrirá un nuevo archivo en una nueva pestaña. Para obligar a Zettlr a abrir una nueva pestaña independientemente de esta configuración, simplemente haga clic con el **botón central del mouse**. Si está utilizando un trackpad, el menú contextual también le permite abrir archivos en una nueva pestaña.
 
-If you disable that setting, Zettlr will always open any new file in a new tab and never close your old ones.
+Si desactiva esa configuración, Zettlr siempre abrirá cualquier archivo nuevo en una nueva pestaña y nunca cerrará los antiguos.
 
-> You can close tabs either by clicking the "x"-icon or by clicking a tab with your middle mouse button.
+> Puede cerrar las pestañas haciendo clic en el icono "x" o haciendo clic en una pestaña con el botón central del mouse.
 
-## The tab context menu
+## El menú contextual de la pestaña
 
-Every tab gives you some options for working with your tabs: You can either close the current tab, or you can close all tabs. You can also close every tab except the one you clicked.
+Cada pestaña le ofrece algunas opciones para trabajar con sus pestañas: puede cerrar la pestaña actual o puede cerrar todas las pestañas. También puede cerrar todas las pestañas excepto en la que hizo clic.
