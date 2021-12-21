@@ -1,4 +1,4 @@
-# Troubleshooting
+# Solución de problemas
 
 Like any software, Zettlr might have some problems here and there. If you encounter such problems, this page contains instructions on how to resolve the issues. We now have four years of experience with these problems, and as such the options listed below should work in most cases.
 

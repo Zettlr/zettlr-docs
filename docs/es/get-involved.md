@@ -24,27 +24,27 @@ Por favor reporta los errores abriendo _issues_ en el repositorio de GitHub. Est
 
 Cualquier ayuda con la traducción de esta app en cualquier idioma del planeta es bienvenida. Las traducciones son gestionadas por nuestro Servidor de Traducciones. Para traducir, necesitarás crear una cuenta,  que solo se usa como medida anti SPAM. Adicionalmente - pero sólo si así lo quieres - aparecerás en los créditos usando tu nombre de usuario en todas las traducciones creadas.
 
-Traducir es simple.  Sólo  Just click on any language on the main page to see the list of all identifiers and all existing translations:
+Traducir es simple.  Sólo dale click a cualquier idioma en  a página principal para ver la lista de todos los identificadores y traducciones existentes:
 
-![Translation Keys](img/translations_list.png)
+![Claves de traducción](img/translations_list.png)
 
-On the left side you'll see all translation IDs. They will mostly be self-explanatory. If you don't know where to start, simply have a look at the English translation and at the app. Then you'll know which translation IDs will correspond to which elements.
+En el lado izquierdo verá los identificadores de traducción (o IDs). Serán principalmente auto explicativos. Si sumercé no sabe dónde empezar, simplemente dale una mirada a la traducción en inglés y a la de la app. Luego sabrá qué identificador de traducción corresponde a qué elemento.
 
-We've implemented a user-based quality management system in the service, which consists in you being able to vote on existing translations. So even if you don't want to translate yourself, you can look through all translations and vote for the one you deem correct. Whenever somebody downloads a translation, the system will take the best-rated translation strings to ensure all translations are verified by you, our users!
+Hemos implementado un sistema de gestión de calidad centrado en el usuario, que consiste en que tenga la capacidad de votar en las traducciones existentes. Así que incluso si no quiere traducir, puede mirar las traducciones y votar por la que parezca más correcta. Cada vez que alguien descarga una traducción, el sistema tomará la mejor votada para garantizar que todas las traducciones son verificadas por tí, quienes usan la aplicación.
 
-[For more information, please see the short guide to our translation service](https://translate.zettlr.com/welcome).
+[Para más información, por favor mire la guía corta de nuestro servicio de traducción](https://translate.zettlr.com/welcome).
 
-## Developing
+## Desarollo
 
-To start developing, simply [fork the repository](https://github.com/Zettlr/Zettlr), work on your features, bug fixes, etc. and then open pull-requests. Please remember to **only PR to the develop branch!** The master-branch is only pushed to once a new release is being drafted. So if you are developing a new feature and a new version of Zettlr is released, you can simply pull the `upstream master` to be up to date again and continue writing your feature.
+Para empezar a desarrollar, simplemente [derive el repositorio](https://github.com/Zettlr/Zettlr), trabaje en las funcionalidades, corrección de errores, etc. y luego abra un _pull-requests_ (o PR - acrónimo para solicitud de extracción en inglés). Por favor recuerde  **¡sólo hacer un PR a la rama de desarrollo!** La rama maestra (o _master-branch_) es solo publicada (_pushed_) cada vez que se está redactando una nueva versión. Así que si está desarrollando una nueva funcionalidad y una nueva versión de  Zettlr se ha publicado, puede simplemente publicar (_pull_) la rama principal (`upstream master`) para estar al día de nuevo y continuar redactando su funcionalidad.
 
-If you are beginning to develop a feature, it also may be wise to announce that using a new issue to just let the rest know that somebody is already doing it to maximise efficiency!
+Si va a empezar a desarrollar una nueva funcionalidad, puede ser prudente anunciarla usando una nueva publicación (mediante _issue_) para dejarle saber al resto que alguien lo está trabajando actualmente para maximizar la eficiencia.
 
-## Setting Up Your Development Environment
+## Configurando su entorno de desarrollo
 
-To set everything up, make sure to start your favourite IDE and spin up your terminal. Zettlr is based on a [NodeJS](https://nodejs.org/)-stack, so you'll need to have a current Node release installed on your system, and a Node Package Manager. Zettlr requires [Yarn](https://yarnpkg.com/).
+Para dejar todo listo, asegúrese de comenzar en su entorno gráfico de desarrollo favorito y encender tu terminal. Zettlr se basa en  [NodeJS](https://nodejs.org/), así que necesitará una versión de  Node instalada en su sistema, y un Gestor de Paquetes de Node. Zettlr requiere [Yarn](https://yarnpkg.com/).
 
-Then make sure to initialise everything:
+Luego asegúrese de iniciar todo:
 
 ```bash
 $ git clone https://github.com/Zettlr/Zettlr.git
@@ -52,9 +52,9 @@ $ cd Zettlr
 $ yarn install --frozen-lockfile
 ```
 
-> We have listed a much more comprehensive setup and development guide in [the repository's README](https://github.com/Zettlr/Zettlr#readme) file. In case, the README file will be more up to date since it's closer to the source code. If any of below's commands doesn't work, please look there first, and open a PR to update this documentation page!
+> Hemos hecho una lista mucho más completa de guías de configuración y desarrollo en el  [archivo README del repositorio](https://github.com/Zettlr/Zettlr#readme). Es posible que el archivo README esté más actualizado debido a que es más cercano al código fuente. Si alguno de los comandos no funciona, por favor revise primero allí y abra un  PR para actualizar esta página de documentación.
 
-### Development Commands
+### Comandos de desarrollo
 
 This section lists all available commands that you can use during application development. These are defined within the `package.json` and can be run from the command line by prefixing them with `yarn`. Run them from within the base directory of the repository.
 
@@ -129,7 +129,7 @@ You can pass additional command-line switches such as `--clear-cache` to this co
 
 > Attention: Before first running the command, you **must** run it with the `--clean`-flag to create the directory in the first place!
 
-### Directory Structure
+### Estructura del directorio
 
 Zettlr is a mature app that has amassed hundreds of directories over the course of its development. Since it is hard to contribute to an application without any guidance, we have compiled a short description of the directories with how they interrelate.
 
@@ -180,11 +180,11 @@ Zettlr is a mature app that has amassed hundreds of directories over the course 
 └── test                           # Unit tests
 ```
 
-### On the Distinction between Modules and Service Providers
+### Sobre la diferencia entrO módulos y proveedores de servicios
 
 You'll notice that Zettlr contains both "modules" and "service providers". The difference between the two is simple: Service providers run in the main process and are completely autonomous while providing functionality to the app as a whole. Modules, on the other hand, provide functionality that must be triggered by user actions (e.g. the exporter and the importer).
 
-### The Application Lifecycle
+### El ciclo de vida de la aplicación
 
 Whenever you run Zettlr, the following steps will be executed:
 
@@ -228,7 +228,7 @@ This will direct the File System Abstraction Layer to fully clear its cache on b
 
 Use this switch to temporarily override the default configuration file stored in your AppData-equivalent folder. This path should be absolute. In case you need to provide a relative path, the base for resolving the path will be: either the binary's directory name (when the app is packaged), or the repository root (when the app is not packaged). If the path contains spaces, don't forget to escape it in quotes.
 
-### Terminology
+### Terminología
 
 A module is not necessarily always a module, but directories and folders can mean the same. Due to semantic ambiguities, we decided to include this glossary section so that terms that are frequently thrown around in the ecosystem of Zettlr are well understood.
 
