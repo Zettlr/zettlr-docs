@@ -1,42 +1,42 @@
-# What You See Is What You Mean (WYSIWYM)
+# Lo que ves es lo que quieres decir (LQVELQQD)
 
-Markdown is a language based on the paradigm called ["What you see is what you mean"](https://en.wikipedia.org/wiki/WYSIWYM) (WYSIWYM, pronounced /ˈwɪziwɪm/). This paradigm is related to "What you see is what you get" (WYSIWYG), which you might already have heard of. Word processors like Word or LibreOffice, for instance, follow this paradigm. WYSIWYG means that whatever you _see_ in your word processor will be what you see, even when you save the document as PDF or as HTML. The guiding principle for WYSIWYG is that editing a document should match precisely any (exported or printed) version of it.
+Markdown es un lebguaje basado en el paradigma llamado [Lo que ves es lo que quieres decir"](https://es.wikipedia.org/wiki/WYSIWYM) (LQVELQQD, de las mismas siglas de la frase en  inglés,  WYSIWYM). Este paradigma está relacionado con "Lo que ves es lo que obtienes" (LQVELQO, de la misma frase en inglés, WYSIWYG), que probablemente ya habrás escuchado. Procesadores de texto como Word o LibreOffice, por ejemplo, siguen este paradigma. LQVELQO quiere decir que lo que sea que  _ves_ en tu procesador de texto será lo que verás, independientemente de que guardes el documento como un  PDF o como HTML. El principio guía de LQVELQO es que editar un documento debería coincidir precisamente con cualquier versión de él (exportada o impresa).
 
-WYSIWYM, on the other hand, does not make such claims. Instead of "getting" what you see, WYSIWYM is built around the idea that whatever you see is what you _mean_. In practice, this means that Markdown allows you to define the _structure_ of a text (e.g., define headings, bold text, blockquotes and links) but **not what it looks like**. Markdown files need to be processed further for publication. In short: Markdown files are "raw" files that require to be compiled into a final format for publishing.
+LQVELQQD, por otra parte, no hace ese tipo de proclamas. En cambio de "obtener" lo que ves, LQVELQQD es construir alrededor de la idea de que lo que sea que ves es lo que  _quieres decir_. En la práctica, esto implica que Markdown permite definir la _estructura_ de un texto (por ejemplo definir las cabeceras, negritas, citas y enlaces) pero **no como se ve**. Los archivos Markdown necesitan ser procesados después para publicación. En resumen: los archivos  Markdown son archivos "crudos"  que necesitan ser compilados en un formato final de publicación.
 
-The benefit of this principle is that you **separate the actual writing process from the layouting process**. This makes incredible sense in many ways. Let us, as an example, compare HTML files with PDF files. HTML files are built around the principle of flexible layout, that is: You can resize your browser window and the HTML file will reflow so that it always looks good, no matter how you resize it. PDF files, on the other hand, are the opposite of flexibility: PDF is meant for printing documents, so these documents cannot be resized. This means that it will not adapt to the size of your PDF reader window. However, it allows you to use, e.g., a two-column layout or headers and footers much more easily. The only thing both documents have in common is the structure: A heading in your PDF file will also be a heading in your HTML file, even though it might look differently. And that is precisely what Markdown allows you to do.
+El beneficio de este principio es que **separas el proceso de escritura del proceso de maquetación**. Esto tiene sentido increíblemente en muchas formas. Déjanos, por ejemplo, comparar archivos HTML con archivos PDF. Los archivos HTML están creados sobre el principio de maquetación flexible, esto es: puedes redimensionar la ventana de tu navegador y el archivo HTML se acomodará de tal manera que siempre se vea bien, no importa de qué forma lo redimensiones. Los archivos PDF, por otro lado, son lo opuesto a flexibilidad: PDF fue hecho para documentos impresos, así que esos documentos no pueden redimensionarse. Esto quiere decir que no se adaptará al tamaño de la ventana de tu lector de PDF. Como sea, esto permite que uses, por ejemplo, una maqueta de dos columnas o cabeceras y pies de página más fácilmente. La única cosa que ambos documentos tienen en común es la estructura: una cabecera en tu archivo PDF será también un cabezote en tu archivo HTML, incluso aunque se vea diferente. Y eso es lo que precisamente Markdown te permite hacer.
 
-Some elements, however, will negatively impact your workflow. For instance, if you want to quickly proof-read a paragraph you've just written, links would disturb that, because they would look like this: `A sentence with [a link](https://docs.zettlr.com) in it`. It is much easier to read a sentence that looks like this: `A sentence with _a link_ in it`. Thus, Zettlr will pre-render links for you. Something similar applies to images: For us humans, it is much easier to see the image that is supposed to be in there than to just see the path to it.
+Algunos elementos, sin embargo, impactarán negativamente tu flujo de trabajo. Por ejemplo, si quieres revisar rápidamente un párrafo que acabaste de escribir, los enlaces podrían perturbar la lectura, porque podría leerse como esto: `Una frase con [un enlace](https://docs.zettlr.com) en él`. Es más fácil leer frases como esto: `Una frase con _un enlace_ en é`. Es decir,  Zettlr pre procesará estos enlaces para tí. Algo similar aplica a imágenes: Para un ser humano, es más fácil ver imágenes que se suponen que deberían estar allí en vez de ver una ruta del archivo ahí.
 
-However, all of these rendered elements will _not_ match your exported files. They are simply there for your convenience and images, for example, offer some handy tools for easier editing, which will not be in your exported files.
+Como sea, todos estos elementos procesados  _no_ coincidirán con tus archivos exportados. Ellos están simplemente ahí para tu conveniencia y las imágenes, por ejemplo, ofrecen algunas herramientas útiles para editar fácilmente, que no estarán en tus archivos exportados.
 
-## Linebreaks are Not Always Linebreaks
+## Los saltos de línea no siembre son saltos de línea
 
-One common misconception is the meaning of linebreaks in Markdown, and we have to argue that this might be the most difficult idea to understand. Markdown will, by default, **remove single line breaks** and treat **double linebreaks as paragraph breaks**. However, a linebreak that is preceeded either by **two spaces** or **one backslash** will be retained.
+Uno de los errores comunes es el significado de saltos de línea en Markdown, y hemos argumentado que esta podría ser la idea más difícil de entender. Markdown,por defecto, **quitará los saltos de línea simples** e interpretará los  **saltos de línea dobles como saltos de párrafo**. Como sea, un salto de línea que está precedido por o bien **dos espacios** o **una barra diagonal invertida** se mantendrán.
 
-Why does Markdown do this? There are several reasons. The most important one might be historic: Markdown was developed with code editors in mind, which means it was originally intended for people who are used to the idea to wrap their lines after around 72-80 characters. This principle is called [Characters Per Line (CPL)](https://en.wikipedia.org/wiki/Characters_per_line) and stems from historical roots. While for text this reasoning may be counter-intuitive, Markdown has kept this idea, so you will need to pay special attention to your line breaks.
+¿Por qué  Markdown hace esto? Hay múltiples razones. La mas importante puede ser histórica: Markdown fue desarrollado con editores de código en mente, lo que implica que fue creado originalmente para gente que esta acostumbrada a hacer ajustes de línea cada 72-80 caracteres. Este principio es llamado  [Caracteres Por Línea (CPL)](https://en.wikipedia.org/wiki/Characters_per_line) y tiene raíces históricas.  Si bien para el texto este razonamiento puede ser contraintuitivo, Markdown ha mantenido esta idea, por lo que deberás prestar especial atención a los saltos de línea.
 
-Some people make use of this behaviour for their own writing process: They write one sentence per line so that they have an easier time trimming all sentences to approximately the same length. Take this example:
-
-```md
-This is one sentence.
-This is a second sentence.
-This sentence is much longer than the two sentences before.
-A short sentence.
-
-This is the next paragraph.
-Another sentence in the second paragraph.
-```
-
-The above example will result in two paragraphs, one with four and one with two sentences. If you want to keep certain line breaks, you have to make this explicit, either by finishing a line with two spaces, or by putting a backslash at the end of the line:
+Algunas personas utilizan este comportamiento para su propio proceso de escritura: escriben una oración por línea para que les resulte más fácil recortar todas las oraciones a aproximadamente la misma longitud. Toma este ejemplo:
 
 ```md
-This sentence will be on its own line.  
-This one also.\
-This is on the third line.
-This sentence will come directly after the third one.
+Esta es una oración.
+Esta es una segunda oración.
+Esta oración es mucho más larga que las dos anteriores.
+Una frase corta.
+
+Este es el siguiente párrafo.
+Otra oración en el segundo párrafo.
 ```
 
-Keep this behaviour in mind to know how your documents will look like when you export them into, e.g., PDF or Word.
+El ejemplo anterior resultará en dos párrafos, uno con cuatro y otro con dos oraciones. Si deseas mantener ciertos saltos de línea, debes hacerlo explícito, ya sea terminando una línea con dos espacios o colocando una barra invertida al final de la línea:
 
-> If you want to get an overview over the general ideas behind what you can and what you cannot do, please consult the [CommonMark specification](https://spec.commonmark.org/), to which Zettlr and the underlying exporter, Pandoc, will adhere to.
+```md
+Esta oración estará en su propia línea.
+Este también. \
+Esto está en la tercera línea.
+Esta oración vendrá directamente después de la tercera.
+```
+
+Ten en cuenta este comportamiento para saber cómo se verán tus documentos cuando los exporte, por ejemplo, a PDF o a Word.
+
+> Si deseas obtener una descripción general de las ideas generales detrás de lo que puede y lo que no puedes hacer, consulta la [especificación CommonMark](https://spec.commonmark.org/), a la que Zettlr y el exportador subyacente, Pandoc, se adhieren.
