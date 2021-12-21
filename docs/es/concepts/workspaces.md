@@ -1,29 +1,29 @@
-# Workspaces and files
+# Áreas de trabajo y archivos
 
-Zettlr contains a full file manager based on our custom file system abstraction layer (FSAL). This is no coincidence, as Zettlr was built with immersion as a guiding principle. What this translates to in practice is that Zettlr expects you to choose a folder somewhere on your computer, in which you'll be performing most of your work with Zettlr.
+Zettlr contiene un gestor de archivos completo basado en nuestra propia capa de abstracción de sistema de archivos personalizada (_FSAL_ por sus siglas en inglés). Esto no es una coincidencia, ya que  Zettlr fue construido con la inmersión como un principio guía. Lo que se traduce en la práctica es que Zettlr espera que elijas un folder en algún lugar de tu computador, en donde realizarás la mayoría del trabajo con  Zettlr.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2YX5n8-XVbU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> Throughout the documentation, we will be using the terms "folder" and "directory" interchangeably as they refer to the same thing. The only difference is that "folder" is the term most users will know, whereas "directory" is the technical term for folders on your computer.
+> A lo largo de esta documentación, estaremos usando los términos "carpeta", "folder" y "directorio" indistintamente como si se refirieran a la misma cosa. La única diferencia es que "folder" o "carpeta" es el término más conocido por las personas, mientras que "directorio" es el término técnico para las carpetas y folders en tu computadora.
 
-## Workspaces
+## Áreas de trabajo
 
-A workspace forms the foundation for a single file tree. As you may know, files are saved hierarchically in folders on your computer. Each directory on your computer that you open with Zettlr is called a workspace.
+Un área de trabajo conforma el inicio para un único árbol de archivos. Como sabrás, los archivos se guardan de manera jerárquica en carpetas de tu computador. Cada directorio que abres en Zettlr se llama área de trabajo.
 
-You can load several workspaces at the same time, for instance if you want to separate different chunks of work (e.g. one workspace named "Zettelkasten" and another named "Projects"). If you would like to implement the so-called "PARA" principle for document archiving, it makes sense to create four folders on your computer, "Projects," "Archive," "Resources," and "Areas" and load each one as their own workspace into the application.
+Puedes cargar varias áreas de trabajo al mismo tiempo, por ejemplo si quieres separar diferentes partes de trabajo (por ejemplo un área de trabajo llamada  "Zettelkasten" y otra llamada  "Proyectos"). Si quieres implementar el llamado principio "PARA" para archivar documentos, tiene sentido crear cuatro carpetas en tu computador, "Proyectos," "Archivos," "Recursos," y "Áreas" y cargar cada uno en su propia área de trabajo dentro de la aplicación.
 
-![A screenshot of a setup with multiple workspaces and files](../img/file_tree_roots.png)
+![Una captura de pantalla configurada con múltiples áreas de trabajo y archivos](../img/file_tree_roots.png)
 
-Zettlr will watch all files within your workspaces for changes that you make remotely. For instance, if you use a cloud service to backup your files, e.g., Google Drive, Dropbox, or a Nextcloud instance, it may be that your cloud application synchronizes changes to a file only after you have started Zettlr. Then, Zettlr will recognize this and reflect these changes appropriately within the application.
+Zettlr revisará los archivos al interior de tu área de trabajo en caso de que haya cambios que haga de forma remota. Por ejemplo, si usa un servidor en la nube para hacer copias de seguridad de sus archivos, como Google Drive, Dropbox, o Nextcloud, puede ocurrir que tu aplicación en la nube se sincronice y realice cambios a un archivo solo después de que has arrancado Zettlr. Entonces,  Zettlr reconocerá esto y reflejará esos cambios  apropiadamente al interior de la aplicación.
 
-> It is highly recommended to have at least one workspace open within the application. It is also possible to only open files from your computer and work on them, but this is discouraged, as you will both lose a lot of functionality that is tied to workspaces, and as Zettlr has been built around this concept, you are likely to be less productive with this approach.
+> Es altamente recomendable que tenga al menos un área de trabajo abierta en la aplicación. Es posible que solo abra archivos de tu computador y trabaje en ellos, pero recomendamos evitarlo, porque podrías perder un montón de funcionalidades que están relacionadas con las áreas de trabajo, y como Zettlr se ha construido sobre este concepto, es probable que seas menos productivo sin este enfoque.
 
-## Standalone Files
+## Archivos independientes
 
-Standalone files are those files which you open, e.g., by double-clicking them on your computer, but which are not contained within any of the workspaces you have open. They themselves form an item within Zettlr's file tree, but unlike workspaces, these "trees" only consist of one single file.
+Los archivos independientes son aquellos que abres, por ejemplo haciéndoles doble click en tu computador, pero que no están contenidos en el interior de ninguna área de trabajo que ha abierto. Ellos por sí mismo forman un ítem al interior del árbol de archivos de  Zettlr, pero a diferencia de las áreas de trabajo, estos "árboles" solo contienen un único archivo.
 
-You cannot open files directly from within the app. Rather, they are opened when you double-click a file somewhere on your computer. If this file is located within a workspace, Zettlr will simply navigate to that workspace and open the file accordingly. But if this file is nowhere to be found in any of Zettlr's workspaces, Zettlr will open it as a standalone file.
+No puedes abrir archivos directamente al interior de la app. En cambio, se abrirán cuando le des doble click a un archivo en algún lugar de tu computador. Si el archivo está ubicado al interior de un área de trabajo, Zettlr simplemente lo llevará al área de trabajo y abrirá el archivo allí. Pero si el archivo no se puede encontrar en ningún área de trabajo de Zettlr, Zettlr lo abrirá como archivo independiente.
 
-Standalone files are always sorted on top of the workspaces, where you have easy access to them. You can also "close" them, which means they will simply be unloaded from the application, but left untouched, or remove them, which means that Zettlr will unload them from the application and also move them to the trash bin.
+Los archivos independientes siempre se ordenan sobre las áreas de trabajo, donde pueda acceder a ellas fácilmente. También puede "cerrarlos", lo que quiere decir que ellos serán desmontados de la aplicación, pero los deja sin tocar, o removerlos, lo que quiere decir que Zettlr los desmontará de la aplicación y además los moverá a la papelera de reciclaje.
 
-> This behavior makes it simple to load one or two additional Markdown files into the application which do not reside within one of the workspaces. This makes sense, e.g., for software developers who only want to edit the Readme file of their project without loading the full directory into Zettlr.
+> Este comportamiento hace que sea simple cargar uno o dos archTvos adicionales en Markdown en la aplicación que no estén cargados en un área de trabajo. Esto tiene sentido, por ejemplo, para desarrolladores de software que solo quieren editar el archivo Readme de sus proyectos sin cargar todo un directorio en Zettlr.
