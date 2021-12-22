@@ -1,34 +1,34 @@
-# Custom CSS
+# CSS personalizado
 
-> Custom CSS is a feature for advanced users. There is no official support for customizations, and you perform any customizations at your own risk. In case something goes wrong, you can simply remove the `custom.css` from the Zettlr data directory to reset the custom CSS again.
+> CSS personalizado es una función para usuarios avanzados. No hay soporte oficial para las personalizaciones y sumercé realizará las personalizaciones bajo su propio riesgo. En caso de que algo salga mal, simplemente puedes eliminar el `custom.css` del directorio de datos de Zettlr para restablecer el CSS personalizado nuevamente.
 
-It is possible to use custom CSS ([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)) to modify the complete appearance of the app. You can find the Custom CSS editor in the [assets manager](./assets-manager.md).
+Es posible utilizar CSS personalizados ([Hojas de estilo en cascada](https://es.wikipedia.org/wiki/CSS)) para modificar la apariencia completa de la aplicación. Puedes encontrar el editor de CSS personalizado en el [gestor de recursos](./ assets-manager.md).
 
-If you are unfamiliar with CSS, but don't want to simply copy & paste the guides on this page, you may choose to follow a short [tutorial on CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS). There are many on the internet, so a quick Google search can also provide you with video tutorials, if you prefer those.
+Si no estás familiarizado con los CSS, pero no deseas simplemente copiar y pegar las guías en esta página, puedes optar por seguir un breve [tutorial sobre CSS](https://developer.mozilla.org/en-US/ docs / Learn / CSS / Introduction_to_CSS). Hay muchos en Internet, por lo que una búsqueda rápida en tu motor de búsqueda también puede proporcionarte tutoriales en video, si los prefieres.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QcJGI_3adhc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Writing CSS for Zettlr
+## Escribir CSS para Zettlr
 
-The styles of Zettlr are divided into both geometry and the actual theme, so you may want to stick with only changing the design of elements _without_ changing **any** geometry. Playing around with the geometry may be fun, but it may yield completely random behaviour, as some parts of the app depend upon the correct sizes of elements. In case you made a mistake, don't worry: Simply remove the `custom.css` file from the data directory of Zettlr. You can find the data directory of your own system by looking at the paths provided in [the setup guide](../install.md).
+Los estilos de Zettlr se dividen tanto en geometría como en el tema usado, por lo que es posible que desees seguir cambiando solo el diseño de los elementos _sin_ cambiar **ninguna** geometría. Jugar con la geometría puede ser divertido, pero puede producir un comportamiento completamente aleatorio, ya que algunas partes de la aplicación dependen de los tamaños correctos de los elementos. En caso de que hayas cometido un error, no te preocupes: simplemente elimine el archivo `custom.css` del directorio de datos de Zettlr. Puede encontrar el directorio de datos de tu propio sistema consultando las rutas proporcionadas en [la guía de instalación](../ install.md).
 
-Classes and IDs in Zettlr are always namespaced to the respective components (unless they're global), so to really override a rule you will have to use the complete namespace (you can also use the `!important` override rule, but this is widely regarded as bad practice).
+Las clases y los ID en Zettlr siempre tienen un espacio de nombres (_namespace_) para los componentes respectivos (a menos que sean globales), por lo que para anular una regla, tendrás que usar el espacio de nombres completo (también puedes usar la regla de anulación `! Important`, pero esto es ampliamente considerado como una mala práctica).
 
-Everything is always namespaced to the `body`, which has a class `.dark` if the app is currently in dark mode. So to make sure a certain rule only applies while the app is in dark mode, make sure to prefix it with `body.dark`!
+Todo está siempre en el espacio de nombres del `body`, que tiene una clase` .dark` si la aplicación está actualmente en modo oscuro. Por lo tanto, para asegurarte de que una determinada regla solo se aplique mientras la aplicación está en modo oscuro, asegúrate de agregarle el prefijo `body.dark`.
 
-## Tips for finding selectors
+## Consejos para buscar selectores
 
-Zettlr's styles are subject to constant changes. While they should remain fairly stable, changes can be introduced in any version, and therefore, instead of providing you with ready-made examples, this page covers how you can find the correct selectors easily.
+Los estilos de Zettlr están sujetos a cambios constantes. Si bien deberían permanecer bastante estables, se pueden introducir cambios en cualquier versión y, por lo tanto, en lugar de proporcionarte ejemplos listos para usar, esta página explica cómo puedes encontrar fácilmente los selectores correctos.
 
-First of all, make sure to enable the debug mode in the advanced [preferences](../reference/settings.md) in order to enable the Develop menu. Next, open the developer tools from within this menu and make sure to select the "Elements" tab.
+Primero, asegúrate de habilitar el modo de depuración en las [preferencias avanzadas](../ reference / settings.md) para habilitar el menú de Desarrollador. A continuación, abre las herramientas para desarrollo desde este menú y asegúrate de seleccionar la pestaña "Elementos".
 
-![Zettlr with the developer tools open](../img/zettlr_developer_tools.png)
+![Zettlr con la herramienta de desarrollo abierta](../img/zettlr_developer_tools.png)
 
-Then click the arrow in the top-left corner of the developer tools. Now you can click any element in the application to focus it in the developer tools. In the bottom area of the developer tools, you will then see the CSS directives used to style all elements of this particular shape.
+Luego haz click en la flecha en la esquina superior izquierda de las herramientas de desarrollo. Ahora puedes hacer click en cualquier elemento de la aplicación para enfocarlo en las herramientas de desarrollo. En el área inferior de las herramientas de desarrollo, verás las directivas CSS utilizadas para diseñar todos los elementos de esta forma en particular.
 
-![The CSS directives in the developer tools](../img/zettlr_developer_tools_css.png)
+![Las directivas CSS en las herramientas de desarrollo.](../img/zettlr_developer_tools_css.png)
 
-The top rules always override the bottom rules, so what you are interested in is the following directive:
+Las reglas superiores siempre anulan las reglas inferiores, por lo que lo que le interesa es la siguiente directiva:
 
 ```css
 body .cm-quote, body .cm-link, body .cm-strong, body .cm-em {
@@ -36,31 +36,31 @@ body .cm-quote, body .cm-link, body .cm-strong, body .cm-em {
 }
 ```
 
-This is the selector you want to copy over to your custom CSS dialog and style to your liking. As you can see, it gives blockquotes, links, bold and italic text the primary color of the theme.
+Este es el selector que deberás copiar a tu cuadro de diálogo CSS personalizado para darle un estilo a tu gusto. Como puedes ver, le da a las citas en bloque, enlaces, texto en negrita y cursiva el color principal del tema.
 
-## CSS Code Snippets
+## Fragmentos de código CSS
 
-### Using a Custom Font with Zettlr
+### Usando una fuente personalizada con Zettlr
 
-In case you do not like the default font delivered with Zettlr, or need to change it, simply paste the following code snippet into the custom CSS editor. Replace `your-font-name` with the **full name** of the font you want to use for Zettlr. Please replace `placeholder` according to the font:
+En caso de que no te guste la fuente predeterminada que viene con Zettlr, o necesites cambiarla, simplemente pega el siguiente fragmento de código en el editor CSS personalizado. Reemplaza `your-font-name` con el **nombre completo** de la fuente que deseas usar en Zettlr. Reemplaza el "marcador de posición" según la fuente:
 
-- In case you want to use a **serif** font, such as Times New Roman, or Georgia, please use `serif`
-- In case your font is **sans serif**, such as Arial or Helvetica, please use `sans-serif`
-- In case you want to switch to the classic **monospace**, please use the placeholder `monospace`
+- En caso de que desees utilizar una fuente **serif**, como Times New Roman o Georgia, utiliza `serif`
+- En caso de que tu fuente sea **sans serif**, como Arial o Helvetica, utiliza `sans-serif`
+- En caso de que desees cambiar al clásico **monoespacio**, utiliza el marcador de posición `monoespacio`
 
-The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback. Also, if your font name contains spaces, make sure to surround it with quotation marks, e.g., `"Times New Roman"`.
+El marcador de posición se asegurará de que incluso si no se puede encontrar tu fuente, se utilizará una fuente equivalente. Sirve como alternativa. Además, si el nombre de la fuente contiene espacios, asegúrate de ponerlo entre comillas, por ejemplo, `"Times New Roman"`.
 
 ```css
 body #editor .CodeMirror {
-    font-family: '<your-font-name here>', <placeholder>;
+    font-family: '<tu-nombre-de-fuente aquí>', <placeholder>;
 }
 ```
 
-### Custom Background Images
+### Imágenes de fondo personalizadas
 
-With the following code, you can make your editor have a different background image everytime you start it. The images are taken from Unsplash.com, a nice site with free photos. It uses the `Source API`, which will simply spit out a different image every time the URL is visited. You can test it out by simply [visiting the page and refreshing a few times](https://source.unsplash.com/random)! Please refer to the [Unsplash Source API reference](https://source.unsplash.com/) for more options (such as using an image of the day).
+Con el siguiente código, puedes hacer que tu editor tenga una imagen de fondo diferente cada vez que lo inicies. Las imágenes están tomadas de Unsplash.com, un buen sitio con fotos gratis. Utiliza la `API de origen`, que simplemente arrojará una imagen diferente cada vez que se visite la URL. ¡Puedes probarlo simplemente [visitando la página y actualizándola varias veces](https://source.unsplash.com/random)! Consulta la [Referencia de API de Unsplash Source](https://source.unsplash.com/) para obtener más opciones (como usar una imagen del día).
 
-> You can also use a local image as a background image by replacing the corresponding line by `background-image: url('file:////absolute/path/to/your/file.jpg');`
+> También puedes usar una imagen local como imagen de fondo reemplazando la línea correspondiente por `background-image: url ('file:////ruta/absoluta/a/tu/archivo.jpg');`
 
 ```css
 /* Enter your custom CSS here */
@@ -86,11 +86,11 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 }
 ```
 
-![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash.png)
+![Una vista previa de una instalación de Zettlr usando el fragmento anterior](../img/custom_css_unsplash.png)
 
-### Visualising Line Endings
+### Visualización de finales de línea
 
-In case you want to see where your linefeeds are, you can display the pilcrow symbol (¶) at the end of your lines by using the following Custom CSS:
+En caso de que desees ver dónde están tus saltos de línea, puedes mostrar el símbolo de pilcrow (¶) al final de sus líneas utilizando el siguiente CSS personalizado:
 
 ```css
 .CodeMirror-line:not(:last-child)::after {
@@ -99,13 +99,13 @@ In case you want to see where your linefeeds are, you can display the pilcrow sy
 }
 ```
 
-![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
+![Una vista previa de Zettlr usando el fragmento anterior](../img/custom_css_pilcrow.png)
 
-### Hide the Toolbar in Distraction Free
+### Ocultar la barra de herramientas en el modo libre de distracciones
 
-Some people prefer the distraction free mode to be _really_ distraction-free. Zettlr does not hide the toolbar by default, because most people want to have access to all the tools and buttons even when writing distraction free. Still, if you belong to the group of people who prefer distraction free to be only the editor itself, rejoice! Hiding the toolbar in distraction free mode is as easy as one single line of CSS!
+Algunas personas prefieren que el modo sin distracciones sea _realmente_ libre de distracciones. Zettlr no oculta la barra de herramientas de forma predeterminada, porque la mayoría de la gente quiere tener acceso a todas las herramientas y botones incluso cuando escribe sin distracciones. Aún así, si perteneces al grupo de personas que prefieren la ausencia de distracciones para tener solo el editor, ¡regocijáos! ¡Ocultar la barra de herramientas en modo libre de distracciones es tan fácil como una sola línea de CSS!
 
-Simply paste the following line of CSS into the Custom CSS dialog, and from then on the toolbar will always be hidden:
+Simplemente pega la siguiente línea de CSS en el cuadro de diálogo CSS personalizado y, a partir de ese momento, la barra de herramientas siempre estará oculta:
 
 ```css
 body.show-menubar #editor.fullscreen, #editor.fullscreen, .CodeMirror-fullscreen {
@@ -113,10 +113,9 @@ body.show-menubar #editor.fullscreen, #editor.fullscreen, .CodeMirror-fullscreen
 }
 ```
 
-### Set a maximum width for the text
+### Establecer un ancho máximo para el texto
 
-If you have a large screen, you may find that lines of your text are very long.
-If you wish to have shorter lines in the editor, with margins on both sides, you can use the following CSS snippet:
+Si tiene una pantalla grande, es posible que las líneas de tu texto sean muy largas. Si desea tener líneas más cortas en el editor, con márgenes en ambos lados, puede usar el siguiente fragmento de CSS:
 
 ```css
 #editor {
@@ -132,11 +131,11 @@ If you wish to have shorter lines in the editor, with margins on both sides, you
 }
 ```
 
-![A preview of Zettlr using above snippet](../img/custom_css_maxwidth.png)
+![Una vista previa de Zettlr usando el fragmento anterior](../img/custom_css_maxwidth.png)
 
-### Change the Active Line Styling in Typewriter Mode
+### Cambiando el estilo de línea activa en el modo de máquina de escribir
 
-You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
+Puedes cambiar el estilo de la línea activa en el modo de máquina de escribir. Reemplace `top-border-hex-code`,` bottom-border-hex-code` y `background-hex-code` en los fragmentos CSS a continuación con tus códigos de color hexadecimales preferidos, que puedes elegir en un sitio web como [ Códigos de color HTML](https://htmlcolorcodes.com/). Es posible que desees tener un estilo de color diferente para el modo claro y oscuro.
 
 *Light mode*
 
