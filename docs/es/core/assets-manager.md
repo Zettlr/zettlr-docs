@@ -8,7 +8,7 @@ Puedes acceder al administrador de activos a través de "Zettlr -> Gestor de rec
 
 El gestor de recursos te permite editar tus archivos utilizando el resaltado de corrector de sintaxis y lo hace más fácil que los editores externos. Para ver qué puedes editar y cómo hacerlo de manera productiva, consulta las partes correspondientes de la documentación:
 
-* [Archivos por defecto](defaults-files.md)
+* [Archivos predeterminados](defaults-files.md)
 * [CSS's personalizados](custom-css.md)
 * [Fragmentos](snippets.md)
 

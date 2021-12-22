@@ -1,75 +1,75 @@
-# Defaults Files
+# Archivos predeterminados
 
-Defaults files are a way to define default values for many of the variables that Pandoc uses internally to facilitate both your imports and exports. Defaults files resemble [YAML frontmatters](yaml-frontmatter.md), but are more powerful and apply to all your files instead of just a single one.
+Los archivos predeterminados son una forma de definir valores predeterminados para muchas de las variables que Pandoc utiliza internamente para facilitar tanto las importaciones como sus exportaciones. Los archivos predeterminados se parecen a [YAML frontmatters](yaml-frontmatter.md), pero son más potentes y se aplican a todos sus archivos en lugar de a uno solo.
 
-Previously, Zettlr would use defaults files internally, but Zettlr 2.0 finally gives you the ability to edit these files yourself.
+Anteriormente, Zettlr usaba archivos predeterminados internamente, pero Zettlr 2.0 finalmente te brinda la posibilidad de editar estos archivos por tí mismo.
 
-> Editing these files can be a little bit tricky, so expect to export a test file multiple times before you have got it right. It is a trial & error process. However, Zettlr ships with reasonable default settings, so if you do not have special requirements, you can leave these files as they are.
+> Editar estos archivos puede ser un poco complicado, así que probablemente deberá exportar un archivo de prueba varias veces antes de hacerlo bien. Es un proceso de prueba y error. Sin embargo, Zettlr se envía con una configuración predeterminada razonable, por lo que si no tienes requisitos especiales, puedes dejar estos archivos como están.
 
-## What are Defaults Files?
+## ¿Qué son los archivos predeterminados?
 
-Defaults files are YAML files which contain properties that can be used to control the Pandoc behaviour for a given export or import format. They reside in your user data folder and have the format `<import/export>.<writer/reader>.yaml`, where import/export refers to where the file will be used and writer/reader refers to the format used.
+Los archivos predeterminados son archivos YAML que contienen propiedades que se pueden usar para controlar el comportamiento de Pandoc para un formato de exportación o importación determinado. Residen en tu carpeta de datos de usuario y tienen el formato `<importar / exportar>. <Escritor / lector> .yaml`, donde _importar / exportar_ se refiere al lugar donde se usará el archivo y _escritor / lector_ al formato usado.
 
-Zettlr requires a certain set of defaults files, since for each export or import it will pass one of these files to Pandoc. As such, when Zettlr is started, it will check for the existence of these required files and create them if necessary.
+Zettlr requiere un cierto conjunto de archivos predeterminados, ya que para cada exportación o importación pasará uno de estos archivos a Pandoc. Como tal, cuando se inicia Zettlr, verificará la existencia de estos archivos requeridos y los creará si es necesario.
 
-> The full documentation for what you can do with defaults files can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#default-files). Make sure to refer to that manual when you edit defaults files.
+> La documentación completa de lo que puedes hacer con los archivos predeterminados se puede encontrar en el [manual de Pandoc](https://pandoc.org/MANUAL.html#default-files). Asegúrate de consultar ese manual cuando edites archivos predeterminados.
 
-## Requirements for Defaults Files
+## Requisitos para archivos predeterminados
 
-The defaults files as used by Zettlr have a certain set of requirements which you must keep in mind when editing them. First, you should never change the `writer` and `reader` properties except for adding markdown extensions (see info box below). These properties can be set because you could, in theory, use a default file for several conversion strategies. However, since Zettlr allows you to export and import a certain set of files, it is smarter to offer you a range of defaults files where these properties are fixed. If you, for example, exchange a writer and a reader property, Pandoc might complain.
+Los archivos predeterminados que utiliza Zettlr tienen un cierto conjunto de requisitos que debes tener en cuenta al editarlos. Primero, nunca debe cambiar las propiedades del `escritor` y del` lector`, excepto para agregar extensiones de markdown (consulte el cuadro de información a continuación). Estas propiedades se pueden establecer porque, en teoría, podría utilizar un archivo predeterminado para varias estrategias de conversión. Sin embargo, dado que Zettlr te permite exportar e importar un determinado conjunto de archivos, es más inteligente ofrecerle una variedad de archivos predeterminados donde estas propiedades son fijas. Si, por ejemplo, intercambia una propiedad de escritor y de lector, Pandoc podría quejarse.
 
-Next, whenever Zettlr imports or exports a file, it will read in the corresponding defaults file and modify it in specific ways. In general, Zettlr will try to only amend the properties you define in a defaults file instead of replacing them. For example, Zettlr will check if you have already defined a bibliography in there, and add your main library to that array so that those citation libraries you have already defined will not be lost. The input and output files, however, will be replaced internally, so defining a few files in there will have no effect.
+Luego, siempre que Zettlr importe o exporte un archivo, lo leerá en el archivo predeterminado correspondiente y lo modificará de formas específicas. En general, Zettlr solo intentará modificar las propiedades que definas en un archivo de valores predeterminados en lugar de reemplazarlas. Por ejemplo, Zettlr verificará si ya has definido una bibliografía allí y agregará tu biblioteca principal a esa matriz para que las bibliotecas de citas que ya hayas definido no se pierdan. Sin embargo, los archivos de entrada y salida se reemplazarán internamente, por lo que definir algunos archivos allí no tendrá ningún efecto.
 
-Other than that, however, you are free to do whatever you need to the defaults files in order to adapt the imports and exports to your liking.
+Aparte de eso, sin embargo, puedes hacer lo que necesites con los archivos predeterminados para adaptar las importaciones y exportaciones a tu gusto.
 
-> We mentioned that you should not change the `writer` or `reader` properties. However, there is a certain leverage. Pandoc supports Markdown extensions (i.e. for smart quotes, emojis, etc.). These are specified by adding them after the `reader` or `writer` properties using `+`-signs. So if you require extensions to the standard Markdown reader, you can of course add these to the `reader` or `writer` properties. Example: `reader: markdown+definition_lists+mmd_title_block+bracketed_spans+fenced_divs`. This will still use the same reader, but configure it (in this example) to additionally use definition lists, multi-markdown title blocks, bracketed spans, and fenced divs.
+> Mencionamos que no debes cambiar las propiedades de "escritor" o "lector". Sin embargo, existe un cierto apalancamiento. Pandoc admite extensiones de Markdown (es decir, para comillas tipográficas, emojis, etc.). Estos se especifican agregándolos después de las propiedades `lector` o` escritor` usando los signos `+`. Por lo tanto, si necesita extensiones para el lector de Markdown estándar, por supuesto, puedes agregarlas a las propiedades `lector` o` escritor`. Ejemplo: `reader: markdown + definition_lists + mmd_title_block + bracketed_spans + fenced_divs`. Esto seguirá usando el mismo lector, pero configurándolo (en este ejemplo) para usar adicionalmente listas de definición, bloques de título de múltiples de markdown, intervalos entre corchetes y divs delimitados.
 
-## Which Variable Overwrites Which?
+## ¿Qué variable sobrescribe a cuál?
 
-The last question you might be interested to know about is the way all the different variables you can define to control Pandoc interfere with each other. It is paramount to understand how Pandoc determines the final and effective set of parameters which it will then use to facilitate your import or export. In below's graphic, you can see how each import or export is being done.
+La última pregunta que podría interesarte es conocer la forma en que todas las diferentes variables que puedes definir para controlar Pandoc interfieren entre sí. Es fundamental comprender cómo Pandoc determina el conjunto de parámetros final y efectivo que luego utilizará para facilitar su importación o exportación. En el gráfico a continuación, puedes ver cómo se realiza cada importación o exportación.
 
-![Pandoc's internal Variable Resolution](../img/pandoc_variable_resolution.png)
+![Resolución de variables interna de Pandoc](../img/pandoc_variable_resolution.png)
 
-First, Pandoc will load its own internal defaults which are hard-coded into the binary (and which are the reason why you do not have to define _all_ variables every time).
+Primero, Pandoc cargará sus propios valores predeterminados internos que están codificados en el binario (y que son la razón por la que no tienes que definir _todas_ las variables cada vez).
 
-Second, Pandoc will load in the defaults file Zettlr provides it with. Every variable defined in there will replace the default inside Pandoc's configuration.
+En segundo lugar, Pandoc se cargará con el archivo predeterminado que le proporciona Zettlr. Cada variable definida allí reemplazará la predeterminada dentro de la configuración de Pandoc.
 
-Third, Pandoc will parse the YAML frontmatter(s) of the file(s) you are currently trying to import or export. These variables can replace those set by the defaults files, but usually not all. You may notice that defaults files can contain a metadata field, and any value in there can generally be replaced by a YAML frontmatter property. Please see the documentation on [YAML frontmatters](yaml-frontmatter.md) for more information.
+En tercer lugar, Pandoc analizará el (los) YAML frontmatter (s) de los archivos que está intentando importar o exportar actualmente. Estas variables pueden reemplazar las establecidas por los archivos predeterminados, pero generalmente no todas. Puedes notar que los archivos predeterminados pueden contener un campo de metadatos, y cualquier valor allí generalmente puede ser reemplazado por una propiedad de YAML frontmatter. Consulta la documentación sobre [YAML frontmatters](yaml-frontmatter.md) para obtener más información.
 
-**Example**: Let us assume you have defined a `title` for all your Word exports in the defaults file for Docx. If you do not use any frontmatter, this variable will be used for each and every export to Docx. But if you specify the `title` property inside a YAML frontmatter, this file – when exported to Docx – will have its own title set.
+**Ejemplo**: Supongamos que has definido un `título` para todas sus exportaciones de Word en el archivo predeterminado de Docx. Si no utilizas ningún frontmatter, esta variable se utilizará para todas y cada una de las exportaciones a Docx. Pero si especificas la propiedad `title` dentro de un YAML frontmatter, este archivo, cuando se exporta a Docx, tendrá su propio conjunto de títulos.
 
-> One common use-case for defining variables inside a defaults file which you could also define on the level of YAML frontmatters would be the `lang`-property. By default, Pandoc sets the language of each import and each export to `en-US`, yielding US-American number delimiters and quotes. If you regularly export into, say, French, it might make sense to set the `lang` property directly in your defaults files to `fr` so that files are being exported using that locale by default. Then you can still overwrite the property to something different within individual files by setting the corresponding YAML frontmatter variable.
+> Un caso de uso común para definir variables dentro de un archivo predeterminado que también podrías definir en el nivel de los frontmatters de YAML sería la propiedad `lang`. De forma predeterminada, Pandoc establece el idioma de cada importación y cada exportación en "en-US", lo que genera delimitadores de números y comillas estadounidenses. Si exportas regularmente a, digamos, francés, podría tener sentido establecer la propiedad `lang` directamente en sus archivos predeterminados en` fr` para que los archivos se exporten utilizando esa configuración regional de forma predeterminada. Luego, aún puedes sobrescribir la propiedad a algo diferente dentro de archivos individuales configurando la variable de YAML frontmatter  correspondiente.
 
-## How To Customize Exports
+## Cómo personalizar las exportaciones
 
-The defaults files are a very powerful, but at the same time very complex way of customizing your exports. In this section we want to give you a heads up of how to use defaults files to the fullest extent.
+Los archivos predeterminados son una forma muy poderosa, pero al mismo tiempo muy compleja, de personalizar sus exportaciones. En esta sección queremos darte una idea de cómo usar los archivos predeterminados al máximo.
 
-> This section is still work in progress.
+> Esta sección aún está en proceso.
 
-### Preliminaries
+### Preliminares
 
-Pandoc contains a powerful **templating-system** to customize your exports. Within the default templates Pandoc provides (and uses, if you do not explicitly provide a custom template), you will find statements such as `$for(hyperrefoptions)$,$hyperrefoptions$$endfor$`. In this case, `hyperrefoptions` is a variable that you can set. Depending on the template, different variables are available. You can find a comprehensive list of all variables used in the default templates [here](https://pandoc.org/MANUAL.html#variables).
+Pandoc contiene un potente **sistema de plantillas** para personalizar sus exportaciones. Dentro de las plantillas predeterminadas que proporciona Pandoc (y utiliza, si no proporciona explícitamente una plantilla personalizada), encontrarás declaraciones como `$for(hyperrefoptions)$, $hyperrefoptions$$endfor$`. En este caso, "hyperrefoptions" es una variable que puedes establecer. Dependiendo de la plantilla, están disponibles diferentes variables. Puedes encontrar una lista completa de todas las variables utilizadas en las plantillas predeterminadas [aquí](https://pandoc.org/MANUAL.html#variables).
 
-### Setting Variables
+### Configuración de variables
 
-The default variables can sometimes be undesirable (Pandoc sets U.S. Letter as the default papersize, which is undesirable in other parts of the world; Zettlr changes this default to DIN A4, which also might not suit everyone), so you can set them to different values. There are two general ways of doing this:
+Las variables predeterminadas a veces pueden ser indeseables (Pandoc establece el tamaño carta como el tamaño de papel predeterminado, lo cual no es deseable en otras partes del mundo; Zettlr cambia este valor predeterminado a DIN A4, que también puede no ser adecuado para todos), por lo que puedes configurarlas con diferentes valores. Hay dos formas generales de hacer esto:
 
-1. The YAML frontmatter of a file
-2. The corresponding defaults file
+1. El YAML frontmatter  de un archivo
+2. El archivo de valores predeterminados correspondiente
 
-If you were to change, say, the papersize variable only for a specific file, you can simply add that variable with the corresponding value as a top-level property. Example:
+Si tuvieras que cambiar, digamos, la variable del tamaño de papel solo para un archivo específico, simplemente puedes agregar esa variable con el valor correspondiente como una propiedad de nivel superior. Ejemplo:
 
 ```yaml
 ---
-title: Document title
-author: John Doe
+title: Título de documento
+author: Pepito Pérez
 papersize: legal
 ---
 ```
 
-This would set the papersize to "legal". Note that in the default template, the word `paper` is already set, so if you are somewhat familiar with LaTeX, `a4paper` would not work since in the template it would become `a4paperpaper` which is not a correct value.
+Esto establecería el tamaño del papel en "tamaño oficio" (_legal_ en inglés). Ten en cuenta que en la plantilla predeterminada, la palabra `paper` ya está configurada, por lo que si estás algo familiarizado con LaTeX,` a4paper` no funcionaría ya que en la plantilla se convertiría a `a4paperpaper`, que no es un valor correcto.
 
-The second way to change a variable is to change it for every single export (unless overwritten by a frontmatter, that is). This you can do in the defaults file, but please note that in defaults files you have to put those variables under a special section called `variables`. Example:
+La segunda forma de cambiar una variable es cambiarla para cada exportación (es decir, a menos que se sobrescriba con un frontmatter). Esto lo puedes hacer en el archivo de valores predeterminados, pero ten en cuenta que en los archivos de valores predeterminados debes colocar esas variables en una sección especial llamada "variables". Ejemplo:
 
 ```yaml
 # ... snip ...
@@ -78,4 +78,4 @@ variables:
 # ... snip ...
 ```
 
-You can also make use of this templating system yourself. If you want to write a custom template, you can add statements such as `$if(myvariable)$$myvariable$$endif$` and insert the variable `myvariable` into any frontmatter or defaults file, and it will be replaced with whatever value you set it to.
+También puedes utilizar este sistema de plantillas tú mismo. Si deseas escribir una plantilla personalizada, puedes agregar declaraciones como `$ if (myvariable) $$ myvariable $$ endif $` e insertar la variable `myvariable` en cualquier archivo inicial o predeterminado, y se reemplazará con el valor que establezcas.
