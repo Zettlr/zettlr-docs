@@ -1,9 +1,9 @@
-# Importing files
+# Importando archivos
 
-Zettlr can import a large variety of files into Markdown so that you can work with these using the app. The process works straightforward: Simply select "File" -> "Import" and choose all the files you would like to import. Zettlr will then convert them one by one from whichever format they are in.
+Zettlr puede importar una gran variedad de archivos a Markdown para que pueda trabajar con ellos usando la aplicación. El proceso funciona de forma sencilla: simplemente selecciona "Archivo" -> "Importar" y elija todos los archivos que le gustaría importar. Luego, Zettlr los convertirá uno por uno desde el formato en el que se encuentren.
 
-The app will look at the file extensions of the file to determine the source format. This is important because each file format has different quirks and features, and Zettlr tries to treat each format well. In case Zettlr complains about a file, it might help to rename it to a common extension.
+La aplicación observará las extensiones del archivo para determinar el formato de origen. Esto es importante porque cada formato de archivo tiene peculiaridades y características diferentes y Zettlr intenta tener cuidado con cada formato. En caso de que Zettlr reporte un archivo, puede ser útil cambiarle el nombre a una extensión común.
 
-Every file will be imported into the **currently active directory**, so make sure to select the appropriate directory prior to importing them. This is meant as a convenience so you can save a few clicks.
+Todos los archivos se importarán al **directorio actualmente activo**, así que asegúrese de seleccionar el directorio apropiado antes de importarlos. Esto está pensado para su comodidad, de modo que pueda ahorrar unos pocos clics.
 
-> Note that you can finetune the importer by modifying its defaults files. For example, by default Zettlr will direct Pandoc to extract images and other media files from Word documents into an asset directory so that you get to keep those media files. To see how you can control the importing process, have a look [at the defaults files documentation](defaults-files.md)
+> Tenga en cuenta que puede ajustar el importador modificando sus archivos predeterminados. Por ejemplo, de forma predeterminada, Zettlr indicará a Pandoc que extraiga imágenes y otros archivos multimedia de documentos de Word en un directorio de recursos para que pueda conservar esos archivos multimedia. Para ver cómo puede controlar el proceso de importación, eche un vistazo [a la documentación de los archivos predeterminados](defaults-files.md)
