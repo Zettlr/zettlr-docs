@@ -1,27 +1,27 @@
-# Tables in Zettlr
+# Tablas en Zettlr
 
-Markdown tables are a notoriously difficult thing. Due to the nature of Markdown to be as simple as possible, complexity is what suffers most. Markdown is the perfect choice for writing text and most of what we use during writing (e.g., links, images, headings, or quotes) is handled perfectly in Markdown. Yet, from time to time, we also want to include some data in our works, or tables are simply a better way of visualising ideas.
+Las tablas de markdown son algo notoriamente difícil. Debido a la naturaleza de Markdown para ser lo más simple posible, la complejidad es lo que peor se le da. Markdown es la elección perfecta para escribir texto y la mayor parte de lo que usamos durante la escritura (por ejemplo, enlaces, imágenes, títulos o citas) se maneja perfectamente en Markdown. Sin embargo, de vez en cuando, también queremos incluir algunos datos en nuestros trabajos, o las tablas son simplemente una mejor forma de visualizar ideas.
 
-## Introduction to Tables
+## Introducción a las tablas
 
-Tables in Markdown are written using a very basic syntax -- each line resembles one row and the table cells are encapsulated with pipe-characters:
-
-```
-| Cell A:A | Cell A:B |
-| Cell B:A | Cell B:B |
-```
-
-Optionally, you can also add a heading row, which may also indicate the alignment using colons (left, right, or center):
+Las tablas en Markdown están escritas usando una sintaxis muy básica: cada línea se asemeja a una fila y las celdas de la tabla están encapsuladas con caracteres de barra vertical:
 
 ```
-| Left aligned | Centered content | Right aligned |
+| Celda A:A | Celda A:B |
+| Celda B:A | Celda B:B |
+```
+
+Opcionalmente, también puede agregar una fila de encabezado, que también puede indicar la alineación con dos puntos (izquierda, derecha o centro):
+
+```
+| Alineado a la izquierda | Contenido centrado | Alineado a la derecha |
 |--------------|:----------------:|--------------:|
 | Lorem        | Ipsum            | Dolor         |
 ```
 
-Note that it doesn't matter how you align the table's contents in your documents, as long as the colons are placed accordingly. The table will be exported using the correct alignment later on.
+Tenga en cuenta que no importa cómo alinee el contenido de la tabla en sus documentos, siempre que los dos puntos se coloquen en consecuencia. La tabla se exportará con la alineación correcta más adelante.
 
-But as you can see, even with only two words per column, the Markdown table tends to get rather long. As you cannot use multiple rows for cells, here's where you tend to get into serious problems when you need to insert a whole sentence in each cell. Take for instance the following example:
+Pero como puede ver, incluso con solo dos palabras por columna, la tabla de Markdown tiende a ser bastante larga. Como no puede usar varias filas para las celdas, aquí es donde tiende a tener serios problemas cuando necesita insertar una oración completa en cada celda. Tomemos, por ejemplo, esto:
 
 ```
 | # | Name              | Description                                                                                                                                                                     | Price     | Quantity |
@@ -32,66 +32,66 @@ But as you can see, even with only two words per column, the Markdown table tend
 | 4 | Your Mom          | Are you in an argument with a philosopher? Try this Freudian-tested kill-all-argument!                                                                                          | priceless | 1        |
 ```
 
-In Zettlr, it would look like the following:
+En Zettlr, se vería así:
 
-![long_markdown_table.png](../img/long_markdown_table.png)
+![long_markdown_table.png](../img/long_markdown_table.png "long_markdown_table.png")
 
 
-Even though the table cells are each aligned to fit the total width of each column, you cannot make out the fact that this is indeed a valid Markdown table, as each line gets wrapped and the table structure is impossible to see. Without the counter in the first column, you would even have a hard time making out the number of rows in it.
+A pesar de que las celdas de la tabla están alineadas para ajustarse al ancho total de cada columna, no puede distinguir el hecho de que esta es una tabla Markdown válida, ya que cada línea se ajusta y la estructura de la tabla es imposible de ver. Sin el contador en la primera columna, incluso le resultaría difícil distinguir el número de filas que contiene.
 
-## The Table Editor
+## El editor de tablas
 
-Obviously, writing Markdown tables is sometimes unavoidable, but always painful. It would be great if you could simply edit the table like you are used to from, e.g., Word processors, right? That's where Zettlr's built-in **table editor** comes into play!
+Obviamente, escribir tablas de Markdown es a veces inevitable, pero siempre jodido. Sería genial si pudiera simplemente editar la tabla como está acostumbrado, por ejemplo, en procesadores de texto, ¿verdad? ¡Ahí es donde entra en juego el **editor de tablas** integrado de Zettlr!
 
-To aid you with writing tables, Zettlr ships with a powerful table editor that brings to you everything you need to not completely lose your mind while creating tables in your documents. With the table editor, the above mentioned table looks like this:
+Para ayudarlo a escribir tablas, Zettlr viene con un poderoso editor de tablas que le brinda todo lo que necesita para no perder la cabeza por completo mientras crea tablas en sus documentos. Con el editor de tablas, la tabla mencionada anteriormente se ve así:
 
-![A table as displayed by the table editor](../img/zettlr_table.png)
+![Una tabla como la muestra el editor de tablas.](../img/zettlr_table.png)
 
-Much better, am I right? Zettlr's table editor takes all Markdown tables found in your document, converts them into an HTML representation with editable content cells, and displays these instead of the underlying Markdown. This completely hides the Markdown source but in this case this approach is much more favourable than the [WYSIWYM approach](../concepts/wysiwym.md).
+Mucho mejor, ¿verdad? El editor de tablas de Zettlr toma todas las tablas de Markdown que se encuentran en su documento, las convierte en una representación HTML con celdas de contenido editables y las muestra en lugar del Markdown subyacente. Esto oculta completamente la fuente de Markdown, pero en este caso este enfoque es mucho más favorable que el [enfoque LQVELQQD](../conceptos/wysiwym.md).
 
-The table editor needs to be enabled in Preferences, under the `Editor` tab. When enabled, it will recognize the tables in the active document and make them easily editable. You can **enter the editing mode** simply by clicking into any of the cells inside the table and adding your content. The active cell will be highlighted for you. Additionally, the keyboard navigation that you know from famous word processors has also been implemented so that you can use `Tab`, `Return`, and the Arrow keys to navigate the table. Additionally, adding and removing columns and rows is also possible with the table editor's **edge buttons**. These are buttons that will appear when you hover over the table and let you perform various actions on the table.
+El editor de tablas debe estar habilitado en Preferencias, en la pestaña `Editor`. Cuando está habilitado, reconocerá las tablas en el documento activo y las hará fácilmente editables. Puede **ingresar al modo de edición** simplemente haciendo click en cualquiera de las celdas dentro de la tabla y agregando su contenido. La celda activa se resaltará para usted. Además, la navegación con el teclado que conoce de los procesadores de texto famosos también se implementó para que pueda usar `Tab`,` Return` y las teclas de flecha para navegar por la tabla. Además, también es posible agregar y eliminar columnas y filas con los **botones de borde** del editor de tablas. Estos son botones que aparecerán cuando se desplaza sobre la tabla y le permiten realizar varias acciones sobre la tabla.
 
-> Attention! When you activate the table by clicking inside one of the cells, you are entering the edit mode. To save your changes, make sure to **click outside of the table once you are done**, to exit the editing mode! Only then will the changes you've made to the table be applied to the underlying Markdown table.
+> ¡Atención! Cuando activa la tabla haciendo clic dentro de una de las celdas, está ingresando al modo de edición. Para guardar sus cambios, asegúrese de **hacer click fuera de la tabla una vez que haya terminado**, para salir del modo de edición. Solo entonces los cambios que ha realizado en la tabla se aplicarán a la tabla de Markdown subyacente.
 
-## Keyboard Navigation
+## Navegación por teclado
 
-You have the following shortcuts at your disposal:
+Tienes los siguientes atajos a tu disposición:
 
-- `Tab`: Move to the next cell. If the last column is active, move to the first cell in the next row. If your cursor was in the last column of the last row, a new row will be added automatically.
-- `Shift-Tab`: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
-- `Return`: Move to the same column in the next row. If your cursor was in the last row, a new row will be added automatically.
-- `Arrow Up/Arrow Down`: Move to the same column in the previous/next row. No new rows will be added if you are in the first or last row.
-- `Arrow Left/Arrow Right`: Move the cursor left/right. If the cursor is at the beginning/end of the cell's contents, move to the previous/next cell.
+- `Tab`: Para pasar a la siguiente celda. Si la última columna está activa, se mueve a la primera celda de la siguiente fila. Si su cursor estaba en la última columna de la última fila, se agregará una nueva fila automáticamente.
+- `Shift-Tab`: Para ir a la celda anterior. Si su cursor estaba en la primera columna, lo mueve a la última celda de la columna anterior.
+- `Return`: Va a la misma columna en la siguiente fila. Si su cursor estaba en la última fila, se agregará una nueva fila automáticamente.
+- `Flecha arriba/abajo`: Se mover a la misma columna en la fila anterior / siguiente. No se agregarán nuevas filas si está en la primera o en la última fila.
+- `Flecha izquierda/derecha`: Para mover el cursor hacia la izquierda / derecha. Si el cursor está al principio / final del contenido de la celda, mueve a la celda anterior / siguiente.
 
-With these shortcuts, you can easily enter content into your tables using natural movements. You would first want to fill out the table header and afterwards you want to add one set of data per line. Therefore, `Tab` is your friend here:
+Con estos atajos, puede ingresar contenido fácilmente en sus tablas usando movimientos naturales. Primero querrá completar el encabezado de la tabla y luego querrá agregar un conjunto de datos por línea. Por lo tanto, `Tab` es tu amigo aquí:
 
-![A visual explainer how the keyboard navigation works](../img/zettlr_table_movement.png)
+![Explicación visual de cómo funciona la navegación con el teclado.](../img/zettlr_table_movement.png)
 
-## The Edge Buttons
+## Los botones de borde
 
-Another goodie of the table editor are its so-called **edge buttons**. These are two groups of buttons and four directional buttons that will appear once you hover over a table:
+Otro beneficio del editor de tablas son sus llamados **botones de borde**. Estos son dos grupos de botones y cuatro botones de dirección que aparecerán una vez que pase el mouse sobre una tabla:
 
-![The table editor's edge buttons](../img/table_with_edge_buttons.png)
+![Los botones de borde del editor de tablas](../img/table_with_edge_buttons.png)
 
-They are transparent at the beginning to not cover up the content of your table. Move your cursor over an edge button to make it opaque. The buttons should be rather self-explanatory. The four `(+)` buttons at the center of the edges of the table will **add a row or column respectively** at the indicated position. So click the left add button to prepend a column to the left side of the currently active cell, and click the bottom add button to append a row below the currently active cell.
+Son transparentes al principio para no tapar el contenido de tu tabla. Mueve el cursor sobre un botón de borde para hacerlo opaco. Los botones deberían ser bastante autoexplicativos. Los cuatro botones `(+)` en el centro de los bordes de la tabla **agregarán una fila o columna respectivamente** en la posición indicada. Por lo tanto, haga click en el botón Agregar de la izquierda para anteponer una columna al lado izquierdo de la celda actualmente activa, y haga click en el botón Agregar inferior para agregar una fila debajo de la celda actualmente activa.
 
-At the top of each table, there are two additional button groups. The left button group contains three buttons that **align the currently active table column** left, center or right. Click one of the buttons to apply the alignment. The change will be displayed immediately for your visual confirmation.
+En la parte superior de cada tabla, hay dos grupos de botones adicionales. El grupo de botones de la izquierda contiene tres botones que **alinean la columna de la tabla actualmente activa** izquierda, centro o derecha. Haga clic en uno de los botones para aplicar la alineación. El cambio se mostrará inmediatamente para su confirmación visual.
 
-The right button group contains two buttons for **removing the currently active table row or column**. Simply place your cursor inside any cell inside the row or column you wish to remove and hit one of the buttons.
+El grupo de botones de la derecha contiene dos botones para **eliminar la fila o columna de la tabla actualmente activa**. Simplemente coloque el cursor dentro de cualquier celda dentro de la fila o columna que desea eliminar y presione uno de los botones.
 
-> Always make sure to place your cursor in the correct cell before removing columns or rows to save you pain in having to exit table editing, and applying the "Undo" command.
+> Asegúrese siempre de colocar el cursor en la celda correcta antes de eliminar columnas o filas para evitar la maluquera de tener que salir de la edición de tablas y aplicar el comando "Deshacer".
 
-![How to determine the active row and column](../img/table_active_cell.png)
+![Cómo determinar la fila y la columna activas](../img/table_active_cell.png)
 
-## Complex tables
+## Tablas complejas
 
-Until now we've only covered basic tables. But what if you need to display more complex tables? Then, even the table editor is at its end. Cells spanning multiple rows or columns are simply impossible given the limited syntax of Markdown tables. To add these, you'll have to use native HTML or LaTeX commands. These give you the maximum amount of freedom to do whatever you like.
+Hasta ahora solo hemos cubierto tablas básicas. Pero, ¿y si necesita mostrar tablas más complejas? Entonces, incluso el editor de tablas está al final. Las celdas que abarcan varias filas o columnas son simplemente imposibles dada la sintaxis limitada de las tablas de Markdown. Para agregarlos, tendrá que usar comandos nativos HTML o LaTeX. Estos le brindan la máxima libertad para hacer lo que quiera.
 
-Always remember: Tables in Markdown are used as an _aid_ to your _writing_. This means if you are dealing with complex datasets which you need to add to a paper, e.g., in the sources section, there are great tools out there to [transform your RDataset](https://tex.stackexchange.com/questions/364225/export-tables-from-r-to-latex) or Stata datafile into LaTeX or HTML.
+Recuerde siempre: las tablas en Markdown se utilizan como _ayuda_ a su _escritura_. Esto significa que si está tratando con conjuntos de datos complejos que necesita agregar a un documento, por ejemplo, en la sección de fuentes, existen excelentes herramientas para [transformar su RDataset](https://tex.stackexchange.com/questions/364225/export-tables-from-r-to-latex) o archivo de datos Stata en LaTeX o HTML.
 
-One idea to insert datasets into your papers without much copying and pasting would be to combine several features of Zettlr:
+Una idea para insertar conjuntos de datos en sus documentos sin  copiar y pegar en exceso sería combinar varias características de Zettlr:
 
-- Create a project for your paper
-- Create the necessary files to structure your paper (e.g., `01 - Chapter 1.md`, `02 - Chapter 2.md`, `03 - Chapter 3.md`, `04 - Chapter 4.md`)
-- Inside your R-Project or Stata project, add a command that exports your data to a file `05 - Data.md` in your project directory whenever something changes.
-- As soon as you export your paper, the externally managed file `05 - Data.md` will be automatically appended, making sure your data is shipped with your document.
+- Crea un proyecto para tu artículo
+- Cree los archivos necesarios para estructurar su trabajo (por ejemplo, `01-Capitulo1.md`,` 02-Capitulo2.md`, `03-Capitulo3.md`,` 04-Capitulo4.md`)
+- Dentro de su proyecto de R o Stata, agregue un comando que exporte sus datos a un archivo `05-Datos.md` en el directorio de su proyecto cada vez que algo cambie.
+- Tan pronto como exporte su artículo, el archivo administrado externamente `05-Datos.md` se agregará automáticamente, asegurándose de que sus datos se envíen con su documento.
