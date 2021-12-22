@@ -1,70 +1,70 @@
-# Snippets
+# Fragmentos
 
-Since 2.0, Zettlr ships with a comprehensive snippets and templating system. This allows you to define certain chunks of text which you tend to write more often, and also insert dynamic variables. The system itself is based on the TextMate syntax and as such to a certain degree interoperable with snippets which you already possess either for TextMate or other systems which support this syntax, such as VisualStudio Code.
+Desde la versión 2.0, Zettlr tiene un sistema completo de fragmentos y plantillas. Esto te permite definir ciertos fragmentos de texto que tiendes a escribir con más frecuencia y también insertar variables dinámicas. El sistema en sí se basa en la sintaxis de TextMate y, como tal, hasta cierto punto es interoperable con fragmentos de código que ya posee para TextMate u otros sistemas que admitan esta sintaxis, como VisualStudio Code.
 
-## Managing Your Snippets
+## Administrando tus fragmentos
 
-You can manage your snippets using the [assets manager](./assets-manager.md).
+Puede administrar tus fragmentos utilizando el [gestor de recursos](./ assets-manager.md).
 
-To the left, you can find a list of all snippets; initially it will be empty. You can add a new snippet by clicking the "+"-button on the bottom of the list. It will initially be named "snippet-X" (where X is a number). If you select a snippet, the snippets editor will show the contents of the file in the editor and the name in the text field above it.
+A la izquierda, puedes encontrar una lista de todos los fragmentos; inicialmente estará vacío. Puedes agregar un nuevo fragmento haciendo click en el botón "+" - en la parte inferior de la lista. Inicialmente se llamará "snippet-X" (donde X es un número). Si seleccionas un fragmento, el editor de fragmentos mostrará el contenido del archivo en el editor y el nombre en el campo de texto que se encuentra encima.
 
-After you have made changes to the snippet, make sure to click "Save" or press `Cmd/Ctrl+S` to persist your changes. To rename a snippet, simply type the new name into the name text field above the snippet editor and click the button.
+Una vez que hayas realizado cambios en el fragmento, asegúrate de hacer click en "Guardar" o presiona `Cmd / Ctrl + S` para conservar los cambios. Para cambiar el nombre de un fragmento, simplemente escribe el nuevo nombre en el campo de texto del nombre sobre el editor de fragmentos y haz click en el botón.
 
-> Note that your snippet name can only contain the letters A to Z, numbers, hyphens, and underscores. This is because the snippet name will be used for the autocompletion in the editor. If you type other letters, they will be replaced with a hyphen.
+> Ten en cuenta que el nombre del fragmento solo puede contener las letras de la A a la Z, números, guiones y guiones bajos. Esto se debe a que el nombre del fragmento se utilizará para el autocompletado en el editor. Si escribes otras letras, se reemplazarán con un guión.
 
-Lastly, the editor supports special syntax highlighting that helps you write your snippets. Variables that are not supported will be marked in red so you immediately see that there might be an error.
+Por último, el editor de admite un resaltado de sintaxis especial que te ayuda a escribir tus fragmentos. Las variables que no son compatibles se marcarán en rojo para que vea inmediatamente que puede haber un error.
 
-> Your snippets are actually files which reside in a directory within your application data. Please refer to [the installation manual](../install.md) for the precise location of this folder. The snippet files always follow the pattern `<name>.tpl.md`, where `<name>` refers to the name you give to the snippets within the GUI. This can be useful for backup or sharing purposes.
+> Tus fragmentos son en realidad archivos que residen en un directorio dentro de los datos de tu aplicación. Consulta [el manual de instalación](../ install.md) para conocer la ubicación exacta de esta carpeta. Los archivos de fragmentos siempre siguen el patrón `<nombre>.tpl.md`, donde`<nombre>`se refiere al nombre que le da a los fragmentos dentro de la IGU. Esto puede resultar útil para realizar copias de seguridad o compartir.
 
-## Snippet Syntax
+## Sintaxis del fragmento
 
-The snippets follow the known TextMate syntax which can be easily summarised:
+Los fragmentos siguen la sintaxis conocida de TextMate que se puede resumir fácilmente:
 
-* `$[1-9]`: By typing a dollar sign followed by a number, you add a tabstop. After you inserted a snippet, this will allow you to guide your tabs according to the numbers (so repeatedly typing `Tab` will move through these by number ascending).
-* `$0`: The zero is a special tabstop. It's not the first tabstop, but the last one. If you omit this, the cursor will end up after the inserted snippet, but by placing this somewhere in the text, you can control this behaviour.
-* `${[0-9]:[.]}`: By surrounding the tabstop with curly brackets and adding a colon, you can define some text that will be placed by default at this position. As soon as you get to the specified tabstop, this text will be selected. You can either leave it in place by simply pressing `Tab` again, or easily overwrite it. Example: `${5:Some text}` would result in the text "Some text" to be placed at tabstop number five, which will be selected when you get there by pressing `Tab`.
-* `$[A-Z_]`: If you use Latin characters instead of numbers, you define a variable that can be replaced when you insert a snippet. Variables consist only of uppercase characters and underscores. If you make a typo, you can spot this because the variable will be coloured red.
-* `${[A-Z_]:[.]}`: Just like with tabstops, you can define default text for variables, which will be inserted if the variable cannot be inserted (e.g. the `CLIPBOARD` variable can be empty if no text is in the clipboard).
+* `$[1-9]`: Al escribir un signo de pesos seguido de un número, agrega un tabulador. Después de insertar un fragmento, esto te permitirá guiar tus pestañas de acuerdo con los números (por lo tanto, al escribir repetidamente "Tab" se moverá a través de estos números ascendentes).
+* `$0`: El cero es una parada de tab especial. No es la primera parada de tab, sino la última. Si omites esto, el cursor terminará después del fragmento insertado, pero al colocarlo en algún lugar del texto, puedes controlar este comportamiento.
+* `${[0-9]:[.]}`: Al rodear el tabulador con corchetes y agregar dos puntos, puedes definir un texto que se colocará por defecto en esta posición. Tan pronto como llegues a la pestaña especificada, se seleccionará este texto. Puedes dejarlo en su lugar simplemente presionando `Tab` nuevamente, o sobrescribirlo fácilmente. Ejemplo: `$ {5: Algún texto}` daría como resultado que el texto "Algún texto" se colocara en la pestaña número cinco, que se seleccionará cuando llegues presionando `Tab`.
+* `$[A-Z_]`: Si usas caracteres latinos en lugar de números, define una variable que se puede reemplazar cuando insertas un fragmento. Las variables constan solo de caracteres en mayúscula y guiones bajos. Si cometes un error tipográfico, puedes detectarlo porque la variable será de color rojo.
+* `${[A-Z_]:[.]}`: Al igual que con las pestañas, puedes definir texto predeterminado para las variables, que se insertará si la variable no se puede insertar (por ejemplo, la variable `CLIPBOARD` puede estar vacía si no hay texto en el portapapeles).
 
-Lastly, the available variables are:
+Por último, las variables disponibles son:
 
-* `CURRENT_YEAR`: The current year (4 digits)
-* `CURRENT_YEAR_SHORT`: The abridged current year (2 digits)
-* `CURRENT_MONTH`: The current month (2 digits)
-* `CURRENT_MONTH_NAME`: The full name of the month (localised according to your app settings)
-* `CURRENT_MONTH_NAME_SHORT`: The short month name (localised according to your app settings)
-* `CURRENT_DATE`: The current day of the month (2 digits)
-* `CURRENT_HOUR` The current hour (24 hour format; 2 digits)
-* `CURRENT_MINUTE`: The current minute (2 digits)
-* `CURRENT_SECOND` The current second (2 digits)
-* `CURRENT_SECONDS_UNIX`: The current unix timestamp in seconds
-* `UUID`: A UUID version 4
-* `CLIPBOARD`: The contents of your clipboard (text only)
-* `ZKN_ID`: Generate a Zettelkasten ID (according to your pattern)
+* `CURRENT_YEAR`: El año actual (4 dígitos)
+* `CURRENT_YEAR_SHORT`: El año actual resumido (2 dígitos)
+* `CURRENT_MONTH`: El mes actual (2 dígitos)
+* `CURRENT_MONTH_NAME`: El nombre completo del mes (localizado según la configuración de su aplicación)
+* `CURRENT_MONTH_NAME_SHORT`: El nombre corto del mes (localizado según la configuración de su aplicación)
+* `CURRENT_DATE`: El día actual del mes (2 dígitos)
+* `CURRENT_HOUR` La hora actual (formato de 24 horas; 2 dígitos)
+* `CURRENT_MINUTE`: El minuto actual (2 dígitos)
+* `CURRENT_SECOND` El segundo actual (2 dígitos)
+* `CURRENT_SECONDS_UNIX`: La marca de tiempo actual de Unix en segundos
+* `UUID`: Un UUID versión 4
+* `CLIPBOARD`: El contenido de tu portapapeles (solo texto)
+* `ZKN_ID`: Genera una ID de Zettelkasten (según tu patrón)
 
-## Working With Your Snippets
+## Trabajando con tus fragmentos
 
-After you have created your snippets, you can use them with the known autocomplete syntax. You can activate the snippet autocomplete by typing a colon (`:`), which will open a list with your available snippets. You can search for a snippet by typing a few characters of its name. Since snippet names cannot contain spaces, the colon is an easy way to activate this: If you do not want to insert a snippet, simply type a space (or any non-alphanumerical character) to close the dropdown again.
+Una vez que hayas creado tus fragmentos, puedes usarlos con la sintaxis de autocompletar conocida. Puedes activar el autocompletado de fragmentos escribiendo dos puntos (`:`), que abrirá una lista con los fragmentos disponibles. Puedes buscar un fragmento escribiendo algunos caracteres de su nombre. Dado que los nombres de los fragmentos no pueden contener espacios, los dos puntos son una forma fácil de activar esto: si no deseas insertar un fragmento, simplemente escribe un espacio (o cualquier carácter no alfanumérico) para cerrar el menú desplegable nuevamente.
 
-After you have selected a snippet, Zettlr will first insert the snippet, then replace all variables according to the syntax described above. Afterwards, it will create text markers that denote the position of all tabstops and activate a temporary new keymap that will re-map two keys: `Tab` and `Esc`. Whenever you hit `Tab`, Zettlr will move to the next tabstop. If you would like to prematurely stop tabbing through these tabstops, you can hit `Esc`. The keymap will be removed and your `Tab` and `Esc`-keys will work normally when either all tabstops have been reached or when you hit `Esc`.
+Después de haber seleccionado un fragmento, Zettlr primero insertará el fragmento y luego reemplazará todas las variables de acuerdo con la sintaxis descrita anteriormente. Luego, creará marcadores de texto que denotan la posición de todas las pestañas y activará un nuevo mapa de teclas temporal que volverá a mapear dos teclas: `Tab` y` Esc`. Siempre que presione `Tab`, Zettlr se moverá a la siguiente pestaña. Si desea detener prematuramente la tabulación a través de estas pestañas, puede presionar "Esc". El mapa de teclas se eliminará y las teclas `Tab` y` Esc` funcionarán normalmente cuando se alcancen todas las pestañas o cuando presione `Esc`.
 
-## A Snippet To Get Started
+## Un fragmento para comenzar
 
-In case you're interested in what snippets can do, simply copy and paste the following into a new snippet. Try it out!
+En caso de que te interese lo que pueden hacer los fragmentos, simplemente copia y pega lo siguiente en un fragmento nuevo. ¡Pruébalo!
 
 ```markdown
 ---
-title: "${1:Enter a Title}"
+title: "${1:Escribe un título}"
 date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE
-author: ${2:Enter your name}
+author: ${2:Escribe tu nombre}
 id: $ZKN_ID
 ---
 
-# ${1:Enter a Title}
+# ${1:Escribe un título}
 
 $0
 ```
 
-Here's what this looks like after you have autocompleted the snippet name. You can clearly see that the remaining tabstopps are colored so they're easily discernible.
+Así es como se ve después de haber completado automáticamente el nombre del fragmento. Puedes ver claramente que las pestañas restantes están coloreadas para que sean fácilmente discernibles.
 
-![An example snippet in autocomplete mode](../img/snippets_example.png)
+![Un fragmento de código de ejemplo en el modo de autocompletar](../img/snippets_example.png)
