@@ -1,31 +1,31 @@
-# Exporting in Zettlr
+# Exportando en Zettlr
 
-Zettlr allows you to export into many common file formats so that you can share your work with colleagues, friends, and (hopefully!) your publisher. However, Zettlr's export works slightly different than regular exports so you might want to check what happens whenever you export a file into a different format.
+Zettlr le permite exportar a muchos formatos de archivo comunes para que pueda compartir su trabajo con colegas, amigos y (¡con suerte!) su editor. Sin embargo, la exportación de Zettlr funciona de forma ligeramente diferente a las exportaciones normales, por lo que es posible que desee verificar qué sucede cada vez que exporta un archivo a un formato diferente.
 
-> For advanced PDF exports Zettlr will attempt to use LaTeX. While you can also save files to PDF without it, installing LaTeX can be advantageous in various situations. You can see how to install LaTeX in our [guide on installing such a distribution](../installing-latex.md).
+> Para exportaciones avanzadas de PDF, Zettlr intentará utilizar LaTeX. Si bien también puede guardar archivos en PDF sin él, instalar LaTeX puede ser ventajoso en varias situaciones. Puede ver cómo instalar LaTeX en nuestra [guía sobre cómo instalar dicha distribución](../installing-latex.md).
 
-## Exporting Files
+## Exportación de archivos
 
-There are two ways you can export files with Zettlr: Single file exports, and project exports. The single page export is located in the toolbar and can be opened with `Cmd/Ctrl+E`. It allows you to export in a variety of formats. After you choose the appropriate format, you can sometimes finetune some options for the specified exporter. You can also select whether to export to the temporary directory or the current file's directory (this setting can also be modified in the preferences).
+Hay dos formas de exportar archivos con Zettlr: exportaciones de archivos individuales y exportaciones de proyectos. La exportación de una sola página se encuentra en la barra de herramientas y se puede abrir con `Cmd / Ctrl + E`. Le permite exportar en una variedad de formatos. Después de elegir el formato apropiado, a veces puede ajustar algunas opciones para el exportador especificado. También puede seleccionar si desea exportar al directorio temporal o al directorio del archivo actual (esta configuración también se puede modificar en las preferencias).
 
-The second method to export files is to export whole [projects](../academic/projects.md). You can export a project by right-clicking the project directory, and choosing the export option.
+El segundo método para exportar archivos es exportar [proyectos completos](../académico/proyectos.md). Puede exportar un proyecto haciendo click con el botón derecho en el directorio del proyecto y eligiendo la opción de exportación.
 
-> Note that exporting to a LaTeX PDF may yield errors in the form of `file <name>.sty not found`. These can be resolved by installing the missing LaTeX packages. Please refer to, e.g., [this guide](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages) on how to install additional LaTeX packages.
+> Tenga en cuenta que exportar a un PDF LaTeX puede producir errores en forma de `archivo <nombre> .sty no encontrado`. Estos se pueden resolver instalando los paquetes LaTeX que faltan. Consulte, por ejemplo, [esta guía](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages) sobre cómo instalar paquetes LaTeX adicionales.
 
-## Choosing the Destination
+## Eligiendo el destino
 
-Zettlr needs to know where to store your exported files. There are two options that you have: exporting them to your **temporary directory**, or to the **file's directory**. Both have their advantages and disadvantages.
+Zettlr necesita saber dónde almacenar sus archivos exportados. Hay dos opciones que tiene: exportarlas a su **directorio temporal**, o al **directorio de archivos**. Ambos tienen sus ventajas y desventajas.
 
-> You can set the corresponding [setting](../reference/settings.md) in the Export tab.
+> Puede establecer la [configuración correspondiente](../ reference / settings.md) en la pestaña Exportar.
 
-Exporting to the temporary directory allows you to export a file multiple times without you having to worry about removing the file again afterwards, because your temporary directory is regularly emptied by your computer. As Zettlr opens the file immediately with the default application (e.g., Word for `.docx` files), you can use the "Save as …" option to save the file to another location as soon as you are happy with the result.
+Exportar al directorio temporal le permite exportar un archivo varias veces sin que tenga que preocuparse por eliminar el archivo nuevamente después, porque su computadora vacía regularmente su directorio temporal. Como Zettlr abre el archivo inmediatamente con la aplicación predeterminada (por ejemplo, Word para archivos `.docx`), puede usar la opción" Guardar como ... "para guardar el archivo en otra ubicación tan pronto como esté satisfecho con el resultado.
 
-If you don't worry about having exported files in between your Markdown files, you can also tell Zettlr to save the file in your current directory.
+Si no le preocupa haber exportado archivos entre sus archivos Markdown, también puede decirle a Zettlr que guarde el archivo en su directorio actual.
 
-> Please note that Zettlr will always overwrite exported files without asking for a confirmation. If you add some text to an exported file, **always save it to another location!** It is generally a good idea never to keep files in your temporary directory if you would like to keep them.
+> Tenga en cuenta que Zettlr siempre sobrescribirá los archivos exportados sin pedir confirmación. Si agrega algo de texto a un archivo exportado, **¡guárdelo siempre en otra ubicación!** Por lo general, es una buena idea no guardar nunca archivos en su directorio temporal si desea conservarlos.
 
-## Customizing Exports
+## Personalización de exportaciones
 
-There are two general ways of customising your exports, a.k.a. change the appearance of the file. The first is to make use of defaults files. These defaults files specify how Pandoc will export your files and you can modify these to change all your exports. Please see [our documentation on defaults files](defaults-files.md) for a comprehensive guide of using these.
+Hay dos formas generales de personalizar sus exportaciones, también conocido como cambiar la apariencia del archivo. La primera es hacer uso de archivos predeterminados. Estos archivos predeterminados especifican cómo Pandoc exportará sus archivos y puede modificarlos para cambiar todas sus exportaciones. Consulte [nuestra documentación sobre archivos predeterminados](defaults-files.md) para obtener una guía completa sobre cómo usarlos.
 
-The second option is to use custom templates. The default templates Zettlr ships with are made to provide a good first impression while being compatible, but as you get more apt in working with Zettlr, you may wish to customize the way the files are layouted. There is a [comprehensive guide on templating](../academic/custom-templates.md) with Zettlr in the documentation.
+La segunda opción es utilizar plantillas personalizadas. Las plantillas predeterminadas con las que se envía Zettlr están diseñadas para proporcionar una buena primera impresión a la vez que son compatibles, pero a medida que se vuelve más apto para trabajar con Zettlr, es posible que desee personalizar la forma en que se distribuyen los archivos. Hay una [guía completa sobre plantillas](../ academic / custom-templates.md) con Zettlr en la documentación.
