@@ -18,45 +18,45 @@ Si presionas `Enter` mientras la entrada de reemplazo está enfocada, Zettlr ree
 
 > **Tip**: Al igual que en otros editores de texto, puedes hacer uso de variables mientras buscas con una expresión regular. Si buscas algo usando una expresión regular que contiene al menos un grupo de captura, puedes usar la variable `$ 1` dentro de su texto de reemplazo. Dichas variables se reemplazarán con el contenido real encontrado de los grupos de captura. También se reemplazarán varias apariciones de la variable. El número después de `\ $` se refiere al índice del grupo de captura (el segundo grupo de captura se abordará usando `\ $ 2`, y así sucesivamente). [Obtenga más información sobre las expresiones regulares de JavaScript aquí](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
 
-Of course, you can also use the search in Quicklook windows. Therefore, just click into the content of the Quicklook you want to search (to give it focus and prevent that `Cmd/Ctrl+F` triggers the search on your main file) and press `Cmd/Ctrl+F` to begin searching.
+Por supuesto, también puedes utilizar la búsqueda en las ventanas de vista rápida. Por lo tanto, simplemente haz clic en el contenido del vista rápida que deseas buscar (para enfocarlo y evitar que `Cmd / Ctrl + F` active la búsqueda en su archivo principal) y presiona` Cmd / Ctrl + F` para comenzar la búsqueda.
 
-## Full-Text Search
+## Búsqueda de texto completo
 
-The most important aspect of searching is, in fact, the full-text search which you can open by pressing `Cmd/Ctrl+Shift+F`. The full text search is located where the file manager is and can be opened using the three-way toggle to the left of the toolbar. The full text search provides you with advanced functionality to get to the info you need as fast as possible.
+El aspecto más importante de la búsqueda es, de hecho, la búsqueda de texto completo que puedes abrir presionando `Cmd / Ctrl + Shift + F`. La búsqueda de texto completo se encuentra donde está el gestor de archivos y se puedes abrirlo usando el botón de la izquierda de la barra de herramientas. La búsqueda de texto completo te proporcionan una funcionalidad avanzada para obtener la información que necesita lo más rápido posible.
 
-![The full text search with explanations](../img/full_text_search.png)
+![La búsqueda de texto completo con explicaciones.](../img/full_text_search.png)
 
-The full-text search features three inputs:
+La búsqueda de texto completo presenta tres entradas:
 
-* The **query field** contains the actual search terms you are looking for
-* The second input allows you to **restrict your search to a specific directory**
-* The last text field is only visible when a search is running, which allows you to **further filter your search results**
+* El **campo de consulta** contiene los términos de búsqueda reales que está buscando
+* La segunda entrada te permite **restringir tu búsqueda a un directorio específico**
+* El último campo de texto solo es visible cuando se está ejecutando una búsqueda, lo que te permite **filtrar aún más los resultados de la búsqueda**
 
-### The Search Results
+### Los resultados de la búsqueda
 
-The search results contain a few indicators that help you make sense of where the info is coming from, and what the file actually contains. In the header of each file result you fill first see either the filename, the `title` property, or the first heading of level 1, depending on your settings. Below that, you will always find the full path from the workspace root to the file in question. Furthermore, each search result has a relevancy score (previously the "heatmap"), which tells you how relevant Zettlr thinks this search result is: Gray means less relevant, blue means relevant, and green means very relevant. Lastly, you can collapse the search results of that file by clicking the arrow on the right-hand side.
+Los resultados de la búsqueda contienen algunos indicadores que te ayudan a comprender de dónde proviene la información y qué contiene realmente el archivo. En el encabezado del resultado de cada archivo, primero verás el nombre del archivo, la propiedad `title` o el primer encabezado del nivel 1, según tu configuración. Debajo de eso, siempre encontrarás la ruta completa desde la raíz del área de trabajo hasta el archivo en cuestión. Además, cada resultado de búsqueda tiene una puntuación de relevancia (anteriormente el "mapa de calor"), que le indica qué tan relevante cree Zettlr que es este resultado de búsqueda: gris significa menos relevante, azul significa relevante y verde significa muy relevante. Por último, puedes contraer los resultados de búsqueda de ese archivo haciendo clic en la flecha del lado derecho.
 
-Each search result will list you all the lines in which your search terms were found. The actual search results are emphasised while the rest of the line is displayed to provide you with the context of the result. In front of each line is the line-number. Upon clicking a single search result line, Zettlr will automatically open the file (if not already done) and jump to the corresponding line.
+Cada resultado de búsqueda te mostrará todas las líneas en las que se encontraron los términos de búsqueda. Los resultados de búsqueda se enfatizan mientras se muestra el resto de la línea para brindarte el contexto del resultado. Delante de cada línea está el número de línea. Al hacer click en una sola línea de resultado de búsqueda, Zettlr abrirá automáticamente el archivo (si aún no lo ha hecho) y saltará a la línea correspondiente.
 
-> Too many results? You can also toggle the display of all results using the corresponding button, and then only expand those which deserve a second look.
+> ¿Demasiados resultados? También puedes alternar la visualización de todos los resultados usando el botón correspondiente, y luego solo expandir aquellos que merecen una segunda mirada.
 
-### Composing a Query
+### Redactar una consulta
 
-Composing a query works similar to other search engines which you are already familiar with. You can make use of several different operators to specify exactly what you are searching for:
+La redacción de una consulta funciona de manera similar a otros motores de búsqueda que conoces. Puedes utilizar varios operadores diferentes para especificar exactamente lo que estás buscando:
 
-* **AND operator:** Type `Boat Ship` to only display the files that contain _both_ the term "boat" and the term "ship". Each space is interpreted as "AND".
-* **OR operator:** Type `Boat | Ship` (| is the Pipe-operator, inserted by `Alt+7` on macOS or `AltGr+<` on other systems) to select all files that contain _either_ the word "boat" _or_ the word "ship"
-* **Exact-Match operator:** Type `"Boat Ship"` to search your files for that exact phrase.
-* **NOT operator:** Type `!Boat` to search only for files _not_ containing that term. Works with exact matches as well: `!"Boat Ship"` would exclude all files containing the exact phrase "Boat Ship".
+* **Operador Y:** Escriba `Barco Bote` (separados por un espacio) para mostrar solo los archivos que contienen _ambos_ el término" barco "y el término" bote ". Cada espacio se interpreta como "Y".
+* **Operador O:** Escriba `Barco | Bote` (| es el operador pleca, insertado por `Alt + 7` en macOS o` AltGr + <`en otros sistemas) para seleccionar todos los archivos que contienen _ya sea_ la palabra" barco "_o_ la palabra" bote "
+* **Operador de coincidencia exacta:** Escriba `"Barco Bote" `para buscar en sus archivos esa frase exacta.
+* **Operador de negación:** Escriba `! Bote` para buscar solo archivos _no_ que contengan ese término. También funciona con coincidencias exactas: `!" Barco Bote"` excluiría todos los archivos que contienen la frase exacta "Barco Bote".
 
-> **Attention**: While the `AND`, `OR`, and `Exact-Match` operators work by assigning weights (a file that fulfills all search criteria will be considered very relevant, while files which do not match all search terms have a blue or gray relevancy indicator), the `NOT` operator definitely excludes files. So while a search for `boat ship` would also include files containing only one of the two terms (albeit with a much lower weight), a search for `!boat ship` will definitely exclude all files containing the word boat.
+> **Atención**: mientras que los operadores `Y`,` O` y `Coincidencia exacta` funcionan asignando pesos (un archivo que cumple con todos los criterios de búsqueda se considerará muy relevante, mientras que los archivos que no coinciden con todos los términos de búsqueda) tienen un indicador de relevancia azul o gris), el operador `Negación` definitivamente excluye los archivos. Entonces, mientras que una búsqueda de "barco bote" también incluiría archivos que contienen sólo uno de los dos términos (aunque con un peso mucho menor), una búsqueda de "! Barco Bote" definitivamente excluirá todos los archivos que contengan la palabra Barco.
 
-Of course, you can chain all of these operators. So you could search for `"Boat Ship" | vessel captain` to display only files that either contain the exact phrase "Boat Ship" or the word "vessel", and which also include the word "captain".
+Por supuesto, puedes encadenar todos estos operadores. Entonces podrías buscar `"Barco Bote" | capitán del buque` para mostrar sólo los archivos que contienen la frase exacta "Barco Bote" o la palabra "buque", y que también incluyen la palabra "capitán".
 
-Don't worry if you do not remember the complete word you are searching for: Zettlr will try to match your search terms also to partial words, so the word "trooper" would also match "Stromtrooper" as well as "Troopership" as would the phrase "Boat Ship" also match a "Steamboat Ship". **Searches are also case-insensitive**. So you don't have to worry about little typos you may have in some files.
+No te preocupes si no recuerdas la palabra completa que estás buscando: Zettlr intentará hacer coincidir tus términos de búsqueda también con palabras parciales, por lo que la palabra "trooper" también coincidirá con "Stromtrooper" así como con "Troopership" como lo haría la frase "Boat Ship" también coincide con un "Steamboat Ship". **Las búsquedas también distinguen entre mayúsculas y minúsculas**. Por lo tanto, no tiene que preocuparse por los pequeños errores tipográficos que pueda tener en algunos archivos.
 
-While Zettlr is searching, it will display a search indicator. If a search takes too long, you can abort it prematurely.
+Mientras Zettlr está buscando, mostrará un indicador de búsqueda. Si una búsqueda tarda demasiado, puedes cancelarla prematuramente.
 
-To achieve better results, Zettlr will weigh different types of matches differently. For instance, an exact match in the title can be a sign that the file is highly relevant to you. Therefore, Zettlr will weigh this heavier than other matches. Also, if a search term has matched case-sensitive, this match will receive a higher score than if the term has only matched case-insensitive (i.e., there was a difference in capitalisation).
+Para lograr mejores resultados, Zettlr sopesará diferentes tipos de coincidencias de manera diferente. Por ejemplo, una coincidencia exacta en el título puede ser una señal de que el archivo es muy relevante para sumercé. Por lo tanto, Zettlr pesará más que otras coincidencias. Además, si un término de búsqueda coincide con mayúsculas y minúsculas, esta coincidencia recibirá una puntuación más alta que si el término solo coincide con algunas mayúsculas y minúsculas (es decir, hubo una diferencia en las mayúsculas).
 
-To find the exact place where your search matched, select a file and Zettlr will automatically highlight all matches in bright yellow easy to find. Also, the scrollbar to the very right of the window will be showing markers to indicate at which positions in the document your search terms occur.
+Para encontrar el lugar exacto donde coincidió tu búsqueda, selecciona un archivo y Zettlr resaltará automáticamente todas las coincidencias en amarillo brillante fáciles de encontrar. Además, la barra de desplazamiento a la derecha de la ventana mostrará marcadores para indicar en qué posiciones del documento se encuentran los términos de búsqueda.
