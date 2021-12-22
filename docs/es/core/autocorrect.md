@@ -1,21 +1,21 @@
-# AutoCorrect and Magic Quotes
+# Autocorrección y citas mágicas
 
-AutoCorrect is a well-known feature that is also supported in Zettlr. You have a plethora of settings at hand to customize the way AutoCorrect works. You can enable and disable it in the [preferences](../reference/settings.md).
+Autocorrección es una característica conocida que también es compatible con Zettlr. Tiene una gran cantidad de configuraciones manuales para personalizar la forma en que funciona Autocorrección. Puedes habilitarlo y deshabilitarlo en las [preferencias](../ reference / settings.md).
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iPRDPTtJuCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## AutoCorrect
+## Autocorrección
 
-AutoCorrect works by constantly checking what you type and, as soon as it encounters a sequence of characters from the replacement table, it will replace that sequence of characters with the replacement you have specified.
+Autocorrección funciona comprobando constantemente lo que escribes y, tan pronto como encuentre una secuencia de caracteres de la tabla de reemplazo, reemplazará esa secuencia de caracteres con el reemplazo que hayas especificado.
 
-Zettlr comes with a predefined set of replacements for AutoCorrect that covers the most common replacements, such as replacing two dashes (--) with an en-dash (–). You can add, modify, and remove replacements in the preferences. The left column contains characters the application will search for, whereas the right column contains the respective replacements.
+Zettlr viene con un conjunto predefinido de reemplazos para Autocorrección que cubre los reemplazos más comunes, como reemplazar dos guiones (--) con un guión en blanco (-). Puedes agregar, modificar y eliminar reemplazos en las preferencias. La columna de la izquierda contiene los caracteres que buscará la aplicación, mientras que la columna de la derecha contiene los respectivos reemplazos.
 
-AutoCorrect comes in two flavors: You can either choose the "Word" mode, or the "LibreOffice" mode – depending on whether you are more accustomed to Microsoft Word or LibreOffice. The two modes differ in how they are triggered. The Word mode is generally more aggressive and will immediately attempt to replace every sequence of characters it encounters. The LibreOffice mode requires you to press either Space or Enter before it attempts to replace something. You can always undo a replacement by pressing the Backspace key.
+Autocorrección viene en dos versiones: puedes elegir el modo "Word" o el modo "LibreOffice", dependiendo de si usas más a Microsoft Word o LibreOffice. Los dos modos difieren en cómo se activan. El modo Word es generalmente más agresivo e inmediatamente intentará reemplazar cada secuencia de caracteres que encuentre. El modo LibreOffice requiere que presione Espacio o Entrar antes de intentar reemplazar algo. Siempre puedes deshacer un reemplazo presionando la tecla Retroceso. " 
 
-> We recommend the LibreOffice mode, as it allows you to selectively prevent a replacement by pressing `Shift+Space` instead of just `Space` and `Shift+Enter` instead of just `Enter`.
+> Recomendamos el modo LibreOffice, ya que te permite evitar selectivamente un reemplazo presionando `Shift + Espacio` en lugar de solo` Espacio` y `Shift + Enter` en lugar de solo` Enter`.
 
-## MagicQuotes
+## Citas mágicas
 
-MagicQuotes is an extension that helps you write typographically correct quotation marks, instead of the default (`"` and `'`). You can either choose them from a dropdown list, or select a pre-defined set for a few languages by pressing the corresponding button in the preferences. Selecting the first option (or the "None" option button) restores the default quotation marks.
+Las citas mágicas es una extensión que te ayuda a escribir comillas tipográficamente correctas, en lugar de las predeterminadas (`" `y` '`). Puedes elegirlas de una lista desplegable o seleccionar un conjunto predefinido para algunos idiomas presionando el botón correspondiente en las preferencias. Seleccionar la primera opción (o el botón de opción "Ninguno") restaura las comillas predeterminadas.
 
-> MagicQuotes is automatically active as long as AutoCorrect is active. If you choose to deactivate AutoCorrect, this also deactivates MagicQuotes. To selectively disable MagicQuotes while keeping the AutoCorrect functionality, set the MagicQuotes to the default quotation marks.
+> Las citas mágicas se activa automáticamente siempre que la autocorrección esté activa. Si eliges desactivar Autocorrección, esto también desactiva las citas mágicas. Para deshabilitar las citas mágicas de forma selectiva mientras se mantiene la función de Autocorrección, establece las citas mágicas con las comillas predeterminadas.
