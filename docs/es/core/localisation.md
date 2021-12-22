@@ -1,10 +1,10 @@
-# Localisation
+# Localización
 
-As we write this, Zettlr is available in many languages. A few more languages are being translated at the moment. This means that you can use Zettlr in your native language if you prefer. Have a look at [our translation service](https://translate.zettlr.com/) to see an up-to-date list.
+Mientras escribimos esto, Zettlr está disponible en muchos idiomas. Actualmente se están traduciendo algunos idiomas más. Esto significa que puede usar Zettlr en su idioma nativo si lo prefiere. Eche un vistazo a [nuestro servicio de traducción](https://translate.zettlr.com/) para ver una lista actualizada.
 
-> For localisation of output files, see the [YAML Frontmatter variable `lang`](https://docs.zettlr.com/en/core/yaml-frontmatter/#variable-lang)
+> Para la localización de archivos de salida, consulte la [variable de Frontmatter de YAML `lang`](https://docs.zettlr.com/en/core/yaml-frontmatter/#variable-lang)
 
-Furthermore, Zettlr ships with a few spellchecking dictionaries. Due to their size only a limited amount is available, but you can add new ones easily.
+Además, Zettlr viene con algunos diccionarios de corrección ortográfica. Debido a su tamaño, solo hay una cantidad limitada disponible, pero puede agregar nuevas fácilmente.
 
 ## Changing the Language and Enabling Spellchecking
 
