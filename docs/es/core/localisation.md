@@ -6,24 +6,24 @@ Mientras escribimos esto, Zettlr está disponible en muchos idiomas. Actualmente
 
 Además, Zettlr viene con algunos diccionarios de corrección ortográfica. Debido a su tamaño, solo hay una cantidad limitada disponible, pero puede agregar nuevas fácilmente.
 
-## Changing the Language and Enabling Spellchecking
+## Cambiar el idioma y habilitando la revisión ortográfica
 
-To change the app's language, you can do so in the preferences. Please note that you have to restart the application to apply the new language.
+Para cambiar el idioma de la aplicación, puede hacerlo en las preferencias. Tenga en cuenta que debe reiniciar la aplicación para aplicar el nuevo idioma.
 
-> While the language of the interface can be adapted in the preferences, this does not apply to exported files. Especially when it comes to quotation marks and number delimiters, the export files will fall back to English (US). Change this by setting the `lang`-property in either your [defaults files](defaults-files.md) or the [YAML frontmatter](yaml-frontmatter.md).
+> Si bien el idioma de la interfaz se puede adaptar en las preferencias, esto no se aplica a los archivos exportados. Especialmente cuando se trata de comillas y delimitadores de números, los archivos de exportación volverán al inglés (de EE. UU.). Cambie esto estableciendo la propiedad `lang` en sus [archivos predeterminados](defaults-files.md) o en [YAML frontmatter](yaml-frontmatter.md).
 
-To enable spellchecking, view the corresponding tab in your preferences. Click the checkbox next to all dictionaries you wish to load. Note, however, that more dictionaries can potentially slow down your computer due to their size. We recommend you stick with three dictionaries maximum.
+Para habilitar la revisión ortográfica, vea la pestaña correspondiente en sus preferencias. Haga click en la casilla de verificación junto a todos los diccionarios que desea cargar. Sin embargo, tenga en cuenta que más diccionarios pueden ralentizar su computadora debido a su tamaño. Le recomendamos que se quede con tres diccionarios como máximo.
 
-> To disable spellchecking, simply uncheck all dictionaries.
+> Para deshabilitar la revisión ortográfica, simplemente desmarque todos los diccionarios.
 
-## Install new dictionaries
+## Instalar nuevos diccionarios
 
-Zettlr uses the popular Hunspell dictionaries that are also used by well-known software such as LibreOffice or Mozilla apps.
+Zettlr utiliza los conocidos diccionarios Hunspell que también son utilizados por software conocido como LibreOffice o aplicaciones de Mozilla.
 
-To enable spell-checking for a specific language, simply open the user dictionary folder by selecting `File`->`Import Dictionary …` from the menu. Zettlr will then open up the folder in which you need to place the dictionary files.
+Para habilitar la revisión ortográfica de un idioma específico, simplemente abra la carpeta del diccionario del usuario seleccionando `Archivo`->` Importar diccionario ...`en el menú. Luego, Zettlr abrirá la carpeta en la que necesita colocar los archivos del diccionario.
 
-The dictionary consists of two files, one is a `.dic` file, and the other is an `.aff` file. They need to be placed inside a folder that is named after the language you want to import. Let us assume you want to import the dictionary for Portuguese. You need to grab it from some repository, for instance [here is an extensive set](https://github.com/wooorm/dictionaries/tree/main/dictionaries). Then you simply need to make sure the folder is named `pt-PT` and the two files are named `pt-PT.dic` and `pt-PT.aff`. Other files inside the directory will be ignored by Zettlr. As soon as you have placed your files inside the `dict` directory, open the preferences and Zettlr should list your newly imported dictionary!
+El diccionario consta de dos archivos, uno es un archivo `.dic` y el otro es un archivo` .aff`. Deben colocarse dentro de una carpeta que lleva el nombre del idioma que desea importar. Supongamos que desea importar el diccionario de portugués. Debe obtenerlo de algún repositorio, por ejemplo [aquí hay un conjunto extenso](https://github.com/wooorm/dictionaries/tree/main/dictionaries). Entonces simplemente necesita asegurarse de que la carpeta se llame `pt-PT` y que los dos archivos se llamen` pt-PT.dic` y `pt-PT.aff`. Zettlr ignorará otros archivos dentro del directorio. Tan pronto como haya colocado sus archivos dentro del directorio `dict`, abra las preferencias y Zettlr debería listar su diccionario recién importado.
 
-## Help Translate!
+## ¡Ayuda a traducir!
 
-Is your language not yet available, or are a few translations displayed in English? If any of the strings in the app have not yet been translated, Zettlr will fall back to English for these ones. Anyone can help improve the existing translations and add new ones. To see how you can help, please refer to the [Get Involved page](../get-involved.md).
+¿Su idioma aún no está disponible o se muestran algunas traducciones en inglés? Si alguna de las cadenas de la aplicación aún no se ha traducido, Zettlr recurrirá al inglés para estas cadenas. Cualquiera puede ayudar a mejorar las traducciones existentes y agregar nuevas. Para ver cómo puede ayudar, consulte la [página de Participa](../ get-involved.md).
