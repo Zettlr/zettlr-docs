@@ -1,36 +1,36 @@
-# Pomodoro Timer
+# Temporizador Pomodoro
 
-If you write a lot, you likely have experienced writing fatigue due to excessive long hours of working. To combat this, Francesco Cirillo devised a technique called the [Pomodoro technique](https://francescocirillo.com/pages/pomodoro-technique) which breaks down long sessions into intervals (with breaks). This allows the brain to refresh itself and helps avoids burn-out. It works as follows:
+Si escribe mucho, es probable que haya experimentado fatiga al escribir debido a las largas horas de trabajo. Para combatir esto, Francesco Cirillo ideó una técnica llamada [técnica Pomodoro](https://francescocirillo.com/pages/pomodoro-technique) que divide las sesiones largas en intervalos (con descansos). Esto permite que el cerebro se refresque y ayuda a evitar el agotamiento. Funciona de la siguiente manera:
 
-1. Work (typically 25 minutes)
-2. Short break (typically 5 - 10 minutes)
-3. Repeat (3 times)
-4. Long break (typically 25 - 30 minutes)
-5. Repeat from Step 1
+1. Trabajo (normalmente 25 minutos)
+2. Breve descanso (normalmente de 5 a 10 minutos)
+3. Repetir (3 veces)
+4. Receso largo (normalmente de 25 a 30 minutos)
+5. Repita desde el paso 1
 
-Zettlr simplifies this process with a built-in Pomodoro timer.
-
-
-## Using the Pomodoro timer
-Access the Pomodoro timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
-
-The Pomodoro timer, has 3 core settings that can be altered.
-
-- The length of the **Work**, **Short Break** and **Break** duration's can be adjusted by entering the time (in minutes) in their respective text boxes.
-- After each phase, a **Sound Effect** is played, which can be chosen using the drop down menu (either Glass, Digital Alarm and Chime).
-- The **volume of the chosen sound** is adjusted using the volume slider (fully left is no sound). You can either drag or click to choose the desired level (this will preview the sound).
-
-> This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
+Zettlr simplifica este proceso con un temporizador Pomodoro incorporado.
 
 
-![Timer.png](images/Timer.png)
+## Usando el temporizador Pomodoro
+Acceda al temporizador Pomodoro haciendo click en el círculo en la esquina superior derecha de la pantalla, dentro de la barra de herramientas.
 
-Finally, you can also choose which sound Zettlr will play when a phase ends: The known, soft glass sound, an alarm clock, or a chime.
+El temporizador Pomodoro tiene 3 configuraciones principales que se pueden modificar.
 
-Click on **Start** to begin the timer. Then, the circle will be filled with the color of the current phase (either red, yellow, or green). Once it is full, the next phase will begin.
+- La duración de **Trabajo**, **Pausa breve** y **Descanso** se puede ajustar ingresando el tiempo (en minutos) en sus respectivos cuadros de texto.
+- Después de cada fase, se reproduce un **Efecto de sonido**, que se puede elegir mediante el menú desplegable (Cristal, Alarma digital y Timbre).
+- El **volumen del sonido elegido** se ajusta usando el control deslizante de volumen ( a la izquierda completamente no hay sonido). Puede arrastrar o hacer click para elegir el nivel deseado (esto dará una vista previa del sonido).
 
-To **Stop** the timer or simply review the current **status** of the timer, click the circle. A small popup shows the remaining amount of time for the current phase, the type of the current phase and will give the option to stop session.
+> Este no es el volumen de su sistema, por lo que si el volumen de su sistema es solo del 20 por ciento, incluso un volumen del 100 por ciento dentro de Zettlr solo sonará tan alto como el 20 por ciento.
 
-![Pomodoro Timer running](images/pomodoro_ran.png)
+
+![Temporizador Pomodoro](https://docs.zettlr.com/it/img/pomodoro_init.png)
+
+Por último, también puede elegir qué sonido reproducirá Zettlr cuando finalice una fase: el conocido sonido de cristal blando, un despertador o un timbre.
+
+Haga clic en **Iniciar** para iniciar el temporizador. Luego, el círculo se rellenará con el color de la fase actual (ya sea rojo, amarillo o verde). Una vez que esté lleno, comenzará la siguiente fase.
+
+Para **detener** el temporizador o simplemente revisar el **estado** actual del temporizador, haga clic en el círculo. Una pequeña ventana emergente muestra la cantidad de tiempo restante para la fase actual, el tipo de fase actual y le dará la opción de detener la sesión.
+
+![Temporizador Pomodoro en funcionamiento](https://docs.zettlr.com/it/img/pomodoro_run.png)
 
 
