@@ -1,93 +1,93 @@
 # YAML Frontmatter
 
-Like Pandoc, Zettlr supports YAML frontmatters for your Markdown files. A [YAML frontmatter](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block) is a series of meta variables that can be defined to describe information of the file that normally is not part of the text contents themselves, such as authors, keywords, and the title.
+Al igual que Pandoc, Zettlr admite YAML frontmatters para sus archivos Markdown. Un [YAML frontmatter](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block) es una serie de metavariables que se pueden definir para describir información del archivo que normalmente no es parte del contenido del texto en sí, como como autores, palabras clave y título.
 
-YAML frontmatters can be defined at the beginning of a file, by starting on the first line with three dashes (`---`) and ending the frontmatter either with three dashes or three dots (the former variant is more common). They contain valid YAML and can be used to define arbitrary variables. They come in handy for a variety of use cases.
+Los YAML frontmatters se pueden definir al principio de un archivo, comenzando en la primera línea con tres guiones (`---`) y terminando el encabezado con tres guiones o tres puntos (la primera variante es más común). Contienen YAML válido y se pueden utilizar para definir variables arbitrarias. Son útiles para una gran variedad de casos de uso.
 
-> For a more concise documentation of what you can do with YAML frontmatters, please refer to the [Pandoc documentation](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block).
+> Para obtener una documentación más concisa de lo que puede hacer con los YAML frontmatters, consulte la [documentación de Pandoc](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block).
 
-## Defining a YAML frontmatter
+## Definiendo un YAML frontmatter
 
-YAML frontmatters can be defined anywhere in the document as it is common for Pandoc use-cases to concatenate multiple input files into one output file (Zettlr does this during project exports). Zettlr supports syntax highlighting for YAML frontmatter blocks that occur at the beginning of the file.
+Los YAML frontmatters se puede definir en cualquier parte del documento, ya que es común que los casos de uso de Pandoc concatenen múltiples archivos de entrada en un archivo de salida (Zettlr hace esto durante las exportaciones del proyecto). Zettlr admite el resaltado de sintaxis para los bloques de YAML frontmatter que se encuentran al principio del archivo.
 
-Such a frontmatter must begin with three dashes (`---`) on the very first line of the document, and end with three dashes or three dots on a single line. In between, Zettlr will apply YAML syntax highlighting. For a full guide on how to write YAML, [view the specification](https://yaml.org/spec/1.2/spec.html).
+Dicho frontmatter debe comenzar con tres guiones (`---`) en la primera línea del documento y terminar con tres guiones o tres puntos en una sola línea. En el medio, Zettlr aplicará el resaltado de sintaxis YAML. Para obtener una guía completa sobre cómo escribir YAML, [vea la especificación](https://yaml.org/spec/1.2/spec.html).
 
-A valid YAML frontmatter for a Pandoc export could look like this:
+Un YAML frontmatter válido para una exportación de Pandoc podría verse así:
 
 ```yaml
 ---
-title: "Your document's title"
+title: "Título de su documento"
 keywords:
-  - A keyword
-  - Another keyword
+  - Una palabra clave
+  - Otra palabra clave
 author:
-  - The Zettlr Team
+  - El Equipo de Zettlr
 ---
 ```
 
-> **Attention**: According to the YAML specification, tab (tabulator) characters cannot be used for indentation. For your YAML frontmatter to be valid, use spaces for indentation.
+> **Atención**: De acuerdo con la especificación YAML, los caracteres de tabulación (tab) no se pueden usar para la sangría. Para que su YAML frontmatter  sea válido, use espacios para la sangría.
 
-## Frontmatters versus Defaults files
+## Frontmatters versus archivos predeterminados
 
-Frontmatters can be used to override defaults set by either Pandoc internally or one of the defaults files which Zettlr uses to export your files. For more information, make sure to read the [documentation on defaults files](defaults-files.md) to avoid confusion!
+Los frontmatters se puede utilizar para anular los valores predeterminados establecidos por Pandoc internamente o uno de los archivos predeterminados que utiliza Zettlr para exportar sus archivos. Para obtener más información, asegúrese de leer la [documentación sobre archivos predeterminados](defaults-files.md) para evitar confusiones.
 
-## Frontmatter variables
+## Variables frontmatter 
 
-The frontmatter serves to hold a lot of useful information for both Pandoc and Pandoc citeproc. With such a frontmatter, you can control many aspects of how your document will be rendered, such as the locale to be used, or a list of references that you do not cite within the main text. Zettlr can understand a subset of these variables to show you additional information across the program. The support for variables such as `nocite` is likely going to increase further in future versions.
+El frontmatter sirve para contener mucha información útil tanto para Pandoc como para Pandoc citeproc. Con dicho frontmatter, puede controlar muchos aspectos de cómo se representará su documento, como la configuración regional que se utilizará o una lista de referencias que no cite dentro del texto principal. Zettlr puede comprender un subconjunto de estas variables para mostrarle información adicional en todo el programa. Es probable que la compatibilidad con variables como `nocite` aumente aún más en versiones futuras.
 
-For a full list of available variables and more instructions on how to use these variables, refer to the [section on metadata blocks](https://pandoc.org/MANUAL.html#metadata-blocks) in the Pandoc manual as well as the [manual for Pandoc citeproc](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md).
+Para obtener una lista completa de las variables disponibles y más instrucciones sobre cómo usar estas variables, consulte la [sección sobre bloques de metadatos](https://pandoc.org/MANUAL.html#metadata-blocks) en el manual de Pandoc, así como el [manual de Pandoc citeproc](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md).
 
-> Tip: On this page we only list certain important variables for use with Pandoc, but YAML frontmatters are also supported by other engines, such as the [Jekyll static site generator](https://jekyllrb.com/docs/front-matter/). Therefore, if you plan to use a different tool to convert your Markdown files, you should consult their documentation for a list of available variables.
+> Tip: En esta página solo enumeramos ciertas variables importantes para usar con Pandoc, pero los YAML frontmatters también son compatibles con otros motores, como el [generador de sitios estáticos Jekyll](https://jekyllrb.com/docs/front-matter/). Por lo tanto, si planea utilizar una herramienta diferente para convertir sus archivos Markdown, debe consultar su documentación para obtener una lista de las variables disponibles.
 
 ### `title`
 
-Contains the final title of the document. This is useful as headings of level 1 are, strictly speaking, not meant to denote the _title_ of a document, but rather the topmost order of sections in the document.
+Contiene el título final del documento. Esto es útil ya que los títulos del nivel 1, estrictamente hablando, no están destinados a denotar el _título_ de un documento, sino el orden superior de las secciones del documento.
 
-This variable will override the filename in various places where Zettlr displays the filename (such as the file list and the document tab bar).
+Esta variable anulará el nombre del archivo en varios lugares donde Zettlr muestra el nombre del archivo (como la lista de archivos y la barra de pestañas del documento).
 
 ### `author`
 
-Use this field to specify the authors of a file. This is a list of either simple names, or author names with affiliations. This variable will be used, for instance, to generate a title page on PDF exports.
+Utilice este campo para especificar los autores de un archivo. Esta es una lista de nombres simples o nombres de autores con afiliaciones. Esta variable se utilizará, por ejemplo, para generar una página de título en las exportaciones de PDF.
 
-Both of the following variants would be correct:
+Ambas de las siguientes variantes serían correctas:
 
 ```yaml
 author:
-  - Author one
-  - Author two
+  - Autor uno
+  - Autor dos
 author:
-  - name: Author one
-    affiliation: University X
-  - name: Author two
-    affiliation: University Y
+  - name: Autor uno
+    affiliation: Universidad X
+  - name: Autor dos
+    affiliation: Universidad Y
 ```
 
-> Note the indentation of the property `affiliation`: It aligns with the `name` property. Indentation of YAML values is important and thus you should take care.
+> Tenga en cuenta la sangría de la propiedad `affiliation`: se alinea con la propiedad` name`. La sangría de los valores YAML es importante y, por lo tanto, debe tener cuidado con ellas.
 
 ### `keywords` / `tags`
 
-The `keywords` variable contains keywords, or tags, that can be used by Pandoc. Many other engines also support the variable `tags`. Zettlr recognises both properties and will treat both as valid descriptions of tags for your file.
+La variable `keywords` contiene palabras clave, o etiquetas, que pueden ser utilizadas por Pandoc. Muchos otros motores también admiten la variable `tags`. Zettlr reconoce ambas propiedades y las tratará como descripciones válidas de etiquetas para su archivo.
 
-These properties can also be used to circumvent one restriction of the common in-text tags Zettlr supports: You can define arbitrary keywords that can also include spaces. These keywords are recognized by Zettlr and added to the list of tags of the file.
+Estas propiedades también se pueden usar para eludir una restricción de las etiquetas comunes en el texto que admite Zettlr: puede definir palabras clave arbitrarias que también pueden incluir espacios. Zettlr reconoce estas palabras clave y las agrega a la lista de etiquetas del archivo.
 
 ### `lang`
 
-This variable controls the locale to use during export (citations, quotation marks and punctuation). By default, Pandoc will use `en-US`. For instance British English punctuation will be converted to US English punctuation standards during the export process unless `lang: en-GB` is set.
+Esta variable controla la configuración regional que se utilizará durante la exportación (citas, comillas y puntuación). De forma predeterminada, Pandoc utilizará `en-US`. Por ejemplo, la puntuación del inglés británico se convertirá a los estándares de puntuación del inglés estadounidense durante el proceso de exportación, a menos que se establezca `lang: en-GB`.
 
-It is also useful for controlling in which language the references of your file will show up.  If you do not set this variable, the language of references will be taken from the default language field in the CSL style used, which might be undesirable in case your text is in a different language.
+También es útil para controlar en qué idioma aparecerán las referencias de su archivo. Si no establece esta variable, el idioma de las referencias se tomará del campo de idioma predeterminado en el estilo CSL utilizado, lo que podría no ser deseable en caso de que su texto esté en un idioma diferente.
 
-Valid values for this field are [BCP-47](https://tools.ietf.org/html/bcp47) compatible language identifiers (e.g., `en-US`, `de-AT`, or `it`).
+Los valores válidos para este campo son identificadores de idioma [BCP-47](https://tools.ietf.org/html/bcp47)  compatibles (por ejemplo, `en-US`,` de-AT` o `it`).
 
 ### `nocite`
 
-This variable can be used to include works in your list of reference that have not been actually cited in your document. Place their respective citation keys in this variable. Remember to enclose the value in quotes if it contains an @ (as most citekeys do) as otherwise it will be interpreted as an instruction to Pandoc and other variables in the frontmatter may not work as expected (e.g. use `nocite: '@citekey'`).
+Esta variable puede usarse para incluir trabajos en su lista de referencia que no hayan sido realmente citados en su documento. Coloque sus respectivas claves de citas en esta variable. Recuerde encerrar el valor entre comillas si contiene una @ (como hacen la mayoría de las identificadores de cita), ya que de lo contrario se interpretará como una instrucción para Pandoc y es posible que otras variables en el frontmatter no funcionen como se esperaba (por ejemplo, use `nocite: '@citekey' `).
 
 ### `reference-section-title`
 
-Use this variable to define a heading for your list of references. This has the same effect as when you end your document with a heading (e.g. `## References`).
+Utilice esta variable para definir un encabezado para su lista de referencias. Esto tiene el mismo efecto que cuando finaliza su documento con un encabezado (por ejemplo, `## Referencias`).
 
-> Note: It might make sense to define this variable in one of the export defaults files, since Pandoc will not add such a heading by default. In general, remember that all of the variables that are described here can also be defined in a defaults file so they apply to _every_ such export.
+> Nota: Puede tener sentido definir esta variable en uno de los archivos de exportación predeterminados, ya que Pandoc no agregará dicho encabezado por defecto. En general, recuerde que todas las variables que se describen aquí también se pueden definir en un archivo de valores predeterminados para que se apliquen a _cada_ exportación de este tipo.
 
 ### `notes-after-punctuation`
 
-This can be used to direct citeproc to move footnotes with your citations after punctuation (e.g., if you cite `something [@citekey].`, it will become `something.[^1]` in the output).
+Esto se puede usar para indicar a citeproc que mueva notas al pie con sus citas después de la puntuación (por ejemplo, si cita `algo [@citekey] .`, se convertirá en` algo. [^ 1] `en la salida).
