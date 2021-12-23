@@ -1,127 +1,126 @@
-# Presentations
+# Presentaciones
 
-Zettlr is able to export your Markdown files directly as presentation files using the [reveal.js](https://revealjs.com/#/)-framework. `reveal.js` is a lightweight solution for creating presentations using plain HTML and JavaScript. Therefore, these presentations can be shown on _all_ computers that run a browser — nowadays this means: they run on _every_ computer.
+Zettlr puede exportar sus archivos de Markdown directamente como archivos de presentación utilizando el framework [revel.js](https://revealjs.com/#/). `revel.js` es una solución liviana para crear presentaciones usando HTML simple y JavaScript. Por lo tanto, estas presentaciones se pueden mostrar en _todos_ los equipos que ejecutan un navegador; hoy en día esto significa: se ejecutan en _todos_ equipos.
 
-For exporting Markdown files to `reveal.js`, you have to make sure Pandoc is installed on your computer. Head over to the [Pandoc setup guide](../installing-pandoc.md) to see how to install Pandoc.
+Para exportar archivos Markdown a `revel.js`, debes asegurarte de que Pandoc esté instalado en tu computadora. Dirígete a la [guía de instalación de Pandoc](../installing-pandoc.md) para ver cómo instalar Pandoc.
 
-## Pre-considerations
+## Consideraciones previas
 
-Of course, a Markdown document that should be compiled into a presentation has a slightly different structure than other Markdown documents.
+Por supuesto, un documento de Markdown que debe compilarse en una presentación tiene una estructura ligeramente diferente a la de otros documentos de Markdown.
 
-### Creating slides
+### Creando diapositivas
 
-You can create new slides in two ways. First, each heading level 1 will begin a new slide and also act as the title of the slide. But in case the heading level 1 is too big for your taste, or you simply don't want a title on that slide, you can also delimit slides by using Markdown dividers (either `***` or `---`).
+Puede crear nuevas diapositivas de dos formas. Primero, cada nivel de encabezado 1 comenzará una nueva diapositiva y también actuará como el título de la diapositiva. Pero en caso de que el nivel de encabezado 1 sea demasiado grande para su gusto, o simplemente no desee un título en esa diapositiva, también puede delimitar las diapositivas utilizando divisores de Markdown (ya sea `***` o `---`) .
 
-Everything that follows the heading or the divider will end up being the content of the slides. You do not have to explicitly "end" the last slide with a divider.
+Todo lo que siga al encabezado o al divisor terminará siendo el contenido de las diapositivas. No es necesario que "finalice" explícitamente la última diapositiva con un divisor.
 
-### Using Markdown elements
+### Usando elementos de Markdown
 
-Inside the slides, you can use all Markdown elements. They will be rendered as you would expect them. You can even use footnotes which will then be placed on their own, respective slide at the end!
+Dentro de las diapositivas, puede utilizar todos los elementos de Markdown. Se renderizarán como cabría esperar. ¡Incluso puede usar notas al pie que luego se colocarán en la respectiva diapositiva al final!
 
-## Advanced Tools
+## Herramientas avanzadas
 
-Of course, `reveal.js` presentations also have the same versatility as PowerPoint or Impress when it comes to controlling your presentation. For instance, you can use CSS classes to tell the presentation that certain elements should be triggered before forwarding the presentation. These are called "fragments". Due to limitations in Pandoc's engine, you'll have to use plain HTML to achieve this. Consider, for instance, the HTML code from the demo presentation:
+Por supuesto, las presentaciones de `revel.js` también tienen la misma versatilidad que PowerPoint o Impress cuando se trata de controlar su presentación. Por ejemplo, puede usar clases CSS para decirle a la presentación que ciertos elementos deben activarse antes de cambiar la diapositiva. Estos se denominan "fragmentos". Debido a las limitaciones en el motor de Pandoc, tendrá que usar HTML simple para lograr esto. Considere, por ejemplo, el código HTML de la presentación de demostración:
 
 ```html
 <ul>
-    <li class="fragment fade-in">This item will fade in.</li>
-    <li class="fragment highlight-blue">This will be highlighted blue.</li>
-    <li class="fragment highlight-red">All available transitions are documented [here](https://github.com/hakimel/reveal.js/#fragments).</li>
+    <li class="fragment fade-in">Este elemento se desvanecerá.</li>
+    <li class="fragment highlight-blue">Esto se resaltará en azul.</li>
+    <li class="fragment highlight-red">Todas las transiciones disponibles están documentadas [aquí](https://github.com/hakimel/reveal.js/#fragments).</li>
 </ul>
 ```
 
-This will create a list with three items. All items are "fragments", which means that by pressing the shortcut for the next slide, the first will `fade-in`, as the class says. On the next press of the right arrow key, the second item will be highlighted in blue color. The third press of the right arrow key will highlight the last item red. And on the fourth press of the arrow key the next slide will be shown.
+Esto creará una lista con tres elementos. Todos los elementos son "fragmentos", lo que significa que al presionar la tecla para la siguiente diapositiva, la primera se `desvanecerá`, como dice la clase (_class_ en el HTML). En la próxima pulsación de la tecla de flecha derecha, el segundo elemento se resaltará en color azul. La tercera pulsación de la tecla de flecha derecha resaltará el último elemento en rojo. Y en la cuarta pulsación de la tecla de flecha se mostrará la siguiente diapositiva.
 
-## Presentation settings
+## Configuración de presentación
 
-Of course, the presentation itself also has settings that you can make use of. These are simple JavaScript directives that you can manipulate by inserting a `<script>` tag as shown in the screenshot. You can override them by setting the attributes on the `zettlrRevealOptions` object.
+Por supuesto, la presentación en sí también tiene configuraciones que puede utilizar. Estas son directivas JavaScript simples que puede manipular insertando una etiqueta `<script>` como se muestra en la captura de pantalla. Puede anularlos estableciendo los atributos en el objeto `zettlrRevealOptions`.
 
-![presentations_scripts.png](../img/presentations_scripts.png)
+![Scripts para las presentaciones](../img/presentations_scripts.png)
 
-These are the options you can set:
+Estas son las opciones que puede configurar:
 
 ```javascript
 const zettlrRevealOptions = {
-    // Display controls in the bottom right corner
+    // Mostrar controles en la esquina inferior derecha
     controls: true,
-    // Display a presentation progress bar
+    // Mostrar una barra de progreso de la presentación
     progress: true,
-    // Display the page number of the current slide
+    // Mostrar el número de página de la diapositiva actual
     slideNumber: true,
-    // Push each slide change to the browser history
+    // Suba cada cambio de diapositiva al historial del navegador
     history: true,
-    // Enable keyboard shortcuts for navigation
+    // Habilitar atajos de teclado para la navegación
     keyboard: true,
-    // Enable the slide overview mode
+    // Habilitar el modo de vista general de diapositivas
     overview: true,
-    // Vertical centering of slides
+    // Centrado vertical de diapositivas
     center: true,
-    // Enables touch navigation on devices with touch input
+    // Permite la navegación táctil en dispositivos con entrada táctil
     touch: true,
-    // Loop the presentation
+    // Haga cíclica (en bucle) la presentación
     loop: false,
-    // Change the presentation direction to be RTL
+    // Cambiar la dirección de presentación para que sea RTL
     rtl: false,
-    // Randomizes the order of slides each time the presentation loads
+    // Hace aleatorio el orden de las diapositivas cada vez que se carga la presentación
     shuffle: false,
-    // Turns fragments on and off globally
+    // Activa y desactiva los fragmentos a nivel global
     fragments: true,
-    // Flags if the presentation is running in an embedded mode,
-    // i.e. contained within a limited portion of the screen
+    // Marca si la presentación se está ejecutando en modo incrustado,
+     // es decir, contenido en una parte limitada de la pantalla
     embedded: false,
-    // Flags if we should show a help overlay when the questionmark
-    // key is pressed
+    // Señala si deberíamos mostrar una superposición de ayuda cuando se presiona la tecla de signo de interrogación 
     help: true,
-    // Flags if speaker notes should be visible to all viewers
+    // Marca si las notas del orador deben ser visibles para todos los espectadores
     showNotes: false,
-    // Global override for autolaying embedded media (video/audio/iframe)
-    // - null: Media will only autoplay if data-autoplay is present
-    // - true: All media will autoplay, regardless of individual setting
-    // - false: No media will autoplay, regardless of individual setting
+    // Anulación global para la reproducción automática de medios integrados (video/audio/iframe)
+    // - null: Los medios solo se reproducirán automáticamente si la reproducción automática de datos está presente
+    // - true: Todos los medios se reproducirán automáticamente, independientemente de la configuración individual
+    // - false: Ningún medio se reproducirá automáticamente, independientemente de la configuración individual
     autoPlayMedia: null,
-    // Number of milliseconds between automatically proceeding to the
-    // next slide, disabled when set to 0, this value can be overwritten
-    // by using a data-autoslide attribute on your slides
+    // Número de milisegundos entre que se procede automáticamente la
+    // siguiente diapositiva, desactivada cuando se establece en 0, este valor se puede sobrescribir
+    // mediante el uso de un atributo de deslizamiento automático de datos en sus diapositivas
     autoSlide: 0,
-    // Stop auto-sliding after user input
+    // Detener el desplazamiento automático después de la entrada del usuario
     autoSlideStoppable: true,
-    // Enable slide navigation via mouse wheel
+    // Habilitar la navegación por diapositivas a través de la rueda del mouse
     mouseWheel: false,
-    // Hides the address bar on mobile devices
+    // Oculta la barra de direcciones en dispositivos móviles
     hideAddressBar: true,
-    // Opens links in an iframe preview overlay
+    // Abre enlaces en una superposición de vista previa de iframe
     previewLinks: false,
-    // Transition style
+    // Estilo de transición
     transition: 'convex', // none/fade/slide/convex/concave/zoom
-    // Transition speed
+    // Velocidad de transición
     transitionSpeed: 'default', // default/fast/slow
-    // Transition style for full page slide backgrounds
+    // Estilo de transición para fondos de diapositivas de página completa
     backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-    // Number of slides away from the current that are visible
+    // Número de diapositivas que son visibles a la distancia
     viewDistance: 3,
-    // The display mode that will be used to show slides
+    // El modo de visualización que se utilizará para mostrar diapositivas.
     display: 'block'
 };
 ```
 
-## Presentation Styling
+## Estilo de presentación
 
-If none of the available themes appeal to you, or if you need to provide some extra CSS, you can do so simply by dropping in a `<style>` tag somewhere in your presentation.
+Si ninguno de los temas disponibles le atrae, o si necesita proporcionar algo de CSS adicional, puede hacerlo simplemente colocando una etiqueta `<style>` en algún lugar de su presentación.
 
-You'll need some knowledge of CSS to finegrain the styling, but the appearance of the presentation itself should be satisfying on its own.
+Necesitará algunos conocimientos de CSS para perfeccionar el estilo, pero la apariencia de la presentación en sí debería ser satisfactoria por sí sola.
 
-![presentations_styles.png](../img/presentations_styles.png)
+![Estilos de presentación](../img/presentations_styles.png)
 
-## Images
+## Imágenes
 
-One of the drawbacks of such HTML presentations is that images cannot be contained in the resulting file. (More accurately, they _can_ be included, but that would increase the file size by the size of all images multiplied by the factor 1.3.)
+Uno de los inconvenientes de estas presentaciones HTML es que el archivo resultante no puede contener imágenes. (Más exactamente, _pueden_ incluirse, pero eso aumentaría el tamaño del archivo por el tamaño de todas las imágenes multiplicado por el factor 1.3).
 
-So you need to decide where to put the images. There are basically three feasible methods.
+Por lo tanto, debe decidir dónde colocar las imágenes. Básicamente, existen tres métodos posibles.
 
-1. Create a dedicated directory for the images, e.g., `img`, inside the directory with your markdown file. Then link to all images using relative paths (`img/my-image.jpg`). When you export your file, make sure the presentation is in the same place relative to the image directory as your source file.
-2. Simply put all images inside the same directory as your presentation file. Then linking to them using their file name should suffice.
-3. Upload them to the web, for instance unto an image hosting service, and link their URLs. Only drawback: You would need to rely on a working internet connection at the place where you hold your presentation.
+1. Cree un directorio dedicado para las imágenes, por ejemplo, `img`, dentro del directorio con su archivo de markdown. Luego, enlace a todas las imágenes usando rutas relativas (`img/my-image.jpg`). Cuando exporte su archivo, asegúrese de que la presentación esté en el mismo lugar en relación con el directorio de imágenes que su archivo de origen.
+2. Simplemente coloque todas las imágenes dentro del mismo directorio que su archivo de presentación. Luego, vincularlos con su nombre de archivo debería ser suficiente.
+3. Súbelos a la web, por ejemplo, a un servicio de alojamiento de imágenes, y vincule sus URL's. Único inconveniente: Debería depender de una conexión a Internet que funcione en el lugar donde realiza su presentación.
 
-A rule of thumb is: If Zettlr correctly displays your images, so will your presentation, as long as you make sure the presentation is in _exactly_ the right place relative to your image files.
+Una regla general es: si Zettlr muestra correctamente sus imágenes, también lo hará su presentación, siempre que se asegure de que la presentación esté en _exactamente_ el lugar correcto en relación con sus archivos de imagen.
 
-> If you really must, you can tell Pandoc to include all images directly in the HTML file by setting the variable `self-contained` to `true` in your defaults file (it does not work inside the frontmatter). But remember that many images in your presentation could easily result in an HTML file of dozens of Megabyte. However, then you'd have a truly self-contained presentation file.
+> Si realmente debe hacerlo, puede decirle a Pandoc que incluya todas las imágenes directamente en el archivo HTML configurando la variable `self-content` en` true` en su archivo predeterminado (no funciona dentro del frontmatter). Pero recuerde que muchas imágenes en su presentación fácilmente podrían resultar en un archivo HTML de decenas de Megabytes. Sin embargo, entonces tendría un archivo de presentación verdaderamente autónomo.
