@@ -1,179 +1,179 @@
-# Citing with Zettlr
+# Citando con Zettlr
 
-Citing in Zettlr is done using `citeproc-js`, a library that works like Pandoc's citeproc-engine or Zotero. So what you see in Zettlr will match the output of Zotero's Word or LibreOffice plugins. Zettlr's citation engine has three parts: A CSL JSON or BibTex library containing all items that can be cited, a preview engine and an optional CSL stylesheet that you can use to alter the style with which your files will be exported. This guide will help you enable citations and produce beautiful looking files (not just PDF!) that contain correct and consistent citations.
+Las citas en Zettlr se hacen usando `citeproc-js`, una librería que funciona como el motor citeproc-engine de Pandoc o Zotero. Entonces, lo que ve en Zettlr coincidirá con la salida de los complementos de Word o LibreOffice de Zotero. El motor de citas de Zettlr tiene tres partes: una biblioteca CSL JSON o BibTex que contiene todos los elementos que se pueden citar, un motor de vista previa y una hoja de estilo CSL opcional que puede utilizar para modificar el estilo con el que se exportarán sus archivos. Esta guía le ayudará a habilitar las citas y producir archivos de apariencia hermosa (¡no solo PDF!) Que contienen citas correctas y consistentes.
 
-## Enabling Citations in Zettlr
+## Habilitando las citas en Zettlr
 
-There are two different engines that belong to the realm of citing: the previews (citations can be previewed just as images or links) and the actual process of generating citations (which happens only on export). Both of these functions are triggered by selecting a citation library that contains references. Without such a library, Zettlr will still "preview" citations (so that you can see what will trigger Pandoc's citeproc), but Zettlr won't replace the citation's contents with a generated citation.
+Hay dos motores diferentes que pertenecen al ámbito de las citas: las vistas previas (las citas se pueden previsualizar como imágenes o enlaces) y el proceso real de generación de citas (que ocurre solo en la exportación). Ambas funciones se activan al seleccionar una biblioteca de citas que contiene referencias. Sin dicha biblioteca, Zettlr todavía podrá "previsualizar" las citas (para que pueda ver qué activará el citeproc de Pandoc), pero Zettlr no reemplazará el contenido de la cita con una cita generada.
 
-So the first step is to create such a file. Zotero and JabRef are both recommended applications for managing your library.
+Entonces, el primer paso es crear dicho archivo. Zotero y JabRef son aplicaciones recomendadas para administrar su biblioteca.
 
-> To keep things simple, **this tutorial assumes that you use Zotero**. If you use another reference manager, please check its manual on how to export from to either CSL JSON or BibTex format.
+> Para simplificar las cosas, **este tutorial asume que usas Zotero**. Si utiliza otro administrador de referencias, consulte su manual sobre cómo exportar desde un formato CSL JSON o BibTex.
 
-If you use Mendeley, Citavi, EndNote, or any other references management software that does not support CSL JSON, you can use BibTex files. They will work the same way as CSL JSON files. Internally, Zettlr will convert BibTex to CSL JSON.
+Si usa Mendeley, Citavi, EndNote o cualquier otro software de administración de referencias que no admita CSL JSON, puede usar archivos BibTex. Funcionarán de la misma forma que los archivos CSL JSON. Internamente, Zettlr convertirá BibTex a CSL JSON.
 
-### Step 1: Install BetterBibTex
+### Paso 1: Instale BetterBibTex
 
-The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). Using BetterBibTex has two important benefits over not using it: First, it keeps all of your citation keys unique across your entire library. Second, it allows you to keep your exported library file up to date so you do not have to re-export it every time something changes.
+El primer paso es instalar [el complemento BetterBibTex para Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). Usar BetterBibTex tiene dos beneficios importantes frente a no usarlo: Primero, mantiene todas sus identificadores de citas únicas en toda su biblioteca. En segundo lugar, le permite mantener actualizado su archivo de biblioteca exportado para que no tenga que volver a exportarlo cada vez que algo cambie.
 
-Each citation item has its own unique ID. This is necessary so that when you, for instance, realise that the publication date has been saved wrong, you can easily change it in Zotero and afterwards citeproc will use the corrected information. If you do not use BetterBibTex, it may happen that an ID is issued multiple times, which would either generate errors (the good way, because you know there's something wrong) or simply cause citeproc to use the first item that matches this ID (the bad way, because then you'd have to be lucky to spot the wrong citation after export).
+Cada elemento de la cita tiene su propio identificador único. Esto es necesario para que cuando sumercé, por ejemplo, se dé cuenta de que la fecha de publicación se ha guardado incorrectamente, pueda cambiarla fácilmente en Zotero y luego citeproc utilice la información corregida. Si no usa BetterBibTex, puede suceder que se emita un identificador varias veces, lo que generaría errores (en el buen sentido, porque sabe que hay algo mal) o simplemente haga que citeproc use el primer elemento que coincida con este identificador (la de mala manera, porque entonces tendrías que tener suerte de detectar la cita incorrecta después de la exportación).
 
-> **Why is this important?** For example, if you realise the publication date of a references has been saved wrong, you can change it in Zotero and citeproc will use the citation with the corrected information. However, without BetterBibTex, the same ID may be issued multiple times. This could lead to an overt error, which is good because there is actually something wrong. However, it could also lead to a silent error, where citeproc uses the first item that matches the ID; this is bad because it is hard to spot erroneous citations after export.
+> **¿Por qué es esto importante?** Por ejemplo, si te das cuenta de que la fecha de publicación de una referencia se ha guardado incorrectamente, puedes cambiarla en Zotero y citeproc usará la cita con la información corregida. Sin embargo, sin BetterBibTex, la misma identificación puede emitirse varias veces. Esto podría conducir a un error evidente, lo cual es bueno porque en realidad hay algo mal. Sin embargo, también podría conducir a un error silencioso, donde citeproc usa el primer elemento que coincide con el ID; esto es malo porque es difícil detectar citas erróneas después de la exportación.
 
-> **Tip**: BetterBibTex automatically generates unique keys using an algorithm that you can customise. BetterBibTex is compatible with [JabRef's citekey patterns](https://docs.jabref.org/setup/citationkeypatterns). It will make sure that each entry is unique by optionally adding a suffix to publications which yield the same keys (e.g. you'll have something like `Harvey2005a`, `Harvey2005b`, `Harvey2005c`, and so forth). You can find [all abilities of BetterBibTex in the plugin's extensive documentation](https://retorque.re/zotero-better-bibtex/citation-keys/).
+> **Tip**: BetterBibTex genera automáticamente identificadores únicos mediante un algoritmo que puede personalizar. BetterBibTex es compatible con [patrones de identificadores de citas de JabRef](https://docs.jabref.org/setup/citationkeypatterns). Se asegurará de que cada entrada sea única agregando opcionalmente un sufijo a las publicaciones que produzcan los mismos identificadores  (por ejemplo, tendrá algo como `Harvey2005a`,` Harvey2005b`, `Harvey2005c`, etc.). Puede encontrar [todas las capacidades de BetterBibTex en la extensa documentación del complemento](https://retorque.re/zotero-better-bibtex/citation-keys/) .
 
-### Step 2: Export your library
+### Paso 2: exporta tu biblioteca
 
-The next step is to actually export your library. Zotero's task is to manage your references, but in order for Zettlr to be able to use them in preview as well as exported files, you need to export them into a standalone file.
+El siguiente paso es exportar tu biblioteca. La tarea de Zotero es administrar sus referencias, pero para que Zettlr pueda usarlas en la vista previa y en los archivos exportados, debe exportarlos a un archivo independiente.
 
-> We've run tests with a library containing about 700 items, and we have not experienced any performance issues exporting all of them in total.
+> Hemos realizado pruebas con una biblioteca que contiene alrededor de 700 elementos y no hemos experimentado ningún problema de rendimiento al exportarlos todos en total.
 
-![Export your Library as Better CSL JSON](../img/export-to-csl-json.png)
+![Exporta tu biblioteca como Better CSL JSON](../img/export-to-csl-json.png)
 
-Next, click on `File` and select `Export library …`. Select `Better CSL JSON` as the format; if you opted to not install BetterBibTex, choose `CSL JSON`. By checking "Keep updated", BetterBibTex will ensure every change in Zotero will automatically update your `CSL JSON` file. In this way, Zettlr will always use the most up-to-date, correct citation.
+A continuación, haga clic en `Archivo` y seleccione `Exportar biblioteca ...`. Seleccione `Better CSL JSON` como formato; Si optó por no instalar BetterBibTex, elija `CSL JSON`. Al marcar `Mantener actualizado`, BetterBibTex se asegurará de que cada cambio en Zotero actualice automáticamente su archivo `CSL JSON`. De esta manera, Zettlr siempre usará la cita correcta más actualizada.
 
-> If you checked "Keep updated", you can verify the status of the `CSL JSON` by opening the Zotero Preferences, selecting the `BetterBibTex` tab, and selecting `Automatic Export`. Here you can finetune what is exported, and when.
+> Si marcó `Mantener actualizado`, puede verificar el estado del `CSL JSON` abriendo las Preferencias de Zotero, seleccionando la pestaña` BetterBibTex` y seleccionando `Exportación automática`. Aquí puede ajustar qué se exporta y cuándo.
 
-### Step 3: Open your library in Zettlr
+### Paso 3: abre tu biblioteca en Zettlr
 
-Now it is time to import your library to Zettlr. To do so, open Zettlr's preferences, go to the `Export` tab and click the small folder icon located to the right to the `Citation Database` input field. A dialog will appear that lets you navigate to your database file (i.e. `CSL JSON` or `BibTex`). Select your database file, save the preferences and Zettlr will automatically load the database. You are now ready to cite!
+Es hora de importar su biblioteca a Zettlr. Para hacerlo, abra las preferencias de Zettlr, vaya a la pestaña `Exportar` y haga click en el icono de la hoja pequeña que se encuentra a la derecha del campo de entrada `Base de datos de citas`. Aparecerá un cuadro de diálogo que le permitirá navegar a su archivo de base de datos (es decir, `CSL JSON` o` BibTex`). Seleccione su archivo de base de datos, guarde las preferencias y Zettlr cargará automáticamente la base de datos. ¡Ahora está todo listo para citar!
 
-![Point Zettlr to your database file](../img/settings_export.png)
+![Apunta Zettlr a tu archivo de base de datos](../img/settings_export.png)
 
-> Please note that you can also add bibliography files to the defaults files. These, however, will not be loaded by Zettlr, so it will not preview any citekeys defined there.
+> Tenga en cuenta que también puede agregar archivos de bibliografía a los archivos predeterminados. Estos, sin embargo, no serán cargados por Zettlr, por lo que no obtendrá una vista previa de los identificadores de cita definidos allí.
 
-### Step 4: Enable *Render Citations*
+### Paso 4: Habilite *Renderizar citas*
 
-In the *Display* section of the preferences, you will find the option *Render Citations*. This option has to be enabled to view formatted citations in the editor. It is enabled by default, but in case you changed that, now would be a good time to re-enable it.
+En la sección *Visualización* de las preferencias, encontrará la opción *Renderizar citas*. Esta opción debe estar habilitada para ver citas formateadas en el editor. Está habilitado de forma predeterminada, pero en caso de que lo haya cambiado, ahora sería un buen momento para volver a habilitarlo.
 
-## Citing in Zettlr
+## Citando en Zettlr
 
-Zettlr supports Pandoc's citeproc-syntax for writing citations. This means you will have two options to write citations. First, you can add a single ID in your text to render a citation for this ID. It should look like this: `@Harvey2005a`. All citation keys begin with an `@` followed by the ID (i.e. BetterBibTex CiteKey).
+Zettlr admite la sintaxis citeproc de Pandoc para escribir citas. Esto significa que tendrá dos opciones para escribir citas. Primero, puede agregar una única identificación en su texto para representar una cita para esta identificación. Debería verse así: `@ Harvey2005a`. Todas las claves de citas comienzan con una "@" seguida de la ID (es decir, BetterBibTex CiteKey).
 
-> Zettlr has an autocomplete feature that will prompt you with all available citation keys as soon as you type an `@` character. If you are not presented with a list of possible references, there may be a problem with the database file (i.e. `CSL JSON` or `BibTex`) you set up previously. After you type `@`, you can start to type the first few characters of the ID to narrow down your search. If the reference you want to cite is at the top of the list, hit the `Enter` key to select it. If the reference you want is visible, but lower down the list, use the arrow keys to highlight the reference and hit the `Enter` key, or use your mouse to click on your reference.
+> Zettlr tiene una función de autocompletar que le indicará todas las claves de citas disponibles tan pronto como escriba un carácter "@". Si no se le presenta una lista de posibles referencias, puede haber un problema con el archivo de base de datos (es decir, `CSL JSON` o` BibTex`) que configuró anteriormente. Después de escribir "@", puede comenzar a escribir los primeros caracteres de la identificación para limitar su búsqueda. Si la referencia que desea citar está en la parte superior de la lista, presione la tecla `Enter` para seleccionarla. Si la referencia que desea está visible, pero más abajo en la lista, use las teclas de flecha para resaltar la referencia y presione la tecla `Enter`, o use su mouse para hacer click en su referencia.
 
-Sometimes you'll want to be somewhat more specific with your citation. For example, adding a certain page range. That is what the more extended square bracket citation is for. A citation with a so-called prefix and a page range would look like this:
+A veces querrás llegar a algo más específico con tu cita. Por ejemplo, agregando un cierto rango de páginas. Para eso es la cita de corchetes más extendida. Una cita con un prefijo y un rango de páginas se vería así:
 
-`[See @Harvey2005a, 45-51]`
+`[Véase @Harvey2005a, 45-51]`
 
-To cite multiple authors, simply divide the blocks with semicolons:
+Para citar varios autores, simplemente divida los bloques con punto y coma:
 
-`[See @Harvey2005a, 45-51; also @Ciepley2007, 8-9]`
+`[Véase @Harvey2005a, 45-51; también @Ciepley2007, 8-9]`
 
-For more information on how to use citations in line with Pandoc's citeproc engine, [please refer to the guide](http://pandoc.org/demo/example19/Extension-citations.html).
+Para obtener más información sobre cómo utilizar las citas de acuerdo con el motor citeproc de Pandoc, [consulte la guía](http://pandoc.org/demo/example19/Extension-citations.html).
 
-> **Please note.** Zettlr's citeproc-engine is **only for preview purposes**. For simplicity reasons, Zettlr does not perfectly parse all citations. It is there to **check that your citations are detected correctly so that you don't have missing citations on export**. But be assured, Pandoc's citeproc will render the citation correctly on export.
+> **Por favor tenga en cuenta** El motor citeproc de Zettlr es **solo para fines de vista previa**. Por razones de simplicidad, Zettlr no analiza perfectamente todas las citas. Está ahí para **verificar que sus citas se detecten correctamente para que no tenga citas faltantes en la exportación**. Pero tenga la certeza de que citeproc de Pandoc representará la cita correctamente en la exportación.
 
-## Checking the references
+## Comprobando las referencias
 
-After you're done citing and want to check that you've cited everything you planned to, you can open the [Sidebar](../core/sidebar.md) and switch to the references section. If something's missing from there, it's probably not been cited in your file.
+Una vez que hayas terminado de citar y quieras comprobar que has citado todo lo que planeaste, puedes abrir la [Barra lateral](../core/sidebar.md) e ir a la sección de referencias. Si falta algo allí, probablemente no se haya citado en su archivo.
 
-## Using a file-specific library
+## Usar una biblioteca de archivos específicos
 
-You can also use a specific bibliography file that is only used for one of your files. To do so, you must add the bibliography file to your file's YAML frontmatter. If Zettlr detects the `bibliography` property in a file's frontmatter, it will automatically load that file and offer you items from that file instead of your main library.
+También puede usar un archivo de bibliografía específico que solo se usa para uno de sus archivos. Para hacerlo, debe agregar el archivo de bibliografía al YAML frontmatter  de su archivo. Si Zettlr detecta la propiedad `bibliography` en el frontmatter de un archivo, automáticamente cargará ese archivo y le ofrecerá elementos de ese archivo en lugar de su biblioteca principal.
 
-Example:
+Ejemplo:
 
 ```yaml
 ---
-title: "My document"
-tags: tag1, tag2, tag3
+title: "Mi documento"
+tags: etiqueta1, etiqueta2, etiqueta3
 bibliography: ./assets/references.json
 ---
 ```
 
-## Changing the citation style
+## Cambiando el estilo de la cita
 
-Internally, Zettlr will always use the Chicago style to render citations. Therefore, your previewed citations will always be "in-text," and never in footnote-style. This is meant as a convenience, to confirm everything is working.
+Internamente, Zettlr siempre usará el estilo Chicago para generar citas. Por lo tanto, sus citas de vista previa siempre estarán "en el texto" y nunca en estilo de nota al pie. Esto tiene la intención de confirmar que todo está funcionando.
 
-But of course you can use different citation styles, depending on either the journal requirements for which you are writing, or your personal preferences. To change the citation style Pandoc's citeproc will use to render your citations, you need to download the corresponding CSL file. A very good starting point is the [Zotero style repository](https://www.zotero.org/styles). There you can search for specific citation styles, preview them and download them. Another good option is the [Citation Style Language styles repository](https://github.com/citation-style-language/styles)
+Pero, por supuesto, puede usar diferentes estilos de citas, dependiendo de los requisitos de la revista para la que esté escribiendo o de sus preferencias personales. Para cambiar el estilo de cita que utilizará citeproc de Pandoc para representar sus citas, debe descargar el archivo CSL correspondiente. Un muy buen punto de partida es el [repositorio de estilo Zotero](https://www.zotero.org/styles). Allí puede buscar estilos de citas específicos, obtener una vista previa y descargarlos. Otra buena opción es el [repositorio de estilos de lenguaje de estilo de citas](https://github.com/citation-style-language/styles)
 
-You can point Zettlr to a CSL file in two ways. First in the general preferences. In the `Export` tab, beneath the field for your citation database file, you can select your preferred CSL style. This will be used for all single-page exports using the toolbar button.
+Puede dirigir Zettlr a un archivo CSL de dos formas. Primero en las preferencias generales. En la pestaña "Exportar", debajo del campo de su archivo de base de datos de citas, puede seleccionar su estilo CSL preferido. Esto se utilizará para todas las exportaciones de una sola página mediante el botón de la barra de herramientas. 
 
-Second, you can set specify a CSL style for a specific project. With your project folder visible in the file manager, right-click on the project folder and select `Project Settings ...`.  Here you can specify the CSL file to use when exporting your project.
+En segundo lugar, puede establecer especificar un estilo CSL para un proyecto específico. Con la carpeta del proyecto visible en el administrador de archivos, haga click con el botón derecho en la carpeta del proyecto y seleccione `Configuración del proyecto ...`. Aquí puede especificar el archivo CSL que se utilizará al exportar su proyecto.
 
-## Customizing the List of References
+## Personalización de la lista de referencias
 
-Citing stuff does not just involve rendering the citations inside your text correctly, but also to collect a list of references at the end of the document. By default, Pandoc will simply add a list of references to the end of your documents without any decoration whatsoever. But you have many options available to customize that behaviour, and knowing a few tricks can make all of your lists of references look good from the first export on.
+Citar cosas no solo implica representar correctamente las citas dentro de su texto, sino también recopilar una lista de referencias al final del documento. De forma predeterminada, Pandoc simplemente agregará una lista de referencias al final de sus documentos sin ningún tipo de decoración. Pero tiene muchas opciones disponibles para personalizar ese comportamiento, y conocer algunos trucos puede hacer que todas sus listas de referencias se vean bien desde la primera exportación.
 
-### 1. Adding a Section Header
+### 1. Agregar un encabezado de sección
 
-When you first export a document, you will notice that by default Pandoc will simply attach the list of references to the end of your document without any decoration – even without any title. To add a title, you can choose between two options.
+Cuando exporta un documento por primera vez, notará que, de forma predeterminada, Pandoc simplemente adjuntará la lista de referencias al final de su documento sin ningún tipo de decoración, incluso sin ningún título. Para agregar un título, puede elegir entre dos opciones.
 
-The first option is to define the property `reference-section-title` in your file's YAML frontmatter. It accepts a string which will be set as the title for the whole section. So if you specify `reference-section-title: Bibliography`, Pandoc will use `Bibliography` as the title.
+La primera opción es definir la propiedad `reference-section-title` en el YAML frontmatter de su archivo. Acepta una cadena que se establecerá como título para toda la sección. Entonces, si especifica `reference-section-title: Bibliografía`, Pandoc usará` Bibliografía` como título.
 
-The second option is to simply end your document with the wanted heading, i.e. `## Bibliography`. Since Pandoc will literally slap the list of references onto the file at the end, if your file ends with a heading, that will become the section heading.
+La segunda opción es simplemente terminar su documento con el encabezado deseado, es decir, `## Bibliografía`. Dado que Pandoc literalmente colocará la lista de referencias en el archivo al final, si su archivo termina con un encabezado, ese se convertirá en el encabezado de la sección.
 
-> Obviously, it does not make sense to use both approaches, since that would yield two headings following each other.
+> Obviamente, no tiene sentido utilizar ambos enfoques, ya que eso daría como resultado dos títulos seguidos.
 
-### 2. Changing where the List of References Appears
+### 2. Cambiando el lugar donde aparece la lista de referencias
 
-Another customization option you have when using Pandoc is that you can specify where your list of references appears. For example, if you want to add another section _after_ the list of references, such as an appendix, you will have to tell Pandoc precisely where your references should end up. For this, you need to define a `div`-element (which is a form of container for text) with the ID `#refs`. You can do so either by adding a literal HTML div, or by adding a Pandoc-internal div.
+Otra opción de personalización que tiene al usar Pandoc es que puede especificar dónde aparece su lista de referencias. Por ejemplo, si desea agregar otra sección _después_ de la lista de referencias, como un apéndice, tendrá que decirle a Pandoc exactamente dónde deben terminar sus referencias. Para esto, necesita definir un elemento `div` (que es una forma de contenedor para texto) con el ID` # refs`. Puede hacerlo agregando un div HTML literal o agregando un div interno de Pandoc.
 
-First, here's how you can define a HTML div:
+Primero, así es como puede definir un div de HTML:
 
 ```markdown
-Here could be the last sentence of your conclusion.
+Esta podría ser la última oración de su conclusión.
 
-## References
+## Referencias
 
 <div id="refs">
 </div>
 
-## Appendix
+## Apéndice
 
-Here you could add an appendix.
+Aquí podría agregar un apéndice.
 ```
 
-Note that in this example you should not make use of the `reference-section-title` YAML frontmatter since we've added a heading manually.
+Tenga en cuenta que en este ejemplo no debe hacer uso del YAML frontmatter  `reference-section-title` ya que hemos agregado un encabezado manualmente.
 
-Here's the second example using a Pandoc div:
+Aquí está el segundo ejemplo usando un div de Pandoc:
 
 ```markdown
-Here could be the last sentence of your conclusion.
+Esta podría ser la última oración de su conclusión.
 
-## References
+## Referencias
 
 ::: {#refs}
 :::
 
-## Appendix
+## Apéndice
 
-Here you could add an appendix.
+Aquí podría agregar un apéndice.
 ```
 
-> You can read more on how to do this in the [Pandoc manual](https://pandoc.org/MANUAL.html#placement-of-the-bibliography).
+> Puede leer más sobre cómo hacer esto en el [manual de Pandoc](https://pandoc.org/MANUAL.html#placement-of-the-bibliography).
 
-### 3. Formatting the List of References
+### 3. Dándole formato a la lista de referencias
 
-When you add citations to your files, you want to ensure the references are formatted neatly. If you export to Word or LibreOffice, you can fine-tune your references as you edit your file before sending it out. But this is not possible if you export to PDF. Thus you may need to add a few style directives to your file. Here we describe how to change the appearance of PDF files. To change the appearance of HTML exports, you can use CSS.
+Cuando agrega citas a sus archivos, seguro desea asegurarse de que las referencias tengan un formato ordenado. Si exporta a Word o LibreOffice, puede ajustar sus referencias mientras edita su archivo antes de enviarlo. Pero esto no es posible si exporta a PDF. Por lo tanto, es posible que deba agregar algunas directivas de estilo a su archivo. Aquí describimos cómo cambiar la apariencia de los archivos PDF. Para cambiar la apariencia de las exportaciones HTML, puede utilizar CSS.
 
-LaTeX uses lengths to determine the overall measurements of the exported PDF. These lengths are normally set globally, but they can be changed for different parts of document. One of these lengths is `parindent`, which controls the hanging indent of all paragraphs.
+LaTeX usa longitudes para determinar las medidas generales del PDF exportado. Estas longitudes se establecen normalmente de forma global, pero se pueden cambiar para diferentes partes del documento. Una de estas longitudes es `parindent`, que controla la sangría francesa de todos los párrafos.
 
-Whenever you use the command `\setlength` LaTeX will overwrite the specified length from wherever it encounters this command until you use `\setlength` again. Since the references section is formatted using paragraphs like the rest of the document, they will by default be formatted in this default style. In order to re-format the list of references to look differently, you should overwrite these just before the list of references.
+Siempre que use el comando `\ setlength`, LaTeX sobrescribirá la longitud especificada desde donde encuentre este comando hasta que use` \ setlength` nuevamente. Dado que la sección de referencias está formateada con párrafos como el resto del documento, se formatearán de forma predeterminada en este estilo predeterminado. Para volver a formatear la lista de referencias para que se vea diferente, debe sobrescribirlas justo antes de la lista de referencias.
 
-The following code snippet gives you an example:
+El siguiente fragmento de código le ofrece un ejemplo:
 
 ```latex
-\setlength{\parindent}{-1cm} % Negative hanging indent
-\setlength{\leftskip}{0.5cm} % Overall indentation
-\setlength{\parskip}{0.1cm} % Spacing between paragraphs
+\setlength{\parindent}{-1cm} % Sangría francesa negativa
+\setlength{\leftskip}{0.5cm} % Sangría general
+\setlength{\parskip}{0.1cm} % Espaciado entre párrafos
 ```
 
-The above example would render the reference list with a negative indent of minus one centimetre. Additionally it will apply an overall indentation of half a centimetre relative to the page margins. For example, if your left page margin is set to 3 centimetres, the reference list paragraphs will be offset 3.5 centimetres. The last value (`parskip`) controls the spacing _between_ paragraphs, so there will be a gap of 10 millimetres between paragraphs.
+El ejemplo anterior representaría la lista de referencias con una sangría negativa de menos un centímetro. Además, aplicará una sangría general de medio centímetro en relación con los márgenes de la página. Por ejemplo, si el margen de la página izquierda se establece en 3 centímetros, los párrafos de la lista de referencias se desplazarán 3,5 centímetros. El último valor (`parskip`) controla el espacio _entre_ párrafos, por lo que habrá un espacio de 10 milímetros entre párrafos.
 
-The above example is a good place to start. You can search for more lengths to tweak and adjust them to your liking.
+El ejemplo anterior es un buen punto de partida. Puede buscar más longitudes para modificarlas y ajustarlas a su gusto.
 
-> Note that this mainly applies if you export your documents using the default template, or any other template that does not specifically control how citations are formatted. If you are submitting, e.g., to a STEM journal which provides its own LaTeX template and you use that one, it is likely that this already formats the list of references correctly.
+> Tenga en cuenta que esto se aplica principalmente si exporta sus documentos utilizando la plantilla predeterminada o cualquier otra plantilla que no controle específicamente cómo se formatean las citas. Si está enviando, por ejemplo, a una revista STEM que proporciona su propia plantilla LaTeX y la usa, es probable que esto ya formatee correctamente la lista de referencias.
 
-## Controlling Pandoc Citeproc with the YAML frontmatter
+## Controlando Pandoc Citeproc con el YAML frontmatter 
 
-You can control certain aspects of Pandoc's citeproc using variables that can be set in your YAML frontmatter. Make sure to read the [corresponding page](../core/yaml-frontmatter.md) to see, e.g., how to change the language of your references list.
+Puede controlar ciertos aspectos de citeproc de Pandoc usando variables que se pueden configurar en su YAML frontmatter. Asegúrese de leer la [página correspondiente](../ core/yaml-frontmatter.md) para ver, por ejemplo, cómo cambiar el idioma de su lista de referencias.
 
-## Accessing a Reference's PDF From Zettlr
+## Accediendo al PDF de una referencia desde Zettlr
 
-It will happen from time to time that you re-read something you have written and want to double-check a referenced work. You can do this by simply right-clicking a citation and opening the corresponding PDF file.
+Puede pasar que vuelva a leer algo que ha escrito y desee volver a verificar un trabajo referenciado. Puede hacer esto simplemente haciendo click derecho en una cita y abriendo el archivo PDF correspondiente.
 
-For this to work, **Zotero needs to be running** (since Zettlr will query the app using the citekey and ask for the actual path to the PDF file) and you need to **have BetterBibTex installed** (since only BetterBibTex offers the corresponding API endpoint necessary for requesting the PDF path).
+Para que esto funcione, **Zotero debe estar ejecutándose** (ya que Zettlr consultará la aplicación usando el identificador de cita y solicitará la ruta real al archivo PDF) y usted necesita **tener BetterBibTex instalado** (ya que solo BetterBibTex ofrece el destino API correspondiente necesario para solicitar la ruta PDF).
 
-Note that this does not apply for BibTex databases, since these already contain the full paths to linked PDF files (but note that these are optional, so you may need to explicitly tell your reference manager to add those paths) and as such Zettlr does not need to query an external program.
+Tenga en cuenta que esto no se aplica a las bases de datos BibTex, ya que estas ya contienen las rutas completas a los archivos PDF vinculados (pero tenga en cuenta que son opcionales, por lo que es posible que deba decirle explícitamente a su gestor de referencias que agregue esas rutas) y, como tal, Zettlr no lo hace. necesita consultar un programa externo.
