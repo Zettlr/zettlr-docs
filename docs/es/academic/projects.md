@@ -1,39 +1,39 @@
-# Projects
+# Proyectos
 
-Projects are a way to simplify the concatenation and export of more than a single file. They allow you to split up one single project into several different files to work on. You can portion your work into several files and only in the end glue them together and export them as one single PDF file. Additionally, projects can be exported into several formats at the same time.
+Los proyectos son una forma de simplificar la concatenación y exportación de más de un archivo. Le permiten dividir un solo proyecto en varios archivos diferentes para trabajar. Puede dividir su trabajo en varios archivos y solo al final pegarlos y exportarlos como un solo archivo PDF. Además, los proyectos se pueden exportar a varios formatos al mismo tiempo.
 
-![project_directory.png](../img/project_directory.png)
+![Propiedades de un proyecto](../img/project_directory.png)
 
-## Creating a project
+## Creando un proyecto
 
-Zettlr Projects are basically just a bunch of additional features for directories. Therefore you can "convert" any directory into a project. Simply right-click the directory you want to make a project of and choose "Properties". In the popover you can then activate the project switch. Afterwards the directory will be coloured red and a special icon will appear to the left of its name, indicating that this directory has project features enabled. If you now right-click a directory, you have an additional context menu option at your disposal to build the project.
+Los proyectos de Zettlr son básicamente un montón de características adicionales para directorios. Por lo tanto, puede "convertir" cualquier directorio en un proyecto. Simplemente haga click con el botón derecho en el directorio del que desea convertir en un proyecto y elija "Propiedades". En la ventana emergente, puede activar el interruptor de proyecto. Posteriormente, el directorio se coloreará en rojo y aparecerá un icono especial a la izquierda de su nombre, indicando que este directorio tiene habilitadas las funciones del proyecto. Si ahora hace click con el botón derecho en un directorio, tiene una opción de menú contextual adicional a su disposición para construir el proyecto.
 
-## Working with Projects
+## Trabajando con proyectos
 
-After you have activated the project switch in the directory's properties, a few additional options will appear in that dialog. The first tab of the newly appearing panel allows you to select the formats into which the project will be exported. Select as many as you like. The options are the same as for single page exports.
+Después de haber activado el interruptor de proyecto en las propiedades del directorio, aparecerán algunas opciones adicionales en ese cuadro de diálogo. La primera pestaña del panel que aparece recientemente le permite seleccionar los formatos a los que se exportará el proyecto. Seleccione tantos como desee. Las opciones son las mismas que para las exportaciones de una sola página.
 
-On the second tab, you can define glob patterns to filter which files will be included in the export. A glob pattern is simply a pattern that allows you to match only specific files. For instance, the pattern `**/*.md` will match all Markdown files, the two asterisks at the beginning mean to apply this filter recursively. If you would define `*.md`, then the project will not include files from subdirectories. You can also specify multiple file extensions, e.g. `**/*.{md,tex}`. Lastly, you can also match only files that have a specific name, e.g. `**/{Introduction,Conclusion,Chapter-1}.md`.
+En la segunda pestaña, puede definir patrones globales para filtrar qué archivos se incluirán en la exportación. Un patrón global es simplemente un patrón que le permite hacer coincidir solo archivos específicos. Por ejemplo, el patrón `**/*.md` coincidirá con todos los archivos Markdown, los dos asteriscos al principio significan aplicar este filtro de forma recursiva. Si define `*.md`, entonces el proyecto no incluirá archivos de subdirectorios. También puede especificar varias extensiones de archivo, p. Ej. `**/*.{md, tex}`. Por último, también puede hacer coincidir solo los archivos que tienen un nombre específico, p. Ej. `**/{Introducción, Conclusión, Capítulo-1}.md`.
 
-> To learn more about glob patterns, a good starting point is the [corresponding Wikipedia article](https://en.wikipedia.org/wiki/Glob_(programming)).
+> Para obtener más información sobre los patrones globales, un buen punto de partida es el [artículo de Wikipedia correspondiente](https://en.wikipedia.org/wiki/Glob_ (programación)).
 
-We chose to implement glob patterns instead of an actual list of files since that was not just easier to implement, but it also allows you to specify beforehand what types of files you will create, and thus make it easier for you to add or remove files without having to worry about which ones will be included, and which ones won't.
+Elegimos implementar patrones globales en lugar de una lista real de archivos, ya que no solo era más fácil de implementar, sino que también le permite especificar de antemano qué tipos de archivos creará y, por lo tanto, facilitará la tarea de agregar o eliminar archivos. sin tener que preocuparse por cuáles se incluirán y cuáles no.
 
-## Building Projects
+## Creando proyectos
 
-Building projects in general works similar to single page exports, with two crucial differences: Projects can generate multiple files with one click, and they bundle multiple Markdown documents into a single output document. Zettlr will follow the following steps in collecting the information necessary to build a project:
+La creación de proyectos en general funciona de manera similar a las exportaciones de una sola página, con dos diferencias cruciales: los proyectos pueden generar varios archivos con un solo click y agrupan varios documentos Markdown en un solo documento de salida. Zettlr seguirá los siguientes pasos para recopilar la información necesaria para construir un proyecto:
 
-First, Zettlr will take the project directory and crunch the whole contents into a one-dimensional array. This means that **all subfolders and all files in it will be flattened down into a simple list.** What does that mean? Simply have a look at the file list. Internally, before exporting your files, Zettlr will arrange the files _exactly_ as in the file list. Therefore, if you check out your file list, you will know exactly which file will come after which. This is by design so you don't have a nightmarish discovery once you've handed in a paper and realise a full folder with three chapters has been left out.
+Primero, Zettlr tomará el directorio del proyecto y procesará todo el contenido en una matriz unidimensional. Esto significa que **todas las subcarpetas y todos los archivos que contiene se acoplarán en una lista simple.** ¿Qué significa eso? Simplemente eche un vistazo a la lista de archivos. Internamente, antes de exportar sus archivos, Zettlr organizará los archivos _exactamente_ como en la lista de archivos. Por lo tanto, si revisa su lista de archivos, sabrá exactamente qué archivo vendrá después de cuál. Esto es por diseño para que no tenga una mala sorpresa una vez que haya entregado un artículo y se haya dado cuenta de que se ha omitido una carpeta completa con tres capítulos.
 
-> Please note that Zettlr will use _all_ subdirectories. This is meant as a convenience for people writing huge projects that they can use as many subdirectories as they want. Therefore, the file list will be exactly exported as is. If you want to store additional files within a project that shouldn't be exported, exclude them using a glob pattern.
+> Tenga en cuenta que Zettlr utilizará _todos_ los subdirectorios. Esto es una conveniencia para las personas que escriben grandes proyectos que pueden usar tantos subdirectorios como quieran. Por lo tanto, la lista de archivos se exportará exactamente como está. Si desea almacenar archivos adicionales dentro de un proyecto que no se deben exportar, exclúyalos mediante un patrón global.
 
-Second, Zettlr will read the settings you have given the project itself and basically follow the same process as generating single-document-PDFs: Start up the exporter, provide it with your settings, and let Pandoc and LaTeX do their work.
+En segundo lugar, Zettlr leerá la configuración que le ha dado al proyecto y, básicamente, seguirá el mismo proceso que para generar el PDF de un solo documento: inicie el exportador, proporcione su configuración y deje que Pandoc y LaTeX hagan su trabajo.
 
-Once your project has been exported, it is saved into the project directory.
+Una vez que se ha exportado su proyecto, se guarda en el directorio del proyecto.
 
-> Please note that especially the generation of a table of contents from bigger projects may take an extraordinary amount of time. If you wish to generate a table of contents, LaTeX has to actually build the PDF twice — first to detect on which pages your headings end up after the conversion to PDF, and then a second time to actually include the table of contents. In a test I did, on a new Windows 10 computer the generation of a whole directory of excerpts that rendered to about 150 pages took approximately five minutes in which it seemed as if it didn't work. So please be patient — as long as Pandoc or LaTeX don't complain about anything, they are still working.
+> Tenga en cuenta que, especialmente, la generación de una tabla de contenido a partir de proyectos más grandes puede llevar una cantidad de tiempo extraordinaria. Si desea generar una tabla de contenido, LaTeX tiene que construir el PDF dos veces: primero para detectar en qué páginas terminan sus encabezados después de la conversión a PDF, y luego una segunda vez para incluir la tabla de contenido. En una prueba que hicimos, en una nueva computadora con Windows 10, la generación de un directorio completo de extractos que se procesaron en aproximadamente 150 páginas tomó aproximadamente cinco minutos en los que parecía que no funcionaba. Así que tenga paciencia, siempre que Pandoc o LaTeX no se quejen de nada, todavía están funcionando.
 
-> **Pro-Tip**: As you may know from the FAQ section, Zettlr and Pandoc will not attempt to filter out TeX commands you have written into your markdown documents. Remember this while working on your projects: You can add additional pages or do other funky stuff with your files that will actually be present in the final document! You can also create `.tex` documents by providing the extension when creating new files. These `.tex` documents support LaTeX syntax highlighting and will be included in the export of your project! Make sure they have a file name that places the file exactly where you need it.
+> **Pro-Tip**: Como sabrá en la sección de preguntas frecuentes, Zettlr y Pandoc no intentarán filtrar los comandos TeX que haya escrito en sus documentos de markdown. Recuerde esto mientras trabaja en sus proyectos: puede agregar páginas adicionales o hacer otras cosas divertidas con sus archivos que realmente estarán presentes en el documento final. También puede crear documentos `.tex` proporcionando la extensión al crear nuevos archivos. Estos documentos `.tex` son compatibles con el resaltado de sintaxis LaTeX y se incluirán en la exportación de su proyecto. Asegúrese de que tengan un nombre de archivo que coloque el archivo exactamente donde lo necesita.
 
-## Removing Projects
+## Eliminar proyectos
 
-To remove a project, simply uncheck the project switch in the directory properties.
+Para eliminar un proyecto, simplemente desmarque el interruptor del proyecto en las propiedades del directorio.
