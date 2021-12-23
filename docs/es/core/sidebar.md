@@ -1,43 +1,43 @@
-# The Sidebar
+# La barra lateral
 
-The sidebar is a context-sensitive element that displays relevant additional information regarding your current directory and current file. You can open it by using either the sidebar icon in the toolbar or by pressing `Cmd/Ctrl+?`.
+La barra lateral es un elemento sensible al contexto que muestra información adicional relevante sobre su directorio actual y su archivo actual. Puede abrirlo usando el icono de la barra lateral en la barra de herramientas o presionando `Cmd / Ctrl +?`.
 
-> Please note that strictly speaking Zettlr features two sidebars: The sidebar to the left is referred to as the [File Manager](file-manager.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
+> Tenga en cuenta que, estrictamente hablando, Zettlr presenta dos barras laterales: la barra lateral de la izquierda se denomina [Administrador de archivos](file-manager.md), mientras que la de la derecha, esta barra lateral, se denomina "la" barra lateral.
 
-After you open the sidebar, you can see that it has four tabs. These are (from left to right): Table of Contents, References, Related Files, and other files.
+Después de abrir la barra lateral, puede ver que tiene cuatro pestañas. Estos son (de izquierda a derecha): tabla de contenido, referencias, archivos relacionados y otros archivos.
 
-## Table of Contents
+## Tabla de contenidos
 
-The first tab shows you a table of contents for your current file. It gets updated in real time and allows you to see the structure of your document at a glance. The entries within the table of contents also support Markdown elements, so that your headings will be rendered to HTML.
+La primera pestaña le muestra una tabla de contenido para su archivo actual. Se actualiza en tiempo real y le permite ver la estructura de su documento de un vistazo. Las entradas dentro de la tabla de contenido también admiten elementos de Markdown, por lo que sus títulos se procesarán en HTML.
 
-![The sidebar with the first tab open, the Table of Contents](../img/sidebar_toc.png)
+![La barra lateral con la primera pestaña abierta, el índice](../img/sidebar_toc.png)
 
-If you click one of these headings, the editor will directly jump to that specific heading. This way, the table of contents works almost exactly like the outline view from Microsoft Word or other text editors you might know.
+Si hace click en uno de estos títulos, el editor saltará directamente a ese título específico. De esta manera, la tabla de contenido funciona casi exactamente como la vista de esquema de Microsoft Word u otros editores de texto que quizás conozca.
 
-## References
+## Referencias
 
-The references tab contains a bibliography of all the references you cite within the document. It is generated whenever you save your document and gives you a preview of your bibliography section. Links will be rendered clickable so that you can open a related website directly from within the sidebar. You can also select text in this panel which allows you to copy the references.
+La pestaña de referencias contiene una bibliografía de todas las referencias que cita dentro del documento. Se genera cada vez que guarda su documento y le da una vista previa de su sección de bibliografía. Se podrá hacer clic en los enlaces para que pueda abrir un sitio web relacionado directamente desde la barra lateral. También puede seleccionar texto en este panel que le permite copiar las referencias.
 
-![The sidebar with the second tab open, the references section](../img/sidebar_references.png)
+![La barra lateral con la segunda pestaña abierta, la sección de referencias](../img/sidebar_references.png)
 
-To learn more about citing references with Zettlr, have a look at the documentation page for [citations](../academic/citations.md).
+Para obtener más información sobre cómo citar referencias con Zettlr, eche un vistazo a la página de documentación de [citas](../ academic / citations.md).
 
-> Please note that the references will be displayed using the built-in CSL style. During export, however, Pandoc will use whichever style you define in your preferences to match your expectations. The references in the sidebar are for preview purposes.
+> Tenga en cuenta que las referencias se mostrarán utilizando el estilo CSL integrado. Sin embargo, durante la exportación, Pandoc utilizará el estilo que defina en sus preferencias para satisfacer sus expectativas. Las referencias en la barra lateral son para propósitos de vista previa.
 
-## Related Files
+## Archivos relacionados
 
-The related files section has been added in 2.0 and contains files that Zettlr thinks are related to the current file. They are listed by relevancy descending, so the most relevant files will be on top of the list.
+La sección de archivos relacionados se ha agregado en la versión 2.0 y contiene archivos que Zettlr cree que están relacionados con el archivo actual. Se enumeran por relevancia descendente, por lo que los archivos más relevantes estarán en la parte superior de la lista.
 
-![The sidebar with the third tab open, the related files](../img/sidebar_related_files.png)
+![La barra lateral con la tercera pestaña abierta, los archivos relacionados](../img/sidebar_related_files.png)
 
-Which files are deemed relevant are determined by the tags they use. The more corresponding tags the other file has the more relevant it is for Zettlr. We plan on adding backlinks to the relevancy calculation as well. <!-- TODO: Fix this part as soon as it's implemented! -->
+Los archivos que se consideran relevantes están determinados por las etiquetas que utilizan. Cuantas más etiquetas correspondientes tenga el otro archivo, más relevante será para Zettlr. También planeamos agregar backlinks al cálculo de relevancia. <!-- TODO: ¡Arreglar esta pieza tan pronto como se implemente! -->
 
-## Other Files
+## Otros archivos
 
-The last section contains files that reside within the currently selected directory but are considered neither Markdown nor one of the supported code files. This could be images, PDF files, Excel spreadsheets, or any other file type which you would like to see there.
+La última sección contiene archivos que residen dentro del directorio seleccionado actualmente pero que no se consideran Markdown ni uno de los archivos de código admitidos. Pueden ser imágenes, archivos PDF, hojas de cálculo de Excel o cualquier otro tipo de archivo que le gustaría ver allí.
 
-![The sidebar with the fourth tab open, other files](../img/sidebar_other_files.png)
+![La barra lateral con la cuarta pestaña abierta, otros archivos](../img/sidebar_other_files.png)
 
-You can determine which files are being listed here by adding the file extensions in the advanced preferences tab. Those file extensions are case-insensitive, so adding `.jpeg` will show `.jpeg` files as well as `.JPEG` and `.JpEg`.
+Puede determinar qué archivos se enumeran aquí agregando las extensiones de archivo en la pestaña de preferencias avanzadas. Esas extensiones de archivo no distinguen entre mayúsculas y minúsculas, por lo que agregar `.jpeg` mostrará archivos` .jpeg` así como `.JPEG` y` .JpEg`.
 
-> This tab is especially useful if you want to add some images to your Markdown files. Simply drag and drop them onto the editor, and Zettlr will make sure to wrap them in an image tag.
+> Esta pestaña es especialmente útil si desea agregar algunas imágenes a sus archivos Markdown. Simplemente arrástrelos y suéltelos en el editor, y Zettlr se asegurará de ponerlos entre una etiqueta de imagen.
