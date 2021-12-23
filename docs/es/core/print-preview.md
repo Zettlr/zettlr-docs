@@ -1,9 +1,9 @@
-# Printing and Previewing
+# Impresión y vista previa
 
-As Zettlr is a WYSIWYM editor, you define the structure of the document, but not how it will look like in the final output. While [exporting to the temporary directory](export.md#choosing-the-destination) is a powerful method to verify that the final document looks as expected, in some cases it may be easier to make use of the print preview for this purpose.
+Como Zettlr es un editor LQVELQQD, usted define la estructura del documento, pero no cómo se verá en el resultado final. Si bien [exportar al directorio temporal](export.md # eligiendo-el-destino) es un método poderoso para verificar que el documento final tenga el aspecto esperado, en algunos casos puede ser más fácil hacer uso de la vista previa de impresión para este propósito .
 
-## The Print Preview
+## La vista previa de impresión
 
-You can open the print preview for any file by pressing `Cmd/Ctrl+P`. This will internally export your document to HTML and display the results in a new window. This can be used for a quick preview of your file (especially if you make use of more sophisticated syntax).
+Puede abrir la vista previa de impresión para cualquier archivo presionando `Cmd / Ctrl + P`. Esto exportará internamente su documento a HTML y mostrará los resultados en una nueva ventana. Esto se puede utilizar para obtener una vista previa rápida de su archivo (especialmente si utiliza una sintaxis más sofisticada).
 
-From there, you can also click the print icon to actually print out the HTML file. This can be useful for situations in which it is easier for you to proofread a document in its printed state rather than on screen. The HTML template has special layouts for the needs of printing out a document.
+Desde allí, también puede hacer click en el icono de impresión para imprimir el archivo HTML. Esto puede resultar útil para situaciones en las que le resulte más fácil corregir un documento en su estado impreso que en la pantalla. La plantilla HTML tiene diseños especiales para las necesidades de impresión de un documento.
