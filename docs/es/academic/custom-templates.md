@@ -1,66 +1,67 @@
-# Custom Templates
+# Plantillas personalizadas
 
-When you are done with the content of your paper, it is time to turn your attention to its aesthetics. Your ideas are valuable. However, to truly make them shine, you have to select the right layout and typography. For example, you want may want to use a specific font, a different line spacing and maybe even colour. If you are so inclined, you can make truly amazing looking documents, [like these examples](https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends).
+Cuando haya terminado con el contenido de su artículo, es hora de centrar su atención en su estética. Tus ideas son valiosas. Sin embargo, para que brillen realmente, debes seleccionar el diseño y la tipografía correctos. Por ejemplo, es posible que desees utilizar una fuente específica, un espaciado de línea diferente y tal vez incluso un color diferente. Si lo deseas, puede crear documentos de apariencia realmente asombrosa, [como estos ejemplos](https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends).
 
-In addition to giving you the freedom to use tools like Pandoc and LaTeX, a core principle of Zettlr's philosophy is to makes these tools work _well_ for you. This page will introduce you to using custom LaTeX templates, so you can showcase your writing and the final product!
+Además de darle la libertad de usar herramientas como Pandoc y LaTeX, un principio fundamental de la filosofía de Zettlr es hacer que estas herramientas funcionen _bien_ para sumercé. ¡Esta página le presentará el uso de plantillas personalizadas de LaTeX, para que pueda mostrar su escritura y el producto final!
 
-## Getting Started with Templating
+## Introducción a la creación de plantillas
 
-Let's write your first LaTeX template, which can be done directly in Zettlr! When complete, your template file will be passed to Zettlr, Citeproc (if applicable), Pandoc, and then finally LaTeX. 
+¡Escribamos su primera plantilla LaTeX, que se puede hacer directamente en Zettlr! Cuando esté completo, su archivo de plantilla se pasará a Zettlr, Citeproc (si corresponde), Pandoc y finalmente a LaTeX.
 
-First, create a new file (File -> New File…). This will automatically create a Markdown file (`.md`) with a unique identifier as its temporary name. Start writing your LaTeX template and then save your file (File -> Save). At this point, you will be able to provide your file an appropriate name and file extension. For example, `my-template.tex`. 
+Primero, cree un nuevo archivo (Archivo -> Nuevo archivo…). Esto creará automáticamente un archivo Markdown (`.md`) con un identificador único como nombre temporal. Comience a escribir su plantilla LaTeX y luego guarde su archivo (Archivo -> Guardar). En este punto, podrá proporcionar a su archivo un nombre y una extensión de archivo adecuados. Por ejemplo, `mi-plantilla.tex`. 
 
-![Creating a TeX file](../img/create_tex_file.png)
+![Creando un archivo TeX](../img/create_tex_file.png)
 
-Zettlr will automatically switch code highlighting from Markdown to LaTeX, and a small `TeX` indicator will appear beneath the filename in the file list.
+Zettlr cambiará automáticamente el resaltado de código de Markdown a LaTeX, y aparecerá un pequeño indicador `TeX` debajo del nombre del archivo en la lista de archivos.
 
-![How a TeX file looks in Zettlr](../img/zettlr_tex_file.png)
+![Cómo se ve un archivo TeX en Zettlr](../img/zettlr_tex_file.png)
 
-## Necessary Contents
+## Contenidos necesarios
 
-You can use a lot of different variables, depending on your needs. The default templates of Pandoc already contain many useful variables which are documented here. However, you are free to not use variables which you deem not important, and you can even introduce your own variables using Pandoc's templating engine. For example, let's assume you want to add additional information to some, but not all of your exports. Then you could define a variable `my-variable` and define if in all YAML frontmatters where the exported files should contain that information:
+Puede utilizar muchas variables diferentes, según sus necesidades. Las plantillas predeterminadas de Pandoc ya contienen muchas variables útiles que se documentan aquí. Sin embargo, eres libre de no usar variables que consideres poco importantes, e incluso puedes introducir tus propias variables usando el motor de plantillas de Pandoc. Por ejemplo, supongamos que desea agregar información adicional a algunas, pero no a todas, sus exportaciones. Luego, podría definir una variable `mi-variable` y definir si en todos los YAML frontmatters donde los archivos exportados deben contener esa información:
 
 ```markdown
 ---
-title: "My file title"
+title: "El título de mi archivo"
 date: 2021-10-18
-my-variable: "Some additional piece of information"
+mi-variable: "Alguna información adicional"
 ---
 ```
 
-Inside your template, you would then need to do something with this variable:
+Dentro de su plantilla, necesitaría hacer algo con esta variable:
 
 ```
-$if(my-variable)$
-This is some text that will only be contained if "my-variable" has been defined.
+$if(mi-variable)$
+Este es un texto que solo estará contenido si se ha definido "mi-variable".
 
-You can even insert the contents of the variable by typing $my-variable$
+Incluso puede insertar el contenido de la variable escribiendo $mi-variable$
 $endif$
 ```
 
-> Note that this is just an example. A more full-fledged example that arguably drives the principle of variables to the max, see [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
+> Tenga en cuenta que esto es solo un ejemplo. Un ejemplo más completo que podría decirse que promueve el principio de variables al máximo, consulte [esta plantilla para un curriculum vitae](https://github.com/nathanlesage/cv).
 
-While many variables are optional, there is one Pandoc variable that needs to be present at all times:
+Si bien muchas variables son opcionales, hay una variable de Pandoc que debe estar presente en todo momento:
 
 ```
 $body$
 ```
 
-Pandoc will replace this variable with the parsed contents of your Markdown file(s). If you leave it out, your content will not appear in the output file.
+Pandoc reemplazará esta variable con el contenido analizado de su(s) archivo(s) Markdown. Si lo omite, su contenido no aparecerá en el archivo de salida.
 
-## Activate your template
+## Activa tu plantilla
 
-In order to put your template to work, you must point Zettlr to it, via the PDF Defaults File in the Assets Manager. Navigate to the Assets Manager from Zettlr's Menu and select 'PDF' from the list of configurations ('Defaults Files') on the left. Next add `template: ` to the bottom of the configuration file. Note the space after the colon. Now Zettlr needs to know the path to your new template file. Locate your template file, which if you've created it in Zettlr, you may find by right-clicking on the file in Zettlr's file manager and select 'Show File'. Note that the name of the LaTeX file must end in `.tex`. Once you've found the file, you need to find it's location in your computer's directory structure – which is the file's 'path' or 'pathname'.
-1. On macOS, you can find the file's path by right-clicking the file in the Finder and hit the 'Option' key, which will change the 'Copy file' menu item to 'Copy as Pathname'. 
-2. On Ubuntu Linux, using the File Browser, you can find the path of the currently selected file using the keystroke combo __CTRL__ + __L__, which displays the file's path in the location bar.
-3. On Windows 10 and 11, select the file in File Explorer and use press and hold the __Shift__ on your keyboard while __Right-clicking__ on it. In the context menu that pops up, select “Copy As Path.” 
+Para que su plantilla funcione, debe dirigir a Zettlr a ella, a través del archivo de valores predeterminados de PDF en el Gestor de recursos. Navegue hasta el Gestor de recursos desde el menú de Zettlr y seleccione 'PDF' de la lista de configuraciones ('Archivos predeterminados') a la izquierda. A continuación, agregue `template: ` al final del archivo de configuración. Tenga en cuenta el espacio después de los dos puntos. Ahora Zettlr necesita saber la ruta a su nuevo archivo de plantilla. Busque su archivo de plantilla, que si lo ha creado en Zettlr, puede encontrar haciendo click derecho en el archivo en el administrador de archivos de Zettlr y seleccione 'Mostrar archivo'. Tenga en cuenta que el nombre del archivo LaTeX debe terminar en `.tex`. Una vez que haya encontrado el archivo, debe encontrar su ubicación en la estructura de directorios de su computadora, que es la 'ruta' o el 'nombre de ruta' del archivo.
 
-Copy the pathname and paste it into the PDF Default File thus: `template: /path/to/your/template.tex`. 
+1. En macOS, puede encontrar la ruta del archivo haciendo click con el botón derecho en el archivo en el Finder y presionando la tecla 'Opción', que cambiará el elemento del menú 'Copiar archivo' a 'Copiar como nombre de ruta'.
+2. En Ubuntu Linux, usando el Explorador de archivos, puede encontrar la ruta del archivo seleccionado actualmente usando la combinación de teclas __CTRL__ + __L__, que muestra la ruta del archivo en la barra de ubicación.
+3. En Windows 10 y 11, seleccione el archivo en el Explorador de archivos y presione y mantenga presionada la tecla __Shift__ en su teclado mientras __hace click con el botón derecho__ en él. En el menú contextual que aparece, seleccione "Copiar como ruta".
 
-![Adding Your LaTeX Template to PDF Defaults File](../img/zettlr_add_LaTeX_template.png)
+Copie el nombre de la ruta y péguelo en el archivo PDF predeterminado así: `template: /path/to/your/template.tex`.
 
-Remember to leave a space between the colon and your pathname. Save the changes and enjoy your LaTeX template.
+![Agregar su plantilla de LaTeX al archivo de valores predeterminados de PDF](../img/zettlr_add_LaTeX_template.png)
 
-## Final Thoughts
+Recuerde dejar un espacio entre los dos puntos y su ruta. Guarde los cambios y disfrute de su plantilla LaTeX.
 
-Zettlr strives to give you full command over what you can do with your files. What we've outlined on this page is only the start. How do you use Zettlr's possibilities to do weird things? Tell us on [Twitter](https://www.twitter.com/Zettlr), [Discord](https://discord.com/invite/PcfS3DM9Xj), or on [Reddit](https://www.reddit.com/r/Zettlr)!
+## Ideas finales
+
+Zettlr se esfuerza por darle un control total sobre lo que puede hacer con sus archivos. Lo que hemos descrito en esta página es solo el comienzo. ¿Cómo usas las posibilidades de Zettlr para hacer cosas raras? Cuéntanos en [Twitter](https://www.twitter.com/Zettlr), [Discord](https://discord.com/invite/PcfS3DM9Xj) o en [Reddit](https://www.reddit.com/r/Zettlr)!
