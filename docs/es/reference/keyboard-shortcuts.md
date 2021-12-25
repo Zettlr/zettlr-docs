@@ -1,8 +1,8 @@
-# Keyboard Shortcuts
+# Atajos de teclado
 
-This page contains a list of all shortcuts available throughout the app.
+Esta página contiene una lista de todos los accesos directos disponibles en la aplicación.
 
-For remembering them easier, here are some thoughts we've put into assigning the shortcuts. In general, we try to follow these rules, but not all shortcuts follow them.
+Para recordarlos más fácilmente, aquí hay algunas ideas que hemos puesto en la asignación de atajos. En general, tratamos de seguir estas reglas, pero no todos los atajos las siguen.
 
 1. **Common shortcuts**: Some shortcuts are so common that they don't fit into our shortcut system, but everybody will recognise them. One example is the preferences shortcut (`Cmd/Ctrl+,`), another the shortcut to finish editing a footnote (`Shift+Enter`). We try to use as many of these shortcuts as possible to reduce friction.
 2. **High-priority shortcuts**: You will be using these shortcuts _a lot_ while using the app. These are generally `Cmd/Ctrl` and one single letter. While naming the shortcuts we try to stick to the English names of the command that it triggers (**N**ew, **R**emove, **F**ind, etc). Sometimes this is not possible (for instance the Distraction Free mode is triggered via `Cmd/Ctrl+J`, because `Cmd/Ctrl+D` is already taken by the editor).
