@@ -8,6 +8,8 @@ The installation of Zettlr is very easy and takes only a step on every operating
 
 To install Zettlr on Windows, just download the app from the [download page](https://www.zettlr.com/download) and double click to open the installer. If you wish to install Zettlr for all users, it is installed to the main `Program Files` directory and in this case you'd have to give it elevated rights during setup (it will automatically ask for your permission). You don't need any rights if you install it for the logged in user.
 
+> Please note that you should, if you can, install Zettlr with elevated rights, that is: for all users of the computer. Certain features, such as your recent documents will not work if you install the app just for you. However, you can install the app just for you if you don't need the recent documents feature (or if your employer does not grant you admin rights).
+
 To uninstall Zettlr, simply run the Uninstall.exe either from the directory itself or use the appropriate add/remove program interface in your system's settings. If you want to completely remove all data associated with the app, also remove the directory `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`.
 
 > At the time of writing, the Windows ARM installer does not come with Pandoc bundled. This means that exports may not work. You have to install Pandoc manually. If Pandoc is installed on your computer, Zettlr for Windows ARM will automatically use that one.
