@@ -1,0 +1,74 @@
+site_name: Zettlr Docs
+site_url: https://docs.zettlr.com/en
+repo_url: https://github.com/Zettlr/zettlr-docs
+site_description: >-
+    Our comprehensive documentation provides you with everything you need to
+    know about how to make the most of Zettlr.
+site_author: Hendrik Erz
+copyright: "&copy; 2017-2020 by Zettlr"
+docs_dir: ../docs/es
+site_dir: ../build/es
+edit_uri: edit/master/docs/es
+extra_css:
+  - assets/app.css
+nav:
+  - Bienvenida: index.md
+  - Primeros pasos:
+    - Configuración: install.md
+    - Aplicación portable: portable.md
+    - Instalar LaTeX: installing-latex.md
+    - Cómo empezar: get-started.md
+    - Involúcrate: get-involved.md
+    - Preguntas frecuentes: faq.md
+    - ¿Problemas?: troubleshooting.md
+  - Conceptos:
+    - Gestión de archivos: concepts/workspaces.md
+    - Contexto: concepts/context.md
+    - LQVELQQD: concepts/wysiwym.md
+  - Núcleo:
+    - Editor: core/editor.md
+    - Pestañas del document: core/tabs.md
+    - Gestión de archivos: core/file-manager.md
+    - Gestor de activos: core/assets-manager.md
+    - Archivos por defecto : core/defaults-files.md
+    - CSS personalizado: core/custom-css.md
+    - Fragmentos: core/snippets.md
+    - Autocorrector and MagicQuotes: core/autocorrect.md
+    - Búsqueda: core/search.md
+    - Importación: core/import.md
+    - Exportación: core/export.md
+    - Editor de tablas: core/tables.md
+    - Localización: core/localisation.md
+    - Barra lateral: core/sidebar.md
+    - Metadatos en YAML: core/yaml-frontmatter.md
+    - Impresión y vista previa: core/print-preview.md
+    - Matemáticas: core/math.md
+  - Herramientas académicas:
+    - Citas: academic/citations.md
+    - Proyectos: academic/projects.md
+    - Presentaciones: academic/presentations.md
+    - Temporizador pomodoro: academic/pomodoro.md
+    - Legibilidad: academic/readability.md
+    - Método Zettelkasten: academic/zkn-method.md
+    - Plantillas personalizadas: academic/custom-templates.md
+  - Referencias:
+    - Atajos de teclado: reference/keyboard-shortcuts.md
+    - Markdown básico: reference/markdown-basics.md
+    - Configuración: reference/settings.md
+    - Corrección ortográfica: reference/spell-checking.md
+theme:
+  name: readthedocs
+  custom_dir: ../theme_override
+  highlightjs: True
+  prev_next_buttons_location: both
+  hljs_languages:
+    - javascript
+    - css
+    - yaml
+    - tex
+markdown_extensions:
+    - toc:
+        permalink: True
+plugins:
+  - search:
+      lang: es
