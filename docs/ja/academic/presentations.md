@@ -18,7 +18,7 @@ Zettlrでは[reveal.js](https://revealjs.com/#/)を使って、Markdownファイ
 
 スライド内でもすべてのMarkdown要素を使うことができ、それらは予想通りに出力されるでしょう。また各スライドに脚注を配置することもできます。
 
-### 上級者向け機能
+## 上級者向け機能
 
 もちろん、`reveal.js`はプレゼンテーションの制御に関してPowerPointやImpressと同等の汎用性を持っています。たとえば、CSSクラスを使って、プレゼンテーションのページを進める前に特定の要素を変化させることができます。これは"fragment"と呼ばれるものです。Pandocエンジンの制限により、この機能を使うには生のHTMLを書く必要があります。
 
@@ -32,11 +32,13 @@ Zettlrでは[reveal.js](https://revealjs.com/#/)を使って、Markdownファイ
 
 これは3項目のリストとなります。すべての項目は"fragment"になっていて、次のスライドに移動するショートカット(右矢印キー)を押すと、1番目の項目がフェードイン(`fade-in`)します。もう一度押すと、2番目の項目が青色にハイライトされます。3回目は最後の項目が赤色にハイライトされます。さらにもう一回右矢印キーを押すと、次のスライドが表示されます。
 
-### プレゼンテーションの設定
+## プレゼンテーションの設定
+
+もちろん、プレゼンテーションに関する設定項目もあります。スクリーンショットのように`<script>`タグを挿入して操作できる、簡単なJavaScript命令があります。`zettlrRevealOptions`オブジェクトの属性を設定して変更することができます。
 
 ![presentations_scripts.png](../img/presentations_scripts.png)
 
-もちろん、プレゼンテーションに関する設定項目もあります。スクリーンショットのように`<script>`タグを挿入して操作できる、簡単なJavaScript命令があります。`zettlrRevealOptions`オブジェクトの属性を設定して変更することができます。設定できる項目を以下に示します。
+設定できる項目を以下に示します。
 
 ```javascript
 const zettlrRevealOptions = {
@@ -102,7 +104,7 @@ const zettlrRevealOptions = {
 };
 ```
 
-### プレゼンテーションのスタイル
+## プレゼンテーションのスタイル
 
 用意されたテーマが気に入らない場合や、追加のCSSが必要な場合は、プレゼンテーションのどこかに`<style>`タグを追加してください。
 
@@ -110,9 +112,9 @@ const zettlrRevealOptions = {
 
 ![presentations_styles.png](../img/presentations_styles.png)
 
-### 画像
+## 画像
 
-HTMLプレゼンテーションの大きな欠点は出力されたファイルに画像を含めることができないということです。(正確に言うと含めることは可能ですが、すべての画像の容量を合わせて1.3倍した分だけファイルサイズが増加してしまいます。)
+HTMLプレゼンテーションの欠点は出力されたファイルに画像を含めることができないということです。(正確に言うと含めることは可能ですが、すべての画像の容量を合わせて1.3倍した分だけファイルサイズが増加してしまいます。)
 
 なので、どこに画像を置くかを決める必要があります。基本的には3つの選択肢があります。
 
@@ -120,4 +122,6 @@ HTMLプレゼンテーションの大きな欠点は出力されたファイル�
 2. すべての画像ファイルをプレゼンテーションファイルと同じディレクトリに置きます。この場合、ファイル名を使って画像をリンクするようにします。
 3. 画像をWeb上にアップロードします。例えば画像ホスティングサービスを使い、そのURLを使ってリンクします。プレゼンテーションを置く場所で有効なインターネット接続が必要になるというのが唯一の欠点となります。
 
-経験則: プレゼンテーションファイルから見た画像の相対パスがソースファイルの時とまったく同じなら、Zettlrで画像が正しく見えていれば、プレゼンテーションでも正しく見えるはずです。
+経験則: Zettlrで画像が正しく見えているならば、プレゼンテーションファイルが画像から見て正しい相対パスに置かれている限り、プレゼンテーションも正しく見えるはずです。
+
+> If you really must, you can tell Pandoc to include all images directly in the HTML file by setting the variable `self-contained` to `true` in your defaults file (it does not work inside the frontmatter). But remember that many images in your presentation could easily result in an HTML file of dozens of Megabyte. However, then you'd have a truly self-contained presentation file.

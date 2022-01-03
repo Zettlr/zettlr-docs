@@ -1,114 +1,66 @@
 # カスタムテンプレート
 
-[カスタムCSS](../core/custom-css.md)は、Zettlrの見た目をカスタマイズするには良いのですが、出力された論文を思いのままにするものではありません。文書を書いたなら見た目も内容と同じくらい重要です。アイディア自体がとても価値のあるものであっても、読みたいと思わせるような優れたデザインとタイポグラフィが無くては、あなたのアイディアにとっての損失です。
+When you are done with the content of your paper, it is time to turn your attention to its aesthetics. Your ideas are valuable. However, to truly make them shine, you have to select the right layout and typography. For example, you want may want to use a specific font, a different line spacing and maybe even colour. If you are so inclined, you can make truly amazing looking documents, [like these examples](https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends).
 
-好みのフォント、行間のスペース、もしかすると色も使いたいかもしれません。[PDF設定](../reference/settings.md)では、いくつかの一般的な設定をプロジェクト単位や単一のファイルのエクスポートに対して行うことができますが、LaTeXの組版機能のすべてを利用できるわけではありません。そして、なんということでしょう、[非常に良い例がここにあります](https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends)。
+In addition to giving you the freedom to use tools like Pandoc and LaTeX, a core principle of Zettlr's philosophy is to makes these tools work _well_ for you. This page will introduce you to using custom LaTeX templates, so you can showcase your writing and the final product!
 
-幸いにもZettlrでは、pandocやLaTeXなどのツールを自由に使えるようにするだけでなく、より良く使えるようにすることを、基本方針の一つとしています。このページを読めば、カスタムLaTeXテンプレートを素早く使い始めることができ、あなたの作る最終成果物が素晴らしい見た目になります。
+## Getting Started with Templating
 
-## 事前の考慮事項
+Let's write your first LaTeX template, which can be done directly in Zettlr! When complete, your template file will be passed to Zettlr, Citeproc (if applicable), Pandoc, and then finally LaTeX. 
 
-カスタムLaTeXテンプレートを書き始める前に、エクスポート時に何が起きるかについて説明します。Zettlrのエクスポートエンジンは、文書をpandocに受け渡す最終ステップの前に様々なタスクを実行する強力なソフトウェア部品です。Zettlrが文書に対して実行する処理について知っておけば、特に複雑なテンプレートを使用するようになったときに、一貫した出力を得ることと、ちょっとした問題を防止するのに役に立ちます。この章では、Zettlrがpandocに受け渡す前にプロジェクトとファイルエクスポートに対して行うすべてのステップについて説明します。
+First, create a new file (File -> New File…). This will automatically create a Markdown file (`.md`) with a unique identifier as its temporary name. Start writing your LaTeX template and then save your file (File -> Save). At this point, you will be able to provide your file an appropriate name and file extension. For example, `my-template.tex`. 
 
+![Creating a TeX file](../img/create_tex_file.png)
 
-### 1. すべての入力ファイルを結合する（プロジェクトの場合のみ）
+Zettlr will automatically switch code highlighting from Markdown to LaTeX, and a small `TeX` indicator will appear beneath the filename in the file list.
 
-プロジェクトをエクスポートする場合、Zettlrは最初にすべてのファイルをファイルリストで表示されている順で結合し、単一の一時ファイルを出力します。そのために、ファイルリストと同じ方法で(順序を保って)プロジェクトディレクトリを走査し、ファイルを読み込みます。このステップでは**Markdownソースに対して2つの操作が行われます**。
+![How a TeX file looks in Zettlr](../img/zettlr_tex_file.png)
 
-1. すべての画像のパスを絶対パスに置き換えます。これは、セキュリティのためです。LaTeXは画像が絶対パスでない場合にエクスポートに失敗することがあります。(LaTeXのCWDがMarkdowファイルと異なるため。)これにより、LaTeXのことを気にせずに、好きな場所で相対パスを使用することができます。
-2. すべての脚注を一意にします。章ごとに脚注番号は1から始まります。そうすると多くの場合、脚注番号が重複しエクスポートが失敗したり、最悪、重複したものの内一つが使われて、残りは無視されてしまいます。Zettlrではファイルの内部ハッシュ値を加えて脚注番号を一意にします。例えば、`[^1]`が、`[^1934976181]`のようになります。このようにして、すべての脚注が一意になるようにします。
+## Necessary Contents
 
-その後、結果ファイルを一時フォルダに出力してエクスポート処理を起動します。ここでステップ2に移ります。
+You can use a lot of different variables, depending on your needs. The default templates of Pandoc already contain many useful variables which are documented here. However, you are free to not use variables which you deem not important, and you can even introduce your own variables using Pandoc's templating engine. For example, let's assume you want to add additional information to some, but not all of your exports. Then you could define a variable `my-variable` and define if in all YAML frontmatters where the exported files should contain that information:
 
-### 2. ソースファイルを読み込む
+```markdown
+---
+title: "My file title"
+date: 2021-10-18
+my-variable: "Some additional piece of information"
+---
+```
 
-次にZettlrは、ソースファイルを読み込みます。対象となるのは、`共有`機能によってエクスポートされたファイル、またはプロジェクトから生成された結合済みファイル(ステップ1を参照)です。ファイルを読み込む際に、すべての画像のパスが絶対パスに変換されます（これは、プロジェクトからのエクスポート時には発生しません。何故ならステップ1で既に絶対パスになっているからです）。
+Inside your template, you would then need to do something with this variable:
 
-次に、設定ダイアログでの設定に従って、すべてのタグが置換されます。Zettelkastenリンクも、処理対象の場合はこのステップで処理されます。リンクのフォーマット用文字(デフォルトは`[[`と`]]`)が取り除かれるか、もしくはすべて削除されます。この機能をオフに設定した場合、リンクはそのまま残ります。さらに、設定によってはすべてのIDが取り除かれます。
+```
+$if(my-variable)$
+This is some text that will only be contained if "my-variable" has been defined.
 
-> 「IDを取り除く」がデフォルトでオフになっている理由は、デフォルトのIDが数字だけで構成されているため、ある種のwebリンクが利用できなくなってしまうためです。
+You can even insert the contents of the variable by typing $my-variable$
+$endif$
+```
 
-ファイルの準備が完了したら、一時ディレクトリに保存します。
+> Note that this is just an example. A more full-fledged example that arguably drives the principle of variables to the max, see [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
 
-### 3. テンプレートを準備する
-
-ファイルが準備できたら、テンプレートを読み込んで一時ファイルに出力します。このステップではテンプレート中の変数が置換されます。変数には以下の種類があります。
-
-- `$PAGE_NUMBERING$`: PDF設定で選択したページ番号（例えばアラビア数字）
-- `$PAPER_TYPE$`: 選択した用紙種別（例えば`a4paper`）
-- `$TOP_MARGIN$`: 設定したページ上余白（例えば 3cm）
-- `$RIGHT_MARGIN$`: 設定したページ右余白（例えば 3cm）
-- `$BOTTOM_MARGIN$`: 設定したページ下余白（例えば 3cm）
-- `$LEFT_MARGIN$`: 設定したページ左余白（例えば 3cm）
-- `$MAIN_FONT$`: 設定したメインフォント（ほとんどのテキストに適用されます）（例えばTimes New Roman）
-- `$SANS_FONT$`: 設定した二次フォント（主に見出し用）（例えばArial）
-- `$LINE_SPACING$`: 設定した行間隔（例えば150 %）
-- `$FONT_SIZE$`: 設定したフォントサイズ（例えば12pt）
-- `$PDF_TITLE$`: PDFタイトル（ファイル名、またはプロジェクトのエクスポート時は設定値）
-- `$PDF_SUBJECT$`: PDFサブジェクト
-- `$PDF_AUTHOR$`: PDF作成者情報
-- `$PDF_KEYWORDS$`: PDFファイルのキーワード
-- `$TITLEPAGE$`: 空文字列か、プロジェクト設定でタイトルページを出力する設定の場合は`\\maketitle\n\\pagebreak\n`
-- `\$GENERATE_TOC$`: 空文字列か、プロジェクト設定で目次を生成する設定の場合は`\\setcounter{tocdepth}{<number>}\n\\tableofcontents\n\\pagebreak\n`（`<number>`は1～6のレベル）
-
-これらの変数はすべて置換されます。つまり、例えば`\$PDF_AUTHOR$`という変数がテンプレート中に複数回使われていれば、見つかるごとに置換されていきます。
-
-### 4. PDFエクスポートの準備を行う
-
-これで、ファイルが準備できたので、pandocエンジンに受け渡すコマンドライン変数の準備を行います。このステップでは、用意されたLaTeXテンプレートがコマンドフラグに渡されます。カスタムテンプレートがない場合は、[デフォルトのテンプレート](https://github.com/Zettlr/Zettlr/blob/master/source/main/assets/export.tex)が使用されます。Zettlrのデフォルトテンプレートは、[pandocのデフォルトテンプレート](https://github.com/jgm/pandoc/blob/master/data/templates/default.latex)を適合させてあります。また、最大限の互換性を保つために余分なものは取り除いてあります。
-
-> pandocのデフォルトテンプレートに含まれる多くのコマンドは、追加のLaTeXパッケージを必要とします。ZettlrのPDFテンプレートでは、完璧なPDFではなく、最大限の互換性を得ることを目標とし、基本的な機能のみを必要としているユーザーを混乱させないようにしています。
-
-### 5. コマンドを実行する
-
-事前準備が終わったので、ついにpandocコマンドを実行します。pandocの入力ファイルとテンプレートファイルには、いずれも一時ファイルが渡されます。目次を作るように設定していた場合は、目次を生成するようにpandocに指示します。これは、内部的にpandocはXeLaTeXコマンドを2回実行することを意味します。なぜなら、XeLaTeXコマンドはPDFを生成するのに、すべてのスペーシングが適用された状態で、見出しの実際の位置を把握する必要があるからです。それからもう一度ビルドすると、目次を含めた状態で出力することができます。
-
-> pandocコマンドのToCフラグを保持しておくことは非常に重要です。（設定ダイアログの高度な設定タブでコマンドを編集することができます。）なぜなら、もしこれを取り除いてしまうと、プロジェクトの設定に関わらず目次が出力されなくなってしまいます。
-
-コマンドが正常に実行されると、ファイルを開くようにOSに要求します。つまり、出力されたファイルをダブルクリックするのと同じことです。デフォルトのPDFリーダー（もしくはWordにエクスポートしたならWord文書のエディタ）でファイルが開かれます。pandocがエラー終了した場合はエラーダイアログが出力されます。そこからエラー内容をコピーしてGoogleで検索することができます。
-
->**注意**: LaTeXがエラーメッセージを返した場合、すべてのコンソール出力が表示されます。それは、多くの場合とても冗長で腹立たしいほど役に立たないものです。例えば、LaTeXパッケージが不足しているだけの場合でも、非常に長いエラーメッセージが表示され、その中から`File <package-name>.sty is missing`というメッセージを探す必要があります。カスタムテンプレートを使っているけれども、Markdownファイル中に他には何もLaTeXを使っていない場合に、それでもエラーが発生するなら、おそらくデフォルトテンプレートに問題があると思われます。そのような場合は、ご報告ください。それ以外のケースは、LaTeXかpandocのヘルプフォーラムで相談してみてください。
-
-## テンプレートを使い始める
-
-いまこそ、テンプレートを作りましょう！LaTeXテンプレートを作るには外部のエディタを使用することもできます。しかし、ZettlrからLaTeXテンプレートを編集することができれば素晴らしいと思いませんか？
-
-![Create TeX-Files by appending the appropriate extension](../img/create_tex_file.png)
-
-いい知らせがあります。新しいファイルを作成して、**.tex**の拡張子を付けると、MarkdownではなくLaTeXファイルが作成されます。このようなファイルはファイルリストで（メタデータの表示がオンの場合）、小さな`TeX`マークが表示され、Zettlrで編集することができます。
-
-![Zettlr with a TeX file open](../img/zettlt_tex_file.png)
-
-Zettlrは自動的に、LaTeXファイルであることを検出して、シンタックスハイライトをMarkdownからLaTeXのものに変更します。
-
-## 必須の内容
-
-通常のLaTeXファイルとは異なり、いくつかの内容が必ず書かれている必要があります。ファイルはZettlrからCiteproc、次にpandoc、その後LaTeXエンジンに受け渡されていくことを思い出してください。つまり、Zettlr固有の変数は全く使わないという場合でも、常に書くべきものが一つあります。
+While many variables are optional, there is one Pandoc variable that needs to be present at all times:
 
 ```
 $body$
 ```
 
-この変数はpandocでMarkdownファイルの中身を解析した結果に置換されます。もしこれを書かなければ文書の内容は捨てられてしまうので、文書の中身を出力したい場所に、この変数を書くことを忘れないようにしてください。
+Pandoc will replace this variable with the parsed contents of your Markdown file(s). If you leave it out, your content will not appear in the output file.
 
-> Zettlrのデフォルトテンプレートではpandocのデフォルトテンプレートから多くの変数を取り除いていますが、これらを自分自身で自由に含めることができます。pandocの変数とZettlrの変数をすべて使うことも、または取り除いてしまうことも可能です。これは、テンプレート機能の非常に強力な点です。
+## Activate your template
 
-## テンプレートをハックする
+In order to put your template to work, you must point Zettlr to it, via the PDF Defaults File in the Assets Manager. Navigate to the Assets Manager from Zettlr's Menu and select 'PDF' from the list of configurations ('Defaults Files') on the left. Next add `template: ` to the bottom of the configuration file. Note the space after the colon. Now Zettlr needs to know the path to your new template file. Locate your template file, which if you've created it in Zettlr, you may find by right-clicking on the file in Zettlr's file manager and select 'Show File'. Note that the name of the LaTeX file must end in `.tex`. Once you've found the file, you need to find it's location in your computer's directory structure – which is the file's 'path' or 'pathname'.
+1. On macOS, you can find the file's path by right-clicking the file in the Finder and hit the 'Option' key, which will change the 'Copy file' menu item to 'Copy as Pathname'. 
+2. On Ubuntu Linux, using the File Browser, you can find the path of the currently selected file using the keystroke combo __CTRL__ + __L__, which displays the file's path in the location bar.
+3. On Windows 10 and 11, select the file in File Explorer and use press and hold the __Shift__ on your keyboard while __Right-clicking__ on it. In the context menu that pops up, select “Copy As Path.” 
 
-ここからが楽しい部分です。Zettlrではエクスポートプロセスを細かく制御するためのオプションを、だんだんと増やしてきました。これは、Zettlrを使って面白いことができるということを意味します。例えば、設定ダイアログでpandocコマンドを固定のものに変更するだけで、エクスポートエンジンがファイルに対して行うすべてのこと（ソースファイルの解析を除く）を迂回することが可能です。
+Copy the pathname and paste it into the PDF Default File thus: `template: /path/to/your/template.tex`. 
 
-また、Zettlr変数の中でpandoc変数を使うこともできます。例えば、PDF作成者の設定にpandoc変数を含めることができます。すると、まずZettlrがファイルを処理しZettlr変数が置換され、次にpandocがその中にあるpandoc変数を置換します。
+![Adding Your LaTeX Template to PDF Defaults File](../img/zettlr_add_LaTeX_template.png)
 
-それから、本当にすべてをハックしたい場合は、もう一度pandocコマンドを見てみてください。よく見てみるとコマンドの先頭には`pandoc`と書かれています。この意味が分かるでしょうか？お分かりのように、pandocコマンドはpandocを実行するためだけのものではありません。**コンソールコマンドは何でも実行できます。**つまり、自作のスクリプトとロジックを実際のpandocコマンドの前後に実行することが可能です。
-
-Markdownの一時ファイルをカスタムスクリプトに渡して何らかの処理を行い、そして後でファイルを他の場所に移動したいとしましょう。設定ダイアログでpandocコマンドを次のように変更します。
-
-```shell
-pandoc "$infile$" -f markdown $outflag$ $tpl$ $toc$ $tocdepth$ $citeproc$ $standalone$ --pdf-engine=xelatex -o "$outfile$" && cp "$outfile$" /Users/zettlr/Desktop/Final.pdf
-```
-
-このコマンドは出力されたファイルを、架空のユーザー"zettlr"のデスクトップに移動し、"Final.pdf"にリネームします。(macOSでの実行を仮定しています)`cp`のような単純なシェルコマンドの代わりに、スクリプトを後から実行することもできます。本当に制限なく何でも可能です。
+Remember to leave a space between the colon and your pathname. Save the changes and enjoy your LaTeX template.
 
 ## 最後に
 
-Zettlrは、ファイルを使ってできるすべてのことの制御権をユーザーに渡せるように努力しています。このページで説明したことは始まりに過ぎません。私たち自身は挑戦していませんが、本当に素晴らしいことができるはずです。Zettlrの可能性を使って何か変わったことができるでしょうか？[Twitter](https://www.twitter.com/Zettlr)、[フォーラム](https://forum.zettlr.com/)、[Reddit](https://www.reddit.com/r/Zettlr)で私たちに教えてください。
+Zettlrは、ファイルを使ってできるすべてのことの制御権をユーザーに渡せるように努力しています。このページで説明したことは始まりに過ぎません。Zettlrの可能性を使って何か変わったことができるでしょうか？[Twitter](https://www.twitter.com/Zettlr)、[Discord](https://discord.com/invite/PcfS3DM9Xj)、[Reddit](https://www.reddit.com/r/Zettlr)で私たちに教えてください。

@@ -1,45 +1,34 @@
 # プロジェクト
 
-プロジェクトは複数ファイルの結合とエクスポートを簡単に行うための機能です。これにより、一つのプロジェクトを複数のファイルに分けて作業することが可能になります。複数のファイルに分けて作業し、最後に結合して一つのPDFファイルにエクスポートします。また、Zettlrのプロジェクト機能はPDFエクスポートを細かく制御することを可能にします。プロジェクトを使用すると、例えば、タイトルページを作ったり目次を生成したりするように設定することができます。
+プロジェクトは複数ファイルの結合とエクスポートを簡単に行うための機能です。これにより、一つのプロジェクトを複数のファイルに分けて作業することが可能になります。複数のファイルに分けて作業し、最後に結合して一つのPDFファイルにエクスポートします。さらに、プロジェクトは同時に複数のフォーマットにエクスポートすることができます。
 
 ![project_directory.png](../img/project_directory.png)
 
 ## プロジェクトを作成する
 
-Zettlrのプロジェクトは、基本的にはディレクトリに対する追加の設定項目です。つまり、任意のディレクトリをプロジェクトに「変換」することができます。プロジェクトにしたいディレクトリを右クリックして「プロジェクトを作成」を選択します。するとディレクトリが赤色に変わって、名前の左にプロジェクト機能が有効になっていることを表す鉛筆のアイコンが表示されます。次にディレクトリを右クリックすると、コンテキストメニューに「プロジェクト設定」、「プロジェクトをエクスポート」、「プロジェクトを取り除く」の3つの項目が追加されています。
+Zettlrのプロジェクトは、基本的にはディレクトリに対する追加の設定項目です。つまり、任意のディレクトリをプロジェクトに「変換」することができます。プロジェクトにしたいディレクトリを右クリックして「プロパティ」を選択します。表示されたポップアップでスイッチを切り替えるとプロジェクトが有効化されます。そうすると、ディレクトリが赤色に変わって、名前の左にプロジェクト機能が有効になっていることを表すアイコンが表示されます。次にディレクトリを右クリックすると、コンテキストメニューにプロジェクトをエクスポートするための項目が追加されています。
 
 ## プロジェクトでの作業
 
-プロジェクトディレクトリのコンテキストメニューで「プロジェクト設定」を選択すると、設定画面が表示されます。これはほとんど、単一のMarkdownファイルをエクスポートするためのPDF設定と同じものです。プロジェクトではPDFドキュメントの生成を細かく制御できることと、これらのPDF設定は対象のディレクトリのエクスポート時にのみ適用されるという2点の差があります。つまり、グローバルなPDF設定には手を付けることなく、プロジェクトに特異の設定をすることが可能です。
+After you have activated the project switch in the directory's properties, a few additional options will appear in that dialog. The first tab of the newly appearing panel allows you to select the formats into which the project will be exported. Select as many as you like. The options are the same as for single page exports.
 
-![settings_project.png](../img/settings_project.png)
+On the second tab, you can define glob patterns to filter which files will be included in the export. A glob pattern is simply a pattern that allows you to match only specific files. For instance, the pattern `**/*.md` will match all Markdown files, the two asterisks at the beginning mean to apply this filter recursively. If you would define `*.md`, then the project will not include files from subdirectories. You can also specify multiple file extensions, e.g. `**/*.{md,tex}`. Lastly, you can also match only files that have a specific name, e.g. `**/{Introduction,Conclusion,Chapter-1}.md`.
 
-プロジェクトの設定を簡単に見ていきます。まずは、メタデータタブです。
+> To learn more about glob patterns, a good starting point is the [corresponding Wikipedia article](https://en.wikipedia.org/wiki/Glob_(programming)).
 
-- **プロジェクトタイトル**: ファイル名、タイトル（タイトルページを作る設定の場合）、PDFタイトルに使用されます。デフォルトはディレクトリ名です。
-- **PDF作成者**: 著者を示すPDFメタデータフィールドに書き込まれます。
-- **PDFキーワード**: PDFドキュメントのエクスポート時に任意で設定できるキーワードです。
-- **タイトルページを生成する**: このチェックボックスがオンの場合、タイトルページを生成するようにLaTeXエンジンに命令します。タイトルページには、プロジェクトタイトルと現在日付と作成者名が書かれ、ドキュメントの最初のページに出力されます。
-- **目次を生成**: このチェックボックスがオンの場合、pandocに対し2ページ目に目次を生成するように命令します。（タイトルページを生成しない場合は、1ページ目になります。）
-- **次のレベルまで解析する**: このドロップダウンリストでは、どの見出しを目次に使用するかを選択します。デフォルトは「2」で、pandocに2段階目までの見出し（`##`と`#`の見出し）を使って目次を作るように命令します。4を設定すると1、2、3、4段階目の見出し（`#`、`##`、`###`、`####`）が使われます。これ以外の見出しはファイル中には存在したままですが、目次には現れなくなります。
-
-さらに、プロジェクトでカスタム`TeX`テンプレートを使用することもできます（これは例えば、投稿するジャーナルで指定のものなどです）。そして、通常の設定ダイアログのエクスポートタブで指定したデフォルトのCSLスタイルを上書きしてカスタムテンプレートを使用することもできます。
-
-現在のところ、ページタブとフォントタブは、プロジェクト設定と通常のPDF設定で共通の物となっています。これらについては、[PDF設定のページ](../reference/settings.md#pdf)を参照してください。
+We chose to implement glob patterns instead of an actual list of files since that was not just easier to implement, but it also allows you to specify beforehand what types of files you will create, and thus make it easier for you to add or remove files without having to worry about which ones will be included, and which ones won't.
 
 ## プロジェクトをビルドする
 
-プロジェクトをビルドすると、Zettlrは以下で説明するステップに従って最終的なPDFを生成します。プロジェクトのエクスポート時の動作について知るには、これらを注意して読んでください。
+Building projects in general works similar to single page exports, with two crucial differences: Projects can generate multiple files with one click, and they bundle multiple Markdown documents into a single output document. Zettlr will follow the following steps in collecting the information necessary to build a project:
 
-最初に、プロジェクトディレクトリを走査して、すべての内容を1次元の配列にします。つまり、**すべてのサブフォルダと、そこに含まれるファイルを、平坦化して単なるリストにします。**それは何のためでしょうか？ファイルリストを見てみてください。内部的には、ファイルをエクスポートする前に、Zettlrはファイルをプレビューペインのように正確に並べます。なので、プレビューリストを確認すれば、ファイルの順番を正確に把握することができます。意図的にこのようにしてあるので、論文の提出後に3つの章が抜けていることに気づくという悪夢のようなことは発生しません。
+最初に、プロジェクトディレクトリを走査して、すべての内容を1次元の配列にします。つまり、**すべてのサブフォルダと、そこに含まれるファイルを、平坦化して単なるリストにします。**それは何のためでしょうか？ファイルリストを見てみてください。内部的には、ファイルをエクスポートする前に、Zettlrはファイルをファイルリストと同一の順番に並べます。なので、ファイルリストを確認すれば、ファイルの順番を正確に把握することができます。意図的にこのようにしてあるので、論文の提出後に3つの章が抜けていることに気づくという悪夢のようなことは発生しません。
 
 > Zettlrは**すべての**サブディレクトリを使用することに注意してください。これは、巨大なプロジェクトで好きなだけ多くのサブディレクトリを使える利便性のためです。そして、プレビューリストがそのまま出力されます。（すべてのディレクトリ構造は単に無視されます。）そのため、2階層目のサブディレクトリにメモを詰め込んで、それらを最終原稿にどうやって取り込むか考えるような使い方はしないでください。エクスポート対象外のファイルを追加したい場合は、単にプロジェクトディレクトリ内に2つフォルダを作って、片方に作業用ファイルを入れてください。そして、もう一方をエクスポートするためのプロジェクトに変換します。
 
-ファイルが読み込まれると、それらを結合する前に小さな変更が加えられます。（pandocとLaTeXが画像を見つけられるようにパスが正規化されます。）それから、結合された巨大なファイルが一時フォルダに保存されます。
+Second, Zettlr will read the settings you have given the project itself and basically follow the same process as generating single-document-PDFs: Start up the exporter, provide it with your settings, and let Pandoc and LaTeX do their work.
 
-次に、Zettlrはプロジェクトの設定を読み込み、単一ファイルからPDFを生成するときと同様のプロセスに従います。エクスポート処理を起動し、設定と一時ファイルを受け渡し、pandocとLaTeXが動作できるようにします。
-
-エクスポートが完了すると、自動的にデフォルトのPDFプレビューアプリで開かれます。また、ファイルは自動的にプロジェクトディレクトリ内に保存されます。
+エクスポートが完了すると、ファイルは自動的にプロジェクトディレクトリ内に保存されます。
 
 > 特に巨大なプロジェクトでの目次の生成は、非常に時間が掛かる可能性があることに注意してください。目次を生成する場合、実際にはLaTeXは2回PDFをビルドします。1回目はPDFに変換後、どのページに見出しが現れるかを調べるため、そして2回目は実際に目次を含めてビルドが行われます。私が行ったテストでは、新しいWindows 10のコンピュータで、約150ページを出力するのにおよそ5分を要し、その間何も動作していないように見えました。したがって、pandocやLaTeXが文句を言わない間は動作し続けていますので、辛抱強くお待ちください。
 
@@ -47,4 +36,4 @@ Zettlrのプロジェクトは、基本的にはディレクトリに対する�
 
 ## プロジェクトを取り除く
 
-プロジェクトを取り除くには、対象のプロジェクトを右クリックして「プロジェクトを取り除く」を選択します。そうすると、ディレクトリがプロジェクトであることを示すための小さな設定ファイル（`.ztr-project`）が削除されます。したがって、プロジェクトを取り除くと、実際にはプロジェクトの設定を削除することになります。再びプロジェクトを作成すると、設定ファイルが再び作られますが、デフォルト設定となります。プロジェクトを取り除くと設定が削除され、再び設定しなおす必要があることを覚えておいてください。
+プロジェクトを取り除くには、ディレクトリのプロパティでプロジェクトのスイッチをオフにします。

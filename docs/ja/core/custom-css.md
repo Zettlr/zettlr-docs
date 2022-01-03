@@ -2,9 +2,11 @@
 
 > カスタムCSSは上級者向けの機能です。カスタマイズについては、公式にサポートしているわけではなく、すべて自己責任となります。何か問題が起きたら、Zettlrのデータディレクトリから`custom.css`を削除して、カスタムCSSをリセットしてください。
 
-CSS([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets))を利用して、アプリケーションの見た目を変更することができます。カスタムCSSエディタは、`Zettlr->カスタムCSS...`(macOSの場合)、または`ファイル->カスタムCSS...`(WindowsとLinuxの場合)にあります。
+CSS([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets))を利用して、アプリケーションの見た目を変更することができます。カスタムCSSエディタは、[アセットマネージャ](./assets-manager.md)の中にあります。
 
 CSSはよくわからないけれど、このページのガイドをただコピー＆ペーストするだけでは嫌だという場合は、簡単な[CSSチュートリアル](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)を見てみるという選択肢もあります。インターネット上には多くのチュートリアルがあり、ちょっとGoogleで検索すればチュートリアル動画なども見つかります。
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QcJGI_3adhc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Zettlr向けにCSSを書く
 
@@ -54,9 +56,11 @@ placeholderは、設定したフォントが見つからない場合に、同等
 }
 ```
 
-### ランダムなUnsplash画像を背景にする
+### カスタム背景画像
 
 以下のコードにしたがうと、起動するたびに異なる画像をエディタの背景にすることができます。画像は、素晴らしいフリー写真サイトであるUnsplash.comから取ってきます。これには、URLにアクセスするたびに異なる画像を返す`Source API`を使用します。[ページを表示して、何回かリロードする](https://source.unsplash.com/random)と試すことができます。追加のオプション(例えば、本日の画像を表示するなど)については、[Unsplash Source API reference](https://source.unsplash.com/)を参照してください。
+
+> You can also use a local image as a background image by replacing the corresponding line by `background-image: url('file:////absolute/path/to/your/file.jpg');`
 
 ```css
 /* Enter your custom CSS here */
@@ -97,16 +101,6 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 
 ![上記スニペットを使ったZettlrのプレビュー](../img/custom_css_pilcrow.png)
 
-### 集中モードでツールバーを隠す
-
-集中モードを、**すごく**集中できるモードにしたい人がいるかもしれません。ほとんどの人は書くことに集中するときも、すべてのツールとボタンにアクセスしたいだろうと思うので、Zettlrはデフォルトではツールバーを隠しません。それでも、集中モードでエディタのみを表示したいなら、以下のたった一行のCSSで、集中モード中のツールバーを隠すことができます。
-
-次のCSSの1行をカスタムCSSにペーストするだけで、ツールバーが非表示になります:
-
-```css
-#editor.fullscreen, .CodeMirror-fullscreen { top: 0px; }
-```
-
 ### テキストの最大幅を設定する
 
 大きなディスプレイを使うと、一行がとても長く表示されてしまいます。
@@ -127,3 +121,45 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 ```
 
 ![A preview of Zettlr using above snippet](../img/custom_css_maxwidth.png)
+
+For the distraction free mode, the CSS snippet needs to be modified as follows:
+
+```css
+#editor.fullscreen {
+  --side-margin-fullscreen: calc( 50vw - 30em ); 
+}
+  
+#editor.fullscreen .CodeMirror-fullscreen {
+  margin-left: var(--side-margin-fullscreen) !important;
+}
+    
+#editor.fullscreen .CodeMirror-fullscreen .CodeMirror-scroll { 
+  padding-right: var(--side-margin-fullscreen) !important; 
+}
+```
+
+By adjusting the calc functions for the two different modes, the same line width can be achieved with and without the file manager/sidebar. 
+
+### Change the Active Line Styling in Typewriter Mode
+
+You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
+
+*Light mode*
+
+```css
+body #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
+  border-top: 1px solid <top-border-hex-code>;
+  border-bottom: 1px solid <bottom-border-hex-code>;
+  background-color: <background-hex-code>;
+}
+```
+
+*Dark mode*
+
+```css
+body.dark #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body.dark .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body.dark .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
+  border-top: 1px solid <top-border-hex-code>;
+  border-bottom: 1px solid <bottom-border-hex-code>;
+  background-color: <background-hex-code>;
+}
+```
