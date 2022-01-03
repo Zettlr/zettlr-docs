@@ -50,3 +50,13 @@ If none of the above steps seem to help, you can ask the community. Sometimes, s
 If the community couldn't help you, or if it turns out while discussion the issue that it seems to be an actual bug, please open an issue on GitHub. Make sure to include as much information as possible so that we can quickly address the issue.
 
 > If you open an issue on GitHub, make sure you receive notifications. Almost always the developers have additional questions regarding your issue. The faster you respond, the faster we can ensure the issue is being fixed. If no one answers on your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
+
+## 6. Revert to a previous version
+
+Sometimes, an issue can hinder your productivity. Some users decide to revert to a previous version until we are able to fix the issue. In this section, we want to give you some advice on what could be important in such a situation and what could go wrong doing so.
+
+While our homepage only displays the latest stable release, you can always find all releases (even the antique ones!) on [our GitHub releases page](https://github.com/Zettlr/Zettlr/releases). Generally, you can install any version of Zettlr by simply running the installer with the corresponding version. There is no need to do any preparation. What will be replaced is simply the actual program, but not your data. The installer will always first remove any installed program (remember: not the data), and then install whichever version you downloaded.
+
+That being said: Sometimes, we update the configuration during updates. This only works one-way, so if you happen to revert from such a version _back_, your configuration might become corrupted. In that case, you need to close the app (if it didn't crash), remove the `config.json` file from your application data directory (see above), and then start Zettlr again. **Always back up your data before reverting to a previous version!!!**
+
+
