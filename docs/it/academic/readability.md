@@ -17,7 +17,7 @@ Questa modalità ha a disposizione quattro diversi algoritmi: la [Dale-Chall-for
 
 La formula Dale-Chall è stata creata durante le prime ricerche in scienze della formazione da Edgar Dale e Jeanne Chall. L'obiettivo era di quantificare la leggibilità dei testi per i bambini in età scolare. Utilizza una lista di 3000 parole facili da capire per un bambino americano di quarta elementare e dà un punteggio che approssimativamente va da 0 a 10, che grossolanamente indica gli anni di istruzione necessari per capire un testo. Ciò significa: se una frase ha punteggio 10, hai bisogno di una laurea per capire il testo, mentre una frase con punteggio 1 può essere compresa dai principianti.
 
-**Dovresi usare l'indice Dale-Chall, se** stai scrivendo per un pubblico vasto, poiché l'algoritmo privilegia frasi brevi e concise senza forzarti a eccessi ridicoli.
+**Dovresti usare l'indice Dale-Chall, se** stai scrivendo per un pubblico vasto, poiché l'algoritmo privilegia frasi brevi e concise senza forzarti a eccessi ridicoli.
 
 ### L'Indice Gunning-Fog
 
@@ -29,14 +29,14 @@ Il Gunning-Fog è stato creato ai tempi delle prime riviste e delle facili lettu
 
 Con l'abbattersi dei prezzi dei computer, le statistiche computer-assistite divennero una possibilità diffusa per processare enormi quantità di dati e cavarne fuori una valida misura. L'indice Coleman/Liau proviene da quest'epoca ed è un algoritmo che non si basa soltanto sul conteggio delle sillabe o elenchi di "parole difficili". Pertanto, l'indice Coleman/Liau è estremamente accurato nella sua implementazione in Zettlr. Come gli altri, dà un punteggio che approssima gli anni di istruzione formale necessari per capire una frase. In più, il Coleman/Liau dà risultati ragionevoli e non ti obbliga necessariamente a scrivere frasi brevi.
 
-**Dovresi usare l'indice Coleman/Liau, se** hai bisogno di una misura accurata della leggibilità di qualsiasi testo. Non funziona bene con le frasi di una sola parola, ma fornisce punteggi comprensibili anche a testi più difficili da capire.
+**Dovresti usare l'indice Coleman/Liau, se** hai bisogno di una misura accurata della leggibilità di qualsiasi testo. Non funziona bene con le frasi di una sola parola, ma fornisce punteggi comprensibili anche a testi più difficili da capire.
 
 
 ### Automated Readability Index (ARI)
 
 L'Automated Readability Index segue immediatamente il Coleman/Liau, poiché usa una formula più recente per calcolare i punteggi di leggibilità basandosi su semplici analisi statistiche. É il più "clemente" degli algoritmi e fornisce risultati che non ti portano a riscrivere metà del tuo testo a causa di un'evidenziatura in rosso.
 
-**Dovresi usare l'Automated Readability Index, se** stai scrivendo testi più impegnativi come paper universitari, poiché ti darà punteggi più bassi anche per alcune frasi difficili. 
+**Dovresti usare l'Automated Readability Index, se** stai scrivendo testi più impegnativi come paper universitari, poiché ti darà punteggi più bassi anche per alcune frasi difficili. 
 
 ### Un appunto sulle "parole difficili"
 
