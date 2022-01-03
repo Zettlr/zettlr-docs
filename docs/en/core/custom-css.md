@@ -101,18 +101,6 @@ In case you want to see where your linefeeds are, you can display the pilcrow sy
 
 ![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
 
-### Hide the Toolbar in Distraction Free
-
-Some people prefer the distraction free mode to be _really_ distraction-free. Zettlr does not hide the toolbar by default, because most people want to have access to all the tools and buttons even when writing distraction free. Still, if you belong to the group of people who prefer distraction free to be only the editor itself, rejoice! Hiding the toolbar in distraction free mode is as easy as one single line of CSS!
-
-Simply paste the following line of CSS into the Custom CSS dialog, and from then on the toolbar will always be hidden:
-
-```css
-body.show-menubar #editor.fullscreen, #editor.fullscreen, .CodeMirror-fullscreen {
-  top: 0px;
-}
-```
-
 ### Set a maximum width for the text
 
 If you have a large screen, you may find that lines of your text are very long.
