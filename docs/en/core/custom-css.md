@@ -134,6 +134,24 @@ If you wish to have shorter lines in the editor, with margins on both sides, you
 
 ![A preview of Zettlr using above snippet](../img/custom_css_maxwidth.png)
 
+For the distraction free mode, the CSS snippet needs to be modified as follows:
+
+```css
+#editor.fullscreen {
+  --side-margin-fullscreen: calc( 50vw - 30em ); 
+}
+  
+#editor.fullscreen .CodeMirror-fullscreen {
+  margin-left: var(--side-margin-fullscreen) !important;
+}
+    
+#editor.fullscreen .CodeMirror-fullscreen .CodeMirror-scroll { 
+  padding-right: var(--side-margin-fullscreen) !important; 
+}
+```
+
+By adjusting the calc functions for the two different modes, the same line width can be achieved with and without the file manager/sidebar. 
+
 ### Change the Active Line Styling in Typewriter Mode
 
 You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
