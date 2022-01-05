@@ -13,32 +13,32 @@ extra_css:
 nav:
   - ようこそ: index.md
   - 最初のステップ:
-    - インストール: install.md
-    - Pandocのインストール: installing-pandoc.md
+    - セットアップ: install.md
+    - ポータブル版: portable.md
     - LaTeXのインストール: installing-latex.md
     - 最初の一歩: get-started.md
     - ご協力ください: get-involved.md
     - よくある質問: faq.md
+    - トラブルシューティング: troubleshooting.md
   - 概念:
-    - ファイル管理: concepts/roots.md
+    - ファイル管理: concepts/workspaces.md
     - コンテキスト: concepts/context.md
     - WYSIWYM: concepts/wysiwym.md
-  - ガイド:
-    - Zettlrでノートを取る: guides/guide-notes.md
-    - ZettlrをZettelkastenシステムとして使う: guides/guide-zettelkasten.md
-    - ZettlrをIDEとして使う: guides/guide-ide.md
   - 主要機能:
     - エディタ: core/editor.md
     - ドキュメントタブ: core/tabs.md
-    - ファイルリスト: core/file-list.md
+    - ファイルマネージャ: core/file-manager.md
+    - アセットマネージャ: core/assets-manager.md
+    - デフォルトファイル: core/defaults-files.md
+    - カスタムCSS: core/custom-css.md
+    - スニペット: core/snippets.md
     - オートコレクトとマジッククォート: core/autocorrect.md
     - 検索: core/search.md
     - インポート: core/import.md
     - エクスポート: core/export.md
     - テーブル編集: core/tables.md
-    - カスタムCSS: core/custom-css.md
     - ローカライゼーション: core/localisation.md
-    - サイドバー: core/attachments.md
+    - サイドバー: core/sidebar.md
     - YAML Frontmatter: core/yaml-frontmatter.md
     - 印刷とプレビュー: core/print-preview.md
     - 数式: core/math.md
