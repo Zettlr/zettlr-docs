@@ -1,28 +1,47 @@
-## LaTeXのインストール
+# Installing LaTeX
 
-ZettlrのインポートとエクスポートはPandocを使用して行っていますが、PDFのエクスポートの場合はPandocからさらにLaTeXが呼び出されます。LaTeXもPandocと同じくフリーでオープンソースなソフトウェアパッケージです。PandocはMarkdownをLaTeXファイルに変換することができますが、LaTeXファイルをPDFに変換するためには別のプログラムが必要です。
+Zettlr uses Pandoc, a small program that can convert documents into other formats, for importing and exporting your files. Zettlr also features a built-in PDF exporter. However, if you are an advanced user or would like to customise your PDF exports further, you may want to install a LaTeX-distribution on your computer.
 
-> LaTeXディストリビューションは、通常、LaTeXソースファイルを簡単に取り扱うためのアプリケーションに付随してしているものです。LaTeXコードを自分で書く予定がないという場合は、そのような巨大なパッケージをインストールする必要はありません。必要最小限のコンパイラ(xetexバイナリ)を含んだ、小さなパッケージも用意されています。
+LaTeX is an advanced typesetting language that allows you to do more or less anything with your files. When you export a document to PDF using such a LaTeX distribution, you have many, many more options to customise your exported files than with the built-in exporter.
+
+> LaTeX distributions come in two flavors: A "full" installation featuring a host of graphical programs for writing TeX directly, and a "minimal" installation that only contains the actual compilers. Zettlr is happy with only a minimal installation (because it just needs the compiler), but if you want to fiddle around with LaTeX more you are free to also install the full package.
 
 ## Windows
 
-Windowsでは、MikTexディストリビューションをダウンロードしてインストールすることができます。[こちらからダウンロード](https://miktex.org/download)してください。MikTexには必要なバイナリのみ入っており、余分なプログラムは含まれていないので、お勧めです。
-
-LaTeXコードを取り扱うための追加のツールが必要な場合は、[TexLive](https://www.tug.org/texlive/)があります。しかし、このLaTeXディストリビューションには、LaTeX
-ファイルを直接取り扱うためのアプリケーションがいくつか含まれているため、かなり巨大です。
+* The minimal setup: MikTeX ([download](https://miktex.org/download))
+* The full setup: TeX Live ([download](https://www.tug.org/texlive/))
 
 ## macOS
 
-macOSでは、[MacTex](https://www.tug.org/mactex/morepackages.html)ディストリビューションがおすすめです。**BasicTex**ディストリビューションをダウンロードするようにしてください。こちらは通常のインストーラよりも小さくなっています(WindowsにおけるMikTexとTexLiveの関係と同様です)。
-
-LaTeXコードを取り扱うための追加のツールが必要な場合は、[MacTexのfullディストリビューション](https://www.tug.org/mactex/mactex-download.html)をインストールしてください。
+* The minimal setup: Basic TeX ([download](https://www.tug.org/mactex/morepackages.html))
+* The full setup: MacTeX ([download](https://www.tug.org/mactex/mactex-download.html))
 
 ## Linux
 
-Linuxでは、パッケージマネージャから直接インストール可能なLaTeXパッケージが存在しているはずです。一般的には、XeTeXパッケージをインストールすると良いでしょう。もしかすると、XeTeXが依存するベースパッケージのインストールも必要かもしれません。インストールは、もしGUIアプリケーションがあればそれを使うか、コマンドラインから行うこともできます。
+Linux distributions commonly have several LaTeX packages available to install directly from your software manager. There are also minimal and full packages. We list options for common distributions below.
+
+> It doesn't really matter which of the versions you install, but there is one requirement: You need to install the `xetex` binary, since that is the compiler that Zettlr uses. If in doubt, consult your distribution's manual for more information on how to correctly install TeX.
+
+### Debian/Ubuntu
+
+The minimal setup with the XeLaTeX compiler:
 
 ```shell
-$ sudo apt install texlive-base texlive-xetex # Debianベースのディストリビューションの場合
+$ sudo apt install texlive-base texlive-xetex
 ```
 
-インストール方法に関しては、ご使用のディストリビューションのマニュアルを参照してください。`xetex`バイナリがインストールされたことを確認してください。
+The full setup:
+
+```shell
+$ sudo apt install texlive-full
+```
+
+### Fedora/RHEL
+
+Fedora offers three distributions, basic, medium, and full. Install one of these:
+
+```shell
+$ sudo dnf install texlive-scheme-basic
+$ sudo dnf install texlive-scheme-medium
+$ sudo dnf install texlive-scheme-full
+```
