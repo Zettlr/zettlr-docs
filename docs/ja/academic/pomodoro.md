@@ -1,41 +1,36 @@
 # ポモドーロタイマー
 
-たくさん書く人には、より良い時間の管理方法が必要となるかもしれません。Zettlrに搭載されたポモドーロタイマーが、あなたの助けとなります。
+文章を大量に書く人なら、長時間にわたって文章を書き続けて、執筆疲れを経験したことがあるでしょう。そんな人は、Francesco Cirilloによって考案された[ポモドーロテクニック](https://francescocirillo.com/pages/pomodoro-technique)を使ってみましょう。これは、長時間の作業を、短い時間に分割して休憩を挟むというものです。これにより、頭をリフレッシュさせ、疲労を防止することができます。次のように実行します:
 
-画面右上、ツールバー内にある丸いアイコンをクリックすると、ポモドーロタイマーを使用できます。
+1. 作業 (25分ほど)
+2. 小休憩 (5～10分ほど)
+3. 上記を繰り返し (3回)
+4. 大休憩 (25～30分ほど)
+5. ステップ1に戻って繰り返す
 
-![Pomodoro Timer](../img/pomodoro_init.png)
-
-ポモドーロタイマーとは何かを知らない人は、[公式サイト](https://francescocirillo.com/pages/pomodoro-technique)を参照してください。
+Zettlrに搭載されたポモドーロタイマーを使って、このプロセスを簡単に実行できます。
 
 ## ポモドーロタイマーを使用する
 
-ポモドーロタイマーを開始する前に、いくつか設定できる項目があります。
+Access the Pomodoro timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
 
-赤い数字は、何分間**作業**するかを示しています。デフォルトは25分です。
+The Pomodoro timer, has 3 core settings that can be altered.
 
-黄色の数字は、作業と作業の間にある**短い休憩**の長さを表しています。デフォルトは5分です。
+- The length of the **Work**, **Short Break** and **Break** duration's can be adjusted by entering the time (in minutes) in their respective text boxes.
+- After each phase, a **Sound Effect** is played, which can be chosen using the drop down menu (either Glass, Digital Alarm and Chime).
+- The **volume of the chosen sound** is adjusted using the volume slider (fully left is no sound). You can either drag or click to choose the desired level (this will preview the sound).
 
-緑の数字は、作業を4つ行うごとにある**長い休憩**の長さを表しています。デフォルトは20分です。
+> This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
 
-次に、それぞれのフェーズの終了時にサウンドを再生するかどうかを選択できます。スライダーで音量を調節してください(0%に設定するとサウンドが再生されなくなります)。
 
-> これはシステムの音量ではありません。つまり、システム音量が20%であれば、Zettlr内で音量を100%に設定しても、20%の音量で再生されます。
+![Timer.png](images/Timer.png)
 
-**開始**ボタンをクリックするとタイマーが開始します。それから、丸いアイコンが現在のフェーズの色(赤、黄、緑)で塗りつぶされていきます。全体が塗りつぶされると、次のフェーズが開始します。
+Finally, you can also choose which sound Zettlr will play when a phase ends: The known, soft glass sound, an alarm clock, or a chime.
 
-タイマーを**停止**する、もしくは現在の**状態**を確認するには、丸いアイコンをもう一度クリックします。小さなポップアップが表示され、残り時間、現在のフェーズ、停止ボタンが表示されます。
+Click on **Start** to begin the timer. Then, the circle will be filled with the color of the current phase (either red, yellow, or green). Once it is full, the next phase will begin.
 
-![Pomodoro Timer during Run](../img/pomodoro_run.png)
+To **Stop** the timer or simply review the current **status** of the timer, click the circle. A small popup shows the remaining amount of time for the current phase, the type of the current phase and will give the option to stop session.
 
-ポモドーロタイマーは以下のようなサイクルで実行されます:
+![Pomodoro Timer running](images/pomodoro_ran.png)
 
-1. 作業
-2. 短い休憩
-3. 作業
-4. 短い休憩
-5. 作業
-6. 短い休憩
-7. 作業
-8. 長い休憩
-9. _ステップ1に戻る_
+

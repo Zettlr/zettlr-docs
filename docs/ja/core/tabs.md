@@ -1,19 +1,17 @@
 # ドキュメントタブ
 
-Zettlrには複数のドキュメントを同時に開くためのタブ機能があります。
+Zettlrには複数のドキュメントを同時に開くためのタブ機能があります。If you work with more than one document regularly, you will certainly love this feature! All open tabs are saved when you quit the app, and they are restored upon start (if the files still exist, that is). This way they work pretty much like browser tabs.
 
-このタブは、他のアプリケーションのタブ機能と似ている部分もありますが、例えばブラウザのタブとは異なる機能もあります。
+## Tab Behavior
 
-アプリケーションを再起動しても、タブは前回の状態に復元されます。
+There are two kinds of people: Those who like to have many tabs open at once, and those who don't. Zettlr pays tribute to both: In the preferences you can tell Zettlr to avoid opening new tabs if possible.
 
-## 遷移性
+If you enable that setting, Zettlr will always attempt to close the currently active tab and replace it with a new one whenever you open a file. However, if the file in your active tab is edited and contains unsaved changes, Zettlr will still open a new file in a new tab. To force Zettlr to open a new tab regardless of this setting, simply click with your **middle mouse button**. If you are using a trackpad, the context menu allows you to open files in a new tab as well.
 
-タブには、ファイル名が普通のフォントで表示される「通常」タブと、斜体で表示される「遷移」タブの2種類があります。
-遷移タブでファイルに変更を加えると、遷移性がなくなり通常タブになります。
+If you disable that setting, Zettlr will always open any new file in a new tab and never close your old ones.
 
-遷移タブがアクティブな状態で新しいドキュメントを開こうとすると、新しいタブを開いて表示するのではなく現在のタブの内容を置き換えて表示されます。
-一方、通常タブで新しいドキュメントを開く際には、新しいタブに表示されます。
+> You can close tabs either by clicking the "x"-icon or by clicking a tab with your middle mouse button.
 
-![An example of transient tabs](../img/transient_tabs.png)
+## The tab context menu
 
-例えば複数のドキュメントを流し読みする際に、ドキュメントを読み込むごとに同じタブを上書きする形で表示することができるので、大変便利です。
+Every tab gives you some options for working with your tabs: You can either close the current tab, or you can close all tabs. You can also close every tab except the one you clicked.

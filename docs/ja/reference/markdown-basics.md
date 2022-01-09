@@ -27,10 +27,10 @@ Markdownの開発がJohn Gruberによって2004年に開始されたとき、そ
 
 今日では、Markdownの文法にはいくつかの実装が併存しています。特筆すべきものは、
 
+- **Pandoc Markdown**: [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)は、テーブル、脚注、メタデータなどの文法を追加しました。アカデミックな文章を書く場合に有用なMarkdownの変種です。
 - **MultiMarkdown**: 脚注、テーブル、いくつかのメタデータに関する拡張を行いました。
 - **Markdown Extra**: いくつかの文法を再び拡張しました。
 - **GitHub Flavoured Markdown**: ホスティングプラットフォームであるGitHub(Zettlrも、ここにホスティングされています)によって作られた方言であり、最もよく使われている方言の一つです。
-- **Pandoc Markdown**: Pandoc Markdownは、GitHub flavoured Markdownのスーパーセットであり、いくつかの要素が追加されています。
 - **CommonMark**: 可能な限り多くの要素を、あいまいさを回避して取り入れようとしています。注目すべきは、CommonMarkは未だに脚注の仕様を含んでいないことです。
 
 ## ZettlrとMarkdown
@@ -170,4 +170,5 @@ GitHub flavored Markdownの拡張([仕様](https://github.github.com/gfm/)に「
 
 ## Markdownについてのリソース
 
-Markdownの**すべて**を学びたいですか？それは素晴らしい！すべての要素について書かれた資料が、[Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/)にあります。クリーンであいまいさのないMarkdownを書きたいなら、[CommonMarkの仕様](https://spec.commonmark.org/current/)を参照してください。また、GitHub Flavoured Markdownについての「本」を、[ここで読むことができます](https://gitbookio.gitbooks.io/markdown/content/)。
+Markdownの**すべて**を学びたいですか？それは素晴らしい！すべての要素について書かれた資料が、[Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/)にあります。クリーンであいまいさのないMarkdownを書きたいなら、[CommonMarkの仕様](https://spec.commonmark.org/current/)を参照してください。また、GitHub Flavoured Markdownについての「本」を、[ここで読むことができます](https://gitbookio.gitbooks.io/markdown/content/)。 For those engaged in scholarly writing, the [Pandoc manual's section on it's extended Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) is worth reading.
+

@@ -2,9 +2,11 @@
 
 Zettlrのセットアップが終わったら、すぐに使い始めたいことでしょう。Zettlrの初回起動時には、特別なフォルダがDocumentsフォルダーにコピーされます。そこには、対話的なチュートリアルが入っていて、アプリケーションを使い始める最初のステップへと導いてくれます。指示に従っていけば、このドキュメント中の特定のセクションへのリンクもあり、アプリケーションの詳細を学ぶことができます。
 
-このドキュメンテーションを読んでも解決しない疑問がある場合は、[よくある質問](faq.md)を確認した後、[Reddit](https://www.reddit.com/r/Zettlr/)のコミュニティ、それから[forum](https://forum.zettlr.com/)で質問してください。また、アプリケーションの使い方や関連ツールについての動画を、[YouTubeチャンネル](https://www.youtube.com/c/Zettlr/)に時々アップロードしています。
+このドキュメンテーションを読んでも解決しない疑問がある場合は、[よくある質問](faq.md)を確認した後、[Reddit](https://www.reddit.com/r/Zettlr/)、[Discord](https://discord.com/invite/PcfS3DM9Xj)、[GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions)のコミュニティで質問してください。また、アプリケーションの使い方や関連ツールについての動画を、[YouTubeチャンネル](https://www.youtube.com/c/Zettlr/)に時々アップロードしています。
 
-> 対話的チュートリアルの中では、PandocとLaTeXのインストールを勧めています。Zettlrのファイルインポートとエクスポート機能は、これらのプログラムに依存しています。Pandocが無い場合、HTML形式のエクスポートのみ可能でインポートは一切できません。LaTeXが無い場合、PDFファイルへのエクスポートを行うことができません。しかし、インポートやエクスポート機能を使うつもりがないのであれば、これらのプログラムは不要です。必要となればいつでもインストールすることが可能です。
+[こちらのリンクからZettlr HowToプレイリストを開くと](https://www.youtube.com/playlist?list=PL2ydvDwV-1u5ncnkxQWZhbHQdwpY2fx5f)、解説動画を見ることができます。
+
+> 付属の対話的チュートリアルでは、コンピュータにLaTeXをインストールすることを勧めています。LaTeXは、Zettlrで高度なPDFファイル出力を行うために必要です。LaTeXが無い場合、基本的なPDFファイルのエクスポートしか行うことができません。高度なPDF出力を行うつもりがないならLaTeXは不要です。後で必要になったときに、いつでもインストールすることができます。
 
 ![An impression of the application on first start on macOS](img/first_start.png)
 

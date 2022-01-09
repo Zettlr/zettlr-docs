@@ -32,6 +32,9 @@ IDの問題が解決すると次の問題が発生します。前述のように
 
 リンクから実行される二つ目の機能は、選択中ディレクトリに対するグローバル検索です。これは単に、リンクの中身を検索欄に貼り付け、Enterを押して検索を開始します。このようにして完全一致したファイルを開くだけでなく、そのファイルにリンクした他のファイルを見つけることができます。`[[<your-id>]]`という書式のリンクがあった場合、IDに対応するファイルが開かれるとともに、そのファイルにリンクしているすべてのファイルが検索されます。
 
+> **Tip**: It is possible to utilize the standard markdown link syntax to set a title for an internal link. For example, `[My text]([[<my-doc-id>]])` will render as if it was a regular link. When you click on it once, it will enter edit mode and reveal the title text and the internal link. Then, you can `Cmd/Ctrl + click` the internal link to trigger its functionality. This 'hack' has two caveats, though: 1) When exporting your document, this may create empty links (depending on your export preferences); 2) If you `Cmd/Ctrl + click` the link (without clicking on it once to reveal the internal link), Zettlr will display an error saying that it could not open the it.
+![](../img/internal_linking_tip.gif)
+
 ### タグ付け
 
 タグ付けは内部検索の中では最も簡単かもしれません。`Cmd`または`Ctrl`を押しながらタグをクリックすると、現在のディレクトリでそのタグが付けられたすべてのファイルが検索されます。タグは`#keyword`のような形式ですが、これはMarkdownの他の書式では使われていません。このようなタグを使ったアプローチにより、Zettlrでは完璧なタグ付けシステムを構築できています。

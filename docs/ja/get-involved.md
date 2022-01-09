@@ -6,12 +6,14 @@ Zettlrをより良いアプリケーションにしたいとお考えですか�
 
 Zettlrは、インターネット中で互いに助け合う活発なコミュニティを有しています。あなたが抱いた疑問を投げかけることができる場所を、以下の一覧に示します。
 
-* [Zettlr user forum](https://forum.zettlr.com) — 一般的な質問、ワークフローやZettlrのコンセプトに関する議論、カスタムテーマの共有まで、このサイトで投稿してください。
-* [Zettlr subreddit](https://www.reddit.com/r/Zettlr) — コミュニティ内のRedditorを対象としたサイトです。
+* [Zettlr Discord](https://discord.com/invite/PcfS3DM9Xj) — The Zettlr Discord is a place for the Discordians (there doesn’t appear to be an official term).
+
+* [Zettlr subreddit](https://www.reddit.com/r/Zettlr) — The Zettlr subreddit is meant for the Redditors in the community.
 * [公式Twitterアカウント](https://www.twitter.com/Zettlr) — アプリケーションの更新をリアルタイムに確認することができます。これが、私たちの活動を定期的に知らせる唯一の場所です。さらに、ほとんどの議論もここで行われます。質問がある場合は、ここに投げてください。
 * [公式Facebookページ](https://fb.me/Zettlrapp) — ツイッターのアカウントを持っていない場合、ここからメッセージを送ることができます。
 * [YouTubeチャンネル](https://www.youtube.com/c/Zettlr) — 視覚からの情報を好む方は、こちらで入門用の動画をいくつか見ることができます。
-* [The GitHub issue tracker](https://github.com/Zettlr/Zettlr/issues) — アプリケーションをより良くしようとする私たちの努力の結晶です。バグの指摘や新機能の提案を行うならこちらです。しかしながら、特にユーザのワークフローや新機能に関わる質問については、**まず、フォーラムやRedditで話し合うのが最善です。**
+* [Zettlr user forum](https://forum.zettlr.com) — (廃止)
+* [The GitHub issue tracker](https://github.com/Zettlr/Zettlr/issues) — アプリケーションをより良くしようとする私たちの努力の結晶です。バグの指摘や新機能の提案を行うならこちらです。しかしながら、特にユーザのワークフローや新機能に関わる質問については、**まず、GitHubやRedditで話し合うのが最善です。**
 
 ## ユーザの貢献
 
@@ -41,79 +43,76 @@ Zettlrは、インターネット中で互いに助け合う活発なコミュ�
 
 ## 開発環境のセットアップ
 
-すべて準備ができたら、お好きなIDEとターミナルを起動してください。Zettlrは[NodeJS](https://nodejs.org/)スタックに基づいているので、現行のNodeサーバとNodeパッケージマネージャがシステムにインストールされている必要があります。Zettlrでは[Yarn](https://yarnpkg.com/)の利用を推奨します。
+すべて準備ができたら、お好きなIDEとターミナルを起動してください。Zettlrは[NodeJS](https://nodejs.org/)スタックに基づいているので、現行のNodeリリースとNodeパッケージマネージャがシステムにインストールされている必要があります。Zettlrでは[Yarn](https://yarnpkg.com/)を使用します。
 
 続いて、初期化を行います。
-
-**Yarnを使用**
 
 ```bash
 $ git clone https://github.com/Zettlr/Zettlr.git
 $ cd Zettlr
-$ yarn install
-$ cd source
-$ yarn install
+$ yarn install --frozen-lockfile
 ```
 
-`source`ディレクトリで行う、2回目の`install`は、[electron-builder](https://www.electron.build/)のtwo-directories-structureを使うために必要です。
-
-> `install`コマンドにより、すべてのアセットの初回のプレコンパイルが実行されるので、その後、`start`コマンドを実行すれば、すぐにアプリケーションを起動することができます。しかし、これらのアセットを編集した場合は、変更点を反映するために再度コンパイルする必要があります。開発用コマンドの説明を読んで、必要なコマンドを探してください。
+> We have listed a much more comprehensive setup and development guide in [the repository's README](https://github.com/Zettlr/Zettlr#readme) file. In case, the README file will be more up to date since it's closer to the source code. If any of below's commands doesn't work, please look there first, and open a PR to update this documentation page!
 
 ### 開発用コマンド
 
-ここでは、アプリケーションの開発中に使用できるすべてのコマンドを紹介します。これらは、`package.json`中に定義されていて、使用するパッケージマネージャに合わせて、`npm run`または`yarn`に続けて入力することで実行することができます。コマンドは、リポジトリのベースディレクトリで実行してください。
+ここでは、アプリケーションの開発中に使用できるすべてのコマンドを紹介します。これらは、`package.json`中に定義されていて、`yarn`の後に続けて入力することで実行することができます。コマンドは、リポジトリのベースディレクトリで実行してください。
 
-#### `build:quick`
+#### `start`
 
-アプリケーションをローカルでビルドしますが、パッケージは生成しません。使用中のOSに応じてプレビルドされたバイナリが、`release`ディレクトリに格納されます。
+Starts `electron-forge`, which will build the application and launch it in development mode. This will use the normal settings, so if you use Zettlr on the same computer in production, it will use the same configuration files as the regular application. This means: be careful when breaking things. In that case, it's better to use `test-gui`.
 
-#### `csl:refresh`
+#### `package`
 
-[Citation Style Language](https://citationstyles.org/)(CLS)のファイルをダウンロードし、`source/main/assets/csl-locales`と`source/main/assets/csl-styles`のディレクトリに、それぞれ格納します。更新の有無をリポジトリに問い合わせるために、必要に応じて実行してください。
+Packages the application, but not bundle it into an installer. Without any suffix, this command will package the application for your current platform. To create specific packages (may require running on the corresponding platform), the following suffixes are available:
 
-#### `handlebars`
+- `package:mac`
+- `package:win`
+- `package:win-arm`
+- `package:linux-x32`
+- `package:linux-x64`
 
-[Handlebars.js](https://handlebarsjs.com/)のテンプレートファイルの再コンパイルを行い、プレコンパイル済みのテンプレートを`source/common/assets/handlebars`に配置します。
+The resulting application packages are stored in `./out`.
+
+#### `release:{platform}`
+
+Packages the application and then bundles it into an installer for the corresponding platform. To create such a bundle (may require running on the corresponding platform), one of the following values for `{platform}` is required:
+
+- `release:mac`
+- `release:win`
+- `release:win-arm`
+- `release:linux-x32`
+- `release:linux-x64`
+- `release:linux` (shorthand for calling `yarn release:linux-x32 && yarn release:linux-x64`)
+
+The resulting setup bundles are stored in `./release`.
+
+> Please note that, while you can `package` directly for your platform without any suffix, for creating a release specifying the platform is required as electron-builder would otherwise include the development-dependencies in the `app.asar`, resulting in a bloated application.
 
 #### `lang:refresh`
 
 4つのデフォルト翻訳を[Zettlr Translate](https://translate.zettlr.com/)からダウンロードします。ファイルは、`source/common/lang`ディレクトリに格納されます。現在のところ、デフォルトの言語は、ドイツ語（ドイツ）、英語（USA）、英語（UK）、フランス語（フランス）です。
 
-#### `less`
+> Please note, that this command is intended for an automated workflow that runs from time to time on the repository to perform this action. This means: Do **not** commit updated files to the repository. Instead, the updated files will be downloaded whenever you `git fetch`.
 
-[LESS](http://lesscss.org/)ソースファイルからCSSを再生成し、`source/common/assets/css`に配置します。LESSソースを編集するたびに、このコマンドを実行して変更内容をアプリケーションに反映する必要があります。**注意：開発規模が大きい場合は、LESSファイルの変更を監視して自動的に再コンパイルするほうが便利かもしれません。その場合は`watch`コマンドを使用してください。**
+#### `csl:refresh`
+
+This downloads the [Citation Style Language](https://citationstyles.org/) (CSL) files with which the application is shipped, and places them in the `static/csl-locales`- and `static/csl-styles`-directories respectively.
+
+> Please note, that this command is intended for an automated workflow that runs from time to time on the repository to perform this action. This means: Do **not** commit updated files to the repository. Instead, the updated files will be downloaded whenever you `git fetch`.
 
 #### `lint`
 
-設定に従って[ESLint](https://eslint.org/)を実行し、結果をベースディレクトリの`eslint_report.htm`に出力します。[Atom](https://atom.io/)や[Visual Studio Code](https://code.visualstudio.com/)のようなアプリケーションでは、バックグラウンドで自動的にESLintが実行されますが、プルリクエストを作成する前には、このコマンドを念のために実行してください。
+[ESLint](https://eslint.org/)を実行します。[Atom](https://atom.io/)や[Visual Studio Code](https://code.visualstudio.com/)のようなアプリケーションでは、バックグラウンドで自動的にESLintが実行されますが、プルリクエストを作成する前には、このコマンドを念のために実行してください。
 
-#### `release:this`
-
-このコマンドは基本的には`build:quick`と同じですが、使用しているプラットフォーム向けのパッケージ作成を追加で行います。使用しているOSに応じて`.deb`、`.rpm`、`.dmg`、`.exe`形式のパッケージが出力されます。
-
-#### `release:app-image`
-
-[AppImage](https://appimage.org/)インストーラを明示的に作成します。32bit、64bitの両方のバージョンがコンパイルされます。
-
-#### `release:linux`
-
-Linux向けのインストーラパッケージを明示的に作成します。`.deb`と`.rpm`の2つが作成されます。
-
-#### `release:mac`
-
-macOS向けのインストーラを明示的に作成します。**注意：このコマンドはmacOSでのみ動作します。**
-
-#### `release:win`
-
-Windows向けのインストーラを明示的に作成します。`electron-builder`は32bitと64bitの両方のバージョンのアプリケーションを含めるため、このインストーラは他のインストーラよりも明らかに巨大です。**注意：このコマンドはWindowsベースのOS、もしくはLinuxディストリビューションで実行できます。[WINE](https://www.winehq.org/)の開発者がライブラリを64bitにポートしない限り、このコマンドはmacOS Catalina以降では失敗します。**
+> This command will run automatically on each Pull Request to check your code for inconsistencies.
 
 #### `reveal:build`
 
 このコマンドは、[reveal.js](https://revealjs.com/)プレゼンテーションのエクスポート機能のビルドで必要となるソースファイルを再コンパイルします。[Pandoc](https://pandoc.org/)がプレゼンテーションを出力する処理の性質上、ZettlrはPandocの出力を修正する必要があるため、これらのファイルを事前にコンパイルしておきます。
 
-#### `start`
-
-このコマンドは、Electronを起動しアプリケーションを立ち上げます。開発中に頻繁に使うことになるコマンドです。
+> Please note, that this command is intended for an automated workflow that runs from time to time on the repository to perform this action. This means: Do **not** commit updated files to the repository. Instead, the updated files will be downloaded whenever you `git fetch`.
 
 #### `test`
 
@@ -121,103 +120,114 @@ Windows向けのインストーラを明示的に作成します。`electron-bui
 
 #### `test-gui`
 
-テストディレクトリを`./resources`に作成し、シンプルな設定でZettlrを起動します。これにより、実際の自分のファイルに触れることなく、ファイルを破壊する可能性のあるテストを実行することができます。
+Use this command to carefree test any changes you make to the application. This command will start the application as if you ran `yarn start`, but will provide a custom configuration and a custom directory.
 
-#### `watch`
+**The first time you start this command**, pass the `--clean`-flag to copy a bunch of test-files to your `./resources`-directory, create a `test-config.yml` in your project root, and start the application with this clean configuration. Then, you can adapt the `test-config.yml` to your liking (so that certain settings which you would otherwise _always_ set will be pre-set without you having to open the preferences).
 
-LESSソースの変更を監視するプロセスを起動します。このプロセスが起動している間、LESSファイルに変更があるたびにビルドが実行され、実行中のElectronアプリケーションで`F5`を押してGUIを更新すると、すぐに変更点を確認することができます。
+Whenever you want to reset the test directory to its initial state (or you removed the directory, or cloned the whole project anew), pass the flag `--clean` to the command in order to create or reset the directory. **This is also necessary if you changed something in `test-config.yml`**.
 
-#### `wp:dev`
+You can pass additional command-line switches such as `--clear-cache` to this command as well. They will be passed to the child process.
 
-`resources`ディレクトリの[Vue.js](https://vuejs.org/)アセットをコンパイルします。[Webpack](https://webpack.js.org/)に対して開発モードでコンパイルするように指示するため、ログ出力が多くなりデバッグが容易になります。リリースように出力する場合は`wp:prod`を実行してください。
+> Attention: Before first running the command, you **must** run it with the `--clean`-flag to create the directory in the first place!
 
-#### `wp:prod`
+### Directory Structure
 
-resourcesディレクトリのVueアセットをコンパイルします。Webpackに対してプロダクションモードでコンパイルするように指示するため、ログ出力が少なくなり、生成されたスクリプトの実行速度が上がります。Vueファイルをデバッグする場合は、`wp:dev`を実行することをおすすめします。
+Zettlr is a mature app that has amassed hundreds of directories over the course of its development. Since it is hard to contribute to an application without any guidance, we have compiled a short description of the directories with how they interrelate.
 
-### コマンドラインフラグ
+```
+.
+├── resources                      # Contains resource files
+│   ├── NSIS                       # Images for the Windows installer
+│   ├── icons                      # Icons used to build the application
+│   ├── screenshots                # The screenshots used in this README file
+├── scripts                        # Scripts that are run by the CI and some YARN commands
+│   ├── assets                     # Asset files used by some scripts
+│   └── test-gui                   # Test files used by `yarn test-gui`
+├── source                         # Contains the actual source code for the app
+│   ├── app                        # Contains service providers and the boot/shutdown routines
+│   ├── common                     # Common files used by several or all renderer processes
+│   │   ├── fonts                  # Contains the font files (note: location will likely change)
+│   │   ├── img                    # Currently unused image files
+│   │   ├── less                   # Contains the themes (note: location will likely change)
+│   │   ├── modules                # Contains renderer modules
+│   │   │   ├── markdown-editor    # The central CodeMirror markdown editor
+│   │   │   ├── preload            # Electron preload files
+│   │   │   └── window-register    # Run by every renderer during setup
+│   │   ├── util                   # A collection of utility functions
+│   │   └── vue                    # Contains Vue components used by the graphical interface
+│   ├── main                       # Contains code for the main process
+│   │   ├── assets                 # Static files (note: location will likely change)
+│   │   ├── commands               # Commands that perform user-actions, run from within zettlr.ts
+│   │   └── modules                # Main process modules
+│   │       ├── document-manager   # The document manager handles all open files
+│   │       ├── export             # The exporter converts Markdown files into other formats
+│   │       ├── fsal               # The File System Abstraction Layer provides the file tree
+│   │       ├── import             # The importer converts other formats into Markdown files
+│   │       └── window-manager     # The window manager manages all application windows
+│   ├── win-about                  # Code for the About window
+│   ├── win-custom-css             # Code for the Custom CSS window
+│   ├── win-defaults               # Code for the defaults file editor
+│   ├── win-error                  # The error modal window
+│   ├── win-log-viewer             # Displays the running logs from the app
+│   ├── win-main                   # The main window
+│   ├── win-paste-image            # The modal displayed when pasting an image
+│   ├── win-preferences            # The preferences window
+│   ├── win-print                  # Code for the print and preview window
+│   ├── win-quicklook              # Code for the Quicklook windows
+│   ├── win-stats                  # Code for the general statistics window
+│   ├── win-tag-manager            # Code for the tag manager
+│   └── win-update                 # The dedicated update window
+├── static                         # Contains static files, cf. the README-file in there
+└── test                           # Unit tests
+```
 
-Zettlrには、いくつかのコマンドラインフラグがあり、開発バージョンと最終ビルドバージョンのいずれでも使用することができます。アプリケーション起動時にフラグを与えてください。開発中は`yarn start --flag`とすれば使用することができます("flag"を実際のフラグに置き換えてください)。
+### On the Distinction between Modules and Service Providers
 
-#### `--config <configFile.json>`
+You'll notice that Zettlr contains both "modules" and "service providers". The difference between the two is simple: Service providers run in the main process and are completely autonomous while providing functionality to the app as a whole. Modules, on the other hand, provide functionality that must be triggered by user actions (e.g. the exporter and the importer).
 
-このフラグにより、普段と異なる設定ファイルを一時的に使用することができます。設定ファイルは、Zettlrの要求する正しいフォーマット(ConfigProviderクラスのコードを参照)である必要があります。しかし、例えば、設定したい項目だけを含むような最小限の内容でもかまいません。設定ファイル中にZettlrの必要とする設定項目が無い場合は、それぞれデフォルト値が設定されます。これは、例えばテスト目的で、アプリケーションに読み込むファイルツリーを簡単に入れ替えたいような場合に、非常に便利です。`test-gui`コマンドでは、`--config`フラグを利用して、読み込まれるファイルを安全に触ることのできるものと入れ替えています。
+### The Application Lifecycle
 
-> 注意: このフラグに渡すパスは、絶対パスである必要があります。相対パスを渡すと意図した動作をしない可能性があります(Good: `--config /Users/name/Documents/custom-config.json`; Bad: `--config ../resources/my-custom-config.json`)。
+Whenever you run Zettlr, the following steps will be executed:
+
+0. Execute `source/main.ts`
+1. Environment check (`source/app/lifecycle.ts::bootApplication`)
+2. Boot service providers (`source/app/lifecycle.ts::bootApplication`)
+3. Boot main application (`source/main/zettlr.ts`)
+4. Load the file tree and the documents
+5. Show the main window
+
+And when you shut down the app, the following steps will run:
+
+1. Close all windows except the main window
+2. Attempt to close the main window
+3. Shutdown the main application (`source/main/zettlr.ts::shutdown`)
+4. Shutdown the service providers (`source/app/lifecycle.ts::shutdownApplication`)
+5. Exit the application
+
+During development of the app (`yarn start` and `yarn test-gui`), the following steps will run:
+
+1. Electron forge will compile the code for the main process and each renderer process separately (since these are separate processes), using TypeScript and webpack to compile and transpile.
+2. Electron forge will put that code into the directory `.webpack`, replacing the constants you can find in the "create"-methods of the window manager with the appropriate entry points.
+3. Electron forge will start a few development servers to provide hot module reloading (HMR) and then actually start the application.
+
+Whenever the app is built, the following steps will run:
+
+1. Electron forge will perform steps 1 and 2 above, but instead of running the app, it will package the resulting code into a functional app package.
+2. Electron builder will then take these pre-built packages and wrap them in a platform-specific installer (DMG-files, Windows installer, or Linux packages).
+
+Electron forge will put the packaged applications into the directory `./out` while Electron builder will put the installers into the directory `./release`.
+
+### コマンドラインスイッチ
+
+Zettlrの実行ファイルには、いくつかのコマンドラインスイッチがあり、目的に応じて使用することができます。
 
 #### `--clear-cache`
 
-このフラグを渡すと、強制的にFSALのキャッシュをクリアすることができます。これは、ファイルシステムの基本的な構造を変更しようとする際に非常に便利です。アプリケーションは常にキャッシュを参照しているため、ファイルを編集しない限りは、追加したプロパティが存在しないような振る舞いをします。また、予想外の問題が発生した場合にも役立つかもしれません。
+This will direct the File System Abstraction Layer to fully clear its cache on boot. This can be used to mitigate issues regarding changes in the code base. To ensure compatibility with any changes to the information stored in the cache, the cache is also automatically cleared when the version field in your `config.json` does not match the one in the `package.json`, which means that, as long as you do not explicitly set the `version`-field in your `test-config.yml`, the cache will always be cleared on each run when you type `yarn test-gui`.
 
-### プロジェクト構造
+#### `--config=path`
 
-技術的な内容に移ります、プロジェクトの構造です。ほとんどの点において、Electronアプリケーション開発のベストプラクティスに従った構造をしています。しかしながら、このアプリケーションは**巨大**です。それゆえ、いくつかのガイダンスが必要となります。
-
-まずは、ディレクトリ構造を抑えましょう。（これは網羅的なリストではありませんが、必要になるフォルダとファイルはほとんどカバーしています。）
-
-```
-Zettlr                  // ルートディレクトリ
-|
-+ release               // アプリケーションをビルドすると作成されます。
-|
-+ resources             // 開発用のあらゆる物が格納されています。リリースには含まれません。
-|  |
-|  + less               // CSSを生成するソースファイルが格納されています。
-|  |
-|  + templates          // ダイアログとポップアップ用のテンプレートが格納されています。
-|  |
-|  + vue                // Vueコンポーネントが格納されています。
-|
-+ scripts               // 上述の開発用スクリプトが格納されています。
-|
-+ source                // 実際のアプリケーションソースが格納されています。
-|  |
-|  + common             // 共通的に使われるファイルです。
-|  |  |
-|  |  + assets          // CSS, フォント, HBランタイム, 画像, JS, テンプレート。
-|  |  |
-|  |  + lang            // デフォルト言語とi18nモジュール。
-|  |  |
-|  |  + util            // アプリケーション全体で使われるユーティリティ関数。
-|  |  |
-|  |  + data.json       // アプリケーション用の静的データ。
-|  |  |
-|  |  + validate.js     // バリデーションモジュール
-|  |  |
-|  |  + validation.json // バリデーションルール
-|  |
-|  + main               // メインプロセスのファイル
-|  |  |
-|  |  + assets          // メインプロセス用asset
-|  |  |
-|  |  + commands        // 実行可能なすべてのコマンド
-|  |  |
-|  |  + modules         // モジュール
-|  |  |
-|  |  + providers       // アプリケーション用のサービスプロバイダー
-|  |
-|  + print              // 印刷ウィンドウのソースコード
-|  |
-|  + quicklook          // QuickLookのソースコード
-|  |
-|  + renderer           // メインウィンドウのコード
-|  |  |
-|  |  + assets          // 描画処理でのみ使われるasset
-|  |  |  |
-|  |  |  + codemirror   // CodeMirrorプラグイン
-|  |  |  |
-|  |  |  + context      // コンテキストメニューで必要なすべてのファイル
-|  |  |  |
-|  |  |  + toolbar      // ツールバーのテンプレート
-|  |  |
-|  |  + dialog          // アプリケーションのすべてのダイアログ用のモジュール
-|  |  |
-|  |  + util            // 描画処理でのみ使われるユーティリティ関数
-|  |
-|  + main.js            // アプリケーションのエントリーポイント
-|
-+ CHANGELOG.md          // すべての変更の詳細履歴
-```
+Use this switch to temporarily override the default configuration file stored in your AppData-equivalent folder. This path should be absolute. In case you need to provide a relative path, the base for resolving the path will be: either the binary's directory name (when the app is packaged), or the repository root (when the app is not packaged). If the path contains spaces, don't forget to escape it in quotes.
 
 ### 用語解説
 
@@ -227,45 +237,39 @@ Zettlr                  // ルートディレクトリ
 
 いずれもファイルシステム上のフォルダの意味で使われます。Zettlrでは、なるべく「ディレクトリ」を使うようにしていますが、フォルダも同じ意味で使われています。
 
-#### サイドバー(Sidebar)
+#### File Manager
 
-読み込まれたルートディレクトリを表示するための、GUI上で左に表示されるサイドバーを意味しています。
+Refers to the left sidebar in the GUI that contains your workspaces and files.
 
-#### ルート(root)（ディレクトリ/ファイル）
+#### Sidebar
 
-アプリケーションで表示できる最上位のディレクトリを意味します。ファイルシステム全体のルートのことではありません。例えば、Linuxで`/home`がルートレベルのディレクトリであるのに対して、**Zettlrの文脈では**、`/home/user/Zettlr`がルートディレクトリとして読み込まれているなら、それをルートディレクトリと呼びます。その中に含まれているディレクトリやファイルはルートではありません。
+Refers to the right sidebar in the GUI that contains contextual information regarding to the current file and folder.
 
-#### 添付ファイルサイドバー(Attachment Sidebar)
+#### Workspace
 
-追加のファイルや参考文献を表示するための、GUI上で右側に表示されるサイドバーを意味しています。この名称に満足しているわけではないので、改善案があればお知らせください。
+A workspace is a top-level directory that is visible in the app. This does _not_ mean a root of your overall file system. Example: While `/home` is a root-level directory on a Linux installation, `/home/user/Zettlr` is a root directory _in the context of Zettlr_, if it is loaded as a workspace.
 
-#### モジュール(Module)
+#### Standalone/Root Files
 
-基本的には[NPM](https://www.npmjs.com/get-npm)のモジュールの定義に従っていますが、メインプロセス内には、ファイルシステム抽象化レイヤやエクスポート機能などの「サブモジュール」も存在しています。これらも、独立したモジュールとしてAPIを介してアプリケーションから使用されているため、モジュールとして取り扱われています。
+A standalone or root file is a Markdown or code file that is not contained within any of the loaded workspaces. As such, it will be displayed in the file manager on top of your workspaces.
 
-#### サービスプロバイダ(Service Provider)
+#### Markdown Files vs. Code Files
 
-サービスプロバイダとは、起動中にインスタンス化され、アプリケーションの終了まで実行され続けるクラスのことです。これらは、`global`オブジェクトに何らかの機能オブジェクト(ある種の内部API)を加えることで、その機能を提供します。例えば、ログ出力を可能にするログプロバイダは、`global.log.verbose('A message!')`のように使用できます。他には、`global.config.get('config.value')`で設定値にアクセスすることができます。
+Internally, Zettlr makes a crucial distinction between three file types: A Markdown file, a code file, and any other file. A Markdown file is denoted by its file extension, and could be `.md`, `.markdown`, or `.txt`. A "code file" is one of the few code files which are supported by Zettlr, e.g. YAML files ( `.yaml` or `.yml`) or JSON files (`.json`). Any file that has a different file extension does not count as either a Markdown file or a code file and is internally called an "other" file (formerly: attachment).
 
-#### コマンド(Command)
+#### Module
 
-Zettlrのエコシステムにおいてコマンドとは、一般的にソフトウェアエンジニアリングの文脈で使われる用語と同じ意味ですが、特別なクラス`commands`が存在ます。コマンドと言えば多くの場合、`source/main/commands`ディレクトリに存在するコマンドのことです。これらは、ユーザがファイルを開いたりエクスポートしたり保存したりなどの明示的な操作を行うと実行されるコマンドです。
+While Zettlr generally follows the definition of modules as seen on [NPM](https://www.npmjs.com/get-npm), there are also "sub-modules" within the main process, such as the File System Abstraction Layer or the exporter. These are treated as modules because these are self-sustaining modules that are being accessed by the app and expose an API that the app uses. Furthermore, we bundle certain functionality into modules if it is being used in more than one place.
 
-#### ウィンドウ(Window)
+#### Service Provider
 
-Zettlrの文脈では、ウィンドウとはアプリケーションが開いている文字通りのウィンドウを意味するにとどまりません。一般的に、Electronアプリケーションの構造に起因して、ウィンドウはメインプロセスの1つのコントロールクラス、各ウィンドウに対して起動されるレンダラープロセスごとに1つのコントロールクラス、付随してウィンドウにロードされるHTMLファイルで構成されます。
+A service provider is a class which is instantiated during boot and then keeps running until the app is shut down. These providers provide functionality by attaching certain functional objects (some sort of internal API) to the `global` object. One example is the log provider which can be used for logging, e.g., `global.log.verbose('A message!')`. Another one is the configuration, which can be accessed similarly, e.g., `global.config.get('config.value')`.
 
-#### ダイアログ(Dialog)
+Some service providers also broadcast messages to all windows using the `broadcastIpcMessage` function in case their internal state has changed. Most service providers furthermore provide an API between the main process and the renderer processes so that windows can request information from them, using `ipcMain.handle` event-listeners.
 
-Zettlrにおいてダイアログとは、メインウィンドウに重ねて情報を表示したり、設定フォームを提供したりするウィンドウのことです。例えば、設定ダイアログや、タグ管理、タグクラウド、PDF設定などです。
+#### Command
 
-#### ポップアップ(Popup)
-
-ポップアップはダイアログに似ていますが、ページ全体に重なるのではなく、参照要素を示す矢印が付いた小さなウィンドウを画面に表示します。インタラクティブではないtippy.jsによるツールチップと混同しないでください。
-
-#### 通知(Notification)
-
-通知とは、画面に重ねてアプリケーションの右上に表示される通知のことです。
+While a command within the Zettlr ecosystem mainly denotes the thing you'd generally associate with the term in a software engineering context, there is one class of `commands` that is special. Mostly, if we talk about commands, we mean one of the commands in the `source/main/commands` subdirectory. These commands are called whenever the user performs an action that does something, such as opening a file, exporting, or saving the file.
 
 #### ツールバー(Toolbar)
 
@@ -273,11 +277,11 @@ Zettlrにおいてダイアログとは、メインウィンドウに重ねて�
 
 #### エディタ(Editor)
 
-エディタとはZettlrのメインウィンドウに表示されるCodeMirrorインスタンスのことです。カスタムCSSダイアログや、QuickLookウィンドウに開かれた他のCodeMirrorインスタンスはエディタとは呼びません。
+エディタとはZettlrのメインウィンドウに表示されるCodeMirrorインスタンスのことです。アセットマネージャや、QuickLookウィンドウに開かれた他のCodeMirrorインスタンスはエディタとは呼びません。後者を意味している場合は、そのことを明示します。
 
 #### QuickLook
 
-macOSのQuickLook機能と同様に、小さなウィンドウでファイルをプレビューすることができます。編集は行えません。
+macOSのQuickLook機能と同様に、ファイルをプレビューすることができるウィンドウです。編集は行えません。
 
 #### 開発者ツール(DevTools / Development Tools)
 

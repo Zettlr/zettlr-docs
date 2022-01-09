@@ -1,14 +1,16 @@
 # 検索
 
-文章を書くためにMarkdownを使うことの大きな利点として、オペレーティングシステムに内蔵された検索システム(Windowsのコルタナ、macOSのSpotlight、LinuxのDashなど)を使って検索可能であることが挙げられます。しかし、プログラムを離れずに何かを探すことができれば大変便利です。そこで、検索機能の出番です。Zettlrには、基本的に3つに区別される検索機能があります。左側のリストで異なるディレクトリを選択するたびに動作する高速フィルタリング機能、文書内検索、それから、グローバル検索です。
+文章を書くためにMarkdownを使うことの大きな利点として、オペレーティングシステムに内蔵された検索システム(Windowsのコルタナ、macOSのSpotlight、LinuxのDashなど)を使って検索可能であることが挙げられます。しかし、プログラムを離れずに何かを探すことができれば大変便利です。そこで、検索機能の出番です。Zettlrには、基本的に3つに区別される検索機能があります。左側のリストで異なるディレクトリを選択するたびに動作する高速フィルタリング機能、文書内検索、それから、全文検索です。
 
 ## ファイルのフィルタリング
 
-一つ目の機能については、すでに色々なところで述べています。プレビューリストには、現在のディレクトリと、そのサブディレクトリに含まれるファイルのみが表示されます。異なるディレクトリを選択して絞り込んでいくと、すべてのファイルが表示されている状態から、見たいファイルだけが表示された状態にすることができます。あるいは、ルートディレクトリを選択すれば、すべてのファイルを一覧することができます。
+一つ目の機能については、すでに色々なところで述べています。ファイルリストには、現在のディレクトリと、そのサブディレクトリに含まれるファイルのみが表示されます。異なるディレクトリを選択して絞り込んでいくと、すべてのファイルが表示されている状態から、見たいファイルだけが表示された状態にすることができます。あるいは、ワークスペースのルートを選択すれば、すべてのファイルを一覧することができます。
+
+You can also filter this list further using the text field on top of the file list.
 
 ## ファイル内検索
 
-現在開いているファイル内で、特定の語句や単語を検索したい場合は、`Cmd/Ctrl+F`を押します。虫メガネアイコンのすぐ下に、小さなポップアップが表示され、検索と置換を行うことができます。何かを入力してから、`Enter`を押すたびに見つけた箇所に移動します。`ESC`を押すか、ポップアップ外をクリックすると検索を終了します。
+現在開いているファイル内で、特定の語句や単語を検索したい場合は、`Cmd/Ctrl+F`を押します。The search will open in the top-right corner of the editor. Just type something and hit `Enter` repeatedly to cycle through the matches. Click the small "x" button to close the search.
 
 > **ヒント**: 強力な正規表現を使って検索することもできます。Zettlrはデフォルトでは、普通の検索を行いますが、正規表現を検出すると(検索文字列が半角スラッシュで囲まれていると)、正規表現検索を行います。Zettlrは正規表現を検出すると、入力しやすいように検索文字列の表示を等幅フォントに変更します。例えば、すべての数字を検索したい場合は、`/\d+/`を検索します。[JavaScriptの正規表現について、さらに知りたい場合はこちら。](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91)
 
@@ -18,39 +20,43 @@
 
 もちろん、Quicklookウィンドウでも検索を行うことができます。検索したいQuicklookをクリックしてから`Cmd/Ctrl+F`を押してください。(クリックしてフォーカスを移動しておかないと、メインウィンドウでの検索になってしまいます。)
 
-## グローバル検索
+## 全文検索
 
-実は、最も重要な検索はグローバル検索です。これは、`Cmd/Ctrl+Shift+F`で開始することができます。ツールバーの検索欄にフォーカスが移動し、ルートディレクトリ以下のファイルの内、現在のペインに表示されているファイルを対象に検索を行うことができます。つまり、適切なディレクトリを選択することで(フィルタリング機能を利用してください)、どのファイルを検索対象とするかを決定することができます。
+The most important aspect of searching is, in fact, the full-text search which you can open by pressing `Cmd/Ctrl+Shift+F`. The full text search is located where the file manager is and can be opened using the three-way toggle to the left of the toolbar. The full text search provides you with advanced functionality to get to the info you need as fast as possible.
 
-**すべての**ファイルを同時に検索したい場合は、ルートディレクトリを選択してください。特定のディレクトリのみを検索したい場合は、検索前に選択しておいてください。ほとんどの場合は、探している文章がどこにあるかわかっていると思います。例えば、科学研究で引用されている可能性のある特定の問題について検索する場合、すべての考えやアイディアに対して検索するのではなく、科学関連のテキストの抜粋や論文を保存しているディレクトリに限定して検索することができます。
+![The full text search with explanations](../img/full_text_search.png)
 
-検索は非常に強力な機能です。検索したいものを正確に指し示すために、いくつかの演算子を使用することができます:
+The full-text search features three inputs:
+
+* The **query field** contains the actual search terms you are looking for
+* The second input allows you to **restrict your search to a specific directory**
+* The last text field is only visible when a search is running, which allows you to **further filter your search results**
+
+### The Search Results
+
+The search results contain a few indicators that help you make sense of where the info is coming from, and what the file actually contains. In the header of each file result you fill first see either the filename, the `title` property, or the first heading of level 1, depending on your settings. Below that, you will always find the full path from the workspace root to the file in question. Furthermore, each search result has a relevancy score (previously the "heatmap"), which tells you how relevant Zettlr thinks this search result is: Gray means less relevant, blue means relevant, and green means very relevant. Lastly, you can collapse the search results of that file by clicking the arrow on the right-hand side.
+
+Each search result will list you all the lines in which your search terms were found. The actual search results are emphasised while the rest of the line is displayed to provide you with the context of the result. In front of each line is the line-number. Upon clicking a single search result line, Zettlr will automatically open the file (if not already done) and jump to the corresponding line.
+
+> Too many results? You can also toggle the display of all results using the corresponding button, and then only expand those which deserve a second look.
+
+### Composing a Query
+
+Composing a query works similar to other search engines which you are already familiar with. You can make use of several different operators to specify exactly what you are searching for:
 
 * **AND演算子:** `Boat Ship`と検索すると、"boat"と"ship"の**両方を**含むファイルのみが表示されます。半角スペースが"AND"と解釈されます。
 * **OR演算子:** `Boat | Ship`と検索すると、"boat"と"ship"の**いずれか**を含むファイルが、すべて表示されます。
 * **完全一致演算子:** `"Boat Ship"`と検索すると、これに完全一致する文字列を含むファイルを検索します。
 * **NOT演算子:** `!Boat`と検索すると、その文字列を**含まない**ファイルのみが表示されます。完全一致検索と合わせて使うこともでき、`!"Boat Ship"`とすると"Boat Ship"に完全一致する文字列を含むファイルが除外されます。
 
-> **注意**: AND演算子、OR演算子、完全一致演算子は結果の重み付けをするような動作をします。つまり、すべての検索条件を満たすファイルは明るい色で表示され、一部の条件のみを満たすファイルは暗い色で表示されます。一方で、NOT演算子の条件を満たすファイルは検索結果から完全に除外されます。例えば`boat ship`を検索すると、いずれかの単語のみを含むようなファイルも（低い重み付けで）引っかかるのに対し、`!boat ship`を検索すると"boat"という単語を含むファイルは完全に除外されます。
+> **注意**: AND演算子、OR演算子、完全一致演算子は結果の重み付けをするような動作をします。つまり、すべての検索条件を満たすファイルは関連性が高いと考えられ、一部の条件のみを満たすファイルは関連性が青もしくはグレーで表示されます。一方で、NOT演算子の条件を満たすファイルは検索結果から完全に除外されます。例えば`boat ship`を検索すると、いずれかの単語のみを含むようなファイルも（低い重み付けで）引っかかるのに対し、`!boat ship`を検索すると"boat"という単語を含むファイルは完全に除外されます。
 
 もちろん、これらの演算子を組み合わせて使うこともできます。`"Boat Ship" | vessel captain`と検索すると、"Boat Ship"または"vessel"を含み、加えて"captain"も含むファイルを検索します。
 
 検索する単語が一部しか思い出せない場合でもご安心ください。Zettlrは、検索文字列を単語の一部に含むものも見つけようとします。つまり、"trooper"を検索すると、"Stormtrooper"や"Troopership"にもマッチします。"Boat Ship"は"Steamboat Ship"にもマッチします。また、**検索は大文字小文字を無視します。**そのため、ちょっとした入力ミスの存在を気にする必要はありません。
 
-Zettlrは検索中、検索欄の右に検索インジケーターを表示します。それが完了すると、すべてのファイルに色が付きます。より明るい緑色であるほど、より関連したファイル(つまり、より高品質の関連情報がファイルに存在する)となります。これは、一種の**検索結果のヒートマップ**であり、検索結果中の関連性の高いファイルを簡単に見分けることができます。
-
-> Zettlrは、検索文字列をまったく含まないファイルは表示しません。ディレクトリも同様です。
+Zettlrは検索中、検索欄の右に検索インジケーターを表示します。検索に時間がかかりすぎている場合は、中断することもできます。
 
 より良い結果を得るため、Zettlrは、それぞれの検索の種類ごとに重み付けをしています。例えば、タイトル中に完全一致する文字列を含んでいるなら、そのファイルは非常に関連性が高いことを示していると思われます。したがって、Zettlrは、これを他の一致よりも重視します。同様に、検索結果の大文字小文字が不一致のものよりも、一致しているものに高い点数を付けます。
 
 検索に一致した正確な場所を見つけるには、ファイルを選択してください。すると、自動的にすべての一致箇所が明るい黄色でハイライトされ、簡単に見つけることができます。また、ウィンドウの一番右のスクロールバーにも、文書中の検索結果の位置を示すマーカーが表示されます。
-
-## グローバル検索を終了する
-
-他の操作を行っても、ほとんどの場合グローバル検索は終了しません。これにより、意図せず検索が終了してしまうことを心配しないで、検索結果を見て回ることができます。これは特に、検索に時間がかかるような巨大なファイルリストの場合に役に立ちます。とはいえ、グローバル検索を終了する方法も存在します。
-
-以下のいずれかで、検索を終了し、元のようにすべてのファイルを表示します:
-
-* 検索欄にフォーカスした状態で`ESC`を押す。(`Cmd/Ctrl+Shift+F`で、再度フォーカスできます。)
-* 検索欄の右端の`x`をクリックする。
-* ツリービューで他のディレクトリを選択する。
