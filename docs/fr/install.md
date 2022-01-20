@@ -39,13 +39,13 @@ L'application recherche de nouvelles mises à jour chaque fois que vous démarre
 ## Réinitialiser l'application 
 
 Zettlr gère les préférences utilisateur et les métadonnées locales (mots-clefs définis par l'utilisateur, emplacement du répertoire racine, paramètres, etc.)  
-Dans certains cas, vous pouvez vouloir réinitialiser, lire ou modifier ces données (par exemple, lors une installation défectueuse ou d'une erreur dans la sélection du chemin de base, ...)
+Dans certains cas, vous pouvez vouloir réinitialiser, lire ou modifier ces données (par exemple, lors une installation défectueuse ou d'une erreur dans la sélection du chemin de base…)
 
 Ces données sont situées dans le _chemin de données de l'application_, dont l'emplacement dépend de votre système d'exploitation :
 
-* **Windows:** `C:\Users\<your username>\AppData\Roaming\zettlr`
-* **macOS:** `/Users/<your username>/Library/Application Support/zettlr` (ouvrir une fenêtre du Finder, maintenir la touche "Alt" enfoncée tout en ouvrant le menu "Aller", et cliquer sur l'entrée "Bibliothèque" qui apparaît)
-* **Linux:** `/home/<your username>/.config/zettlr`
+* **Windows :** `C:\Users\<your username>\AppData\Roaming\zettlr`
+* **macOS :** `/Users/<your username>/Library/Application Support/zettlr` (ouvrir une fenêtre du Finder, maintenir la touche "Alt" enfoncée tout en ouvrant le menu "Aller" et cliquer sur l'entrée "Bibliothèque" qui apparaît)
+* **Linux :** `/home/<your username>/.config/zettlr`
 
 Si vous souhaitez complètement réinitialiser votre installation locale de Zettlr, suivez les étapes suivantes :
 
