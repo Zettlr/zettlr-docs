@@ -170,5 +170,5 @@ GitHub flavored Markdownの拡張([仕様](https://github.github.com/gfm/)に「
 
 ## Markdownについてのリソース
 
-Markdownの**すべて**を学びたいですか？それは素晴らしい！すべての要素について書かれた資料が、[Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/)にあります。クリーンであいまいさのないMarkdownを書きたいなら、[CommonMarkの仕様](https://spec.commonmark.org/current/)を参照してください。また、GitHub Flavoured Markdownについての「本」を、[ここで読むことができます](https://gitbookio.gitbooks.io/markdown/content/)。 For those engaged in scholarly writing, the [Pandoc manual's section on it's extended Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) is worth reading.
+Markdownの**すべて**を学びたいですか？それは素晴らしい！すべての要素について書かれた資料が、[Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/)にあります。クリーンであいまいさのないMarkdownを書きたいなら、[CommonMarkの仕様](https://spec.commonmark.org/current/)を参照してください。また、GitHub Flavoured Markdownについての「本」を、[ここで読むことができます](https://gitbookio.gitbooks.io/markdown/content/)。学術論文の執筆に取り組んでいる人は、[PandocマニュアルにあるマークダウンのPandoc拡張の説明](https://pandoc.org/MANUAL.html#pandocs-markdown)を読むと役に立つでしょう。
 
