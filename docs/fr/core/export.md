@@ -30,4 +30,4 @@ Si vous ne vous inquiétez pas d'avoir des fichiers exportés parmi vos fichiers
 
 ## Personnaliser les exports
 
-Les modèles par défaut fournis par Zettlr sont conçus pour donner une bonne première impression tout en étant compatibles, mais à mesure que vous maîtriserez mieux Zettlr, vous souhaiterez peut-être personnaliser la façon dont les fichiers sont mis en page. Il existe un [guide complet sur la création de modèles] (../academic/custom-templates.md) avec Zettlr dans la documentation.
+Les modèles par défaut fournis par Zettlr sont conçus pour donner une bonne première impression tout en étant compatibles, mais à mesure que vous maîtriserez mieux Zettlr, vous souhaiterez peut-être personnaliser la façon dont les fichiers sont mis en page. Il existe un [guide complet sur la création de modèles](../academic/custom-templates.md) avec Zettlr dans la documentation.
