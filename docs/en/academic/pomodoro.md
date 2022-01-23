@@ -23,7 +23,7 @@ The Pomodoro timer, has 3 core settings that can be altered.
 > This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
 
 
-![Timer.png](images/Timer.png)
+![Initial display of the Pomodoro timer](../img/pomodoro_init.png)
 
 Finally, you can also choose which sound Zettlr will play when a phase ends: The known, soft glass sound, an alarm clock, or a chime.
 
@@ -31,6 +31,6 @@ Click on **Start** to begin the timer. Then, the circle will be filled with the 
 
 To **Stop** the timer or simply review the current **status** of the timer, click the circle. A small popup shows the remaining amount of time for the current phase, the type of the current phase and will give the option to stop session.
 
-![Pomodoro Timer running](images/pomodoro_ran.png)
+![Pomodoro Timer running](../img/pomodoro_run.png)
 
 
