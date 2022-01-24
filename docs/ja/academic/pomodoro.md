@@ -12,25 +12,24 @@ Zettlrに搭載されたポモドーロタイマーを使って、このプロ�
 
 ## ポモドーロタイマーを使用する
 
-Access the Pomodoro timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
+画面の右上のツールバーの中にある丸いマークをクリックすると、ポモドーロタイマーを使うことができます。
 
-The Pomodoro timer, has 3 core settings that can be altered.
+ポモドーロタイマーには、3つの設定があります。
 
-- The length of the **Work**, **Short Break** and **Break** duration's can be adjusted by entering the time (in minutes) in their respective text boxes.
-- After each phase, a **Sound Effect** is played, which can be chosen using the drop down menu (either Glass, Digital Alarm and Chime).
-- The **volume of the chosen sound** is adjusted using the volume slider (fully left is no sound). You can either drag or click to choose the desired level (this will preview the sound).
+- **作業**、**小休憩**、**大休憩**の長さを変更するには、それぞれのテキストボックスに数値(分単位)を入力します。
+- 各フェーズの後に再生される音を**Sound Effect**で設定します。ドロップダウンメニューでGlass、Digital Alarm、Chimeの中から選択してください。
+- **volume**スライダーで音量を調節できます(一番左に設定すると無音になります)。ドラッグするか、任意の音量レベルをクリックしてください(その際、音が再生されます)。
 
-> This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
+> これはシステムの音量ではありません。もしシステムの音量を20％に設定しているなら、Zettlrで100％に設定したとしても20％の音量で再生されます。
 
-
-![Timer.png](images/Timer.png)
+![Initial display of the Pomodoro timer](../img/pomodoro_init.png)
 
 Finally, you can also choose which sound Zettlr will play when a phase ends: The known, soft glass sound, an alarm clock, or a chime.
 
-Click on **Start** to begin the timer. Then, the circle will be filled with the color of the current phase (either red, yellow, or green). Once it is full, the next phase will begin.
+**開始**をクリックするとタイマーが開始します。現在のフェーズに合わせて、赤、黄、緑に円の色が塗りつぶされていきます。色が全部変わったら次のフェーズが開始します。
 
-To **Stop** the timer or simply review the current **status** of the timer, click the circle. A small popup shows the remaining amount of time for the current phase, the type of the current phase and will give the option to stop session.
+円のマークをクリックすると、現在のタイマーの状態を確認したり、タイマーを**停止**したりできます。ポップアップに、現在のフェーズの残り時間と、現在のフェーズの種類、それからセッションを停止するためのボタンが表示されます。
 
-![Pomodoro Timer running](images/pomodoro_ran.png)
+![Pomodoro Timer running](../img/pomodoro_run.png)
 
 

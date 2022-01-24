@@ -2,18 +2,18 @@
 
 ## ZettlrをWindowsにインストールしようとしたところ、アプリケーションをインストールしないようにというセキュリティ警告が出ました。
 
-Zettlr uses code signing as recommended by both Microsoft and Apple to ensure that you install only trustworthy software. However, on Windows, an application needs a sufficiently large amount of installations in order to suppress this security warning. This "trust" is assigned to a code signing certificate, not the application itself. As Zettlr uses private-issued certificates, these have a limited lifetime. The current certificate is valid until 2022, after which Zettlr will be signed using a new certificate which has to go through the whole process once again. As long as you download Zettlr either [from our homepage](https://www.zettlr.com/download) or from the [GitHub releases page](https://github.com/Zettlr/Zettlr/releases) (both are the same files) you can safely install the application and dismiss the warning.
+信頼できるソフトウェアのみをインストールさせることを目的としてMicrosoftとAppleが推奨しているコード署名を、Zettlrは使用しています。しかし、Windowsでは、かなりの回数インストールが行われない限り、セキュリティ警告が表示されてしまいます。この「信頼」はコード署名の証明書に対するものであり、アプリケーション自体に対するものではありません。Zettlrは、私的に発行された証明書を使用しているので、その有効期限は限られています。現在の証明書は2022年まで有効ですが、その後Zettlrは新しい証明書で署名しなおします。そうすると最初からやり直しです。Zettlrを[公式ホームページ](https://www.zettlr.com/download)、または、[GitHubのリリースページ](https://github.com/Zettlr/Zettlr/releases)からダウンロードする限り(両者は同じファイルです)、警告を無視して安全にインストールを行うことができます。
 
-## I cannot dismiss the security warning on Windows and therefore cannot install the app!
+## Windowsでセキュリティ警告を無視することができないので、アプリケーションをインストールできません。
 
-In many companies the IT department puts restrictions in place so that you cannot dismiss a security warning on your own and therefore cannot install the app. If you work in such a restricted environment, it may be best to just talk to your IT department and ask them to whitelist Zettlr so that you (or your admins) can install the app. If they have questions regarding the origins and/or trustworthyness, it may be best to point them [to Zettlr's GitHub repository](https://github.com/Zettlr/Zettlr).
+多くの企業ではIT部門が制限を加えています。そして、各自の権限でセキュリティ警告を無視できないのでアプリケーションをインストールできない場合があります。このような制限された環境で働いている場合は、IT部門に相談して、Zettlrをインストールできるようにホワイトリストに加えてもらうのが最善でしょう。アプリケーションの出所や信頼性について疑問を持たれた場合は[ZettlrのGitHubリポジトリ](https://github.com/Zettlr/Zettlr)を紹介してあげてください。
 
-## I removed the tutorial folder from my computer, and now I cannot get it back!
+## チュートリアルフォルダを削除して、元に戻せなくなってしまいました。
 
-When Zettlr detects it is being run for the very first time on a computer, it will automatically copy a folder with some Markdown files into your Documents-folder. These Markdown files contain some basic introduction on how to use Zettlr. However, they will only be copied once. In order to get these files if you later realised that you would like to revisit the tutorial, you have two options:
+Zettlrが、そのコンピュータで最初に起動されたとき、いくつかのMarkdownファイルを含むフォルダが、ユーザのドキュメントフォルダに自動的にコピーされます。これらのMarkdownファイルにはZettlrの使い方に関する基本的な情報が書かれています。しかし、これらがコピーされるのは初回起動時のみです。後になってから、これらのチュートリアルを見たくなった場合は、再取得するための2つの方法があります:
 
-* Rename or remove the `config.json`-file from your application data directory. If that file is not there, Zettlr will think it is being run for the first time and copy the tutorial again.
-* Simply [download the folder directly from source](https://github.com/Zettlr/Zettlr/tree/develop/static/tutorial) (note that this location might change).
+* `config.json`ファイルの名前を変えるか、アプリケーションデータディレクトリから削除します。このファイルが無い場合、Zettlrは初回起動であると判断し、チュートリアルのコピーを行います。
+* [ソースからフォルダを直接ダウンロードする](https://github.com/Zettlr/Zettlr/tree/develop/static/tutorial)こともできます。 (この場所は変更される可能性があります)
 
 ## Zettlrをモバイル端末やタブレット端末(AndroidまたはiOS)に移植する予定はありますか。
 
@@ -35,13 +35,13 @@ Zettlrがファイルを完全に削除することはありません。常に�
 $ sudo apt install gvfs-bin
 ```
 
-> If you do not want to use the trash functionality, you can also enable the setting in the advanced preferences telling Zettlr to terminally remove a file if moving it to the trash fails. Please note that this will remove files irreversibly!
+> ゴミ箱の機能が不要であれば、高度な設定タブで「ゴミ箱への移動に失敗した場合は完全に削除する」ように設定することができます。その場合、削除したファイルを元に戻すことはできないので注意してください。
 
-## My `Home` and `End`-keys behave weirdly! How do I fix that?
+## `Home`と`End`キーの動作が変です。直すことはできますか？
 
-Zettlr uses the code editor CodeMirror under the hood. By default, it assumes that pressing either the `Home` or `End`-key should move the cursor to the beginning and ending of the _actual_ line. An actual line is defined as a contiguous stream of characters _without a line break_. This means that what we _see_ as a paragraph is actually one single line that has been wrapped when it gets too long (that is: the editor automatically inserts linebreaks when the line gets too long).
+ZettlrはコードエディタとしてCodeMirrorを内部で使用しています。デフォルトでは、`Home`と`End`を押した場合、「実際の」行頭や行末にカーソルを移動します。実際の行とは、「連続する改行以外の文字列」のことです。つまり、画面上に段落として見えているものは、実際には長い一行であり、それが長すぎる場合に自動的に折り返して表示されます。(言い換えれば、一行が長い場合にエディタが自動的に改行を挿入しているのです。)
 
-There is an option in the editor preferences that allows you to control this behavior. If the preferences option "Use CodeMirror default actions for `Home` and `End`" is checked, this means that pressing the `Home` and `End` key will move the cursor to the beginning/end of the _actual_ line (that is: the beginning/end of the paragraph you see). If the option is checked, the keys will move the cursor to the beginning/end of the _visible_ line (that is, it will respect the automatically inserted linebreaks).
+設定のエディタタブで、この動作を変更できます。「`Home`と`End`についてCodeMirrorのデフォルトを使用する」にチェックを入れると、`Home`や`End`を押したときに「実際の」行頭や行末に移動します（段落の先頭や末尾に移動したように見えます）。チェックを外すと、「見た目上の」行頭や行末に移動します（自動的に挿入された改行が考慮されます）。
 
 ## Markdownリンクの正しいURLの書き方を教えてください。
 
@@ -98,7 +98,7 @@ Pandocに改行をそのまま出力させるためには、行末にバック�
 
 ## PDFエクスポートで、いつもエラーメッセージが表示されます。
 
-It might happen that you get certain errors when trying to export your files. There are two common types of errors, which you can solve by yourself.
+ファイルのエクスポート時にエラーが発生するかもしれません。ユーザ自身で解決できるエラーには2つのタイプがあります。
 
 よくあるエラーは次のようなものです:
 
@@ -106,9 +106,9 @@ It might happen that you get certain errors when trying to export your files. Th
 
 これは単に、特定のパッケージ(拡張子`.sty`)が見つからないということを意味しています。Windowsでは、これらのパッケージは必要に応じて自動的にインストールされます(確認のポップアップウィンドウが表示されます)。macOSとLinuxでは`tlmgr install <some name>`のコマンドを実行する必要があります。
 
-> Note that some `.sty`-files are part of larger packages. The easiest way to find out which package to install, go to [the CTAN homepage](https://ctan.org/) and search for the package name (the file name without the `.sty`). You will then see in the "Contained in"-section the actual name of the package you have to install. Example: [The `footnote.sty`-package](https://ctan.org/pkg/footnote) is contained in the package `mdwtools`, so instead of running `tlmgr install footnote` you must run `tlmgr install mdwtools`.
+> 大きなパッケージの一部となっている`.sty`ファイルもあることに注意してください。インストールすべきパッケージを見つける最も簡単な方法は、[CTANのホームページ](https://ctan.org/)でパッケージ名（ファイル名から`.sty`を除いたもの）で検索することです。実際にインストールすべきパッケージ名は、"Contained in"セクションに表示されます。例えば、[`footnote.sty`パッケージ](https://ctan.org/pkg/footnote)は、`mdwtools`パッケージに含まれているので、`tlmgr install footnote`ではなく`tlmgr install mdwtools`を実行してインストールする必要があります。
 
-これ以外のエラーが発生した場合は、Zettlrが表示したエラーメッセージをコピー＆ペーストすることができます。Googleで検索すればすぐに解決策が見つかることでしょう。And if it doesn't the community can better help you if they see the error you are getting.
+これ以外のエラーが発生した場合は、Zettlrが表示したエラーメッセージをコピー＆ペーストすることができます。Googleで検索すればすぐに解決策が見つかることでしょう。もし見つからなかった場合は、同じエラーを見たことのあるコミュニティの人々が助けてくれるかもしれません。
 
 ## バグを見つけました。
 

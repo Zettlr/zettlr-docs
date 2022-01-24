@@ -1,60 +1,60 @@
-# Troubleshooting
+# トラブルシューティング
 
-Like any software, Zettlr might have some problems here and there. If you encounter such problems, this page contains instructions on how to resolve the issues. We now have four years of experience with these problems, and as such the options listed below should work in most cases.
+他のソフトウェアと同様、Zettlrでも様々な問題が発生する可能性があります。何か問題に直面した場合は、解決するための手順がこのページに書かれています。4年にわたって問題に対処してきた経験から、以下で説明する方法は、ほとんどのケースで役に立つでしょう。
 
-> Please attempt the steps listed here and consult the FAQ first before asking on the Forum, Reddit, or opening a GitHub issue. By asking questions on these platforms that are already answered somewhere here, you are binding resources by us that we would love to spend developing the app.
+> フォーラムやRedditで質問したりGitHubでissueを作成したりする前に、ここに書かれた手順を試し、それからFAQに解決策が書かれていないか確認してください。ドキュメントに既に書かれていることを質問するのは、アプリケーションを開発するためのリソースを奪うことにつながります。
 
-## 1. Try Turning it Off and On Again
+## 1. 再起動してみる
 
-This might sound trivial, but many problems can be solved by simply quitting Zettlr and restarting it. If you encounter a problem, it often helps to just restart the app, sometimes also your computer.
+取るに足らないことと思われるかもしれませんが、単にZettlrを終了して再起動することで、多くの問題は解決します。問題が発生した場合は、アプリケーションの再起動、それでもダメならコンピュータの再起動を試してみてください。
 
-> If you can reliably reproduce the problem, that is: the problem _always_ appears after you perform a specific action, this might indicate that you've found a way to create what is called an "unrecoverable state". In that case, and only then, please open a GitHub issue providing us with a minimal example of how to reproduce the issue. We will then fix it.
+> 問題をいつでも発生させられる場合、つまり特定の動作を行うと問題が「必ず」発生するのであれば、あなたは「回復不能状態」を発見した可能性があります。そのような場合は、問題を再現するための最小の手順を添えてGitHubのissueを作成してください。その後、修正します。
 
-## 2. Install the Most Recent Version
+## 2. 最新版をインストールする
 
-As soon as we hear about a problem, we fix it and some time later we release a new version. Make sure to always update to the newest version, because older versions do have bugs (otherwise they would be the most recent version ;).
+問題を発見し次第、修正を行い、その後しばらくしてから新しいバージョンがリリースされます。古いバージョンにはバグがあるので(そうでなければそれが最新版であるはずです)、常に最新版にアップデートしてください。
 
-So make sure you always use the most recent version of Zettlr!
+いつでも最新版のZettlrを使いましょう！
 
-## 3. Try Resetting the App
+## 3. アプリケーションの設定を初期化する
 
-We have heard many times that the app appears to be broken (it does not even start, for example). What we found is that sometimes clearing the cache helps. This seems to be related to the Electron framework we use. That one creates its own cache files, over which we do not have any control, and sometimes it helps to delete these.
+アプリケーションが壊れたように見える（例えば起動もできなくなる）ということを、これまでに何度も聞きました。そのような場合にキャッシュをクリアすると解決する場合があることを発見しました。これは、Zettlrが使用しているElectronフレームワークに関係しているようです。これにより、キャッシュファイルが生成されますが、我々がコントロールする手段は何もありません。そして、このキャッシュを削除することで問題が解決する場合があります。
 
-Zettlr maintains local settings and metadata (user-defined tags, workspace location, settings, etc.). You may want to reset, read, or modify this data in some cases (e.g. if your installation seems to be broken, if you accidentally loaded a bad workspace, etc.).
+Zettlrはローカル設定とメタデータ（ユーザの定義したタグ、ワークスペース、場所、設定など）を保持しています。このデータを初期化、表示、修正したい場合があるかもしれません。(例えば、インストールが壊れていると思われる場合、読み込んだワークスペースが悪さをしている場合など)
 
-This data is located in the _application data path_ whose location depends on your Operating System:
+このデータは、オペレーティングシステムによってそれぞれ異なる「アプリケーションデータパス」に保存されています:
 
-* **Windows:** `C:\Users\<your username>\AppData\Roaming\Zettlr` (note that AppData is a hidden folder, so you might want to change the Explorer settings so it shows up)
-* **macOS:** `/Users/<your username>/Library/Application Support/Zettlr` (open a Finder window, hold down "Alt" while opening the "Go"-menu, and click on the appearing "Library" entry)
-* **Linux:** `/home/<your username>/.config/Zettlr` (note that `.config` is a hidden folder, so you might want to use a command line to open it)
+* **Windows:** `C:\Users\<your username>\AppData\Roaming\Zettlr` (AppDataは隠しフォルダなので、表示するにはエクスプローラーの設定を変更する必要があります。)
+* **macOS:** `/Users/<your username>/Library/Application Support/Zettlr` (Finderのウィンドウで"Alt"を押して"移動"メニューを開きます、そこに表示される"ライブラリ"を選択します。)
+* **Linux:** `/home/<your username>/.config/Zettlr` (`.config`は隠しフォルダなので、コマンドラインを使って開くと良いでしょう。)
 
-If you want to completely reset your local Zettlr installation, follow these steps:
+コンピュータにインストールしたZettlrを完全に削除したい場合は次の手順に従ってください:
 
-1. First ensure that the application is closed (in some error cases, there is a "zombie" process, which you can close from within your Task Manager or Activity Monitor)
-2. Make sure to optionally backup these files:
-    * `stats.json` (your writing statistics)
-    * `config.json` (the app settings — including the location of your workspaces and open files)
-    * `custom.css` (your custom CSS, if any)
-    * `tags.json` (your colour-coded tags)
-    * `targets.json` (your writing targets)
-    * `user.dic` (your own custom dictionary)
-3. Select everything in this directory and delete it.
-4. Restart the application. Some of these files will be re-created.
+1. 最初に、アプリケーションが終了していることを確認します。(エラーによりゾンビプロセスが発生している場合は、タスクマネージャまたはアクティビティモニタから終了することができます。)
+2. 必要に応じて次のファイルをバックアップします:
+    * `stats.json` (執筆統計)
+    * `config.json` (アプリケーションの設定、ワークスペース及び開いているファイルの場所)
+    * `custom.css` (カスタムCSS)
+    * `tags.json` (タグと色情報)
+    * `targets.json` (執筆目標)
+    * `user.dic` (カスタム辞書)
+3. ディレクトリ内のすべてのファイルを削除します。
+4. アプリケーションを起動します。このとき、上記のファイルの一部は再作成されます。
 
-## 4. Ask the Community for Help
+## 4. コミュニティに助けを求める
 
-If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active both on the [Zettlr subreddit](https://www.reddit.com/r/Zettlr) and on [Discord](https://discord.com/invite/PcfS3DM9Xj), so you can choose which one you like.
+ここまでの手順で問題が解決しない場合は、コミュニティに助けを求めてください。同じ問題に直面したユーザが助けてくれるかもしれません。[Zettlr subreddit](https://www.reddit.com/r/Zettlr)と[Discord](https://discord.com/invite/PcfS3DM9Xj)のコミュニティがアクティブに活動しています。好きな方を選択してください。
 
-## 5. Open a GitHub Issue
+## 5. GitHubのissueを作成する
 
-If the community couldn't help you, or if it turns out while discussion the issue that it seems to be an actual bug, please open an issue on GitHub. Make sure to include as much information as possible so that we can quickly address the issue.
+コミュニティから解決策が得られない場合、または、バグかもしれないということが議論の結果明らかになった場合は、GitHubでissueを作成してください。可能な限り多くの情報を書いてもらえれば、問題を早期に解決することができます。
 
-> If you open an issue on GitHub, make sure you receive notifications. Almost always the developers have additional questions regarding your issue. The faster you respond, the faster we can ensure the issue is being fixed. If no one answers on your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
+> GitHubでissueを作成したら、通知を受け取るようにしてください。ほとんどの場合、問題について開発者から追加の質問が来ます。それに対する回答が早ければ早いほど、問題が修正されるのも早くなります。issueに誰も返答してくれない場合は、解決する方法がわからないのかもしれません。そんなときは、別の言い方で問題を説明したり、追加の情報を提供したりすれば解決に近づくかもしれません。
 
-## 6. Revert to a previous version
+## 6. 前のバージョンに戻してみる
 
-Sometimes, an issue can hinder your productivity. Some users decide to revert to a previous version until we are able to fix the issue. In this section, we want to give you some advice on what could be important in such a situation and what could go wrong doing so.
+発生した問題によって生産性が落ちるため、問題が修正されるまで前のバージョンに戻すことにするユーザもいます。そのような状況で注意すべきことや、発生しうる悪影響について説明します。
 
-While our homepage only displays the latest stable release, you can always find all releases (even the antique ones!) on [our GitHub releases page](https://github.com/Zettlr/Zettlr/releases). Generally, you can install any version of Zettlr by simply running the installer with the corresponding version. There is no need to do any preparation. What will be replaced is simply the actual program, but not your data. The installer will always first remove any installed program (remember: not the data), and then install whichever version you downloaded.
+ホームページには最新の安定リリースのみ表示されますが、[GitHubのリリースページ](https://github.com/Zettlr/Zettlr/releases)から、これまでのすべてのリリースを取得することができます。一般的に、どのバージョンのZettlrでも、対応するバージョンのインストーラを実行するだけでインストールできます。事前に準備することは特にありません。置き換えられるのは実際のプログラムのみで、データはそのまま残ります。インストーラは必ず最初に既存のプログラムを削除し（データは残ります）、それからダウンロードしたバージョンのプログラムをインストールします。
 
-That being said: Sometimes, we update the configuration during updates. This only works one-way, so if you happen to revert from such a version _back_, your configuration might become corrupted. In that case, you need to close the app (if it didn't crash), remove the `config.json` file from your application data directory (see above), and then start Zettlr again. **Always back up your data before reverting to a previous version!!!**
+しかしながら、インストール時に設定のアップデートが行われることもあります。この処理は一方通行なので、前のバージョンに戻すと設定が壊れてしまいます。そのような場合は、（異常終了していなければ）アプリケーションを終了し、アプリケーションデータディレクトリ（前述）から`config.json`ファイルを削除します。その後Zettlrを再起動してください。**前のバージョンに戻す際は必ず事前にデータのバックアップをとってください！！**

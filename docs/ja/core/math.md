@@ -2,6 +2,8 @@
 
 ZettlrではKaTexライブラリを使って数式を書くことができます。この機能を使うには、数式をドル記号(`$`)で囲んでください。ドル記号1つではなく2つで囲むことで、「ディスプレイ数式」モードを使うこともできます。
 
-また、一行にドル記号2つを書いたものを、数式ブロックの前と後に置くことで、数式ブロックを定義することもできます。 While inline math will have no syntax highlighting (except the formulae will be displayed using monospace font), such math blocks support syntax highlighting, making it easier to write more complex formulae.
+また、一行にドル記号2つを書いたものを、数式ブロックの前と後に置くことで、数式ブロックを定義することもできます。インラインの数式はシンタックスハイライトが適用されません（ただし等幅フォントで表示されます）が、数式ブロックではシンタックスハイライトが有効なので、複雑な数式を書くのに役立ちます。
 
-Zettlr will immediately render formulae in place, making it easy for you to proofread what you typed and fix errors. If a formula contains an error, this will be shown by Zettlr.
+Zettlrは数式をすぐにその場に描画するので、簡単に入力内容を確認してエラーがあれば修正することができます。数式にエラーが含まれる場合は画面に表示されます。
+
+KaTeXライブラリで使える関数とシンボルは、ドキュメンテーションで確認することができます。: [https://katex.org/docs/supported.html](https://katex.org/docs/supported.html)

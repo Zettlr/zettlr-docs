@@ -1,85 +1,87 @@
 # 設定
 
-Zettlrは、アプリケーションをカスタマイズするための多くの設定項目を持っています。It comes with three major settings dialogs, one of which is the [assets manager explained elsewhere](../core/assets-manager.md), a general preferences dialog, and a tag manager.
+Zettlrには、アプリケーションをカスタマイズするための多くの設定項目があります。大きく分けて3つの設定ダイアログがありますが、その内の一つである[アセットマネージャは別のページで解説](../core/assets-manager.md)します。その他に一般設定ダイアログとタグマネージャがあります。
 
 ## 一般設定
 
 一般設定ダイアログは`Cmd/Ctrl+,`のショートカットか、ツールバーのボタン(歯車)、メニュー内の対応する項目から開くことができます。ダイアログが表示され、カスタマイズ可能な設定項目が表示されます。設定項目は上部に表示された8つのタブに分かれています。
 
-* [一般](#一般): Zettlr全体に影響する設定です。
-* [エディタ](#エディタ): エディタ自体にのみ関係する設定です。
-* [エクスポート](#エクスポート): ファイルをエクスポートする方法についての設定です。
-* [Zettelkasten](#Zettelkasten): ZettlrをZettelkastenシステムに適用するための設定です。
-* [表示](#表示): 画像やリンクなどの要素をどのようにエディタに表示するかの設定とアプリケーション表示のテーマを選択します。
-* [スペルチェック](#スペルチェック): インストール済みの辞書およびユーザ辞書を選択します。
-* [オートコレクト](#オートコレクト): 自動的に置換する文字列と、使用するクォーテーションの種類を選択します。
-* [高度な設定](#高度な設定): 上級者向けの設定です。
+* [一般](#_3): Zettlr全体に影響する設定です。
+* [エディタ](#_4): エディタ自体にのみ関係する設定です。
+* [エクスポート](#_5): ファイルをエクスポートする方法についての設定です。
+* [引用](#_6): Zettlrで引用を行う方法を制御します。
+* [Zettelkasten](#Zettelkasten): ZettelkastenシステムにZettlrを適用するための設定です。
+* [表示](#_7): 画像やリンクなどの要素をどのようにエディタに表示するかの設定とアプリケーション表示のテーマを選択します。
+* [スペルチェック](#_8): インストール済みの辞書およびユーザ辞書を選択します。
+* [オートコレクト](#_9): 自動的に置換する文字列と、使用するクォーテーションの種類を選択します。
+* [高度な設定](#_10): 上級者向けの設定です。
 
 ### 一般
 
 ![settings_general.png](../img/settings_general.png)
 
-一般タブには、Zettlrを使い始めるときにニーズに合わせて設定する可能性のある項目が並んでいます。アプリケーションの言語は、見た通りの意味です。
+一般タブには、Zettlrを使い始めるときにユーザのニーズに合わせて設定できる項目が並んでいます。
 
-Next follows a set of checkboxes:
-
-* **Dark mode**: Controls whether or not the app displays using its dark mode. You can also toggle this using `Cmd/Ctrl+Alt+L` and schedule the dark mode
-* **Show file information**: Controls whether the file list displays additional metadata
-* **Always load remote changes to the current file**: Controls whether Zettlr will ask you to reload a file if it has been modified externally
-* **Avoid opening files in new tabs if possible**: By default, Zettlr opens every new file in a new tab. If checked, Zettlr tries to replace the currently active tab instead of opening a new tab. You can always force-open files in new tabs by using the middle mouse button or the corresponding context menu option
-
-Next follows settings to schedule automatic dark mode:
-
-* **Off**: switch between the modes manually
-* **Schedule**: Zettlr will enter and leave dark mode between the given time span (24 hours format)
-* **Follow Operating System**: On macOS and Windows, Zettlr can listen to operating system events to synchronize its dark mode with the operating system's
-
-サイドバーモードは、サイドバーの表示内容を設定します。3つの選択肢があります。
-
-* **Thin**: In thin mode, the file manager only displays _either_ the list of files _or_ the tree view. You can switch between both using the shortcut `Cmd/Ctrl+Shift+1`.
-* **Expanded**: The expanded mode displays both the tree view and the file list side by side. In this mode, you have both lists always present.
-* **Combined**: This makes the file manager look more like a traditional file browser, because it does not divide folders and files.
-
-Finally, the sorting order determines how Zettlr will sort your files internally. The natural order is recommended; ASCII ignores certain natural language implications. The two last options give you the choice to either display the file creation time or the last modification time in your file list (if you select "Show file information"), and which time to use when you are sorting by time.
+* **言語**: アプリケーションの表示用言語を設定します。十分な量の翻訳が完了している言語のみ表示されます。変更は再起動後に反映されます。
+* **ダークモード**: アプリケーションの表示をダークモードにするかどうか選択します。これは、`Cmd/Ctrl+Alt+L`のショートカットキーで切り替えることもできます。また、スケジュールに従って自動的に切り替えることもできます。
+* **ファイル情報を表示**: ファイルリスト（ファイルマネージャーモードがthinかexpandedの場合のみ利用可能）に、タグや執筆目標などのファイルに関するメタ情報を表示するかどうかを選択します。
+* **現在のファイルに対する外部での変更を常に読み込む**: Zettlrの外部でファイルが変更された場合に、再読み込みの確認を表示するかどうかを選択します。
+* **ファイルを新しいタブで開くことを可能な限り避ける**: デフォルトでは、Zettlrでファイルを開くと必ず新しいタブに表示されます。この設定をオンにすると、新しいタブを開くのではなく現在選択しているタブを置き換えるようになります。マウスの中ボタンクリック、または右クリックメニューを使用して、強制的に新しいタブで開くこともできます。
+* **自動的にダークモードに切り替える**:
+    * **Off**: ダークモードの自動切り替えを行いません
+    * **Schedule**: 指定したダークモードの開始終了時刻に基づいてダークモードを切り替えます
+    * **Follow Operating System**: OSのダークモード設定に従います。（Linuxは非対応）
+* **ダークモード開始時刻**: 自動的にライトモードからダークモードに切り替える時刻（HH:MM形式）を指定します
+* **ダークモード終了時刻**: 自動的にダークモードからライトモードに切り替える時刻（HH:MM形式）を指定します
+* **ファイルマネージャーモード**:
+    * **Thin**: ディレクトリとファイルを別々に表示します。ディレクトリを選択すると、その中身がファイルリストに表示されます。ディレクトリをクリックするとファイルリストへ、ファイルリストの左上に表示される矢印ボタンをクリックするとディレクトリツリーへ表示が切り替わります。
+    * **Expanded**: ディレクトリとファイルを別々に表示しますが、両方が同時に表示されます。ディレクトリをクリックすると、その中身がファイルリストに表示されます。
+    * **Combined**: ファイルツリーにディレクトリとファイルを一緒に表示します。このモードではファイルリストは使用できません。
+* **ファイルの表示方法**:
+    * **ファイル名のみ**: 各ファイルのファイル名を常に表示します。タイトル、レベル1の見出しは使用されません。
+    * **タイトル(存在する場合)**: ファイルにYAML frontmatterのタイトルがあれば、それを表示します。無ければファイル名を表示します。
+    * **最初のレベル1の見出し(存在する場合)**: ファイルに最初に現れるレベル1の見出しを表示します。無ければファイル名を表示します。
+    * **タイトルまたは最初のレベル1の見出し(存在する場合)**: ファイルにYAML frontmatterのタイトルがあれば、それを表示します。無ければ、最初に現れるレベル1の見出しを表示します。どちらも無ければファイル名を表示します。
+* **Markdownファイルの拡張子を表示する**: デフォルトでは、Markdownファイルの拡張子(例えば`*.txt`、`*.md`、`*.markdown`)は表示されません。この設定をオンにすると拡張子を表示することができます。
+* **ファイルの並び順(名前で並べ替える際に使用)**:
+    * **数値順(2→10の順番)**: この設定を選択すると、2の後に10が来るような論理的な順番にファイルを並べます。2の前に0を付けていなくてもこのような動作になります。
+    * **ASCII順(10→2の順番)**: この設定を選択すると、ファイル名が1文字ずつ比較されます。2は1の後に来るので、2が10の後に並びます。2を10の前に並べたい場合は、前にゼロをつけて02とする必要があります。
+* **フォルダをファイルより上に表示する**: デフォルトでは、まずファイルが表示され、その後にフォルダが並びます。この設定を有効にすると、フォルダが先に表示されるようになります。設定を有効化するには再起動が必要です。
+* **時刻で並べ替える際に使用する項目**:
+    * **最終更新日時**: ファイルを最後に編集した日時で並べ替えます。
+    * **ファイル作成日時**: ファイルを作成した日時で並べ替えます。
+* **ファイルメタデータの表示に使用する日時**:
+    * **最終更新日時**: ファイルリストのメタデータ等に、ファイルを最後に編集した日時を表示します。
+    * **ファイル作成日時**: ファイルを作成した日時を表示します。
 
 ### エディタ
 
 ![settings_editor.png](../img/settings_editor.png)
 
-エディタタブはエディタの機能をコントロールします。Markdownではアスタリスクとアンダースコアのどちらを使っても、テキストを太字や斜体にすることができますが、どちらを使用するかをここで選択できます。
+エディタタブはメインエディタの機能をコントロールします。
 
-Next, you can choose how Zettlr will **autocomplete your citations**. The first option will automatically encapsulate citekeys in square brackets so that you can add a prefix and a suffix. The second option will do nothing to the citekeys so that by default your citations will display as "Author (Year)". The third option defines a composite style, where the author name is rendered outside the brackets, while the publication year and a potential suffix is rendered in brackets.
-
-> Note that this only controls how autocomplete will finish your citations. You can still edit everything later. Here, you should select the form of citation you use most often to save you some typing effort.
-
-The **Autosave**-option allows you to determine if, and when, Zettlr will automatically save your files:
-
-* **Off**: No autosave. You need to manually save using `Cmd/Ctrl+S`
-* **Immediately**: Save every modification immediately. This is done after a very short delay of 250ms so that the stress on your hard drive is reduced
-* **After a short delay**: This will automatically save your files five seconds after you stopped typing
-
-The **default image path** is a path you can use to tell Zettlr where it should put your images when you paste them from clipboard. It can be absolute or relative. If you provide the name `assets`, Zettlr would put images by default into the `assets` subdirectory of the directory where your file is. You can even tell it to use a directory relative to the parent directory, e.g., `../assets`. Remember that you can always select the directory for an image on a case-by-case basis.
-
-**インデントに使用する空白の数**は、例えばリストのレベルを増やす場合などに使用されます。
-
-The **editor font size** determines how big the font is displayed in the editor. Adjust this to your liking.
-
-> The font Crimson, which is shipped for the Frankfurt theme, is a little bit smaller than the other fonts, so you might want to increase the font size if you use the Frankfurt theme.
-
-可読性モードで使用するアルゴリズムは、Zettlrの可読性モードをオンにした場合に使用されます。それぞれのアルゴリズムの違いに関する説明は、[可読性モードに関する資料](https://www.zettlr.com/readability)をご覧ください。
-
-The last dropdown allows you to choose the input mode: For most users, Normal will suffice, but if you're a power user, you may find the Emacs mode useful.
-
-Lastly, a few checkboxes that control various settings:
-
-* **集中モード時にフォーカスされていない行の表示を薄くする**をオンにすると、集中モードをオンにしたとき、現在カーソルの置かれた1行以外の行が薄い色で表示されます。
-* **Automatically close matching character pairs**: This allows you to type brackets and quotes, and the editor will automatically add the matching one afterwards
-* **Accept spaces during autocompletion**: To minimize the impact autocomplete has on your writing flow, spaces end autocomplete by default. If you need to have spaces to search for things inside autocompletes, activate this setting
-* **Use the CodeMirror default actions for `Home` and `End`**: By default, CodeMirror will jump to the very beginning or end of a whole paragraph if you press these keys. By disabling this option, `Home` and `End` jump to the beginning or end of the visible line.
-* **Count characters instead of words**: Rather self-explanatory: If you need to type languages where words are represented by single glyphs, such as Japanese or Chinese, it makes sense to activate this option
-* **Use visual order for arrow key movement while in RTL-mode**: If active, the arrow keys on your keyboard move the cursor visually whenever you are typing a right-to-left script (Arabic or Hebrew)
-
-The final setting allows you to choose whether you want to type from right to left (RTL) or from left to right (LTR).
+* **太字および強調コマンドで使用するフォーマット文字を選択してください**: `Cmd/Ctrl+B`、`Cmd/Ctrl+I`でテキストを太字や斜体にする場合、この設定に応じてアスタリスク(`*`)またはアンダースコア(`_`)を使用します。
+* **自動保存**:
+    * **オフ**: 自動保存を行いません。`Cmd/Ctrl+S`を使用して手動で保存してください。
+    * **即時**: 変更が行われる度に即時に保存します。ハードディスクへの負荷を避けるため、250msの非常に短い遅延時間の後に保存が行われます。
+    * **遅延有り**: 入力が停止してから5秒後に自動的に保存を行います。
+* **既定の画像パス(相対もしくは絶対)**: ドキュメントに貼り付けた画像の保存場所です。例えば`assets`と設定すると、Markdownファイルと同じフォルダにある`assets`フォルダに画像を保存します。絶対パスで指定すると、すべての画像が同じフォルダに保存されます。相対パスでの指定を推奨します。
+* **インデントに使用する空白の数**: 特にファイルをエクスポートする場合に影響します。小さすぎる値を設定すると、パーサーによってはリストのインデントを正しく認識できなくなってしまいます。推奨値は4です。この値ならほとんどのパーサーで正しく認識されるでしょう。2つのスペースだと古いパーサーが正しく認識しないことがあります。
+* **エディタのフォントサイズ**: エディタのベースフォントサイズ（ピクセル単位）を設定します。
+* **可読性モードで使用するアルゴリズム**: 可読性モードを有効化した場合に使われるアルゴリズムを選択します。4つのモードが選択できます。各モードの説明は、[可読性モードの説明](https://www.zettlr.com/readability)を確認してください。
+* **エディタ入力モード**:
+    * **Normal**: 一般的なテキストエディタのような動作をします。
+    * **Emacs**: Emacsのショートカットとキーバインディングが使えるようになります。
+    * **Vim**: Vimモードを有効化すると、Vimエディタの機能の一部が使えるようになります。この設定は上級者用です。エディタのテキスト入力方法が大きく変更されます。
+* **集中モード時にフォーカスされていない行の表示を薄くする**: 集中モードで現在編集している1行以外の行を薄い色で表示します。
+* **対応する括弧を自動的に入力する**: 括弧やクォーテーションを入力すると、対応する閉じ括弧やクォーテーションが自動的に入力されます。
+* **補完中に空白を受け付ける**: 執筆中にオートコンプリートに与える影響を最小化するために、デフォルトでは空白を入力した時点でオートコンプリートが終了します。オートコンプリートの検索で空白を入力できるようにしたい場合はこの設定を有効化してください。この設定はタグと見出しのオートコンプリートには影響を与えません。それらには、どちらにせよ空白を含めることができません。
+* **`Home`と`End`についてCodeMirrorのデフォルト動作を使用する**: CodeMirrorのデフォルトでは、`Home`と`End`を押すと、それぞれ段落の最初と最後に移動します。この設定をオフにすると、`Home`と`End`で見た目上の行頭と行末に移動するようになります。
+* **テーブルエディタを有効化**: 内蔵の[テーブルエディタ](../core/tables.md)機能の有効無効を設定します。テーブルエディタは、Markdownの表をグラフィカルに作成、編集するための機能です。
+* **単語の代わりに文字を数える**: 中国語や日本語のように単語を分かち書きしない言語を使っている場合、この設定を有効にすると空白で区切られた連続した文字列ではなく、文字の個数を数えるようになります。
+* **書字方向をLTR(左から右)に設定**: 左から右に記述する文字を主に使用する場合はこちらを選択します。段落をRTLの文字で記述すると、エディタが自動的にそれを認識します。
+* **書字方向をRTL(右から左)に設定**: アラビア文字やヘブライ文字のように右から左に記述する文字を主に使用する場合はこちらを選択します。
+* **RTLモードで矢印キーの移動を見た目通りの方向にする**: RTLの文字（アラビア文字やヘブライ文字）で入力中に矢印キーを押すと、カーソルを見た目通りの方向に移動します。
 
 ### エクスポート
 
@@ -87,18 +89,25 @@ The final setting allows you to choose whether you want to type from right to le
 
 エクスポートタブでは、ファイルをエクスポートする方法について設定します。
 
-* **Use the internal Pandoc for exports**: Zettlr ships with Pandoc bundled, so you don't need to install anything else for imports and exports. Should you ever need to use a system-wide Pandoc (must be in PATH), disable this setting and restart the app
-* **Remove tags from files**: If checked, Zettlr will run a special Lua-filter that removes tags which are defined within your files (not the ones in the YAML frontmatter)
-* **Internal Link Handling**: With the radio buttons you can choose what happens during export with internal links in double-square-brackets: Should they be completely removed, just unlinked (= remove the square brackets), or left alone?
-The **target directory** controls where Zettlr will put files after the exporter ran. If you choose the temporary directory, your files will not clutter your computer. This makes it easy to export a file several times and tweak, e.g., the layout of the file. Once you are happy with the results, you can simply save the file to another place (because your operating system will clean out the temporary directory without warning!). If you choose the current working directory, Zettlr will place the exported file next to your source Markdown file. Careful not to overwrite files!
+* **内蔵のPandocを使用してエクスポートする**: デフォルトではZettlrに内蔵されているpandocが使われます。システムにインストールされた（パスが通っている必要があります）pandocを使いたい、あるいは使う必要がある場合は、この設定をオフにしてくださいs。アプリケーションの再起動後にシステム上のpandocが使われるようになります。
+* **ファイルからタグを取り除く**: オンにすると、専用のLuaフィルターが実行され、ファイル中に定義されたタグがすべて取り除かれます（YAML frontmatter内のものは残ります）。
+* **すべての内部リンクを取り除く**: オンにすると、`<link start><ID><link end>`形式の内部リンク（デフォルトは`[[20220117101322]]`のような形）が、エクスポート時にすべて取り除かれます。
+* **内部リンクをリンク解除する**: オンにすると、`<link start><ID><link end>`形式の内部リンクのリンクのみが削除され、中身のテキストは残ります。
+* **内部リンクを保持する**: 内部リンクをそのまま残します。
+* **ファイルのエクスポート先ディレクトリ**:
+    * **一時ディレクトリ**: エクスポートしたファイルを一時ディレクトリに保存します。これは、エクスポートを何度も行い出力に満足したらデフォルトアプリケーション（例えばPDFならAdobe Reader）で「名前を付けて保存」を選択して好きな場所に保存するような使い方を想定しています。一時フォルダに入っているファイルはコンピュータの再起動時などに自動的に削除されます。こちらが推奨設定です。
+    * **現在の作業ディレクトリ**: エクスポートしたファイルをソースファイルと同じディレクトリに出力します。複数回エクスポートを行うと前のファイルを上書きします。エクスポートしたファイルを保存するために「名前を付けて保存」する必要はありませんが、 ディレクトリ内が散らかってしまうので、こちらの設定はお勧めしません。
 
-The CSL JSON database field can be used to open a literature database. Zettlr will read in the file and enable citation rendering in your files. You can select either a CSL JSON file (ends in `.json`) or a BibTeX file (`.bib`). BibLaTeX is unfortunately not yet supported.
+### 引用
 
-> On macOS, the option to select BibTeX is unfortunately somewhat hidden. When the Open-dialog shows, click "Options" and then select BibTeX from the format chooser.
+このタブではZettlrで引用を行う方法を制御します。
 
-The CSL Style lets you overwrite the default citation style (APA). You can use any file present in the [Zotero style repository](https://www.zotero.org/styles).
-
-> 参考文献の設定はプロジェクトごとの設定で上書きすることができます。
+* **オートコンプリートで引用を挿入する方法を選択してください** 最もよく使う引用の形式を選択してください。設定したのとは別のフォーマットにしたいときはオートコンプリート後に編集することができます。この設定は引用キーのオートコンプリートによる入力にのみ影響します。
+    * `[@Author2015, p. 123]`: 引用を入力開始すると自動的に前後に角括弧が入力されるので、完全形の引用を記述することができます。
+    * `@Author2015`: この設定を選択すると角括弧は自動的に入力されません。in-text形式で頻繁に著者名を引用する場合に便利です。
+    * `@Author2015 [p. 123]`: この設定を選択すると引用キーの後に角括弧が入力されます。
+* **参考文献データベース(CSL JSON または BibTex)**: 引用データを保存しているライブラリを選択します。いずれかを選択するとZettlrの引用機能が有効になります。BibLaTeXは未対応です。YAML frontmatterを使用してファイル単位でライブラリを選択できます。
+* **CSLスタイル(オプション)**: デフォルトの引用スタイル（APA）を上書きするためのCSLスタイルシートを選択します。[Zotero style repository](https://www.zotero.org/styles)から好きなファイルをダウンロードしてください。これは、エクスポートにのみ使われます。Zettlr内部でプレビュー用に使われるスタイルは常にin-text形式です。
 
 ### Zettelkasten
 
@@ -106,43 +115,18 @@ The CSL Style lets you overwrite the default citation style (APA). You can use a
 
 このタブではZettelkastenシステムを取り扱う方法について設定することができます。カスタムシステムを使用したい場合を除き、ほとんどの場合これらの設定をいじる必要はありません。
 
-Zettelkastenにとって重要な4つの設定項目があります。IDの正規表現、リンクの開始と終了、生成用のパターンです。
-
-#### IDの正規表現
-
-Zettlrはファイル中のIDを探すために正規表現を内部で利用しています。このパターンを検索してマッチする文字列が見つかった場合、それがファイルのIDであるとみなします。**ファイルの中で最初に見つかったものをIDとみなします。**もし、IDとして4桁の数字を使うように設定したなら、正規表現はファイル中の年の表記にも一致してしまいます。Zettlrでは最初に見つかったIDを採用するので、ファイルの一番最初にそのファイルのIDを記述するようにしてください。
-
-デフォルトの正規表現は`(\d{14})`です。(入力欄の右側のリセットボタンを押すと、デフォルトに戻すことができます。)つまり、Zettlrはちょうど年月日時分秒を合わせた桁数である14桁の数字(例えば、20181012143724)を探します。ファイル中に他にも14桁の数字が含まれていることは非常にまれなので、これはIDとしては優れた方法と言えます。さらに素晴らしいことに、IDは毎秒ごとに異なるため、毎秒新しいファイルを作っても一意なIDが割り振られます。
-
-`\d{14}`の前後にある括弧は「キャプチャグループ」と呼ばれるものです。キャプチャグループは、正規表現を特定の文字列にマッチさせるだけでなく、その中から一部分のみを取り出すためのものです。ここでは、マッチした全体を取り出します。このようにして、ほとんどどのような構造のIDでも使用することができます。
-
-> キャプチャグループのIDを省略することも可能であることに注意してください。キャプチャグループがない場合は、Zettlrが内部的に入力された正規表現を括弧で囲みます。
-
-#### 内部リンク
-
-内部リンクの設定は、内部リンクをどのように記述するかを選択します。デフォルトはWikiスタイルのリンク`[[your-link]]`です。代わりに波括弧`{{your-link}}`や、エクスクラメーションマーク`!your-link!`を使うこともできます。お好きなように設定してください。
-
-内部リンクは2つの使い方があります。一つは、既存のファイル名かIDを使用して、それらをクリックすることで対応するファイルを直接開くことができます。(それぞれのファイルは、拡張子を除くファイル名かIDにより識別されます。)二つ目は、ファイル名やIDを含まない場合で、それらは検索機能の働きをします。つまり、内部リンクを`Cmd/Ctrl`を押しながらクリックすることで、検索を開始することができます。これで、何度も行うような検索を保存しておくことができます。
-
-> リンクはファイルのIDとはみなされないことに注意してください。もし、内部リンクの開始終了の間にIDが見つかったとしても、それはファイルのIDとしては使用されません。
-
-#### ID生成
-
-設定ダイアログのZettelkastenタブの最後の項目は、IDを生成する方法を設定します。それは、変数を含む文字列で、変数はIDの生成時に置換されます。今のところ、年、月、日、時、分、秒の変数が利用可能です。デフォルトのID生成パターンは`%Y%M%D%h%m%s`です。`%Y`は現在の年(4桁)に、`%M`は現在の月(先頭ゼロ埋め)に、以下同様に置換されます。IDに固定の文字列を含めることもできます。例えば、`%Y-%M-%D_%h:%m:%s`というパターンを設定すると、`2018-10-12_12:03:56`のようなIDが生成されます。同じ変数を複数回使用することもできます。例えば、秒だけを使用して`%s%s%s`とすると、`565656`のようなIDが生成されます。
-
-生成されたIDが、必ず「IDの正規表現」にマッチするように設定してください。`%Y-%M-%D_%h:%m:%s`というパターンで生成されたパターンを認識するには、`(\d{4}-\d{2}-\d{2}_\d{2}:\d{2}:\d{2})`という正規表現を設定する必要があります。`%uuid4`を使用する場合は、`[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-4[a-fA-F0-9]{3}-[89aAbB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}`という正規表現を使用することができます。
-
-#### Other Options
-
-Lastly, you have the ability to choose when the filename of a file will be added after the actual link when you autocomplete such a link:
-
-* **always** will always add the filename after the link, even if the file does not have an ID and thus will be linked using the filename (i.e. `[[filename]] filename`)
-* **only when linking using the ID** will only add the filename if the file will be linked using its ID (i.e. `[[1234567890]] filename`)
-* **never** will always just link the file without any extras
-
-Selecting **Automatically create non-existing files** will make Zettlr always create files, if you follow a link and the file with the corresponding filename or ID does not yet exist, Zettlr will create it automatically. You can lastly choose whether or not a full-text search will be started whenever you follow an internal link.
-
-> The last setting enables you to create a form of "saved search": You can actually wrap a search in such a link. When you click such a "search-link", Zettlr will automatically start a full-text search using the contents of the link. However, in that case you should make sure that Zettlr doesn't attempt to create a corresponding file, since that might lead to problems.
+* **IDの正規表現**: Zettelkastenシステムで使用するIDにマッチするJavaScriptの正規表現を設定します(デフォルト: `(\d{14})`)。ZettlrはファイルのIDを検索するためにこのIDを使用します。最初に見つかったIDが採用されます。最初にファイル名(例えば、`20220117102945.md`のような名前)に対して検索が行われ、その後ファイルの中身が検索されます。
+* **リンク開始**: Zettelkastenの内部リンクの開始を表す文字列です。デフォルト値(`[[`)のままにしておくことを推奨します。
+* **リンク終了**: Zettelkastenの内部リンクの終了を表す文字列です。デフォルト値(`]]`)のままにしておくことを推奨します。
+* **新規IDを生成するためのパターン**: 変数を使ってIDを可変にします。生成されるIDは、前述の正規表現にマッチする必要があります。次の変数が利用できます。`%Y` (4桁の年)、`%y` (2桁の年)、`%M` (2桁の月)、`%D` (2桁の日)、`%W` (2桁の週番号)、`%h` (2桁の時)、`%m` (2桁の分)、`%s` (2桁の秒)、`%X` (Unixタイムスタンプ)、`%uuid4` (UUID v4)
+* **Link with filename only**: 有効にすると、リンクにファイルのIDではなくファイル名を使うようになります。いくつかのZettelkastenシステムではこれが有効です。
+* **ファイルをリンクする際にファイル名を追加するかどうか**: link with filename onlyを選択した場合この設定は無効です。
+    * **常にする**: 常にファイル名を追加します。ファイルにIDが設定されていない場合はファイル名が重複して入力されます。
+    * **IDを使ってリンクした場合のみ**: ファイルのリンクにIDが使われた場合にファイル名を追加します。
+    * **常にしない**: IDを使ってリンクした場合でも、ファイル名を追加しません。
+* **Zettelkastenリンクで検索を開始できるようにする**: 有効にすると、リンクを開いた際にその文字列でグローバル検索を開始します。
+* **内部リンクを開く際にファイルが存在しなければ自動的に作成する**: 有効にすると、リンク先のファイルが見つからない場合に、リンクの文字列をファイル名にして新しいファイルを作成します。
+* **自動的に作られたファイルの格納先ディレクトリ（Zettlrに読み込まれている必要があります）**: この設定は、Zettelkastenとその他のディレクトリを同時に読み込んでいる場合に有用です。ここに、Zettlrに読み込まれているディレクトリを設定すると、自動的に作成されたファイルが必ずこのディレクトリに作られるようになります。この設定はリンク先が存在しないリンクをクリックした場合のみ使われます。通常の新規ファイル作成は対象外です。
 
 ### 表示
 
@@ -150,35 +134,44 @@ Selecting **Automatically create non-existing files** will make Zettlr always cr
 
 このタブでは、特定の要素のエディタ内での表示方法を制御します。ZettlrはMarkdownに対してセミプレビュー方式を採っているため、一部の要素のみを描画します。このタブでは、どの要素を表示するかを選択します。
 
-> iframeの設定は、例えばYouTubeの動画などをiframeとして埋め込んだものを表示するかどうかを設定します。
-
-#### Theme
-
-Next you can choose which theme to use. Currently, you have five to choose from. Each theme comes with a little explainer to tell you how it looks. But don't hesitate: Click yourself through until you find one that you like!
-
-Click on any of the previews to switch your application to that theme.
-
-Furthermore you can constrain the size of images, which is especially beneficial if you use a lot of portrait oriented images. The first slider controls the maximum amount of width images are allowed to occupy. Setting this to 50%, for instance, will keep images at half the width of the text body. 100% disables this (images will never be wider than 100% of the text body width). The second slider controls the maximum height of the images relative to the window size. 50 percent would mean that images will never be higher than half of the window's total size. 100 percent disables this behaviour. Unlike the width, images may very well exceed 100 percent of the viewport if they are large and thin.
+* **引用を表示**: 引用を表示します。[引用](#citations)タブで参考文献データベースを設定する必要があります。
+* **iframeを表示**: 埋め込み要素を表示します。(YouTubeやVimeoの動画等)
+* **画像を表示**: ファイル中の画像を表示します。
+* **リンクを表示**: ファイル中のリンクを表示します。
+* **数式を表示**: ファイル中の、$で囲まれた数式を表示します。
+* **タスクを表示**: ファイル中のタスクリスト(`- [ ]`)を表示します。
+* **見出し文字を隠す**: 見出しを表す文字(`#`)の代わりに、見出しレベルが書かれた要素を表示します。表示された見出しレベルをクリックすると、レベルを変更できます。
+* **テーマ**: 一覧からテーマを選択します。Zettlrの見た目をさらにカスタマイズしたい場合は[カスタムCSS](../core/custom-css.md)を使用します。
+* **テーマの色の代わりにOSのアクセントカラーを使用する**: オフにした場合、特定の要素を目立たせるためのアクセントカラーとして、テーマ固有の色を使用します。オンにすると、OSのシステム設定で選択したアクセントカラーを使用します。この設定はLinuxでは無効であり、代わりにZettlrのCrayola Green色が使用されます。
+* **集中モードでツールバーを隠す**: 有効にすると、集中モードの場合にツールバーが非表示になります。
+* **画像の最大幅（パーセント）**: エディタ中の画像の最大幅（エディタ全体の幅に対する百分率）を設定します。小さい画像は引き延ばされません。
+* **画像の最大高さ（パーセント）**: エディタ中の画像の最大高さ（エディタ全体の高さに対する百分率）を設定します。小さい画像は引き延ばされません。
 
 ### スペルチェック
 
 ![settings_spellchecking.png](../img/settings_spellchecking.png)
 
-ユーザ辞書の導入に合わせて、スペルチェック機能は専用のタブに移動しました。最初のリストは利用できるスペルチェック用辞書の一覧です。使いたいものを選択してください。複数選択すれば複数言語のチェックを行うことができます。一覧の上にある検索ボックスでリストを絞り込むことができます。
+このタブではエディタのスペルチェックの設定を行います。
 
-> **ヒント**: スペルチェック機能を無効化するには、すべての辞書をオフにしてください。辞書の追加方法は[ローカライゼーションの説明](../core/localisation.md)を参照してください。
+最初のリストから使用したい辞書を選ぶと有効化されます。複数の辞書を使用して複数言語で書かれた文書をチェックすることができます。一覧の上部にある検索欄から一覧を絞り込むことができます。すべての辞書のチェックを外すとスペルチェックは無効化されます。
 
-最後に、2番目のリストにはカスタム辞書に追加した単語の一覧が表示されます。項目をカスタム辞書から削除することができます。
+追加の辞書をインストールする方法は、[ローカライゼーション](../core/localisation.md)を参照してください。
+
+2番目のリストはユーザ辞書です。ユーザ固有の辞書に追加した単語がすべて表示されます。Deleteをクリックすると単語が削除されます。
 
 ### オートコレクト
 
 ![settings_autocorrect.png](../img/settings_autocorrect.png)
 
-このタブでは、バージョン1.5以降で使えるようになったオートコレクト機能の設定を行います。LibreOfficeやWordで知っている機能かもしれません。有効化のチェックを外すと、機能を完全に無効化することができます。また、スタイルを選択することができます。2つのスタイルの主な違いは、Wordの方が置換のタイミングが早いということです。Wordスタイルでは最後の文字を入力した瞬間に置換されますが、LibreOfficeスタイルではスペースまたはEnterを押してから置換が行われます。LibreOfficeスタイルの方がお節介と感じることは少ないですが、Wordに慣れている人にとってはWordスタイルの方が簡単かもしれません。
+このタブではZettlrのオートコレクト機能の設定を行います。これは、LibreOfficeやWordと同様の機能です。
 
-「マジッククォート」とは、普通のASCIIのクォート(`"`と`'`)の代わりに使用する、一次クォートと二次クォートの設定です。世界中で使われている多くの種類の記号を用意してあります。この機能を無効化したい場合は、いずれのドロップダウンも1番目の設定(ASCIIのクォート)を選択してください。
+* **オートコレクトを有効化**: マジッククォートとオートコレクトの両方の有効、無効を切り替えます。オートコレクトだけを有効化したい場合は、マジッククォートの最初の選択肢（無し）を選択すればマジッククォートを無効化することができます。
+* **Wordスタイル**: Wordスタイルの場合、置換可能なものがあればすぐに置換が行われます(例えば`...` --> `…`)。置換前の文字列に戻したい場合は、直後に`Backspace`キーを押してください。
+* **LibreOfficeスタイル**: LibreOfficeスタイルの場合、`Space`または`Enter`キーを押すことで置換が行われます。直後に`Backspace`を押すと置換前の文字列に戻ります。また、`Shift`を押しながら`Space`または`Enter`を押した場合は、置換は行われません。
+* **一次マジッククォート**: 言語に応じたクォーテーション文字を設定できます。通常の(ASCIIの)クォーテーション記号を入力すると、ここで設定した文字に自動的に置換されます。YAML frontmatterの`lang`プロパティを使って、これと同じ変換をPandocで行うこともできます。
+* **二次マジッククォート**: 上の設定と同様ですが、クォーテーション中のクォーテーションで使う文字を定義します。
 
-最後の設定項目は置換テーブルです。これは、単純に置換したい文字列と置換後の文字列を設定します。よく使われるトークンの包括的なリストを用意していますので、一覧を眺めて、自由に追加削除を行ってください。
+これ以降には、置換テーブルが表示されます。各キーは設定した値に置換されます。よく使われる置換がデフォルトで入っています。不要なものを削除したり新しく追加したりできます。
 
 ### 高度な設定
 
@@ -186,27 +179,17 @@ Furthermore you can constrain the size of images, which is especially beneficial
 
 高度な設定タブには上級者向けの設定項目があります。
 
-「新規ファイル名のパターン」は、新規のファイルを作成時にテキスト欄に表示される値です。ここに入力した値が自動入力されます。下に書かれた変数を使用することもできます(IDはZettelkastenタブの設定に従います。それから、年月日時分秒が使用可能です。)「新規ファイル作成時にファイル名を確認しない」設定も可能です。これによりワークフローを高速化できるかもしれません。
-
-**デバッグ モード**をオンにすると、F5でGUIをリロードできるようになり、アプリケーションの動作を調べるためにChrome developper toolsを表示できるようになります。当然ながら、開発者としてはこれが必要となります。
-
-また、**ベータ版のリリースを通知する**ことで、Zettlrを支援することもできます。この設定をオンにすると、Zettlrは通常のリリースに加えて、ベータ版のリリースも通知するようになります。その後、ベータ版を使用するかどうかを決めることができます。
-
-右側のテキストエリアは**添付ファイル**サイドバーに表示するファイルの種類を設定します。使いたいファイル拡張子をカンマ区切りで設定します。よく使われるであろう拡張子の一覧が初期状態で設定されています。
-
-Next you have, again, a few checkboxes:
-
-* **Enable debug mode**: This does only one single thing: It will enable an additional "develop" menu from which you have access to a few developer sources. **We might ask you for some logs, if you report a bug. You can find those logs in the develop menu**
-* **Notify me about beta releases**: If ticked, you will be informed by the app not only for stable releases, but also for preview releases
-* **Use native window appearance** (Linux only): If checked, Zettlr will render the windows using the regular window chrome of whichever window manager you are using. By default (if unchecked), Zettlr displays a custom menubar and window buttons. This option is not available on macOS and Windows
-* **Delete items irreversibly, if moving them to trash fails**: Some computers may have problems moving files into the trash. If you realize that Zettlr doesn't delete files even if you confirmed that, this could mitigate this; but at the expense that your files will be immediately deleted
-* **Show app in the notification area**: This setting makes sure that Zettlr keeps running in the background even if you close the main window. Especially handy to have it open quickly whenever you need it
-
-The token list below that allows you to define those file extensions, which Zettlr will display as "other files" in the sidebar. We've already added a handy list, but you can modify it if you need to.
-
-Next, you can see the iFrame rendering whitelist. This list will be populated whenever you choose to show an iFrame. Since iFrames can be a security risks, you will have to explicitly allow any website, which will then show up here. You can remove those which accidentally slipped in there.
-
-The last setting allows you to activate watchdog polling on Windows. Sometimes, especially on older computers, Zettlr may detect too many file modifications. If this happens to you, you can activate that setting and adjust the time. A timeout of 1,000ms (the default) will only scan the file system every second.
+* **新規ファイル名のパターン**: 新規ファイルのデフォルトファイル名を設定することができます。新規ファイル名は毎回入力しますが、この設定はプレースホルダとして使用されます。次の変数が使用できます: `%id` ([Zettelkasten](#zettelkasten)タブの設定に従ったID)、`%Y` (4桁の年)、`%y` (2桁の年)、`%M` (2桁の月)、`%D` (2桁の日)、`%W` (2桁の週番号)、`%h` (2桁の時)、`%m` (2桁の分)、`%s` (2桁の秒)、`%X` (Unixタイムスタンプ)、`%uuid4` (UUID v4)
+* **新規ファイル作成時にファイル名を確認しない**: 無効の場合、新規作成したファイルを保存するときにファイル名の入力を促します。有効の場合、ファイル名のパターンを使用して即時にファイルを作成します。名前を変えたい場合は作成後に「ファイル名を変更」してください。
+* **デバッグモードを有効化**: 開発者が使用するいくつかの機能、またはログを取得する機能が有効化されます。有効化すると、いくつかのメニューが追加され、コンテキストメニューに"Inspect Element"（ブラウザにあるものと同様の機能）が追加されます。
+* **ベータ版のリリースを通知する**: 有効化すると、安定板のリリースに加えて、ベータ版のリリースも通知されるようになります。
+* **ネイティブのウィンドウ外観を使用する**: Linuxでは非常に多くのウィンドウマネージャが使用できますが、この設定をオンにすると、使用しているウィンドウマネージャに応じたウィンドウ外観で表示することができます。この設定を有効化するには、起動中のアプリケーションを閉じて再起動する必要があります。この設定は、Linuxでのみ有効です。
+* **ゴミ箱への移動に失敗した場合は完全に削除する**: デフォルトでは、削除したファイルはゴミ箱へ移動され、後で必要に応じて元に戻すことができます。また、ゴミ箱への移動に失敗した場合は何も行いません。ゴミ箱機能を使用していない場合、または何らかの原因でZettlrがファイルをゴミ箱に移動できない場合は、この設定を有効にすれば、ファイルを完全に削除する動作とすることができます。
+* **通知領域にアプリケーションを残す**: 有効化すると、通知領域あるいはシステムトレイに小さいZettlのアイコンを表示します。WindowsとLinuxでは、ウィンドウを閉じた際にアプリケーションが終了しなくなるという効果もあります。アイコンをクリックするとZettlrのメインウィンドウが表示されます。
+* **添付ファイル サイドバーに表示するファイルの拡張子を、カンマ区切りで入力してください。変更は再起動後に反映されます。**: Zettlrで取り扱えるファイル形式は、いくつかのプレーンテキストファイルのみです。例えばExcelファイルなどは表示することができません。ここに拡張子を追加すると、対応する形式のファイルがサイドバーに表示されるようになり、それらをファイル内からリンクしたりデフォルトの外部プログラムで開いたりできるようになります。
+* **iframe描画ホワイトリスト**: iframeの使用にはセキュリティリスクがあるので、表示する際には確認が必要です。ここには、ファイル中でホワイトリストに指定したホスト名の一覧が表示されます。信頼していないホスト名を間違えてホワイトリストに追加してしまった場合は、ここから削除することができます。
+* **ウォッチドッグ監視を有効化する**: 巨大なファイルを取り扱う場合、または使用しているコンピュータの動作が遅い場合は、この設定を有効化してください。Zettlrは、ファイルが外部で編集されたかどうかの通知をコンピュータから受けています。この設定を有効化すると、ファイルの保存後一定時間が経過してから保存が完了したとみなすようになります。
+* **ファイルの書き込みが完了したとみなせるまでの待機時間（ミリ秒）**: ファイルが外部で編集されたと何度も誤検出される場合、この値を大きくしてください。
 
 ## タグマネージャ
 
