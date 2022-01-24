@@ -22,7 +22,7 @@ Zettlrに搭載されたポモドーロタイマーを使って、このプロ�
 
 > これはシステムの音量ではありません。もしシステムの音量を20％に設定しているなら、Zettlrで100％に設定したとしても20％の音量で再生されます。
 
-![Timer.png](images/Timer.png)
+![Initial display of the Pomodoro timer](../img/pomodoro_init.png)
 
 Finally, you can also choose which sound Zettlr will play when a phase ends: The known, soft glass sound, an alarm clock, or a chime.
 
@@ -30,6 +30,6 @@ Finally, you can also choose which sound Zettlr will play when a phase ends: The
 
 円のマークをクリックすると、現在のタイマーの状態を確認したり、タイマーを**停止**したりできます。ポップアップに、現在のフェーズの残り時間と、現在のフェーズの種類、それからセッションを停止するためのボタンが表示されます。
 
-![Pomodoro Timer running](images/pomodoro_ran.png)
+![Pomodoro Timer running](../img/pomodoro_run.png)
 
 
