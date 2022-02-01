@@ -5,6 +5,7 @@ Zettlr supports writing math and formulae using the KaTeX library. In order to u
 ```
 Everybody should know Euler's formula: $e^{ \pm i\theta } = \cos \theta \pm i\sin \theta$ 
 
+These are Euler's most famous equations:
 $$
 \begin{aligned}
 e^{ \pm i\theta } & = \cos \theta \pm i\sin \theta    \\
