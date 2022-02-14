@@ -1,6 +1,6 @@
 # Math
 
-Zettlr supports writing math and formulae using the KaTeX library. In order to use math, enclose your formulae with dollar signs (`$`). You can also use math blocks by using two dollar signs instead of a single dollar sign to enclose your formulae. On export, the double dollar signs are replaced with the LaTeX environment commands `\begin{equation}` and `\end{equation}`. Anything detected as inline or math block will receive proper MathTeX syntax highlighting.
+Zettlr supports writing math and formulae using the KaTeX library. In order to use math, enclose your formulae with dollar signs (`$...$`). You can also use so-called displaymath blocks by using two dollar signs (`$$...$$`) instead of a single dollar sign to enclose your formulae. Anything detected as inline math or displaymath block will receive proper MathTeX syntax highlighting.
 
 ```
 Everybody should know Euler's formula: $e^{ \pm i\theta } = \cos \theta \pm i\sin \theta$ 
@@ -14,7 +14,7 @@ e^{i \pi} & = -1
 $$
 ```
 
-> Please note, that no spaces must be inserted between the inline formula and the dollar signs!
+> To prevent confusion with amounts of money, spaces between the formula and the dollar signs are not allowed!
 
 If you activate the corresponding option, Zettlr will immediately render formulae in place, making it easy for you to proofread what you typed and fix errors. If a formula contains an error, this will be shown by Zettlr. The above example is rendered like this:
 
