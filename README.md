@@ -18,7 +18,7 @@ As soon as we run a new build, your changes will automatically be included and a
 
 ## New Pages and Changes to the Structure
 
-New pages in our documentation will require some structural adjustments, which you need to discuss beforehand. If you have an idea on how to structure the documentation, please start a thread in the [discussions](https://github.com/Zettlr/Zettlr/discussions) tab of the main repository.
+New pages in our documentation will require some structural adjustments, which you need to discuss beforehand. If you have an idea on how to structure the documentation, please start a thread in the [discussions](https://github.com/Zettlr/Zettlr/discussions) tab of the main repository or join the [discord](https://discord.gg/StmkG4sR) server. 
 
 ## The Structure
 
