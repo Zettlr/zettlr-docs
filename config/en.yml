@@ -50,6 +50,7 @@ nav:
     - Pomodoro Timer: academic/pomodoro.md
     - Readability: academic/readability.md
     - Zettelkasten Methods: academic/zkn-method.md
+    - Graph View: academic/graph.md
     - Custom Templates: academic/custom-templates.md
   - References:
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
