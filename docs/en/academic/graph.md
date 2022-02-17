@@ -38,12 +38,18 @@ Under the hood, Zettlr uses the library D3 to facilitate the actual rendering of
 
 Interacting with this network is possible in a number of ways. Hovering over a vertex in the network will show you a tooltip that tells you its filename and which component it belongs to. Click on a node to have it open in your main editor. This way you can keep the graph view open to the side of the main window and navigate your files this way.
 
-Additionally, there are a few controls you have available to customize the display of the graph. The checkbox determines if **isolates** are displayed. Especially if you are interested in specific clusters of nodes (components), if might be wise to exclude these isolates, since it makes the visualization much cleaner and easier to interpret.
+Additionally, there are a few controls you have available to customize the display of the graph.
 
-The two zoom buttons below that allow you to zoom in and out of the graph to gain a bird's eye perspective of your network, or to focus on a specific part of the network.
+The first checkbox determines if **isolates** are displayed. Especially if you are interested in specific clusters of nodes (components), if might be wise to exclude these isolates, since it makes the visualization much cleaner.
+
+The second checkbox allows you to permanently display the labels next to the vertices. However, especially in dense networks, this can be chaotic, hence it is off by default.
+
+The two zoom buttons allow you to zoom in and out of the graph to gain a bird's eye perspective of your network, or to focus on a specific part of the network.
 
 ![Zettlr's graph view, focused on a single component of the network](../assets/../img/graph_view_single_component.png)
 
-As you link more and more files back and forth, it might make sense to only look at one specific component that has formed. The dropdown menu next to the zoom buttons allows you to filter for specific components. The number of the component itself is not meaningful (when the network is being built, the underlying community-detection algorithm just assigns an incrementing number to each new component it detects), but the list is sorted by the **size** of the component. The biggest components will be at the top of the dropdown, whereas the smallest components (i.e. the dyads) are at the end.
+As you link more and more files back and forth, it might make sense to only look at one specific component that has formed. The dropdown menu next to the zoom buttons allows you to filter for specific components. The number of the component itself is not meaningful (the underlying community-detection algorithm just lists the components in the order of detection), but the list is sorted by the **size** of the component. The biggest components will be at the top of the dropdown, whereas the smallest components (i.e. the dyads) are at the end.
 
-Lastly, you will notice a "target" button. This button resets the view on the graph back to the origin, in case you have scrolled away from the origin.
+After the dropdown, you will notice a "target" button. This button recenters the view on the graph back to the origin.
+
+The last element is a text field that allows you to filter the vertex. The text you type here will be matched against the absolute paths of the individual files, with those not matching being dimmed, and those matching being highlighted. Additionally, the graph will automatically move the viewport to the center coordinates of the matched elements.
