@@ -34,6 +34,10 @@ Under the hood, Zettlr uses the library D3 to facilitate the actual rendering of
 
 > The actual placement of the vertices as well as the distance to other vertices **does not have any inherent meaning**!! This is very important to remember: Only the edges between the various vertices have meaning, not their positions or distance!
 
+## Opening the graph view
+
+The graph view is currently not prominently linked. You can access the graph view by opening the statistic information window found in the toolbar and navigating with the "more statistics..." button to a seperate window shown in the screenshot below. 
+
 ## Interacting with the graph view
 
 Interacting with this network is possible in a number of ways. Hovering over a vertex in the network will show you a tooltip that tells you its filename and which component it belongs to. Click on a node to have it open in your main editor. This way you can keep the graph view open to the side of the main window and navigate your files this way.
