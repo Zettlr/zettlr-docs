@@ -36,7 +36,7 @@ Under the hood, Zettlr uses the library D3 to facilitate the actual rendering of
 
 ## Opening the graph view
 
-The graph view is currently not prominently linked. You can access the graph view by opening the statistic information window found in the toolbar and navigating with the "more statistics..." button to a seperate window shown in the screenshot below. 
+The graph view is currently not available via a prominently placed button. You can access the graph view by opening the statistic information window found in the toolbar and navigating with the "more statistics..." button to a seperate window shown in the screenshot below. 
 
 ## Interacting with the graph view
 
