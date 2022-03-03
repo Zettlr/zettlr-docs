@@ -19,6 +19,10 @@ nav:
     - Zettlr als Notizapp: guides/guide-notes.md
     - Zettlr als Zettelkasten: guides/guide-zettelkasten.md
     - Zettlr als IDE: guides/guide-ide.md
+  - Konzepte:
+    - Dateimanagement: concepts/workspaces.md
+    - Kontext: concepts/context.md
+    - WYSIWYM: concepts/wysiwym.md
   - Kern:
     - Editor: core/editor.md
     - Dateiliste: core/file-list.md
