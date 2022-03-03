@@ -36,7 +36,7 @@ nav:
     - Lesbarkeitsmodus: academic/readability.md
     - Zettelkastenmethodologie: academic/zkn-method.md
     - Graph Ansicht: academic/graph.md
-    - Eigene Vorlagen: academic/custom-templates.md
+    - Benutzerdefinierte Vorlagen: academic/custom-templates.md
   - Referenzen:
     - Tastaturkürzel: reference/shortcuts.md
     - Markdown-Grundlagen: reference/markdown-basics.md
