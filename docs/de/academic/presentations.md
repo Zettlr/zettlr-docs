@@ -1,125 +1,127 @@
-# Presentations
+# Präsentationen
 
-Since version `0.19.0`, Zettlr is able to export your Markdown files directly as presentation files using the [reveal.js](https://revealjs.com/#/)-framework. `reveal.js` is a lightweight solution for creating super compatible presentations using plain `HTML` and `JavaScript`. Therefore, these presentations can be shown on _all_ computers that run a browser — nowadays this means: they run on _every_ computer.
+Zettlr ist in der Lage, Ihre Markdown-Dateien direkt als Präsentationsdateien zu exportieren, indem es das [reveal.js](https://revealjs.com/#/)-Framework verwendet. 'reveal.js' ist eine leichtgewichtige Lösung zur Erstellung von Präsentationen mit einfachem HTML und JavaScript. Daher können diese Präsentationen auf _allen_ Computern angezeigt werden, auf denen ein Browser läuft - heutzutage bedeutet das: sie laufen auf _jedem_ Computer.
 
-For exporting Markdown files to `reveal.js`, you have to make sure Pandoc is installed on your computer. Head over to the [section on exporting](../core/export.md) to see how to install pandoc.
+Um Markdown-Dateien nach `reveal.js` zu exportieren, müssen Sie sicherstellen, dass Pandoc auf Ihrem Computer installiert ist. In der [Pandoc-Installationsanleitung](../installing-pandoc.md) erfahren Sie, wie Sie Pandoc installieren.
 
-If you first want to be impressed by an actual export from Zettlr into `reveal.js`, please have a look [at the demonstration presentation](https://zettlr.com/slides.revealjs.htm)! You can also read [the source file](https://www.zettlr.com/themes/zettlr/assets/slides.md) while following the instructions on this page.
+## Vorüberlegungen
 
-## Pre-considerations
+Ein Markdown-Dokument, das zu einer Präsentation zusammengestellt werden soll, hat natürlich eine etwas andere Struktur als andere Markdown-Dokumente.
 
-Of course, a Markdown document that should be compiled into a presentation has a slightly different structure than other Markdown documents.
+### Folien erstellen
 
-### Creating slides
+Sie können neue Folien auf zwei Arten erstellen. Zum einen beginnt jede Überschriftenebene 1 eine neue Folie und dient gleichzeitig als Titel der Folie. Falls die Überschriftenebene 1 für Ihren Geschmack zu groß ist oder Sie einfach keinen Titel auf der Folie haben wollen, können Sie die Folien auch mit Markdown-Trennzeichen (entweder `***` oder `---`) abgrenzen.
 
-You can create new slides in two ways. First, each heading level 1 will begin a new slide and also act as the title of the slide. But in case the heading level 1 is too big for your taste, or you simply don't want a title on that slide, you can also delimit slides by using Markdown dividers (either `***` or `---`).
+Alles, was auf die Überschrift oder die Trennlinie folgt, wird dann zum Inhalt der Folien. Sie müssen die letzte Folie nicht explizit mit einer Trennlinie "abschließen".
 
-Everything that follows the heading or the divider will end up being the content of the slides. You do not have to explicitly "end" the last slide with a divider.
+### Verwendung von Markdown-Elementen
 
-### Using Markdown elements
+Innerhalb der Folien können Sie alle Markdown-Elemente verwenden. Sie werden so gerendert, wie Sie es erwarten würden. Sie können sogar Fußnoten verwenden, die dann am Ende auf einer eigenen Folie platziert werden!
 
-Inside the slides, you can use all Markdown elements. They will be rendered as you would expect them. You can even use footnotes which will then be placed on their own, respective slide at the end!
+## Erweiterte Tools
 
-### Advanced Tools
-
-Of course, `reveal.js` presentations also have the same versatility as PowerPoint or Impress when it comes to controlling your presentation. For instance, you can use CSS-classes to tell the presentation that certain elements should be triggered before forwarding the presentation. These are called "fragments". Due to limitations in Pandoc's engine, you'll have to use plain HTML to achieve this. Consider, for instance, the HTML code from the demo presentation:
+Natürlich bieten `reveal.js`-Präsentationen die gleichen Möglichkeiten wie PowerPoint oder Impress, wenn es um die Steuerung Ihrer Präsentation geht. Sie können zum Beispiel CSS-Klassen verwenden, um der Präsentation mitzuteilen, dass bestimmte Elemente ausgelöst werden sollen, bevor die Präsentation weitergegeben wird. Diese werden "Fragmente" genannt. Aufgrund der Beschränkungen der Pandoc-Engine müssen Sie dafür einfaches HTML verwenden. Betrachten Sie z.B. den HTML-Code der Demo-Präsentation:
 
 ```html
 <ul>
-    <li class="fragment fade-in">This item will fade in.</li>
-    <li class="fragment highlight-blue">This will be highlighted blue.</li>
-    <li class="fragment highlight-red">All available transitions are documented [here](https://github.com/hakimel/reveal.js/#fragments).</li>
+    <li class="fragment fade-in">Dieses Element wird eingeblendet.</li>
+    <li class="fragment highlight-blue">Dies wird blau hervorgehoben.</li>
+    <li class="fragment highlight-red">AAlle verfügbaren Übergänge sind [hier] dokumentiert (https://github.com/hakimel/reveal.js/#fragments).</li>
 </ul>
 ```
 
-This will create a list with three items. All items are "fragments", which means that by pressing the shortcut for the next slide, the first will `fade-in`, as the class says. On the next press of the right arrow key, the second item will be highlighted in blue color. The third press of the right arrow key will highlight the last item red. And on the fourth press of the arrow key the next slide will be shown.
+Damit wird eine Liste mit drei Einträgen erstellt. Alle Elemente sind "Fragmente", d.h. wenn Sie die Tastenkombination für die nächste Folie drücken, wird die erste Folie "eingeblendet", wie die Klasse sagt. Beim nächsten Druck auf die rechte Pfeiltaste wird der zweite Eintrag blau hervorgehoben. Beim dritten Druck auf die rechte Pfeiltaste wird das letzte Element rot hervorgehoben. Beim vierten Druck auf die Pfeiltaste wird die nächste Folie angezeigt.
 
-### Presentation settings
+## Einstellungen der Präsentation
+
+Natürlich verfügt auch die Präsentation selbst über Einstellungen, die Sie nutzen können. Dies sind einfache JavaScript-Anweisungen, die Sie durch Einfügen eines `<script>`-Tags manipulieren können, wie im Screenshot gezeigt. Sie können sie außer Kraft setzen, indem Sie die Attribute des Objekts "zettlrRevealOptions" setzen.
 
 ![presentations_scripts.png](../img/presentations_scripts.png)
 
-Of course, the presentation itself also has settings that you can make use of. These are simple JavaScript directives that you can manipulate by inserting a `<script>`-tag as shown in the screenshot. You can override them by setting the attributes on the `zettlrRevealOptions`-object. These are the options you can set:
+Die folgenden Optionen können Sie einstellen:
 
 ```javascript
 const zettlrRevealOptions = {
-	    // Display controls in the bottom right corner
-	    controls: true,
-	    // Display a presentation progress bar
-    	progress: true,
-	    // Display the page number of the current slide
-	    slideNumber: true,
-	    // Push each slide change to the browser history
-    	history: true,
-	    // Enable keyboard shortcuts for navigation
-	    keyboard: true,
-	    // Enable the slide overview mode
-    	overview: true,
-	    // Vertical centering of slides
-	    center: true,
-	    // Enables touch navigation on devices with touch input
-	    touch: true,
-	    // Loop the presentation
-    	loop: false,
-	    // Change the presentation direction to be RTL
-	    rtl: false,
-	    // Randomizes the order of slides each time the presentation loads
-	    shuffle: false,
-	    // Turns fragments on and off globally
-	    fragments: true,
-	    // Flags if the presentation is running in an embedded mode,
-	    // i.e. contained within a limited portion of the screen
-	    embedded: false,
-	    // Flags if we should show a help overlay when the questionmark
-	    // key is pressed
-	    help: true,
-	    // Flags if speaker notes should be visible to all viewers
-	    showNotes: false,
-	    // Global override for autolaying embedded media (video/audio/iframe)
-	    // - null: Media will only autoplay if data-autoplay is present
-	    // - true: All media will autoplay, regardless of individual setting
-	    // - false: No media will autoplay, regardless of individual setting
-	    autoPlayMedia: null,
-	    // Number of milliseconds between automatically proceeding to the
-	    // next slide, disabled when set to 0, this value can be overwritten
-	    // by using a data-autoslide attribute on your slides
-	    autoSlide: 0,
-    // Stop auto-sliding after user input
-	    autoSlideStoppable: true,
-	    // Enable slide navigation via mouse wheel
-	    mouseWheel: false,
-	    // Hides the address bar on mobile devices
-	    hideAddressBar: true,
-	    // Opens links in an iframe preview overlay
-    	previewLinks: false,
-	    // Transition style
-	    transition: 'convex', // none/fade/slide/convex/concave/zoom
-	    // Transition speed
-	    transitionSpeed: 'default', // default/fast/slow
-	    // Transition style for full page slide backgrounds
-    	backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-	    // Number of slides away from the current that are visible
+    // Steuerelemente in der unteren rechten Ecke anzeigen.
+    controls: true,
+    // Anzeige eines Fortschrittsbalkens für die Präsentation.
+    progress: true,
+    // Anzeige der Seitenzahl der aktuellen Folie.
+    slideNumber: true,
+    // Jeder Folienwechsel wird in den Browserverlauf übernommen.
+    history: true,
+    // Tastaturkürzel für die Navigation einschalten.
+    keyboard: true,
+    // Übersichtsmodus für Folien einschalten.
+    overview: true,
+    // Vertikale Zentrierung der Folien.
+    center: true,
+    // Aktiviert die Touch-Navigation auf Geräten mit Touch-Eingabe.
+    touch: true,
+    // Schleife der Präsentation.
+    loop: false,
+    // Ändert die Präsentationsrichtung in RTL.
+    rtl: false,
+    // Zufallsreihenfolge der Folien bei jedem Laden der Präsentation.
+    shuffle: false,
+    // Schaltet Fragmente global ein und aus.
+    fragments: true,
+    // Kennzeichnet, ob die Präsentation in einem eingebetteten Modus läuft,
+    // d.h. innerhalb eines begrenzten Teils des Bildschirms.
+    embedded: false,
+    // Markiert, ob ein Hilfe-Overlay angezeigt werden soll, wenn die Fragezeichen
+    // Taste gedrückt wird.
+    help: true,
+    // Flagge, ob Sprechernotizen für alle Betrachter sichtbar sein sollen.
+    showNotes: false,
+    // Globale Übersteuerung für die automatische Anzeige eingebetteter Medien (Video/Audio/iframe).
+    // - null: Medien werden nur automatisch wiedergegeben, wenn data-autoplay vorhanden ist.
+    // - true: Alle Medien werden automatisch wiedergegeben, unabhängig von der individuellen Einstellung.
+    // - false: Keine Medien werden automatisch abgespielt, unabhängig von der individuellen Einstellung.
+    autoPlayMedia: null,
+    // Anzahl der Millisekunden zwischen dem automatischen Weiterschalten zur
+    // nächsten Folie, deaktiviert, wenn auf 0 gesetzt, dieser Wert kann überschrieben werden
+    // durch Verwendung eines data-autoslide-Attributs auf Ihren Folien.
+    autoSlide: 0,
+    // Auto-Sliding nach Benutzereingabe stoppen.
+    autoSlideStoppable: true,
+    // Navigation über das Mausrad aktivieren.
+    mouseWheel: false,
+    // Blendet die Adressleiste auf mobilen Geräten aus.
+    hideAddressBar: true,
+    // Öffnet Links in einem Iframe-Vorschau-Overlay.
+    previewLinks: false,
+    // Übergangsstil
+    transition: 'convex', // kein/überblenden/schieben/konvex/konkav/zoom
+    // Geschwindigkeit der Übergänge
+    transitionSpeed: 'standard', // standard/schnell/langsam
+    // Übergangsstil für ganzseitige Folienhintergründe
+    backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+    // Anzahl der Dias, die vom aktuellen sichtbar sind.
     viewDistance: 3,
-    // The display mode that will be used to show slides
+    // Der Anzeigemodus, der für die Anzeige der Folien verwendet wird.
     display: 'block'
 };
 ```
 
-### Presentation Styling
+## Gestaltung der Präsentation
 
-If none of the available themes appeal to you, or if you need to provide some extra CSS, you can do so simply by dropping in a `<style>`-tag somewhere in your presentation.
+Wenn Ihnen keines der verfügbaren Themen zusagt oder wenn Sie zusätzliches CSS benötigen, können Sie dies einfach tun, indem Sie irgendwo in Ihrer Präsentation einen `<style>`-Tag einfügen.
 
-You'll need some knowledge of CSS to finegrain the styling, but the appearance of the presentation itself should be satisfying on its own.
+Sie benötigen einige CSS-Kenntnisse, um das Styling zu verfeinern, aber das Aussehen der Präsentation selbst sollte zufriedenstellend sein.
 
 ![presentations_styles.png](../img/presentations_styles.png)
 
-### Images
+## Bilder
 
-One of the big drawbacks of such HTML presentations is that images cannot be contained in the resulting file. (To be correct, they _can_ be included, but that would increase the file size by the size of all images multiplied by the factor 1.3.)
+Einer der Nachteile solcher HTML-Präsentationen ist, dass Bilder nicht in der resultierenden Datei enthalten sein können. (Genauer gesagt, _können_ sie enthalten sein, aber das würde die Dateigröße um die Größe aller Bilder multipliziert mit dem Faktor 1,3 erhöhen.)
 
-So you need to decide where to put the images. There are basically three feasible methods.
+Sie müssen also entscheiden, wo Sie die Bilder unterbringen wollen. Grundsätzlich gibt es drei mögliche Methoden.
 
-1. Create a dedicated directory for the images, e.g. `img`, inside the directory with your markdown file. Then link to all images using relative paths (`img/my-image.jpg`). When you export your file, make sure the presentation is in the same place relative to the image directory as your source file.
-2. Simply put all images inside the same directory as your presentation file. Then linking to them using their file name should suffice.
-3. Upload them to the web, for instance unto an image hosting service, and link their URLs. Only drawback: You would need to rely on a working internet connection at the place where you hold your presentation.
+1. Erstellen Sie ein eigenes Verzeichnis für die Bilder, z. B. `img`, innerhalb des Verzeichnisses mit Ihrer Markdown-Datei. Verknüpfen Sie dann alle Bilder mit relativen Pfaden (`img/mein-bild.jpg`). Wenn Sie Ihre Datei exportieren, vergewissern Sie sich, dass sich die Präsentation an der gleichen Stelle relativ zum Bildverzeichnis befindet wie Ihre Quelldatei.
+2. Legen Sie einfach alle Bilder in dasselbe Verzeichnis wie Ihre Präsentationsdatei. Dann reicht es aus, sie mit ihrem Dateinamen zu verlinken.
+3. Laden Sie die Bilder ins Internet hoch, z. B. zu einem Bild-Hosting-Dienst, und verlinken Sie ihre URLs. Einziger Nachteil: Sie müssen sich auf eine funktionierende Internetverbindung an dem Ort verlassen können, an dem Sie Ihre Präsentation halten.
 
-A rule of thumb is: If Zettlr correctly displays your images, so will your presentation, as long as you make sure the presentation is in _exactly_ the same directory as your source file relative to the images.
+Als Faustregel gilt: Wenn Zettlr Ihre Bilder korrekt anzeigt, wird auch Ihre Präsentation korrekt angezeigt, solange Sie sicherstellen, dass sich die Präsentation an _exakt_ der richtigen Stelle im Verhältnis zu Ihren Bilddateien befindet.
+
+> Wenn Sie wirklich müssen, können Sie Pandoc anweisen, alle Bilder direkt in die HTML-Datei einzubinden, indem Sie die Variable `self-contained` in Ihrer Vorgabedatei auf `true` setzen (dies funktioniert nicht innerhalb des Frontmatter). Bedenken Sie aber, dass viele Bilder in Ihrer Präsentation leicht zu einer HTML-Datei von Dutzenden von Megabyte führen können. Allerdings hätten Sie dann eine wirklich in sich geschlossene Präsentationsdatei.
