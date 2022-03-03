@@ -29,7 +29,7 @@ nav:
     - Lokalisation: core/localisation.md
     - Seitenleiste: core/attachments.md
   - Wissenschaftliche Werkzeuge:
-    - Zitationen: academic/citations.md
+    - Zitieren mit Zettlr: academic/citations.md
     - Projekte: academic/projects.md
     - Präsentationen: academic/presentations.md
     - Pomodoro-Timer: academic/pomodoro.md
