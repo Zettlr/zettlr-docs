@@ -19,7 +19,7 @@ nav:
     - Zettlr als Notizapp: guides/guide-notes.md
     - Zettlr als Zettelkasten: guides/guide-zettelkasten.md
     - Zettlr als IDE: guides/guide-ide.md
-  - Core:
+  - Kern:
     - Editor: core/editor.md
     - Dateiliste: core/file-list.md
     - Suchen: core/search.md
