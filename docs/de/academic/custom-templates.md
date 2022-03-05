@@ -1,113 +1,66 @@
 # Benutzerdefinierte Vorlagen
 
-Während [Custom CSS](../core/custom-css.md) eine großartige Möglichkeit ist, Zettlr durch das Aussehen Ihr eigenes zu geben, macht es Ihre Beiträge nicht wirklich zu den Ihren. Wenn du mit dem Schreiben fertig bist, ist die Ästhetik genauso wichtig wie der Inhalt. Ihre Ideen sind für sich genommen schon viel wert, aber ohne ein gutes Design und eine Typografie, die zum Lesen einlädt, werden Ihre Ideen darunter leiden.
+Wenn Sie mit dem Inhalt Ihrer Arbeit fertig sind, ist es an der Zeit, sich mit der Ästhetik zu befassen. Ihre Ideen sind wertvoll. Um sie jedoch wirklich zur Geltung zu bringen, müssen Sie das richtige Layout und die richtige Typografie wählen. Vielleicht möchten Sie zum Beispiel eine bestimmte Schriftart, einen anderen Zeilenabstand und vielleicht sogar eine andere Farbe verwenden. Wenn Sie möchten, können Sie wirklich beeindruckend aussehende Dokumente erstellen, [wie diese Beispiele] (https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends).
 
-Sie brauchen eine eigene Schriftart, einen guten Zeilenabstand und vielleicht sogar ein paar Farben. In den [PDF-Voreinstellungen](../reference/settings.md) können Sie zwar einige allgemeine Einstellungen sowohl projektbezogen als auch für den Export einzelner Dateien anpassen, aber Sie können nicht wirklich alle Funktionen nutzen, die Ihnen der LaTeX-Satz bietet. Und, oh Mann, [es gibt so viele gute Beispiele](https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends).
-
-Glücklicherweise ist es eines der Grundprinzipien der Zettlr-Philosophie, Ihnen nicht nur die größtmögliche Freiheit zu geben, Werkzeuge wie Pandoc und LaTeX zu Ihrem Vorteil zu nutzen, sondern auch dafür zu sorgen, dass es _gut_ für Sie funktioniert. Diese Seite soll Ihnen einen Einstieg in die Verwendung von benutzerdefinierten LaTeX-Vorlagen für Ihre Arbeit geben, so dass sowohl Ihr Text als auch das Endprodukt vorzeigbar sind!
-
-## Vorüberlegungen
-
-Bevor Sie mit dem Schreiben Ihrer eigenen, benutzerdefinierten LaTeX-Vorlagen beginnen, sollten wir ein paar Worte darüber verlieren, was beim Export passieren wird. Die Zettlr-Export-Engine ist ein mächtiges Stück Software, das eine Vielzahl von Aufgaben ausführt, bevor es Ihre Dokumente für die letzten Schritte an Pandoc übergibt. Es ist wichtig zu wissen, was Zettlr mit Ihren Dokumenten macht, um eine konsistente Ausgabe zu gewährleisten und Probleme und Schluckauf zu vermeiden, insbesondere wenn Sie fortgeschrittene Vorlagen erstellen. In diesem Kapitel werden alle Schritte erläutert, die Zettlr an Ihren Projekten und Dateiexporten durchführt, bevor es sie an Pandoc weitergibt (das wiederum die Datei an LaTeX weitergibt).
-
-### 1. Alle Eingabedateien verketten (gilt nur für Projekte)
-
-Wenn Sie ein Projekt exportieren, führt Zettlr zunächst eine einfache Aufgabe aus: Es fügt alle Dateien so zusammen, wie sie Ihnen in der Dateiliste angezeigt werden, und schreibt sie in eine einzige temporäre Datei. Dazu liest es das Projektverzeichnis auf die gleiche Weise ein wie die Dateiliste (wodurch die Reihenfolge beibehalten wird) und liest die Dateien ein. Während dieses Schritts werden **zwei Operationen an der Markdown-Quelle** durchgeführt:
-
-1. Alle Bildpfade werden in absolute Bilder umgewandelt. Dies geschieht aus Sicherheitsgründen, da LaTeX den Export nicht durchführen kann, wenn die Bildpfade nicht absolut sind (da der CWD von LaTeX nicht derjenige ist, in dem sich Ihre Markdown-Datei befindet). Auf diese Weise können Sie überall relative Pfade verwenden, ohne sich Gedanken darüber machen zu müssen, was LaTeX mit ihnen macht.
-2. Machen Sie alle Fußnoten eindeutig. Jedes Ihrer Kapitel wird mit der Fußnotennummer 1 beginnen. Daher haben Sie in den meisten Fällen doppelte Fußnoten, die möglicherweise nicht exportiert werden, oder, noch schlimmer, eine der doppelten Fußnoten wird verwendet, während die anderen weggelassen werden. Zettlr macht Fußnoten eindeutig, indem der interne Hash der Datei vorangestellt wird. Aus einem `[^1]` erzeugt Zettlr also zum Beispiel `[^1934976181]`. Auf diese Weise wird jede Fußnote eindeutig sein.
-
-Danach wird die resultierende Datei im temporären Verzeichnis gespeichert und der Exporter gestartet, was uns zu Schritt 2 führt.
-
-### 2. Einlesen der Quelldatei
-
-Die naheliegendste Aufgabe für Zettlr ist das Einlesen der Quelldatei. Das ist entweder die Datei, die Sie mit der Funktion "Teilen" schnell exportieren wollen, oder die generierte, verkettete Datei aus Ihrem Projekt (siehe Schritt 1). Während die Datei eingelesen wird, werden alle Bildpfade absolut gesetzt (dies geschieht nicht, wenn Sie ein Projekt exportieren, da die Bildpfade bereits absolut sind, wie in Schritt 1 beschrieben).
-
-Als nächstes werden alle Tags ersetzt, sofern Sie die entsprechende Option in den Voreinstellungen aktiviert haben. In diesem Schritt werden auch Ihre Zettelkasten-Links behandelt, falls zutreffend. Dabei werden entweder die Formatierungszeichen für die Links entfernt (standardmäßig `[[` und `]]`) oder alles komplett entfernt. Wenn Sie diese Funktion ausgeschaltet haben, bleiben die Links unberührt. Wenn Sie die entsprechende Option angegeben haben, werden außerdem alle IDs entfernt.
-
-> Dies ist der Grund, warum die Funktion "IDs entfernen" standardmäßig ausgeschaltet ist: Sie würde aufgrund der Natur der Standard-IDs, nur aus Zahlen zu bestehen, auch einige Arten von Weblinks unbrauchbar machen.
-
-Nachdem die Datei vorbereitet wurde, wird sie an einem temporären Ort gespeichert.
-
-### 3. Vorbereiten der Vorlage
-
-Nachdem die Datei fertig ist, liest Zettlr die Vorlage ein und schreibt sie in eine temporäre Datei. In diesem Schritt wird eine Reihe von Variablen in der Vorlage ersetzt. Diese sind wie folgt:
-
-- $$PAGE_NUMBERING$`: Die Seitennummerierung, die Sie in den PDF-Einstellungen gewählt haben, z. B. Arabische Zahlen.
-- `$PAPIERART$`: Das Papier, das Sie ausgewählt haben, z. B. `a4paper`.
-- `$TOP_MARGIN$`: Der obere Seitenrand, den Sie angegeben haben (z.B. 3cm).
-- `$RIGHT_MARGIN$`: Der rechte Seitenrand, den Sie angegeben haben (z. B. 3 cm).
-- `$BOTTOM_MARGIN$`: Der untere Seitenrand, den Sie angegeben haben (z. B. 3 cm).
-- `$LEFT_MARGIN$`: Der linke Seitenrand, den Sie angegeben haben (z. B. 3 cm).
-- `$MAIN_FONT$`: Die Hauptschriftart (für den meisten Text), die Sie angegeben haben (z.B. Times New Roman)
-- `$SANS_FONT$`: Die sekundäre Schriftart (hauptsächlich für Überschriften), die Sie angegeben haben (z. B. Arial)
-- `$LINE_SPACING$`: Der von Ihnen angegebene Zeilenabstand (z.B. 150 %).
-- `$FONT_SIZE$`: Die von Ihnen angegebene Schriftgröße (z. B. 12pt).
-- `$PDF_TITLE$`: Der PDF-Titel (entweder der Dateiname oder benutzerdefiniert, wenn ein Projekt exportiert wird).
-- $$PDF_SUBJECT$`: Der Betreff der PDF-Datei.
-- `$PDF_AUTHOR$`: Die PDF-Autoren-Meta-Informationen.
-- `$PDF_KEYWORDS$`: Schlüsselwörter für die PDF-Datei.
-- `$TITLEPAGE$`: Entweder ein leerer String oder `\\maketitle\n\\pagebreak\n`, wenn Sie ein Projekt mit aktivierter Titelseitenoption exportieren.
-- `\$GENERATE_TOC$`: Entweder eine leere Zeichenfolge oder `\\\setcounter{tocdepth}{<number>}\n\tableofcontents\n\\pagebreak\n`, wenn Sie ein Projekt exportieren, bei dem die Option zur Erstellung eines Inhaltsverzeichnisses aktiviert ist. <Zahl>" wird durch die Ebene (1 bis 6) ersetzt.
-
-Diese Variablen werden global ersetzt, d.h. wenn die Variable `\$PDF_AUTHOR$` mehrfach in der Vorlage vorkommt, wird sie jedes Mal ersetzt.
-
-### 4. Vorbereiten des PDF-Exports
-
-Mit den vorbereiteten Dateien füllt Zettlr nun die Befehlsvariablen vor, die an die Pandoc-Engine weitergegeben werden. In diesem Schritt wird die vorbereitete LaTeX-Vorlage zu den Befehlsvariablen hinzugefügt. Wenn keine benutzerdefinierte Vorlage vorhanden ist, verwendet Zettlr seine Standardvorlage, [die Sie hier finden] (https://github.com/Zettlr/Zettlr/blob/master/source/main/assets/export.tex). Die Standardvorlage von Zettlr ist eine Anpassung der Standardvorlage von Pandoc ([Sie finden sie hier](https://github.com/jgm/pandoc/blob/master/data/templates/default.latex)), wobei viele der zusätzlichen Bonbons für maximale Kompatibilität entfernt wurden.
-
-> Viele der Befehle in der Standard-Pandoc-Vorlage erfordern zusätzliche LaTeX-Pakete. Die Zettlr PDF-Vorlage strebt nach maximaler Kompatibilität, nicht nach perfekten PDFs, um Benutzer, die nur die Grundlagen benötigen, nicht zu verwirren.
-
-### 5. Führen Sie den Befehl aus!
-
-Nun, da alle Voraussetzungen erfüllt sind, führt Zettlr den Pandoc-Befehl aus. Es übergibt ihm die temporäre Eingabedatei sowie die temporäre Vorlagendatei und lässt ihn seine Arbeit tun. Falls Sie sich für die Erstellung eines Inhaltsverzeichnisses entschieden haben, wird Pandoc angewiesen, ein solches zu erstellen. Das bedeutet, dass Pandoc intern die XeLaTeX-Binärdatei **zweimal** ausführt. Das liegt daran, dass der XeLaTeX-Befehl eine PDF-Datei erstellen muss, damit er weiß, wo die Überschriften mit allen Abständen tatsächlich landen, und dann muss er sie erneut erstellen, nur diesmal mit dem Inhaltsverzeichnis.
-
-> Es ist äußerst wichtig, das ToC-Flag im Pandoc-Befehl beizubehalten (das Sie auf der Registerkarte "Erweitert" in den Voreinstellungen bearbeiten können), denn wenn Sie es entfernen, wird das Inhaltsverzeichnis nicht eingefügt, unabhängig von dem in den Projekteinstellungen gesetzten Schalter!
-
-Nachdem der Befehl erfolgreich ausgeführt wurde, weist Zettlr Ihr Betriebssystem an, die Datei zu öffnen, so als ob Sie auf die endgültige Datei doppelklicken würden. Das bedeutet, dass die Datei mit Ihrem Standard-PDF-Reader geöffnet wird (oder mit einem Word-Editor, wenn Sie z. B. den Export nach Word gewählt haben). Wenn Pandoc mit einem Fehler beendet wurde, wird Ihnen dieser Fehler in einem erweiterten Fehlerdialog angezeigt, aus dem Sie den Fehler auch kopieren können, um ihn zu googeln.
-
-**Achtung:** Wenn LaTeX eine Fehlermeldung zurückgibt, wird Ihnen die vollständige Konsolenausgabe angezeigt, die - meistens - sehr ausführlich und auch frustrierend leer ist. Wenn z.B. einfach ein LaTeX-Paket fehlt, wird eine lange Liste von Fehlermeldungen ausgegeben, in der Sie feststellen müssen, dass die Datei <Paketname>.sty fehlt". Als Faustregel gilt: Wenn Sie weder eine benutzerdefinierte Vorlage noch irgendein LaTeX-Paket in Ihrer Markdown-Datei verwenden, und trotzdem ein Fehler auftritt, deutet dies auf ein Problem mit der Standardvorlage hin. In diesem Fall melden Sie es bitte. In anderen Fällen konsultieren Sie bitte zuerst die LaTeX- oder Pandoc-Hilfeforen.
+Zettlr gibt Ihnen nicht nur die Freiheit, Werkzeuge wie Pandoc und LaTeX zu benutzen, sondern ein Grundprinzip der Zettlr-Philosophie ist es, diese Werkzeuge für Sie _gut_ arbeiten zu lassen. Diese Seite führt Sie in die Verwendung von benutzerdefinierten LaTeX-Vorlagen ein, damit Sie Ihre Texte und das Endprodukt präsentieren können!
 
 ## Erste Schritte mit Vorlagen
 
-Jetzt ist es an der Zeit, eine Vorlage zu erstellen! Sie können entweder einen externen Editor verwenden, um Ihre LaTeX-Vorlage zu schreiben, bevor Sie Zettlr darauf verweisen. Aber es wäre natürlich schön, wenn du deine LaTeX-Vorlagen einfach von Zettlr aus bearbeiten könntest, oder?
+Schreiben Sie Ihre erste LaTeX-Vorlage, die direkt in Zettlr erstellt werden kann! Wenn Sie fertig sind, wird Ihre Vorlagendatei an Zettlr, Citeproc (falls zutreffend), Pandoc und schließlich an LaTeX weitergeleitet.
 
-![TeX-Dateien durch Anhängen der entsprechenden Erweiterung erstellen](../img/create_tex_file.png)
+Erstellen Sie zunächst eine neue Datei (Datei -> Neue Datei...). Dabei wird automatisch eine Markdown-Datei (`.md`) mit einem eindeutigen Bezeichner als vorläufigem Namen erstellt. Beginnen Sie mit dem Schreiben Ihrer LaTeX-Vorlage und speichern Sie dann Ihre Datei (Datei -> Speichern). An dieser Stelle können Sie Ihrer Datei einen geeigneten Namen und eine Dateierweiterung geben. Zum Beispiel `Meine-Vorlage.tex`.
 
-Oh Mann, wir haben gute Nachrichten. Wenn Sie eine neue Datei erstellen, aber **als Dateierweiterung `.tex`** angeben, wird Zettlr keine Markdown-Datei, sondern eine echte LaTeX-Datei erstellen! Diese Datei wird mit einem kleinen `TeX`-Indikator in der Dateiliste angezeigt (wenn die Dateimeta eingeschaltet ist) und kann von Zettlr aus bearbeitet werden. Hurra!
+![Erstellen einer TeX-Datei](../img/create_tex_file.png)
 
-![Zettlr mit einer geöffneten TeX-Datei](../img/zettlt_tex_file.png)
+Zettlr schaltet automatisch die Codehervorhebung von Markdown auf LaTeX um, und ein kleiner "TeX"-Indikator erscheint unter dem Dateinamen in der Dateiliste.
 
-Zettlr erkennt automatisch, ob es sich um eine LaTeX-Datei handelt und schaltet sogar die Codehervorhebung von Markdown auf LaTeX um, um dir beim Schreiben der Datei zu helfen!
+Wie eine TeX-Datei in Zettlr aussieht](../img/zettlr_tex_file.png)
 
-## Erforderliche Inhalte
+## Notwendige Inhalte
 
-Abgesehen von dem üblichen LaTeX-Zeug, gibt es ein paar Dinge, die in Ihren Dateien vorhanden sein müssen. Denken Sie daran, dass die Dateien zunächst durch einen Filter in Zettlr, dann durch Citeproc (falls zutreffend) und schließlich durch Pandoc geleitet werden, bevor sie an die LaTeX-Engine übergeben werden. Daher können Sie optional alle Zettlr-spezifischen Variablen ganz weglassen, aber eine Variable muss immer vorhanden sein:
+Sie können viele verschiedene Variablen verwenden, je nach Ihren Bedürfnissen. Die Standardvorlagen von Pandoc enthalten bereits viele nützliche Variablen, die hier dokumentiert sind. Es steht Ihnen jedoch frei, Variablen, die Sie für unwichtig halten, nicht zu verwenden, und Sie können sogar Ihre eigenen Variablen mit Hilfe der Template-Engine von Pandoc einführen. Nehmen wir zum Beispiel an, Sie möchten einigen, aber nicht allen Ihrer Exporte zusätzliche Informationen hinzufügen. Dann könnten Sie eine Variable `my-variable` definieren und in allen YAML-Frontmattern, in denen die exportierten Dateien diese Informationen enthalten sollen, angeben:
+
+```Markdown
+---
+title: "Mein Dateititel"
+Datum: 2021-10-18
+my-variable: "Eine zusätzliche Information"
+---
+```
+
+Innerhalb Ihrer Vorlage müssten Sie dann etwas mit dieser Variable machen:
+
+```
+$if(meine-variable)$
+Dies ist ein Text, der nur enthalten ist, wenn "my-variable" definiert wurde.
+
+Sie können sogar den Inhalt der Variable einfügen, indem Sie $my-variable$ eingeben
+$endif$
+```
+
+> Beachten Sie, dass dies nur ein Beispiel ist. Ein umfassenderes Beispiel, das das Prinzip der Variablen auf die Spitze treibt, finden Sie in [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
+
+Während viele Variablen optional sind, gibt es eine Pandoc-Variable, die immer vorhanden sein muss:
 
 ```
 $body$
 ```
 
-Diese Variable wird in Pandoc durch den geparsten Inhalt Ihrer Markdown-Datei(en) ersetzt. Wenn Sie sie weglassen, wird Ihr Inhalt in Vergessenheit geraten. Vergessen Sie also nie, diese Variable dort zu platzieren, wo Ihr Inhalt landen soll!
+Pandoc wird diese Variable durch den geparsten Inhalt Ihrer Markdown-Datei(en) ersetzen. Wenn Sie sie weglassen, wird Ihr Inhalt nicht in der Ausgabedatei erscheinen.
 
-> Das bedeutet auch, dass die Standardvorlage von Zettlr zwar viele Variablen der Standardvorlage von Pandoc auslässt, Sie aber alle Variablen selbst einfügen können! Sie können die gesamte Palette der Pandoc-Variablen und der Zettlr-Variablen nutzen --- oder sie einfach weglassen. An dieser Stelle werden die Vorlagen wirklich mächtig.
+## Aktivieren Sie Ihre Vorlage
 
-## Hacking Your Templates!
+Um Ihre Vorlage in Betrieb zu nehmen, müssen Sie Zettlr über die PDF-Vorlagendatei im Asset-Manager darauf hinweisen. Navigieren Sie im Menü von Zettlr zum Asset-Manager und wählen Sie "PDF" aus der Liste der Konfigurationen ("Standarddateien") auf der linken Seite. Fügen Sie nun am Ende der Konfigurationsdatei "template:" hinzu. Beachten Sie das Leerzeichen nach dem Doppelpunkt. Nun muss Zettlr den Pfad zu Ihrer neuen Vorlagendatei kennen. Suchen Sie Ihre Vorlagendatei, die Sie, wenn Sie sie in Zettlr erstellt haben, finden können, indem Sie mit der rechten Maustaste auf die Datei im Dateimanager von Zettlr klicken und "Datei anzeigen" wählen. Beachten Sie, dass der Name der LaTeX-Datei auf `.tex` enden muss. Wenn Sie die Datei gefunden haben, müssen Sie ihren Speicherort in der Verzeichnisstruktur Ihres Computers finden - das ist der "Pfad" oder "Pfadname" der Datei.
+1. Unter macOS können Sie den Pfad der Datei herausfinden, indem Sie im Finder mit der rechten Maustaste auf die Datei klicken und die Optionstaste drücken, wodurch sich der Menüpunkt "Datei kopieren" in "Als Pfadnamen kopieren" ändert.
+2. Unter Ubuntu Linux können Sie mit dem Dateibrowser den Pfad der aktuell ausgewählten Datei mit der Tastenkombination __CTRL__ + __L__ ermitteln, wodurch der Pfad der Datei in der Adressleiste angezeigt wird.
+3. Unter Windows 10 und 11 wählen Sie die Datei im Datei-Explorer aus und halten Sie die __Umschalttaste__ auf Ihrer Tastatur gedrückt, während Sie mit der rechten Maustaste__ auf die Datei klicken. Wählen Sie im Kontextmenü, das sich öffnet, "Als Pfad kopieren".
 
-Kommen wir nun zu den lustigen Dingen. Im Laufe der Zeit hat Zettlr immer mehr Optionen eingebaut, um die Kontrolle über den Exportprozess zu verfeinern. Das bedeutet, dass Sie mit Zettlr tatsächlich einige lustige Dinge tun können. Sie können zum Beispiel all die netten Dinge, die das Exportprogramm mit Ihren Dateien macht, komplett umgehen (außer dem Parsen der Quelldatei(en)), indem Sie einfach den Pandoc-Befehl in Ihren Einstellungen auf einen festen Befehl ändern.
+Kopieren Sie den Pfadnamen und fügen Sie ihn so in die PDF-Standarddatei ein: `Vorlage: /pfad/zu/ihre/vorlage.tex`.
 
-Sie können auch Pandoc-Variablen in Ihre Zettlr-Variablen einfügen (indem Sie z. B. den PDF-Autor in Ihren Einstellungen auf eine Pandoc-Variable setzen). Wenn Zettlr dann Ihre Datei durchsucht hat, ersetzt Pandoc seine eigene Variable, nachdem die Zettlr-Variable ersetzt worden ist.
+[Hinzufügen Ihrer LaTeX-Vorlage zur PDF-Standarddatei](../img/zettlr_add_LaTeX_template.png)
 
-Und wenn Sie _wirklich_ Lust haben, alles zu hacken, schauen Sie sich den Befehl Pandoc noch einmal an. Wenn Sie genau hinschauen, können Sie sehen, dass vor dem Befehl `pandoc` steht. Wissen Sie, was das bedeutet? Sie haben es vielleicht schon erraten: Der Pandoc-Befehl ist nicht nur etwas, das an Pandoc übergeben wird, sondern es ist der **vollständige Konsolenbefehl, der ausgeführt wird**! Was das bedeutet, sollte nun klar sein: Sie können einige benutzerdefinierte Skripte und Logik vor und nach dem eigentlichen Pandoc-Befehl ausführen!
+Denken Sie daran, ein Leerzeichen zwischen dem Doppelpunkt und dem Pfadnamen zu lassen. Speichern Sie die Änderungen und genießen Sie Ihre LaTeX-Vorlage.
 
-Nehmen wir an, Sie wollen die temporäre Markdown-Datei an ein benutzerdefiniertes Skript übergeben, um noch mehr Aktionen auszuführen und die Datei anschließend an einen anderen Ort zu verschieben? Betrachten Sie die folgende Anpassung des Pandoc-Befehls in den Voreinstellungen:
+## Abschließende Überlegungen
 
-```shell
-pandoc "$infile$" -f markdown $outflag$ $tpl$ $toc$ $tocdepth$ $citeproc$ $standalone$ --pdf-engine=xelatex -o "$outfile$" && cp "$outfile$" /Users/zettlr/Desktop/Final.pdf
-```
-
-Dieser Befehl würde die endgültige Ausgabedatei auf den Desktop des fiktiven Benutzers "zettlr" kopieren und sie "Final.pdf" nennen (vorausgesetzt, Sie arbeiten unter macOS). Anstelle eines einfachen Shell-Befehls wie `cp` könnten Sie auch ganze Skripte übergeben, die anschließend ausgeführt werden. Der Himmel ist wirklich die Grenze!
-
-## Abschließende Gedanken
-
-Zettlr ist bestrebt, seinen Nutzern die volle Kontrolle darüber zu geben, was sie mit ihren Dateien machen können. Was wir auf dieser Seite skizziert haben, ist nur der Anfang. Wir haben nicht versucht, selbst verrückt zu werden, aber Sie können wirklich einiges tun. Wie nutzen Sie die Möglichkeiten von Zettlr, um verrückte Dinge zu tun? Sag es uns auf [Twitter](https://www.twitter.com/Zettlr), im [Forum](https://forum.zettlr.com/) oder auf [Reddit](https://www.reddit.com/r/Zettlr)!
+Zettlr ist bestrebt, Ihnen die volle Kontrolle darüber zu geben, was Sie mit Ihren Dateien tun können. Was wir auf dieser Seite skizziert haben, ist nur der Anfang. Wie nutzen Sie die Möglichkeiten von Zettlr, um verrückte Dinge zu tun? Sag es uns auf [Twitter](https://www.twitter.com/Zettlr), [Discord](https://discord.com/invite/PcfS3DM9Xj) oder auf [Reddit](https://www.reddit.com/r/Zettlr)!
