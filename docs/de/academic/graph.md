@@ -50,7 +50,7 @@ Mit dem zweiten Kontrollkästchen können Sie die Beschriftungen neben den Knote
 
 Mit den beiden Zoom-Schaltflächen können Sie den Graphen vergrößern und verkleinern, um Ihr Netzwerk aus der Vogelperspektive zu betrachten oder um sich auf einen bestimmten Teil des Netzwerks zu konzentrieren.
 
-![Zettlrs Graphansicht, fokussiert auf eine einzelne Komponente des Netzwerks](../assets/../imgraph_view_single_component.png)
+![Zettlrs Graphansicht, fokussiert auf eine einzelne Komponente des Netzwerks](../assets/../img/graph_view_single_component.png)
 
 Wenn Sie immer mehr Dateien hin- und herverknüpfen, kann es sinnvoll sein, nur eine bestimmte Komponente zu betrachten, die sich gebildet hat. Das Dropdown-Menü neben den Zoom-Schaltflächen ermöglicht es Ihnen, nach bestimmten Komponenten zu filtern. Die Nummer der Komponente selbst ist nicht aussagekräftig (der zugrunde liegende Algorithmus zur Erkennung von Gemeinschaften listet die Komponenten einfach in der Reihenfolge ihrer Erkennung auf), aber die Liste ist nach der **Größe** der Komponente sortiert. Die größten Komponenten stehen ganz oben in der Auswahlliste, während die kleinsten Komponenten (d. h. die Dyaden) ganz am Ende stehen.
 
