@@ -1,53 +1,53 @@
-# Custom CSS
+# Benutzerdefiniertes CSS
 
-Since Zettlr version `1.1` it is possible to use custom CSS ([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)) to modify the complete appearance of the app. It's been a long requested feature, and it will open up many possibilities to customising the app (and maybe even the first truly user-generated content of the app?)
+Seit Zettlr Version `1.1` ist es möglich, benutzerdefinierte CSS ([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)) zu verwenden, um das gesamte Erscheinungsbild der App zu verändern. Diese Funktion wurde schon lange gewünscht und wird viele Möglichkeiten zur Anpassung der App eröffnen (und vielleicht sogar den ersten wirklich benutzergenerierten Inhalt der App?)
 
-You can find the Custom CSS editor under `Zettlr->Custom CSS…` (macOS) or under `File->Custom CSS…` (Windows and Linux)
+Sie finden den Custom CSS Editor unter `Zettlr->Custom CSS...` (macOS) oder unter `Datei->Custom CSS...` (Windows und Linux)
 
-If you are unfamiliar with CSS, but don't want to simply copy & paste the guides on this page, you may choose to follow a short [tutorial on CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)! There are many on the internet, so a quick Google search can also provide you with video tutorials, if you prefer those!
+Wenn Sie mit CSS nicht vertraut sind, aber nicht einfach die Anleitungen auf dieser Seite kopieren und einfügen wollen, können Sie auch eine kurze [Anleitung zu CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS) lesen! Es gibt viele im Internet, so dass eine schnelle Google-Suche Sie auch mit Video-Tutorials versorgen kann, wenn Sie diese bevorzugen!
 
-Below you can first find a general introduction in writing CSS, before I will list some examples that you can easily copy & paste to adapt your app to look differently. At the end of the page you may find a **complete class reference**.
+Nachfolgend finden Sie zunächst eine allgemeine Einführung in das Schreiben von CSS, bevor ich einige Beispiele aufführe, die Sie einfach kopieren und einfügen können, um Ihre Anwendung anders aussehen zu lassen. Am Ende der Seite finden Sie eine **komplette Klassenreferenz**.
 
-## Writing CSS for Zettlr
+## CSS für Zettlr schreiben
 
-If you don't want to write CSS for yourself and are only looking to **change the font**, head over to the next section!
+Wenn Sie nicht selbst CSS schreiben wollen und nur die **Schriftart** ändern möchten, gehen Sie zum nächsten Abschnitt über!
 
-Zettlr comes with a lot of predefined classes and IDs. It follows the generally-acknowledged wisdom not to make use of `style`-tags to directly define properties. Therefore, you can use classes for literally anything.
+Zettlr kommt mit einer Menge vordefinierter Klassen und IDs. Es folgt der allgemein anerkannten Weisheit, keine `style`-Tags zur direkten Definition von Eigenschaften zu verwenden. Daher können Sie Klassen für buchstäblich alles verwenden.
 
-The styles of Zettlr are divided into both geometry and the actual theme, so you may want to stick with only changing the design of elements _without_ changing **any** geometry. Playing around with the geometry may be fun, but it may yield completely random behaviour, as some parts of the app depend upon the correct sizes of elements. In case you made a mistake, don't worry: Simply remove the `custom.css`-file from the data directory of Zettlr. You can find the data directory of your own system by looking at the paths provided in [the install documentation](../install.md).
+Die Stile von Zettlr sind sowohl in die Geometrie als auch in das eigentliche Thema unterteilt, so dass man sich damit begnügen sollte, nur das Design der Elemente zu ändern, ohne **irgendeine** Geometrie zu verändern. Das Herumspielen mit der Geometrie kann Spaß machen, aber es kann zu einem völlig willkürlichen Verhalten führen, da einige Teile der App von den richtigen Größen der Elemente abhängen. Falls Sie einen Fehler gemacht haben, machen Sie sich keine Sorgen: Entfernen Sie einfach die `custom.css`-Datei aus dem Datenverzeichnis von Zettlr. Sie können das Datenverzeichnis Ihres eigenen Systems finden, indem Sie die Pfade in [der Installationsdokumentation] (../install.md) betrachten.
 
-Classes and IDs in Zettlr are always namespaced to the respective components (unless they're global), so to really override a rule you will have to use the complete namespace (or, if you don't want to add many rules and are lazy, use the `!important` override rule).
+Klassen und IDs in Zettlr haben immer einen Namensraum zu den jeweiligen Komponenten (es sei denn, sie sind global), so dass man, um eine Regel wirklich zu überschreiben, den kompletten Namensraum verwenden muss (oder, wenn man nicht viele Regeln hinzufügen will und faul ist, die Überschreibungsregel `!important` verwenden).
 
-Everything is always namespaced to the `body`, which has a class `.dark` if the app is currently in dark mode. So to make sure a certain rule only applies while the app is in dark mode, make sure to prefix it with `body.dark`!
+Alles ist immer mit dem Namespace `body` verbunden, der eine Klasse `.dark` hat, wenn die App gerade im dunklen Modus ist. Wenn Sie also sicherstellen wollen, dass eine bestimmte Regel nur dann gilt, wenn sich die Anwendung im dunklen Modus befindet, stellen Sie sicher, dass Sie ihr das Präfix `body.dark` voranstellen!
 
-At the bottom of this page you may find a full class and ID reference so that you don't have to poke around in the app forever! (I already apologise, for it is only a simple dump generated from Zettlr's precompiled CSS files.)
+Am Ende dieser Seite finden Sie eine vollständige Klassen- und ID-Referenz, damit Sie nicht ewig in der App herumstochern müssen! (Ich entschuldige mich schon jetzt dafür, dass es nur ein einfacher Dump ist, der aus den vorkompilierten CSS-Dateien von Zettlr generiert wurde).
 
-## CSS Code Snippets
+## CSS-Code-Schnipsel
 
-### Using a Custom Font with Zettlr
+### Verwendung einer eigenen Schriftart mit Zettlr
 
-In case you do not like the default font delivered with Zettlr, or need to change it, simply paste the following code snippet into the custom CSS editor. Replace `your-font-name` with the **full name** of the font you want to use for Zettlr. Please replace `placeholder` according to the font:
+Falls Ihnen die mit Zettlr gelieferte Standardschriftart nicht gefällt oder Sie sie ändern möchten, fügen Sie einfach den folgenden Codeschnipsel in den benutzerdefinierten CSS-Editor ein. Ersetzen Sie "your-font-name" durch den **vollständigen Namen** der Schriftart, die Sie für Zettlr verwenden möchten. Bitte ersetzen Sie `placeholder` entsprechend der Schriftart:
 
-- In case you want to use a **serif** font, such as Times New Roman, or Georgia, please use `serif`
-- In case your font is **sans serif**, such as Arial or Helvetica, please use `sans-serif`
-- In case you want to switch to the classic **monospace**, please use the placeholder `monospace`
+- Wenn Sie eine **serif**-Schriftart wie Times New Roman oder Georgia verwenden möchten, verwenden Sie bitte `serif`.
+- Falls Ihre Schriftart **sans-serif** ist, wie Arial oder Helvetica, verwenden Sie bitte `sans-serif`
+- Falls Sie auf die klassische **Monospace** umstellen wollen, verwenden Sie bitte den Platzhalter `monospace`
 
-The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback.
+Der Platzhalter stellt sicher, dass auch dann, wenn Ihre Schriftart nicht gefunden wird, eine gleichwertige Schriftart verwendet wird. Er dient als Fallback.
 
-Zettlr already ships a serif font, a sans-serif font and a monospace font! To use the bundled fonts, you can use `Crimson` for a modern serif font or `Liberation Mono` for a nice looking monospace font. (Lato is the default, so you probably don't want to put it there.)
+Zettlr liefert bereits eine Serifenschrift, eine serifenlose Schrift und eine Monospace-Schrift mit! Um die mitgelieferten Schriftarten zu verwenden, können Sie `Crimson` für eine moderne Serifenschrift oder `Liberation Mono` für eine schön aussehende Monospace-Schriftart verwenden. (Lato ist die Standard-Schriftart, also wollen Sie sie dort wahrscheinlich nicht einsetzen).
 
 ```css
 #editor {
-    font-family: '<your-font-name here>', <placeholder>;
+    font-family: '<Ihr-Schrift-Name hier>', <Platzhalter>;
 }
 ```
 
-### Random Unsplash Background Images
+### Zufällige Unsplash-Hintergrundbilder
 
-With the following code, you can make your editor have a different background image everytime you start it. The images are taken from Unsplash.com, a nice site with free photos. It uses the `Source API`, which will simply spit out a different image every time the URL is visited. You can test it out by simply [visiting the page and refreshing a few times](https://source.unsplash.com/random)! Please refer to the [Unsplash Source API reference](https://source.unsplash.com/) for more options (such as using an image of the day).
+Mit dem folgenden Code können Sie dafür sorgen, dass Ihr Editor jedes Mal, wenn Sie ihn starten, ein anderes Hintergrundbild zeigt. Die Bilder stammen von Unsplash.com, einer schönen Seite mit kostenlosen Fotos. Er verwendet die `Source API`, die einfach jedes Mal ein anderes Bild ausspuckt, wenn die URL besucht wird. Sie können es einfach ausprobieren, indem Sie [die Seite besuchen und ein paar Mal aktualisieren] (https://source.unsplash.com/random)! Bitte lesen Sie die [Unsplash Source API Referenz](https://source.unsplash.com/) für weitere Optionen (wie z.B. die Verwendung eines Bildes des Tages).
 
 ```css
-/* Enter your custom CSS here */
+/* Geben Sie hier Ihr eigenes CSS ein */
 
 #editor {
     background-color: transparent;
@@ -58,7 +58,7 @@ With the following code, you can make your editor have a different background im
 
 body #editor .CodeMirror-sizer, body #editor .CodeMirror-gutter {
     background-color: rgba(255, 255, 255, .8);
-    height: 100%;
+    Höhe: 100%;
 }
 
 body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
@@ -70,11 +70,11 @@ body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
 }
 ```
 
-![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash.png)
+![Eine Vorschau einer Zettlr-Installation mit obigem Schnipsel](../img/custom_css_unsplash.png)
 
-### Visualising Line Endings
+### Visualisierung von Zeilenenden
 
-In case you want to see where your linefeeds are, you can display the pilcrow symbol (¶) at the end of your lines by using the following Custom CSS:
+Wenn Sie sehen wollen, wo Ihre Zeilenumbrüche sind, können Sie das Symbol einer Pilzsäule (¶) am Ende Ihrer Zeilen anzeigen lassen, indem Sie das folgende Custom CSS verwenden:
 
 ```css
 .CodeMirror-line:not(:last-child)::after {
@@ -83,29 +83,29 @@ In case you want to see where your linefeeds are, you can display the pilcrow sy
 }
 ```
 
-![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
+![Eine Vorschau von Zettlr mit obigem Snippet](../img/custom_css_pilcrow.png)
 
-### Hide the Toolbar in Distraction Free
+### Ausblenden der Symbolleiste im ablenkungsfreien Modus
 
-Some people prefer the distraction free mode to be _really_ distraction-free. Zettlr does not hide the toolbar by default, because most people want to have access to all the tools and buttons even when writing distraction free. Still, if you belong to the group of people who prefer distraction free to be only the editor itself, rejoice! Hiding the toolbar in distraction free mode is as easy as one single line of CSS!
+Manche Leute bevorzugen den ablenkungsfreien Modus, um _wirklich_ ablenkungsfrei zu sein. Zettlr blendet die Symbolleiste nicht standardmäßig aus, weil die meisten Leute auch beim ablenkungsfreien Schreiben Zugriff auf alle Werkzeuge und Schaltflächen haben wollen. Wenn Sie jedoch zu den Leuten gehören, die es bevorzugen, dass der Editor selbst ablenkungsfrei ist, dann können Sie sich freuen! Das Ausblenden der Symbolleiste im ablenkungsfreien Modus ist so einfach wie eine einzige CSS-Zeile!
 
-Simply paste the following line of CSS into the Custom CSS dialog, and from then on the toolbar will always be hidden:
+Fügen Sie einfach die folgende CSS-Zeile in den Dialog Benutzerdefiniertes CSS ein, und von da an wird die Symbolleiste immer ausgeblendet sein:
 
 ```css
 #editor.fullscreen, .CodeMirror-fullscreen { top: 0px; }
 ```
 
-### Your Ideas
+### Ihre Ideen
 
-Do you have nice ideas for how to style Zettlr even more? If you have a good CSS snippet that works out of the box, feel free to [share it with us](mailto:info@zettlr.com) so that we can feature it here!
+Haben Sie schöne Ideen, wie man Zettlr noch besser gestalten könnte? Wenn Sie einen guten CSS-Schnipsel haben, der sofort funktioniert, können Sie ihn gerne [mit uns](mailto:info@zettlr.com) teilen, damit wir ihn hier veröffentlichen können!
 
-## Complete CSS Class and ID Reference
+## Vollständige CSS-Klassen- und ID-Referenz
 
-Below you can find the full and non-abbreviated list of *all* CSS classes and IDs. We've counted, it's over 300 at the moment.
+Nachfolgend finden Sie die vollständige und nicht abgekürzte Liste *aller* CSS-Klassen und -IDs. Wir haben nachgezählt, es sind im Moment über 300.
 
-Please note that we used an external package to extract the class names. We have already removed most of non-classes (such as colours and "dot-noted" values such as `.5%`) but we do not give any guarantee that we found all.
+Bitte beachten Sie, dass wir ein externes Paket verwendet haben, um die Klassennamen zu extrahieren. Wir haben bereits die meisten Nicht-Klassen (wie Farben und "punktierte" Werte wie `.5%`) entfernt, aber wir geben keine Garantie, dass wir alle gefunden haben.
 
-**Warning: The following list of reference may change in the future! So a class that has worked in one version of Zettlr may stop to work in another, because of changes to either the DOM or the class/ID name.**
+**Warnung: Die folgende Referenzliste kann sich in Zukunft noch ändern! So kann eine Klasse, die in einer Version von Zettlr funktioniert hat, in einer anderen nicht mehr funktionieren, weil sich entweder das DOM oder der Klassen-/ID-Name geändert hat.**
 
 ```css
 .eot
