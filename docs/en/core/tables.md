@@ -53,6 +53,8 @@ The table editor needs to be enabled in Preferences, under the `Editor` tab. Whe
 
 > Attention! When you activate the table by clicking inside one of the cells, you are entering the edit mode. To save your changes, make sure to **click outside of the table once you are done**, to exit the editing mode! Only then will the changes you've made to the table be applied to the underlying Markdown table.
 
+> Attention! The table editor currently does not support citations, footnotes, and math formulae. You have to disable the table editor in Preferences when you are using any of these in tables.
+
 ## Keyboard Navigation
 
 You have the following shortcuts at your disposal:
