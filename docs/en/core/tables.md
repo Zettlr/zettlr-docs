@@ -49,11 +49,11 @@ To aid you with writing tables, Zettlr ships with a powerful table editor that b
 
 Much better, am I right? Zettlr's table editor takes all Markdown tables found in your document, converts them into an HTML representation with editable content cells, and displays these instead of the underlying Markdown. This completely hides the Markdown source but in this case this approach is much more favourable than the [WYSIWYM approach](../concepts/wysiwym.md).
 
+> Attention! The table editor still has problems with rendering citations, footnotes, and math formulae. If you want to preview any of these items in tables, you may have to disable the table editor in Preferences.
+
 The table editor needs to be enabled in Preferences, under the `Editor` tab. When enabled, it will recognize the tables in the active document and make them easily editable. You can **enter the editing mode** simply by clicking into any of the cells inside the table and adding your content. The active cell will be highlighted for you. Additionally, the keyboard navigation that you know from famous word processors has also been implemented so that you can use `Tab`, `Return`, and the Arrow keys to navigate the table. Additionally, adding and removing columns and rows is also possible with the table editor's **edge buttons**. These are buttons that will appear when you hover over the table and let you perform various actions on the table.
 
 > Attention! When you activate the table by clicking inside one of the cells, you are entering the edit mode. To save your changes, make sure to **click outside of the table once you are done**, to exit the editing mode! Only then will the changes you've made to the table be applied to the underlying Markdown table.
-
-> Attention! The table editor currently does not support citations, footnotes, and math formulae. You have to disable the table editor in Preferences when you are using any of these in tables.
 
 ## Keyboard Navigation
 
