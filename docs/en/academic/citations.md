@@ -14,9 +14,9 @@ If you use Mendeley, Citavi, EndNote, or any other references management softwar
 
 ### Step 1: Install BetterBibTex
 
-The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). Using BetterBibTex has two important benefits over not using it: First, it keeps all of your citation keys unique across your entire library. Second, it allows you to keep your exported library file up to date so you do not have to re-export it every time something changes.
+The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). Using BetterBibTex has two important benefits over not using it. First, it keeps all of your citation keys unique across your entire library. Second, it allows you to keep your exported library file up to date so you do not have to re-export it every time something changes.
 
-Each citation item has its own unique ID. This is necessary so that when you, for instance, realise that the publication date has been saved wrong, you can easily change it in Zotero and afterwards citeproc will use the corrected information. If you do not use BetterBibTex, it may happen that an ID is issued multiple times, which would either generate errors (the good way, because you know there's something wrong) or simply cause citeproc to use the first item that matches this ID (the bad way, because then you'd have to be lucky to spot the wrong citation after export).
+Each citation item has its own unique ID. This is necessary so that when you, for instance, realise that the publication date has been saved incorrectly, you can easily change it in Zotero and afterwards citeproc will use the corrected information. If you do not use BetterBibTex, it may happen that an ID is issued multiple times, which would either generate errors (the good way, because you know there's something wrong) or simply cause citeproc to use the first item that matches this ID (the bad way, because then you'd have to be lucky to spot the wrong citation after export).
 
 > **Why is this important?** For example, if you realise the publication date of a references has been saved wrong, you can change it in Zotero and citeproc will use the citation with the corrected information. However, without BetterBibTex, the same ID may be issued multiple times. This could lead to an overt error, which is good because there is actually something wrong. However, it could also lead to a silent error, where citeproc uses the first item that matches the ID; this is bad because it is hard to spot erroneous citations after export.
 
@@ -32,11 +32,11 @@ The next step is to actually export your library. Zotero's task is to manage you
 
 Next, click on `File` and select `Export library …`. Select `Better CSL JSON` as the format; if you opted to not install BetterBibTex, choose `CSL JSON`. By checking "Keep updated", BetterBibTex will ensure every change in Zotero will automatically update your `CSL JSON` file. In this way, Zettlr will always use the most up-to-date, correct citation.
 
-> If you checked "Keep updated", you can verify the status of the `CSL JSON` by opening the Zotero Preferences, selecting the `BetterBibTex` tab, and selecting `Automatic Export`. Here you can finetune what is exported, and when.
+> If you checked "Keep updated", you can verify the status of the `CSL JSON` by opening the Zotero Preferences, selecting the `BetterBibTex` tab, and selecting `Automatic Export`. Here you can fine tune what is exported, and when.
 
 ### Step 3: Open your library in Zettlr
 
-Now it is time to import your library to Zettlr. To do so, open Zettlr's preferences, go to the `Export` tab and click the small folder icon located to the right to the `Citation Database` input field. A dialog will appear that lets you navigate to your database file (i.e. `CSL JSON` or `BibTex`). Select your database file, save the preferences and Zettlr will automatically load the database. You are now ready to cite!
+Now it is time to import your library to Zettlr. To do so, open Zettlr's preferences, go to the `Export` tab and click the small file icon located to the right to the `Citation Database` input field. A dialog will appear that lets you navigate to your database file (i.e. `CSL JSON` or `BibTex`). Select your database file, save the preferences and Zettlr will automatically load the database. You are now ready to cite!
 
 ![Point Zettlr to your database file](../img/settings_export.png)
 
@@ -52,7 +52,7 @@ Zettlr supports Pandoc's citeproc-syntax for writing citations. This means you w
 
 > Zettlr has an autocomplete feature that will prompt you with all available citation keys as soon as you type an `@` character. If you are not presented with a list of possible references, there may be a problem with the database file (i.e. `CSL JSON` or `BibTex`) you set up previously. After you type `@`, you can start to type the first few characters of the ID to narrow down your search. If the reference you want to cite is at the top of the list, hit the `Enter` key to select it. If the reference you want is visible, but lower down the list, use the arrow keys to highlight the reference and hit the `Enter` key, or use your mouse to click on your reference.
 
-Sometimes you'll want to be somewhat more specific with your citation. For example, adding a certain page range. That is what the more extended square bracket citation is for. A citation with a so-called prefix and a page range would look like this:
+Sometimes you'll want to be somewhat more specific with your citation: for example, when adding a certain page range. That is what the more extended square bracket citation is for. A citation with a so-called prefix and a page range would look like this:
 
 `[See @Harvey2005a, 45-51]`
 
@@ -66,7 +66,7 @@ For more information on how to use citations in line with Pandoc's citeproc engi
 
 ## Checking the references
 
-After you're done citing and want to check that you've cited everything you planned to, you can open the [Sidebar](../core/sidebar.md) and switch to the references section. If something's missing from there, it's probably not been cited in your file.
+After you're done citing and want to check that you've cited everything you planned to, you can open the [Sidebar](../core/sidebar.md) and switch to the references section. If something is missing from there, it's probably not been cited in your file.
 
 ## Using a file-specific library
 
@@ -84,7 +84,7 @@ bibliography: ./assets/references.json
 
 ## Changing the citation style
 
-Internally, Zettlr will always use the Chicago style to render citations. Therefore, your previewed citations will always be "in-text," and never in footnote-style. This is meant as a convenience, to confirm everything is working.
+Internally, Zettlr will always use the Chicago style to render citations. Therefore, your previewed citations will always be "in-text," and never in footnote-style. This is meant as a convenience and to confirm that everything is working.
 
 But of course you can use different citation styles, depending on either the journal requirements for which you are writing, or your personal preferences. To change the citation style Pandoc's citeproc will use to render your citations, you need to download the corresponding CSL file. A very good starting point is the [Zotero style repository](https://www.zotero.org/styles). There you can search for specific citation styles, preview them and download them. Another good option is the [Citation Style Language styles repository](https://github.com/citation-style-language/styles)
 
@@ -94,7 +94,7 @@ Second, you can set specify a CSL style for a specific project. With your projec
 
 ## Customizing the List of References
 
-Citing stuff does not just involve rendering the citations inside your text correctly, but also to collect a list of references at the end of the document. By default, Pandoc will simply add a list of references to the end of your documents without any decoration whatsoever. But you have many options available to customize that behaviour, and knowing a few tricks can make all of your lists of references look good from the first export on.
+Creating citations involves rendering the citations inside your text correctly and also collecting a list of references at the end of the document. By default, Pandoc will simply add a list of references to the end of your documents without any decoration whatsoever. But you have many options available to customize that behaviour, and knowing a few tricks can make all of your lists of references look good from the first export on.
 
 ### 1. Adding a Section Header
 
@@ -102,7 +102,7 @@ When you first export a document, you will notice that by default Pandoc will si
 
 The first option is to define the property `reference-section-title` in your file's YAML frontmatter. It accepts a string which will be set as the title for the whole section. So if you specify `reference-section-title: Bibliography`, Pandoc will use `Bibliography` as the title.
 
-The second option is to simply end your document with the wanted heading, i.e. `## Bibliography`. Since Pandoc will literally slap the list of references onto the file at the end, if your file ends with a heading, that will become the section heading.
+The second option is to simply end your document with the wanted heading, i.e. `## Bibliography`.  Pandoc will append the list of references onto the file, and if your file ends with a heading, that will become the section heading.
 
 > Obviously, it does not make sense to use both approaches, since that would yield two headings following each other.
 
@@ -160,7 +160,7 @@ The following code snippet gives you an example:
 \setlength{\parskip}{0.1cm} % Spacing between paragraphs
 ```
 
-The above example would render the reference list with a negative indent of minus one centimetre. Additionally it will apply an overall indentation of half a centimetre relative to the page margins. For example, if your left page margin is set to 3 centimetres, the reference list paragraphs will be offset 3.5 centimetres. The last value (`parskip`) controls the spacing _between_ paragraphs, so there will be a gap of 10 millimetres between paragraphs.
+The above example would render the reference list with a negative indent of minus one centimetre. Additionally it will apply an overall indentation of half a centimetre relative to the page margins. For example, if your left page margin is set to three centimetres, the reference list paragraphs will be offset 3.5 centimetres. The last value (`parskip`) controls the spacing _between_ paragraphs, so there will be a gap of ten millimetres between paragraphs.
 
 The above example is a good place to start. You can search for more lengths to tweak and adjust them to your liking.
 
