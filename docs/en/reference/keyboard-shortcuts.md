@@ -37,6 +37,7 @@ For remembering them easier, here are some thoughts we've put into assigning the
 * `Cmd/Ctrl+W`: Close the application window. On Windows and Linux this will also exit the app.
 * `Cmd/Ctrl+M`: Minimize the application window.
 * `F1`: Open this documentation. This will open the link in your default browser.
+* `Middle-click`: when clicking on a file in the tree, opens the file in a _new_ tab.
 
 **If the debug mode is enabled**
 
