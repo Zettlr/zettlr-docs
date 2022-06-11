@@ -25,7 +25,7 @@ For remembering them easier, here are some thoughts we've put into assigning the
 * `Cmd/Ctrl+Shift+R`: Rename the current directory. If none is selected, the command is disabled.
 * `Cmd/Ctrl+Delete`: Delete the current file. If none is selected, the command is disabled.
 * `Cmd/Ctrl+Shift+Delete`: Delete the current directory. If none is selected, the command is disabled.
-* `Cmd/Ctrl+Shift+F`: Gives focus to the global search field.
+* `Cmd/Ctrl+Shift+F`: Gives focus to the global search field (_Filter_ field).
 * `Cmd/Ctrl+Shift+E`: Gives focus to the editing window.
 * `Cmd/Ctrl+Shift+T`: Gives focus to the tree window.
 * `Cmd/Ctrl+Alt+L`: Switches the theme between light and dark mode.
