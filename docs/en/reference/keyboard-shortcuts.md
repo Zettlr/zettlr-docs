@@ -27,7 +27,7 @@ For remembering them easier, here are some thoughts we've put into assigning the
 * `Cmd/Ctrl+Shift+Delete`: Delete the current directory. If none is selected, the command is disabled.
 * `Cmd/Ctrl+Shift+F`: Gives focus to the global search field.
 * `Cmd/Ctrl+Shift+E`: Gives focus to the editing window.
-* `Cmd/Ctrl+Shift+T`: Gives focus to the tree window.
+* `Cmd/Ctrl+Shift+T`: Gives focus to the tree window (_Filter_ field).
 * `Cmd/Ctrl+Alt+L`: Switches the theme between light and dark mode.
 * `Cmd/Ctrl+Alt+S`: Toggles display of file information in the File List.
 * `Cmd/Ctrl+Shift+1`: Toggles the sidebar mode to either view the file list or the tree view. Disabled in extended sidebar mode.
