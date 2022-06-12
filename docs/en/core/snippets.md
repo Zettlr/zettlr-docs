@@ -41,6 +41,10 @@ Lastly, the available variables are:
 * `UUID`: A UUID version 4
 * `CLIPBOARD`: The contents of your clipboard (text only)
 * `ZKN_ID`: Generate a Zettelkasten ID (according to your pattern)
+* `CURRENT_ID`: Holds the currently assigned Zettelkasten ID to the file
+* `FILENAME`: Holds the filename of the current file
+* `DIRECTORY`: Holds the directory path for the current file
+* `EXTENSION`: Holds the file extension for the current file
 
 ## Working With Your Snippets
 
