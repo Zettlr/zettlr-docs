@@ -1,18 +1,18 @@
-# Defaults Files
+# Fichiers par défaut
 
-Defaults files are a way to define default values for many of the variables that Pandoc uses internally to facilitate both your imports and exports. Defaults files resemble [YAML frontmatters](yaml-frontmatter.md), but are more powerful and apply to all your files instead of just a single one.
+Les fichiers par défaut sont un moyen de définir des valeurs par défaut pour de nombreuses variables que Pandoc utilise en interne pour faciliter vos importations et vos exportations. Les fichiers par défaut ressemblent à [YAML frontmatters](yaml-frontmatter.md), mais sont plus puissants et s'appliquent à tous vos fichiers au lieu d'un seul.
 
-Previously, Zettlr would use defaults files internally, but Zettlr 2.0 finally gives you the ability to edit these files yourself.
+Auparavant, Zettlr utilisait les fichiers par défaut en interne, mais Zettlr 2.0 vous donne enfin la possibilité de modifier ces fichiers vous-même.
 
-> Editing these files can be a little bit tricky, so expect to export a test file multiple times before you have got it right. It is a trial & error process. However, Zettlr ships with reasonable default settings, so if you do not have special requirements, you can leave these files as they are.
+> La modification de ces fichiers peut être un peu délicate, alors attendez-vous à exporter un fichier de test plusieurs fois avant de le faire correctement. C'est un processus d'essai et d'erreur. Cependant, Zettlr est livré avec des paramètres par défaut, donc si vous n'avez pas d'exigences particulières, vous pouvez laisser ces fichiers tels quels.
 
-## What are Defaults Files?
+## Que sont les fichiers par défaut?
 
-Defaults files are YAML files which contain properties that can be used to control the Pandoc behaviour for a given export or import format. They reside in your user data folder and have the format `<import/export>.<writer/reader>.yaml`, where import/export refers to where the file will be used and writer/reader refers to the format used.
+Les fichiers par défaut sont des fichiers YAML qui contiennent des propriétés pouvant être utilisées pour contrôler le comportement de Pandoc pour un format d'exportation ou d'importation donné. Ils résident dans votre dossier de données utilisateur et ont le format `<import/export>.<writer/reader>.yaml`, où import/export fait référence à l'endroit où le fichier sera utilisé et writer/reader fait référence au format utilisé.
 
-Zettlr requires a certain set of defaults files, since for each export or import it will pass one of these files to Pandoc. As such, when Zettlr is started, it will check for the existence of these required files and create them if necessary.
+Zettlr a besoin de certains fichiers par défaut, car pour chaque exportation ou importation, il transmettra l'un de ces fichiers à Pandoc. Ainsi, à chaque  démarrage, Zettlr vérifiera l'existence des fichiers requis et les créera si nécessaire.
 
-> The full documentation for what you can do with defaults files can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#default-files). Make sure to refer to that manual when you edit defaults files.
+> La documentation complète sur ce que vous pouvez faire avec les fichiers par défaut se trouve dans le [Manuel Pandoc](https://pandoc.org/MANUAL.html#default-files). Assurez-vous de vous référer à ce manuel lorsque vous modifiez les fichiers par défaut.
 
 ## Requirements for Defaults Files
 
