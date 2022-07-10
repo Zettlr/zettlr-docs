@@ -36,7 +36,7 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 * `Cmd/Ctrl+W`: Fermez la fenêtre de l'application. Sous Windows et Linux, l'application se fermera également.
 * `Cmd/Ctrl+M`: Réduisez la fenêtre de l'application.
 * `F1`: Ouvrez cette documentation. Cela ouvrira le lien dans votre navigateur par défaut.
-* clic bouton du milieu: Cliquer Sur un fichier de l'arborescence, ouvre le fichier dans un nouvel onglet.
+* `clic bouton du milieu`: Cliquer Sur un fichier de l'arborescence, ouvre le fichier dans un nouvel onglet.
 
 **Si le mode de débogage est activé**
 
