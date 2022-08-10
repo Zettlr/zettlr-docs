@@ -1,12 +1,20 @@
-# Moving to a New Computer
+# Migrating to a New Computer
 
 If you're taking full advantage of Zettlr's functionality, you'll eventually create an extensive library of workspaces, interconnected notes, and likely a few custom settings, too. When the time comes to replace your computer, or perhaps migrate to a new operating system, you'll obviously want to take this data with you.
 
 You'll be pleased to know that this is a straightforward process, which typically involves three steps:
 
-1. Copying your application settings to the new machine.
-2. Copying the workspaces containing your notes to the new machine.
+1. Copying the workspaces containing your notes to the new machine.
+2. Copying your application settings to the new machine.
 3. Reconnecting your reference manager (if you use one).
+
+## Copying the Workspaces Containing Your Notes to the New Machine
+
+Because Zettlr workspaces are simply folders on your computer and your notes are simply text files, moving this data to a new computer is as simple as copying these folders from one computer to the next. All of the metadata about your notes and the connections between them — note IDs, tags, etc. — is saved to the individual note files themselves, meaning this information travels right along with the files.
+
+Once you've copied the workspace folders containing your notes from your old computer and placed them on the new machine, you can add each workspace and its files to your new Zettlr install simply by going to the `File > Open Workspace …` menu option and selecting that workspace folder. Note that this is the same process you would use you if were adding any other folder to Zettlr. The workspace folder, including the notes it contains, will immediately be populated into your new Zettlr install. The connections between notes will also be retained, though if you have links to notes that live in different workspaces, you'll have to make sure you've likewise opened those workspace folders and their contents within your new Zettler install.
+
+Any files or notes that aren't part of a workspace folder can also be opened in your new Zettlr install once you've moved them to your new machine, just as you would use Zettlr to open any other file.
 
 ##  Copying Your Application Settings to the New Machine
 
@@ -26,15 +34,7 @@ Once you've located this folder, save a copy of the following files and subfolde
 * `defaults` (default settings for document import and export)
 * `snippets` (any snippets you've set up for auto-filling note content)
 
-Once you've installed Zettlr on your new computer and launched it for the first time, the software will create a new application path folder (see above). At this point, close the application and copy the backups of the files and subfolders you just made into that newly created application path folder. If you're prompted as to whether it's okay to replace existing files, you can say "okay." You've now copied over the application settings from your old computer.
-
-## Copying the Workspaces Containing Your Notes to the New Machine
-
-Because Zettlr workspaces are simply folders on your computer and your notes are simply text files, moving this data to a new computer is as simple as copying these folders from one computer to the next. All of the metadata about your notes and the connections between them — note IDs, tags, etc. — is saved to the individual note files themselves, meaning this information travels right along with the files.
-
-Once you've copied the workspace folders containing your notes from your old computer and placed them on the new machine, you can add each workspace and its files to your new Zettlr install simply by going to the `File > Open Workspace …` menu option and selecting that workspace folder. Note that this is the same process you would use you if were adding any other folder to Zettlr. The workspace folder, including the notes it contains, will immediately be populated into your new Zettlr install. The connections between notes will also be retained, though if you have links to notes that live in different workspaces, you'll have to make sure you've likewise opened those workspace folders and their contents within your new Zettler install.
-
-Any files or notes that aren't part of a workspace folder can also be opened in your new Zettlr install once you've moved them to your new machine, just as you would use Zettlr to open any other file.
+Once you've installed Zettlr on your new computer and launched it for the first time, the software will create a new application path folder (see above). When you're ready to import the application settings to your new computer, close Zettlr and copy the backups of the files and subfolders you just made into the newly created application path folder. If you're prompted as to whether it's okay to replace existing files, you can say "okay." You've now copied over the application settings from your old computer.
 
 ## Reconnecting Your Reference Manager
 
