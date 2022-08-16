@@ -18,7 +18,9 @@ Any files or notes that aren't part of a workspace folder can also be opened in 
 
 ##  Copying Your Application Settings to the New Machine
 
-If you've customized Zettlr at all and/or you want to retain the various stats about your notes, there are a few configuration files that you may want to back up and copy over to your new machine. This data is located in the _application data path_ whose location depends on your Operating System:
+## Backing Up Application Settings From Your Old Machine
+
+If you've customized Zettlr at all and/or you want to retain the various stats about your notes, there are a few configuration files that you may want to back up and copy over to your new machine. This data is located in the _application data path_ — a configuration directory whose location depends on your Operating System:
 
 * **Windows:** `C:\Users\<your username>\AppData\Roaming\Zettlr` (note that AppData is a hidden folder, so you might want to change the Explorer settings so it shows up)
 * **macOS:** `/Users/<your username>/Library/Application Support/Zettlr` (open a Finder window, hold down "Alt" while opening the "Go"-menu, and click on the appearing "Library" entry)
@@ -34,7 +36,11 @@ Once you've located this folder, save a copy of the following files and subfolde
 * `defaults` (default settings for document import and export)
 * `snippets` (any snippets you've set up for auto-filling note content)
 
-Once you've installed Zettlr on your new computer and launched it for the first time, the software will create a new application path folder (see above). When you're ready to import the application settings to your new computer, close Zettlr and copy the backups of the files and subfolders you just made into the newly created application path folder. If you're prompted as to whether it's okay to replace existing files, you can say "okay." You've now copied over the application settings from your old computer.
+## Copying the Backup of Your Application Settings to Your New Machine
+
+On your new machine, install Zettlr and launch it. This will create the configuration directory into which you will be able to put the backups you made. Then, quit the app again, and copy all the application settings backups you wish to keep from your old install into the new configuration directory (see the guidance above on determining the correct application data path for your operating system).
+
+If you're prompted as to whether it's okay to replace existing files, you can say "okay." You've now copied over the application settings from your old computer.
 
 ## Reconnecting Your Reference Manager
 
