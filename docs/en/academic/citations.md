@@ -14,7 +14,7 @@ If you use Mendeley, Citavi, EndNote, or any other references management softwar
 
 ### Step 1: Install BetterBibTex
 
-The first step is to install [the BetterBibTex plugin for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases/latest). Using BetterBibTex has two important benefits over not using it. First, it keeps all of your citation keys unique across your entire library. Second, it allows you to keep your exported library file up to date so you do not have to re-export it every time something changes.
+The first step is to install [the BetterBibTex plugin for Zotero](https://retorque.re/zotero-better-bibtex/installation/). Using BetterBibTex has two important benefits over not using it. First, it keeps all of your citation keys unique across your entire library. Second, it allows you to keep your exported library file up to date so you do not have to re-export it every time something changes.
 
 Each citation item has its own unique ID. This is necessary so that when you, for instance, realise that the publication date has been saved incorrectly, you can easily change it in Zotero and afterwards citeproc will use the corrected information. If you do not use BetterBibTex, it may happen that an ID is issued multiple times, which would either generate errors (the good way, because you know there's something wrong) or simply cause citeproc to use the first item that matches this ID (the bad way, because then you'd have to be lucky to spot the wrong citation after export).
 
