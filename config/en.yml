@@ -55,6 +55,7 @@ nav:
   - References:
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
     - Markdown Basics: reference/markdown-basics.md
+    - Migrating to a New Computer: reference/migrating.md    
     - Settings: reference/settings.md
     - Spell Checking: reference/spell-checking.md
 theme:
