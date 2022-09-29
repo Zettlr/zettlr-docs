@@ -1,0 +1,75 @@
+site_name: Zettlr Docs
+site_url: https://docs.zettlr.com/zh-CN
+repo_url: https://github.com/Zettlr/zettlr-docs
+site_description: >-
+    我们完整的文档，以便于你充分利用Zettlr。
+site_author: Hendrik Erz
+copyright: "&copy; 2017-2020 by Zettlr"
+docs_dir: ../docs/zh-CN
+site_dir: ../build/zh-CN
+edit_uri: edit/master/docs/zh-CN
+extra_css:
+  - assets/app.css
+nav:
+  - 欢迎: index.md
+  - 第一步:
+    - 设置: install.md
+    - 移动应用程序: portable.md
+    - 安装LaTeX: installing-latex.md
+    - 开始: get-started.md
+    - 参与其中: get-involved.md
+    - FAQ: faq.md
+    - 故障排除: troubleshooting.md
+  - 概念:
+    - 文件管理: concepts/workspaces.md
+    - 上下文: concepts/context.md
+    - WYSIWYM: concepts/wysiwym.md
+  - 核心功能:
+    - 编辑器: core/editor.md
+    - 文档便签: core/tabs.md
+    - 文件管理器: core/file-manager.md
+    - 素材管理器: core/assets-manager.md
+    - 默认文件: core/defaults-files.md
+    - 自定义CSS: core/custom-css.md
+    - 片段: core/snippets.md
+    - 自动更正和MagicQuotes: core/autocorrect.md
+    - 搜索: core/search.md
+    - 导入: core/import.md
+    - 导出: core/export.md
+    - 表格编辑器: core/tables.md
+    - 本地化: core/localisation.md
+    - 侧边栏: core/sidebar.md
+    - 前置YAML: core/yaml-frontmatter.md
+    - 打印和预览: core/print-preview.md
+    - 数学: core/math.md
+  - 学术工具:
+    - 引文: academic/citations.md
+    - 项目: academic/projects.md
+    - 演示文稿: academic/presentations.md
+    - 番茄定时钟: academic/pomodoro.md
+    - 可读性: academic/readability.md
+    - Zettelkasten方法: academic/zkn-method.md
+    - 图形视图: academic/graph.md
+    - 自定义模板: academic/custom-templates.md
+  - 参考:
+    - 键盘快捷键: reference/keyboard-shortcuts.md
+    - Markdown基础: reference/markdown-basics.md
+    - 迁移到新电脑: reference/migrating.md    
+    - 设置: reference/settings.md
+    - 拼写检查: reference/spell-checking.md
+theme:
+  name: readthedocs
+  custom_dir: ../theme_override
+  highlightjs: True
+  prev_next_buttons_location: both
+  hljs_languages:
+    - javascript
+    - css
+    - yaml
+    - tex
+markdown_extensions:
+    - toc:
+        permalink: True
+plugins:
+  - search:
+      lang: zh
