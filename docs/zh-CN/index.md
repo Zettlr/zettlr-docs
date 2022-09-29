@@ -1,26 +1,27 @@
-# Welcome!
+# 欢迎！
 
-This is the official documentation for the Zettlr Markdown Editor. This documentation describes the features Zettlr offers for writing text and organizing your files, as well as customizing your experience. In case you have not yet installed Zettlr, you can do so now by going to [our download page](https://www.zettlr.com/download). Zettlr is currently supported on Windows (7 or newer), macOS (10.11 or newer), and various Linux distributions. Please consult the [setup instructions](install.md) for platform-specific instructions on installing the application on your computer.
+这是Zettlr Markdown编辑器的官方文档。本文档介绍了Zettlr提供的用于编写文本和组织文档以及自定义体验的功能。如果您尚未安装Zettlr，您现在可以转到[我们的下载页面](https://www.zettlr.com/download)。Zettlr目前在Windwos（7 或更高版本）、macOS（10.11 或更高版本）和各种 Linux 发行版上受支持。有关在计算机上安装应用进程的特定平台说明，请参阅[安装说明](install.md)。
 
-## How to Read this Documentation
+## 如何阅读本文档
 
-This documentation is structured with Zettlr's extensive feature set and target group in mind. This means that there are several patterns we follow in this documentation; both simple enumerations of certain features, and also extensive guides for more advanced and complex features.
+本文档以Zettlr的大量功能集合和目标用户组织的。这意味着我们在本文档中遵循几种模式；既包括某些功能的简单罗列，也包括更高级和复杂功能的广泛指南。
 
-This documentation is made of a few central categories. If you know exactly what you are looking for, the search bar at the top right is the right starting point for you. Otherwise, you can find the different explanations in these categories:
+本文档由几个主要类别组成。如果您确切地知道要查找的内容，则右上角的搜索栏适合您。否则，您可以在以下类别中找到不同的解释：
 
-- The **First Steps** section contains instructions on how to set up everything necessary to start working with Zettlr. It also provides a short "getting started" guide in case you want to see what the app offers.
-- A section on **concepts** familiarizes you with a few concepts that form the basis of how Zettlr works. It is recommended to read through these documents carefully, since Markdown editors work differently than, e.g. Microsoft Word, and it will help you avoid common pitfalls.
-- The **Core** describes the central writing and file management feature sets of Zettlr: What it can do, how it can do it, and where you can customize it.
-- **Academic Tools** focuses on features that are especially useful to – but not only! – students and academics.
-- **References** contain simple enumerations on general topics (such as an explanation of all available settings or keyboard shortcuts) which serve as a quick reference for you.
+- **第一步** 章节包含有关如何设置开始使用Zettlr所需的一切的说明。它还提供了一个简短的“入门”指南，如果您想查看应用提供的内容。
+- **概念**章节将让您熟悉一些概念，这些概念构成了Zettlr工作原理的基础。建议仔细阅读这些文档，因为Markdown编辑器的工作方式与微软Word等不同，它将帮助您避免常见的问题。
+- **核心功能**章节描述了Zettlr的主要写作和文档管理功能设置：它可以实现什么，如何实现，以及在哪里可以自定义它。
+- **学术工具**章节专注于学生和学者中特别有用的功能——但不仅如此！
+- **参考**章节包含有关常规主题的简单罗列（例如所有可用设置或键盘快捷键的说明），可作为您的快速参考。
 
-## Get Involved!
+## 参与进来！
 
-Zettlr is free and open source software, which means that its source code is publicly available, and the application comes at no cost. However, this also means that there is no paid staff behind the app – it is completely managed by the community. This means that **we actively encourage users to get involved with the app**! Depending on your skills and what you like most, there are various ways in which you can help Zettlr out:
+Zettlr是免费的开源软件，这意味着它的源代码是公开的，并且该应用是免费的。但是，这也意味着该应用背后没有付费员工——它完全由社区管理。这意味着**我们积极鼓励用户参与该应用**！根据您的技能和您最喜欢的内容，您可以通过多种方式帮助Zettlr：
 
-- You can [translate the app](https://translate.zettlr.com/) in more languages, and improve existing ones.
-- You can [translate and improve this very documentation](https://github.com/Zettlr/zettlr-docs/) (GitHub account required).
-- You can join the community on [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.com/invite/PcfS3DM9Xj), and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) and help new and other users. Note that the [forum](https://forum.zettlr.com/) is deprecated. 
-- You can [tackle open issues on GitHub](https://github.com/Zettlr/Zettlr/issues) and help develop the application itself.
+- 您可以将[应用翻译](https://translate.zettlr.com/)成更多语言，并改进现有语言。
+- 您可以翻译和改进此[文档](https://github.com/Zettlr/zettlr-docs/)（需要GitHub帐户）。
+- 您可以在[Reddit](https://www.reddit.com/r/Zettlr/)，[Discord](https://discord.com/invite/PcfS3DM9Xj)和[GitHub讨论](https://github.com/Zettlr/Zettlr/discussions)上加入社区，并帮助新用户和其他用户。请注意，[论坛](https://forum.zettlr.com/)已被弃用。
+- 您可以[解决GitHub上的未决问题](https://github.com/Zettlr/Zettlr/issues)并帮助开发应用。
 
-[More information on how to get involved can be found here in the documentation](get-involved.md).
+[更多信息关于如何参与进来可以见此文档](get-involved.md).
+
