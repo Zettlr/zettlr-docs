@@ -22,6 +22,29 @@ keywords:
   - Another keyword
 author:
   - The Zettlr Team
+lang: de-CH # languages 
+reference-section-title: true
+mainfont: "IBM Plex Serif"
+sansfont: "IBM Plex Sans"
+monofont: "IBM Plex Mono"
+linestretch: 1.5
+papersize: a4
+margin-left: 2cm
+margin-right: 2cm
+margin-top: 2cm
+margin-bottom: 2cm
+fontsize: 11pt
+documentclass: article # one-sided document
+numbersections: true # section with number
+header-includes: | # header and footer
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhead{} # clear header
+    \fancyhead[R]{\textbf{The performance of new graduates}} # header right
+    \fancyfoot{} # clear footer
+    \fancyfoot[L]{The Zettlr Team} # footer left
+    \fancyfoot[C]{Cool} # footer centre
+    \fancyfoot[R]{\thepage} # footer right page number
 ---
 ```
 
