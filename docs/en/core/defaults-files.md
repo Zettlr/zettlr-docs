@@ -2,7 +2,7 @@
 
 Defaults files are a way to define default values for many of the variables that Pandoc uses internally to facilitate both your imports and exports. Defaults files resemble [YAML frontmatters](yaml-frontmatter.md), but are more powerful and apply to all your files instead of just a single one.
 
-Previously, Zettlr would use defaults files internally, but Zettlr 2.0 finally gives you the ability to edit these files yourself.
+Previously, Zettlr would use defaults files internally, but Zettlr 2.0 finally gives you the ability to edit these files yourself in the **Assets Manager**. 
 
 > Editing these files can be a little bit tricky, so expect to export a test file multiple times before you have got it right. It is a trial & error process. However, Zettlr ships with reasonable default settings, so if you do not have special requirements, you can leave these files as they are.
 
@@ -48,7 +48,7 @@ The defaults files are a very powerful, but at the same time very complex way of
 
 ### Preliminaries
 
-Pandoc contains a powerful **templating-system** to customize your exports. Within the default templates Pandoc provides (and uses, if you do not explicitly provide a custom template), you will find statements such as `$for(hyperrefoptions)$,$hyperrefoptions$$endfor$`. In this case, `hyperrefoptions` is a variable that you can set. Depending on the template, different variables are available. You can find a comprehensive list of all variables used in the default templates [here](https://pandoc.org/MANUAL.html#variables).
+Pandoc contains a powerful **templating-system** to customize your exports. Within the default templates Pandoc provides (and uses, if you do not explicitly provide a custom template), you will find statements such as `$for(hyperrefoptions)$,$hyperrefoptions$$endfor$`. In this case, `hyperrefoptions` is a variable that you can set. Depending on the template, different variables are available. You can find a comprehensive list of all variables used in the default templates [here](https://pandoc.org/MANUAL.html#variables). 
 
 ### Setting Variables
 
@@ -79,3 +79,47 @@ variables:
 ```
 
 You can also make use of this templating system yourself. If you want to write a custom template, you can add statements such as `$if(myvariable)$$myvariable$$endif$` and insert the variable `myvariable` into any frontmatter or defaults file, and it will be replaced with whatever value you set it to.
+
+
+### Microsoft Word Template (.docx)
+
+For export as a Word document, you need a .docx document that serves as a template. This file should be stored in the same folder as your markdown files and added to the Word export Defaults file in Assets Manager. 
+
+#### Reference Document 
+
+Use an existing Word document or download the reference.docx from Pandoc and change the styles. Your reference doc is a Word file that you format to your preferences. You need to adjust the Word Styles (Paragraph, Heading, Body Text, Footnote Text, etc) for it to apply. 
+
+- Example [reference docx for download] (https://github.com/hokorobi/pandoc-docx-reference/blob/master/reference.docx).
+- More explanation can be found in the Pandoc [documentation](https://pandoc.org/MANUAL.html#options-affecting-specific-writers) under `--reference-doc=FILE`. 
+- There is also a useful discussion on this [here.](https://github.com/Zettlr/Zettlr/discussions/2623#discussioncomment-1472225)
+
+#### Writer options in Defaults file
+
+The Defaults file is under Assets Manager > Exporting > Word. Add your reference doc file `reference-doc: your-reference-template.docx`, and it should look something like this: 
+
+```
+# ZETTLR DEFAULTS FILE
+# ====================
+# Conversion: Markdown --> Microsoft Word
+# More info: https://pandoc.org/MANUAL.html
+
+reference-doc: custom-reference.docx
+
+reader: markdown
+writer: docx
+self-contained: true
+  •
+  •
+ etc. 
+```
+
+More options for the writer can be found [here](https://pandoc.org/MANUAL.html#options-affecting-specific-writers-1), including options for numbered headings, the table of contents, etc. 
+
+#### Summary for Export as Word (.docx)
+
+1. Make a reference.docx in Word by adjusting the styles
+2. Place that reference doc in the same folder with Markdown files for this export
+3. Change the Defaults file in Assets Manager to include that file
+4. Adjust any other parameters in the Defaults Manager. 
+5. Export as Word Document
+
