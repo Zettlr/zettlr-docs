@@ -87,53 +87,48 @@ For export as Microsoft Word document, OpenDocument, or PowerPoint presentation,
 
 #### Producing the Reference Document
 
-For best results, it is recommended to download the reference document directly from Pandoc. It should already be installed with Zettlr, but if not, see [Pandoc installation](https://docs.zettlr.com/en/installing-pandoc/) instructions. 
+For best results, it is recommended to retrieve the reference document directly from Pandoc. It comes bundled with Zettlr, but if it's not installed, see [Pandoc installation](https://docs.zettlr.com/en/installing-pandoc/) instructions. 
 
 ##### Option 1: Using Pandoc from Command line or Terminal 
 
-In the command line: `pandoc -o "custom-reference.docx" --print-default-data-file reference.docx`
+In order to retrieve a reference document, run any of the following commands to create the file `custom-reference.docx`, `custom-reference.odt`, or `custom-reference.pptx`
 
-To adjust the name or location of where the document is saved, you can change `"custom-reference.docx"` to include the absolute path: `"/Users/[user]/Downloads/project-reference.docx"`
+```
+pandoc -o "custom-reference.docx" --print-default-data-file reference.docx
 
-##### Option 2: Download from Pandoc Github repository
+pandoc -o "custom-reference.odt" --print-default-data-file reference.odt
 
- In the Pandoc repo the documents are unzipped, which makes downloading them somewhat complicated. 
+pandoc -o "custom-reference.pptx" --print-default-data-file reference.pptx
 
-1. Open https://github.com/jgm/pandoc/
-2. In the green Code button, select "Download zip"
-3. Open the folder, find /pandoc-master/data/docx, and ZIP (compress) the docx folder. 
-4. Change ".zip" to ".docx" in the file name
-5. Open with Word
+```
 
-This method can lead to errors, and it is recommended to follow Option 1. 
+To adjust the name or location of where the document is saved, you can change  the file name to include the absolute path, eg., for macOS you could use: `"/Users/[user]/Downloads/project-reference.docx"` in place of "custom-reference.docx"
 
-##### Option 3: Finding documents produced by others
+##### Option 2: Finding documents produced by others
 
-Formatted Pandoc reference documents can be found on Github or elsewhere. Use these at your own risk. 
+Formatted Pandoc reference documents can be found on Github or elsewhere. You can search for "pandoc reference docx" or "converting markdown to Word docs or odts with pandoc" to find examples. Use these at your own risk. 
 
-Examples: 
-- https://github.com/hokorobi/pandoc-docx-reference/blob/master/reference.docx
-- https://www.autodidacts.io/convert-markdown-to-standard-manuscript-format-odts-docs-and-pdfs-with-pandoc/ 
+##### Option 3 (Powerpoint only): Use the included Microsoft templates
 
+As stated in the Pandoc [documentation](https://pandoc.org/MANUAL.html#options-affecting-specific-writers-1), templates included with Microsoft PowerPoint 2013 (either with .pptx or .potx extension) are known to work, as are most templates derived from these.
 
 #### Adjusting the style and format
 
 The reference document is a Word file that needs to be formatted to your preferences using Styles. 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/109297886/200125385-1894484c-ea68-4615-aca3-065e40d271d9.png">
 
-You must update the formatting in the Styles Pane (Paragraph, Heading 1, Body Text, Footnote Text, etc.) for it to apply. Changing the text or other contents of the document has no effect unless you "Update to Match Selection" in Styles. Pandoc ONLY looks at the Styles format. 
+You must update the formatting in the Styles Pane (Paragraph, Heading 1, Body Text, Footnote Text, etc.) for it to apply. Changing the text or other contents of the document has no effect unless you "Update to Match Selection" in Styles. Pandoc **only** looks at the Styles format. 
 
-- More information about which Styles are supported in Pandoc [documentation](https://pandoc.org/MANUAL.html#options-affecting-specific-writers) under `--reference-doc=FILE`. 
+- More information about modifying styles in Word can be found in its [documentation](https://support.microsoft.com/en-us/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563#:~:text=On%20the%20Home%20tab%2C%20right,or%20to%20all%20future%20documents.) 
+- More information about which styles are supported in Pandoc can be found in its [documentation](https://pandoc.org/MANUAL.html#options-affecting-specific-writers) under `--reference-doc=FILE`
 
-If you have an existing document that you want to use as template, you can use Word Organizer to copy the styles over. 
+If you have an existing document that you want to use as template, you can use [Word Organizer](https://www.officearticles.com/word/using_the_organizer_in_microsoft_word.htm) to copy the styles over. 
  
 1. Format > Style...
 2. Organizer... at bottom left
 3. On the right side, under `Normal.dotm (global template)`, close file
 4. Open file, find your desired document
 5. Select the styles on the right, and <- Copy it over to the current reference.docx
-
-- In depth explanation of [Word Organizer](https://www.officearticles.com/word/using_the_organizer_in_microsoft_word.htm) 
 
 
 #### Writer options in Defaults file
@@ -164,10 +159,10 @@ More options for the writer can be found in the [Pandoc documentation](https://p
 
 #### Summary for Export as Word, Open Documents, or Powerpoint presentations
 
-1. Download the custom-reference.docx from Pandoc
-2. In Word, change the format of that document using Styles Pane or Organizer
-3. Place that .docx in the same folder with Markdown files for this export or get the absolute path name 
+1, Retrieve the appropriate reference document from Pandoc
+2. In Word, change the format of that document using Styles Pane or Organizer; analogously with OpenDocument documents
+3. Place that reference file in the same folder as the Markdown files for this export or get the absolute path name 
 4. Adjust the Defaults file in Zettlr Assets Manager to include that file name
 5. Adjust any other parameters in the Defaults Manager
-6. Export as Word Document in Zettlr 
+6. Export using the appropriate exporter profile in Zettlr 
 
