@@ -45,3 +45,10 @@ $ sudo dnf install texlive-scheme-basic
 $ sudo dnf install texlive-scheme-medium
 $ sudo dnf install texlive-scheme-full
 ```
+
+### Flatpak
+Install the texlive plugin for Flatpak (be warned, it is the full version and thus quite large):
+
+```shell
+$ flatpak install org.freedesktop.Sdk.Extension.texlive
+```
