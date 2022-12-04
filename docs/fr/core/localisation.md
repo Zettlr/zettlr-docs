@@ -21,7 +21,7 @@ L'application comprend les dictionnaires suivants:
 - Russe
 - Ukrainien
 
-## Installer des nouveaux dictionnaire
+## Installer des nouveaux dictionnaires
 
 Bien sûr, vous souhaiterez peut-être installer de nouveaux dictionnaires pour les langues dans lesquelles vous écrivez et qui ne sont pas fournis avec l'application. C'est facile à faire. Zettlr utilise les dictionnaires populaires Hunspell qui sont également utilisés par des logiciels bien connus tels que les applications LibreOffice ou Mozilla.
 
