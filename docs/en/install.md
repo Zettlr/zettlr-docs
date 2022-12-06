@@ -30,6 +30,12 @@ To uninstall, follow the usual steps it takes to remove a package (usually throu
 
 > There is a community-maintained package for Arch Linux available. [You can find it on the official AUR repositories](https://aur.archlinux.org/packages/zettlr-bin/). Please note that this package is community-maintained and we do not take any responsibility in its stability, safety or offered version.
 
+### Flatpack
+
+Zettlr can also be installed by using a [Flatpack](https://flathub.org/home). You can find the setup instructions for that [on Zettlr's FlatHub page](https://flathub.org/apps/details/com.zettlr.Zettlr). The flatpack [repository can be found on GitHub](https://github.com/flathub/com.zettlr.Zettlr). Please direct any questions regarding the Flatpack to that repository rather than Zettlr's main repository.
+
+> **Attention**: If you install Zettlr via Flatpack, this means that initially Zettlr will only be able to access a very small part of your filesystem. Therefore, accessing, opening, and writing to directories outside of your Documents directory will not work. In order to grant Zettlr write access to further parts of your computer, you can use a package like [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal).
+
 ## Updating Zettlr
 
 The application checks for new updates each time you start the app. You can also manually trigger the search for updates by using the respective menu item from the Help menu. If a new version is available, Zettlr will show you a dialog that contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
