@@ -4,7 +4,7 @@ L'installazione di Zettlr è molto semplice e richiede solo un passaggio per ogn
 
 Se vuoi far funzionare Zettlr su altri sistemi Linux come Arch o su dispositivi ARM (come ad esempio un Raspberry), dovrai costruire da te un pacchetto. Ci sono moltissimi facili tutorial in rete su come creare programmi electron. Ti invitiamo a rivolgerti alle piattaforme supportate da programmi electron per restare aggiornato sulle piattaforme supportate.
 
-> É disponibile un pacchetto mantenuto dalla comunità per Arch Linux. [Puoi trovarlo sui repositories ufficiali AUR](https://aur.archlinux.org/packages/zettlr-bin/). Ti preghiamo di ricordare che si tratta di un pacchetto mantenuto dalla comunità e non abbiamo nessuna responsabilità per la sua stabilità, sicurezza o disponibilità di versioni.
+> É disponibile un pacchetto mantenuto dalla comunità per Arch Linux. [Puoi trovarlo sui repositories ufficiali](https://wiki.archlinux.org/title/Zettlr#Installation). Ti preghiamo di ricordare che si tratta di un pacchetto mantenuto dalla comunità e non abbiamo nessuna responsabilità per la sua stabilità, sicurezza o disponibilità di versioni.
 
 ## Windows (7 o successivi)
 
