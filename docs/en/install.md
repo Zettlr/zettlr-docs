@@ -16,7 +16,7 @@ To uninstall Zettlr, simply run the Uninstall.exe either from the directory itse
 
 ## macOS (10.11 or newer)
 
-To install Zettlr on macOS, simply download the dmg-file and mount it by double-clicking it. Then drag the Zettlr icon into your Applications directory and you're done!
+To install Zettlr on macOS, simply download the dmg-file from our [download page](https://www.zettlr.com/download) and mount it by double-clicking it. Then drag the Zettlr icon into your Applications directory and you're done!
 
 To uninstall Zettlr, simply remove the Zettlr.app from your Applications directory. If you want to completely remove all data associated with the app, also remove the directory `/Users/<your-user-name>/Library/Application Support/Zettlr`.
 
