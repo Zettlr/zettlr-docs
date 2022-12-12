@@ -16,19 +16,29 @@ To uninstall Zettlr, simply run the Uninstall.exe either from the directory itse
 
 ## macOS (10.11 or newer)
 
-To install Zettlr on macOS, simply download the dmg-file and mount it by double-clicking it. Then drag the Zettlr icon into your Applications directory and you're done!
+To install Zettlr on macOS, simply download the dmg-file from our [download page](https://www.zettlr.com/download) and mount it by double-clicking it. Then drag the Zettlr icon into your Applications directory and you're done!
 
 To uninstall Zettlr, simply remove the Zettlr.app from your Applications directory. If you want to completely remove all data associated with the app, also remove the directory `/Users/<your-user-name>/Library/Application Support/Zettlr`.
 
 > You can also install Zettlr using [Homebrew](https://formulae.brew.sh/cask/zettlr): `$ brew install --cask zettlr`
 
-## Linux (Debian 8/Ubuntu 12.04/Fedora 24 or newer)
+## Linux
 
-There are prebuilt `deb` and `rpm` packages as well as `AppImage` bundles for Linux systems. Simply install the package on your system according to which of these you have downloaded. For installing AppImage bundles, please [refer to this guide on how to install them](https://appimage.org/).
+### Debian/Ubuntu/Fedora and derivatives
+
+There are prebuilt `deb` (Debian 8/Ubuntu 12.04 or newer) and `rpm` (Fedora 24 or newer) packages. You can install them using the respective package manager or download them from our [download page](https://www.zettlr.com/download).
 
 To uninstall, follow the usual steps it takes to remove a package (usually through the graphical installer application or via `dpkg`). If you also want to remove all data associated with the app, also delete the `/home/<your-user-name>/.config/Zettlr` directory.
 
-> There is a community-maintained package for Arch Linux available. [You can find it on the official AUR repositories](https://aur.archlinux.org/packages/zettlr-bin/). Please note that this package is community-maintained and we do not take any responsibility in its stability, safety or offered version.
+### Arch Linux
+
+There are two community-maintained packages available for Arch Linux. The [zettlr](https://archlinux.org/packages/?name=zettlr) package contains the latest release; the [zettlr-git](https://aur.archlinux.org/packages/zettlr-git/) AUR package represents the latest commit from GitHub. You can find more information in the [Arch wiki article](https://wiki.archlinux.org/title/Zettlr) about Zettlr.
+
+> Please note that these packages are community-maintained and we do not take any responsibility for their stability, safety or offered version.
+
+### AppImage
+
+Zettlr is available as an `AppImage` bundle for Linux systems on the [download page](https://www.zettlr.com/download). For installing AppImage bundles, please [refer to this guide](https://appimage.org/).
 
 ### Flatpack
 

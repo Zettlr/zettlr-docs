@@ -26,7 +26,7 @@ Hay  archivos `deb` y `rpm` así como paquetes preinstalados en `AppImage` para 
 
 Para desinstalar, sigue los pasos usuales para desinstalar un paquete (usualmente a través de la aplicación gráfica de instalaciones o vía`dpkg`).  Si además quieres borrar todos los datos asociados a la app, borra también el directorio `/home/<tu-nombre-de-usuario>/.config/Zettlr`.
 
-> Hay una comunidad de mantenimiento de paquetes para Arch Linux. [Puedes encontrarla en los repositorios oficiales de  AUR](https://aur.archlinux.org/packages/zettlr-bin/). Por favor ten en cuenta que esta es una comunidad de mantenimiento de paquetes y nosotros no tenemos ninguna responsabilidad en su estabiidad, seguridad o versión ofrecida.
+> Hay una comunidad de mantenimiento de paquetes para Arch Linux. [Puedes encontrarla en los repositorios oficiales](https://wiki.archlinux.org/title/Zettlr#Installation). Por favor ten en cuenta que esta es una comunidad de mantenimiento de paquetes y nosotros no tenemos ninguna responsabilidad en su estabiidad, seguridad o versión ofrecida.
 
 ## Actualizando Zettlr
 

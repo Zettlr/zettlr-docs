@@ -24,7 +24,7 @@ Il y a des paquets `deb` et `rpm` pré-construits pour les systèmes Linux. Il s
 
 Pour désinstaller Zettlr, suivez les étapes habituelles pour supprimer un paquet (généralement via l'interface graphique d'installation d'applications, ou via `dpkg`). Si vous souhaitez également supprimer toutes les données associées à l'application, supprimez également le répertoire `/home/<votre-nom-d-utilisateur>/.config/Zettlr`.
 
-> Un package géré par la communauté pour Arch Linux est disponible. [Vous pouvez le trouver sur les dépôts officiels AUR](https://aur.archlinux.org/packages/zettlr-bin/). Veuillez noter que ce package est géré par la communauté et que nous déclinons toute responsabilité quant à sa stabilité, sa sécurité ou sa version proposée.
+> Un package géré par la communauté pour Arch Linux est disponible. [Vous pouvez le trouver sur les dépôts officiels](https://wiki.archlinux.org/title/Zettlr#Installation). Veuillez noter que ce package est géré par la communauté et que nous déclinons toute responsabilité quant à sa stabilité, sa sécurité ou sa version proposée.
 
 ## AppImages
 
