@@ -33,7 +33,7 @@ On the left side you'll see all translation IDs. They will mostly be self-explan
 
 We've implemented a user-based quality management system in the service, which consists in you being able to vote on existing translations. So even if you don't want to translate yourself, you can look through all translations and vote for the one you deem correct. Whenever somebody downloads a translation, the system will take the best-rated translation strings to ensure all translations are verified by you, our users!
 
-[For more information, please see the short guide to our translation service](https://translate.zettlr.com/welcome).
+> Attention! In December 2022, **Zettlr Translate** has been retired. In [this article](https://zettlr.com/post/retiring-zettlr-translate), the reasons for that and how that will affect Zettlr going forward are outlined. Right now, Zettlr uses the well-known gettext system to translate the application. You can find the corresponding PO-files that contain the translations in the [GitHub repository](https://github.com/Zettlr/Zettlr). Please head there if you would like to participate – we warmly welcome any help in making the app accessible to the world! 
 
 ## Developing
 
