@@ -4,7 +4,7 @@ The installation of Zettlr is very easy and takes only a step on every operating
 
 > Please note that especially the supported macOS and Linux versions may change at any time. If you use an operating system that is barely supported and you encounter problems, the most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/latest/development/build-instructions-gn#platform-prerequisites).
 
-## Windows (7 or newer)
+## Windows (10 or newer)
 
 To install Zettlr on Windows, just download the app from the [download page](https://www.zettlr.com/download) and double click to open the installer. If you wish to install Zettlr for all users, it is installed to the main `Program Files` directory and in this case you'd have to give it elevated rights during setup (it will automatically ask for your permission). You don't need any rights if you install it for the logged in user.
 
