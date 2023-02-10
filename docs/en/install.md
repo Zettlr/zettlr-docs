@@ -2,7 +2,7 @@
 
 The installation of Zettlr is very easy and takes only a step on every operating system. Zettlr is cross-platform, so it will run on most computers. Zettlr comes pre-built for macOS, Windows and many Linux systems.
 
-> Please note that especially the supported macOS and Linux versions may change at any time. If you use an operating system that is barely supported and you encounter problems, the most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/tutorial/support#supported-platforms).
+> Please note that especially the supported macOS and Linux versions may change at any time. If you use an operating system that is barely supported and you encounter problems, the most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/latest/development/build-instructions-gn#platform-prerequisites).
 
 ## Windows (7 or newer)
 
@@ -14,7 +14,7 @@ To uninstall Zettlr, simply run the Uninstall.exe either from the directory itse
 
 > At the time of writing, the Windows ARM installer does not come with Pandoc bundled. This means that exports may not work. You have to install Pandoc manually. If Pandoc is installed on your computer, Zettlr for Windows ARM will automatically use that one.
 
-## macOS (10.11 or newer)
+## macOS (11.6.0 or newer)
 
 To install Zettlr on macOS, simply download the dmg-file from our [download page](https://www.zettlr.com/download) and mount it by double-clicking it. Then drag the Zettlr icon into your Applications directory and you're done!
 
