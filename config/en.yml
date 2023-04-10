@@ -1,4 +1,4 @@
-site_name: Zettlr Docs
+site_name: Zettlr User Manual
 site_url: https://docs.zettlr.com/en
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: >-
@@ -12,12 +12,11 @@ edit_uri: edit/master/docs/en
 extra_css:
   - assets/app.css
 nav:
-  - Welcome: index.md
-  - First Steps:
-    - Setup: install.md
-    - Portable App: portable.md
-    - Installing LaTeX: installing-latex.md
-    - Getting Started: get-started.md
+  - Start: index.md
+  - Getting Started:
+    - Setup: getting-started/setup.md
+    - Portable App: getting-started/portable.md
+    - Installing LaTeX: getting-started/installing-latex.md
     - Get involved: get-involved.md
     - FAQ: faq.md
     - Troubleshooting: troubleshooting.md

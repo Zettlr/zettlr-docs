@@ -2,7 +2,7 @@
 
 Zettlr allows you to export into many common file formats so that you can share your work with colleagues, friends, and (hopefully!) your publisher. However, Zettlr's export works slightly different than regular exports so you might want to check what happens whenever you export a file into a different format.
 
-> For advanced PDF exports Zettlr will attempt to use LaTeX. While you can also save files to PDF without it, installing LaTeX can be advantageous in various situations. You can see how to install LaTeX in our [guide on installing such a distribution](../installing-latex.md).
+> For advanced PDF exports Zettlr will attempt to use LaTeX. While you can also save files to PDF without it, installing LaTeX can be advantageous in various situations. You can see how to install LaTeX in our [guide on installing such a distribution](../getting-started/installing-latex.md).
 
 ## Exporting Files
 

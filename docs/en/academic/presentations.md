@@ -2,8 +2,6 @@
 
 Zettlr is able to export your Markdown files directly as presentation files using the [reveal.js](https://revealjs.com/#/)-framework. `reveal.js` is a lightweight solution for creating presentations using plain HTML and JavaScript. Therefore, these presentations can be shown on _all_ computers that run a browser — nowadays this means: they run on _every_ computer.
 
-For exporting Markdown files to `reveal.js`, you have to make sure Pandoc is installed on your computer. Head over to the [Pandoc setup guide](../installing-pandoc.md) to see how to install Pandoc.
-
 ## Pre-considerations
 
 Of course, a Markdown document that should be compiled into a presentation has a slightly different structure than other Markdown documents.
