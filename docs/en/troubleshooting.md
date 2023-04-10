@@ -1,20 +1,18 @@
 # Troubleshooting
 
-Like any software, Zettlr might have some problems here and there. If you encounter such problems, this page contains instructions on how to resolve the issues. We now have four years of experience with these problems, and as such the options listed below should work in most cases.
+Like any software, Zettlr might have some problems here and there. If you encounter such problems, this page contains instructions on how to resolve the issues. We have years of experience with these problems, and as such the options listed below should work in most cases.
 
-> Please attempt the steps listed here and consult the FAQ first before asking on the Forum, Reddit, or opening a GitHub issue. By asking questions on these platforms that are already answered somewhere here, you are binding resources by us that we would love to spend developing the app.
+> Please attempt the steps listed here and consult [the FAQ](faq.md) first if you encounter any problems. If these steps do not solve your issue, please [ask our community](get-involved.md/#general-resources). If our community cannot help you as well, please open an issue on GitHub.
 
 ## 1. Try Turning it Off and On Again
 
 This might sound trivial, but many problems can be solved by simply quitting Zettlr and restarting it. If you encounter a problem, it often helps to just restart the app, sometimes also your computer.
 
-> If you can reliably reproduce the problem, that is: the problem _always_ appears after you perform a specific action, this might indicate that you've found a way to create what is called an "unrecoverable state". In that case, and only then, please open a GitHub issue providing us with a minimal example of how to reproduce the issue. We will then fix it.
+> If you can reliably reproduce the problem, that is: the problem _always_ appears after you perform a specific action, this indicates that you've found a replicable bug. In that case, please provide us with a these steps when you open an issue.
 
 ## 2. Install the Most Recent Version
 
-As soon as we hear about a problem, we fix it and some time later we release a new version. Make sure to always update to the newest version, because older versions do have bugs (otherwise they would be the most recent version ;).
-
-So make sure you always use the most recent version of Zettlr!
+Due to limited resources, we cannot support many different versions. If you encounter an issue, make sure you have the most recent version installed. Many issues are fixed in newer versions.
 
 ## 3. Try Resetting the App
 
@@ -43,20 +41,20 @@ If you want to completely reset your local Zettlr installation, follow these ste
 
 ## 4. Ask the Community for Help
 
-If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active both on the [Zettlr subreddit](https://www.reddit.com/r/Zettlr) and on [Discord](https://discord.com/invite/PcfS3DM9Xj), so you can choose which one you like.
+If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active both on the [Zettlr subreddit](https://www.reddit.com/r/Zettlr) and on [Discord](https://discord.gg/PcfS3DM9Xj), so you can choose which one you like.
 
 ## 5. Open a GitHub Issue
 
-If the community couldn't help you, or if it turns out while discussion the issue that it seems to be an actual bug, please open an issue on GitHub. Make sure to include as much information as possible so that we can quickly address the issue.
+If the community couldn't help you, or if it seems to be an actual bug, please open an issue on GitHub. Make sure to include as much information as possible so that we can quickly address the issue.
 
-> If you open an issue on GitHub, make sure you receive notifications. Almost always the developers have additional questions regarding your issue. The faster you respond, the faster we can ensure the issue is being fixed. If no one answers on your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
+> If you open an issue on GitHub, make sure you receive notifications. We have follow-up questions almost always regarding your issue. The faster you respond, the faster we can ensure the issue is being fixed. If no one answers on your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
 
 ## 6. Revert to a previous version
 
 Sometimes, an issue can hinder your productivity. Some users decide to revert to a previous version until we are able to fix the issue. In this section, we want to give you some advice on what could be important in such a situation and what could go wrong doing so.
 
-While our homepage only displays the latest stable release, you can always find all releases (even the antique ones!) on [our GitHub releases page](https://github.com/Zettlr/Zettlr/releases). Generally, you can install any version of Zettlr by simply running the installer with the corresponding version. There is no need to do any preparation. What will be replaced is simply the actual program, but not your data. The installer will always first remove any installed program (remember: not the data), and then install whichever version you downloaded.
+> Always backup everything before reverting! Never just run an older version, this may lead to data loss or corrupt the configuration files that Zettlr needs.
 
-That being said: Sometimes, we update the configuration during updates. This only works one-way, so if you happen to revert from such a version _back_, your configuration might become corrupted. In that case, you need to close the app (if it didn't crash), remove the `config.json` file from your application data directory (see above), and then start Zettlr again. **Always back up your data before reverting to a previous version!!!**
+While our homepage only displays the latest stable release, you can always find all releases (even the antique ones!) on [our GitHub releases page](https://github.com/Zettlr/Zettlr/releases).
 
-
+Before installing an older release, you'll want to do a backup first and ensure a clean installation. Especially when we update the configuration which the app uses, older versions may outright crash because they do not understand the (newer) format. Therefore, go back to step three and remove the entire directory for good (after backing up the files!). This ensures that the older version will run on the first attempt.

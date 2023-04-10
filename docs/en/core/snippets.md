@@ -14,7 +14,7 @@ After you have made changes to the snippet, make sure to click "Save" or press `
 
 Lastly, the editor supports special syntax highlighting that helps you write your snippets. Variables that are not supported will be marked in red so you immediately see that there might be an error.
 
-> Your snippets are actually files which reside in a directory within your application data. Please refer to [the installation manual](../install.md) for the precise location of this folder. The snippet files always follow the pattern `<name>.tpl.md`, where `<name>` refers to the name you give to the snippets within the GUI. This can be useful for backup or sharing purposes.
+> Your snippets are actually files which reside in a directory within your application data. Please refer to [the installation manual](../getting-started/setup.md) for the precise location of this folder. The snippet files always follow the pattern `<name>.tpl.md`, where `<name>` refers to the name you give to the snippets within the GUI. This can be useful for backup or sharing purposes.
 
 ## Snippet Syntax
 
