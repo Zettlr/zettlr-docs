@@ -1,9 +1,13 @@
 # Importing files
 
-Zettlr can import a large variety of files into Markdown so that you can work with these using the app. The process works straightforward: Simply select "File" -> "Import" and choose all the files you would like to import. Zettlr will then convert them one by one from whichever format they are in.
+If you are en route to migrating from a Word processor such as Microsoft Word or LibreOffice, you will have a set of `docx` or `odt`-files that contain valuable content. However, Zettlr cannot open and read those files, because it is a Markdown-based editor.
 
-The app will look at the file extensions of the file to determine the source format. This is important because each file format has different quirks and features, and Zettlr tries to treat each format well. In case Zettlr complains about a file, it might help to rename it to a common extension.
+In order to make these files accessible for Zettlr, you'll need to import them.
 
-Every file will be imported into the **currently active directory**, so make sure to select the appropriate directory prior to importing them. This is meant as a convenience so you can save a few clicks.
+The process is straightforward: First, select the folder into which you would like to import the files. Then, select "File" &rarr; "Import" and choose all the files you would like to import. Zettlr will then convert them one by one from whichever format they are in.
 
-> Note that you can finetune the importer by modifying its defaults files. For example, by default Zettlr will direct Pandoc to extract images and other media files from Word documents into an asset directory so that you get to keep those media files. To see how you can control the importing process, have a look [at the defaults files documentation](defaults-files.md)
+> The app will look at the file's extension to determine the source format. It is possible to add more importers for other more exotic file formats.
+
+You can finetune how the importer works by modifying its profile. For example, by default Zettlr will direct Pandoc to extract images and other media files from Word documents into an asset directory so that you get to keep those media files.
+
+To see how to modify an import profile, have a look [at the defaults files documentation](defaults-files.md).

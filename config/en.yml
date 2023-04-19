@@ -21,10 +21,10 @@ nav:
     - Get involved: getting-started/get-involved.md
     - Troubleshooting: troubleshooting.md
   - Basic Usage:
-    - Workspaces: core/workspaces.md
+    - Workspaces and Folders: core/workspaces.md
     - Files: core/files.md
-    - Standalone files: core/standalone-files.md
-    - Editor: core/editor.md
+    - Importing Files: core/import.md
+    - Writing Markdown: core/writing-markdown.md
     - Document Tabs: core/tabs.md
     - File Manager: core/file-manager.md
     - Assets Manager: core/assets-manager.md
@@ -33,7 +33,6 @@ nav:
     - Snippets: core/snippets.md
     - AutoCorrect and MagicQuotes: core/autocorrect.md
     - Searching: core/search.md
-    - Importing: core/import.md
     - Exporting: core/export.md
     - Table Editor: core/tables.md
     - Localisation: core/localisation.md
