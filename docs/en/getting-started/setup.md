@@ -56,7 +56,7 @@ Thanks to community efforts, Zettlr is available as a regular package for Arch L
 
 ## AppImage
 
-Zettlr is available as an [AppImage](https://appimage.org/) bundle for Linux. To install it, download the package from our [download page](https://www.zettlr.com/download). To install the AppImage, place the file into a directory of your choosing, make it executable, and being using it.
+Zettlr is available as an [AppImage](https://appimage.org/) bundle for Linux. To install it, download the package from our [download page](https://www.zettlr.com/download). To install the AppImage, place the file into a directory of your choice, make it executable, and begin using it.
 
 ## Flatpack
 
@@ -66,23 +66,23 @@ Zettlr is available as a [Flatpack](https://flathub.org/home). To install the Fl
 
 ## Updating Zettlr
 
-The application checks for new updates each time you start the app. You can also manually trigger the search for updates by clicking 'Help' -> 'Check for updates'. If a new version is available, Zettlr will show you a dialog that contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
+The application checks for new updates each time you start the app. You can also manually trigger the search for updates by clicking 'Help' &rarr; 'Check for updates'. If a new version is available, Zettlr will show you a dialog that contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
 
-> Never "jump over" versions! Sometimes, we update the configuration of Zettlr during an update. However, we may remove the required code in a later version. This may lead to data corruption during an update. If you haven't updated Zettlr in a while, you should **not** update directly to the latest version, but instead install each update one after another.
+> Never "jump over" versions! Sometimes, we change the configuration of Zettlr during an update. This may lead to data corruption during an update if you "leave out" the necessary version that will migrate your configuration. If you haven't updated Zettlr in a while, do **not** update directly to the latest version. Instead, install each update one after another. You can find all updates – not just the latest – on [GitHub](https://github.com/Zettlr/Zettlr/releases).
 
 To update, click the download button and wait for the download to finish. Then, click "Begin Update", which will close Zettlr and begin the update process. The updater will be placed in your Downloads-folder. You can remove it once the update was successful.
 
-> Do not use this update procedure if you installed Zettlr via a package manager, e.g., Homebrew. In that case, please update according to your package manager's procedure to avoid conflicts. You can also disable the preference "Automatically check for updates" to prevent the update check from occurring within Zettlr.
+> Do not use this update procedure if you installed Zettlr via a package manager, e.g., Homebrew. In that case, please update according to your package manager's procedure to avoid conflicts. You can disable the setting "Automatically check for updates" in your preferences to prevent Zettlr from checking for updates.
 
 If automatic updates don't work for you, you can always manually update by downloading the appropriate installer for your system (see above). There is no (technical) difference between the first setup and an update; the files are the same.
 
-> You can opt in to beta releases. To do so, activate the preference "Notify me about beta releases" in the settings.
+> You can opt in to beta releases. To do so, activate "Notify me about beta releases" in the settings.
 
 ## Uninstalling Zettlr
 
 If you are unsatisfied with Zettlr or need to remove the app, please follow these instructions.
 
-> Consult your package manager's documentation on uninstalling software if you installed Zettlr with a package manager. Do not follow these instructions in this case.
+> In case you installed Zettlr with a package manager, consult your package manager's documentation on uninstalling software instead of following the instructions here.
 
 On **Windows**, go into the software settings and uninstall it according to [Microsoft's instructions](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98). If you wish to remove the settings and user data as well, you can find those in the directory `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`.
 
@@ -92,7 +92,7 @@ On **Linux**, the uninstall procedure depends on your distribution and how you i
 
 ## Nightly Releases
 
-Since 2.0.0, we also offer so-called nightly releases. Nightlies are releases that are being built automatically every Monday at noon (UTC) (but sometimes we build them manually). They contain the most recent changes to the code base. This means that they are even more recent than the beta releases, **but** this also means that they may contain serious bugs which we haven't found yet.
+Since 2.0.0, we offer so-called nightly releases. Nightlies are releases that are being built automatically every Monday at noon (UTC) (but sometimes we build them manually). They contain the most recent changes to the code base. This means that they are even more recent than the beta releases, **but** this also means that they may contain serious bugs which we haven't found yet.
 
 Nightly releases are for advanced users only who understand the risks in using these. If you keep your settings, the writing statistics, and your files backed up regularly, it might be safe to use nightlies. We do appreciate every one who uses nightlies and informs us about bugs they encounter.
 
