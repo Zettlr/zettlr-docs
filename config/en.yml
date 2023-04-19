@@ -15,17 +15,15 @@ nav:
   - Start: index.md
   - Getting Started:
     - Setup: getting-started/setup.md
+    - Migrating to a New Computer: getting-started/migrating.md
     - Portable App: getting-started/portable.md
     - Installing LaTeX: getting-started/installing-latex.md
-    - Get involved: get-involved.md
-    - FAQ: faq.md
+    - Get involved: getting-started/get-involved.md
     - Troubleshooting: troubleshooting.md
-    - A Note on Security: getting-started/a-note-on-security.md
-  - Concepts:
-    - File management: concepts/workspaces.md
-    - Context: concepts/context.md
-    - WYSIWYM: concepts/wysiwym.md
-  - Core:
+  - Basic Usage:
+    - Workspaces: core/workspaces.md
+    - Files: core/files.md
+    - Standalone files: core/standalone-files.md
     - Editor: core/editor.md
     - Document Tabs: core/tabs.md
     - File Manager: core/file-manager.md
@@ -53,9 +51,9 @@ nav:
     - Graph View: academic/graph.md
     - Custom Templates: academic/custom-templates.md
   - References:
+    - FAQ: reference/faq.md
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
     - Markdown Basics: reference/markdown-basics.md
-    - Migrating to a New Computer: reference/migrating.md    
     - Settings: reference/settings.md
     - Spell Checking: reference/spell-checking.md
 theme:

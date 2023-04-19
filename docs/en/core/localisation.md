@@ -26,4 +26,4 @@ The dictionary consists of two files, one is a `.dic` file, and the other is an 
 
 ## Help Translate!
 
-Is your language not yet available, or are a few translations displayed in English? If any of the strings in the app have not yet been translated, Zettlr will fall back to English for these ones. Anyone can help improve the existing translations and add new ones. To see how you can help, please refer to the [Get Involved page](../get-involved.md).
+Is your language not yet available, or are a few translations displayed in English? If any of the strings in the app have not yet been translated, Zettlr will fall back to English for these ones. Anyone can help improve the existing translations and add new ones. To see how you can help, please refer to the [Get Involved page](../getting-started/get-involved.md).

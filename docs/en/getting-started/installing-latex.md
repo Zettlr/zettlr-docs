@@ -26,7 +26,7 @@ Similar to Windows, macOS also features simple installers that will install one 
 
 Linux distributions commonly have several LaTeX packages available to install directly from your software manager. There are also minimal and full packages. We list options for common distributions below.
 
-> It doesn't really matter which of the versions you install, but there is one requirement: You need to install the `xetex` binary, since that is the compiler that Zettlr uses. If in doubt, consult your distribution's manual for more information on how to correctly install TeX.
+> It doesn't really matter which of the versions you install, but there is one requirement: You need to install the `xetex` binary, since that is the compiler that Zettlr uses by default. If in doubt, consult your distribution's manual for more information on how to correctly install TeX.
 
 ### Debian/Ubuntu
 
@@ -61,7 +61,7 @@ $ flatpak install org.freedesktop.Sdk.Extension.texlive
 
 ## Installing Additional Packages
 
-Most LaTeX features come in the form of packages. By default, minimal installations only come with a basic set of packages. The default template that Zettlr uses, however, requires a few additional packages to be present on your system. You'll need to install these packages once, and they are often just a few Kilobytes large so they won't occupy much disk space.
+Most LaTeX features come in the form of packages. By default, minimal installations only come with a basic set of packages. The default template that Zettlr uses requires a few additional packages to be present on your system, however. You'll need to install these packages, but they are often just a few Kilobytes large so they won't occupy much disk space.
 
 We recommend you don't install packages unless Zettlr complains during exports. If you are missing some package, Zettlr will give you one of two errors: either `Command \somecommand not defined` or `File somefile.sty not found`.
 

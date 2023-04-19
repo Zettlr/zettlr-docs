@@ -7,10 +7,9 @@ Do you want to make Zettlr an even better app? That's great! Whether you are a u
 Zettlr has a vibrant community helping each other all around the net. The following list contains the common places to start for any issue you might have.
 
 * [Zettlr Discord](https://discord.com/invite/PcfS3DM9Xj) — The Zettlr Discord is a place for the Discordians (there doesn’t appear to be an official term).
-
 * [Zettlr subreddit](https://www.reddit.com/r/Zettlr) — The Zettlr subreddit is meant for the Redditors in the community.
-* [The official Twitter account](https://www.twitter.com/Zettlr) — Here you can follow the updates to the app in real time. It's the only place where we regularly announce everything we do. Additionally, we engage in most discussions, so if you have questions, you can drop them here.
-* [The official Facebook page](https://fb.me/Zettlrapp) — Here you can message us, if you don't have a Twitter account.
+* [The official Mastodon account](https://fosstodon.org/@zettlr) – Here you can follow the updates to the app in real time. It's the only place where we regularly announce everythnig we do. Additionally, we engage in most discussions, so if you have questions, you can drom them here.
+* [The official Twitter account](https://www.twitter.com/Zettlr) — Same as our Mastodon account.
 * [Our YouTube channel](https://www.youtube.com/c/Zettlr) — If you are more the visual type, you can find some introductory videos her
 * [The GitHub issue tracker](https://github.com/Zettlr/Zettlr/issues) — This is the core of our endeavours to make the app better and better. If you spot a bug, have a suggestion or want to propose a feature, here's the right place. Nevertheless, especially when it comes to questions regarding the user workflow or new features, **it's best to discuss your ideas on the GitHub or on Reddit first**.
 
@@ -28,9 +27,9 @@ Translations are maintained alongside the source code of this app in our reposit
 
 > If you do possess technical knowledge, you can also skip the explanations below and clone the repo directly.
 
-To improve a translation, head over to the `staci/lang`-folder and download the `*.po`-file that corresponds to the language code you want to improve (e.g., `pt-BR.po` for Portuguese (Brasil)).
+To improve a translation, head over to the `static/lang`-folder and download the `*.po`-file that corresponds to the language code you want to improve (e.g., `pt-BR.po` for Brazilian Portuguese).
 
-After you have downloaded the file, you'll need a program to modify the translations. We recommend the application [POedit](https://poedit.net/). It also offers a "pro" version, but you will not need that to modify the files.
+After you have downloaded the file, you'll need a program to modify the translations. We recommend the application [POedit](https://poedit.net/). It also offers a "pro" version, but you will not need that to translate.
 
 Once you have modified the translation to your liking, it is time to add the translations to the application. To do so, follow the steps in [this excellent guide on how to propose changes on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-another-users-repository).
 

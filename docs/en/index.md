@@ -1,10 +1,10 @@
 # Welcome
 
-This User Manual is the official documentation for Zettlr. Here you can find detailed descriptions for every feature and how you can tweak those to match your needs. Consult this manual any time you are stuck. You can open this manual from within the app by pressing `F1` or clicking on the menu item 'Help' -> 'Open user manual' (internet connection required).
+This User Manual is the official documentation for Zettlr. Here you can find detailed descriptions for every feature and how you can tweak those to match your needs. Consult this manual any time you are stuck. You can open this manual from within the app by pressing `F1` or clicking on the menu item 'Help' &rarr; 'Open user manual' (internet connection required).
 
 > This documentation is available in several languages. You can select another language from the [main landing page](https://docs.zettlr.com/). Please note, however, that these translations are provided by the community and may be incomplete. If in doubt, always consult this (the English) version of the documentation, which is updated regularly.
 
-If you have any questions that are not answered by this documentation, make sure to consult the [Frequently Asked Questions](faq.md) and ask the community on [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.gg/PcfS3DM9Xj) and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions).
+If you have any questions that are not answered by this documentation, make sure to consult the [Frequently Asked Questions](reference/faq.md) and ask the community on [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.gg/PcfS3DM9Xj), and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions).
 
 We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools.
 
@@ -14,15 +14,15 @@ If you have just found Zettlr and want to get started, head over to our [setup i
 
 ## How to Read this Documentation
 
-This documentation is structured with Zettlr's extensive feature set and target group in mind. This means that there are several patterns we follow in this documentation; both simple enumerations of certain features, and also extensive guides for more advanced and complex features.
+This documentation utilizes a common and easy to use layout to help you find what you need quickly. On the left side, you can find the navigation panel. If you're on mobile, click the hamburger menu button to open the navigation panel.
 
-This documentation is made of a few central categories. If you know exactly what you are looking for, the search bar at the top right is the right starting point for you. Otherwise, you can find the different explanations in these categories:
+The navigation contains all pages of this documentation. It is ordered from top to bottom, i.e., if you are a novice user, you can simply follow the various pages by clicking the "Next" and "Previous" buttons at the bottom of the navigation panel and each page. You can also click on an entry to jump directly to it.
 
-- The **Getting Started** section contains instructions on how to set up Zettlr and its associated tools.
-- A section on **concepts** familiarizes you with a few concepts that form the basis of how Zettlr works. It is recommended to read through these documents carefully, especially if you are used to working with Microsoft Word, as Zettlr works different in some subtle ways.
-- The **Core** describes the central writing and file management feature sets of Zettlr.
-- **Academic Tools** focuses on features that are especially – but not only – useful to students and academics.
-- **References** contain simple enumerations on general topics (such as an explanation of all available settings or keyboard shortcuts).
+If you simply need to look something up, you can find a search panel on the top of the navigation that helps you find the relevant sections of interest immediately.
+
+While most of the navigation builds up gradually, you may want to take a look the last section – references – intermittendly, since it contains various glossarys, such as a list of keyboard shortcuts, a quick reference of Markdown, and other things that are always important.
+
+Lastly, this documentation is [maintained on GitHub](https://github.com/Zettlr/zettlr-docs). If you spot an error, do not hesitate to mention it there, or directly edit the documentation pages. Each page features an "Edit on GitHub" link that brings you directly to the online editor (GitHub account required).
 
 ## Get Involved!
 
@@ -33,4 +33,4 @@ Zettlr is free and open source software, which means that its source code is pub
 - You can join the community on [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.gg/PcfS3DM9Xj), and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) and help new and other users.
 - You can [tackle open issues on GitHub](https://github.com/Zettlr/Zettlr/issues) and help develop the application itself (GitHub account required).
 
-[More information on how to get involved can be found here in the documentation](get-involved.md).
+[More information on how to get involved can be found here in the documentation](getting-started/get-involved.md).
