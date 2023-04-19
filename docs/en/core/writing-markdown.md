@@ -1,4 +1,6 @@
-# The Editor
+# Writing Markdown
+
+After setting up your workspaces and getting familiar with how to create and manage files, it is time to fill these files with content.
 
 At the heart of Zettlr sits a powerful Markdown editor. It uses a highly sophisticated software called **[CodeMirror](https://codemirror.net/)** and offers a lot of features out of the box.
 

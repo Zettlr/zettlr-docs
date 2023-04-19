@@ -12,15 +12,15 @@ The newly created file will immediately be opened so that you can start working 
 
 By default, Zettlr will create a Markdown file for you. However, Zettlr can also open a set of different file types that are important when working with the larger ecosystem. You can change the pre-defined filename extension to any of the supported extensions to create many different files:
 
-| File Type       | Description                               | Extension(s)                           |
-|-----------------|-------------------------------------------|----------------------------------------|
-| Markdown        | Regular Markdown files                    | `*.md`, `*.txt`, `*.markdown`, `*.mkd` |
-| JSX Markdown    | Markdown files with JSX                   | `*.mdx`                                |
-| RMarkdown       | An RMarkdown file                         | `*.Rmd`                                |
-| Quarto Markdown | A Quarto Markdown file                    | `*.qmd`                                |
-| LaTeX files     | A TeX file, or template                   | `*.tex`                                |
-| JSON files      | A JSON data file (e.g., Zotero libraries) | `*.json`                               |
-| YAML files      | A YAML data file (e.g., Pandoc profiles)  | `*.yaml`, `*.yml`                      |
+| File Type           | Description                               | Extension(s)                           |
+|---------------------|-------------------------------------------|----------------------------------------|
+| **Markdown**        | Regular Markdown files                    | `*.md`, `*.txt`, `*.markdown`, `*.mkd` |
+| **JSX Markdown**    | Markdown files with JSX components        | `*.mdx`                                |
+| **RMarkdown**       | A Markdown file with R-code blocks        | `*.Rmd`                                |
+| **Quarto Markdown** | A Quarto Markdown file                    | `*.qmd`                                |
+| **LaTeX files**     | A TeX file, or template                   | `*.tex`                                |
+| **JSON files**      | A JSON data file (e.g., Zotero libraries) | `*.json`                               |
+| **YAML files**      | A YAML data file (e.g., Pandoc profiles)  | `*.yaml`, `*.yml`                      |
 
 > Note that some features of certain file types are not supported, for example, JSX syntax highlighting or executing R-code from within Zettlr.
 
@@ -28,12 +28,11 @@ By default, Zettlr will create a Markdown file for you. However, Zettlr can also
 
 After creating files, you may also want to move them around or rename them. Most of these features work very similar to your file browser:
 
-- You can move around files by dragging and dropping them in the file manager
-- Rename files by right-clicking them and selecting "Rename file"
-- You can delete files by right-clicking them and selecting "Delete file"
-- You can drag files out of Zettlr to, e.g., upload them or open them in another program
-- You can drag files into an open file within Zettlr to create a link to that file
-- You can duplicate a file by right-clicking it and choosing "Duplicate file". The duplicate will then contain the filename with an appended "copy" in the same folder
+When you right-click a file, you will have all actions available: You can rename, delete, or duplicate files. Duplicating files will create an exact copy of the file in the same directory and append "copy" to it.
+
+Also, you can drag files around. You can drag them on a different folder to move them there, or out of the app in order to open it in another application, or upload it to a website.
+
+> If you want to move a file into a subfolder that is collapsed, move the file on top of it and wait. After a short delay, the folder will uncollapse, allowing you to move the file into any of the subfolders that are now visible.
 
 ## File Properties
 
@@ -42,3 +41,27 @@ If you are interested in some metadata on the file, you can right-click it and s
 Additionally, the file properties allow you to specify a [writing target](writing-targets.md). To set a writing target, simply select the appropriate number of words or characters, and choose whether the target should refer to "words" or "characters". This allows you to flexibly adjust how long a file will need to become depending on whether your editor/teacher defines a word-based or character-based writing target.
 
 > Note that character counts always exclude spaces.
+
+## Locating Files on Disk
+
+If you want to see where exactly a file is, you can open it in your file browser (e.g., Windows Explorer or Finder). To open a file in your file browser, right click it and select "Show file". This will open your file browser and highlight the file so that you know where it actually is.
+
+This is especially useful for standalone files:
+
+## Standalone Files
+
+Sometimes, you have files that you need but which don't really fit into any of your workspaces. One such example would be a global Todo-list file. Zettlr allows you to open arbitrary files alongside your workspaces.
+
+This approach works similarly to how Word-processors work: You search for a (Markdown) file using your file browser and open it with Zettlr by double-clicking it. (Make sure Zettlr is set as your default app for opening Markdown files.)
+
+When opening arbitrary files directly from within your file browser, Zettlr will first see if the file is part of one of the workspaces that you have loaded. In that case, it will open the file as if you had clicked on the file's entry from within Zettlr.
+
+If the file is not part of any of your loaded workspaces, however, Zettlr will open it as a "standalone" file. If you have standalone files open, it will open a second section on top of the Workspaces section in your file manager titled "Files". Any file that you can see in this section will not be part of any of your workspace.
+
+## Closing Standalone files
+
+Zettlr will retain standalone files even across restarts. This means, any file you've opened standalone will sit in the file manager so that you can work on the file at a later time. If you want to get rid of them, you can follow a similar procedure as to closing or removing workspaces:
+
+You can either **close** a standalone file or **remove** it. Similarly to workspaces, closing a standalone file will only unload it from Zettlr but leave it where it is, whereas deleting it will also put it in the trash bin of your computer.
+
+To close or remove a standalone file, right-click it and select "Close file" or "Delete file", depending on what you wish to do.
