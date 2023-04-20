@@ -4,9 +4,9 @@ If you are en route to migrating from a Word processor such as Microsoft Word or
 
 In order to make these files accessible for Zettlr, you'll need to import them.
 
-The process is straightforward: First, select the folder into which you would like to import the files. Then, select "File" &rarr; "Import" and choose all the files you would like to import. Zettlr will then convert them one by one from whichever format they are in.
+The process is straightforward: First, select the folder into which you would like to import the files from the file manager. Then, select "File" &rarr; "Import files" and choose all the files you would like to import. Zettlr will then convert them one by one from whichever format they are in into Markdown.
 
-> The app will look at the file's extension to determine the source format. It is possible to add more importers for other more exotic file formats.
+The same process also works if you work with colleagues who work exclusively with Word: For them, you can export Markdown files to `docx` and have them, e.g., comment on your files. After they send you back your file, you can re-import it again to Zettlr.
 
 You can finetune how the importer works by modifying its profile. For example, by default Zettlr will direct Pandoc to extract images and other media files from Word documents into an asset directory so that you get to keep those media files.
 

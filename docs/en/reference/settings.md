@@ -155,7 +155,7 @@ In this dialog, you can control spellchecking settings in the editor.
 
 You can activate available dictionaries in the first list. Simply select the ones you want to use. You can use multiple dictionaries to check bilingual texts. Filter the list using the search box on top of the list. To disable spell checking, uncheck all dictionaries.
 
-To install additional dictionaries, refer to the [localisation manual](../core/localisation.md).
+To install additional dictionaries, refer to the [spellchecking page](../core/style-and-grammar.md).
 
 The second list displays your user dictionary, that is: all the words you've added to your custom dictionary. Click "Delete" to remove a word from the list.
 
