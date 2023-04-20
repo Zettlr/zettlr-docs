@@ -2,72 +2,87 @@
 
 After setting up your workspaces and getting familiar with how to create and manage files, it is time to fill these files with content.
 
-At the heart of Zettlr sits a powerful Markdown editor. It uses a highly sophisticated software called **[CodeMirror](https://codemirror.net/)** and offers a lot of features out of the box.
+On this page, you will learn about writing Markdown, available commands, and some special features of Zettlr's Markdown editor.
 
-In this document, you will learn about writing Markdown, available commands, some special features of CodeMirror and how spellchecking works.
+## What is Markdown?
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gnRMlm3_O5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Markdown is a very simple markup language that uses formatting symbols to format text instead of having you click around a formatting toolbar. You already know many of the conventions of Markdown. For example, to emphasize text, you simply need to surround it with `*` or `_` symbols. In fact, many applications that you may already know use Markdown, such as Slack, Discord, Microsoft Teams, and more.
 
-## Writing Markdown
+> Despite its simplicity, Markdown contains all formatting conventions you need to write full-fledged research articles. And, should you ever miss something, you can always drop in a few LaTeX commands or HTML tags.
 
-The idea behind Zettlr is to remove unnecessary markup and styling from your writing process. During the writing process, what matters is the _content_ you produce, not the form in which it is presented. Therefore Zettlr lets you write `Markdown` files. Markdown is a very simple markup language that only contains a small amount of formatting symbols that you may already know. In recent years, more and more apps have discovered the power of Markdown, and even WhatsApp uses it to enable simple formatting of messages.
+The two main benefits of Markdown are that you can format your entire document without using your mouse or trackpad and that it separates content from layout.
 
-A Markdown document only consists of pure text and comes with a lot of benefits:
+You can direct Zettlr to format everything by pressing a few keys. Additionally, because Markdown purposefully has no direct layouting capabilities, you will find it much easier to focus on what you write instead of tinkering with its looks. The layouting only happens during export.
 
-* Markdown is **platform independent**. Any Markdown file written on macOS can —without any conversion— be edited on Windows and Linux alike. All you need is a text editor. And with "Notepad" (Windows), "TextEdit" (macOS) or "GEdit" (Ubuntu) every operating system already has one built-in.
-* Markdown's syntax is designed in such a way that **even without any syntax highlighting, you get the idea of a Markdown document**. Even without styling, it is easy to spot all headings, because they have leading hash signs (#), lists are indicated with bullets or numbers and emphasised text is encapsulated in underscores or asterisks.
-* Markdown has an **open informal specification**, meaning everybody can implement it into software (just as we did!) and begin building upon it. As it stands today, you can **expect most apps to understand it**.
-* As Markdown is so simple and does not add any formatting by itself, any app can introduce a different way of previewing. **There are tons of Markdown apps that use different approaches to writing**. If Zettlr doesn't fit your needs, you can always choose from a plethora of different free, open source apps.
-* Markdown documents only contain the bare necessity of formatting to help apps understand it. Therefore **Markdown documents are approximately ten times smaller than conventional word processor formats**!
-* And many more …
+> To learn how to customize how your documents look once you export them, head over to the [defaults files](defaults-files.md) documentation.
 
-> If you want to know exactly what Markdown can do and what it can't, refer to the [**Markdown** section](../reference/markdown-basics.md).
+## Formatting with Markdown
 
-## Editing text
+To format Markdown documents, there are a few formatting rules that you should know and which we list here:
 
-Editing text with Zettlr is simple. Just create a new file or select an existing one, click inside the editor and begin writing. Use Markdown formatting as you need it and make use of some shortcuts that make it even simpler to add formatting:
+| Formatting         | Syntax                        | Output                                |
+|--------------------|-------------------------------|---------------------------------------|
+| Emphasis           | `_italics_` or `*italics*`    | _italics_                             |
+| Bold               | `__bold__` or `**bold**`      | **bold**                              |
+| Strikethrough      | `~~text~~` | <span style="text-decoration: line-through;">text</span> |
+| Link               | `[Text](www.example.com)`     | [Text](#)                             |
+| Image              | `![Description](image.jpg)`   | ![Description](../img/logo_small.png) |
+| Heading            | `# Heading`                   | **Heading**                           |
+| Heading 2          | `## Heading 2`                | **Heading 2**                         |
+| Heading 3          | `### Heading 3`               | **Heading 3**                         |
+| Heading 4          | `#### Heading 4`              | **Heading 4**                         |
+| Heading 5          | `##### Heading 5`             | **Heading 5**                         |
+| Heading 6          | `###### Heading 6`            | **Heading 6**                         |
+| Bullet list        | `* List item` (or `+` or `-`) | &bullet; List item                    |
+| Item list          | `1. List item` (or `1)`)      | 1. List item                          |
+| Footnotes          | `Some text[^1].`              | Some text&sup1;.                      |
+| Footnote reference | `[^1]: Footnote text.`        | &sup1; Footnote text.                 |
+| Comment            | `<!-- Commented out -->`      | (Not visible)                         |
+| Inline math        | `$E = mc^2$`                  | ![E = mc^2](../img/Emc2.png)          |
+| Block math         | `$$\nE = mc^2\n$`             | ![E = mc^2](../img/Emc2.png)          |
+| Horizontal line    | `***` or `---`                | <hr>                                  |
+| Block quote        | `> Some quote`                | &nbsp;&nbsp;&nbsp;&nbsp;*Some quote*  |
+
+> This list is not exhaustive. There are some more formatting symbols which can be enabled either with extensions or which will be introduced at a later stage of this documentation, for example citations.
+
+If you want to learn even more about Markdown, there are many good resources out there. A good starter is the Markdown guide on [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). If you want to get used to writing clean and unambiguous Markdown, [view the specifications by CommonMark](https://spec.commonmark.org/current/). Also, there's a "book" on the GitHub flavoured Markdown syntax. [View it here](https://gitbookio.gitbooks.io/markdown/content/).  For those engaged in scholarly writing, the [Pandoc manual's section on its extended Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) is worth reading.
+
+## Keyboard Shortcuts
+
+Despite never having to leave your keyboard when it comes to writing documents in Markdown, sometimes it is easier to press just two keys instead of four or more. Therefore, there are some keyboard shortcuts that you can use. In addition to those that you may already know, Zettlr offers many convenience shortcuts that make duplicating text, etc., a blaze.
+
+> Note: Across this documentation, you will often see the "key" `Cmd/Ctrl`. By that we mean that you'll need to press the Command-key on macOS, and the Control-key otherwise.
 
 * `Cmd/Ctrl+B`: Make text **bold**
 * `Cmd/Ctrl+I`: _Emphasize_ text
-* `Cmd/Ctrl+K`: Create a new `[link](https://www.zettlr.com)`. Selected text will become the description —you only need to add the URL. And if there is a valid URL in the clipboard, Zettlr even takes it as a URL, meaning you don't have to do anything on your own!
-* `Cmd/Ctrl+Shift+I`: Insert an image. If you selected text, it will become the description of the image. Just add a path to your image, or copy a path to an image before. Then, Zettlr will automatically add the clipped path!
-* `Tab`: Indent any given list one level.
+* `Cmd/Ctrl+K`: Create a new link. Selected text (if any) will become the link text. If there is a URL in the clipboard, Zettlr automatically uses it as the link target.
+* `Cmd/Ctrl+Shift+I`: Insert an image. Selected text (if any) will become the image title. If there is a URL in the clipboard, Zettlr automatically uses it as the image source.
+* `Tab`: Indent any given list one level. If there is no list, insert a tab character. (If you are using a screen reader and need to use the keyboard to move around the app, press `Esc` before pressing `Tab` to un-focus the editor.)
 * `Shift-Tab`: Un-indent a list one level.
+* `Cmd/Ctrl+C`: Copy text as plain
+* `Cmd/Ctrl+Alt+C`: Copy text with formatting (e.g., to paste formatted text into Microsoft Word)
+* `Cmd/Ctrl+X`: Cut text. If there is no selection, this command cuts the entire line.
+* `Cmd/Ctrl+V`: Paste text (if you copied formatted text, this will convert it to Markdown before insertion)
+* `Cmd/Ctrl+Shift+V`: Paste text as plain
+* `Cmd/Ctrl+Z`: Undo
+* `Cmd/Ctrl+Shift+Z`: Redo
+* `Alt+ArrowUp`: Swap current line with the previous
+* `Alt+ArrowDown`: Swap current line with the next
+* `Alt+Shift+ArrowUp`: Copy the current line above
+* `Alt+Shift+ArrowDown`: Copy the current line above
+* `Alt+l` (`Ctrl+l` on macOS): Select the current line
+* `Cmd/Ctrl+F`: Open the search panel
+* `Cmd/Ctrl+G`: Next occurrence
+* `Cmd/Ctrl+Shift+G`: Previous occurrence
+* `Cmd/Ctrl+D`: Select next occurrence
 
-Of course, all other default shortcuts that work on any text editor will also work by default: Copy text with `Cmd/Ctrl+C`, insert it with `Cmd/Ctrl+V` or cut it by pressing `Cmd/Ctrl+X`. Undo and redo is also supported just as removing whole words or lines. Just write as you are used to writing.
+> Zettlr also offers two advanced writing modes: Emacs and Vim. Whenever you activate one of these modes, they will change many keybindings and offer new ones. Those settings are recommended for advanced users only.
 
-## Preserving Formats During Copy & Paste
+## Multi-Cursor Editing
 
-Of course it's mandatory that you can also work with formatted text. For instance, you might want to paste formatted text from a Word document or a web page. To do so, simply copy such text and paste it. Zettlr will automatically detect that it's formatted text and convert it before inserting it. If you don't want to paste the text with formattings but as plain text, hold down `Shift` when pasting. This will tell Zettlr not to convert the text to Markdown.
+In addition to these keyboard shortcuts, Zettlr also offers multi-cursor editing. This means that you can add more than one cursor. Clicking while holding down `Cmd` or `Alt` will insert a new cursor at the given position. If you drag the mouse across text while holding down `Cmd` or `Alt`, you can create multiple selections.
 
-Next, at some point you want to copy some text from Zettlr but in a way that other apps can understand its format. To copy the text not as Markdown, but with a common format, you need to select `Copy as HTML`. The shortcut is `Cmd/Ctrl+Alt+C`.
-
-> Refer to the section on [Shortcuts](../reference/keyboard-shortcuts.md), to get a list of all available shortcuts.
-
-## Special features of CodeMirror
-
-Because CodeMirror is so powerful, there are also other great options that you can make use of (if you need them).
-
-* Press `Cmd` (macOS) or `Ctrl` (Windows/Linux) and click somewhere in the text. Now you will have **two cursors** at your disposal! This is mostly useful if you are about to write some text several times to save time. To leave that multi-cursor-mode, just click anywhere in the text without the modifier keys pressed.
-* Press `Cmd` (macOS) or `Alt` (Windows/Linux) and select some text. Now you can **select several portions of text** at once. This is useful if you want to create two or more links at once: Just select the portions of text that should serve as the description of these links and press `Cmd/Ctrl+K` to transform all the selections into links — at once! This works with all other commands like making text bold or italic, or creating quotes.
-* If you have nothing selected, pressing `Cmd/Ctrl+X` will **cut the full line**. Pressing `Cmd/Ctrl+V` afterwards will **insert this whole line above the line, in which your cursor is**.
-* CodeMirror **auto-closes quotes and brackets** to save you time! Whenever you type a `"` or a `(` character, it will present you with the closing character automatically. And when you are done with your quote, just type `"` or `)`, it will _not add the character a second time_ but just "jump" over it! This also works with selected text. If you have something selected and press one of these characters, it will encapsulate your selection with the character pair.
-
-## Emacs Editing Mode
-
-Some people prefer a different way to insert text into the editor, and therefore like to use Vim or Emacs key bindings. This input mode can be activated in the [settings](../reference/settings.md) and allows you to insert text differently than normal. This setting is recommended for advanced users only.
-
-> We had to disable CodeMirror's built-in VIM-mode since it does not work currently. If you would like to get it back to running, please refer to the [official CodeMirror repository](https://github.com/codemirror/CodeMirror/).
-
-## Spellchecking
-
-Zettlr also features spellchecking. In your Preferences, you can select all languages, that your text should be checked for. Zettlr will move through all dictionaries to check a word, and only if none of the loaded dictionaries can find it, it will be marked as wrong with a small dashed line.
-
-To correct a word, simply right-click it and select a suggestion from the context menu, if there are any. You can also add a word to your user dictionary.
-
-Are you writing bilingual? No problem! Simply load all dictionaries that you potentially write text in to check against all languages at once. Just remember that dictionaries can use up a lot of memory, so if you load too many, it may slow down the application. We recommend at most three dictionaries at a time.
-
-> **Tip**: To disable the spellchecker completely, simply uncheck all dictionaries in the preferences.
+Whenever you have several cursor or selections, pressing any keys will do something to all of these cursor or selections simultaneously. You can use this to, e.g., correct multiple places of your document at once.
 
 ## Working with footnotes
 

@@ -4,15 +4,13 @@ Zettlr 2.0 introduced the new assets manager which allows you to manage all stat
 
 ![The assets manager](../img/assets_manager.png)
 
-You can access the assets manager via "Zettlr -> Assets Manager" (macOS) or "File -> Preferences -> Assets Manager" (Windows/Linux).
+You can access the assets manager via 'Zettlr' &rarr; 'Assets Manager' (macOS) or 'File' &rarr; 'Preferences' &rarr; 'Assets Manager' (Windows/Linux).
 
 The assets manager allows you to edit your files using correct syntax highlighting and makes it easier than external editors. To see what you can edit and how to do so productively, see the corresponding parts of the documentation:
 
 * [Defaults files](defaults-files.md)
 * [Custom CSS](custom-css.md)
 * [Snippets](snippets.md)
-
-> The assets manager replaces the old PDF preferences dialog. The new assets manager gives you not just all the settings of the PDF preferences dialog, but many more.
 
 ## How to Adapt the PDF Preferences
 
