@@ -49,7 +49,8 @@ nav:
     - Zettelkasten Methods: academic/zkn-method.md
     - Graph View: academic/graph.md
   - Guides:
-    - Presentations: academic/presentations.md
+    - Presentations: guides/presentations.md
+    - LanguageTool Locally: guides/languagetool-local.md
   - References:
     - FAQ: reference/faq.md
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
