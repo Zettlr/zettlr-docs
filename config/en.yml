@@ -21,6 +21,7 @@ nav:
     - Get involved: get-involved.md
     - FAQ: faq.md
     - Troubleshooting: troubleshooting.md
+    - A Note on Security: getting-started/a-note-on-security.md
   - Concepts:
     - File management: concepts/workspaces.md
     - Context: concepts/context.md
