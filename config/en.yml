@@ -20,6 +20,7 @@ nav:
     - Installing LaTeX: getting-started/installing-latex.md
     - Get involved: getting-started/get-involved.md
     - Troubleshooting: troubleshooting.md
+    - A Note on Security: getting-started/a-note-on-security.md
   - Basic Usage:
     - Workspaces and Folders: core/workspaces.md
     - Files: core/files.md

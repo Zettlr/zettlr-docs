@@ -26,17 +26,19 @@ Disabling these renderers will make your Markdown code a bit more difficult to r
 
 There are a few renderers that can execute arbitrary HTML and thus become a security concern. These are the **Table Editor** as well as the renderers for **iframes**, **links**, and **emphasis**.
 
-By disabling these renderers in the settings (the Table Editor is in the editor tab, the other renderers can be found in the display tab), Zettlr will not attempt to execute any code contained in such elements.
+By disabling these renderers in the settings, Zettlr will not attempt to execute any code contained in such elements.
 
-> **Rule of thumb**: Even though other renderers, such as the image renderer, should not be capable of executing code, images can provide another pathway for malicious actors to infiltrate your computer. To be on the safe side, [disable all renderers](../reference/settings.md#display) and the [Table Editor](../reference/settings.md#editor).
+> **Rule of thumb**: Even though other renderers, such as the image renderer, should not be capable of executing code, images can provide another pathway for malicious actors to infiltrate your computer. To be on the safe side, disable all renderers.
 
 ## Markdown Documents Downloaded from the Internet
 
 One infamous attack vector is to distribute Markdown documents with malicious code. Therefore, the best bet is to never download Markdown documents from the internet.
 
-If you have to download a Markdown file and doubt its safety, we recommend opening it with a plain text editor, which does not render any of the Markdown, beforehand. Some examples include Notepad on Windows, TextEdit on macOS, or any of the various available Linux-based text editors. If you have disabled all renderers, it is also safe to open such a document directly in Zettlr instead.
+If you have to download a Markdown file and doubt its safety, we recommend opening it with a regular text editor beforehand (for example, Notepad on Windows, TextEdit on macOS, or any of the various available Linux-based text editors) and remove any raw HTML from the file before opening it in Zettlr.
 
-This way you can ensure that a file does not contain any malicious code before opening the file in Zettlr or reactivating the renderers.
+If you have disabled all renderers, it is also safe to open such a document directly in Zettlr instead.
+
+This way, even if there is a way for bad actors to compromise your computer via Zettlr that we do not yet know about (a so-called "zero day exploit"), it won't work because you removed the potentially harmful code beforehand.
 
 > **Rule of thumb**: If a Markdown document contains almost exclusively HTML code, this should raise your suspicion. Markdown syntax is not of much use for malicious actors, so they will try to inject their code with HTML instead.
 
@@ -65,7 +67,3 @@ This means that even when you export a Markdown document that you yourself creat
 Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we recommend you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL#a-note-on-security).
 
 > **Rule of thumb**:  Always treat exports and imports as potentially unsafe.
-
-## Code Execution During Print Preview
-
-Even though the feature does not necessarily imply it, the print preview involves exporting your document to HTML before displaying the preview to you. Therefore, you should utilize the same caution as when exporting documents.
