@@ -28,7 +28,7 @@ There are a few renderers that can execute arbitrary HTML and thus become a secu
 
 By disabling these renderers in the settings (the Table Editor is in the editor tab, the other renderers can be found in the display tab), Zettlr will not attempt to execute any code contained in such elements.
 
-> **Rule of thumb**: Even though other renderers, such as the image renderer, should not be capable of executing code, images can provide another pathway for malicious actors to infiltrate your computer. To be on the safe side, disable all renderers.
+> **Rule of thumb**: Even though other renderers, such as the image renderer, should not be capable of executing code, images can provide another pathway for malicious actors to infiltrate your computer. To be on the safe side, [disable all renderers](../reference/settings.md#display) and the [Table Editor](../reference/settings.md#editor).
 
 ## Markdown Documents Downloaded from the Internet
 
