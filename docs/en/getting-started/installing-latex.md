@@ -2,7 +2,7 @@
 
 Zettlr allows to export into a variety of file formats, including PDF. There are two ways of exporting to PDF, however: Via Zettlr itself and with the help of an external program called LaTeX. Out of the box, Zettlr supports an export format called `Simple PDF`. This will export a file to HTML and then "print" it similar to how browsers print websites.
 
-To export more advanced PDF files, you'll need to install LaTeX. LaTeX is a typesetting language that allows for a large amount of customization, but because it is a relatively large program, it does not come bundled with Zettlr. Here we show you how to install it.
+To export more advanced PDF files, you'll need to install [LaTeX](https://en.wikipedia.org/wiki/LaTeX). LaTeX is a typesetting language that allows for a large amount of customization, but because it is a relatively large program, it does not come bundled with Zettlr. Here we show you how to install it.
 
 LaTeX distributions come in two flavors: A "full" installation featuring a host of graphical programs for writing TeX directly, and a "minimal" installation that only contains the actual compilers. Zettlr is happy with only a minimal installation (because it just needs the compiler), but if you want to fiddle around with LaTeX more you are free to also install the full package.
 

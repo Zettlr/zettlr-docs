@@ -37,6 +37,8 @@ Now it is time to import your library to Zettlr. To do so, open Zettlr's prefere
 
 > Please note that you can also add bibliography files to the defaults files. These, however, will not be loaded by Zettlr, so it will not preview any citekeys defined there.
 
+If you need to use library files on a per-file-basis rather than globally, you can specify the file with the `bibliography` keyword in the YAML frontmatter. We have included instructions [further down on this page](#using-a-file-specific-library).
+
 ### Step 4: Enable *Render Citations*
 
 To ensure that the citations are actually rendered while you type, go to settings &rarr; 'Display' and activate the option 'Render Citations'. Even if you disable that setting, Zettlr will use the citation library to generate a bibliography in the [sidebar](../core/sidebar.md).
@@ -78,6 +80,8 @@ tags: tag1, tag2, tag3
 bibliography: ./assets/references.json
 ---
 ```
+
+> Note that, while you can add multiple library files to this property, Zettlr can only handle one and therefore will only select the first bibliography file.
 
 ## Changing the citation style
 
@@ -131,7 +135,7 @@ The following code snippet gives you an example:
 ```latex
 \setlength{\parindent}{-1cm} % Negative hanging indent
 \setlength{\leftskip}{0.5cm} % Overall indentation
-\setlength{\parskip}{0.1cm} % Spacing between paragraphs
+\setlength{\parskip}{0.1cm}  % Spacing between paragraphs
 ```
 
 The above example would render the reference list with a negative indent of minus one centimeter. Additionally it will apply an overall indentation of half a centimeter relative to the page margins. For example, if your left page margin is set to three centimeters, the reference list paragraphs will be offset 3.5 centimeters. The last value (`parskip`) controls the spacing _between_ paragraphs, so there will be a gap of ten millimeters between paragraphs.

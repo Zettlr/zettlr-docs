@@ -22,3 +22,5 @@ MagicQuotes is an extension that helps you write typographically correct quotati
 To use the default quotation marks in your text, first insert one and then immediately press Backspace. Instead of deleting the quotation marks, Zettlr will convert them to the default quotation marks. Pressing Backspace a second time removes the quotation mark altogether.
 
 > MagicQuotes are only active in Markdown text. It does not apply in code or comments.
+
+If you have the status bar active, you can use it to quickly change the MagicQuotes Zettlr uses, without having to go into the settings.

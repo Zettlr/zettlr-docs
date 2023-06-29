@@ -1,6 +1,6 @@
 # Spelling, Style, and Grammar Checking
 
-Knowing how to write Markdown is one thing, but when typing a lot, it happens frequently that we make a mistake. To ensure that you always deliver perfect texts, Zettlr offers a variety of tools, and the list is likely going to increase going forward. Currently, Zettlr ships with three tools
+Knowing how to write Markdown is one thing, but when typing a lot, it happens frequently that we make a mistake. To ensure that you always deliver perfect texts, Zettlr offers a variety of tools, and the list is likely going to increase going forward. Currently, Zettlr ships with four tools:
 
 * A **spell checker** for simple typography proofing
 * A **Markdown style checker** that ensures well-formed syntax
@@ -70,11 +70,13 @@ LanguageTool is disabled by default, since it requires an internet connection to
 
 > LanguageTool utilizes all three "levels" for reporting problems: Red for spelling mistakes, yellow for grammatical errors, and gray for informative messages on improving your style.
 
-If you have a premium subscription from LanguageTool and wish to use this, enter your username and API-key into the corresponding fields in the settings. Note that entering something in these fields will overwrite a potential custom server (i.e. Zettlr will in tihs case always contact the official LanguageTool servers).
+If you have a premium subscription from LanguageTool and wish to use this, enter your username and API-key into the corresponding fields in the settings. Note that entering something in these fields will overwrite a potential custom server (i.e. Zettlr will in this case always contact the official LanguageTool servers).
+
+With the statusbar active, you have two elements that pertain to LanguageTool: The statusbar includes an issue counter that tells you how many errors, warnings, and infos the various linters have found in your texts. Next to it, you will see information on the status of LanguageTool, allowing you to switch the auto-detected language if it has detected a wrong language, and see whether LanguageTool ran successfully.
 
 ### Using LanguageTool Offline or Self-Hosted
 
-Thanks to the Open Source nature of LanguageTool, you do not need an internet connection to check your writing. It is possible to set up LanguageTool locally on your computer. While we cannot provide an extensive installation manual here, there are great tutorials out there.
+Thanks to the Open Source nature of LanguageTool, you do not need an internet connection to check your writing. It is possible to set up LanguageTool locally on your computer. We have created [a guide on how to set up LanguageTool locally on your computer with Docker](../guides/languagetool-local.md).
 
 Once you have installed LanguageTool – either on your computer or a server – you can direct Zettlr to utilize a custom server instead of the official LanguageTool server. After selecting the appropriate setting, enter the address at which Zettlr can reach your server (either a URL or something starting with `http://localhost` if you set it up locally). Zettlr will then immediately start using the new server.
 
