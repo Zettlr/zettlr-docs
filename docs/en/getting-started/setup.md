@@ -22,7 +22,9 @@ Zettlr aims to be resource-friendly. However, there are a few minimum requiremen
 
 > Please note that the supported operating system versions may change at any time. The most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/latest/development/build-instructions-gn#platform-prerequisites).
 
-## Windows
+## Installing Zettlr
+
+### Windows
 
 To install Zettlr on Windows, download the app from the [download page](https://www.zettlr.com/download) and double click to open the installer. By default, the installer will request administrative permission during setup to install the app for all users on the computer.
 
@@ -30,7 +32,7 @@ If you do not have administrative privileges on your computer or do not wish to 
 
 > We recommend to install Zettlr for all users.
 
-## macOS
+### macOS
 
 To install Zettlr on macOS, download the DMG-file from our [download page](https://www.zettlr.com/download) and mount it by double-clicking it. Then, drag the Zettlr icon into your Applications directory and wait for the application to be copied over.
 
@@ -40,25 +42,25 @@ To install Zettlr on macOS, download the DMG-file from our [download page](https
 >
 > For more information, visit the [Zettlr Homebrew page](https://formulae.brew.sh/cask/zettlr).
 
-## Ubuntu/Debian
+### Ubuntu/Debian
 
 To install Zettlr on Ubuntu or Debian derivatives, download the `deb`-package from our [download page](https://www.zettlr.com/download) and execute the file.
 
-## Fedora
+### Fedora
 
 To install Zettlr or Fedora or Red Hat derivatives, download the `rpm`-package from our [download page](https://www.zettlr.com/download) and execute the file.
 
-## Arch Linux
+### Arch Linux
 
 Thanks to community efforts, Zettlr is available as a regular package for Arch Linux. To install Zettlr on Arch, follow the normal installation instructions for packages on Arch. Read more on the [Zettlr Arch Wiki page](https://wiki.archlinux.org/title/Zettlr).
 
 > We never heard any complaints about the Zettlr Arch package and believe it to be trustworthy and safe. However, since we do not control the compilation stage of these packages, we need to add a disclaimer that we cannot take responsibility for them. In case of problems, please get into contact with the maintainers directly.
 
-## AppImage
+### AppImage
 
 Zettlr is available as an [AppImage](https://appimage.org/) bundle for Linux. To install it, download the package from our [download page](https://www.zettlr.com/download). To install the AppImage, place the file into a directory of your choice, make it executable, and begin using it.
 
-## Flatpack
+### Flatpack
 
 Zettlr is available as a [Flatpack](https://flathub.org/home). To install the Flatpack version, download it from [Zettlr's FlatHub page](https://flathub.org/apps/details/com.zettlr.Zettlr) and follow the setup instructions.
 
@@ -66,13 +68,15 @@ Zettlr is available as a [Flatpack](https://flathub.org/home). To install the Fl
 
 ## Updating Zettlr
 
-The application checks for new updates each time you start the app. You can also manually trigger the search for updates by clicking 'Help' &rarr; 'Check for updates'. If a new version is available, Zettlr will show you a dialog that contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
+The application checks for new updates each time you start the app. You can also manually trigger the search for updates by clicking 'Help' &rarr; 'Check for updates'. If a new version is available, Zettlr will display a "download" symbol in the toolbar. If you click it, Zettlr will open a dialog which contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
 
 > Never "jump over" versions! Sometimes, we change the configuration of Zettlr during an update. This may lead to data corruption during an update if you "leave out" the necessary version that will migrate your configuration. If you haven't updated Zettlr in a while, do **not** update directly to the latest version. Instead, install each update one after another. You can find all updates – not just the latest – on [GitHub](https://github.com/Zettlr/Zettlr/releases).
 
 To update, click the download button and wait for the download to finish. Then, click "Begin Update", which will close Zettlr and begin the update process. The updater will be placed in your Downloads-folder. You can remove it once the update was successful.
 
-> Do not use this update procedure if you installed Zettlr via a package manager, e.g., Homebrew. In that case, please update according to your package manager's procedure to avoid conflicts. You can disable the setting "Automatically check for updates" in your preferences to prevent Zettlr from checking for updates.
+> Do not use this update procedure if you installed Zettlr via a package manager, e.g., Homebrew. In that case, please update according to your package manager's procedure to avoid conflicts. You can disable the setting "Automatically check for updates" in your preferences to prevent Zettlr from checking for updates automatically.
+
+After any update, be prepared to **wait up to a few minutes** for Zettlr to launch. After each update, the file cache is being cleared, and when the newer version of Zettlr boots for the first time, it has to recreate this file cache. The more files and folders you have open, the longer this process may take. So do not worry if you don't see any reaction for some time – the main window(s) will be opened as soon as Zettlr has scanned your workspaces again.
 
 If automatic updates don't work for you, you can always manually update by downloading the appropriate installer for your system (see above). There is no (technical) difference between the first setup and an update; the files are the same.
 
@@ -89,6 +93,8 @@ On **Windows**, go into the software settings and uninstall it according to [Mic
 On **macOS**, head over to the `Applications` folder and move `Zettlr.app` to the trash. If you wish to remove the settings and user data as well, you can find those in the directory `/Users/<your-user-name>/Library/Application Support/Zettlr`.
 
 On **Linux**, the uninstall procedure depends on your distribution and how you installed the app. Please consult the appropriate manual on how to do this. If you wish to remove the settings and user data as well, you can find those in the directory `/home/<your-user-name>/.config/Zettlr`.
+
+> Zettlr will also create so-called "hidden" files inside your workspaces that remember your directory settings in case you changed them. These files are named `.ztr-directory`. After uninstalling Zettlr, you can safely remove those files.
 
 ## Nightly Releases
 

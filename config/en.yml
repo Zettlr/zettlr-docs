@@ -5,7 +5,7 @@ site_description: >-
     Our comprehensive documentation provides you with everything you need to
     know about how to make the most of Zettlr.
 site_author: Hendrik Erz
-copyright: "&copy; 2017-2020 by Zettlr"
+copyright: "&copy; 2017-2023 by Zettlr"
 docs_dir: ../docs/en
 site_dir: ../build/en
 edit_uri: edit/master/docs/en
@@ -18,14 +18,17 @@ nav:
     - Migrating to a New Computer: getting-started/migrating.md
     - Portable App: getting-started/portable.md
     - Installing LaTeX: getting-started/installing-latex.md
+    - A Note on Security: getting-started/a-note-on-security.md
     - Get involved: getting-started/get-involved.md
     - Troubleshooting: troubleshooting.md
-    - A Note on Security: getting-started/a-note-on-security.md
+  - First Time Users:
+    - The User Interface: core/user-interface.md
+    - Importing Files: core/import.md
   - Basic Usage:
     - Workspaces and Folders: core/workspaces.md
     - Files: core/files.md
+    - File Manager: core/file-manager.md
     - Split View: core/split-view.md
-    - Importing Files: core/import.md
     - Writing Markdown: core/writing-markdown.md
     - Style and Grammar: core/style-and-grammar.md
     - AutoCorrect and MagicQuotes: core/autocorrect.md
@@ -40,7 +43,6 @@ nav:
     - YAML Frontmatter: core/yaml-frontmatter.md
     - Readability: academic/readability.md
     - Sidebar: core/sidebar.md
-    - File Manager: core/file-manager.md
     - Assets Manager: core/assets-manager.md
     - Defaults Files: core/defaults-files.md
     - Custom Templates: academic/custom-templates.md
@@ -67,7 +69,7 @@ theme:
     - javascript
     - css
     - yaml
-    - tex
+    - latex
 markdown_extensions:
     - toc:
         permalink: True

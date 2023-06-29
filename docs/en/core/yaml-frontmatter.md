@@ -78,6 +78,12 @@ It is also useful for controlling in which language the references of your file 
 
 Valid values for this field are [BCP-47](https://tools.ietf.org/html/bcp47) compatible language identifiers (e.g., `en-US`, `de-AT`, or `it`).
 
+### `bibliography`
+
+This variable allows you to specify a bibliography file only for the given file. It can be either a string (single file) or a list of several files.
+
+Zettlr will automatically switch to that bibliography for suggesting cite keys and rendering the bibliography in the sidebar. However, note that if you use multiple libraries, Zettlr will only use the first one, as it cannot merge multiple files.
+
 ### `nocite`
 
 This variable can be used to include works in your list of reference that have not been actually cited in your document. Place their respective citation keys in this variable. Remember to enclose the value in quotes if it contains an @ (as most citekeys do) as otherwise it will be interpreted as an instruction to Pandoc and other variables in the frontmatter may not work as expected (e.g. use `nocite: '@citekey'`).

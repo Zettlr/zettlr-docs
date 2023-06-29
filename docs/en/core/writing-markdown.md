@@ -90,4 +90,4 @@ Footnotes are a notoriously difficult thing in Markdown, because they require so
 
 1. You can use a shortcut to place footnotes: `Cmd+Alt+R` (macOS) or `Ctrl+Alt+F` (macOS/Windows/Linux).
 2. The reference text (that is, the content of the footnote) will be displayed at the bottom end of the editor window when you hover over a footnote.
-3. If you `Cmd` or `Ctrl` click a footnote anchor somewhere in your text, a popup will show up that lets you edit the footnote in place. After you are finished editing your footnote, simply press `Shift+Enter` to close the popup and replace the text of the footnote.
+3. If you hover with your mouse over a footnote anchor somewhere in your text, a popup will show up that lets you edit the footnote in place. After you are finished editing your footnote, click the save button to close the popup and replace the text of the footnote.

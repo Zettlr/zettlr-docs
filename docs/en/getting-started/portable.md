@@ -10,15 +10,21 @@ A portable app is basically a Windows application that is completely independent
 
 The main problem for making an app portable is that many things such as settings, data files, and other important information the app needs to run are normally stored in a few default directories, mostly in the user account of the person currently running a program. However, these are always on the computer, and not on the USB key. The key to making an app portable is thus to teach the app to read and write its data not onto the computer, but onto the USB key.
 
-> If you don't know whether a portable app is the right choice for you, we recommend you just install the app regularly. You can switch to a portable app at any time, as we outline below.
+> We do not recommend you install Zettlr as a portable app, unless you know that you have to.
 
 ## How to Set Up Zettlr as a Portable App
 
 A portable app in principle is distinguished by just a few characters from a regular install. What we are explaining here basically makes use of a command line switch we use internally to debug the application, but it works perfectly well for maintaining a portable installation.
 
+> Note that, since it is a debugging switch, we do not guarantee that it works. Your mileage may vary.
+
 The first step is to install the application regularly by downloading one of the Windows installers and executing it. However, instead of installing the app into a default location, you should install the app onto your thumb drive (or any other folder – since it will be a portable application, you can move the folder around later on).
 
+> Do **not** install the app with elevated privileges, as this will create some registry entries that are then bound to your computer.
+
 After the installer has run, you should be able to see all the required files – `Zettlr.exe`, the `app.asar` file and others – in the folder you have directed the installer to use.
+
+Next to the app, you need to create a new directory. We will be using the name "zettlr-config", but you can choose whichever name you like. Just remember to replace your chosen name for "zettlr-config" in the following steps.
 
 Since Windows 10 does not support relative paths in shortcuts, using a simple shortcut will not work. So what we do next is create a BAT-file that you can run. So create a file that ends in `.bat` – for example, `Zettlr.bat` – and add the following contents:
 
