@@ -58,6 +58,7 @@ nav:
     - Corrección ortográfica: reference/spell-checking.md
 theme:
   name: readthedocs
+  locale: es
   custom_dir: ../theme_override
   highlightjs: True
   prev_next_buttons_location: both
@@ -67,6 +68,7 @@ theme:
     - yaml
     - tex
 markdown_extensions:
+    - def_list
     - toc:
         permalink: True
 plugins:

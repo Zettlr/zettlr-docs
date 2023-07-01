@@ -21,12 +21,13 @@ kbd {
   color: #666;
   border: 1px solid #c7c6c6;
   border-radius: 4px;
-  font-size: 80%;
+  font-size: 60%;
   cursor: default;
-  min-width: 22px;
+  min-width: 26px; /* line-height + border bottom */
+  line-height: 24px;
   text-align: center;
   display: inline-block;
-  padding: 2px 5px;
+  padding: 0px 5px;
   margin: 0 4px;
   box-shadow: 1px 2px 0 0.5px #8685857e;
 }
