@@ -1,6 +1,6 @@
 # The Sidebar
 
-The sidebar is a context-sensitive element that displays relevant additional information regarding your current directory and current file. You can open it by using either the sidebar icon in the toolbar or by pressing `Cmd/Ctrl+?`.
+The sidebar is a context-sensitive element that displays relevant additional information regarding your current directory and current file. You can open it by using either the sidebar icon in the toolbar or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>?</kbd>.
 
 > Please note that strictly speaking Zettlr features two sidebars: The sidebar to the left is referred to as the [File Manager](file-manager.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
 

@@ -6,6 +6,6 @@ This means that you should view all your Markdown documents as **source code** t
 
 ## The Print Preview
 
-You can open the print preview for any file by pressing `Cmd/Ctrl+P`. This will internally export your document to HTML and display the results in a new window. This can be used for a quick preview of your file. Especially when Zettlr doesn't seem to correctly render more complex syntax, this is a good way to see if the exporting engine can make sense of it.
+You can open the print preview for any file by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>P</kbd>. This will internally export your document to HTML and display the results in a new window. This can be used for a quick preview of your file. Especially when Zettlr doesn't seem to correctly render more complex syntax, this is a good way to see if the exporting engine can make sense of it.
 
 From there, you can also click the print icon to actually print out the HTML file. This can be useful for situations in which it is easier for you to proofread a document in its printed state rather than on screen. The HTML template has special layouts for the needs of printing out a document.

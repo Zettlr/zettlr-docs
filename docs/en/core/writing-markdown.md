@@ -51,36 +51,36 @@ If you want to learn even more about Markdown, there are many good resources out
 
 Despite never having to leave your keyboard when it comes to writing documents in Markdown, sometimes it is easier to press just two keys instead of four or more. Therefore, there are some keyboard shortcuts that you can use. In addition to those that you may already know, Zettlr offers many convenience shortcuts that make duplicating text, etc., a blaze.
 
-> Note: Across this documentation, you will often see the "key" `Cmd/Ctrl`. By that we mean that you'll need to press the Command-key on macOS, and the Control-key otherwise.
+> Note: Across this documentation, you will often see the "key" <kbd>Cmd/Ctrl</kbd>. By that we mean that you'll need to press the Command-key on macOS, and the Control-key otherwise.
 
-* `Cmd/Ctrl+B`: Make text **bold**
-* `Cmd/Ctrl+I`: _Emphasize_ text
-* `Cmd/Ctrl+K`: Create a new link. Selected text (if any) will become the link text. If there is a URL in the clipboard, Zettlr automatically uses it as the link target.
-* `Cmd/Ctrl+Shift+I`: Insert an image. Selected text (if any) will become the image title. If there is a URL in the clipboard, Zettlr automatically uses it as the image source.
-* `Tab`: Indent any given list one level. If there is no list, insert a tab character. (If you are using a screen reader and need to use the keyboard to move around the app, press `Esc` before pressing `Tab` to un-focus the editor.)
-* `Shift-Tab`: Un-indent a list one level.
-* `Cmd/Ctrl+C`: Copy text as plain
-* `Cmd/Ctrl+Alt+C`: Copy text with formatting (e.g., to paste formatted text into Microsoft Word)
-* `Cmd/Ctrl+X`: Cut text. If there is no selection, this command cuts the entire line.
-* `Cmd/Ctrl+V`: Paste text (if you copied formatted text, this will convert it to Markdown before insertion)
-* `Cmd/Ctrl+Shift+V`: Paste text as plain
-* `Cmd/Ctrl+Z`: Undo
-* `Cmd/Ctrl+Shift+Z`: Redo
-* `Alt+ArrowUp`: Swap current line with the previous
-* `Alt+ArrowDown`: Swap current line with the next
-* `Alt+Shift+ArrowUp`: Copy the current line above
-* `Alt+Shift+ArrowDown`: Copy the current line above
-* `Alt+l` (`Ctrl+l` on macOS): Select the current line
-* `Cmd/Ctrl+F`: Open the search panel
-* `Cmd/Ctrl+G`: Next occurrence
-* `Cmd/Ctrl+Shift+G`: Previous occurrence
-* `Cmd/Ctrl+D`: Select next occurrence
+* <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd>: Make text **bold**
+* <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd>: _Emphasize_ text
+* <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>: Create a new link. Selected text (if any) will become the link text. If there is a URL in the clipboard, Zettlr automatically uses it as the link target.
+* <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>: Insert an image. Selected text (if any) will become the image title. If there is a URL in the clipboard, Zettlr automatically uses it as the image source.
+* <kbd>Tab</kbd>: Indent any given list one level. If there is no list, insert a tab character. (If you are using a screen reader and need to use the keyboard to move around the app, press <kbd>Esc</kbd> before pressing <kbd>Tab</kbd> to un-focus the editor.)
+* <kbd>Shift</kbd>+<kbd>Tab</kbd>: Un-indent a list one level.
+* <kbd>Cmd/Ctrl</kbd>+<kbd>C</kbd>: Copy text as plain
+* <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>C</kbd>: Copy text with formatting (e.g., to paste formatted text into Microsoft Word)
+* <kbd>Cmd/Ctrl</kbd>+<kbd>X</kbd>: Cut text. If there is no selection, this command cuts the entire line.
+* <kbd>Cmd/Ctrl</kbd>+<kbd>V</kbd>: Paste text (if you copied formatted text, this will convert it to Markdown before insertion)
+* <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>: Paste text as plain
+* <kbd>Cmd/Ctrl</kbd>+<kbd>Z</kbd>: Undo
+* <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>: Redo
+* <kbd>Alt</kbd>+<kbd>ArrowUp</kbd>: Swap current line with the previous
+* <kbd>Alt</kbd>+<kbd>ArrowDown</kbd>: Swap current line with the next
+* <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>ArrowUp</kbd>: Copy the current line above
+* <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>ArrowDown</kbd>: Copy the current line above
+* <kbd>Alt</kbd>+<kbd>L</kbd> (<kbd>Ctrl</kbd>+<kbd>L</kbd> on macOS): Select the current line
+* <kbd>Cmd/Ctrl</kbd>+<kbd>F</kbd>: Open the search panel
+* <kbd>Cmd/Ctrl</kbd>+<kbd>G</kbd>: Next occurrence
+* <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>: Previous occurrence
+* <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd>: Select next occurrence
 
 > Zettlr also offers two advanced writing modes: Emacs and Vim. Whenever you activate one of these modes, they will change many keybindings and offer new ones. Those settings are recommended for advanced users only.
 
 ## Multi-Cursor Editing
 
-In addition to these keyboard shortcuts, Zettlr also offers multi-cursor editing. This means that you can add more than one cursor. Clicking while holding down `Cmd` or `Alt` will insert a new cursor at the given position. If you drag the mouse across text while holding down `Cmd` or `Alt`, you can create multiple selections.
+In addition to these keyboard shortcuts, Zettlr also offers multi-cursor editing. This means that you can add more than one cursor. Clicking while holding down <kbd>Cmd</kbd> or <kbd>Alt</kbd> will insert a new cursor at the given position. If you drag the mouse across text while holding down <kbd>Cmd</kbd> or <kbd>Alt</kbd>, you can create multiple selections.
 
 Whenever you have several cursor or selections, pressing any keys will do something to all of these cursor or selections simultaneously. You can use this to, e.g., correct multiple places of your document at once.
 
@@ -88,6 +88,6 @@ Whenever you have several cursor or selections, pressing any keys will do someth
 
 Footnotes are a notoriously difficult thing in Markdown, because they require some special characters to realise them, and also need you to work at two positions in the document at once: Where you want to put your footnote and at the bottom, where the reference text resides. Zettlr tries its best to ease your pain with these in the following ways:
 
-1. You can use a shortcut to place footnotes: `Cmd+Alt+R` (macOS) or `Ctrl+Alt+F` (macOS/Windows/Linux).
+1. You can use a shortcut to place footnotes: <kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd> (macOS) or <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd> (macOS/Windows/Linux).
 2. The reference text (that is, the content of the footnote) will be displayed at the bottom end of the editor window when you hover over a footnote.
 3. If you hover with your mouse over a footnote anchor somewhere in your text, a popup will show up that lets you edit the footnote in place. After you are finished editing your footnote, click the save button to close the popup and replace the text of the footnote.
