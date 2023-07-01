@@ -10,19 +10,19 @@ This search is very quick but does not take the actual content of a file into ac
 
 ## Searching in Files
 
-If you are interested in searching through the content of a specific file, you can use the search function. Press `Cmd/Ctrl+F` to bring up the search panel. You can type anything you would like to search for and repeatedly hit Enter to cycle through the matches.
+If you are interested in searching through the content of a specific file, you can use the search function. Press <kbd>Cmd/Ctrl</kbd>+<kbd>F</kbd> to bring up the search panel. You can type anything you would like to search for and repeatedly hit Enter to cycle through the matches.
 
 You can also enter something into the replace field in order to replace matches with that string. The search also offers you some more common settings.
 
 Activating the "match case" checkbox, the search will be performed case sensitive. Activating the "by word" checkbox, the search will match on word boundaries (so that "paul" would match "paul", but not "paula"). Lastly, activating the "regexp" checkbox, the search will interpret your query as a regular expression instead of a fixed string. This way you can make use of JavaScript's regular expressions for more advanced searching.
 
-If you press `Enter` while the replace input is focused, Zettlr will replace the current search result and automatically highlight the next occurrence of your search term. Hit `Enter` repeatedly to replace multiple occurrences.
+If you press <kbd>Enter</kbd> while the replace input is focused, Zettlr will replace the current search result and automatically highlight the next occurrence of your search term. Hit <kbd>Enter</kbd> repeatedly to replace multiple occurrences.
 
 > **Tip**: If you search for something using a regular expression that contains at least one capturing group, you can use the variable `$1` inside your replacement text. Such variables will be replaced with the content of the capturing groups. Multiple occurrences of the variable will be replaced as well. The number after the `$` refers to the index of the capturing group (the second capturing group will be addressed using `$2`, and so forth). [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
 
 ## Full-Text Search
 
-If you need to find something across multiple files, you can use the full-text search. You can open it either by pressing `Cmd/Ctrl+Shift+F` or by clicking the second button from the left in the toolbar. The full-text search is contained in the same panel as the file manager.
+If you need to find something across multiple files, you can use the full-text search. You can open it either by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> or by clicking the second button from the left in the toolbar. The full-text search is contained in the same panel as the file manager.
 
 ![The full text search with explanations](../img/full_text_search.png)
 

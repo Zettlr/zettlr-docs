@@ -6,7 +6,7 @@ The final step of any writing process is to export your document. Whether you wr
 
 ## Exporting the Current Document
 
-To export your current document, you can press `Cmd/Ctrl+E` or click the "Share" toolbar icon. This will open a small pop-up that allows you to specify your export. You can choose the export format from a dropdown list, and determine if you wish you export to the temporary directory, the file's folder, or if you want to choose a folder.
+To export your current document, you can press <kbd>Cmd/Ctrl</kbd>+<kbd>E</kbd> or click the "Share" toolbar icon. This will open a small pop-up that allows you to specify your export. You can choose the export format from a dropdown list, and determine if you wish you export to the temporary directory, the file's folder, or if you want to choose a folder.
 
 Then, click on "Export" to start the process. After the export is finished, Zettlr will automatically open the exported file with the program associated with this format (e.g., it will open your PDF reader after exporting to PDF, or your browser after exporting to HTML).
 

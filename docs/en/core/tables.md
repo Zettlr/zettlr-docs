@@ -97,21 +97,21 @@ To edit tables with the table editor, click into any of the cells of the table a
 
 Whenever a cell is currently active (indicated by a shimmer around its borders), you will see the Markdown source of the cell. Every cell that is not active will be rendered as HTML to make the display less cluttered.
 
-There is a slightly translucent icon on the top of the table that will turn from green to red as you edit your table. In order to save the changes to the table, you need to click that icon. Once the changes are applied to the underlying Markdown document, the icon will turn green again. You can also press `Cmd/Ctrl+S` while the table is focused.
+There is a slightly translucent icon on the top of the table that will turn from green to red as you edit your table. In order to save the changes to the table, you need to click that icon. Once the changes are applied to the underlying Markdown document, the icon will turn green again. You can also press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> while the table is focused.
 
-> While the table editor aims to make editing tables easier, it does so at the expense of having the table contents automatically update. Therefore, always remember to click the icon or press `Cmd/Ctrl+S` before leaving or closing the document. As a tip: You can press `Cmd/Ctrl+S` twice after modifying a table to first apply the changes to the table to the document and immediately afterwards save the entire document.
+> While the table editor aims to make editing tables easier, it does so at the expense of having the table contents automatically update. Therefore, always remember to click the icon or press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> before leaving or closing the document. As a tip: You can press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> twice after modifying a table to first apply the changes to the table to the document and immediately afterwards save the entire document.
 
 ## Keyboard Navigation
 
 While editing a table, the following keyboard shortcuts are available:
 
-- `Tab`: Move to the next cell. If the last column is active, move to the first cell in the next row. If your cursor was in the last column of the last row, a new row will be added automatically.
-- `Shift-Tab`: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
-- `Return`: Move to the same column in the next row. If your cursor was in the last row, a new row will be added automatically.
-- `Arrow Up/Arrow Down`: Move to the same column in the previous/next row. No new rows will be added if you are in the first or last row.
-- `Arrow Left/Arrow Right`: Move the cursor left/right. If the cursor is at the beginning/end of the cell's contents, move to the previous/next cell.
+- <kbd>Tab</kbd>: Move to the next cell. If the last column is active, move to the first cell in the next row. If your cursor was in the last column of the last row, a new row will be added automatically.
+- <kbd>Shift</kbd>+<kbd>Tab</kbd>: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
+- <kbd>Return</kbd>: Move to the same column in the next row. If your cursor was in the last row, a new row will be added automatically.
+- <kbd>Arrow Up</kbd>/<kbd>Arrow Down</kbd>: Move to the same column in the previous/next row. No new rows will be added if you are in the first or last row.
+- <kbd>Arrow Left</kbd>/<kbd>Arrow Right</kbd>: Move the cursor left/right. If the cursor is at the beginning/end of the cell's contents, move to the previous/next cell.
 
-With these shortcuts, you can easily enter content into your tables using natural movements. You would first want to fill out the table header and afterwards you want to add one set of data per line. Therefore, `Tab` is your friend here:
+With these shortcuts, you can easily enter content into your tables using natural movements. You would first want to fill out the table header and afterwards you want to add one set of data per line. Therefore, <kbd>Tab</kbd> is your friend here:
 
 ![A visual explainer how the keyboard navigation works](../img/zettlr_table_movement.png)
 
