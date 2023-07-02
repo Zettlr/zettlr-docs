@@ -54,6 +54,7 @@ nav:
   - Guides:
     - LanguageTool Locally: guides/languagetool-local.md
     - Presentations: guides/presentations.md
+    - Submitting to a Journal using a LaTeX Template: guides/journal-latex-template.md
     - Portable App: guides/portable.md
   - References:
     - FAQ: reference/faq.md
