@@ -14,7 +14,15 @@ This might sound trivial, but many problems can be solved by simply quitting Zet
 
 Due to limited resources, we cannot support many different versions. If you encounter an issue, make sure you have the most recent version installed. Many issues are fixed in newer versions.
 
-## 3. Try Resetting the App
+## 3. Try Clearing the Cache
+
+Sometimes, Zettlr can experience a hiccup, which may corrupt the FSAL cache. This can be annoying, because it means that unwanted behavior is persisted across restarts. A very simple remedy for those instances is to clear the FSAL cache. To clear the cache, in the menu simply click "Help" &rarr; "Clear FSAL cache…" and confirm to restart the app.
+
+The app will immediately restart and recreate the FSAL cache. Especially if you have a slower computer, a slower disk, or simply have a lot of files loaded, this restart will take some time. Zettlr will only show you the application window after it has completed the recreation of the FSAL cache, so it can take several seconds or even longer. Please be patient during this process – the next restart of the app will be fast again.
+
+> Alternatively, there are two manual ways of doing the same, which we list here only in case you may need them. In both instances, first ensure that Zettlr is closed. Then, for option (a) head over to Zettlr's config folder and just remove the `fsal/cache` directory. Option (b) is to start Zettlr from the command-line with the flag `--clear-cache`.
+
+## 4. Try Resetting the App
 
 We have heard many times that the app appears to be broken (it does not even start, for example). What we found is that sometimes clearing the cache helps. This seems to be related to the Electron framework we use. That one creates its own cache files, over which we do not have any control, and sometimes it helps to delete these.
 
@@ -39,17 +47,17 @@ If you want to completely reset your local Zettlr installation, follow these ste
 3. Select everything in this directory and delete it.
 4. Restart the application. Some of these files will be re-created.
 
-## 4. Ask the Community for Help
+## 5. Ask the Community for Help
 
 If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active both on the [Zettlr subreddit](https://www.reddit.com/r/Zettlr) and on [Discord](https://discord.gg/PcfS3DM9Xj), so you can choose which one you like.
 
-## 5. Open a GitHub Issue
+## 6. Open a GitHub Issue
 
 If the community couldn't help you, or if it seems to be an actual bug, please open an issue on GitHub. Make sure to include as much information as possible so that we can quickly address the issue.
 
 > If you open an issue on GitHub, make sure you receive notifications. We have follow-up questions almost always regarding your issue. The faster you respond, the faster we can ensure the issue is being fixed. If no one answers on your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
 
-## 6. Revert to a previous version
+## 7. Revert to a previous version
 
 Sometimes, an issue can hinder your productivity. Some users decide to revert to a previous version until we are able to fix the issue. In this section, we want to give you some advice on what could be important in such a situation and what could go wrong doing so.
 
