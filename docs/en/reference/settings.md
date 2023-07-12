@@ -419,9 +419,13 @@ Notify me about beta releases
 
 : If selected, Zettlr will also inform you about new beta releases, not just stable releases.
 
-Use native window appearance
+Use native window appearance (Linux only)
 
-: Due to the plethora of available window managers on Linux, you can select this setting to have windows display with whatever window chrome your window manager uses. You have to close and reopen existing windows for this setting to take effect. _Note: This is only available on Linux._
+: Due to the plethora of available window managers on Linux, you can select this setting to have windows display with whatever window chrome your window manager uses. You have to close and reopen existing windows for this setting to take effect. Zettlr will offer you to restart after changing this setting.
+
+Enable Vibrancy (macOS only)
+
+: macOS windows are slightly translucent and change their background color based on whatever is behind them. However, this can sometimes make moving windows between different displays a little bit laggy. If you find this annoying, you can disable this setting. Zettlr will offer to restart after changing this setting.
 
 Delete items irreversibly, if moving them to trash fails
 
