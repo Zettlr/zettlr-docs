@@ -19,7 +19,7 @@ nav:
     - Installing LaTeX: getting-started/installing-latex.md
     - A Note on Security: getting-started/a-note-on-security.md
     - Get involved: getting-started/get-involved.md
-    - Troubleshooting: troubleshooting.md
+    - Troubleshooting: getting-started/troubleshooting.md
   - First Time Users:
     - The User Interface: core/user-interface.md
     - Importing Files: core/import.md

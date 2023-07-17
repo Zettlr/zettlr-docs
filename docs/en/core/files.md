@@ -42,7 +42,7 @@ Also, you can drag files around. You can drag them on a different folder to move
 
 If you are interested in some metadata on the file, you can right-click it and select "Properties". The properties contain information on when a file was created, when it has been last edited, how many words it contains and how large it is on disk.
 
-Additionally, the file properties allow you to specify a [writing target](writing-targets.md). To set a writing target, simply select the appropriate number of words or characters, and choose whether the target should refer to "words" or "characters". This allows you to flexibly adjust how long a file will need to become depending on whether your editor/teacher defines a word-based or character-based writing target.
+Additionally, the file properties allow you to specify a writing target. To set a writing target, simply select the appropriate number of words or characters, and choose whether the target should refer to "words" or "characters". This allows you to flexibly adjust how long a file will need to become depending on whether your editor/teacher defines a word-based or character-based writing target.
 
 > Note that character counts always exclude spaces.
 

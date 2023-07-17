@@ -40,7 +40,7 @@ Now, whenever you start the Batch-file, it should open Zettlr and direct it to u
 
 It is also possible to convert a static installation into a portable app. In order to do so, first copy over the **entire** application directory from Zettlr. All the files in there are necessary. Copy these into any folder you like.
 
-Next, search for the application data directory. It should be `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`, but you can find the correct path in the [setup instructions](setup.md). Copy this directory – also in its entirety – into the copied application directory. You probably want to rename it so you know what's in there.
+Next, search for the application data directory. It should be `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`, but you can find the correct path in the [setup instructions](../getting-started/setup.md). Copy this directory – also in its entirety – into the copied application directory. You probably want to rename it so you know what's in there.
 
 Lastly, you also need to create a BAT-file like above:
 
