@@ -32,7 +32,7 @@ Once you've located this folder, save a copy of the following files and subfolde
 
 ### Workspaces Containing Your Notes
 
-Make a backup of the workspace folders containing your notes on your old computer. If you've forgotten where these live, it's simple enough to locate them by right-clicking a workspace in the Zettlr file manager and selecting `Open directory` from the context menu that pops up. This will display the corresponding folder in your computer's file browser. If you need to locate/back up an individual note file — one that's not part of a workspace, for example — you can likewise right-click it in the Zettlr file manager and choose `Show file` from the context menu.
+Make a backup of the workspace folders containing your notes on your old computer. If you've forgotten where these live, right-click a workspace in Zettlr's file manager and select `Reveal in Finder/Explorer/File Browser` (wording differs depending on operating system) from the context menu that pops up. This will open the corresponding folder in your computer's file browser. If you need to locate/back up an individual note file — one that's not part of a workspace, for example — you can likewise right-click it in the Zettlr file manager and choose `Reveal in Finder/Explorer/File Browser` (wording differs depending on operating system) from the context menu.
 
 ## Migrate Your Application Settings to the New Machine
 
