@@ -14,7 +14,7 @@ Then, click on "Export" to start the process. After the export is finished, Zett
 
 ## Exporting Projects
 
-If you make use of the [project feature](../academic/projects.md), exporting works differently. First, you need to right-click the project folder and select "Properties". Then you need to click on "Project Settings…" to open the preferences for this project. From the list of export formats (which is the same list that you see during single file exports), select all you want.
+If you make use of the [project feature](../advanced/projects.md), exporting works differently. First, you need to right-click the project folder and select "Properties". Then you need to click on "Project Settings…" to open the preferences for this project. From the list of export formats (which is the same list that you see during single file exports), select all you want.
 
 After you selected all formats you need to export to, close the project settings again, right click on the project folder again, and this time choose "Export project". This option will be grayed out if you have no export formats selected.
 
@@ -24,13 +24,13 @@ When you export a project, Zettlr will always export the files into the project 
 
 Each export format is powered by so-called "profiles", or "defaults files". These profiles contain settings that apply to every file you export using the profile, that is: they are valid for every export, regardless of which file or project you export.
 
-They are written using the YAML syntax, which you can also use in frontmatters. Since customizing profiles is rather complex, we have collected the [documentation on a separate page](defaults-files.md).
+They are written using the YAML syntax, which you can also use in frontmatters. Since customizing profiles is rather complex, we have collected the [documentation on a separate page](../advanced/defaults-files.md).
 
 ## Adding New Profiles
 
 You can also add new profiles. For example, you can add multiple exports to PDF, each of which use a separate template. This is very useful if you need to submit papers to various conferences which each have their own template. By adding those templates into their own respective profiles, you have various conferences available, into whose templates you can export each file.
 
-To see how to add custom templates to profiles, head over to [our page on custom templates](../academic/custom-templates.md).
+To see how to add custom templates to profiles, head over to [our page on custom templates](../advanced/custom-templates.md).
 
 ## Special Formats: Textbundle, Textpack, and Simple PDF
 

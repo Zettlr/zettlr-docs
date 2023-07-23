@@ -8,7 +8,7 @@ The system itself is based on the TextMate syntax and as such to a certain degre
 
 ## Managing Your Snippets
 
-You can manage your snippets using the [assets manager](assets-manager.md). You can open the assets manager by selecting 'File' &rarr; 'Preferences' &rarr; 'Assets Manager' or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>.
+You can manage your snippets using the [assets manager](../advanced/assets-manager.md). You can open the assets manager by selecting 'File' &rarr; 'Preferences' &rarr; 'Assets Manager' or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>.
 
 To the left, you can find a list of all snippets. Initially it will be empty. You can add a new snippet by clicking the "+"-button at the bottom of the list. It will initially be named "snippet-X" (where X is a number). If you select a snippet, the snippets editor will show the contents of the file in the editor and the name in the text field above it.
 

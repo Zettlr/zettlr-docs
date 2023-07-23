@@ -9,7 +9,7 @@ Knowing how to write Markdown is one thing, but when typing a lot, it happens fr
 
 On this page, we're going to introduce you to three of these, what capabilities they have and how to utilize them.
 
-> The readability mode works different from the first three tools and is more complex, [so we document its usage on a separate page](../academic/readability.md).
+> The readability mode works different from the first three tools and is more complex, [so we document its usage on a separate page](readability.md).
 
 ## How Linting Works
 

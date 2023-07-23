@@ -56,7 +56,7 @@ All folders (including workspaces) allow you to view a set of **properties**. To
 
 The pop-up will show you the folder's name, when it has been created and last modified, how many files and cumulative words are within this folder. You can also change the sort order here.
 
-With the switch named "Enable Project", you can turn this folder into a project. To read more on projects, head over to our [project introduction](../academic/projects.md).
+With the switch named "Enable Project", you can turn this folder into a project. To read more on projects, head over to our [project introduction](../advanced/projects.md).
 
 Lastly, you can select an **icon** to identify the folder with. By default, a folder will have no associated icon, but if you select one here, it will show up next to its name in the file manager. This is purely decorative and will help you more quickly identify relevant folders.
 

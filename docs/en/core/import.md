@@ -49,4 +49,4 @@ The same process also works if you work with colleagues who work exclusively wit
 
 You can finetune how the importer works by modifying its profile. For example, by default Zettlr will direct Pandoc to extract images and other media files from Word documents into an asset directory so that you get to keep those media files.
 
-To see how to modify an import profile, have a look [at the defaults files documentation](defaults-files.md).
+To see how to modify an import profile, have a look [at the defaults files documentation](../advanced/defaults-files.md).
