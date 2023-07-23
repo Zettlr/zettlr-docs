@@ -141,4 +141,4 @@ Cells spanning multiple rows or columns are simply impossible given the limited 
 
 What you can do in this case is to include such tables as raw LaTeX or HTML source code. There are great tools out there to [transform your RDataset](https://tex.stackexchange.com/questions/364225/export-tables-from-r-to-latex) or Stata datafile into LaTeX or HTML.
 
-To include such a file in a larger research project, you can make use of Zettlr's [project feature](../academic/projects.md).
+To include such a file in a larger research project, you can make use of Zettlr's [project feature](../advanced/projects.md).

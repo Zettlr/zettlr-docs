@@ -29,4 +29,4 @@ For an overview of which functions and symbols you can use with the KaTex librar
 
 While Zettlr uses KaTeX for preview purposes, exported math may differ. Exporting to PDF will cause the standard LaTeX math engine to take care of rendering the code, while exporting to HTML will by default make use of MathTeX.
 
-You can customize how math is being treated on export by adapting your [YAML frontmatter](yaml-frontmatter.md) or [profiles](defaults-files.md).
+You can customize how math is being treated on export by adapting your [YAML frontmatter](../advanced/yaml-frontmatter.md) or [profiles](../advanced/defaults-files.md).

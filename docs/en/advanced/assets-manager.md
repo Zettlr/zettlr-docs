@@ -10,7 +10,7 @@ The assets manager allows you to edit your files using correct syntax highlighti
 
 * [Defaults files](defaults-files.md)
 * [Custom CSS](custom-css.md)
-* [Snippets](snippets.md)
+* [Snippets](../core/snippets.md)
 
 ## How to Adapt the PDF Preferences
 

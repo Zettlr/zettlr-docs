@@ -28,7 +28,7 @@ The next set of buttons apply only to the currently focused document, and can be
 
 To the right of the toolbar, you will see a word counter and position info. This display can be adapted to show character counts of your files instead.
 
-Next, you will see the [**pomodoro**](../academic/pomodoro.md) counter that you can use to time your work sessions.
+Next, you will see the [**pomodoro**](../advanced/pomodoro.md) counter that you can use to time your work sessions.
 
 The last button will open the [**sidebar**](sidebar.md) that contains information on the current document, such as a table of contents, a list of references, and related files.
 
@@ -65,7 +65,7 @@ You can not only split the editor area into multiple parts to view several docum
 There are other windows, too, which are introduced in the corresponding sections:
 
 * The [**settings window**](../reference/settings.md)
-* The [**assets manager**](../core/assets-manager.md)
+* The [**assets manager**](../advanced/assets-manager.md)
 * The [**statistics window**](#TODO)
 * The [**tag manager**](#TODO)
 

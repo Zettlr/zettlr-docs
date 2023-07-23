@@ -1,6 +1,6 @@
 # Settings
 
-Zettlr offers you a plethora of options to customise your experience with the app. It comes with three major settings dialogs, one of which is the [assets manager explained elsewhere](../core/assets-manager.md), a general preferences dialog, and a tag manager.
+Zettlr offers you a plethora of options to customise your experience with the app. It comes with three major settings dialogs, one of which is the [assets manager explained elsewhere](../advanced/assets-manager.md), a general preferences dialog, and a tag manager.
 
 ## General Preferences
 
@@ -315,7 +315,7 @@ Render emphasis
 
 Theme
 
-: The theme selector allows you to select one of the available themes. You can further customize the appearance of Zettlr using [Custom CSS](../core/custom-css.md).
+: The theme selector allows you to select one of the available themes. You can further customize the appearance of Zettlr using [Custom CSS](../advanced/custom-css.md).
 
 Use the operating system's accent colour instead of the theme colour
 

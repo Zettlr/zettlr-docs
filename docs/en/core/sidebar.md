@@ -20,7 +20,7 @@ The references tab contains a bibliography of all the references you cite within
 
 ![The sidebar with the second tab open, the references section](../img/sidebar_references.png)
 
-To learn more about citing references with Zettlr, have a look at the documentation page for [citations](../academic/citations.md).
+To learn more about citing references with Zettlr, have a look at the documentation page for [citations](citations.md).
 
 > Please note that the references will be displayed using the built-in CSL style. During export, however, Pandoc will use whichever style you define in your preferences to match your expectations. The references in the sidebar are for preview purposes.
 

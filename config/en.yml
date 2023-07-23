@@ -28,11 +28,13 @@ nav:
     - Files: core/files.md
     - File Manager: core/file-manager.md
     - Split View: core/split-view.md
+    - Sidebar: core/sidebar.md
     - Writing Markdown: core/writing-markdown.md
     - Style and Grammar: core/style-and-grammar.md
+    - Readability: core/readability.md
     - Statusbar: core/statusbar.md
     - AutoCorrect and MagicQuotes: core/autocorrect.md
-    - Citations: academic/citations.md
+    - Citations: core/citations.md
     - Math: core/math.md
     - Snippets: core/snippets.md
     - Searching: core/search.md
@@ -40,17 +42,15 @@ nav:
     - Print and Preview: core/print-preview.md
     - Exporting: core/export.md
   - Advanced Usage:
-    - YAML Frontmatter: core/yaml-frontmatter.md
-    - Readability: academic/readability.md
-    - Sidebar: core/sidebar.md
-    - Assets Manager: core/assets-manager.md
-    - Defaults Files: core/defaults-files.md
-    - Custom Templates: academic/custom-templates.md
-    - Custom CSS: core/custom-css.md
-    - Projects: academic/projects.md
-    - Pomodoro Timer: academic/pomodoro.md
-    - Zettelkasten Methods: academic/zkn-method.md
-    - Graph View: academic/graph.md
+    - YAML Frontmatter: advanced/yaml-frontmatter.md
+    - Assets Manager: advanced/assets-manager.md
+    - Defaults Files: advanced/defaults-files.md
+    - Custom Templates: advanced/custom-templates.md
+    - Custom CSS: advanced/custom-css.md
+    - Projects: advanced/projects.md
+    - Pomodoro Timer: advanced/pomodoro.md
+    - Zettelkasten Methods: advanced/zkn-method.md
+    - Graph View: advanced/graph.md
   - Guides:
     - LanguageTool Locally: guides/languagetool-local.md
     - Presentations: guides/presentations.md

@@ -14,7 +14,7 @@ The two main benefits of Markdown are that you can format your entire document w
 
 You can direct Zettlr to format everything by pressing a few keys. Additionally, because Markdown purposefully has no direct layouting capabilities, you will find it much easier to focus on what you write instead of tinkering with its looks. The layouting only happens during export.
 
-> To learn how to customize how your documents look once you export them, head over to the [defaults files](defaults-files.md) documentation.
+> To learn how to customize how your documents look once you export them, head over to the [defaults files](../advanced/defaults-files.md) documentation.
 
 ## Formatting with Markdown
 

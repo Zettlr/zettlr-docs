@@ -85,7 +85,7 @@ Afterward, your PDF should open with the contents, but you may notice that there
 
 As you can see, there is still sample code in the abstract section, sample authors, and a sample title. Now that the template works, it is time to polish the template and ensure that you can define all the different information for each submission properly.
 
-> In the following, we will not explain too much of what we are doing, since the basics are explained at length in our [documentation on custom templates](../academic/custom-templates.md). Here we simply apply those guidelines to turn the static template into a dynamic Pandoc template.
+> In the following, we will not explain too much of what we are doing, since the basics are explained at length in our [documentation on custom templates](../advanced/custom-templates.md). Here we simply apply those guidelines to turn the static template into a dynamic Pandoc template.
 
 First, let us turn the title into a variable. For this, we search for the `\title` directive and replace it with a Pandoc style variable:
 
