@@ -213,6 +213,14 @@ Target directory for exported files
 
 : **Ask for directory**: Ask you where to export a file to on every export.
 
+Custom Commands
+
+: This section allows you to specify custom export commands. The display name will be shown to you in the single-file export popover as well as the project settings. The command is what will be actually run (as a child process). Here, you should paste something that can be run in a terminal (e.g., bash or zsh on Unixoid systems, or PowerShell or the command line on Windows).
+
+: The command will receive a single argument: the absolute path to the file that is being exported (in the case of a single-file export) or an entire absolute folder path (in the case of a project export). Your command can then use this information as it sees fit.
+
+: > **Attention**: Do not add arbitrary commands that you do not understand. This could put your data or computer at risk. Please read our [notes on security](../getting-started/a-note-on-security.md) before modifying this section.
+
 ### Citations
 
 ![settings_citations.png](../img/settings_citations.png)
