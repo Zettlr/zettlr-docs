@@ -11,13 +11,17 @@ You'll need two steps to enable citations in Zettlr:
 
 Most reference managers allow you to export your library contents as either **CSL JSON** or **BibTeX**. Zettlr supports both. Internally, Zettlr will convert BibTeX to CSL JSON.
 
-> On this page, we will show you the process using the example of Zotero, as it is the most common reference manager. If you use another reference manager, please check its manual on how to export to either CSL JSON or BibTeX.
+!!! note
+
+    On this page, we will show you the process using the example of Zotero, as it is the most common reference manager. If you use another reference manager, please check its manual on how to export to either CSL JSON or BibTeX.
 
 ### Step 1: Install BetterBibTex
 
 The first step is to install [the BetterBibTex plugin for Zotero](https://retorque.re/zotero-better-bibtex/installation/). Using BetterBibTex has two important benefits over not using it. First, it keeps all of your citation keys unique across your entire library. Second, it allows you to keep your exported library file up to date so you do not have to re-export it every time something changes.
 
-> While it is not strictly necessary to use BetterBibTex, we do recommend it.
+!!! tip
+
+    While it is not strictly necessary to use BetterBibTex, we do recommend it.
 
 ### Step 2: Export your library
 
@@ -27,7 +31,9 @@ The next step is to actually export your library. For this, right-click "My Libr
 
 Select `Better CSL JSON` as the format. If you opted not to install BetterBibTex, choose `CSL JSON`. By checking "Keep updated", BetterBibTex will ensure every change in Zotero will automatically update your `CSL JSON` file. In this way, Zettlr will always use the most up-to-date citations.
 
-> If you checked "Keep updated", you can verify the status of the `CSL JSON` by opening the Zotero Preferences, selecting the `BetterBibTex` tab, and selecting `Automatic Export`. Here you can fine tune what is exported, and when.
+!!! note
+
+    If you checked "Keep updated", you can verify the status of the `CSL JSON` by opening the Zotero Preferences, selecting the `BetterBibTex` tab, and selecting `Automatic Export`. Here you can fine tune what is exported, and when.
 
 ### Step 3: Open your library in Zettlr
 
@@ -35,7 +41,9 @@ Now it is time to import your library to Zettlr. To do so, open Zettlr's prefere
 
 ![Point Zettlr to your database file](../img/settings_export.png)
 
-> Please note that you can also add bibliography files to the defaults files. These, however, will not be loaded by Zettlr, so it will not preview any citekeys defined there.
+!!! note
+
+    Please note that you can also add bibliography files to the defaults files. These, however, will not be loaded by Zettlr, so it will not preview any citekeys defined there.
 
 If you need to use library files on a per-file-basis rather than globally, you can specify the file with the `bibliography` keyword in the YAML frontmatter. We have included instructions [further down on this page](#using-a-file-specific-library).
 
@@ -49,7 +57,9 @@ Zettlr supports Pandoc's citeproc-syntax for writing citations. All citation key
 
 After you type `@`, type a few characters to narrow down your search. Use the arrow keys to navigate to the entry you want to cite, and press `Tab` to insert it. When an entry is highlighted, a full bibliographic entry will be displayed as well.
 
-> If you are not presented with a list of possible references, there may be a problem with the database file you set up previously.
+!!! note
+
+    If you are not presented with a list of possible references, there may be a problem with the database file you set up previously.
 
 Depending on what style you need or want to cite in, you have three options:
 
@@ -59,7 +69,9 @@ Depending on what style you need or want to cite in, you have three options:
 
 You can select one of the three styles in the settings &rarr; 'Citations' to make it quicker for you to insert the correct syntax. If you, e.g., frequently cite in-text, option two will be great. If you need to frequently add page numbers, option 3 will insert the necessary square brackets on autocomplete and place the cursor between them so that it is easier for you to add the information as required.
 
-> Please note that citation *styles* can sometimes further customize how citations are actually being rendered. For instance, some citation styles in the natural sciences require citations to be referred to only by number. This specific requirement will be applied once you export a file. **Zettlr itself will always use a default in-text citation style to preview your files. Your exports therefore may differ.**
+!!! tip
+
+    Please note that citation *styles* can sometimes further customize how citations are actually being rendered. For instance, some citation styles in the natural sciences require citations to be referred to only by number. This specific requirement will be applied once you export a file. **Zettlr itself will always use a default in-text citation style to preview your files. Your exports therefore may differ.**
 
 For more information on how to use citations in line with Pandoc's citeproc engine, [please refer to the guide](http://pandoc.org/demo/example19/Extension-citations.html).
 
@@ -81,7 +93,9 @@ bibliography: ./assets/references.json
 ---
 ```
 
-> Note that, while you can add multiple library files to this property, Zettlr can only handle one and therefore will only select the first bibliography file.
+!!! note
+
+    Note that, while you can add multiple library files to this property, Zettlr can only handle one and therefore will only select the first bibliography file.
 
 ## Changing the citation style
 
@@ -112,13 +126,17 @@ To make this more explicit, notice that you can specify the precise location of 
 
 Pandoc will replace the three-colon-curly-bracket construction with your list of references.
 
-> This also means that you can embed your list of references at any point in your document. You could, e.g., add appendices after the `{#refs}`-block.
+!!! tip
+
+    This also means that you can embed your list of references at any point in your document. You could, e.g., add appendices after the `{#refs}`-block.
 
 ### Setting a Section Header in the YAML Frontmatter
 
 If you do not want to always specify the section title manually, you can also automate this process. In your file's [YAML frontmatter](../advanced/yaml-frontmatter.md), you can add a property `reference-section-title: Bibliography`. Replace "Bibliography" with whatever the title should be called.
 
-> You can read more on placing the bibliography in the [Pandoc manual](https://pandoc.org/MANUAL.html#placement-of-the-bibliography).
+!!! note
+
+    You can read more on placing the bibliography in the [Pandoc manual](https://pandoc.org/MANUAL.html#placement-of-the-bibliography).
 
 ### Formatting the List of References
 
@@ -142,7 +160,9 @@ The above example would render the reference list with a negative indent of minu
 
 The above example is a good place to start. You can search for more lengths to tweak and adjust them to your liking.
 
-> If you are submitting, e.g., to a STEM journal which provides its own LaTeX template, you can directly use that template to export your file, ensuring that everything already works as expected.
+!!! tip
+
+    If you are submitting, e.g., to a STEM journal which provides its own LaTeX template, you can directly use that template to export your file, ensuring that everything already works as expected.
 
 ## Accessing a Reference's PDF From Zettlr
 

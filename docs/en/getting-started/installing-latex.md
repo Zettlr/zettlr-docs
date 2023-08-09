@@ -6,7 +6,9 @@ To export more advanced PDF files, you'll need to install [LaTeX](https://en.wik
 
 LaTeX distributions come in two flavors: A "full" installation featuring a host of graphical programs for writing TeX directly, and a "minimal" installation that only contains the actual compilers. Zettlr is happy with only a minimal installation (because it just needs the compiler), but if you want to fiddle around with LaTeX more you are free to also install the full package.
 
-> Especially if you only install the minimal setup, you'll need to install additional packages afterwards. Read to the end of this guide to see how.
+!!! note
+
+    Especially if you only install the minimal setup, you'll need to install additional packages afterwards. Read to the end of this guide to see how.
 
 ## Windows
 
@@ -26,7 +28,9 @@ Similar to Windows, macOS also features simple installers that will install one 
 
 Linux distributions commonly have several LaTeX packages available to install directly from your software manager. There are also minimal and full packages. We list options for common distributions below.
 
-> It doesn't really matter which of the versions you install, but there is one requirement: You need to install the `xetex` binary, since that is the compiler that Zettlr uses by default. If in doubt, consult your distribution's manual for more information on how to correctly install TeX.
+!!! note
+
+    It doesn't really matter which of the versions you install, but there is one requirement: You need to install the `xetex` binary, since that is the compiler that Zettlr uses by default. If in doubt, consult your distribution's manual for more information on how to correctly install TeX.
 
 ### Debian/Ubuntu
 
@@ -67,7 +71,9 @@ We recommend you don't install packages unless Zettlr complains during exports. 
 
 In both cases it is likely that the command or file will be provided by a package. It's easy to install the missing packages using the following procedure.
 
-> On Windows, LaTeX will attempt to install the missing packages automatically and will ask you if it should do so.
+!!! note
+
+    On Windows, LaTeX will attempt to install the missing packages automatically and will ask you if it should do so.
 
 1. All LaTeX packages are listed in the ["Comprehensive TeX Archive Network" (CTAN)](https://www.ctan.org/). Take the filename (including its extension, `.sty`) or the command, and search for it using the search bar.
 2. For example, if LaTeX complains that the command `\hypertarget` is not defined, [search for it like this](https://www.ctan.org/search?phrase=hypertarget).

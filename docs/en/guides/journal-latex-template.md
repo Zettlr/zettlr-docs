@@ -24,7 +24,9 @@ Inspecting the template folder, you will see that it **does not contain a single
 
 We will duplicate the file "sample-xelatex.tex", but you may need to choose another one. Consult with the conference if you face this situation and ask which template would be the most appropriate to use. Then, move the duplicated file out of the "samples" folder and into the main folder. This is important since LaTeX expects the auxiliary files in the same folder as your template.
 
-> Often, the LaTeX-files will contain helpful comments. For example, the ACM template tells you that, "[f]or submission and review of your manuscript please change the command to \documentclass[manuscript, screen, review]{acmart}." Take note of these comments as they may contain important information for your own submission.
+!!! note
+
+    Often, the LaTeX-files will contain helpful comments. For example, the ACM template tells you that, "[f]or submission and review of your manuscript please change the command to \documentclass[manuscript, screen, review]{acmart}." Take note of these comments as they may contain important information for your own submission.
 
 Now that we have a "master" template, we have to ensure that it works with Pandoc. For that, we have to place a `$body$` variable somewhere in between the commands `\begin{document}` and `\end{document}`. Many LaTeX templates provide you with some samples to show you how the template is intended to be used.
 
@@ -46,7 +48,9 @@ Therefore, let us first open the assets manager by pressing <kbd>Cmd/Ctrl</kbd>+
 
 In the list, search for the "XeLaTeX PDF" template, enter a new name in the filename text field and click on "Rename file". For our purposes, we choose the name "FaCCT Submission".
 
-> As the XeLaTeX PDF template is a protected profile, Zettlr has recreated it as soon as you renamed it. However, note that the recreated file will contain only the factory settings. **If you customized your template, you should now copy the entire contents of the "FaCCT Submission" profile and copy them back into the "XeLaTeX PDF" profile to not lose them**.
+!!! note
+
+    As the XeLaTeX PDF template is a protected profile, Zettlr has recreated it as soon as you renamed it. However, note that the recreated file will contain only the factory settings. **If you customized your template, you should now copy the entire contents of the "FaCCT Submission" profile and copy them back into the "XeLaTeX PDF" profile to not lose them**.
 
 Now, we can adapt the profile to work with our new template. The only required step is to provide a link to our template so that Pandoc will find it. Therefore, copy the **absolute path** to the template and point the profile to it, for example like so:
 
@@ -58,7 +62,9 @@ template: /Users/<username>/Documents/Zettlr Workspace/templates/acmart-primary/
 # ... more contents ...
 ```
 
-> It is important that you use the absolute path, as Pandoc will always work in the directory of the file you are exporting, which may change depending on the file.
+!!! note
+
+    It is important that you use the absolute path, as Pandoc will always work in the directory of the file you are exporting, which may change depending on the file.
 
 ## Test the new Profile
 
@@ -75,7 +81,9 @@ zettlr:
     pandoc_working_dir: /Users/<username>/Documents/Zettlr Workspace/templates/acmart-primary
 ```
 
-> Note that you may receive some errors while trying to export, indicating missing packages. [Read this to know how to fix them](../getting-started/installing-latex/#installing-additional-packages).
+!!! note
+
+    Note that you may receive some errors while trying to export, indicating missing packages. [Read this to know how to fix them](../getting-started/installing-latex/#installing-additional-packages).
 
 Afterward, your PDF should open with the contents, but you may notice that there are tons of sample code still in there. This is what we now have to get to:
 
@@ -85,7 +93,9 @@ Afterward, your PDF should open with the contents, but you may notice that there
 
 As you can see, there is still sample code in the abstract section, sample authors, and a sample title. Now that the template works, it is time to polish the template and ensure that you can define all the different information for each submission properly.
 
-> In the following, we will not explain too much of what we are doing, since the basics are explained at length in our [documentation on custom templates](../advanced/custom-templates.md). Here we simply apply those guidelines to turn the static template into a dynamic Pandoc template.
+!!! note
+
+    In the following, we will not explain too much of what we are doing, since the basics are explained at length in our [documentation on custom templates](../advanced/custom-templates.md). Here we simply apply those guidelines to turn the static template into a dynamic Pandoc template.
 
 First, let us turn the title into a variable. For this, we search for the `\title` directive and replace it with a Pandoc style variable:
 
@@ -148,7 +158,9 @@ author:
     email: last.author@example.com
 ```
 
-> Note that the ACM templates require the country variable. In these cases, LaTeX will provide an error message. Other templates may be simpler and allow you to get away with less info. Make sure to familiarize yourself with the template.
+!!! note
+
+    Note that the ACM templates require the country variable. In these cases, LaTeX will provide an error message. Other templates may be simpler and allow you to get away with less info. Make sure to familiarize yourself with the template.
 
 The last things that we will adapt here are abstract and keywords. There are a few other things, such as the CCS-concepts or the DOI that are out of the scope of this tutorial. With the knowledge from this guide, you should be able to deal with them appropriately.
 

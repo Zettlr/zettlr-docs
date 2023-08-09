@@ -2,7 +2,9 @@
 
 As other applications, Zettlr features a graph view that allows you to view the network that you have created by interlinking your files. This can help you spot clusters as they emerge, find ways of connecting separate components, and gain an overview over all of your files.
 
-> Graphs and networks are different kinds of beasts. They can be very powerful, but they can also act as a Rorschach test where you spot patterns that are not there. For a general introduction, we warmly recommend you to read [What is the point of a graph view?](https://www.arthurperret.fr/blog/2022-02-13-what-is-the-point-of-a-graph-view.html) by Arthur Perret as well as -- for a more cautious notion -- the article [Quo Vadis, PKM?](https://www.hendrik-erz.de/post/quo-vadis-pkm) by Hendrik Erz.
+!!! note
+
+    Graphs and networks are different kinds of beasts. They can be very powerful, but they can also act as a Rorschach test where you spot patterns that are not there. For a general introduction, we warmly recommend you to read [What is the point of a graph view?](https://www.arthurperret.fr/blog/2022-02-13-what-is-the-point-of-a-graph-view.html) by Arthur Perret as well as -- for a more cautious notion -- the article [Quo Vadis, PKM?](https://www.hendrik-erz.de/post/quo-vadis-pkm) by Hendrik Erz.
 
 ![Zettlr's graph view in its initial configuration](../assets/../img/graph_view.png)
 
@@ -32,7 +34,9 @@ Zettlr now implements a subset of the available features to create a graph. Spec
 
 Under the hood, Zettlr uses the library D3 to facilitate the actual rendering of the graph. We utilize a force directed layout (however, not Fruchterman-Reingold, for those who have some experience with network visualizations) that tries to place the different nodes in a way that they don't overlap and that you can see clusters.
 
-> The actual placement of the vertices as well as the distance to other vertices **does not have any inherent meaning**!! This is very important to remember: Only the edges between the various vertices have meaning, not their positions or distance!
+!!! warning
+
+    The actual placement of the vertices as well as the distance to other vertices **does not have any inherent meaning**!! This is very important to remember: Only the edges between the various vertices have meaning, not their positions or distance!
 
 ## Opening the graph view
 

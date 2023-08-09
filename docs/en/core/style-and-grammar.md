@@ -9,7 +9,9 @@ Knowing how to write Markdown is one thing, but when typing a lot, it happens fr
 
 On this page, we're going to introduce you to three of these, what capabilities they have and how to utilize them.
 
-> The readability mode works different from the first three tools and is more complex, [so we document its usage on a separate page](readability.md).
+!!! note
+
+    The readability mode works different from the first three tools and is more complex, [so we document its usage on a separate page](readability.md).
 
 ## How Linting Works
 
@@ -17,7 +19,9 @@ On a basic level, style and grammar checking in Zettlr works similar to Word or 
 
 Zettlr knows three "levels" of problems: Errors and spelling mistakes are generally underlined in red, grammatical issues and style issues are generally yellow, and purely informative messages are gray.
 
-> For each of the tools Zettlr offers, the process of using them is the same.
+!!! note
+
+    For each of the tools Zettlr offers, the process of using them is the same.
 
 Whenever one of these tools detects a problem, it will add a colored underline for the corresponding span of the document. If there are multiple issues at the same location, Zettlr will show the most severe color.
 
@@ -40,7 +44,9 @@ Note that the spellchecker cannot determine the language of a paragraph, so each
 
 If a word is underlined in red, this indicates a potential spelling error. By right-clicking the word, you can select one of the suggestions (if there are any), or choose to add that word to your personal dictionary.
 
-> You can at any time remove words from the dictionary by going to settings &rarr; spell checking.
+!!! tip
+
+    You can at any time remove words from the dictionary by going to settings &rarr; spell checking.
 
 Currently, Zettlr ships with dictionaries for German, English (UK and US), Spanish, French, Dutch, Russian, Turkish, and Ukrainian (subject to change). If you need different languages, you can install them after the fact.
 
@@ -60,7 +66,9 @@ The second tool that Zettlr offers is a Markdown style checker. This style check
 
 The style checker is active by default and will highlight any problems it finds in your documents. It utilizes yellow and gray as colors to indicate any potential problems in your texts. Yellow warnings should be attended to, while gray indicates informative messages.
 
-> The Markdown style checker will not use the color red, since style can be to a certain point subjective. If you do not wish to receive style warnings, you can disable it at any time in the settings &rarr; Check Markdown for style issues.
+!!! note
+
+    The Markdown style checker will not use the color red, since style can be to a certain point subjective. If you do not wish to receive style warnings, you can disable it at any time in the settings &rarr; Check Markdown for style issues.
 
 ## LanguageTool Integration
 
@@ -68,7 +76,9 @@ The most powerful tool to ensure you write well-formed texts is a brand-new inte
 
 LanguageTool is disabled by default, since it requires an internet connection to the service. Once you activate the corresponding switch in the settings, LanguageTool will begin to check your documents for issues.
 
-> LanguageTool utilizes all three "levels" for reporting problems: Red for spelling mistakes, yellow for grammatical errors, and gray for informative messages on improving your style.
+!!! note
+
+    LanguageTool utilizes all three "levels" for reporting problems: Red for spelling mistakes, yellow for grammatical errors, and gray for informative messages on improving your style.
 
 If you have a premium subscription from LanguageTool and wish to use this, enter your username and API-key into the corresponding fields in the settings. Note that entering something in these fields will overwrite a potential custom server (i.e. Zettlr will in this case always contact the official LanguageTool servers).
 
@@ -80,4 +90,6 @@ Thanks to the Open Source nature of LanguageTool, you do not need an internet co
 
 Once you have installed LanguageTool – either on your computer or a server – you can direct Zettlr to utilize a custom server instead of the official LanguageTool server. After selecting the appropriate setting, enter the address at which Zettlr can reach your server (either a URL or something starting with `http://localhost` if you set it up locally). Zettlr will then immediately start using the new server.
 
-> Note that if you insert any credentials into the premium fields in Zettlr, Zettlr will ignore your custom server setting. A self-hosted setup should not need credentials.
+!!! note
+
+    If you insert any credentials into the premium fields in Zettlr, Zettlr will ignore your custom server setting. A self-hosted setup should not need credentials.

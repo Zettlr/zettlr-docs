@@ -38,7 +38,9 @@ Result:
 |----------|----------|
 | Cell B:A | Cell B:B |
 
-> The entire syntax for grid tables can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#extension-grid_tables). The syntax for pipe tables are located [here](https://pandoc.org/MANUAL.html#extension-pipe_tables).
+!!! note
+
+    The entire syntax for grid tables can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#extension-grid_tables). The syntax for pipe tables are located [here](https://pandoc.org/MANUAL.html#extension-pipe_tables).
 
 Alignment of the table columns can be specified with colons (`:`). A single left colon or none specifies the default left-alignment, whereas a right colon specifies right alignment, and two colons specify centered alignment:
 
@@ -99,7 +101,9 @@ Whenever a cell is currently active (indicated by a shimmer around its borders),
 
 There is a slightly translucent icon on the top of the table that will turn from green to red as you edit your table. In order to save the changes to the table, you need to click that icon. Once the changes are applied to the underlying Markdown document, the icon will turn green again. You can also press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> while the table is focused.
 
-> While the table editor aims to make editing tables easier, it does so at the expense of having the table contents automatically update. Therefore, always remember to click the icon or press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> before leaving or closing the document. As a tip: You can press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> twice after modifying a table to first apply the changes to the table to the document and immediately afterwards save the entire document.
+!!! warning
+
+    While the table editor aims to make editing tables easier, it does so at the expense of having the table contents automatically update. Therefore, always remember to click the icon or press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> before leaving or closing the document. As a tip: You can press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> twice after modifying a table to first apply the changes to the table to the document and immediately afterwards save the entire document.
 
 ## Keyboard Navigation
 
@@ -129,7 +133,9 @@ At the top of each table, there are two additional button groups. The left butto
 
 The right button group contains two buttons for **removing the active table row or column**. Simply place your cursor inside any cell inside the row or column you wish to remove and hit one of the buttons.
 
-> Always make sure to place your cursor in the correct cell before removing columns or rows.
+!!! note
+
+    Always make sure to place your cursor in the correct cell before removing columns or rows.
 
 ![How to determine the active row and column](../img/table_active_cell.png)
 

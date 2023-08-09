@@ -17,7 +17,9 @@ e^{i \pi} & = -1
 $$
 ```
 
-> To prevent confusion with amounts of money, spaces between inline math and the dollar signs are not allowed.
+!!! note
+
+    To prevent confusion with amounts of money, spaces between inline math and the dollar signs are not allowed.
 
 If you activate the corresponding option, Zettlr will immediately render math in place, making it easy for you to proofread what you typed and fix errors. If a formula contains an error, this will be shown by Zettlr. The above example is rendered like this:
 

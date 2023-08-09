@@ -26,7 +26,9 @@ We welcome any help in translating the app in all languages of this planet. Zett
 
 Translations are maintained [alongside the source code of this app in our repository](https://github.com/Zettlr/Zettlr/tree/develop/static/lang). To translate, you will need a GitHub account, but it does not require technical knowledge.
 
-> If you do possess technical knowledge, you can also skip the explanations below and [clone the repository](https://github.com/Zettlr/Zettlr) directly.
+!!! note
+
+    If you do possess technical knowledge, you can also skip the explanations below and [clone the repository](https://github.com/Zettlr/Zettlr) directly.
 
 To improve a translation, head over to the `static/lang`-folder and download the `*.po`-file that corresponds to the language code you want to improve (e.g., `pt-BR.po` for Brazilian Portuguese).
 
@@ -38,7 +40,9 @@ Once you have modified the translation to your liking, it is time to add the tra
 
 If you wish to create a translation for a language that does not yet exist, the process is a little bit more involved.
 
-> If you do not trust your own skills in creating a new translation, please get in contact with us. We will happily create the corresponding file for you so that you can then follow the simpler steps above.
+!!! note
+
+    If you do not trust your own skills in creating a new translation, please get in contact with us. We will happily create the corresponding file for you so that you can then follow the simpler steps above.
 
 1. To create a new translation file, ensure the `gettext` system is installed on your computer
 2. Clone the repository: `git clone https://github.com/Zettlr/Zettlr.git`
@@ -52,4 +56,6 @@ To start developing, [fork the repository](https://github.com/Zettlr/Zettlr), wo
 
 If you are beginning to work on something, remember to announce this on the issue tracker so that we know what is being worked on.
 
-> [The development guide can be found in our README](https://github.com/Zettlr/Zettlr#contributing-code), including setup instructions and a documentation of available commands.
+!!! note
+
+    [The development guide can be found in our README](https://github.com/Zettlr/Zettlr#contributing-code), including setup instructions and a documentation of available commands.

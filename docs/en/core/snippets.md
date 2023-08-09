@@ -14,7 +14,9 @@ To the left, you can find a list of all snippets. Initially it will be empty. Yo
 
 After you have made changes to the snippet, make sure to click "Save" or press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> to persist your changes. To rename a snippet, simply type the new name into the name text field above the snippet editor and click the button.
 
-> Note that your snippet name can only contain the letters A to Z, numbers, hyphens, and underscores. This is because the snippet name will be used for the autocompletion in the editor. If you type other letters, they will be replaced with a hyphen.
+!!! note
+
+    Your snippet name can only contain the letters A to Z, numbers, hyphens, and underscores. This is because the snippet name will be used for the autocompletion in the editor. If you type other letters, they will be replaced with a hyphen.
 
 Your snippets are actually files which reside in a directory within your application data. Please refer to [the installation manual](../getting-started/setup.md) for the precise location of this folder. The snippet files always follow the pattern `<name>.tpl.md`, where `<name>` refers to the name you give to the snippets within the GUI. This can be useful for backup or sharing purposes.
 

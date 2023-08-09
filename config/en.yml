@@ -75,6 +75,7 @@ theme:
     - latex
 markdown_extensions:
     - def_list
+    - admonition
     - toc:
         permalink: True
 plugins:

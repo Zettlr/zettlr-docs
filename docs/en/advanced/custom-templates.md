@@ -38,7 +38,9 @@ You can even insert the contents of the variable by typing $my-variable$
 $endif$
 ```
 
-> Note that this is just an example. A more full-fledged example that arguably drives the principle of variables to the max, see [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
+!!! note
+
+    Note that this is just an example. A more full-fledged example that arguably drives the principle of variables to the max, see [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
 
 While many variables are optional, there is one Pandoc variable that needs to be present at all times:
 

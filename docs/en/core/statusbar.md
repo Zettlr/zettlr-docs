@@ -22,7 +22,9 @@ The very first item on the statusbar indicates the current status of your MagicQ
 
 It displays first the primary and then the secondary quote settings within small boxes. You can click on it to summon a contextual menu that lets you switch both primary and secondary pairs for a given locale.
 
-> Depending on which language you select, the context menu will have more than one checked entry. Many countries use the same set of primary and secondary quotes.
+!!! note
+
+    Depending on which language you select, the context menu will have more than one checked entry. Many countries use the same set of primary and secondary quotes.
 
 Displays
 

@@ -8,7 +8,9 @@ Zettlr – like many other Markdown-based programs – is centered around **fold
 
 Zettlr knows two kinds of folders: Regular folders and workspaces. The main difference between the two is that workspaces are root- or top-level folders. While both types of folders support the same features, you can close workspaces but not folders, and you can drag around and move folders, but not workspaces.
 
-> In the following, we first introduce features unique to workspaces, and afterwards introduce features common to all folders.
+!!! note
+
+    In the following, we first introduce features unique to workspaces, and afterwards introduce features common to all folders.
 
 ## Creating and Opening Workspaces
 
@@ -20,7 +22,9 @@ To open a workspace, either press `Cmd/Ctrl+Shift+O` or click the third icon to 
 
 Zettlr will now begin to load the folder. While doing so, it will scan the folder for files that it recognizes. If there are already Markdown files somewhere in the folder you just opened, it will read those files and collect some metadata from them.
 
-> If you have already worked with Markdown-based programs and have amassed a large number of Markdown files, it can take a while until Zettlr displays the workspace.
+!!! note
+
+    If you have already worked with Markdown-based programs and have amassed a large number of Markdown files, it can take a while until Zettlr displays the workspace.
 
 If opening the workspace takes some time, don't worry: Zettlr caches the information it collects about your files so that it doesn't have to process the files a second time. The next time you start Zettlr, it should be very quick.
 
@@ -30,7 +34,9 @@ You can load several workspaces at the same time, for instance if you want to se
 
 Zettlr will watch all files within your workspaces for changes. For instance, if you use a cloud service to backup your files, e.g., Google Drive, Dropbox, or a Nextcloud instance, it may be that your cloud application synchronizes changes to a file only after you have started Zettlr. Then, Zettlr will recognize this and reflect these changes appropriately within the application.
 
-> It is highly recommended to have at least one workspace open within the application. It is possible to only open single files from your computer and work on them, but this is discouraged, as you will lose a lot of functionality that is tied to workspaces.
+!!! note
+
+    It is highly recommended to have at least one workspace open within the application. It is possible to only open single files from your computer and work on them, but this is discouraged, as you will lose a lot of functionality that is tied to workspaces.
 
 ## Closing and Removing Workspaces
 
@@ -48,7 +54,9 @@ To **create** a new folder, right-click on any workspace (or other folder) and s
 
 You can **move** folders around by dragging and dropping them where you want to move them to. Note that moving workspaces around is not possible. You can also drag folders from one workspace into another.
 
-> If you want to move a folder into a subfolder that is collapsed, move the folder on top of it and wait. After a short delay, the folder will uncollapse, allowing you to move the folder into any of the subfolders that are now visible.
+!!! note
+
+    If you want to move a folder into a subfolder that is collapsed, move the folder on top of it and wait. After a short delay, the folder will uncollapse, allowing you to move the folder into any of the subfolders that are now visible.
 
 ## Folder Properties
 
@@ -60,7 +68,9 @@ With the switch named "Enable Project", you can turn this folder into a project.
 
 Lastly, you can select an **icon** to identify the folder with. By default, a folder will have no associated icon, but if you select one here, it will show up next to its name in the file manager. This is purely decorative and will help you more quickly identify relevant folders.
 
-> Note that custom icons will be overridden by the project status; i.e. once you turn a folder into a project, the folder will display the project icon instead. To see the custom icon, you'll need to turn off project features.
+!!! note
+
+    Custom icons will be overridden by the project status; i.e. once you turn a folder into a project, the folder will display the project icon instead. To see the custom icon, you'll need to turn off project features.
 
 ## Sorting files
 
@@ -70,7 +80,9 @@ You will see a section with two dropdown menus: "Sort by name" and "ascending". 
 
 The folder will immediately apply your changes.
 
-> By default, your files will be listed before your folders. You can change that in the settings.
+!!! note
+
+    By default, your files will be listed before your folders. You can change that in the settings.
 
 ## Locating Folders on Disk
 
