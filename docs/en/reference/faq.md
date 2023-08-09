@@ -35,7 +35,9 @@ Zettlr never completely removes your files. It always only moves them to the tra
 $ sudo apt install gvfs-bin
 ```
 
-> If you do not want to use the trash functionality, you can also enable the setting in the advanced preferences telling Zettlr to terminally remove a file if moving it to the trash fails. Please note that this will remove files irreversibly!
+!!! note
+
+    If you do not want to use the trash functionality, you can also enable the setting in the advanced preferences telling Zettlr to terminally remove a file if moving it to the trash fails. Please note that this will remove files irreversibly!
 
 ## My `Home` and `End`-keys behave weirdly! How do I fix that?
 
@@ -86,7 +88,9 @@ Examples:
 # This heading will both be unnumbered, and hidden from the ToC {- .unlisted}
 ```
 
-> Note that the special classes need to be the last thing on the line. Even comments will break this behaviour.
+!!! note
+
+    Note that the special classes need to be the last thing on the line. Even comments will break this behaviour.
 
 ## I want to use single line breaks and not create new paragraphs. When I simply hit Enter once, it removes the single line break!
 
@@ -106,7 +110,9 @@ The most common error looks like this:
 
 This simply means that a certain package was not found (they end in `.sty`). On Windows, these packages should be installed automatically as soon as they are needed (a window might pop up asking you for confirmation); on macOS and Linux you simply need to run the command `tlmgr install <some name>`.
 
-> Note that some `.sty`-files are part of larger packages. The easiest way to find out which package to install, go to [the CTAN homepage](https://ctan.org/) and search for the package name (the file name without the `.sty`). You will then see in the "Contained in"-section the actual name of the package you have to install. Example: [The `footnote.sty`-package](https://ctan.org/pkg/footnote) is contained in the package `mdwtools`, so instead of running `tlmgr install footnote` you must run `tlmgr install mdwtools`.
+!!! note
+
+    Note that some `.sty`-files are part of larger packages. The easiest way to find out which package to install, go to [the CTAN homepage](https://ctan.org/) and search for the package name (the file name without the `.sty`). You will then see in the "Contained in"-section the actual name of the package you have to install. Example: [The `footnote.sty`-package](https://ctan.org/pkg/footnote) is contained in the package `mdwtools`, so instead of running `tlmgr install footnote` you must run `tlmgr install mdwtools`.
 
 In case of other errors, Zettlr enables you to copy and paste text from the error message, because in almost all cases, a short Google search leads to a solution. And if it doesn't the community can better help you if they see the error you are getting.
 

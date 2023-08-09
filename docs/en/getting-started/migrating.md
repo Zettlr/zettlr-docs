@@ -48,7 +48,9 @@ If Zettlr is still closed on your new machine, launch it now. Because Zettlr wor
 
 Once you've placed the backups on your new machine, you can add each of the workspaces — and the files within them — to your new Zettlr install simply by going to the `File > Open Workspace …` menu option and selecting that workspace folder (or `File > Open` if you need to import an individual note that's not part of a workspace). Note that this is the same process you would use you if were adding any other folder to Zettlr. The workspace folder, including the notes it contains, will be populated into your new Zettlr install. The connections between notes will also be retained, though if you have links to notes that live in different workspaces, you'll have to make sure you've likewise opened those workspace folders and their contents within your new Zettlr install.
 
-> Especially when your workspaces have grown large, opening up for the first time may take some time, as Zettlr will look at each file and extract some information first. This information is then cached, so that the workspaces should open much quicker the next time you start Zettlr. If a workspace takes some time before it appears, don't panic!
+!!! note
+
+    Especially when your workspaces have grown large, opening up for the first time may take some time, as Zettlr will look at each file and extract some information first. This information is then cached, so that the workspaces should open much quicker the next time you start Zettlr. If a workspace takes some time before it appears, don't panic!
 
 ## Reconnect Your Reference Manager
 

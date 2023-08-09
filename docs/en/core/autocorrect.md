@@ -13,7 +13,9 @@ To function, AutoCorrect requires a **replacement table**. Zettlr comes with a p
 
 AutoCorrect constantly checks what you type and, as soon as it encounters a sequence of characters from the replacement table, it will replace that with the replacement you have specified. Note, however, that it will only replace when you press either Enter or Space. To prevent AutoCorrect from replacing a sequence of characters, hold down the Shift-key while pressing Enter or Space.
 
-> AutoCorrect only works in Markdown text. It does not apply in code or comments.
+!!! note
+
+    AutoCorrect only works in Markdown text. It does not apply in code or comments.
 
 ## MagicQuotes
 
@@ -21,6 +23,8 @@ MagicQuotes is an extension that helps you write typographically correct quotati
 
 To use the default quotation marks in your text, first insert one and then immediately press Backspace. Instead of deleting the quotation marks, Zettlr will convert them to the default quotation marks. Pressing Backspace a second time removes the quotation mark altogether.
 
-> MagicQuotes are only active in Markdown text. It does not apply in code or comments.
+!!! note
+
+    MagicQuotes are only active in Markdown text. It does not apply in code or comments.
 
 If you have the status bar active, you can use it to quickly change the MagicQuotes Zettlr uses, without having to go into the settings.

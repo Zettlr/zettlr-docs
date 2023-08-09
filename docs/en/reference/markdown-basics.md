@@ -77,7 +77,9 @@ Sometimes, you may want to emphasise a whole block of text (such as a longer quo
 - Create item lists by prepending each line with a `-`, a `*` or a `+` character. If you would like to, you can mix these symbols!
 - Sorted lists need numbers in the format `1.` in front of them.
 
-> **Note**: The numbers do _not_ have to be in order. On each export, the converter will automatically correctly number them ascending, so a list containing the list numbers 1, 6, 14, 2 will be rendered as a list using the numbers 1, 2, 3, 4!
+!!! note
+
+    The numbers do _not_ have to be in order. On each export, the converter will automatically correctly number them ascending, so a list containing the list numbers 1, 6, 14, 2 will be rendered as a list using the numbers 1, 2, 3, 4!
 
 ### Links and images
 
@@ -91,11 +93,15 @@ Images work exactly like links, except they start with an exclamation mark (!). 
 2. Use an absolute path to a file on your own computer, such as `C:\Users\user-name\Pictures\my-image.jpg`.
 3. Use a relative path to a file on your own computer, such as `../img/my-image.png`.
 
-> **Tip**: You can provide a default image path in the "Editor" tab in the preferences, which Zettlr will always use when you paste an image into the editor.
+!!! tip
+
+    You can provide a default image path in the "Editor" tab in the preferences, which Zettlr will always use when you paste an image into the editor.
 
 The relative path is always relative to the document in which you place it. The directory `..` tells Zettlr to look for the image in the parent directory (i.e., to traverse up one directory). If you store your documents in a cloud and access them on different devices, you would naturally use relative image paths, because the absolute paths will definitely differ (especially if you work with two different operating systems).
 
-> **Tip**: Try to insert images and links always using their shortcuts, `Cmd/Ctrl+K` for links and `Cmd/Ctrl+Shift+I` for images. If you have a valid path in your clipboard, it will even automatically insert it for you, making your life easy. The best way to insert a link, for instance, would therefore be to first copy the link to your clipboard, then select the text you want to link and third press `Cmd/Ctrl+K`. Then the selected text will become the displayed link text and the link from your clipboard will be used as the link target.
+!!! tip
+
+    Try to insert images and links always using their shortcuts, `Cmd/Ctrl+K` for links and `Cmd/Ctrl+Shift+I` for images. If you have a valid path in your clipboard, it will even automatically insert it for you, making your life easy. The best way to insert a link, for instance, would therefore be to first copy the link to your clipboard, then select the text you want to link and third press `Cmd/Ctrl+K`. Then the selected text will become the displayed link text and the link from your clipboard will be used as the link target.
 
 ### Footnotes
 
@@ -157,9 +163,11 @@ More languages can be implemented on your request. If you need a specific langua
 
 In addition to GitHub flavored markdown extensions (marked with "(extension)" in the [spec](https://github.github.com/gfm/)), Zettlr provides the following:
 
- - Support for `<iframe src="https://example.com"></iframe>` elements
+!!! warning
 
-   > **Warning**: Pages in iframes can get unrestricted access to your local filesystem! 'Frame-busting' techniques can be used by pages to escape the iframe and [interact with the Electron backend directly](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - you should assume any pages in iframes (or an attacker of that page) have access to all of the data on your computer.
+    Pages in iframes can get unrestricted access to your local filesystem! 'Frame-busting' techniques can be used by pages to escape the iframe and [interact with the Electron backend directly](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - you should assume any pages in iframes (or an attacker of that page) have access to all of the data on your computer.
+
+ - Support for `<iframe src="https://example.com"></iframe>` elements
 
  - KaTeX equation rendering via either inline (`$`) or fenced (`$$`) blocks: `$x/y$` or
 

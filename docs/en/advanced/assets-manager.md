@@ -35,4 +35,6 @@ variables:
 
 All variables that you can set here are [documented in the Pandoc manual](https://pandoc.org/MANUAL.html#variables).
 
-> Tip: You can define every variable also within the YAML frontmatter of any file. The only difference is that there you simply use the properties *without* nesting them under `variables`.
+!!! tip
+
+    You can define every variable also within the YAML frontmatter of any file. The only difference is that there you simply use the properties *without* nesting them under `variables`.

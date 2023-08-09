@@ -2,7 +2,9 @@
 
 The final step of any writing process is to export your document. Whether you write for a journal, for university, or for your supervisor, at some point, you'll need to hand off a document to a third party for further processing.
 
-> Please see the section on special formats below for an explanation between the two different PDF formats that you can export to.
+!!! note
+
+    Please see the section on special formats below for an explanation between the two different PDF formats that you can export to.
 
 ## Exporting the Current Document
 
@@ -10,7 +12,9 @@ To export your current document, you can press <kbd>Cmd/Ctrl</kbd>+<kbd>E</kbd> 
 
 Then, click on "Export" to start the process. After the export is finished, Zettlr will automatically open the exported file with the program associated with this format (e.g., it will open your PDF reader after exporting to PDF, or your browser after exporting to HTML).
 
-> By default, Zettlr will export to the temporary directory. This is a special folder that is emptied from time to time. This is great if you export a file often to double-check how it will look like, but if you want to retain an exported file, you should immediately "Save as" once the file is open and save the file to a different folder.
+!!! note
+
+    By default, Zettlr will export to the temporary directory. This is a special folder that is emptied from time to time. This is great if you export a file often to double-check how it will look like, but if you want to retain an exported file, you should immediately "Save as" once the file is open and save the file to a different folder.
 
 ## Exporting Projects
 
@@ -42,4 +46,6 @@ The **Simple PDF** export option is meant for situations in which you cannot ins
 
 When Zettlr exports to Simple PDF, what it will do is export your file to HTML and then print it using the same process your browser uses to print websites.
 
-> Because Simple PDF converts your files to HTML first, if you want to customize that export, you will have to adapt the HTML template, not the PDF one.
+!!! note
+
+    Because Simple PDF converts your files to HTML first, if you want to customize that export, you will have to adapt the HTML template, not the PDF one.

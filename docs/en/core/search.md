@@ -18,7 +18,9 @@ Activating the "match case" checkbox, the search will be performed case sensitiv
 
 If you press <kbd>Enter</kbd> while the replace input is focused, Zettlr will replace the current search result and automatically highlight the next occurrence of your search term. Hit <kbd>Enter</kbd> repeatedly to replace multiple occurrences.
 
-> **Tip**: If you search for something using a regular expression that contains at least one capturing group, you can use the variable `$1` inside your replacement text. Such variables will be replaced with the content of the capturing groups. Multiple occurrences of the variable will be replaced as well. The number after the `$` refers to the index of the capturing group (the second capturing group will be addressed using `$2`, and so forth). [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
+!!! tip
+
+    If you search for something using a regular expression that contains at least one capturing group, you can use the variable `$1` inside your replacement text. Such variables will be replaced with the content of the capturing groups. Multiple occurrences of the variable will be replaced as well. The number after the `$` refers to the index of the capturing group (the second capturing group will be addressed using `$2`, and so forth). [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
 
 ## Full-Text Search
 
@@ -38,7 +40,9 @@ The search results contain a few indicators that help you make sense of where th
 
 Each search result will list all lines of the file in which your search terms were found. The actual search results are emphasised while the rest of the line is displayed to provide you with the context of the result. In front of each line is the line-number. Upon clicking a single search result line, Zettlr will automatically open the file (if not already done) and jump to the corresponding line.
 
-> Too many results? You can also toggle the display of all results using the corresponding button, and then only expand those which deserve a second look.
+!!! tip
+
+    Too many results? You can also toggle the display of all results using the corresponding button, and then only expand those which deserve a second look.
 
 ### Composing a Query
 
@@ -49,7 +53,9 @@ You can make use of several different operators to specify exactly what you are 
 * **Exact-Match operator:** Enclose your query in quotation marks (e.g.,`"Boat Ship"`) to search your files for that exact phrase.
 * **NOT operator:** Type `!Boat` to search only for files _not_ containing that term. Works with exact matches as well: `!"Boat Ship"` would exclude all files containing the exact phrase "Boat Ship".
 
-> **Attention**: While the `AND`, `OR`, and `Exact-Match` operators work by assigning weights (a file that fulfills all search criteria will be considered very relevant, while files which do not match all search terms have a blue or gray relevancy indicator), the `NOT` operator definitely excludes files. So while a search for `boat ship` would also include files containing only one of the two terms (albeit with a much lower weight), a search for `!boat ship` will definitely exclude all files containing the word boat.
+!!! warning
+
+    While the `AND`, `OR`, and `Exact-Match` operators work by assigning weights (a file that fulfills all search criteria will be considered very relevant, while files which do not match all search terms have a blue or gray relevancy indicator), the `NOT` operator definitely excludes files. So while a search for `boat ship` would also include files containing only one of the two terms (albeit with a much lower weight), a search for `!boat ship` will definitely exclude all files containing the word boat.
 
 Of course, you can chain all of these operators. So you could search for `"Boat Ship" | vessel captain` to display only files that either contain the exact phrase "Boat Ship" or the word "vessel", and which also include the word "captain".
 

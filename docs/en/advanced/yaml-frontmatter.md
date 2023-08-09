@@ -4,7 +4,9 @@ Like Pandoc, Zettlr supports YAML frontmatters for your Markdown files. A [YAML 
 
 YAML frontmatters can be defined at the beginning of a file, by starting on the first line with three dashes (`---`) and ending the frontmatter either with three dashes or three dots (the former variant is more common). They contain valid YAML and can be used to define arbitrary variables. They come in handy for a variety of use cases.
 
-> For a more concise documentation of what you can do with YAML frontmatters, please refer to the [Pandoc documentation](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block).
+!!! tip
+
+    For a more concise documentation of what you can do with YAML frontmatters, please refer to the [Pandoc documentation](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block).
 
 ## Defining a YAML frontmatter
 
@@ -25,7 +27,9 @@ author:
 ---
 ```
 
-> **Attention**: According to the YAML specification, tab (tabulator) characters cannot be used for indentation. For your YAML frontmatter to be valid, use spaces for indentation.
+!!! warning
+
+    According to the YAML specification, tab (tabulator) characters cannot be used for indentation. For your YAML frontmatter to be valid, use spaces for indentation.
 
 ## Frontmatters versus Defaults files
 
@@ -37,7 +41,9 @@ The frontmatter serves to hold a lot of useful information for both Pandoc and P
 
 For a full list of available variables and more instructions on how to use these variables, refer to the [section on metadata blocks](https://pandoc.org/MANUAL.html#metadata-blocks) in the Pandoc manual as well as the [manual for Pandoc citeproc](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md).
 
-> Tip: On this page we only list certain important variables for use with Pandoc, but YAML frontmatters are also supported by other engines, such as the [Jekyll static site generator](https://jekyllrb.com/docs/front-matter/). Therefore, if you plan to use a different tool to convert your Markdown files, you should consult their documentation for a list of available variables.
+!!! tip
+
+    On this page we only list certain important variables for use with Pandoc, but YAML frontmatters are also supported by other engines, such as the [Jekyll static site generator](https://jekyllrb.com/docs/front-matter/). Therefore, if you plan to use a different tool to convert your Markdown files, you should consult their documentation for a list of available variables.
 
 ### `title`
 
@@ -62,7 +68,9 @@ author:
     affiliation: University Y
 ```
 
-> Note the indentation of the property `affiliation`: It aligns with the `name` property. Indentation of YAML values is important and thus you should take care.
+!!! note
+
+    Note the indentation of the property `affiliation`: It aligns with the `name` property. Indentation of YAML values is important and thus you should take care.
 
 ### `keywords` / `tags`
 
@@ -92,7 +100,9 @@ This variable can be used to include works in your list of reference that have n
 
 Use this variable to define a heading for your list of references. This has the same effect as when you end your document with a heading (e.g. `## References`).
 
-> Note: It might make sense to define this variable in one of the export defaults files, since Pandoc will not add such a heading by default. In general, remember that all of the variables that are described here can also be defined in a defaults file so they apply to _every_ such export.
+!!! note
+
+    It might make sense to define this variable in one of the export defaults files, since Pandoc will not add such a heading by default. In general, remember that all of the variables that are described here can also be defined in a defaults file so they apply to _every_ such export.
 
 ### `notes-after-punctuation`
 

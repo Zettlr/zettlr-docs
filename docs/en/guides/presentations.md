@@ -57,4 +57,6 @@ To achieve this you can use two variables in the profile:
 1. Set `standalone: true` to ensure that the resulting file will be a proper HTML file
 2. Set `embed-resources: true` to ensure that images, JavaScript, and styles are all included in the resulting file and therefore move around alongside the presentation file.
 
-> Note that embedding images can increase the size of the presentation by a large margin. Every image that is included in the file will increase in size by approximately 30 percent. In other words, a presentation that includes a 1MB image will increase in size by 1.3MB.
+!!! note
+
+    Embedding images can increase the size of the presentation by a large margin. Every image that is included in the file will increase in size by approximately 30 percent. In other words, a presentation that includes a 1MB image will increase in size by 1.3MB.

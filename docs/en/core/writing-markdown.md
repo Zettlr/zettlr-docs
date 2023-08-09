@@ -8,13 +8,17 @@ On this page, you will learn about writing Markdown, available commands, and som
 
 Markdown is a very simple markup language that uses formatting symbols to format text instead of having you click around a formatting toolbar. You already know many of the conventions of Markdown. For example, to emphasize text, you simply need to surround it with `*` or `_` symbols. In fact, many applications that you may already know use Markdown, such as Slack, Discord, Microsoft Teams, and more.
 
-> Despite its simplicity, Markdown contains all formatting conventions you need to write full-fledged research articles. And, should you ever miss something, you can always drop in a few LaTeX commands or HTML tags.
+!!! note
+
+    Despite its simplicity, Markdown contains all formatting conventions you need to write full-fledged research articles. And, should you ever miss something, you can always drop in a few LaTeX commands or HTML tags.
 
 The two main benefits of Markdown are that you can format your entire document without using your mouse or trackpad and that it separates content from layout.
 
 You can direct Zettlr to format everything by pressing a few keys. Additionally, because Markdown purposefully has no direct layouting capabilities, you will find it much easier to focus on what you write instead of tinkering with its looks. The layouting only happens during export.
 
-> To learn how to customize how your documents look once you export them, head over to the [defaults files](../advanced/defaults-files.md) documentation.
+!!! note
+
+    To learn how to customize how your documents look once you export them, head over to the [defaults files](../advanced/defaults-files.md) documentation.
 
 ## Formatting with Markdown
 
@@ -43,7 +47,9 @@ To format Markdown documents, there are a few formatting rules that you should k
 | Horizontal line    | `***` or `---`                | <hr>                                  |
 | Block quote        | `> Some quote`                | &nbsp;&nbsp;&nbsp;&nbsp;*Some quote*  |
 
-> This list is not exhaustive. There are some more formatting symbols which can be enabled either with extensions or which will be introduced at a later stage of this documentation, for example citations.
+!!! note
+
+    This list is not exhaustive. There are some more formatting symbols which can be enabled either with extensions or which will be introduced at a later stage of this documentation, for example citations.
 
 If you want to learn even more about Markdown, there are many good resources out there. A good starter is the Markdown guide on [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). If you want to get used to writing clean and unambiguous Markdown, [view the specifications by CommonMark](https://spec.commonmark.org/current/). Also, there's a "book" on the GitHub flavoured Markdown syntax. [View it here](https://gitbookio.gitbooks.io/markdown/content/).  For those engaged in scholarly writing, the [Pandoc manual's section on its extended Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) is worth reading.
 
@@ -51,7 +57,9 @@ If you want to learn even more about Markdown, there are many good resources out
 
 Despite never having to leave your keyboard when it comes to writing documents in Markdown, sometimes it is easier to press just two keys instead of four or more. Therefore, there are some keyboard shortcuts that you can use. In addition to those that you may already know, Zettlr offers many convenience shortcuts that make duplicating text, etc., a blaze.
 
-> Note: Across this documentation, you will often see the "key" <kbd>Cmd/Ctrl</kbd>. By that we mean that you'll need to press the Command-key on macOS, and the Control-key otherwise.
+!!! note
+
+    Across this documentation, you will often see the "key" <kbd>Cmd/Ctrl</kbd>. By that we mean that you'll need to press the Command-key on macOS, and the Control-key otherwise.
 
 * <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd>: Make text **bold**
 * <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd>: _Emphasize_ text
@@ -76,7 +84,9 @@ Despite never having to leave your keyboard when it comes to writing documents i
 * <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>: Previous occurrence
 * <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd>: Select next occurrence
 
-> Zettlr also offers two advanced writing modes: Emacs and Vim. Whenever you activate one of these modes, they will change many keybindings and offer new ones. Those settings are recommended for advanced users only.
+!!! note
+
+    Zettlr also offers two advanced writing modes: Emacs and Vim. Whenever you activate one of these modes, they will change many keybindings and offer new ones. Those settings are recommended for advanced users only.
 
 ## Multi-Cursor Editing
 

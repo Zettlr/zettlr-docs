@@ -2,7 +2,9 @@
 
 This User Manual is the official documentation for Zettlr. Here you can find detailed descriptions for every feature and how you can tweak those to match your needs. Consult this manual any time you are stuck. You can open this manual from within the app by pressing `F1` or clicking on the menu item 'Help' &rarr; 'Open user manual' (internet connection required).
 
-> This documentation is available in several languages. You can select another language from the [main landing page](https://docs.zettlr.com/). Please note that these translations may be incomplete. If in doubt, always consult this (the English) version of the documentation, which is updated regularly.
+!!! note
+
+    This documentation is available in several languages. You can select another language from the [main landing page](https://docs.zettlr.com/). Please note that these translations may be incomplete. If in doubt, always consult this (the English) version of the documentation, which is updated regularly.
 
 If you have any questions that are not answered by this documentation, make sure to consult the [Frequently Asked Questions](reference/faq.md) and ask the community on [Discord](https://discord.gg/PcfS3DM9Xj), [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions), and [Reddit](https://www.reddit.com/r/Zettlr/). We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools.
 

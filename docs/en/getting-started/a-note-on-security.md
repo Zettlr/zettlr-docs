@@ -8,7 +8,9 @@ On this page, we outline the various ways in which working with Zettlr could exp
 
 As a general note: Zettlr gives you large amounts of freedom when it comes to working with your Markdown files. Therefore, Zettlr's ability to execute arbitrary code while importing, viewing, and exporting Markdown documents is not a security flaw but a conscious design decision. If we would prevent any arbitrary code from executing, working with Markdown and exporting your documents would constrain you unreasonably. To cite an old adage: "With great power comes great responsibility".
 
-> Zettlr is constantly vetted by security researchers who audit the app for any ways in which malicious actors could execute code where you would not expect it.
+!!! note
+
+    Zettlr is constantly vetted by security researchers who audit the app for any ways in which malicious actors could execute code where you would not expect it.
 
 ## Code Execution while Reading and Writing Markdown Documents
 
@@ -28,7 +30,9 @@ There are a few renderers that can execute arbitrary HTML and thus become a secu
 
 By disabling these renderers in the settings, Zettlr will not attempt to execute any code contained in such elements.
 
-> **Rule of thumb**: Even though other renderers, such as the image renderer, should not be capable of executing code, images can provide another pathway for malicious actors to infiltrate your computer. To be on the safe side, disable all renderers.
+!!! note
+
+    **Rule of thumb**: Even though other renderers, such as the image renderer, should not be capable of executing code, images can provide another pathway for malicious actors to infiltrate your computer. To be on the safe side, disable all renderers.
 
 ## Markdown Documents Downloaded from the Internet
 
@@ -40,7 +44,9 @@ If you have disabled all renderers, it is also safe to open such a document dire
 
 This way, even if there is a way for bad actors to compromise your computer via Zettlr that we do not yet know about (a so-called "zero day exploit"), it won't work because you removed the potentially harmful code beforehand.
 
-> **Rule of thumb**: If a Markdown document contains almost exclusively HTML code, this should raise your suspicion. Markdown syntax is not of much use for malicious actors, so they will try to inject their code with HTML instead.
+!!! note
+
+    **Rule of thumb**: If a Markdown document contains almost exclusively HTML code, this should raise your suspicion. Markdown syntax is not of much use for malicious actors, so they will try to inject their code with HTML instead.
 
 ## Templates Downloaded from the Internet
 
@@ -52,7 +58,9 @@ Since templates are not written in Markdown, we recommend caution when you downl
 
 If you really want to download a template from the internet, **make sure to have someone you trust with technical experience verify that the document is safe before you use it**!
 
-> **Rule of thumb**: Even if a colleague sends you a template, make sure to double-check it, since your colleague may have accidentally downloaded a harmful template and overlooked the malicious code.
+!!! note
+
+    **Rule of thumb**: Even if a colleague sends you a template, make sure to double-check it, since your colleague may have accidentally downloaded a harmful template and overlooked the malicious code.
 
 ## Code Execution During Import and Export
 
@@ -66,4 +74,6 @@ This means that even when you export a Markdown document that you yourself creat
 
 Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we recommend you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL#a-note-on-security).
 
-> **Rule of thumb**:  Always treat exports and imports as potentially unsafe.
+!!! note
+
+    **Rule of thumb**:  Always treat exports and imports as potentially unsafe.

@@ -2,7 +2,9 @@
 
 Even though most people will simply install and use Zettlr as a program like any other one, some of you might want to set it up to be used as a *portable* app. Here we describe how this works.
 
-> Note that "portable app" only makes sense in the context of Windows. Though this guide should work cross-platform, it is very uncommon for a Mac or Linux user to use a portable app.
+!!! note
+
+    A "portable app" only makes sense in the context of Windows. Though this guide should work cross-platform, it is very uncommon for a Mac or Linux user to use a portable app.
 
 ## What is a Portable App?
 
@@ -10,17 +12,23 @@ A portable app is basically a Windows application that is completely independent
 
 The main problem for making an app portable is that many things such as settings, data files, and other important information the app needs to run are normally stored in a few default directories, mostly in the user account of the person currently running a program. However, these are always on the computer, and not on the USB key. The key to making an app portable is thus to teach the app to read and write its data not onto the computer, but onto the USB key.
 
-> We do not recommend you install Zettlr as a portable app, unless you know that you have to.
+!!! note
+
+    We do not recommend you install Zettlr as a portable app, unless you know that you have to.
 
 ## How to Set Up Zettlr as a Portable App
 
 A portable app in principle is distinguished by just a few characters from a regular install. What we are explaining here basically makes use of a command line switch we use internally to debug the application, but it works perfectly well for maintaining a portable installation.
 
-> Note that, since it is a debugging switch, we do not guarantee that it works. Your mileage may vary.
+!!! note
+
+    Since it is a debugging switch, we do not guarantee that it works. Your mileage may vary.
 
 The first step is to install the application regularly by downloading one of the Windows installers and executing it. However, instead of installing the app into a default location, you should install the app onto your thumb drive (or any other folder – since it will be a portable application, you can move the folder around later on).
 
-> Do **not** install the app with elevated privileges, as this will create some registry entries that are then bound to your computer.
+!!! warning
+
+    Do **not** install the app with elevated privileges, as this will create some registry entries that are then bound to your computer.
 
 After the installer has run, you should be able to see all the required files – `Zettlr.exe`, the `app.asar` file and others – in the folder you have directed the installer to use.
 
@@ -34,7 +42,9 @@ Zettlr.exe --data-dir="./zettlr-config"
 
 Now, whenever you start the Batch-file, it should open Zettlr and direct it to use the folder `zettlr-config` to store its data – right where your app is. Of course, you can choose any other folder name.
 
-> Make sure that the data-dir exists *before* starting the app.
+!!! note
+
+    Make sure that the data-dir exists *before* starting the app.
 
 ## Converting a Static Installation into a Portable App
 

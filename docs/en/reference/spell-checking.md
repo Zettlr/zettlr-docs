@@ -34,5 +34,3 @@ To sum up, Zettlr will make sure a dictionary is valid by checking that the foll
 
 - `bcp-47/bcp-47.dic` and `bcp-47/bcp-47.aff` _or_
 - `bcp-47/index.dic` and `bcp-47/index.aff`
-
-> Attention: The Hunspell algorithms implemented in JavaScript are still not as powerful as the main algorithm used by LibreOffice, so it may very well be that some dictionaries simply prove to be too large to be loaded. If Zettlr hangs after loading a dictionary, simply force-quit the app and make sure the dictionary is deselected.
