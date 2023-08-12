@@ -19,7 +19,11 @@ nav:
     - Zettlr als Notizapp: guides/guide-notes.md
     - Zettlr als Zettelkasten: guides/guide-zettelkasten.md
     - Zettlr als IDE: guides/guide-ide.md
-  - Core:
+  - Konzepte:
+    - Dateimanagement: concepts/workspaces.md
+    - Kontext: concepts/context.md
+    - WYSIWYM: concepts/wysiwym.md
+  - Kern:
     - Editor: core/editor.md
     - Dateiliste: core/file-list.md
     - Suchen: core/search.md
@@ -29,13 +33,14 @@ nav:
     - Lokalisation: core/localisation.md
     - Seitenleiste: core/attachments.md
   - Wissenschaftliche Werkzeuge:
-    - Zitationen: academic/citations.md
+    - Zitieren mit Zettlr: academic/citations.md
     - Projekte: academic/projects.md
     - Präsentationen: academic/presentations.md
     - Pomodoro-Timer: academic/pomodoro.md
     - Lesbarkeitsmodus: academic/readability.md
     - Zettelkastenmethodologie: academic/zkn-method.md
-    - Eigene Vorlagen: academic/custom-templates.md
+    - Graph Ansicht: academic/graph.md
+    - Benutzerdefinierte Vorlagen: academic/custom-templates.md
   - Referenzen:
     - Tastaturkürzel: reference/shortcuts.md
     - Markdown-Grundlagen: reference/markdown-basics.md

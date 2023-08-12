@@ -1,75 +1,75 @@
-# The File List
+# Die Dateiliste
 
-Next on is the file list. The file list is something very special because it bears powerful features that ease your work with a lot of files and directories. So let's have a look!
+Als nächstes kommt die Dateiliste. Die Dateiliste ist etwas ganz Besonderes, denn sie verfügt über leistungsstarke Funktionen, die Ihnen die Arbeit mit vielen Dateien und Verzeichnissen erleichtern. Werfen wir also einen Blick darauf!
 
-## General
+## Allgemein
 
-In the extended sidebar mode, both the tree view and the file list are visible. Using the thin sidebar mode, you can always show or hide the list by pressing `Cmd/Ctrl+!`.
+Im erweiterten Seitenleistenmodus sind sowohl die Baumansicht als auch die Dateiliste sichtbar. Im Modus "Dünne Seitenleiste" können Sie die Liste jederzeit mit der Tastenkombination "Befehl/Strg+!`" ein- und ausblenden.
 
-> **Note**: Please consult the [settings manual](../reference/settings.md) for more information on the sidebar modes.
+> **Hinweis**: Bitte konsultieren Sie das [Einstellungshandbuch](../reference/settings.md) für weitere Informationen zu den Seitenleistenmodi.
 
-The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
+Die Dateiliste zeigt Ihnen alle Verzeichnisse und Dateien innerhalb des Verzeichnisses, das gerade in der Baumansicht ausgewählt ist, aber nicht wie ein normaler Dateibrowser: **Die Dateiliste behandelt alle Unterverzeichnisse als gleichwertig und zeigt sie alle nacheinander an!** Daher müssen Sie nicht weiter in den Verzeichnisbaum vordringen, um vergrabene Verzeichnisse zu erreichen.
 
-If you turned off the meta information, both directories and files will be shown as one-liners. If you display the file information, you will see additional information: directories will show you the amount of children they have. The files, on the other hand, show their last modification date. If they contain an ID or tags, this information will be displayed after the modification date. Hovering over the tag counter, you can see a small tooltip that shows you all tags that are in the file.
+Wenn Sie die Metainformationen ausgeschaltet haben, werden sowohl Verzeichnisse als auch Dateien als Einzeiler angezeigt. Wenn Sie die Dateiinformationen anzeigen lassen, erhalten Sie zusätzliche Informationen: Verzeichnisse zeigen Ihnen die Anzahl ihrer Kinder an. Bei den Dateien hingegen wird das Datum der letzten Änderung angezeigt. Wenn sie eine ID oder Tags enthalten, werden diese Informationen nach dem Änderungsdatum angezeigt. Wenn Sie den Mauszeiger über den Tag-Zähler bewegen, sehen Sie einen kleinen Tooltip, der Ihnen alle Tags in der Datei anzeigt.
 
-> You can toggle the file information via the "View" menu or by pressing `Cmd/Ctrl+Alt+S`.
+> Sie können die Dateiinformationen über das Menü "Ansicht" oder durch Drücken von "Befehl/Strg+Alt+S" umschalten.
 
-### Meta Information on Files
+### Meta-Informationen zu Dateien
 
-The additional information shown by your files in the file list can be beneficial for a number of reasons. First, you can check whether or not the ID of the file looks right. Sometimes, Zettlr may detect a wrong ID, and this is the first way to check if Zettlr actually uses your ID, or just grabbed some part of a URL that contains a lot of numbers. Additionally, you can hover over the amount of tags to display them in a tooltip.
+Die zusätzlichen Informationen, die Ihre Dateien in der Dateiliste anzeigen, können aus mehreren Gründen nützlich sein. Erstens können Sie damit überprüfen, ob die ID der Datei richtig aussieht oder nicht. Manchmal erkennt Zettlr eine falsche ID, und dies ist die erste Möglichkeit zu überprüfen, ob Zettlr tatsächlich Ihre ID verwendet oder nur einen Teil einer URL mit vielen Zahlen übernommen hat. Außerdem können Sie den Mauszeiger über die Anzahl der Tags bewegen, um sie in einem Tooltip anzuzeigen.
 
-![The possible meta information of files](../img/file_meta.png)
+![Die möglichen Metainformationen von Dateien](../img/file_meta.png)
 
-### Writing Targets
+### Ziele schreiben
 
-Since version `1.2`, Zettlr supports writing targets. To set a target, right-click a file and choose "Set writing target …". Enter the amount of words or characters and click "Set". Zettlr will count towards your goal and show you the progress showing a small indicator if you have snippets activated. Hover over it to see the absolute number of words or characters that you've written.
+Seit Version `1.2` unterstützt Zettlr das Schreiben von Zielen. Um ein Ziel zu setzen, klicken Sie mit der rechten Maustaste auf eine Datei und wählen Sie "Schreibziel setzen ...". Geben Sie die Anzahl der Wörter oder Zeichen ein und klicken Sie auf "Setzen". Zettlr zählt dann auf Ihr Ziel hin und zeigt Ihnen den Fortschritt mit einem kleinen Indikator an, wenn Sie Snippets aktiviert haben. Bewegen Sie den Mauszeiger darüber, um die absolute Anzahl der Wörter oder Zeichen zu sehen, die Sie geschrieben haben.
 
-![Writing Targets Counter](../img/writing_targets.png)
+![Schreibzielzähler](../img/writing_targets.png)
 
-> To remove the writing target from a file, simply set the writing counter to zero.
+> Um das Schreibziel aus einer Datei zu entfernen, setzen Sie den Schreibzielzähler einfach auf Null.
 
-![Setting the Writing Target](../img/writing_targets_settings.png)
+![Einstellen des Schreibziels](../img/writing_targets_settings.png)
 
-### Sorting
+### Sortieren
 
-If you want to sort directories, you can do this from within the file list. Simply move the mouse over any directory and two indicators will appear showing you the current state of sorting. Click on the first (with an arrow from A to Z) to toggle the sorting by name. The second toggles the sorting by the last modification time. Subdirectories will not be sorted this way — only files.
+Wenn Sie Verzeichnisse sortieren möchten, können Sie dies direkt aus der Dateiliste heraus tun. Bewegen Sie einfach die Maus über ein beliebiges Verzeichnis, und es erscheinen zwei Indikatoren, die Ihnen den aktuellen Status der Sortierung anzeigen. Klicken Sie auf das erste Symbol (mit einem Pfeil von A bis Z), um die Sortierung nach Namen umzuschalten. Die zweite schaltet die Sortierung nach dem Zeitpunkt der letzten Änderung um. Unterverzeichnisse werden auf diese Weise nicht sortiert - nur Dateien.
 
 ![sorting_indicators.png](../img/sorting_indicators.png)
 
 
-Also you can traverse the directory tree by clicking on the directories. A simple click will select the directory, while an `ALT`-click will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.
+Sie können sich auch durch den Verzeichnisbaum bewegen, indem Sie auf die Verzeichnisse klicken. Ein einfacher Klick wählt das Verzeichnis aus, während ein `ALT`-Klick das übergeordnete Verzeichnis auswählt. Dies ist nützlich, wenn Sie häufig zwischen Verzeichnissen wechseln müssen, aber den dünnen Modus der Seitenleiste bevorzugen und nicht immer wieder zur Baumansicht wechseln wollen.
 
-## Structural implications
+## Strukturelle Auswirkungen
 
-Each time you select a directory in the tree view, the file list will display _all_ files and directories in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the directory list into a one-dimensional list. The list will always change its contents whenever you select a different directory in the tree view.
+Jedes Mal, wenn Sie ein Verzeichnis in der Baumansicht auswählen, zeigt die Dateiliste _alle_ Dateien und Verzeichnisse in diesem Verzeichnis an. Einfach ausgedrückt, werden alle Unterverzeichnisse und Dateien aus der baumartigen Struktur, die durch die Verzeichnisliste nachgebildet wird, in eine eindimensionale Liste gepackt. Die Liste wird ihren Inhalt immer dann ändern, wenn Sie ein anderes Verzeichnis in der Baumansicht auswählen.
 
-> The list only displays _all_ directories and files _within_ the currently selected directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your root, this is a powerful way to only have those files in the list that you actually need.
+> Die Liste zeigt nur _alle_ Verzeichnisse und Dateien _innerhalb_ des aktuell ausgewählten Verzeichnisses an. Daher funktioniert sie ein wenig wie eine sehr schnelle Suchfunktion. Sie sehen nur die Dateien in einem bestimmten Verzeichnis, und wenn Sie sich Ebene für Ebene nach unten bewegen, sind immer weniger Dateien sichtbar, bis nur noch ein Verzeichnis und seine Dateien zu sehen sind. Bei einer guten Struktur innerhalb Ihres Stammverzeichnisses ist dies eine leistungsfähige Methode, um nur die Dateien in der Liste zu haben, die Sie tatsächlich benötigen.
 
-As the file list flattens your complex directory tree, it has to make some assumptions on how to adequately _display_ the files. Therefore the following rules help you distinguish where the files are actually present on your disk:
+Da die Dateiliste Ihren komplexen Verzeichnisbaum abflacht, muss sie einige Annahmen darüber machen, wie die Dateien angemessen _angezeigt_ werden können. Daher helfen Ihnen die folgenden Regeln dabei, zu unterscheiden, wo sich die Dateien tatsächlich auf Ihrer Festplatte befinden:
 
-1. The currently selected directory will be on top of the list of files. Always.
-2. All files that are inside this directory are placed directly beneath this directory name.
-3. All subdirectories that are _inside_ this directory will always be at the bottom of the file list, i.e. _after_ the files in the selected directory.
-4. If directories are empty, they will be placed immediately after each other with no files in between.
+1. Das aktuell ausgewählte Verzeichnis steht ganz oben in der Dateiliste. Immer.
+2. Alle Dateien, die sich in diesem Verzeichnis befinden, werden direkt unter diesem Verzeichnisnamen angezeigt.
+3. Alle Unterverzeichnisse, die sich _innerhalb_ dieses Verzeichnisses befinden, stehen immer am Ende der Dateiliste, d.h. _nach_ den Dateien im ausgewählten Verzeichnis.
+4. Wenn Verzeichnisse leer sind, werden sie direkt hintereinander platziert, ohne Dateien dazwischen.
 
-So what is important to remember is: All directories will be displayed as if they reside on the very same level; as if they weren't nested. To identify which directories contain which, please refer to the tree view.
+Es ist also wichtig, sich daran zu erinnern: Alle Verzeichnisse werden so angezeigt, als befänden sie sich auf der gleichen Ebene, als wären sie nicht verschachtelt. Um zu erkennen, welche Verzeichnisse was enthalten, schauen Sie bitte in der Baumansicht nach.
 
-> If you do not like the "natural" sorting of Zettlr (so that 10 comes after 2), you can switch to "ASCII" sorting in the settings (so that 2 comes after 10).
+> Wenn Sie die "natürliche" Sortierung von Zettlr nicht mögen (so dass 10 nach 2 kommt), können Sie in den Einstellungen auf "ASCII"-Sortierung umschalten (so dass 2 nach 10 kommt).
 
-## Actions in the file list
+## Aktionen in der Dateiliste
 
-There are many actions that refer to the list. First, just select a tile to open any file and display its contents in the editor. Click a directory to select it.
+Es gibt viele Aktionen, die sich auf die Liste beziehen. Wählen Sie zunächst einfach eine Kachel aus, um eine beliebige Datei zu öffnen und ihren Inhalt im Editor anzuzeigen. Klicken Sie auf ein Verzeichnis, um es auszuwählen.
 
-You can move your files into different locations. Just drag them from the file list onto a directory in the directory tree. The directory you are hovering over will receive a slight shimmer to indicate where your file is going to be moved. Just drop the file there, to move it or drop the file everywhere else to abort the moving and revert the file to its original position.
+Sie können Ihre Dateien an andere Orte verschieben. Ziehen Sie sie einfach von der Dateiliste auf ein Verzeichnis im Verzeichnisbaum. Das Verzeichnis, über das Sie den Mauszeiger bewegen, erhält ein leichtes Schimmern, um anzuzeigen, wohin die Datei verschoben werden soll. Legen Sie die Datei einfach dort ab, um sie zu verschieben, oder legen Sie die Datei an einer anderen Stelle ab, um den Verschiebevorgang abzubrechen und die Datei an ihre ursprüngliche Position zurückzubringen.
 
-If you drag a file outside of the app, you are able to share the file with other programs. To cancel this dragging-out, simply release the mouse over your app again.
+Wenn Sie eine Datei außerhalb der App ziehen, können Sie die Datei mit anderen Programmen teilen. Um das Herausziehen abzubrechen, lassen Sie die Maus einfach wieder über Ihrer Anwendung los.
 
-> To drag out a file into other applications, make sure to **hold the `Ctrl`-key or the `Alt`-key before dragging your file!** This will tell Zettlr that you don't want to move the file within Zettlr, but outside of the app.
+> Um eine Datei in andere Anwendungen zu ziehen, halten Sie die Strg- oder die Alt-Taste gedrückt, bevor Sie die Datei ziehen. Damit teilen Sie Zettlr mit, dass Sie die Datei nicht innerhalb von Zettlr, sondern außerhalb der Anwendung verschieben möchten.
 
-## Search Heatmap
+## Heatmap durchsuchen
 
-Another useful feature of the file list is to help you distinguish what search results are the most relevant. Once you've executed a search, the list will change its colour like a chameleon. It will paint all files in 50 shades of green (yep, we've just made _that_ joke). The greener a file is, the more relevant the file is to your current search.
+Eine weitere nützliche Funktion der Dateiliste ist, dass sie Ihnen hilft, die wichtigsten Suchergebnisse zu erkennen. Sobald Sie eine Suche ausgeführt haben, ändert die Liste ihre Farbe wie ein Chamäleon. Sie malt alle Dateien in 50 verschiedenen Grüntönen an (ja, das war jetzt ein Witz). Je grüner eine Datei ist, desto relevanter ist die Datei für Ihre aktuelle Suche.
 
-This is a feature one might call a "heatmap" for fulltext searches.
+Dies ist eine Funktion, die man als "Heatmap" für die Volltextsuche bezeichnen könnte.
 
-Please remember that the list is highly adaptable and will morph a lot while you use the app. For instance, it will not only display all files and directories in the currently selected directory, but also hides files with no results from the preview list, when the list is in search-mode.
+Bitte denken Sie daran, dass die Liste sehr anpassungsfähig ist und sich im Laufe der Nutzung der App stark verändern wird. So werden beispielsweise nicht nur alle Dateien und Verzeichnisse im aktuell ausgewählten Verzeichnis angezeigt, sondern auch Dateien ohne Ergebnisse aus der Vorschauliste ausgeblendet, wenn sich die Liste im Suchmodus befindet.

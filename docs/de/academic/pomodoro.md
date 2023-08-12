@@ -1,39 +1,39 @@
 # Pomodoro-Timer
 
-If you write a lot, the time may come that you need to organise your time better. The built-in Pomodoro-Timer can help you with this.
+Wenn Sie viel schreiben, kann der Zeitpunkt kommen, an dem Sie Ihre Zeit besser organisieren müssen. Der eingebaute Pomodoro-Timer kann Ihnen dabei helfen.
 
-Access the Pomodoro-Timer by clicking on the circle in the top right corner of the screen, inside the Toolbar.
+Sie erreichen den Pomodoro-Timer, indem Sie auf den Kreis in der oberen rechten Ecke des Bildschirms in der Symbolleiste klicken.
 
-![Pomodoro Timer](../img/pomodoro_init.png)
+![Pomodoro-Timer](../img/pomodoro_init.png)
 
-Don't know what a pomodoro timer is? Then head over to [the official website](https://francescocirillo.com/pages/pomodoro-technique)!
+Sie wissen nicht, was ein Pomodoro-Timer ist? Dann besuchen Sie [die offizielle Website](https://francescocirillo.com/pages/pomodoro-technique)!
 
-## Using the Pomodoro-Timer
+## Verwendung des Pomodoro-Timers
 
-Before you start the pomodoro timer, you can adapt some settings.
+Bevor Sie den Pomodoro-Timer starten, können Sie einige Einstellungen vornehmen.
 
-The **red** number indicates the amount of minutes used to _work_. The default is 25 minutes.
+Die **rote** Zahl gibt die Anzahl der Minuten an, die zum _Arbeiten_ verwendet werden. Die Standardeinstellung ist 25 Minuten.
 
-The **yellow** number indicates the duration of a _short_ break that will divide portions of work. After each work-phase there will be a short break. The default is 5 minutes.
+Die **gelbe** Zahl gibt die Dauer einer _kurzen_ Pause an, die die Arbeitsphasen unterteilen soll. Nach jeder Arbeitsphase wird eine kurze Pause eingelegt. Der Standardwert ist 5 Minuten.
 
-The **green** number tells Zettlr, how long a _long_ break should be. After every four tasks, there will be such a long break. The default duration is 20 minutes.
+Die **grüne** Zahl sagt Zettlr, wie lang eine _lange_ Pause sein soll. Nach jeweils vier Aufgaben gibt es eine solche lange Pause. Die Standarddauer beträgt 20 Minuten.
 
-Below, you can decide whether or not a sound should be played each time a phase has ended. The slider below the checkbox adjusts the volume. (_Attention_: This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent!)
+Darunter können Sie entscheiden, ob ein Ton abgespielt werden soll, wenn eine Phase zu Ende ist oder nicht. Mit dem Schieberegler unter dem Kontrollkästchen können Sie die Lautstärke einstellen. (_Achtung_: Dies ist nicht die Lautstärke Ihres Systems. Wenn die Lautstärke Ihres Systems also nur 20 Prozent beträgt, klingt selbst eine Lautstärke von 100 Prozent in Zettlr nur so laut wie 20 Prozent).
 
-Click on **Start** to begin the timer. Then, the circle will be filled with the color of the current phase (either red, yellow, or green). Once it is full, the next phase will begin.
+Klicken Sie auf **Start**, um den Timer zu starten. Dann wird der Kreis mit der Farbe der aktuellen Phase gefüllt (entweder rot, gelb oder grün). Sobald er voll ist, beginnt die nächste Phase.
 
-To **Stop** the timer or simply review the current **status** of the timer, click on the circle again. A small popup will tell you the remaining amount of time for the current phase, the type of the current phase and give you the option to stop.
+Um den Timer zu **stoppen** oder einfach den aktuellen **Status** des Timers zu überprüfen, klicken Sie erneut auf den Kreis. Ein kleines Popup-Fenster zeigt Ihnen die verbleibende Zeit für die aktuelle Phase und den Typ der aktuellen Phase an und gibt Ihnen die Möglichkeit, den Timer zu stoppen.
 
-![Pomodoro Timer during Run](../img/pomodoro_run.png)
+Pomodoro Timer während des Laufs](../img/pomodoro_run.png)
 
-The **cycle** of the pomodoro timer is as follows:
+Der **Zyklus** des Pomodoro-Timers läuft wie folgt ab:
 
-1. Work
-2. Short break
-3. Work
-4. Short break
-5. Work
-6. Short break
-7. Work
-8. Long break
-9. _Repeat from step 1_
+1. Arbeiten
+2. Kurze Pause
+3. Arbeit
+4. Kurze Pause
+5. Arbeit
+6. Kurze Pause
+7. Arbeit
+8. Lange Pause
+9. _Wiederholung ab Schritt 1_

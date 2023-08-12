@@ -1,56 +1,56 @@
-# Searching
+# Durchsuchen
 
-One of the huge benefits of switching to Markdown to write documents is, that the documents themselves are searchable through your operating system's built-in search (e.g. Cortana on Windows, Spotlight on macOS or Dash on Linux systems). But of course it helps a lot if you don't have to leave the program when you are searching for something. That's where the search comes in! There are basically three distinct search functions: A fast filtering function that you use every time you select another directory in the list on the left, a document-wide search and a global search.
+Einer der großen Vorteile des Umstiegs auf Markdown zum Schreiben von Dokumenten ist, dass die Dokumente selbst über die in Ihrem Betriebssystem eingebaute Suche durchsuchbar sind (z.B. Cortana unter Windows, Spotlight unter macOS oder Dash unter Linux). Aber natürlich ist es sehr hilfreich, wenn Sie das Programm nicht verlassen müssen, wenn Sie nach etwas suchen. Und genau hier kommt die Suche ins Spiel! Grundsätzlich gibt es drei verschiedene Suchfunktionen: Eine schnelle Filterfunktion, die Sie jedes Mal benutzen, wenn Sie ein anderes Verzeichnis in der Liste auf der linken Seite auswählen, eine dokumentenweite Suche und eine globale Suche.
 
-## Filtering files
+## Dateien filtern
 
-The first function has already been mentioned on multiple occasions. As the preview list only displays all files inside a given directory and all of its sub-directories, just select different directories to narrow down the list of all files to the ones you need to see. Or, select a root directory to get the full list.
+Die erste Funktion wurde bereits mehrfach erwähnt. Da die Vorschauliste nur alle Dateien innerhalb eines bestimmten Verzeichnisses und aller seiner Unterverzeichnisse anzeigt, können Sie einfach verschiedene Verzeichnisse auswählen, um die Liste aller Dateien auf diejenigen einzuschränken, die Sie sehen möchten. Oder wählen Sie ein Stammverzeichnis, um die vollständige Liste zu erhalten.
 
-## Searching in files
+## Suche in Dateien
 
-If you are searching for specific phrases or words inside your currently opened file, just press `Cmd/Ctrl+F`. A small popup will open underneath the magnification symbol providing you with the common search and replace options. Just type something and hit `Enter` repeatedly to cycle through the matches. Press `ESC` or click outside the popup to close the search.
+Wenn Sie nach bestimmten Ausdrücken oder Wörtern in der gerade geöffneten Datei suchen, drücken Sie einfach "Befehl/Strg+F". Unter dem Vergrößerungssymbol öffnet sich ein kleines Popup-Fenster, das Ihnen die üblichen Such- und Ersetzungsoptionen anbietet. Geben Sie einfach etwas ein und drücken Sie wiederholt die Eingabetaste, um die Übereinstimmungen durchzugehen. Drücken Sie `ESC` oder klicken Sie außerhalb des Popups, um die Suche zu beenden.
 
-> **Tip**: You can also make use of powerful regular expressions for searching. Zettlr by default performs a default search, but when a regular expression is detected (i.e. your search is encapsulated with slashes), it will perform a RegExp-search. Once Zettlr has detected a regular expression, the search field will change its font to monospace to help you write your regular expression. To search for all digits, for instance, you'd search for `/\d+/`. [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
+> **Tipp**: Sie können auch leistungsstarke reguläre Ausdrücke für die Suche verwenden. Zettlr führt standardmäßig eine Standardsuche durch, aber wenn ein regulärer Ausdruck erkannt wird (d. h. Ihre Suche ist mit Schrägstrichen gekapselt), wird eine RegExp-Suche durchgeführt. Sobald Zettlr einen regulären Ausdruck erkannt hat, ändert sich die Schriftart des Suchfelds in Monospace, um Ihnen die Eingabe Ihres regulären Ausdrucks zu erleichtern. Um nach allen Ziffern zu suchen, würden Sie zum Beispiel nach `/\d+/` suchen. [Mehr über reguläre Ausdrücke in JavaScript erfahren Sie hier] (https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
 
-If you press `Enter` while the replace input is focused, Zettlr will replace the current search result and automatically highlight the next occurrence of your search term. Hit `Enter` repeatedly to replace multiple occurrences. If you want to replace all occurrences at once, you can hit `Alt+Enter` while the replace input has focus.
+Wenn Sie "Enter" drücken, während die Ersetzungseingabe fokussiert ist, ersetzt Zettlr das aktuelle Suchergebnis und markiert automatisch das nächste Vorkommen des Suchbegriffs. Drücken Sie wiederholt `Enter`, um mehrere Vorkommen zu ersetzen. Wenn Sie alle Vorkommen auf einmal ersetzen möchten, können Sie die Tastenkombination "Alt+Eingabe" drücken, während die Ersetzen-Eingabe den Fokus hat.
 
-> **Tip**: Just as in other editors, you can make use of variables while searching with a regular expression. If you search for something using a regular expression that contains at least one capturing group, you can use the variable `$1` inside your replacement text. Such variables will be replaced with the actual found content of the capturing groups. Multiple occurrences of the variable will be replaced as well. The number after the `\$` refers to the index of the capturing group (the second capturing group will be addressed using `\$2`, and so forth). [Learn more about JavaScript regular expressions here](https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
+> **Tipp**: Genau wie in anderen Editoren können Sie bei der Suche mit einem regulären Ausdruck Variablen verwenden. Wenn Sie mit einem regulären Ausdruck suchen, der mindestens eine Erfassungsgruppe enthält, können Sie die Variable "$1" in Ihrem Ersetzungstext verwenden. Solche Variablen werden durch den tatsächlich gefundenen Inhalt der Erfassungsgruppen ersetzt. Mehrfaches Vorkommen der Variable wird ebenfalls ersetzt. Die Zahl nach dem `\$` bezieht sich auf den Index der Erfassungsgruppe (die zweite Erfassungsgruppe wird mit `\$2` adressiert, usw.). [Mehr über reguläre Ausdrücke in JavaScript erfahren Sie hier] (https://codeburst.io/javascript-learn-regular-expressions-for-beginners-bb6107015d91).
 
-Of course, you can also use the search in Quicklook windows. Therefore, just click into the content of the Quicklook you want to search (to give it focus and prevent that `Cmd/Ctrl+F` triggers the search on your main file) and press `Cmd/Ctrl+F` to begin searching.
+Natürlich können Sie die Suche auch in Quicklook-Fenstern verwenden. Klicken Sie dazu einfach in den Inhalt des Quicklooks, den Sie durchsuchen möchten (um ihm den Fokus zu geben und zu verhindern, dass `Cmd/Ctrl+F` die Suche in Ihrer Hauptdatei auslöst) und drücken Sie `Cmd/Ctrl+F`, um die Suche zu starten.
 
-## Searching globally
+## Globale Suche
 
-The most important aspect of searching is, in fact, the global search which you can trigger by hitting `Cmd/Ctrl+Shift+F`. The search input in the toolbar will receive focus, letting you search a specific subset of files in your root directory: Only those currently visible in the pane. That means you can choose which files will be searched by selecting an appropriate directory in the list---use the filtering function to your benefit!
+Der wichtigste Aspekt der Suche ist die globale Suche, die Sie mit der Tastenkombination "Befehl/Strg+Umschalt+F" auslösen können. Die Sucheingabe in der Symbolleiste erhält den Fokus, so dass Sie eine bestimmte Teilmenge von Dateien in Ihrem Stammverzeichnis durchsuchen können: Nur die Dateien, die derzeit im Fenster sichtbar sind. Das bedeutet, dass Sie auswählen können, welche Dateien durchsucht werden sollen, indem Sie ein entsprechendes Verzeichnis in der Liste auswählen - nutzen Sie die Filterfunktion zu Ihrem Vorteil!
 
-If you want to search _all_ files at once, select a root directory. If you only want to search in a specific directory, select that before searching. In most cases you have an idea where the text you need is located. For instance, if you are searching for a quote on a certain issue that can be cited in scientific research you may not want to search through all your thoughts and ideas, but limit your search to the directory where you store your excerpts of scientific texts and papers.
+Wenn Sie _alle_ Dateien auf einmal durchsuchen wollen, wählen Sie ein Stammverzeichnis. Wenn Sie nur in einem bestimmten Verzeichnis suchen wollen, wählen Sie dieses vor der Suche aus. In den meisten Fällen wissen Sie bereits, wo sich der gesuchte Text befindet. Wenn Sie beispielsweise nach einem Zitat zu einem bestimmten Thema suchen, das in wissenschaftlichen Arbeiten zitiert werden kann, möchten Sie vielleicht nicht alle Ihre Gedanken und Ideen durchsuchen, sondern Ihre Suche auf das Verzeichnis beschränken, in dem Sie Ihre Auszüge aus wissenschaftlichen Texten und Arbeiten speichern.
 
-The search itself is rather powerful. You can make use of several different operators to specify exactly what you are searching for:
+Die Suche selbst ist recht leistungsfähig. Sie können mehrere verschiedene Operatoren verwenden, um genau anzugeben, wonach Sie suchen:
 
-* **AND-operator:** Type `Boat Ship` to only display the files that contain _both_ the term "boat" and the term "ship". Each space is interpreted as "AND".
-* **OR-operator:** Type `Boat | Ship` (| is the Pipe-operator, inserted by `Alt+7` on macOS or `AltGr+<` on other systems) to select all files that contain _either_ the word "boat" _or_ the word "ship"
-* **Exact-Match-operator:** Type `"Boat Ship"` to search your files for that exact phrase.
-* **NOT-operator:** Typ `!Boat` to search only for files _not_ containing that term. Works with exact matches as well: `!"Boat Ship"` would exclude all files containing the exact phrase "Boat Ship".
+* **AND-Operator:** Geben Sie `Boot Schiff` ein, um nur die Dateien anzuzeigen, die _beide_ den Begriff "Boot" und den Begriff "Schiff" enthalten. Jedes Leerzeichen wird als "AND" interpretiert.
+* **Oder-Operator:** Tippen Sie `Boot | Schiff` (| ist der Pipe-Operator, eingefügt durch `Alt+7` auf macOS oder `AltGr+<` auf anderen Systemen), um alle Dateien auszuwählen, die _entweder_ das Wort "Boot" _oder_ das Wort "Schiff" enthalten
+**Exact-Match-Operator:** Geben Sie `"Boot-Schiff"` ein, um Ihre Dateien nach genau diesem Begriff zu durchsuchen.
+**NOT-Operator:** Geben Sie `!Boot` ein, um nur nach Dateien zu suchen, die diesen Begriff _nicht_ enthalten. Funktioniert auch mit exakten Übereinstimmungen: `!"Boat Ship"` würde alle Dateien ausschließen, die den exakten Ausdruck "Boat Ship" enthalten.
 
-> **Attention**: While the AND-, OR-, and Exact-Match-operators work by assigning weights (a file that fulfills all search criteria will be coloured bright, while files which do not match all search terms have a faded background), the NOT-operator definitely excludes files. So while a search for `boat ship` would also include files containing only one of the two terms (albeit with a much lower weight), a search for `!boat ship` will definitely exclude all files containing the word boat.
+> **Achtung**: Während die AND-, OR- und Exact-Match-Operatoren durch Gewichtung arbeiten (eine Datei, die alle Suchkriterien erfüllt, wird hell eingefärbt, während Dateien, die nicht allen Suchbegriffen entsprechen, einen blassen Hintergrund haben), schließt der NOT-Operator definitiv Dateien aus. Während also eine Suche nach `Boot-Schiff` auch Dateien einschließt, die nur einen der beiden Begriffe enthalten (wenn auch mit einer viel geringeren Gewichtung), schließt eine Suche nach `!Boot-Schiff` definitiv alle Dateien aus, die das Wort Boot enthalten.
 
-Of course, you can chain all of these operators. So you could search for `"Boat Ship" | vessel captain` to display only files that either contain the exact phrase "Boat Ship" or the word "vessel", and which also include the word "captain".
+Natürlich können Sie alle diese Operatoren miteinander verknüpfen. So könnten Sie nach "Boot Schiff" | Schiffskapitän" suchen, um nur Dateien anzuzeigen, die entweder den genauen Ausdruck "Boot Schiff" oder das Wort "Schiff" enthalten und die auch das Wort "Kapitän" beinhalten.
 
-Don't worry if you do not remember the complete word you are searching for: Zettlr will try to match your search terms also to partial words, so the word "trooper" would also match "Stromtrooper" as well as "Troopership" as would the phrase "Boat Ship" also match a "Steamboat Ship". **Searches are also case-insensitive**. So you don't have to worry about little typos you may have in some files.
+Machen Sie sich keine Sorgen, wenn Sie sich nicht an das vollständige Wort erinnern, nach dem Sie suchen: Zettlr wird versuchen, Ihre Suchbegriffe auch mit Teilwörtern abzugleichen, so dass das Wort "Trooper" auch zu "Stromtrooper" und "Troopership" passen würde, ebenso wie die Phrase "Boat Ship" auch zu einem "Steamboat Ship" passen würde. **Bei der Suche wird auch die Groß- und Kleinschreibung nicht berücksichtigt**. Sie müssen sich also keine Gedanken über kleine Tippfehler machen, die Sie in einigen Dateien haben könnten.
 
-While Zettlr is searching, it will display a search indicator to the right of the search box. Once it is done, it will colour all of your files. The more green-ish they are, the more relevant they are (i.e. the more high-quality matches have been found inside that file). This is kind of a **heat map for search results** letting you easily identify the relevant files for your search.
+Während Zettlr die Suche durchführt, wird rechts neben dem Suchfeld ein Suchindikator angezeigt. Sobald die Suche abgeschlossen ist, werden alle Ihre Dateien eingefärbt. Je grüner sie sind, desto relevanter sind sie (d. h. desto mehr hochwertige Übereinstimmungen wurden in dieser Datei gefunden). Dies ist eine Art **Heatmap für Suchergebnisse**, mit der Sie die relevanten Dateien für Ihre Suche leicht identifizieren können.
 
-> Please note that Zettlr will hide all files in which the search terms did never match, as well as all directories.
+> Bitte beachten Sie, dass Zettlr alle Dateien ausblendet, in denen die Suchbegriffe nicht übereinstimmen, ebenso wie alle Verzeichnisse.
 
-To achieve better results, Zettlr will weigh different types of matches differently. For instance, an exact match in the title can be a sign that the file is highly relevant to you. Therefore, Zettlr will weigh this heavier than other matches. Also, if a search term has matched case-sensitive, this match will receive a higher score than if the term has only matched case-insensitive (i.e. there was a difference in capitalisation).
+Um bessere Ergebnisse zu erzielen, gewichtet Zettlr verschiedene Arten von Übereinstimmungen unterschiedlich. So kann beispielsweise eine exakte Übereinstimmung im Titel ein Zeichen dafür sein, dass die Datei für Sie sehr relevant ist. Daher wird Zettlr diese Übereinstimmung stärker gewichten als andere Übereinstimmungen. Wenn ein Suchbegriff unter Berücksichtigung der Groß- und Kleinschreibung übereinstimmt, erhält diese Übereinstimmung eine höhere Punktzahl als wenn der Begriff nur unter Berücksichtigung der Groß- und Kleinschreibung übereinstimmt (d. h. es gab einen Unterschied in der Großschreibung).
 
-To find the exact place where your search matched, select a file and Zettlr will automatically highlight all matches in bright yellow easy to find. Also, the scrollbar to the very right of the window will be showing markers to indicate at which positions in the document your search terms occur.
+Um die genaue Stelle zu finden, an der Ihre Suche übereinstimmt, wählen Sie eine Datei aus, und Zettlr hebt automatisch alle Übereinstimmungen in leuchtendem Gelb hervor, damit Sie sie leicht finden können. Außerdem werden in der Bildlaufleiste ganz rechts im Fenster Markierungen eingeblendet, die anzeigen, an welchen Stellen im Dokument Ihre Suchbegriffe vorkommen.
 
-## Exit the global search
+## Beenden Sie die globale Suche
 
-The global search is in many ways persistent. This way you can stroll through your search results without having to fear that any action might accidentally exit the search. This is especially helpful in huge file lists, where searching can take its time. Nonetheless, there _are_ ways to exit a global search.
+Die globale Suche ist in vielerlei Hinsicht beständig. Auf diese Weise können Sie durch Ihre Suchergebnisse spazieren, ohne befürchten zu müssen, dass eine Aktion die Suche versehentlich beenden könnte. Dies ist besonders hilfreich bei großen Dateilisten, bei denen die Suche sehr lange dauern kann. Nichtsdestotrotz _gibt_ es Möglichkeiten, eine globale Suche zu beenden.
 
-Do one of the following to exit the search and display all files regularly again:
+Führen Sie eine der folgenden Aktionen aus, um die Suche zu beenden und wieder regelmäßig alle Dateien anzuzeigen:
 
-* While the search input is focused, press `ESC`. (You can re-focus it with `Cmd/Ctrl+Shift+F`)
-* Click the `x` on the right hand side of the search box.
-* Select a different directory in the tree view.
+* Während die Sucheingabe fokussiert ist, drücken Sie `ESC`. (Sie können sie mit "Cmd/Strg+Umschalt+F" wieder fokussieren)
+* Klicken Sie auf das "x" auf der rechten Seite des Suchfeldes.
+* Wählen Sie ein anderes Verzeichnis in der Baumansicht.

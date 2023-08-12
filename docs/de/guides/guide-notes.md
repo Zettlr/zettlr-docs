@@ -1,63 +1,63 @@
-# Guide: Zettlr as a note-taking app
+# Anleitung: Zettlr als App für Notizen
 
-![Zettlr as a Note-Taking app](../img/zettlr_notes.png)
+![Zettlr als Notizen-App](../img/zettlr_notes.png)
 
-You want to use Zettlr as a means to take notes with. Although Zettlr has a lot more features, it is designed as a slim and minimal app, so configuring Zettlr as a note-taking app is easy. This guide shows you what settings you should use and how to actually take notes.
+Sie möchten Zettlr als Mittel zum Notizen machen verwenden. Obwohl Zettlr viel mehr Funktionen hat, ist es als schlanke und minimale App konzipiert, so dass es einfach ist, Zettlr als App für Notizen zu konfigurieren. Dieser Leitfaden zeigt Ihnen, welche Einstellungen Sie verwenden sollten und wie Sie tatsächlich Notizen machen können.
 
-> Using this guide, you can set up Zettlr to be a replacement for apps such as OneNote, Evernote, or nvALT.
+> Mithilfe dieser Anleitung können Sie Zettlr so einrichten, dass es ein Ersatz für Apps wie OneNote, Evernote oder nvALT ist.
 
-## Step 1: Set up Zettlr to look as minimal as possible.
+## Schritt 1: Richten Sie Zettlr so ein, dass es so minimalistisch wie möglich aussieht.
 
-First, head over to the settings tab (press `Cmd/Ctrl+,` or click the cog in the toolbar). In the settings, make sure you set the settings according to this list:
+Wechseln Sie zunächst zur Registerkarte "Einstellungen" (drücken Sie "Cmd/Strg+" oder klicken Sie auf das Zahnrad in der Symbolleiste). In den Einstellungen stellen Sie sicher, dass Sie die Einstellungen gemäß dieser Liste vornehmen:
 
-- General tab
-    - Snippets: Off
-    - Sidebar: Thin
-- Editor tab
-    - Dictionaries: Select none (they slow down the app start and aren't necessary for simple notes)
-    - Mute lines: Off
+- Registerkarte "Allgemein
+    - Schnipsel: Aus
+    - Seitenleiste: Dünn
+- Registerkarte Editor
+    - Wörterbücher: Keine auswählen (sie verlangsamen den Start der App und sind für einfache Notizen nicht notwendig)
+    - Zeilen stummschalten: Aus
 
-The other settings aren't needed for a note taking app and can therefore be ignored.
+Die anderen Einstellungen werden für eine Notizen-App nicht benötigt und können daher ignoriert werden.
 
-## Step 2: Create a folder for your notes
+## Schritt 2: Erstellen Sie einen Ordner für Ihre Notizen
 
-Now it's time to create a folder for your notes. Ideally, you'd want to place it inside a cloud-synchronised folder so that you can access them everywhere, not just on your current computer. The name of this folder is completely up to you, but "Notes" may be a good, simple start. If you want to use different categories for notes, you can create additional root folders and keep them open. That way, you may name your categories according to what you store in them:
+Nun ist es an der Zeit, einen Ordner für Ihre Notizen zu erstellen. Idealerweise legen Sie ihn in einem Ordner an, der mit der Cloud synchronisiert ist, damit Sie überall darauf zugreifen können, nicht nur auf Ihrem aktuellen Computer. Der Name dieses Ordners ist Ihnen überlassen, aber "Notizen" ist ein guter, einfacher Anfang. Wenn Sie verschiedene Kategorien für Notizen verwenden möchten, können Sie zusätzliche Stammordner erstellen und diese offen halten. Auf diese Weise können Sie Ihre Kategorien nach dem benennen, was Sie in ihnen speichern:
 
-- Students: "University", "Lectures", "Private"
-- Teachers: "School"/"University", "Courses"
-- Researcher: "University", "Research", "My Research Project"
-- Journalist: "Topic 1", "Topic 2", "Topic 3", "Press Conferences"
-- Writer: "My Novel", "Thoughts and Ideas", "Characters"
-- Administrative Worker: "ToDo", "Meetings"
-- etc. …
+- Studenten: "Universität", "Vorlesungen", "Privat"
+- Lehrkräfte: "Schule"/"Universität", "Kurse"
+- Forscher: "Universität", "Forschung", "Mein Forschungsprojekt"
+- Journalist: "Thema 1", "Thema 2", "Thema 3", "Pressekonferenzen"
+- Schriftsteller: "Mein Roman", "Gedanken und Ideen", "Charaktere"
+- Verwaltungsangestellter: "ToDo", "Besprechungen"
+- usw. ...
 
-Choose directories using categories you personally need. Don't forget that you can always re-organise this and drag the files around if your workflow changes. The benefit of using different _root_ folders is that each folder is independent of each other. Thereby you can always keep the directory list hidden and only pull it up if you need to switch "notebooks".
+Wählen Sie Verzeichnisse mit Kategorien, die Sie persönlich brauchen. Vergessen Sie nicht, dass Sie dies jederzeit neu organisieren und die Dateien verschieben können, wenn sich Ihr Arbeitsablauf ändert. Der Vorteil der Verwendung verschiedener _Wurzel_ordner ist, dass jeder Ordner unabhängig von den anderen ist. Dadurch können Sie die Verzeichnisliste immer versteckt halten und nur dann aufrufen, wenn Sie die "Notizbücher" wechseln müssen.
 
-**Alternative**: Instead of using multiple root folders, you can also go with the subdirectories-approach. This way the directory list doesn't look like a collection of categories, or "notebooks", but resembles an actual directory (I'm talking about how it _looks_ to you, as visuals are also an important aspect for efficient writing). But the benefit of this approach is, that you never need to pull up the directories list, but you can switch "notebooks" by first `ALT`- or `Ctrl`-clicking the current "notebook"/directory and then clicking another notebook. Zettlr will then use that as the current directory in which you can store notes.
+**Alternative**: Anstatt mehrere Stammordner zu verwenden, können Sie auch den Ansatz mit den Unterverzeichnissen wählen. Auf diese Weise sieht die Verzeichnisliste nicht wie eine Sammlung von Kategorien oder "Notizbüchern" aus, sondern ähnelt einem echten Verzeichnis (ich spreche davon, wie es für Sie _ausschaut_, da die Optik auch ein wichtiger Aspekt für effizientes Schreiben ist). Der Vorteil dieses Ansatzes ist, dass Sie nie die Verzeichnisliste aufrufen müssen, sondern die "Notizbücher" wechseln können, indem Sie zuerst mit `ALT` oder `Strg` auf das aktuelle "Notizbuch"/Verzeichnis und dann auf ein anderes Notizbuch klicken. Zettlr verwendet dann dieses als aktuelles Verzeichnis, in dem Sie Notizen speichern können.
 
-## Step 3: Think of a system for naming your notes
+## Schritt 3: Überlegen Sie sich ein System für die Benennung Ihrer Notizen
 
-Over time, your notebooks _will_ become full with notes. Each seminar, each meeting and each workshop will contribute to your notebook. And if you have sudden thoughts that you want to write down before you lose them, a new note is also recommended. So what to do to not lose the order of your system?
+Mit der Zeit _werden_ Ihre Notizbücher mit Notizen voll sein. Jedes Seminar, jede Besprechung und jeder Workshop wird zu Ihrem Notizbuch beitragen. Und wenn Ihnen plötzlich ein Gedanke kommt, den Sie aufschreiben wollen, bevor Sie ihn verlieren, empfiehlt sich ebenfalls eine neue Notiz. Was also tun, um die Ordnung in Ihrem System nicht zu verlieren?
 
-Zettlr offers several ways to order, sort, and find your files. If you know the filename, then it's easy to get to it: Simply start typing the filename in the global search bar. Zettlr will autocomplete the name for you. It takes the first file that contains what you've already written, so keep writing the filename until Zettlr autocompletes the correct file. Then hit `Return` and it will open the file.
+Zettlr bietet mehrere Möglichkeiten, um Ihre Dateien zu ordnen, zu sortieren und zu finden. Wenn Sie den Dateinamen kennen, ist es einfach, ihn zu finden: Geben Sie einfach den Dateinamen in die globale Suchleiste ein. Zettlr vervollständigt den Namen automatisch für Sie. Es nimmt die erste Datei, die das enthält, was Sie bereits geschrieben haben, also schreiben Sie den Dateinamen so lange, bis Zettlr die richtige Datei automatisch vervollständigt hat. Drücken Sie dann `Return` und die Datei wird geöffnet.
 
-Generally, your files should follow a certain system. For instance, if time matters (such as for workshops, congresses, or lectures), it is best to use the date in the international standard format (YYYY-MM-DD, e.g. 2018-10-12) as the first part of your file names. This way Zettlr will automatically sort the files in the default way (where a 2 is greater than a 1, e.g.), so that newer files are at the bottom by default. To pull them to the top, simply switch the sorting from A-Z to Z-A. By using this approach it becomes easy to find older notes, because you normally remember the rough date at which a workshop or a meeting has happened and can scroll through the list until you find it.
+Im Allgemeinen sollten Ihre Dateien einem bestimmten System folgen. Wenn zum Beispiel die Zeit eine Rolle spielt (wie bei Workshops, Kongressen oder Vorträgen), ist es am besten, das Datum im internationalen Standardformat (JJJJ-MM-TT, z. B. 2018-10-12) als ersten Teil des Dateinamens zu verwenden. Auf diese Weise sortiert Zettlr die Dateien automatisch nach der Standardmethode (bei der eine 2 größer als eine 1 ist, z. B.), sodass neuere Dateien standardmäßig ganz unten stehen. Um sie nach oben zu holen, schalten Sie einfach die Sortierung von A-Z auf Z-A um. Auf diese Weise ist es einfach, ältere Notizen zu finden, da Sie sich normalerweise an das ungefähre Datum eines Workshops oder einer Besprechung erinnern und in der Liste blättern können, bis Sie sie finden.
 
-If time is not important, another approach is necessary. If you keep note files for different concepts, processes, or as some kind of manual, it may be better to use categories as the first part of the file name. For instance, if you take notes on how software in your office works, it may be good to sort them by processes. Then, filenames would look like this:
+Wenn die Zeit keine Rolle spielt, ist ein anderer Ansatz erforderlich. Wenn Sie Notizzettel für verschiedene Konzepte, Prozesse oder als eine Art Handbuch aufbewahren, ist es vielleicht besser, Kategorien als ersten Teil des Dateinamens zu verwenden. Wenn Sie z. B. Notizen darüber machen, wie die Software in Ihrem Büro funktioniert, kann es sinnvoll sein, sie nach Prozessen zu sortieren. Dann würden die Dateinamen wie folgt aussehen:
 
-- HowTo - Finance - Excel
-- HowTo - Finance - Company Database
-- HowTo - Meetings - Beamer
-- HowTo - Meetings - Conference Call
+- HowTo - Finanzen - Excel
+- HowTo - Finanzen - Unternehmensdatenbank
+- Gewusst wie - Besprechungen - Beamer
+- Gewusst wie - Besprechungen - Telefonkonferenz
 
-This way you can easily find what you are looking for by first searching for the files that begin with "HowTo" and then scroll until you find the process (Finance, Meetings, Mail guidelines, etc).
+Auf diese Weise können Sie leicht finden, was Sie suchen, indem Sie zunächst nach den Dateien suchen, die mit "HowTo" beginnen, und dann so lange blättern, bis Sie den Prozess gefunden haben (Finanzen, Besprechungen, E-Mail-Richtlinien usw.).
 
-You can even use a combination of that. The bottom line is: Always keep in mind that Zettlr sorts by filename, so name your files accordingly to minimise the amount of time to spend until you find a file.
+Sie können sogar eine Kombination davon verwenden. Die Quintessenz ist: Denken Sie immer daran, dass Zettlr nach Dateinamen sortiert, also benennen Sie Ihre Dateien entsprechend, um die Zeit zu minimieren, die Sie brauchen, bis Sie eine Datei finden.
 
-## Step 4: Write!
+## Schritt 4: Schreiben!
 
-Now that all your folders are set and you have a general idea of how your filenames should look like, you can create notes by simply hitting `Cmd/Ctrl+N`. Type in your name (you don't need to add any file name extension) and press `Return` to create the file. It will be automatically opened. Zettlr will always create the files in your currently selected notebook. If you want to move files between notebooks, simply drag the file and drop it onto the notebook you want to move it to.
+Nun, da alle Ihre Ordner eingerichtet sind und Sie eine allgemeine Vorstellung davon haben, wie Ihre Dateinamen aussehen sollten, können Sie Notizen erstellen, indem Sie einfach `Cmd/Ctrl+N` drücken. Geben Sie Ihren Namen ein (Sie brauchen keine Dateinamenerweiterung hinzuzufügen) und drücken Sie "Return", um die Datei zu erstellen. Sie wird dann automatisch geöffnet. Zettlr erstellt die Dateien immer im aktuell ausgewählten Notizbuch. Wenn Sie Dateien zwischen den Notizbüchern verschieben möchten, ziehen Sie die Datei einfach auf das gewünschte Notizbuch und lassen Sie sie dort fallen.
 
-## Next: Markdown Tutorial
+## Weiter: Markdown-Tutorial
 
-Now you may be interested in knowing how to write fast and efficiently using Zettlr. Head over to our [Markdown tutorial](../reference/markdown-basics.md)!
+Jetzt möchten Sie vielleicht wissen, wie Sie mit Zettlr schnell und effizient schreiben können. Schauen Sie sich unser [Markdown-Tutorial](../reference/markdown-basics.md) an!
