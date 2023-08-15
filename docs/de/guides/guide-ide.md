@@ -1,39 +1,39 @@
-# Guide: Zettlr as an Integrated Development Environment (IDE)
+# Anleitung: Zettlr als integrierte Entwicklungsumgebung (IDE)
 
 ![Zettlr as an IDE](../img/zettlr_ide.png)
 
-Zettlr is full with functions that help your workflow. You can use it as a small note-taking app, as a Zettelkasten, or, as explained in this guide, as a fully loaded integrated development (read: writing) environment. So let's get started!
+Zettlr ist voll mit Funktionen, die deinen Arbeitsablauf unterstützen. Du kannst es als kleine Notiz-App, als Zettelkasten oder, wie in dieser Anleitung erklärt, als vollwertige integrierte Entwicklungs- (sprich: Schreib-) Umgebung verwenden. Fangen wir also an!
 
-> Using this guide, you can set up Zettlr to be a replacement for apps such as Ulysses, Atom, or Sublime Text.
+> Mit dieser Anleitung kannst du Zettlr so einrichten, dass es ein Ersatz für Anwendungen wie Ulysses, Atom oder Sublime Text ist.
 
-## Step 1: Adjust the Settings
+## Schritt 1: Anpassen der Einstellungen
 
-The first step is to adjust some of the parameters of Zettlr. So hit `Cmd/Ctrl+,` or press the cog in the toolbar to open the settings dialog. Adjust the following settings:
+Der erste Schritt besteht darin, einige der Parameter von Zettlr anzupassen. Drücke `Cmd/Ctrl+,` oder drücke das Zahnrad in der Symbolleiste, um den Einstellungsdialog zu öffnen. Passe die folgenden Einstellungen an:
 
-- General Tab
-    - File Information: On
-    - Sidebar mode: Expanded
-- Editor Tab
-    - Select all dictionaries for languages in which you will write (e.g., en-UK, de-DE, and fr-FR)
-- Export Tab
-    - Select the Current Working Directory as the export directory
-    - Remove internal links completely
-- Zettelkasten Tab
-    - Adjust the settings according to the Zettelkasten-Guide
-- Attachments Tab
-    - Enter all file extensions of the files you are likely to be using. This way all of these files will show up in the attachment bar to the right of the app
+- Registerkarte *Allgemein*
+    - Datei-Informationen: An
+    - Seitenleisten-Modus: Erweitert
+- Registerkarte *Editor*
+    - Wähle alle Wörterbücher für die Sprachen aus, in denen du schreiben willst (z. B. en-UK, de-DE und fr-FR)
+- Registerkarte *Export*
+    - Wähle das aktuelle Arbeitsverzeichnis als Exportverzeichnis
+    - Interne Links vollständig entfernen
+- Registerkarte *Zettelkasten*
+    - Nimm die Einstellungen gemäß der Anleitung für den Zettelkasten vor
+- Registerkarte *Erweitert*
+    - Gib alle Dateierweiterungen der Dateien ein, die du wahrscheinlich verwenden wirst. Auf diese Weise werden alle diese Dateien in der Anhangsleiste auf der rechten Seite der App angezeigt
 
-After you are finished setting Zettlr up, hit "Save". Now Zettlr should look like a real IDE with three segments (directory tree, file list, and editor) and all settings active.
+Wenn du mit der Einrichtung von Zettlr fertig bist, klicke auf „Speichern“. Jetzt sollte Zettlr wie eine echte IDE mit drei Segmenten (Verzeichnisbaum, Dateiliste und Editor) aussehen und alle Einstellungen sind aktiv.
 
-## Step 2: Write!
+## Schritt 2: Schreiben!
 
-This guide is rather short, because it only shows you how you can set up Zettlr to create a fully loaded IDE. What you are then doing with it is completely up to you. A good point to start is to read the two guides on Zettelkästen and note-taking, because you will likely be using some concepts from these guides.
+Diese Anleitung ist recht kurz, denn sie zeigt dir nur, wie du Zettlr einrichten kannst, um eine vollwertige IDE zu erhalten. Was du dann damit machst, ist ganz dir überlassen. Ein guter Anfangspunkt ist die Lektüre der beiden Anleitungen zu Zettelkästen und Notizen, da du wahrscheinlich einige Konzepte aus diesen Anleitungen verwenden wirst.
 
-Here are all resources that may be interesting for you:
+Hier sind weitere Ressourcen, die für Sie interessant sein könnten:
 
-- [Guide: Zettlr as Zettelkasten](guide-zettelkasten.md)
-- [Guide: Zettlr as Note-Taking App](guide-notes.md)
-- [Zettlr Projects](../academic/projects.md)
-- [Create Presentations with Zettlr](../academic/presentations.md)
-- [Markdown for Zettlr](../reference/markdown-basics.md)
-- [Exporting to PDF](../core/export.md)
+- [Anleitung: Zettlr als Zettelkasten](guide-zettelkasten.md)
+- [Anleitung: Zettlr als Notiz-App](guide-notes.md)
+- [Zettlr-Projekte](../academic/projects.md)
+- [Präsentationen mit Zettlr erstellen](../academic/presentations.md)
+- [Markdown für Zettlr](../reference/markdown-basics.md)
+- [Exportieren nach PDF](../core/export.md)
