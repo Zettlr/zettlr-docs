@@ -74,6 +74,10 @@ This means that even when you export a Markdown document that you yourself creat
 
 Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we recommend you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL#a-note-on-security).
 
+### Custom Export Commands
+
+Zettlr allows you to specify arbitrary commands for exporting in the settings. This comes in handy when you, for example, use a pre-made Docker container that contains a specialized install of Pandoc, or when you want to, e.g., upload the file somewhere. However, this means that you need to be able to trust whichever command you run. Do never, under any circumstances, add or run a custom command in the settings which you do not fully trust.
+
 !!! note
 
-    **Rule of thumb**:  Always treat exports and imports as potentially unsafe.
+    **Rule of thumb**:  Always treat all exports and imports as potentially unsafe.
