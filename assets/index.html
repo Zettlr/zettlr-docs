@@ -14,7 +14,7 @@
     "@type": "Organization",
     "name": "Zettlr",
     "url": "https://www.zettlr.com",
-    "logo": "https://zettlr.com/themes/zettlr/assets/img/256x256.png",
+    "logo": "https://docs.zettlr.com/logo.png",
     "sameAs": [
       "https://www.twitter.com/zettlr",
       "https://facebook.com/zettlrapp",
@@ -42,15 +42,31 @@
       height: 100vh;
       margin: 0;
       padding: 0;
-      background-image: linear-gradient(90deg, #ddd 0%, #fff 20%, #fff 80%, #ddd 100%);
+      background-color: #fff;
+      color: #000;
+      cursor: default;
     }
 
-    div#header {
+    /* Wrapper */
+    div#app {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Header and footer */
+    header, footer {
       background-color: #333;
       color: white;
-      padding-left: 35vw;
+      padding: 0 calc(70vw / 2); /* 100vw size minus 30vw content width */
     }
 
+    footer {
+      line-height: 50px;
+      text-align: center;
+    }
+
+    /* Elements in the header */
     h1#main-head {
       line-height: 1.5em;
       margin: 0px;
@@ -62,22 +78,24 @@
       vertical-align: top;
     }
 
-    .container {
+    /* Other sections */
+    section[role=main] {
       width: 30vw;
       margin: 0 auto;
+      flex-grow: 1; /* Grow the container to take up most space (sans header/footer) */
     }
 
-    /* Make sure the page also works on smaller screens */
-    @media (max-width: 800px) {
-      .container { width: 90vw; }
-      div#header { padding-left: 5vw; }
+    section[role=main] ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
     }
 
-    div#navigation {
+    nav[role=navigation] {
       padding-bottom: 10px;
     }
 
-    div#navigation a {
+    nav[role=navigation] a {
       display: inline-block;
       color: #1cb27e;
       text-decoration: none;
@@ -85,17 +103,25 @@
       border-radius: 2px;
     }
 
-    div#navigation a:hover {
+    nav[role=navigation] a:hover {
       background-color: #1cb27e;
       color: white;
     }
 
-    .container ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    /* Media queries */
+
+    /* Make sure the page also works on smaller screens */
+    @media (max-width: 900px) {
+      section[role=main] {
+        width: 90vw;
+      }
+
+      header, footer {
+        padding: 0 5vw;
+      }
     }
 
+    /* Helper classes */
     a.button-link {
       text-decoration: none;
       display: inline-block;
@@ -106,7 +132,7 @@
       border: 1px solid #333;
       border-radius: 5px;
       transition: 0.2s all ease;
-      color: #333;
+      color: inherit;
     }
 
     a.button-link:hover {
@@ -114,38 +140,56 @@
       border-color: #1cb27e;
       color: white;
     }
+
+    /* For dark mode: dim the colors */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #666;
+        color: white;
+      }
+
+      a.button-link {
+        border-color: white;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Pull the main-head out of the container for a nicer visual effect -->
-  <div id="header">
-    <h1 id="main-head">
-      <img src="logo.png" alt="Zettlr" id="main-logo">
-      Zettlr Docs
-    </h1>
-    <div id="navigation">
-      <a href="https://www.zettlr.com/" target="_blank">Homepage</a> &bullet;
-      <a href="https://www.zettlr.com/download" target="_blank">Download</a> &bullet;
-      <a href="https://discord.gg/PcfS3DM9Xj" target="_blank">Discord</a> &bullet;
-      <a href="https://www.reddit.com/r/Zettlr/" target="_blank">Reddit</a> &bullet;
-      <a href="https://github.com/Zettlr/zettlr-docs" target="_blank">GitHub</a>
-    </div>
-  </div>
-
-  <div class="container">
-    <p>
-      Please select your language.
-    </p>
-    <p>
-      <ul>
-        <li><a href="/en" class="button-link"><span class="flag">🇬🇧</span> English</a></li>
-        <li><a href="/de" class="button-link"><span class="flag">🇩🇪</span> Deutsch</a></li>
-        <li><a href="/ja" class="button-link"><span class="flag">🇯🇵</span> 日本語</a></li>
-        <li><a href="/it" class="button-link"><span class="flag">🇮🇹</span> Italiano</a></li>
-        <li><a href="/fr" class="button-link"><span class="flag">🇫🇷</span> Français</a></li>
-        <li><a href="/es" class="button-link"><span class="flag">🇪🇸</span> Castellano</a></li>
-      </ul>
-    </p>
+  <div id="app">
+    <header>
+      <h1 id="main-head">
+        <img src="logo.png" alt="Zettlr" id="main-logo">
+        Zettlr Docs
+      </h1>
+      <nav role="navigation">
+        <a href="https://www.zettlr.com/" target="_blank">Homepage</a> &bullet;
+        <a href="https://www.zettlr.com/download" target="_blank">Download</a> &bullet;
+        <a href="https://discord.gg/PcfS3DM9Xj" target="_blank">Discord</a> &bullet;
+        <a href="https://www.reddit.com/r/Zettlr/" target="_blank">Reddit</a> &bullet;
+        <a href="https://github.com/Zettlr/zettlr-docs" target="_blank">GitHub</a>
+      </nav>
+    </header>
+  
+    <section role="main">
+      <p>
+        Please select your language. English is the official documentation, all
+        other languages are community translations.
+      </p>
+      <p>
+        <ul>
+          <li><a href="/en" class="button-link"><span class="flag">🇬🇧</span> English</a></li>
+          <li><a href="/de" class="button-link"><span class="flag">🇩🇪</span> Deutsch</a></li>
+          <li><a href="/ja" class="button-link"><span class="flag">🇯🇵</span> 日本語</a></li>
+          <li><a href="/it" class="button-link"><span class="flag">🇮🇹</span> Italiano</a></li>
+          <li><a href="/fr" class="button-link"><span class="flag">🇫🇷</span> Français</a></li>
+          <li><a href="/es" class="button-link"><span class="flag">🇪🇸</span> Castellano</a></li>
+        </ul>
+      </p>
+    </section>
+  
+    <footer>
+      &copy; 2017 &ndash; 2023 Zettlr
+    </footer>
   </div>
 </body>
 </html>
