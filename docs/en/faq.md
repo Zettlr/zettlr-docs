@@ -96,6 +96,10 @@ To force Pandoc to render single line breaks as such, end your line with a backs
 
 This can happen in case your computer decided to install the software in a non-standard directory. Zettlr will try its best to locate the applications but may fail if they are buried somewhere. Make sure the xelatex binary is within your PATH.
 
+## I exported a project and nothing happens!
+
+Assuming that you use glob pattern and you don't get an error message from Zettlr. This could be because the glob pattern doesn't produce a hit. You can try to remove any special characters such as `Å, ö õ` from the filename and edit the glob pattern.  
+
 ## On Export to PDF, I constantly get error messages!
 
 It might happen that you get certain errors when trying to export your files. There are two common types of errors, which you can solve by yourself.
