@@ -2,7 +2,7 @@
 
 ## I tried to install Zettlr on Windows, but there's a security warning saying I shouldn't install the app!
 
-Zettlr uses code signing as recommended by both Microsoft and Apple to ensure that you install only trustworthy software. However, on Windows, an application needs a sufficiently large amount of installations in order to suppress this security warning. This "trust" is assigned to a code signing certificate, not the application itself. As Zettlr uses private-issued certificates, these have a limited lifetime. The current certificate is valid until 2022, after which Zettlr will be signed using a new certificate which has to go through the whole process once again. As long as you download Zettlr either [from our homepage](https://www.zettlr.com/download) or from the [GitHub releases page](https://github.com/Zettlr/Zettlr/releases) (both are the same files) you can safely install the application and dismiss the warning.
+Zettlr uses code signing as recommended by both Microsoft and Apple to ensure that you install only trustworthy software. However, on Windows, an application needs a sufficiently large amount of installations in order to suppress this security warning. This "trust" is assigned to a code signing certificate, not the application itself. As Zettlr uses private-issued certificates, these have a limited lifetime. The current certificate is valid until 2025, after which Zettlr will be signed using a new certificate which has to go through the whole process once again. As long as you download Zettlr either [from our homepage](https://www.zettlr.com/download) or from the [GitHub releases page](https://github.com/Zettlr/Zettlr/releases) (both are the same files) you can safely install the application and dismiss the warning.
 
 ## I cannot dismiss the security warning on Windows and therefore cannot install the app!
 
@@ -23,6 +23,22 @@ We are getting more and more requests for mobile versions of Zettlr. We are very
 
 Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](markdown-basics.md)!
 
+## I have a very strict character or word limit for a text, but Zettlr's character/word counts are off!
+
+When writing text in Zettlr, you are writing *source code* that gets then exported into PDF, a Word document, or whatever format is required. During that export, the text will be "compiled", which means: citations are properly rendered, a list of references is added, bullet points will be converted to a proper list, etc. Zettlr itself only "sees" the source code and thus counts the characters that are present in your file, which will differ from the exported document.
+
+The actual word count or character count in the final exported file therefore can vary based on many variables:
+
+* The citation style you use — some are more verbose than others
+* Some code may get removed entirely
+* Some templates may generate title pages or tables of content, which increase the word/character count
+
+Zettlr cannot account for all of these variables. Therefore, here are a few tips to help you hit the goal:
+
+1. Most teachers won't care if you overshoot the mark by a few words or characters as long as it's reasonable.
+2. If you have to submit something as PDF, nobody will sit down and actually count the visible characters or words.
+3. If you for any reason cannot exceed the limit by even a single word or character, try to **undershoot** it, and export it when you're reaching the finish line to view the actual character or word count. After a few times, you will get a good gut feeling for how long the exported document will be based on Zettlr's word/character count.
+
 ## If I don't want to use Zettlr anymore, what would I need to do to switch programs?
 
 Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Projects or modified the directories, there will be small files named `.ztr-directory` present in some folders. To remove them, simply reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
@@ -38,12 +54,6 @@ $ sudo apt install gvfs-bin
 !!! note
 
     If you do not want to use the trash functionality, you can also enable the setting in the advanced preferences telling Zettlr to terminally remove a file if moving it to the trash fails. Please note that this will remove files irreversibly!
-
-## My `Home` and `End`-keys behave weirdly! How do I fix that?
-
-Zettlr uses the code editor CodeMirror under the hood. By default, it assumes that pressing either the `Home` or `End`-key should move the cursor to the beginning and ending of the _actual_ line. An actual line is defined as a contiguous stream of characters _without a line break_. This means that what we _see_ as a paragraph is actually one single line that has been wrapped when it gets too long (that is: the editor automatically inserts linebreaks when the line gets too long).
-
-There is an option in the editor preferences that allows you to control this behavior. If the preferences option "Use CodeMirror default actions for `Home` and `End`" is checked, this means that pressing the `Home` and `End` key will move the cursor to the beginning/end of the _actual_ line (that is: the beginning/end of the paragraph you see). If the option is checked, the keys will move the cursor to the beginning/end of the _visible_ line (that is, it will respect the automatically inserted linebreaks).
 
 ## What is the correct URI formatting for Markdown links?
 
@@ -61,16 +71,16 @@ To sum up: If you worry about how your links are treated, be more explicit. Two 
 
 In case the internal links used to interlink files don't work as expected, please make sure you've done the following things:
 
-1. Is the link recognised? Zettlr enables you to define what internal links look like. By default, they are encapsulated by `[[` and `]]`. When Zettlr recognises an internal link, it will colour it and if you hover over it with your mouse cursor, the contained text should become underlined. If it does not, Zettlr doesn't think that what you've written is a link. You can change this in the settings.
+1. Is the link recognised? Such links are encapsulated by `[[` and `]]`. When Zettlr recognises an internal link, it will colour it and if you hover over it with your mouse cursor, a tooltip should show up that gives you some initial information on the file, or tell you that the given file has not been found.
 2. Did you press the `Cmd` or `Ctrl` key while clicking on the link? Clicking with your mouse somewhere in the text means that you intend to edit the text, so you have to tell Zettlr that you actually want to follow the link.
-3. Did you use a valid filename or ID? Zettlr only opens files, if they report they _exactly_ have the given ID or the given filename. If nothing happens while clicking on the link, this surely means that a file with the given ID or filename does not exist in the system. Note that you must omit the file extension when creating a link. For example, to link to `my-file.md`, you only need to put `my-file` inside the brackets.
+3. Did you use a valid filename or ID? Zettlr only opens files that _exactly_ have the given ID or the given filename (case-insensitive). If nothing happens while clicking on the link, this surely means that a file with the given ID or filename does not exist in the system. Note that you must omit the file extension when creating a link. For example, to link to `my-file.md`, you only need to put `my-file` inside the brackets.
 4. Is the file currently loaded into Zettlr? Internal linking only works if Zettlr has read in the file.
 
 ## I know LaTeX and want to use it inside my Markdown files as well. Is this possible?
 
 Yes. Simply write your `LaTeX` statements where you want them. As soon as you export to PDF, Pandoc will take care of the rest and the statements will be interpreted by the PDF engine. Unfortunately, `LaTeX` syntax highlighting is not supported. Also, please note that Pandoc will clear all `LaTeX` blocks prior to exporting to anything other than PDF, which means that blocks within `\begin` and `\end`, for instance, will be missing completely from the final Office file. On HTML-export, all `LaTeX` blocks will be retained, but not converted to something else.
 
-## I can't seem to align the text just or right!
+## I can't seem to align the text justified or right!
 
 It's not a bug, it's a feature: Markdown does not have the respective formatting signs because text should always be justified or aligned left (for LTR languages) and therefore it does not belong to the set of necessary block formats Markdown offers. Yet, you can still use `LaTeX` commands to render them left or right. Simply enclose the text you want to align right or justify in `\begin{<option>}` and `\end{<option>}`, where `<option>` may either refer to `flushleft`, `flushright` or  put a `\justify` in front of a paragraph you want to be justified. [Learn more at sharelatex.com](https://www.sharelatex.com/learn/Text_alignment).
 
@@ -90,7 +100,7 @@ Examples:
 
 !!! note
 
-    Note that the special classes need to be the last thing on the line. Even comments will break this behaviour.
+    Note that these brackets need to be the last thing on the line. Even comments afterward will break this behaviour.
 
 ## I want to use single line breaks and not create new paragraphs. When I simply hit Enter once, it removes the single line break!
 
