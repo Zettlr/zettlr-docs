@@ -163,3 +163,170 @@ body.dark #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line,
   background-color: <background-hex-code>;
 }
 ```
+
+### Individual Header Styles
+
+```css
+/* header h1, h2: smaller size */
+#editor .heading-tag{
+  font-size:.6em
+}
+
+/* header ###: color and font */
+body #editor .CodeMirror .cm-formatting-header-1, body #editor .CodeMirror .cm-formatting-header-2, body #editor .CodeMirror .cm-formatting-header-3, body #editor .CodeMirror .cm-formatting-header-4, body #editor .CodeMirror .cm-formatting-header-5, body #editor .CodeMirror .cm-formatting-header-6, body #editor .CodeMirror .cm-url {
+  color: rgb(136, 168, 210, 0.9);
+  letter-spacing: -0.5px;
+  font-family: 'PlayfairDisplay-regular';
+
+/* header text: formatting and color */
+.cm-header{
+  font-family: 'Lora-medium', serif;
+  line-height: 110%;
+  }
+
+#editor .cm-header-1{
+  color: #ef6fab; 
+  font-size:36px; 
+  font-weight:500}
+
+#editor .cm-header-2{
+  color: #9781cf;
+  font-size:28px;
+  font-weight: 400;
+}
+#editor .cm-header-3{
+  color: #39a2bd; 
+  font-size:24px;
+  font-weight: 400;
+  }
+
+#editor .cm-header-4{
+  color: #64a08f;
+  font-size:20px;
+  font-weight: 400;
+}
+
+#editor .cm-header-5 {
+  color: #7c90ab;
+  font-size:18px;
+  font-weight: 400
+}
+
+#editor .cm-header-6 {
+  color: #987CAB;
+  font-size:16px;
+  font-weight: 400
+}
+
+```
+
+#### Toggle marker for collapsing headers
+
+This section deals with the formatting of the triangle and ellipses markers for opening and collapsing Headers. 
+
+
+```css
+/* color for toggle triangle */
+body #editor .CodeMirror .CodeMirror-guttermarker-subtle {
+    color: rgb(136, 168, 210, 1);
+}
+
+/* toggle when collapsed: add rounded box */
+body #editor .CodeMirror .CodeMirror-foldgutter-folded {
+  background-color: rgba(248, 245, 234, 0.2);
+  border: 1px solid rgb(136, 168, 210, 0.2);}
+
+/* ... on right of header when folded: rounded box */
+body #editor .CodeMirror .CodeMirror-foldmarker {    
+    background-color: rgba(248, 245, 234, 0.2) ;
+    color: var(--grey-1);
+    border-radius: 6px;
+    border: 1px solid rgb(136, 168, 210, 0.2);
+    
+ ```
+ 
+
+### Other elements
+
+Highlight, comments, inline code, code blocks, block quote, citation
+
+```css
+/* highlight color: light green */
+body #editor .CodeMirror .cm-highlight {
+  background-color: rgba(179,242,171, 0.5); !important}
+}
+
+/* comments & inline code: pink text with rounded box */
+ body #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code)  {
+   background-color: rgba(177, 234, 252,0); 
+   color: #eb569c; /* pink */
+   font-weight: 500;
+   border-radius: 0px; /*1st and last child */
+   border:0px solid #eb569c;
+}
+
+/* comment border: rounded edges */
+body #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code):first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+body #editor .CodeMirror .cm-comment:not(.cm-formatting):not(.cm-fenced-code):last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; 
+}
+
+/* code block background: light purple/blue */
+body #editor .CodeMirror .code-block-line {
+  background-color: rgba(172,200,255,0.3)}
+
+/* code block text: purple text */
+body #editor .CodeMirror .cm-fenced-code {
+  color: rgba(60, 65, 184, 0.7); !important}
+
+/* block quote background color: grey purple */  
+body #editor .CodeMirror .cm-quote, body #editor .CodeMirror .cm-quote-1{
+  background-color: rgba(172,200,229,0.4);
+}
+
+/* citation color: grey purple */
+body #editor .CodeMirror .citeproc-citation{
+  background-color: rgba(172,200,229,0.4);
+  border-radius:12px;
+}
+
+```
+#### Tags
+
+```css
+/* tags: rounded box */
+body #editor .CodeMirror .cm-zkn-tag{
+  border:1.5px outset rgb(136, 168, 210, 0.3);
+  border-radius: 10px;
+  padding-left:4px;
+  padding-right:5px;
+  font-size: 16px;
+  font-weight:200;
+  font-family: 'SourceCodePro', monospace;
+  letter-spacing: 0.4px;
+  color: rgb( 83, 116, 155, 0.9);
+  background-color: rgba(244, 254, 232,0.2)
+  
+}
+```
+
+Custom colors for custom tags. You can adjust by inserting the name of your tag in `.cm-zkn-tag-[]`
+```css
+/* custom tag colors */
+body #editor .CodeMirror .cm-zkn-tag-current {
+   /* Tags: current */
+   background-color: rgb(235,86,156,0.8);
+   color: rgba(234, 234, 252,1)
+}
+
+body #editor .CodeMirror .cm-zkn-tag-done {
+   /* Tags: done */
+   background-color: rgb(62, 162, 83,0.7);
+   color: rgba(234, 234, 252,1)
+}
+
+```
