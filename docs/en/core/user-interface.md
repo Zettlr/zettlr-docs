@@ -44,9 +44,9 @@ The next big element that you will see here is the file manager to the left side
 
 The file manager has three modes that you can choose in the preferences:
 
-* **Thin**: The thin mode, which is the default, shows either a tree of your folders, or a list of files within the currently selected folder. When you start Zettlr for the first time, you can see the file list. Switch to the folder list by moving your mouse to the top of the file manager and click the appearing arrow button. You can also horizontally scroll if your mouse or trackpad supports that.
+* **Thin**: The thin mode shows either a tree of your folders, or a list of files within the currently selected folder. When you start Zettlr for the first time, you can see the file list. Switch to the folder list by moving your mouse to the top of the file manager and click the appearing arrow button. You can also horizontally scroll if your mouse or trackpad supports that.
 * **Expanded**: Same as the thin mode, but both the folder and file lists will be shown at the same time. Makes most sense if you have a wide monitor.
-* **Combined**: This is a more classic mode that will show both folders and files interleaved. It shows you less file information at a glance, but is much faster to navigate.
+* **Combined** (default): This is a more classic mode that will show both folders and files interleaved. It shows you less file information at a glance, but is much faster to navigate.
 
 At the top of the file manager, you can find a filter textbox that you can use to quickly search for files and folders inside your workspaces. You can search for any metadata here, including the file or folder name, the file title, or keywords you use inside your files. You can focus the textbox by pressing `Cmd/Ctrol+Shift+T`.
 
