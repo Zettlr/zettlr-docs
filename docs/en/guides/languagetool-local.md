@@ -1,6 +1,6 @@
 # Setting up LanguageTool locally
 
-Zettlr features an integration with LanguageTool, an online-services that not just checks your spelling, but also grammar and style. However, being an online service, the default setting of Zettlr requires a connection to servers operated by LanguageTooler GmbH, which can constitute a privacy risk since your texts have to be sent over the internet to be checked.
+Zettlr features an integration with LanguageTool, an online service that not only checks your spelling, but also grammar and style. However, being an online service, the default setting of Zettlr requires a connection to servers operated by LanguageTooler GmbH, which can constitute a privacy risk since your texts have to be sent over the internet to be checked.
 
 However, one reason why Zettlr contains a LanguageTool integration is because there is also the possibility to install the service locally on your computer in which case none of your text makes it out into the internet.
 
@@ -32,7 +32,7 @@ After you've done so, click in the large search bar at the top of the window and
 
 To "pull" a Docker image just means to download it on your computer. As you can see, it roughly needs 500 MB of disk space.
 
-After you have down so, click on "Images" in the left sidebar of Docker. You will see the image displayed there. In the "Actions" column click on the "Play" button to start the image.
+After you have done so, click on "Images" in the left sidebar of Docker. You will see the image displayed there. In the "Actions" column click on the "Play" button to start the image.
 
 A new window will pop up allowing you to "Run a new container". At this point, you will want to first expand the "Optional settings".
 
