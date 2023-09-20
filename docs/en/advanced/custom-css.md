@@ -55,10 +55,27 @@ In case you do not like the default font delivered with Zettlr, or need to chang
 The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback. Also, if your font name contains spaces, make sure to surround it with quotation marks, e.g., `"Times New Roman"`.
 
 ```css
-body #editor .CodeMirror {
+body .main-editor-wrapper .cm-editor{
     font-family: '<your-font-name here>', <placeholder>;
 }
 ```
+
+### Visualising Line Endings
+
+In case you want to see where your linefeeds are, you can display the pilcrow symbol (¶) at the end of your lines by using the following Custom CSS:
+
+```css
+.cm-line:not(:last-child)::after {
+  content: "¶";
+  color: #666;
+}
+```
+
+![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
+
+!!! warning
+
+    The example CSS Code Snippets above have been tested with v3.0.1, but the ones below haven't been updated in some time, so are unlikely to work out of the box.
 
 ### Custom Background Images
 
