@@ -106,9 +106,33 @@ In case you want to see where your linefeeds are, you can display the pilcrow sy
 
 ![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
 
+### Change the Active Line Styling in Typewriter Mode
+
+You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
+
+*Light mode*
+
+```css
+body .main-editor-wrapper .cm-editor .cm-content .typewriter-active-line {
+  border-top: 2px solid <top-border-hex-code>;
+  border-bottom: 2px solid <bottom-border-hex-code>;
+  background-color: <background-hex-code>;
+}
+```
+
+*Dark mode*
+
+```css
+body.dark .main-editor-wrapper .cm-editor .cm-content .typewriter-active-line {
+  border-top: 2px solid <top-border-hex-code>;
+  border-bottom: 2px solid <bottom-border-hex-code>;
+  background-color: <background-hex-code>;
+}
+```
+
 !!! warning
 
-    The example CSS Code Snippets above have been tested with v3.0.1, but the ones below haven't been updated in some time, so are unlikely to work out of the box.
+    The example CSS Code Snippets above have been updated and tested with v3.0.1 and so should work with newer versions of Zettlr, but the ones below haven't been updated in some time, and are unlikely to work out of the box.
 
 
 ### Set a maximum width for the text
@@ -149,27 +173,3 @@ For the distraction free mode, the CSS snippet needs to be modified as follows:
 ```
 
 By adjusting the calc functions for the two different modes, the same line width can be achieved with and without the file manager/sidebar. 
-
-### Change the Active Line Styling in Typewriter Mode
-
-You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
-
-*Light mode*
-
-```css
-body #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
-  border-top: 1px solid <top-border-hex-code>;
-  border-bottom: 1px solid <bottom-border-hex-code>;
-  background-color: <background-hex-code>;
-}
-```
-
-*Dark mode*
-
-```css
-body.dark #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body.dark .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body.dark .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
-  border-top: 1px solid <top-border-hex-code>;
-  border-bottom: 1px solid <bottom-border-hex-code>;
-  background-color: <background-hex-code>;
-}
-```
