@@ -55,11 +55,10 @@ In case you do not like the default font delivered with Zettlr, or need to chang
 The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback. Also, if your font name contains spaces, make sure to surround it with quotation marks, e.g., `"Times New Roman"`.
 
 ```css
-body #editor .CodeMirror {
+body .main-editor-wrapper .cm-editor{
     font-family: '<your-font-name here>', <placeholder>;
 }
 ```
-
 ### Custom Background Images
 
 With the following code, you can make your editor have a different background image everytime you start it. The images are taken from Unsplash.com, a nice site with free photos. It uses the `Source API`, which will simply spit out a different image every time the URL is visited. You can test it out by simply [visiting the page and refreshing a few times](https://source.unsplash.com/random)! Please refer to the [Unsplash Source API reference](https://source.unsplash.com/) for more options (such as using an image of the day).
@@ -71,41 +70,70 @@ With the following code, you can make your editor have a different background im
 ```css
 /* Enter your custom CSS here */
 
-#editor {
+.main-editor-wrapper .cm-editor{
     background-color: transparent;
     background-image: url('https://source.unsplash.com/random');
     background-size: cover;
     background-position: center center;
 }
 
-body #editor .CodeMirror-sizer, body #editor .CodeMirror-gutter {
+body .main-editor-wrapper .cm-editor .cm-content{
     background-color: rgba(255, 255, 255, .8);
-    height: 100%;
 }
-
-body.dark #editor .CodeMirror-sizer, body.dark #editor .CodeMirror-gutter {
+body .main-editor-wrapper .cm-editor{
+    background-color: rgba(255, 255, 255, .8);
+}
+body.dark .main-editor-wrapper .cm-editor .cm-content{
     background-color: rgba(0, 0, 0, .8);
 }
-
-#editor .CodeMirror {
-    background-color: transparent;
-}
 ```
+*Light Mode*
+![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash_light.png)
 
-![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash.png)
+*Dark Mode*
+![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash_dark.png)
 
 ### Visualising Line Endings
 
 In case you want to see where your linefeeds are, you can display the pilcrow symbol (¶) at the end of your lines by using the following Custom CSS:
 
 ```css
-.CodeMirror-line:not(:last-child)::after {
+.cm-line:not(:last-child)::after {
   content: "¶";
   color: #666;
 }
 ```
 
 ![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
+
+### Change the Active Line Styling in Typewriter Mode
+
+You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
+
+*Light mode*
+
+```css
+body .main-editor-wrapper .cm-editor .cm-content .typewriter-active-line {
+  border-top: 2px solid <top-border-hex-code>;
+  border-bottom: 2px solid <bottom-border-hex-code>;
+  background-color: <background-hex-code>;
+}
+```
+
+*Dark mode*
+
+```css
+body.dark .main-editor-wrapper .cm-editor .cm-content .typewriter-active-line {
+  border-top: 2px solid <top-border-hex-code>;
+  border-bottom: 2px solid <bottom-border-hex-code>;
+  background-color: <background-hex-code>;
+}
+```
+
+!!! warning
+
+    The example CSS Code Snippets above have been updated and tested with v3.0.1 and so should work with newer versions of Zettlr, but the ones below haven't been updated in some time, and are unlikely to work out of the box.
+
 
 ### Set a maximum width for the text
 
@@ -145,27 +173,3 @@ For the distraction free mode, the CSS snippet needs to be modified as follows:
 ```
 
 By adjusting the calc functions for the two different modes, the same line width can be achieved with and without the file manager/sidebar. 
-
-### Change the Active Line Styling in Typewriter Mode
-
-You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
-
-*Light mode*
-
-```css
-body #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
-  border-top: 1px solid <top-border-hex-code>;
-  border-bottom: 1px solid <bottom-border-hex-code>;
-  background-color: <background-hex-code>;
-}
-```
-
-*Dark mode*
-
-```css
-body.dark #editor .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body.dark .quicklook .body .CodeMirror .CodeMirror-linebackground.typewriter-active-line, body.dark .dialog .CodeMirror .CodeMirror-linebackground.typewriter-active-line {
-  border-top: 1px solid <top-border-hex-code>;
-  border-bottom: 1px solid <bottom-border-hex-code>;
-  background-color: <background-hex-code>;
-}
-```
