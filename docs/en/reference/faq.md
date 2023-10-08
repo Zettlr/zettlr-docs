@@ -8,6 +8,10 @@ Zettlr uses code signing as recommended by both Microsoft and Apple to ensure th
 
 In many companies the IT department puts restrictions in place so that you cannot dismiss a security warning on your own and therefore cannot install the app. If you work in such a restricted environment, it may be best to just talk to your IT department and ask them to whitelist Zettlr so that you (or your admins) can install the app. If they have questions regarding the origins and/or trustworthyness, it may be best to point them [to Zettlr's GitHub repository](https://github.com/Zettlr/Zettlr).
 
+## macOS asks me whether I want to install "XCode Commandline tools" when I start Zettlr
+
+Zettlr offers some basic `git` functionality, and for that must check whether `git` is installed on the computer. While on Windows and Linux, this is a simple check during startup, macOS will notice that Zettlr is interested in the command and, if `git` is not yet installed, offer the installation of the "XCode commandline tools" that, among other things, includes `git`. There is no way for us to reliably suppress this message, so you'll either need to decline everytime you open Zettlr, or simply install the command line tools. Installing the commandline tools is a safe procedure and you won't notice that they are installed. They could potentially even bring benefits. See [this Apple discussion thread on what the commandline tools are](https://developer.apple.com/forums/thread/13781). See also the [related issue on GitHub](https://github.com/Zettlr/Zettlr/issues/4709).
+
 ## I removed the tutorial folder from my computer, and now I cannot get it back!
 
 When Zettlr detects it is being run for the very first time on a computer, it will automatically copy a folder with some Markdown files into your Documents-folder. These Markdown files contain some basic introduction on how to use Zettlr. However, they will only be copied once. In order to get these files if you later realised that you would like to revisit the tutorial, you have two options:
