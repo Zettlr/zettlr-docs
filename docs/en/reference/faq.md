@@ -47,18 +47,6 @@ Zettlr cannot account for all of these variables. Therefore, here are a few tips
 
 Simply uninstall Zettlr and begin using another program of your choice. Zettlr does not mess with your files. If you have been using Projects or modified the directories, there will be small files named `.ztr-directory` present in some folders. To remove them, simply reset the sorting of directories to default, and remove all projects prior to uninstalling the app (or manually remove these files afterwards).
 
-## I'm using Linux and deleting files doesn't move them to the trash!
-
-Zettlr never completely removes your files. It always only moves them to the trash so in case you accidentally remove a file you need, you can always restore it. On macOS and Windows systems, the trash is activated by default, but on some Linux distributions, you need to activate the trash functionality manually. On Linux, Zettlr (to be more precise: the underlying Electron framework) makes use of the binary `gvfs-trash` to move files to the trash. To make use of this functionality, please make sure you have `gvfs-trash` installed! On Debian/Ubuntu you can do so by running the following code in a terminal:
-
-```bash
-$ sudo apt install gvfs-bin
-```
-
-!!! note
-
-    If you do not want to use the trash functionality, you can also enable the setting in the advanced preferences telling Zettlr to terminally remove a file if moving it to the trash fails. Please note that this will remove files irreversibly!
-
 ## What is the correct URI formatting for Markdown links?
 
 By default, Zettlr renders Markdown links in the format `[Your Link Text](your-link)` to be clickable (when holding down `Cmd` or `Ctrl`). However, Markdown links can point both to websites and to other files on your computer. You can omit a lot of information from your link, and Zettlr makes use of a heuristic to determine the information on its own, but it might infer false context for what you intend. Here's how it works:
