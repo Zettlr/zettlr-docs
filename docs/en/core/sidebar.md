@@ -1,8 +1,10 @@
 # The Sidebar
 
-The sidebar is a context-sensitive element that displays relevant additional information regarding your current directory and current file. You can open it by using either the sidebar icon in the toolbar or by pressing `Cmd/Ctrl+?`.
+The sidebar is a context-sensitive element that displays relevant additional information regarding your current directory and current file. You can open it by using either the sidebar icon in the toolbar or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>?</kbd>.
 
-> Please note that strictly speaking Zettlr features two sidebars: The sidebar to the left is referred to as the [File Manager](file-manager.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
+!!! note
+
+    Please note that strictly speaking Zettlr features two sidebars: The sidebar to the left is referred to as the [File Manager](file-manager.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
 
 After you open the sidebar, you can see that it has four tabs. These are (from left to right): Table of Contents, References, Related Files, and other files.
 
@@ -20,9 +22,11 @@ The references tab contains a bibliography of all the references you cite within
 
 ![The sidebar with the second tab open, the references section](../img/sidebar_references.png)
 
-To learn more about citing references with Zettlr, have a look at the documentation page for [citations](../academic/citations.md).
+To learn more about citing references with Zettlr, have a look at the documentation page for [citations](citations.md).
 
-> Please note that the references will be displayed using the built-in CSL style. During export, however, Pandoc will use whichever style you define in your preferences to match your expectations. The references in the sidebar are for preview purposes.
+!!! note
+
+    Please note that the references will be displayed using the built-in CSL style. During export, however, Pandoc will use whichever style you define in your preferences to match your expectations. The references in the sidebar are for preview purposes.
 
 ## Related Files
 
@@ -40,4 +44,6 @@ The last section contains files that reside within the currently selected direct
 
 You can determine which files are being listed here by adding the file extensions in the advanced preferences tab. Those file extensions are case-insensitive, so adding `.jpeg` will show `.jpeg` files as well as `.JPEG` and `.JpEg`.
 
-> This tab is especially useful if you want to add some images to your Markdown files. Simply drag and drop them onto the editor, and Zettlr will make sure to wrap them in an image tag.
+!!! tip
+
+    This tab is especially useful if you want to add some images to your Markdown files. Simply drag and drop them onto the editor, and Zettlr will make sure to wrap them in an image tag.

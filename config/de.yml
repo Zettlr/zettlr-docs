@@ -45,6 +45,7 @@ nav:
   - FAQ: faq.md
 theme:
   name: readthedocs
+  locale: de
   custom_dir: ../theme_override
   highlightjs: True
   prev_next_buttons_location: both
@@ -54,6 +55,7 @@ theme:
     - yaml
     - tex
 markdown_extensions:
+    - def_list
     - toc:
         permalink: True
 plugins:

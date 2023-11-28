@@ -4,26 +4,67 @@ Markdown tables are a notoriously difficult thing. Due to the nature of Markdown
 
 ## Introduction to Tables
 
-Tables in Markdown are written using a very basic syntax -- each line resembles one row and the table cells are encapsulated with pipe-characters:
+Tables in Markdown can be written in one of two styles: there are **grid** tables and there are **pipe** tables. These names refer to what the table will look like.
 
-```
+A grid table would look something like this:
+
+```markdown
++----------+----------+
 | Cell A:A | Cell A:B |
++==========+==========+
+| Cell B:A | Cell B:B |
++----------+----------+
+```
+
+Result:
+
+<!-- NOTE: MkDocs doesn't support grid tables -->
+
+| Cell A:A | Cell A:B |
+|----------|----------|
+| Cell B:A | Cell B:B |
+
+The same table can be produced with only pipes:
+
+```markdown
+| Cell A:A | Cell A:B |
+|----------|----------|
 | Cell B:A | Cell B:B |
 ```
 
-Optionally, you can also add a heading row, which may also indicate the alignment using colons (left, right, or center):
+Result:
 
+| Cell A:A | Cell A:B |
+|----------|----------|
+| Cell B:A | Cell B:B |
+
+!!! note
+
+    The entire syntax for grid tables can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#extension-grid_tables). The syntax for pipe tables are located [here](https://pandoc.org/MANUAL.html#extension-pipe_tables).
+
+Alignment of the table columns can be specified with colons (`:`). A single left colon or none specifies the default left-alignment, whereas a right colon specifies right alignment, and two colons specify centered alignment:
+
+```markdown
+| Amount | Description | Price |
+|:-------|:-----------:|------:|
+| 3      | Carottes    | $1    |
+| 1      | Celery      | $0.50 |
+| 1      | Bread       | $4.69 |
 ```
-| Left aligned | Centered content | Right aligned |
-|--------------|:----------------:|--------------:|
-| Lorem        | Ipsum            | Dolor         |
-```
+
+Result:
+
+| Amount | Description | Price |
+|:-------|:-----------:|------:|
+| 3      | Carottes    | $1    |
+| 1      | Celery      | $0.50 |
+| 1      | Bread       | $4.69 |
 
 Note that it doesn't matter how you align the table's contents in your documents, as long as the colons are placed accordingly. The table will be exported using the correct alignment later on.
 
-But as you can see, even with only two words per column, the Markdown table tends to get rather long. As you cannot use multiple rows for cells, here's where you tend to get into serious problems when you need to insert a whole sentence in each cell. Take for instance the following example:
+But as you can see, Markdown tables tends to get rather wide due to the many characters involved. Take for instance the following example:
 
-```
+```markdown
 | # | Name              | Description                                                                                                                                                                     | Price     | Quantity |
 |--:|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|----------|
 | 1 | Sonic Screwdriver | A device for all purposes. It replaces all of your current tools to account for a multi-dimensional journey through space and time.                                             | $99.99    | 1        |
@@ -36,64 +77,74 @@ In Zettlr, it would look like the following:
 
 ![long_markdown_table.png](../img/long_markdown_table.png)
 
+Even though the table cells are each aligned to fit the total width of each column, you cannot make out the fact that this is indeed a valid Markdown table, as each line gets wrapped and the table structure is impossible to discern. Without the counter in the first column, you would even have a hard time making out the number of rows in it.
 
-Even though the table cells are each aligned to fit the total width of each column, you cannot make out the fact that this is indeed a valid Markdown table, as each line gets wrapped and the table structure is impossible to see. Without the counter in the first column, you would even have a hard time making out the number of rows in it.
+## Inserting Tables
+
+Since creating the basic structure of a table can be cumbersome, Zettlr includes a feature that can generate the correct syntax. To insert a table in your document, click on the corresponding toolbar button that looks like a table.
+
+A pop-up will open that shows you a grid. When you move your mouse over the grid, the top-left cells of this grid will be highlighted. Move the mouse cursor until the correct amount of columns and rows are highlighted, and click. Zettlr will then insert the basic scaffold for a table of that size.
 
 ## The Table Editor
 
-Obviously, writing Markdown tables is sometimes unavoidable, but always painful. It would be great if you could simply edit the table like you are used to from, e.g., Word processors, right? That's where Zettlr's built-in **table editor** comes into play!
+Obviously, writing Markdown tables is sometimes unavoidable, but always painful. To make creating tables easier, Zettlr ships with a table editor that is enabled by default. The table editor will detect Markdown tables in your document and render them as actual tables that support line wrapping and contain less cluttered borders.
 
-To aid you with writing tables, Zettlr ships with a powerful table editor that brings to you everything you need to not completely lose your mind while creating tables in your documents. With the table editor, the above mentioned table looks like this:
+With the table editor, the above mentioned table looks like this:
 
 ![A table as displayed by the table editor](../img/zettlr_table.png)
 
-Much better, am I right? Zettlr's table editor takes all Markdown tables found in your document, converts them into an HTML representation with editable content cells, and displays these instead of the underlying Markdown. This completely hides the Markdown source but in this case this approach is much more favourable than the [WYSIWYM approach](../concepts/wysiwym.md).
+### Editing Tables
 
-> Attention! The table editor still has problems with rendering citations, footnotes, and math formulae. If you want to preview any of these items in tables, you may have to disable the table editor in Preferences.
+To edit tables with the table editor, click into any of the cells of the table and begin writing. The regular Markdown syntax is supported.
 
-The table editor needs to be enabled in Preferences, under the `Editor` tab. When enabled, it will recognize the tables in the active document and make them easily editable. You can **enter the editing mode** simply by clicking into any of the cells inside the table and adding your content. The active cell will be highlighted for you. Additionally, the keyboard navigation that you know from famous word processors has also been implemented so that you can use `Tab`, `Return`, and the Arrow keys to navigate the table. Additionally, adding and removing columns and rows is also possible with the table editor's **edge buttons**. These are buttons that will appear when you hover over the table and let you perform various actions on the table.
+Whenever a cell is currently active (indicated by a shimmer around its borders), you will see the Markdown source of the cell. Every cell that is not active will be rendered as HTML to make the display less cluttered.
 
-> Attention! When you activate the table by clicking inside one of the cells, you are entering the edit mode. To save your changes, make sure to **click outside of the table once you are done**, to exit the editing mode! Only then will the changes you've made to the table be applied to the underlying Markdown table.
+There is a slightly translucent icon on the top of the table that will turn from green to red as you edit your table. In order to save the changes to the table, you need to click that icon. Once the changes are applied to the underlying Markdown document, the icon will turn green again. You can also press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> while the table is focused.
+
+!!! warning
+
+    While the table editor aims to make editing tables easier, it does so at the expense of having the table contents automatically update. Therefore, always remember to click the icon or press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> before leaving or closing the document. As a tip: You can press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> twice after modifying a table to first apply the changes to the table to the document and immediately afterwards save the entire document.
 
 ## Keyboard Navigation
 
-You have the following shortcuts at your disposal:
+While editing a table, the following keyboard shortcuts are available:
 
-- `Tab`: Move to the next cell. If the last column is active, move to the first cell in the next row. If your cursor was in the last column of the last row, a new row will be added automatically.
-- `Shift-Tab`: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
-- `Return`: Move to the same column in the next row. If your cursor was in the last row, a new row will be added automatically.
-- `Arrow Up/Arrow Down`: Move to the same column in the previous/next row. No new rows will be added if you are in the first or last row.
-- `Arrow Left/Arrow Right`: Move the cursor left/right. If the cursor is at the beginning/end of the cell's contents, move to the previous/next cell.
+- <kbd>Tab</kbd>: Move to the next cell. If the last column is active, move to the first cell in the next row. If your cursor was in the last column of the last row, a new row will be added automatically.
+- <kbd>Shift</kbd>+<kbd>Tab</kbd>: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
+- <kbd>Return</kbd>: Move to the same column in the next row. If your cursor was in the last row, a new row will be added automatically.
+- <kbd>Arrow Up</kbd>/<kbd>Arrow Down</kbd>: Move to the same column in the previous/next row. No new rows will be added if you are in the first or last row.
+- <kbd>Arrow Left</kbd>/<kbd>Arrow Right</kbd>: Move the cursor left/right. If the cursor is at the beginning/end of the cell's contents, move to the previous/next cell.
 
-With these shortcuts, you can easily enter content into your tables using natural movements. You would first want to fill out the table header and afterwards you want to add one set of data per line. Therefore, `Tab` is your friend here:
+With these shortcuts, you can easily enter content into your tables using natural movements. You would first want to fill out the table header and afterwards you want to add one set of data per line. Therefore, <kbd>Tab</kbd> is your friend here:
 
 ![A visual explainer how the keyboard navigation works](../img/zettlr_table_movement.png)
 
 ## The Edge Buttons
 
-Another goodie of the table editor are its so-called **edge buttons**. These are two groups of buttons and four directional buttons that will appear once you hover over a table:
+The table editor also features so-called **edge buttons**. These are two groups of buttons and four directional buttons that will appear once you hover over a table with your mouse:
 
 ![The table editor's edge buttons](../img/table_with_edge_buttons.png)
 
-They are transparent at the beginning to not cover up the content of your table. Move your cursor over an edge button to make it opaque. The buttons should be rather self-explanatory. The four `(+)` buttons at the center of the edges of the table will **add a row or column respectively** at the indicated position. So click the left add button to prepend a column to the left side of the currently active cell, and click the bottom add button to append a row below the currently active cell.
+They are transparent and turn opaque once you move your mouse cursor over them.
 
-At the top of each table, there are two additional button groups. The left button group contains three buttons that **align the currently active table column** left, center or right. Click one of the buttons to apply the alignment. The change will be displayed immediately for your visual confirmation.
+The four `(+)` buttons at the center of the edges of the table will **add a row or column respectively** at the indicated position. So click the left add button to prepend a column to the left side of the currently active cell, and click the bottom add button to append a row below the currently active cell.
 
-The right button group contains two buttons for **removing the currently active table row or column**. Simply place your cursor inside any cell inside the row or column you wish to remove and hit one of the buttons.
+At the top of each table, there are two additional button groups. The left button group contains three buttons that **align the active table column** left, center or right. Click one of the buttons to apply the alignment. The change will be displayed immediately for your visual confirmation.
 
-> Always make sure to place your cursor in the correct cell before removing columns or rows to save you pain in having to exit table editing, and applying the "Undo" command.
+The right button group contains two buttons for **removing the active table row or column**. Simply place your cursor inside any cell inside the row or column you wish to remove and hit one of the buttons.
+
+!!! note
+
+    Always make sure to place your cursor in the correct cell before removing columns or rows.
 
 ![How to determine the active row and column](../img/table_active_cell.png)
 
 ## Complex tables
 
-Until now we've only covered basic tables. But what if you need to display more complex tables? Then, even the table editor is at its end. Cells spanning multiple rows or columns are simply impossible given the limited syntax of Markdown tables. To add these, you'll have to use native HTML or LaTeX commands. These give you the maximum amount of freedom to do whatever you like.
+Even though Markdown strictly supports tables, these will only suffice for tables up to a certain complexity. Sometimes, you'll want to insert more complex tables, however. For example, regression model result tables can be quite complex and thus it can be difficult to represent them as simple Markdown tables.
 
-Always remember: Tables in Markdown are used as an _aid_ to your _writing_. This means if you are dealing with complex datasets which you need to add to a paper, e.g., in the sources section, there are great tools out there to [transform your RDataset](https://tex.stackexchange.com/questions/364225/export-tables-from-r-to-latex) or Stata datafile into LaTeX or HTML.
+Cells spanning multiple rows or columns are simply impossible given the limited syntax of Markdown tables. To add these, you'll have to use native HTML or LaTeX commands. These give you the maximum amount of freedom to do whatever you like.
 
-One idea to insert datasets into your papers without much copying and pasting would be to combine several features of Zettlr:
+What you can do in this case is to include such tables as raw LaTeX or HTML source code. There are great tools out there to [transform your RDataset](https://tex.stackexchange.com/questions/364225/export-tables-from-r-to-latex) or Stata datafile into LaTeX or HTML.
 
-- Create a project for your paper
-- Create the necessary files to structure your paper (e.g., `01 - Chapter 1.md`, `02 - Chapter 2.md`, `03 - Chapter 3.md`, `04 - Chapter 4.md`)
-- Inside your R-Project or Stata project, add a command that exports your data to a file `05 - Data.md` in your project directory whenever something changes.
-- As soon as you export your paper, the externally managed file `05 - Data.md` will be automatically appended, making sure your data is shipped with your document.
+To include such a file in a larger research project, you can make use of Zettlr's [project feature](../advanced/projects.md).

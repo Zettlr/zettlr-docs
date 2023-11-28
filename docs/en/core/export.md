@@ -1,31 +1,51 @@
-# Exporting in Zettlr
+# Exporting
 
-Zettlr allows you to export into many common file formats so that you can share your work with colleagues, friends, and (hopefully!) your publisher. However, Zettlr's export works slightly different than regular exports so you might want to check what happens whenever you export a file into a different format.
+The final step of any writing process is to export your document. Whether you write for a journal, for university, or for your supervisor, at some point, you'll need to hand off a document to a third party for further processing.
 
-> For advanced PDF exports Zettlr will attempt to use LaTeX. While you can also save files to PDF without it, installing LaTeX can be advantageous in various situations. You can see how to install LaTeX in our [guide on installing such a distribution](../installing-latex.md).
+!!! note
 
-## Exporting Files
+    Please see the section on special formats below for an explanation between the two different PDF formats that you can export to.
 
-There are two ways you can export files with Zettlr: Single file exports, and project exports. The single page export is located in the toolbar and can be opened with `Cmd/Ctrl+E`. It allows you to export in a variety of formats. After you choose the appropriate format, you can sometimes finetune some options for the specified exporter. You can also select whether to export to the temporary directory or the current file's directory (this setting can also be modified in the preferences).
+## Exporting the Current Document
 
-The second method to export files is to export whole [projects](../academic/projects.md). You can export a project by right-clicking the project directory, and choosing the export option.
+To export your current document, you can press <kbd>Cmd/Ctrl</kbd>+<kbd>E</kbd> or click the "Share" toolbar icon. This will open a small pop-up that allows you to specify your export. You can choose the export format from a dropdown list, and determine if you wish you export to the temporary directory, the file's folder, or if you want to choose a folder.
 
-> Note that exporting to a LaTeX PDF may yield errors in the form of `file <name>.sty not found`. These can be resolved by installing the missing LaTeX packages. Please refer to, e.g., [this guide](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages) on how to install additional LaTeX packages.
+Then, click on "Export" to start the process. After the export is finished, Zettlr will automatically open the exported file with the program associated with this format (e.g., it will open your PDF reader after exporting to PDF, or your browser after exporting to HTML).
 
-## Choosing the Destination
+!!! note
 
-Zettlr needs to know where to store your exported files. There are two options that you have: exporting them to your **temporary directory**, or to the **file's directory**. Both have their advantages and disadvantages.
+    By default, Zettlr will export to the temporary directory. This is a special folder that is emptied from time to time. This is great if you export a file often to double-check how it will look like, but if you want to retain an exported file, you should immediately "Save as" once the file is open and save the file to a different folder.
 
-> You can set the corresponding [setting](../reference/settings.md) in the Export tab.
+## Exporting Projects
 
-Exporting to the temporary directory allows you to export a file multiple times without you having to worry about removing the file again afterwards, because your temporary directory is regularly emptied by your computer. As Zettlr opens the file immediately with the default application (e.g., Word for `.docx` files), you can use the "Save as …" option to save the file to another location as soon as you are happy with the result.
+If you make use of the [project feature](../advanced/projects.md), exporting works differently. First, you need to right-click the project folder and select "Properties". Then you need to click on "Project Settings…" to open the preferences for this project. From the list of export formats (which is the same list that you see during single file exports), select all you want.
 
-If you don't worry about having exported files in between your Markdown files, you can also tell Zettlr to save the file in your current directory.
+After you selected all formats you need to export to, close the project settings again, right click on the project folder again, and this time choose "Export project". This option will be grayed out if you have no export formats selected.
 
-> Please note that Zettlr will always overwrite exported files without asking for a confirmation. If you add some text to an exported file, **always save it to another location!** It is generally a good idea never to keep files in your temporary directory if you would like to keep them.
+When you export a project, Zettlr will always export the files into the project directory and, instead of opening all the various files in the corresponding apps, it will show you the project folder after export.
 
-## Customizing Exports
+## Customizing Export Profiles
 
-There are two general ways of customising your exports, a.k.a. change the appearance of the file. The first is to make use of defaults files. These defaults files specify how Pandoc will export your files and you can modify these to change all your exports. Please see [our documentation on defaults files](defaults-files.md) for a comprehensive guide of using these.
+Each export format is powered by so-called "profiles", or "defaults files". These profiles contain settings that apply to every file you export using the profile, that is: they are valid for every export, regardless of which file or project you export.
 
-The second option is to use custom templates. The default templates Zettlr ships with are made to provide a good first impression while being compatible, but as you get more apt in working with Zettlr, you may wish to customize the way the files are layouted. There is a [comprehensive guide on templating](../academic/custom-templates.md) with Zettlr in the documentation.
+They are written using the YAML syntax, which you can also use in frontmatters. Since customizing profiles is rather complex, we have collected the [documentation on a separate page](../advanced/defaults-files.md).
+
+## Adding New Profiles
+
+You can also add new profiles. For example, you can add multiple exports to PDF, each of which use a separate template. This is very useful if you need to submit papers to various conferences which each have their own template. By adding those templates into their own respective profiles, you have various conferences available, into whose templates you can export each file.
+
+To see how to add custom templates to profiles, head over to [our page on custom templates](../advanced/custom-templates.md).
+
+## Special Formats: Textbundle, Textpack, and Simple PDF
+
+There are three special formats that work a little bit different: Textbundle, Textpack, and Simple PDF.
+
+Textbundle and Textpack are two formats that you can use to share a Markdown file alongside any images or other assets with other people. It is a standardized format that is recognized by many different apps. [See the official Textbundle website for a list of all apps that support TextBundle](https://textbundle.org/). Since Textbundle and Textpack do not require any conversion of the Markdown syntax, they do not need a profile.
+
+The **Simple PDF** export option is meant for situations in which you cannot install a LaTeX distribution on your computer, for example if you are using a managed company computer. Simple PDF allows you to export a PDF file without the need for LaTeX.
+
+When Zettlr exports to Simple PDF, what it will do is export your file to HTML and then print it using the same process your browser uses to print websites.
+
+!!! note
+
+    Because Simple PDF converts your files to HTML first, if you want to customize that export, you will have to adapt the HTML template, not the PDF one.

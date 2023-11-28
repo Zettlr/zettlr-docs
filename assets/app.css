@@ -7,12 +7,29 @@
  */
 
  /* Main section links */
- section.wy-nav-content-wrap a {
+section.wy-nav-content-wrap a {
   color: #1cb27e;
 }
 
 section.wy-nav-content-wrap a:hover {
   color: #127e58;
+}
+
+/* Keyboard shortcuts */
+kbd {
+  background-color: #f0f0f0;
+  color: #666;
+  border: 1px solid #c7c6c6;
+  border-radius: 4px;
+  font-size: 60%;
+  cursor: default;
+  min-width: 26px; /* line-height + border bottom */
+  line-height: 24px;
+  text-align: center;
+  display: inline-block;
+  padding: 0px 5px;
+  margin: 0 4px;
+  box-shadow: 1px 2px 0 0.5px #8685857e;
 }
 
 nav.wy-nav-top a,
@@ -29,13 +46,11 @@ nav.my-nav-top a:active {
  * Blockquotes are "misused" as info blocks
  */
 div[role="main"] blockquote {
-  color: #ffffff;
-  border: 1px solid #127e58;
-  border-radius: 5px;
+  color: #0e5a3f;
+  border-left: 5px solid #1cb27e;
   padding: 10px;
-  background-color: #1cb27e;
   position: relative;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 /*
@@ -46,7 +61,7 @@ div[role="main"] blockquote::before {
   font-family: "FontAwesome";
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: -30px;
   color: #127e58;
   font-style: normal;
   content: "\f05a";
@@ -62,12 +77,12 @@ div[role="main"] blockquote p { margin-bottom: 0px; }
  * Links in these boxes should have different colours.
  */
 div[role="main"] blockquote a {
-  color: #ffffff;
+  color: inherit;
   text-decoration: underline;
 }
 
 div[role="main"] blockquote a:hover {
-  color: #ffffff;
+  color: inherit;
   text-decoration: none;
 }
 

@@ -1,64 +1,70 @@
-site_name: Zettlr Docs
+site_name: Zettlr User Manual
 site_url: https://docs.zettlr.com/en
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: >-
     Our comprehensive documentation provides you with everything you need to
     know about how to make the most of Zettlr.
 site_author: Hendrik Erz
-copyright: "&copy; 2017-2020 by Zettlr"
+copyright: "&copy; 2017-2023 by Zettlr"
 docs_dir: ../docs/en
 site_dir: ../build/en
 edit_uri: edit/master/docs/en
 extra_css:
   - assets/app.css
 nav:
-  - Welcome: index.md
-  - First Steps:
-    - Setup: install.md
-    - Portable App: portable.md
-    - Installing LaTeX: installing-latex.md
-    - Getting Started: get-started.md
-    - Get involved: get-involved.md
-    - FAQ: faq.md
-    - Troubleshooting: troubleshooting.md
-  - Concepts:
-    - File management: concepts/workspaces.md
-    - Context: concepts/context.md
-    - WYSIWYM: concepts/wysiwym.md
-  - Core:
-    - Editor: core/editor.md
-    - Document Tabs: core/tabs.md
+  - Start: index.md
+  - Getting Started:
+    - Setup: getting-started/setup.md
+    - Migrating to a New Computer: getting-started/migrating.md
+    - Installing LaTeX: getting-started/installing-latex.md
+    - A Note on Security: getting-started/a-note-on-security.md
+    - Get involved: getting-started/get-involved.md
+    - Troubleshooting: getting-started/troubleshooting.md
+  - First Time Users:
+    - The User Interface: core/user-interface.md
+    - Importing Files: core/import.md
+  - Basic Usage:
+    - Workspaces and Folders: core/workspaces.md
+    - Files: core/files.md
     - File Manager: core/file-manager.md
-    - Assets Manager: core/assets-manager.md
-    - Defaults Files: core/defaults-files.md
-    - Custom CSS: core/custom-css.md
-    - Snippets: core/snippets.md
-    - AutoCorrect and MagicQuotes: core/autocorrect.md
-    - Searching: core/search.md
-    - Importing: core/import.md
-    - Exporting: core/export.md
-    - Table Editor: core/tables.md
-    - Localisation: core/localisation.md
+    - Split View: core/split-view.md
     - Sidebar: core/sidebar.md
-    - YAML Frontmatter: core/yaml-frontmatter.md
-    - Print and Preview: core/print-preview.md
+    - Writing Markdown: core/writing-markdown.md
+    - Style and Grammar: core/style-and-grammar.md
+    - Readability: core/readability.md
+    - Statusbar: core/statusbar.md
+    - AutoCorrect and MagicQuotes: core/autocorrect.md
+    - Citations: core/citations.md
     - Math: core/math.md
-  - Academic Tools:
-    - Citations: academic/citations.md
-    - Projects: academic/projects.md
-    - Presentations: academic/presentations.md
-    - Pomodoro Timer: academic/pomodoro.md
-    - Readability: academic/readability.md
-    - Zettelkasten Methods: academic/zkn-method.md
-    - Graph View: academic/graph.md
-    - Custom Templates: academic/custom-templates.md
+    - Snippets: core/snippets.md
+    - Searching: core/search.md
+    - Table Editor: core/tables.md
+    - Print and Preview: core/print-preview.md
+    - Exporting: core/export.md
+  - Advanced Usage:
+    - YAML Frontmatter: advanced/yaml-frontmatter.md
+    - Assets Manager: advanced/assets-manager.md
+    - Defaults Files: advanced/defaults-files.md
+    - Custom Templates: advanced/custom-templates.md
+    - Custom CSS: advanced/custom-css.md
+    - Projects: advanced/projects.md
+    - Pomodoro Timer: advanced/pomodoro.md
+    - Zettelkasten Methods: advanced/zkn-method.md
+    - Graph View: advanced/graph.md
+  - Guides:
+    - LanguageTool Locally: guides/languagetool-local.md
+    - Presentations: guides/presentations.md
+    - Submitting to a Journal using a LaTeX Template: guides/journal-latex-template.md
+    - Portable App: guides/portable.md
   - References:
+    - FAQ: reference/faq.md
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
     - Markdown Basics: reference/markdown-basics.md
     - Settings: reference/settings.md
     - Spell Checking: reference/spell-checking.md
 theme:
   name: readthedocs
+  locale: en
   custom_dir: ../theme_override
   highlightjs: True
   prev_next_buttons_location: both
@@ -66,8 +72,10 @@ theme:
     - javascript
     - css
     - yaml
-    - tex
+    - latex
 markdown_extensions:
+    - def_list
+    - admonition
     - toc:
         permalink: True
 plugins:

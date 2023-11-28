@@ -1,21 +1,30 @@
 # AutoCorrect and Magic Quotes
 
-AutoCorrect is a well-known feature that is also supported in Zettlr. You have a plethora of settings at hand to customize the way AutoCorrect works. You can enable and disable it in the [preferences](../reference/settings.md).
+Apart from checking your documents for style and grammar issues, Zettlr also features two tools that will already correct or replace your text as you write it. These tools are AutoCorrect and MagicQuotes.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iPRDPTtJuCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* **AutoCorrect** constantly scans your text as you write it. If it detects that you have written something that it can replace, it will do so.
+* **MagicQuotes** is a service that inserts typographically correct quotation marks instead of the generic ones.
 
 ## AutoCorrect
 
-AutoCorrect works by constantly checking what you type and, as soon as it encounters a sequence of characters from the replacement table, it will replace that sequence of characters with the replacement you have specified.
+AutoCorrect is a service that can replace certain strings of characters with others. For example, if you frequently have to type out a very long and/or complex word, but there exists a handy abbreviation for it, you could tell AutoCorrect to watch out for the abbreviation and replace it with the entire word. Similarly, if you wish to insert special symbols (for example arrows such as &larr; and &rarr;) without having to manually click through some symbol table, AutoCorrect can help you.
 
-Zettlr comes with a predefined set of replacements for AutoCorrect that covers the most common replacements, such as replacing two dashes (--) with an en-dash (–). You can add, modify, and remove replacements in the preferences. The left column contains characters the application will search for, whereas the right column contains the respective replacements.
+To function, AutoCorrect requires a **replacement table**. Zettlr comes with a predefined set of replacements for AutoCorrect that covers the most common replacements. You can add, modify, and remove replacements in the preferences. The left column contains characters the application will search for, whereas the right column contains the respective replacements.
 
-AutoCorrect comes in two flavors: You can either choose the "Word" mode, or the "LibreOffice" mode – depending on whether you are more accustomed to Microsoft Word or LibreOffice. The two modes differ in how they are triggered. The Word mode is generally more aggressive and will immediately attempt to replace every sequence of characters it encounters. The LibreOffice mode requires you to press either Space or Enter before it attempts to replace something. You can always undo a replacement by pressing the Backspace key.
+AutoCorrect constantly checks what you type and, as soon as it encounters a sequence of characters from the replacement table, it will replace that with the replacement you have specified. Note, however, that it will only replace when you press either Enter or Space. To prevent AutoCorrect from replacing a sequence of characters, hold down the Shift-key while pressing Enter or Space.
 
-> We recommend the LibreOffice mode, as it allows you to selectively prevent a replacement by pressing `Shift+Space` instead of just `Space` and `Shift+Enter` instead of just `Enter`.
+!!! note
+
+    AutoCorrect only works in Markdown text. It does not apply in code or comments.
 
 ## MagicQuotes
 
-MagicQuotes is an extension that helps you write typographically correct quotation marks, instead of the default (`"` and `'`). You can either choose them from a dropdown list, or select a pre-defined set for a few languages by pressing the corresponding button in the preferences. Selecting the first option (or the "None" option button) restores the default quotation marks.
+MagicQuotes is an extension that helps you write typographically correct quotation marks, instead of the default (`"` and `'`). In the settings you can select both primary and secondary quotation marks. The primary quotation marks are common, whereas the secondary quotation marks can be used within primary quotes, or depending on your style. Selecting the first option in either dropdown list restores the default quotation marks.
 
-> MagicQuotes is automatically active as long as AutoCorrect is active. If you choose to deactivate AutoCorrect, this also deactivates MagicQuotes. To selectively disable MagicQuotes while keeping the AutoCorrect functionality, set the MagicQuotes to the default quotation marks.
+To use the default quotation marks in your text, first insert one and then immediately press Backspace. Instead of deleting the quotation marks, Zettlr will convert them to the default quotation marks. Pressing Backspace a second time removes the quotation mark altogether.
+
+!!! note
+
+    MagicQuotes are only active in Markdown text. It does not apply in code or comments.
+
+If you have the status bar active, you can use it to quickly change the MagicQuotes Zettlr uses, without having to go into the settings.

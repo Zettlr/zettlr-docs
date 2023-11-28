@@ -2,11 +2,19 @@
 
 Just like many other apps, Zettlr makes use of `Markdown`, originally invented by [John Gruber](https://daringfireball.net/). Of course, over such a long period of time, a huge amount of developments have taken place, that have created the possibilities of modern Markdown applications. In this document the following topics are covered:
 
-1. [A brief history of Markdown](#a-brief-history)
-2. [Dialects of Markdown](#markdown-dialects)
-3. [How Zettlr implements Markdown](#zettlr-and-markdown)
-4. [Markdown 101: Headings, block elements, inline elements, links, images and footnotes](#markdown-101-the-most-important-codes)
-5. [Further resources](#resources-on-markdown)
+- [Markdown basics](#markdown-basics)
+  - [A brief history](#a-brief-history)
+  - [Markdown Dialects](#markdown-dialects)
+  - [Zettlr and Markdown](#zettlr-and-markdown)
+  - [Markdown 101: The most important codes](#markdown-101-the-most-important-codes)
+    - [Headings](#headings)
+    - [Inline formatting](#inline-formatting)
+    - [Block elements](#block-elements)
+    - [Links and images](#links-and-images)
+    - [Footnotes](#footnotes)
+    - [Fenced code blocks](#fenced-code-blocks)
+  - [Zettlr Markdown additions](#zettlr-markdown-additions)
+  - [Resources on Markdown](#resources-on-markdown)
 
 ***
 
@@ -35,7 +43,7 @@ Today, several implementations of the Markdown syntax coexist. The most notewort
 
 ## Zettlr and Markdown
 
-Zettlr itself implements a mixture of different dialects. The editor itself highlights only GitHub flavoured Markdown (plus some Markdown extensions for Zettelkasten elements and other conveniences. The Zettelkasten elements are described in the respective [chapter on the Zettelkasten method](../academic/zkn-method.md), the others are described below). If you export your documents to HTML and don't have Pandoc installed, Zettlr will convert your documents using the _GitHub flavoured Markdown syntax_. If available, Zettlr uses Pandoc for exports, which itself reads your Markdown documents using its _Pandoc Markdown syntax_.
+Zettlr itself implements a mixture of different dialects. The editor itself highlights only GitHub flavoured Markdown (plus some Markdown extensions for Zettelkasten elements and other conveniences. The Zettelkasten elements are described in the respective [chapter on the Zettelkasten method](../advanced/zkn-method.md), the others are described below). If you export your documents to HTML and don't have Pandoc installed, Zettlr will convert your documents using the _GitHub flavoured Markdown syntax_. If available, Zettlr uses Pandoc for exports, which itself reads your Markdown documents using its _Pandoc Markdown syntax_.
 
 But Zettlr doesn't confine you to writing Markdown. If you wish, you can also add `LaTeX` commands. These commands are correctly interpreted when you convert to PDF. These are omitted when you convert to DOCX or ODT. And they are retained when you convert to HTML. Of course, you can at any position use plain HTML code as well.
 
@@ -69,7 +77,9 @@ Sometimes, you may want to emphasise a whole block of text (such as a longer quo
 - Create item lists by prepending each line with a `-`, a `*` or a `+` character. If you would like to, you can mix these symbols!
 - Sorted lists need numbers in the format `1.` in front of them.
 
-> **Note**: The numbers do _not_ have to be in order. On each export, the converter will automatically correctly number them ascending, so a list containing the list numbers 1, 6, 14, 2 will be rendered as a list using the numbers 1, 2, 3, 4!
+!!! note
+
+    The numbers do _not_ have to be in order. On each export, the converter will automatically correctly number them ascending, so a list containing the list numbers 1, 6, 14, 2 will be rendered as a list using the numbers 1, 2, 3, 4!
 
 ### Links and images
 
@@ -83,11 +93,15 @@ Images work exactly like links, except they start with an exclamation mark (!). 
 2. Use an absolute path to a file on your own computer, such as `C:\Users\user-name\Pictures\my-image.jpg`.
 3. Use a relative path to a file on your own computer, such as `../img/my-image.png`.
 
-> **Tip**: You can provide a default image path in the "Editor" tab in the preferences, which Zettlr will always use when you paste an image into the editor.
+!!! tip
+
+    You can provide a default image path in the "Editor" tab in the preferences, which Zettlr will always use when you paste an image into the editor.
 
 The relative path is always relative to the document in which you place it. The directory `..` tells Zettlr to look for the image in the parent directory (i.e., to traverse up one directory). If you store your documents in a cloud and access them on different devices, you would naturally use relative image paths, because the absolute paths will definitely differ (especially if you work with two different operating systems).
 
-> **Tip**: Try to insert images and links always using their shortcuts, `Cmd/Ctrl+K` for links and `Cmd/Ctrl+Shift+I` for images. If you have a valid path in your clipboard, it will even automatically insert it for you, making your life easy. The best way to insert a link, for instance, would therefore be to first copy the link to your clipboard, then select the text you want to link and third press `Cmd/Ctrl+K`. Then the selected text will become the displayed link text and the link from your clipboard will be used as the link target.
+!!! tip
+
+    Try to insert images and links always using their shortcuts, `Cmd/Ctrl+K` for links and `Cmd/Ctrl+Shift+I` for images. If you have a valid path in your clipboard, it will even automatically insert it for you, making your life easy. The best way to insert a link, for instance, would therefore be to first copy the link to your clipboard, then select the text you want to link and third press `Cmd/Ctrl+K`. Then the selected text will become the displayed link text and the link from your clipboard will be used as the link target.
 
 ### Footnotes
 
@@ -149,9 +163,11 @@ More languages can be implemented on your request. If you need a specific langua
 
 In addition to GitHub flavored markdown extensions (marked with "(extension)" in the [spec](https://github.github.com/gfm/)), Zettlr provides the following:
 
- - Support for `<iframe src="https://example.com"></iframe>` elements
+!!! warning
 
-   > **Warning**: Pages in iframes can get unrestricted access to your local filesystem! 'Frame-busting' techniques can be used by pages to escape the iframe and [interact with the Electron backend directly](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - you should assume any pages in iframes (or an attacker of that page) have access to all of the data on your computer.
+    Pages in iframes can get unrestricted access to your local filesystem! 'Frame-busting' techniques can be used by pages to escape the iframe and [interact with the Electron backend directly](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - you should assume any pages in iframes (or an attacker of that page) have access to all of the data on your computer.
+
+ - Support for `<iframe src="https://example.com"></iframe>` elements
 
  - KaTeX equation rendering via either inline (`$`) or fenced (`$$`) blocks: `$x/y$` or
 
