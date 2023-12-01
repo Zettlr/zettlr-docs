@@ -1,61 +1,64 @@
-# Get involved
+# Impliquez-vous
 
-Do you want to make Zettlr an even better app? That's great! Whether you are a user, want to provide a new translation, or get into development of the application, you've come to the right place!
+Vous voulez améliorer Zettlr ? Cool ! Que vous soyez un utilisateur,  que souhaitiez proposer une nouvelle traduction ou vous voulez vous  lancer dans le développement de l'application, vous êtes au bon endroit !
 
-## General Resources
+## Ressources générales
 
-Zettlr has a vibrant community helping each other all around the net. The following list contains the common places to start for any issue you might have.
+Zettlr a une communauté dynamique qui s’entraide partout sur le net. La liste suivante contient les points de départ courants pour tout problème que vous pourriez rencontrer.
 
-* [Zettlr Discord](https://discord.com/invite/PcfS3DM9Xj) — The Zettlr Discord is a place for the Discordians (there doesn’t appear to be an official term).
-* [Zettlr subreddit](https://www.reddit.com/r/Zettlr) — The Zettlr subreddit is meant for the Redditors in the community.
-* [The official Mastodon account](https://fosstodon.org/@zettlr) – Here you can follow the updates to the app in real time. It's the only place where we regularly announce everythnig we do. Additionally, we engage in most discussions, so if you have questions, you can drop them here.
-* [The official Twitter account](https://www.twitter.com/Zettlr) — Same as our Mastodon account.
-* [Our YouTube channel](https://www.youtube.com/c/Zettlr) — If you are more the visual type, you can find some introductory videos here. Note that we do not regularly maintain the channel, so the videos may be outdated.
-* [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) — a slightly more modern version of classic internet forums.
-* [The GitHub issue tracker](https://github.com/Zettlr/Zettlr/issues) — This is the core of our endeavours to make the app better. If you spot a bug, have a suggestion or want to propose a feature, here's the right place. Nevertheless, especially when it comes to questions regarding the user workflow or new features, **it's best to discuss your ideas on the GitHub Discussions section or on Discord first**.
+* [Zettlr Discord](https://discord.com/invite/PcfS3DM9Xj) — Le Zettlr Discord est un lieu pour les Discordiens (il ne semble pas y avoir de terme officiel).
+* [Subreddit Zettlr](https://www.reddit.com/r/Zettlr) — Le subreddit Zettlr est destiné aux Redditors de la communauté.
+* [Le compte officiel Mastodon](https://fosstodon.org/@zettlr) – Ici, vous pouvez suivre les mises à jour de l'application en temps réel. C'est le seul endroit où nous annonçons régulièrement tout ce que nous faisons. De plus, nous participons à la plupart des discussions, donc si vous avez des questions, vous pouvez les déposer ici.
+* [Le compte Twitter officiel](https://www.twitter.com/Zettlr) — Identique à notre compte Mastodon.
+* [Notre chaîne YouTube](https://www.youtube.com/c/Zettlr) — Si vous êtes plutôt du genre visuel, vous pouvez trouver quelques vidéos d'introduction ici. Notez que nous ne maintenons pas régulièrement la chaîne, les vidéos peuvent donc être obsolètes.
+* [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) — une version légèrement plus moderne des forums Internet classiques.
+* [Le suivi des problèmes GitHub](https://github.com/Zettlr/Zettlr/issues) — C'est au cœur de nos efforts pour améliorer l'application. Si vous repérez un bug, avez une suggestion ou souhaitez proposer une fonctionnalité, voici le bon endroit. Néanmoins, surtout lorsqu'il s'agit de questions concernant le flux de travail utilisateur ou les nouvelles fonctionnalités, **il est préférable de discuter d'abord de vos idées dans la section Discussions GitHub ou sur Discord**.
 
-## User Contributions
+## Contributions des utilisateurs
 
-As a user who wants a good looking, well-working writing app, just keep your eyes open for any error the app might produce and, more importantly, tell us how to make the workflow more efficient! We can only judge for our own workflow, so to make the app better for you as well, we need to know how. Always remember: We cannot build a workflow as-is into the design but have to make concessions to other workflows, but we'll try to make features more accessible or working smoother as long as the trade-offs for the existing workflows and the new suggestion are not too hard.
+En tant qu'utilisateur souhaitant une application d'écriture esthétique et efficace, soyez simplement attentif à toute erreur que l'application pourrait produire et, plus important encore, dites-nous comment rendre le flux de travail plus efficace ! Nous ne pouvons juger que par notre propre flux de travail, donc pour améliorer l'application au profit de tous , nous devons savoir comment. N'oubliez jamais : nous ne pouvons pas créer un flux de travail tel quel dans la conception, mais devons faire des concessions à d'autres flux de travail, mais nous essaierons de rendre les fonctionnalités plus accessibles ou de rendre le fonctionnement plus fluide tant que les compromis entre les flux de travail existants et les nouveaux les suggestions ne sont pas trop difficiles.
 
-Please report bugs by opening up issues on the GitHub repository. This way we are able to to quickly respond to the report and directly get to handle the problem.
+Veuillez signaler les bogues en ouvrant des problèmes sur le repository GitHub. De cette façon, nous sommes en mesure de répondre rapidement au rapport et de traiter directement le problème.
 
-## Translating the App
+## Traduire l'application
 
-We welcome any help in translating the app in all languages of this planet. Zettlr utilizes the `gettext` system for translating content.
+Nous apprécions toute aide pour traduire l'application dans toutes les langues de cette planète. Zettlr utilise le système « gettext » pour traduire le contenu.
 
-Translations are maintained [alongside the source code of this app in our repository](https://github.com/Zettlr/Zettlr/tree/develop/static/lang). To translate, you will need a GitHub account, but it does not require technical knowledge.
-
-!!! note
-
-    If you do possess technical knowledge, you can also skip the explanations below and [clone the repository](https://github.com/Zettlr/Zettlr) directly.
-
-To improve a translation, head over to the `static/lang`-folder and download the `*.po`-file that corresponds to the language code you want to improve (e.g., `pt-BR.po` for Brazilian Portuguese).
-
-After you have downloaded the file, you'll need a program to modify the translations. We recommend the application [POedit](https://poedit.net/). It also offers a "pro" version, but you will not need that to translate.
-
-Once you have modified the translation to your liking, it is time to add the translations to the application. To do so, follow the steps in [this excellent guide on how to propose changes on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-another-users-repository).
-
-### Creating a new translation
-
-If you wish to create a translation for a language that does not yet exist, the process is a little bit more involved.
+Les traductions sont conservées [à côté du code source de cette application dans notre référentiel](https://github.com/Zettlr/Zettlr/tree/develop/static/lang). Pour traduire, vous aurez besoin d’un compte GitHub, mais cela ne nécessite aucune connaissance technique.
 
 !!! note
 
-    If you do not trust your own skills in creating a new translation, please get in contact with us. We will happily create the corresponding file for you so that you can then follow the simpler steps above.
+     Si vous possédez des connaissances techniques, vous pouvez également ignorer les explications ci-dessous et [cloner le référentiel](https://github.com/Zettlr/Zettlr) directement.
 
-1. To create a new translation file, ensure the `gettext` system is installed on your computer
-2. Clone the repository: `git clone https://github.com/Zettlr/Zettlr.git`
-3. Move into the directory: `cd Zettlr`
-4. Run the initialization command, replacing `<lang>` with the corresponding language code, e.g., "pt-BR" or "de-DE": `msginit --input=static/i18n.pot --locale=<lang> --output=static/lang/<lang>.po`
-5. A new file called `<lang>.po` should have appeared in the translation directory. Proceed to translate and then open a PR.
+Pour améliorer une traduction, rendez-vous dans le dossier `static/lang` et téléchargez le fichier `*.po` qui correspond au code de langue que vous souhaitez améliorer (par exemple, `pt-BR.po` pour le portugais brésilien) .
 
-## Developing
+Après avoir téléchargé le fichier, vous aurez besoin d'un programme pour modifier les traductions. Nous recommandons l'application [POedit](https://poedit.net/). Il propose également une version « pro », mais vous n’en aurez pas besoin pour traduire.
 
-To start developing, [fork the repository](https://github.com/Zettlr/Zettlr), work on your features, bug fixes, etc. and then open pull-requests. Please remember to **only open PRs against the develop branch!** The master-branch is only pushed to once a new release is being drafted. So if you are developing a new feature and a new version of Zettlr is released, you can simply pull the `upstream master` to be up to date again and continue writing your feature.
+Une fois que vous avez modifié la traduction à votre guise, il est temps d'ajouter les traductions à l'application. Pour ce faire, suivez les étapes de [cet excellent guide sur la façon de proposer des modifications sur GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing -fichiers-dans-un-autre-référentiel-d'utilisateurs).
 
-If you are beginning to work on something, remember to announce this on the issue tracker so that we know what is being worked on.
+### Créer une nouvelle traduction
+
+Si vous souhaitez créer une traduction pour une langue qui n'existe pas encore, le processus est un peu plus complexe.
 
 !!! note
 
-    [The development guide can be found in our README](https://github.com/Zettlr/Zettlr#contributing-code), including setup instructions and a documentation of available commands.
+     Si vous ne faites pas confiance à vos propres compétences pour créer une nouvelle traduction, veuillez nous contacter. Nous nous ferons un plaisir de créer le fichier correspondant pour vous afin que vous puissiez ensuite suivre les étapes plus simples ci-dessus.
+
+1. Pour créer un nouveau fichier de traduction, assurez-vous que le système « gettext » est installé sur votre ordinateur
+2. Clonez le référentiel : `git clone https://github.com/Zettlr/Zettlr.git`
+3. Déplacez-vous dans le répertoire : `cd Zettlr`
+4. Exécutez la commande d'initialisation en remplaçant « <lang> » par le code de langue correspondant, par exemple « pt-BR » ou « de-DE » : `msginit --input=static/i18n.pot --locale=<lang > --output=static/lang/<lang>.po`
+5. Un nouveau fichier appelé `<lang>.po` aurait dû apparaître dans le répertoire de traduction. Procédez à la traduction, puis ouvrez un PR.
+
+## Développement
+
+Pour commencer à développer, [forkez le repository ](https://github.com/Zettlr/Zettlr), travaillez sur vos fonctionnalités, corrections de bugs, etc., puis ouvrez les pull-requests. N'oubliez pas de **ouvrir uniquement les PR sur la branche de développement !** La branche principale n'est poussée qu'une fois qu'une nouvelle version est en cours de rédaction. Ainsi, si vous développez une nouvelle fonctionnalité et qu'une nouvelle version de Zettlr est publiée, vous pouvez simplement extraire le « maître en amont » pour être à nouveau à jour et continuer à écrire votre fonctionnalité.
+
+Si vous commencez à travailler sur quelque chose, n'oubliez pas de l'annoncer sur le système de suivi des problèmes afin que nous sachions sur quoi nous travaillons.
+
+!!! note
+
+     [Le guide de développement peut être trouvé dans notre README](https://github.com/Zettlr/Zettlr#contributing-code), comprenant les instructions de configuration et une documentation des commandes disponibles.
+
+
+
