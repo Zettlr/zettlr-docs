@@ -1,12 +1,12 @@
-# Notes sur la sécurité
+# Une note sur la sécurité
 
-Le format Markdown est très sûr. Contrairement aux documents Word qui ne peuvent être ouverts en toute sécurité qu'en mode restreint, les documents Markdown peuvent être consultés avec moins de prudence.
+Le format Markdown est en général un moyen d’écriture très sûr. Contrairement aux documents Word qui ne peuvent être ouverts en toute sécurité qu'en mode restreint, les documents Markdown peuvent être consultés avec beaucoup moins de prudence.
 
-Néanmoins, même les documents Markdown peuvent avoir certaines conséquences en matière de sécurité. Ces documents peuvent contenir du code malveillant, comme les modèles ou autres ressources que vous téléchargez (virus, code malveillant).
+Néanmoins, même les documents Markdown peuvent avoir certaines implications en matière de sécurité. Ces documents pourraient contenir du code malveillant pouvant mettre votre sécurité en danger. De plus, les modèles ou autres ressources que vous téléchargez sur Internet peuvent contenir du code malveillant ou même télécharger des virus et des logiciels malveillants sur votre ordinateur.
 
-Sur cette page, nous décrivons les différents risques lier a l'utilisation de Zettlr. En suivant les consignes de sécurité contenues dans ce document et avec de la vigilance, vous devriez éviter les problèmes.
+Sur cette page, nous décrivons les différentes manières dont travailler avec Zettlr pourrait vous exposer à des problèmes de sécurité potentiels si vous n'y faites pas attention. Si vous suivez les consignes de sécurité générales contenues dans ce document et soyez vigilant, vous devriez toujours être du bon côté.
 
-De manière générale : Zettlr vous offre une grande liberté lorsqu'il s'agit de travailler avec vos fichiers Markdown. Par conséquent, la capacité de Zettlr à exécuter du code arbitraire lors de l'importation, de la visualisation et de l'exportation de documents Markdown n'est pas une faille de sécurité, mais une décision de conception consciente. Si nous voulions empêcher l'exécution de code arbitraire, travailler avec Markdown et exporter vos documents vous limiterait de façon importante. Pour citer un vieil adage : « Un grand pouvoir implique de grandes responsabilités ».
+De manière générale : Zettlr vous offre une grande liberté lorsqu'il s'agit de travailler avec vos fichiers Markdown. Par conséquent, la capacité de Zettlr à exécuter du code arbitraire lors de l'importation, de la visualisation et de l'exportation de documents Markdown n'est pas une faille de sécurité mais une décision de conception consciente. Si nous voulions empêcher l'exécution de code arbitraire, travailler avec Markdown et exporter vos documents vous limiterait de manière déraisonnable. Pour citer un vieil adage : « Un grand pouvoir implique de grandes responsabilités ».
 
 !!! note
 
@@ -17,7 +17,7 @@ De manière générale : Zettlr vous offre une grande liberté lorsqu'il s'agit
 
 Markdown est un format parfaitement sûr car il se compose uniquement de code source. En d’autres termes, Markdown peut être lu tel quel, simplement en prenant note des différents caractères de formatage contenus dans le document.
 
-Cependant, visualiser du texte Markdown brut peut devenir difficile. Par exemple, lorsque vous relisez un texte, vous souhaiterez lire les descriptions des liens, mais pas les liens eux-mêmes. De même, lorsque vous créez un tableau, vous ne souhaitez souvent pas voir les nombreux caractères de formatage mais uniquement le contenu réel du tableau.
+Parfois, cependant, visualiser du texte Markdown brut peut devenir ardu. Par exemple, lorsque vous relisez un texte, vous souhaiterez lire les descriptions des liens, mais pas les liens eux-mêmes. De même, lorsque vous créez un tableau, vous ne souhaitez souvent pas voir les nombreux caractères de formatage mais uniquement le contenu réel du tableau.
 
 Zettlr vise à vous faciliter la visualisation et l'écriture de Markdown. Pour cela, Zettlr doit pré-restituer certains éléments de vos documents. Par exemple, les liens de pré-rendu masquent les liens et affiche uniquement leur description. Une description de lien peut toutefois contenir du code HTML malveillant. Un problème similaire se produit avec le rendu des tableaux dans l'éditeur de tableaux : chaque cellule du tableau peut contenir du code HTML malveillant qui sera exécuté lors du rendu.
 
@@ -25,7 +25,7 @@ Par conséquent, de nombreux moteurs de rendu qui rendent Markdown lisible peuve
 
 Si vous ouvrez uniquement des fichiers provenant de sources fiables, cela ne devrait pas poser de problème. Cependant, si vous devez fréquemment ouvrir des documents Markdown depuis Internet ou depuis des sources auxquelles vous ne pouvez pas entièrement faire confiance, il peut être judicieux de désactiver ces moteurs de rendu pour garantir qu'aucun document Markdown contenant un code malveillant ne puisse vous nuire.
 
-La désactivation de ces moteurs de rendu rendra votre code Markdown un peu plus difficile à lire, mais cela empêchera également l'exécution de tout code malveillant.
+La désactivation de ces moteurs de rendu rendra votre code Markdown un peu plus difficile à lire, mais cela empêchera également tout code malveillant de vous mettre en danger.
 
 Il existe quelques moteurs de rendu qui peuvent exécuter du HTML arbitraire et devenir ainsi un problème de sécurité. Il s'agit de l'**Table Editor** ainsi que des moteurs de rendu pour **iframes**, **links** et **emphasis**.
 
@@ -43,7 +43,7 @@ Si vous devez télécharger un fichier Markdown et doutez de sa sécurité, nous
 
 Si vous avez désactivé tous les moteurs de rendu, vous pouvez également ouvrir en toute sécurité un tel document directement dans Zettlr.
 
-De cette façon, même s'il existe un moyen pour des acteurs malveillants de compromettre votre ordinateur via Zettlr et que nous ne connaissons pas encore (un soi-disant "zero day exploit"), cela ne fonctionnera pas car vous avez préalablement supprimé le code potentiellement dangereux. .
+De cette façon, même s'il existe un moyen pour des acteurs malveillants de compromettre votre ordinateur via Zettlr et que nous ne connaissons pas encore (un soi-disant "exploit du jour zéro"), cela ne fonctionnera pas car vous avez préalablement supprimé le code potentiellement dangereux. .
 
 !!! note
 

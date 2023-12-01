@@ -1,6 +1,6 @@
 # Paramétrage
 
-Zettlr vous offre une pléthore d'options pour personnaliser votre expérience avec l'application. Elle est livrée avec trois boîtes de dialogue de paramétrage différentes qui seront expliquées en détail ici, afin que vous sachiez quelle option fait quoi.
+Zettlr vous offre une pléthore d'options pour personnaliser votre expérience avec l'application. Elle est livrée avec trois boîtes de dialogue de paramétrage dont l'une  est le [gestionnaire d'assets expliqué ailleurs](../core/assets-manager.md), une boîte de dialogue de préférences générales et un gestionnaire de balises.
 
 ## Préférences générales
 
@@ -20,28 +20,41 @@ Vous pouvez afficher le dialogue des préférences générales en utilisant soit
 
 ![settings_general.png](../img/settings_general.png)
 
+Dans l'onglet général, vous trouverez des options que vous voudrez peut-être ajuster si vous commencez à utiliser Zettlr pour l'adapter à vos besoins.
 
-Dans l'onglet général, vous trouverez des options que vous pourriez vouloir ajuster si vous commencez à utiliser Zettlr pour l'adapter à vos besoins. La langue de l'application est assez explicite.
 
-Les cases à cocher "Mode nuit" et "Informations sur les fichiers" contrôlent l'affichage. Le "Mode Nuit" est simplement le thème sombre dont Zettlr est capable (et que vous pourriez vouloir contrôler en utilisant le raccourci `Cmd/Ctrl+Alt+L`). Cochez la case "File information" pour afficher les méta-informations dans la liste des fichiers (bien que vous puissiez également contrôler ce comportement en utilisant son raccourci respectif `Cmd/Ctrl+Alt+S`).
 
-Si vous cochez "Cacher les répertoires pendant la recherche globale", Zettlr n'affichera pas les répertoires pendant la recherche. En sélectionnant "Toujours charger les modifications à distance dans le fichier courant", Zettlr ne vous demandera pas si vous souhaitez remplacer le fichier dans l'éditeur.
-
-Le mode "sidebar" contrôle la façon dont la barre latérale vous est affichée. Vous avez deux options :
-
-* Mince : En mode fin, la barre latérale n'affiche que _soit_ la liste des fichiers _soit_ l'arborescence. Vous pouvez passer de l'un à l'autre en utilisant le raccourci `Cmd/Ctrl+Shift+1`.
-* Développé : Le mode développé affiche l'arborescence et la liste des fichiers côte à côte. Dans ce mode, vous avez les deux listes toujours présentes.
-* Combiné : Ceci fait que la Sidebar ressemble plus à un navigateur de fichiers traditionnel, car elle ne divise pas les dossiers et les fichiers.
-
-Si vous souhaitez masquer complètement la barre latérale, veuillez utiliser le mode sans distraction (`Cmd/Ctrl+J`).
-
-L'ordre de tri détermine comment Zettlr va trier vos fichiers en interne. L'ordre naturel est recommandé ; l'ASCII ignore certaines implications du langage naturel.
-
-Enfin et surtout, Zettlr peut passer automatiquement en mode clair ou foncé selon votre système d'exploitation :
-
-* **Off** : basculer entre les modes manuellement
-* **Calendrier** : Zettlr entrera et sortira du mode sombre entre les périodes données (format 24 heures)
-* **Suite du système d'exploitation** : Sous macOS et Windows, Zettlr peut écouter les événements du système d'exploitation notifiant aux applications en cours d'exécution que le mode global a changé.
+* **Langue de l'application**: Définit la langue dans laquelle l'application sera affichée. Sont affichées les langues qui ont un nombre suffisant de traductions complètes. Vos modifications sont appliquées après un redémarrage.
+* **Mode Sombre**: Whether the application is set to dark mode. Can also be triggered using `Cmd/Ctrl+Alt+L` and via automatic scheduling.
+* **Propriétés du fichier**: Controls whether the file *list* (available in thin and expanded file manager modes) shows some meta information about your files, such as tags, or writing targets.
+* **toujours actualiser le fichier en cours**: Si cette case est cochée, Zettlr rechargera automatiquement toutes les modifications à distance apportées à vos fichiers. Si décoché, il vous sera demandé pour chaque fichier.
+* **Avoid opening files in new tabs if possible**: By default, Zettlr will open each file in its own tab. Selecting this will prompt Zettlr to exchange the currently active file in some circumstances.
+* **Basculer automatiquement en mode sombre **:
+    * **Arrêt**: Zettlr will never change the dark mode setting automatically.
+    * **Horaires**: Zettlr will switch to and from dark mode at the times specified in Start/End dark mode at ….
+    * **Utiliser l'horloge système**: Align the visual display at your operating system's dark mode setting (not available on Linux).
+* **Start dark mode at**: Specifies a time (format: HH:MM) at which Zettlr will once automatically switch from light mode to dark mode if applicable.
+* **End dark mode at**: Specifies a time (format: HH:MM) at which Zettlr will once automatically switch from dark mode to light mode if applicable.
+* **File manager mode**:
+    * **Thin**: Shows your directories and files separately. Select a directory to have its contents displayed in the file list. Switch between file list and directory tree by clicking on directories or the arrow button which appears at the top left corner of the file list.
+    * **Expanded**: Shows your directories and files separately, but both at the same time. Select a directory to have its contents displayed in the file list.
+    * **Combined**: Shows your directories and files in the same file tree. The file list is not available in this mode.
+* **Display files using**:
+    * **Filename only**: Always display just the filename of each file, never a title or heading level 1.
+    * **Title if applicable**: Display the YAML frontmatter title of your files, if applicable. Otherwise, fall back to the filename.
+    * **First heading level 1 if applicable**: Display the first heading level 1 of your files, if applicable. Otherwise, fall back to the filename.
+    * **Title or first heading level 1 if applicable**: Display a YAML frontmatter title if applicable. Fall back to the first heading level 1 if applicable. If none are available, fall back to the filename.
+* **Display Markdown file extensions**: By default, Zettlr hides the file extensions of known Markdown files (e.g., `*.txt`, `*.md`, `*.markdown`). With this setting you can command Zettlr to display them.
+* **Sorting order for files (used for sorting by name)**:
+    * **Natural order (10 after 2)**: This setting will sort your files logical, such that a number 10 would follow after a 2, even though the 2 has no preceeding 0.
+    * **ASCII order (2 after 10)**: This setting sorts your file character by character, meaning that a 2 follows after a 1. To sort the 2 before the 10, prepend it with a leading zero.
+* **Show folders above files**: By default Zettlr first displays your files, and only then the folders. Activating this setting will first display folders. Requires a restart to apply.
+* **When sorting by time, sort by**:
+    * **Last modification time**: The time at which you modified some file.
+    * **File creation time**: Sort the files by the times at which you created them.
+* **In the file metadata display**:
+    * **Last modification time**: Display the last time you modified a file in appropriate places (e.g. the meta information in the file list).
+    * **File creation time**: Display the file's creation time in appropriate places.
 
 ### Éditeur
 
