@@ -1,131 +1,132 @@
 # Setup
 
-The installation of Zettlr is very easy and takes only a few clicks. Zettlr is cross-platform, so it will run on most computers. Zettlr comes pre-built for macOS, Windows and several Linux systems.
+L'installation de Zettlr est très simple et ne prend que quelques clics. Zettlr est multiplateforme, il fonctionnera donc sur la plupart des ordinateurs. Zettlr est pré-construit pour macOS, Windows et plusieurs systèmes Linux.
 
-## Minimum System Requirements
+## Configuration minimale requise
 
-Zettlr aims to be resource-friendly. However, there are a few minimum requirements that need to be met.
+Zettlr vise à être respectueux des ressources. Cependant, elle demande une configuration minimale.
 
-* Operating System:
-    * Windows 10 or newer
-    * macOS 11.6.0 or newer
-    *  Debian 8 or newer
-    *  Ubuntu 12.04 or newer
-    *  Fedora 24 or newer
-    *  Arch Linux
-    *  Any distribution supported by AppImages or Flatpack
-* Processor: 1GHz Dual-Core Intel 64 bit or better (32 bit is not supported)
-    * On Linux, an equivalent ARM 64 bit processor is supported
-    * On macOS, Apple Silicon (M1, M2, etc.) is supported
-* RAM: 1 GB
-* Disk Space: At least 500 MB free disk space
+* Système d'exploitation:
+     * Windows 10 ou version ultérieure
+     * macOS 11.6.0 ou version ultérieure
+     * Debian 8 ou version ultérieure
+     * Ubuntu 12.04 ou version ultérieure
+     * Fedora 24 ou plus récent
+     * Arch Linux
+     * Toute distribution prise en charge par AppImages ou Flatpack
+* Processeur : Intel Dual-Core 1 GHz 64 bits ou supérieur (32 bits n'est pas pris en charge)
+     * Sous Linux, un processeur ARM 64 bits équivalent est pris en charge
+     * Sur macOS, Apple Silicon (M1, M2, etc.) est pris en charge
+* RAM : 1 Go
+* Espace disque : au moins 500 Mo d'espace disque libre
 
 !!! note
 
-    Please note that the supported operating system versions may change at any time. The most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/latest/development/build-instructions-gn#platform-prerequisites).
+     Veuillez noter que les versions du système d'exploitation prises en charge peuvent changer à tout moment. La liste la plus récente des plates-formes prises en charge peut être trouvée [ici](https://www.electronjs.org/docs/latest/development/build-instructions-gn#platform-prerequisites).
 
-## Installing Zettlr
+## Installation de Zettlr
 
 ### Windows
 
-To install Zettlr on Windows, download the app from the [download page](https://www.zettlr.com/download) and double click to open the installer. By default, the installer will request administrative permission during setup to install the app for all users on the computer.
+Pour installer Zettlr sur Windows, téléchargez l'application depuis la [page de téléchargement](https://www.zettlr.com/download) et double-cliquez pour ouvrir le programme d'installation. Par défaut, le programme d'installation demandera l'autorisation administrative lors de l'installation pour installer l'application pour tous les utilisateurs de l'ordinateur.
 
-If you do not have administrative privileges on your computer or do not wish to install the app for everyone, you can choose to install it just for the current user. In this case, no privileges are required, but some features may not work as expected.
+Si vous ne disposez pas de privilèges administratifs sur votre ordinateur ou si vous ne souhaitez pas installer l'application pour tout le monde, vous pouvez choisir de l'installer uniquement pour l'utilisateur actuel. Dans ce cas, aucun privilège n'est requis, mais certaines fonctionnalités peuvent ne pas fonctionner comme prévu.
 
 !!! note
 
-    We recommend to install Zettlr for all users.
+     Nous recommandons d'installer Zettlr pour tous les utilisateurs.
 
 ### macOS
 
-To install Zettlr on macOS, download the DMG-file from our [download page](https://www.zettlr.com/download) and mount it by double-clicking it. Then, drag the Zettlr icon into your Applications directory and wait for the application to be copied over.
+Pour installer Zettlr sur macOS, téléchargez le fichier DMG depuis notre [page de téléchargement](https://www.zettlr.com/download) et montez-le en double-cliquant dessus. Ensuite, faites glisser l'icône Zettlr dans votre répertoire Applications et attendez que l'application soit copiée.
 
 !!! note
 
-    You can also install Zettlr with [Homebrew](https://brew.sh/) by running the following command:
+     Vous pouvez également installer Zettlr avec [Homebrew](https://brew.sh/) en exécutant la commande suivante :
     
-    `$ brew install --cask zettlr`
+     `$ Brew Install --cask zettlr`
     
-    For more information, visit the [Zettlr Homebrew page](https://formulae.brew.sh/cask/zettlr).
+     Pour plus d'informations, visitez la [page Zettlr Homebrew](https://formulae.brew.sh/cask/zettlr).
 
 ### Ubuntu/Debian
 
-To install Zettlr on Ubuntu or Debian derivatives, download the `deb`-package from our [download page](https://www.zettlr.com/download) and execute the file.
+Pour installer Zettlr sur les dérivés Ubuntu ou Debian, téléchargez le package `deb` depuis notre [page de téléchargement](https://www.zettlr.com/download) et exécutez le fichier.
 
 ### Fedora
 
-To install Zettlr or Fedora or Red Hat derivatives, download the `rpm`-package from our [download page](https://www.zettlr.com/download) and execute the file.
+Pour installer les dérivés de Zettlr, Fedora ou Red Hat, téléchargez le package `rpm` depuis notre [page de téléchargement](https://www.zettlr.com/download) et exécutez le fichier.
 
 ### Arch Linux
 
-Thanks to community efforts, Zettlr is available as a regular package for Arch Linux. To install Zettlr on Arch, follow the normal installation instructions for packages on Arch. Read more on the [Zettlr Arch Wiki page](https://wiki.archlinux.org/title/Zettlr).
+Grâce aux efforts de la communauté, Zettlr est disponible sous forme de package standard pour Arch Linux. Pour installer Zettlr sur Arch, suivez les instructions d'installation normales pour les packages sur Arch. En savoir plus sur la [page Wiki Zettlr Arch](https://wiki.archlinux.org/title/Zettlr).
 
 !!! note
 
-    We never heard any complaints about the Zettlr Arch package and believe it to be trustworthy and safe. However, since we do not control the compilation stage of these packages, we need to add a disclaimer that we cannot take responsibility for them. In case of problems, please get into contact with the maintainers directly.
+     Nous n'avons jamais entendu de plaintes concernant le package Zettlr Arch et nous le considérons comme fiable et sûr. Cependant, comme nous ne contrôlons pas l'étape de compilation de ces packages, nous devons ajouter une clause de non-responsabilité indiquant que nous ne pouvons en assumer la responsabilité. En cas de problème, veuillez contacter directement les responsables.
 
 ### AppImage
 
-Zettlr is available as an [AppImage](https://appimage.org/) bundle for Linux. To install it, download the package from our [download page](https://www.zettlr.com/download). To install the AppImage, place the file into a directory of your choice, make it executable, and begin using it.
+Zettlr est disponible sous forme de bundle [AppImage](https://appimage.org/) pour Linux. Pour l'installer, téléchargez le package depuis notre [page de téléchargement](https://www.zettlr.com/download). Pour installer AppImage, placez le fichier dans un répertoire de votre choix, rendez-le exécutable et commencez à l'utiliser.
 
-### Flatpack
+### Flatpack 
 
-Zettlr is available as a [Flatpack](https://flathub.org/home). To install the Flatpack version, download it from [Zettlr's FlatHub page](https://flathub.org/apps/details/com.zettlr.Zettlr) and follow the setup instructions.
-
-!!! note
-
-    The Flatpack cannot access your file system by default. To give it access to your documents, you must first configure that with a package like, for example, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal). In case of problems, please get in contact with the Flatpack maintainer on the [corresponding GitHub repository](https://github.com/flathub/com.zettlr.Zettlr). Do not file reports on the main repository – we won't be able to help you.
-
-## Updating Zettlr
-
-The application checks for new updates each time you start the app. You can also manually trigger the search for updates by clicking 'Help' &rarr; 'Check for updates'. If a new version is available, Zettlr will display a "download" symbol in the toolbar. If you click it, Zettlr will open a dialog which contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
-
-!!! warning
-
-    **Never "jump over" versions!** Sometimes, we change the configuration of Zettlr during an update. This may lead to data corruption during an update if you "leave out" the necessary version that will migrate your configuration. If you haven't updated Zettlr in a while, do **not** update directly to the latest version. Instead, install each update one after another. You can find all updates – not just the latest – on [GitHub](https://github.com/Zettlr/Zettlr/releases).
-
-To update, click the download button and wait for the download to finish. Then, click "Begin Update", which will close Zettlr and begin the update process. The updater will be placed in your Downloads-folder. You can remove it once the update was successful.
+Zettlr est disponible sous forme de [Flatpack](https://flathub.org/home). Pour installer la version Flatpack, téléchargez-la depuis la [page FlatHub de Zettlr](https://flathub.org/apps/details/com.zettlr.Zettlr) et suivez les instructions d'installation.
 
 !!! note
 
-    Do not use this update procedure if you installed Zettlr via a package manager, e.g., Homebrew. In that case, please update according to your package manager's procedure to avoid conflicts. You can disable the setting "Automatically check for updates" in your preferences to prevent Zettlr from checking for updates automatically.
+     Le Flatpack ne peut pas accéder à votre système de fichiers par défaut. Pour lui donner accès à vos documents, vous devez d'abord le configurer avec un package comme, par exemple, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal). En cas de problème, veuillez contacter le mainteneur de Flatpack sur le [dépôt GitHub correspondant](https://github.com/flathub/com.zettlr.Zettlr). Ne déposez pas de rapports sur le référentiel principal – nous ne pourrons pas vous aider.
 
-After any update, be prepared to **wait up to a few minutes** for Zettlr to launch. After each update, the file cache is being cleared, and when the newer version of Zettlr boots for the first time, it has to recreate this file cache. The more files and folders you have open, the longer this process may take. So do not worry if you don't see any reaction for some time – the main window(s) will be opened as soon as Zettlr has scanned your workspaces again.
 
-If automatic updates don't work for you, you can always manually update by downloading the appropriate installer for your system (see above). There is no (technical) difference between the first setup and an update; the files are the same.
+## Mise à jour de Zettlr
 
-!!! note
+L'application recherche de nouvelles mises à jour à chaque fois que vous démarrez l'application. Vous pouvez également déclencher manuellement la recherche de mises à jour en cliquant sur « Aide » &rarr; "Vérifier les mises à jour". Si une nouvelle version est disponible, Zettlr affichera un symbole « téléchargement » dans la barre d'outils. Si vous cliquez dessus, Zettlr ouvrira une boîte de dialogue contenant le numéro de la nouvelle version, votre version actuelle et un journal des modifications avec toutes les fonctionnalités et corrections de bogues contenues dans la nouvelle version.
 
-    You can opt in to beta releases. To do so, activate "Notify me about beta releases" in the settings.
+!!! avertissement
 
-## Uninstalling Zettlr
+     **Ne « sautez jamais » les versions !** Parfois, nous modifions la configuration de Zettlr lors d'une mise à jour. Cela peut entraîner une corruption des données lors d'une mise à jour si vous « omettez » la version nécessaire qui migrera votre configuration. Si vous n'avez pas mis à jour Zettlr depuis un certain temps, ne mettez **pas** à jour directement vers la dernière version. Au lieu de cela, installez chaque mise à jour l'une après l'autre. Vous pouvez trouver toutes les mises à jour – pas seulement les dernières – sur [GitHub](https://github.com/Zettlr/Zettlr/releases).
 
-If you are unsatisfied with Zettlr or need to remove the app, please follow these instructions.
-
-!!! note
-
-    In case you installed Zettlr with a package manager, consult your package manager's documentation on uninstalling software instead of following the instructions here.
-
-On **Windows**, go into the software settings and uninstall it according to [Microsoft's instructions](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98). If you wish to remove the settings and user data as well, you can find those in the directory `C:\Users\<your-user-name>\AppData\Roaming\Zettlr`.
-
-On **macOS**, head over to the `Applications` folder and move `Zettlr.app` to the trash. If you wish to remove the settings and user data as well, you can find those in the directory `/Users/<your-user-name>/Library/Application Support/Zettlr`.
-
-On **Linux**, the uninstall procedure depends on your distribution and how you installed the app. Please consult the appropriate manual on how to do this. If you wish to remove the settings and user data as well, you can find those in the directory `/home/<your-user-name>/.config/Zettlr`.
+Pour mettre à jour, cliquez sur le bouton de téléchargement et attendez la fin du téléchargement. Ensuite, cliquez sur « Commencer la mise à jour », ce qui fermera Zettlr et lancera le processus de mise à jour. Le programme de mise à jour sera placé dans votre dossier Téléchargements. Vous pourrez le supprimer une fois la mise à jour réussie.
 
 !!! note
 
-    Zettlr will also create so-called "hidden" files inside your workspaces that remember your directory settings. These files are named `.ztr-directory`. After uninstalling Zettlr, you can safely remove those files.
+     N'utilisez pas cette procédure de mise à jour si vous avez installé Zettlr via un gestionnaire de packages, par exemple Homebrew. Dans ce cas, veuillez mettre à jour conformément à la procédure de votre gestionnaire de packages pour éviter les conflits. Vous pouvez désactiver le paramètre « Rechercher automatiquement les mises à jour » dans vos préférences pour empêcher Zettlr de rechercher automatiquement les mises à jour.
 
-## Nightly Releases
+Après toute mise à jour, soyez prêt à **attendre quelques minutes** pour que Zettlr se lance. Après chaque mise à jour, le cache de fichiers est vidé et lorsque la version la plus récente de Zettlr démarre pour la première fois, elle doit recréer ce cache de fichiers. Plus vous ouvrez de fichiers et de dossiers, plus ce processus peut prendre du temps. Ne vous inquiétez donc pas si vous ne voyez aucune réaction pendant un certain temps – la ou les fenêtres principales s'ouvriront dès que Zettlr aura à nouveau analysé vos espaces de travail.
 
-Since 2.0.0, we offer so-called nightly releases. Nightlies are releases that are being built automatically every Monday at noon (UTC) (but sometimes we build them manually). They contain the most recent changes to the code base. This means that they are even more recent than the beta releases, **but** this also means that they may contain serious bugs which we haven't found yet.
+Si les mises à jour automatiques ne fonctionnent pas pour vous, vous pouvez toujours mettre à jour manuellement en téléchargeant le programme d'installation approprié pour votre système (voir ci-dessus). Il n'y a pas de différence (technique) entre la première configuration et une mise à jour ; les fichiers sont les mêmes.
 
-Nightly releases are for advanced users only who understand the risks in using these. If you keep your settings, the writing statistics, and your files backed up regularly, it might be safe to use nightlies. We do appreciate every one who uses nightlies and informs us about bugs they encounter.
+!!! note
 
-To install a nightly release, you need to manually download them from <https://nightly.zettlr.com/>. Your updater will not notify you about nightly releases, but since they are being automatically built every week, you can be sure that there will be a new release.
+     Vous pouvez opter pour les versions bêta. Pour ce faire, activez « M'avertir des versions bêta » dans les paramètres.
 
-!!! warning
+## Désinstallation de Zettlr
 
-    Nightly releases are fully automated. We do not guarantee any amount of stability for these. Normally, nothing bad should happen, but there is a chance that these releases may damage your computer. By using nightly releases you agree that you understand these risks.
+Si vous n'êtes pas satisfait de Zettlr ou si vous devez supprimer l'application, veuillez suivre ces instructions.
 
-Please also note that we do not retain any previous nightly builds. Each week's nightly will simply replace the previous one. If a nightly is unusable, feel free to notify us so we can manually schedule a new build after we have fixed the bug.
+!!! note
+
+     Si vous avez installé Zettlr avec un gestionnaire de packages, consultez la documentation de votre gestionnaire de packages sur la désinstallation du logiciel au lieu de suivre les instructions ici.
+
+Sous **Windows**, accédez aux paramètres du logiciel et désinstallez-le conformément aux [instructions de Microsoft](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs- dans-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98). Si vous souhaitez également supprimer les paramètres et les données utilisateur, vous pouvez les trouver dans le répertoire « C:\Users\<votre-nom-d'utilisateur>\AppData\Roaming\Zettlr ».
+
+Sur **macOS**, accédez au dossier « Applications » et déplacez « Zettlr.app » vers la corbeille. Si vous souhaitez également supprimer les paramètres et les données utilisateur, vous pouvez les trouver dans le répertoire `/Users/<your-user-name>/Library/Application Support/Zettlr`.
+
+Sous **Linux**, la procédure de désinstallation dépend de votre distribution et de la manière dont vous avez installé l'application. Veuillez consulter le manuel approprié pour savoir comment procéder. Si vous souhaitez également supprimer les paramètres et les données utilisateur, vous pouvez les trouver dans le répertoire `/home/<your-user-name>/.config/Zettlr`.
+
+!!! note
+
+     Zettlr créera également des fichiers dits « cachés » dans vos espaces de travail qui mémorisent les paramètres de votre répertoire. Ces fichiers sont nommés « .ztr-directory ». Après avoir désinstallé Zettlr, vous pouvez supprimer ces fichiers en toute sécurité.
+
+## Nightly releases 
+
+Depuis la version 2.0.0, nous proposons des versions dites Nightly. Les Nightlies sont des versions qui sont construites automatiquement tous les lundis à midi (UTC) (mais parfois nous les construisons manuellement). Ils contiennent les modifications les plus récentes apportées à la base de code. Cela signifie qu'elles sont encore plus récentes que les versions bêta, **mais** cela signifie également qu'elles peuvent contenir de sérieux bugs que nous n'avons pas encore trouvés.
+
+Les Nightly releases sont réservées aux utilisateurs avancés qui comprennent les risques liés à leur utilisation. Si vous sauvegardez régulièrement vos paramètres, vos statistiques d'écriture et vos fichiers, il peut être prudent d'utiliser des logiciels de nuit. Nous apprécions tous ceux qui utilisent des nightlies et nous informent des bugs qu'ils rencontrent.
+
+Pour installer une version nocturne, vous devez la télécharger manuellement depuis <https://nightly.zettlr.com/>. Votre programme de mise à jour ne vous informera pas des Nightly releases, mais comme elles sont automatiquement créées chaque semaine, vous pouvez être sûr qu'il y aura une nouvelle version.
+
+!!! avertissement
+
+     Les Nightly releases sont entièrement automatisées. Nous ne garantissons aucune stabilité pour ceux-ci. Normalement, rien de grave ne devrait arriver, mais il est possible que ces versions endommagent votre ordinateur. En utilisant les Nightly releases, vous reconnaissez que vous comprenez ces risques.
+
+Veuillez également noter que nous ne conservons aucune version nocturne précédente. La soirée de chaque semaine remplacera simplement la précédente. Si une nuit est inutilisable, n'hésitez pas à nous en informer afin que nous puissions planifier manuellement une nouvelle build après avoir corrigé le bug.
