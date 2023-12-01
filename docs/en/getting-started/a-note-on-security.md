@@ -1,83 +1,85 @@
-# A Note on Security
+# Notes sur la sécurité
 
-The Markdown format is in general a very safe way to write. Unlike Word documents which can only be safely opened in a restricted mode, Markdown documents can be viewed with much less caution.
+Le format Markdown est très sûr. Contrairement aux documents Word qui ne peuvent être ouverts en toute sécurité qu'en mode restreint, les documents Markdown peuvent être consultés avec moins de prudence.
 
-Nevertheless, even Markdown documents can come with certain security implications. Such documents could contain malicious code that can put your safety at risk. Additionally, templates or other resources that you download from the internet could contain malicious code or even download viruses and malware onto your computer.
+Néanmoins, même les documents Markdown peuvent avoir certaines conséquences en matière de sécurité. Ces documents peuvent contenir du code malveillant, comme les modèles ou autres ressources que vous téléchargez (virus, code malveillant).
 
-On this page, we outline the various ways in which working with Zettlr could expose you to potential security concerns if you are not careful. If you follow the general security guidance in this document and be vigilant, you should always be on the safe side.
+Sur cette page, nous décrivons les différents risques lier a l'utilisation de Zettlr. En suivant les consignes de sécurité contenues dans ce document et avec de la vigilance, vous devriez éviter les problèmes.
 
-As a general note: Zettlr gives you large amounts of freedom when it comes to working with your Markdown files. Therefore, Zettlr's ability to execute arbitrary code while importing, viewing, and exporting Markdown documents is not a security flaw but a conscious design decision. If we would prevent any arbitrary code from executing, working with Markdown and exporting your documents would constrain you unreasonably. To cite an old adage: "With great power comes great responsibility".
-
-!!! note
-
-    Zettlr is constantly vetted by security researchers who audit the app for any ways in which malicious actors could execute code where you would not expect it.
-
-## Code Execution while Reading and Writing Markdown Documents
-
-Markdown is a perfectly safe format because it consists only of source code. In other words, Markdown can be read as-is, just by taking notice of the various formatting characters contained in the document.
-
-Sometimes, however, viewing plain Markdown text can become arduous. For example, when you proof-read a text, you will want to read the descriptions of links, but not the actual links. Likewise, when you create a table, you oftentimes do not wish to see the many formatting characters but only the actual table contents.
-
-Zettlr aims to make viewing and writing Markdown easier for you. For this, Zettlr needs to pre-render some elements in your documents. For example, pre-rendering links hides the links and only displays their description. A link description could, however, contain malicious HTML code. A similar issue occurs with rendering tables in the Table Editor: each cell in the table could contain malicious HTML code that will be executed upon rendering it.
-
-Therefore, many of the renderers that make Markdown readable can execute malicious code in documents and therefore put your safety at risk.
-
-If you only open files from sources you trust, this should not be an issue. However, if you frequently have to open Markdown documents from the internet or from sources you cannot fully trust, it may make sense to disable these renderers to ensure that no Markdown document with malicious code can harm you.
-
-Disabling these renderers will make your Markdown code a bit more difficult to read, but it will also prevent any malicious code from putting you in harm's way.
-
-There are a few renderers that can execute arbitrary HTML and thus become a security concern. These are the **Table Editor** as well as the renderers for **iframes**, **links**, and **emphasis**.
-
-By disabling these renderers in the settings, Zettlr will not attempt to execute any code contained in such elements.
+De manière générale : Zettlr vous offre une grande liberté lorsqu'il s'agit de travailler avec vos fichiers Markdown. Par conséquent, la capacité de Zettlr à exécuter du code arbitraire lors de l'importation, de la visualisation et de l'exportation de documents Markdown n'est pas une faille de sécurité, mais une décision de conception consciente. Si nous voulions empêcher l'exécution de code arbitraire, travailler avec Markdown et exporter vos documents vous limiterait de façon importante. Pour citer un vieil adage : « Un grand pouvoir implique de grandes responsabilités ».
 
 !!! note
 
-    **Rule of thumb**: Even though other renderers, such as the image renderer, should not be capable of executing code, images can provide another pathway for malicious actors to infiltrate your computer. To be on the safe side, disable all renderers.
+     Zettlr est constamment examiné par des chercheurs en sécurité qui vérifient l'application pour détecter toute manière dont des acteurs malveillants pourraient exécuter du code là où vous ne vous y attendez pas.
 
-## Markdown Documents Downloaded from the Internet
 
-One infamous attack vector is to distribute Markdown documents with malicious code. Therefore, the best bet is to never download Markdown documents from the internet.
+## Exécution de code lors de la lecture et de l'écriture de documents Markdown
 
-If you have to download a Markdown file and doubt its safety, we recommend opening it with a regular text editor beforehand (for example, Notepad on Windows, TextEdit on macOS, or any of the various available Linux-based text editors) and remove any raw HTML from the file before opening it in Zettlr.
+Markdown est un format parfaitement sûr car il se compose uniquement de code source. En d’autres termes, Markdown peut être lu tel quel, simplement en prenant note des différents caractères de formatage contenus dans le document.
 
-If you have disabled all renderers, it is also safe to open such a document directly in Zettlr instead.
+Cependant, visualiser du texte Markdown brut peut devenir difficile. Par exemple, lorsque vous relisez un texte, vous souhaiterez lire les descriptions des liens, mais pas les liens eux-mêmes. De même, lorsque vous créez un tableau, vous ne souhaitez souvent pas voir les nombreux caractères de formatage mais uniquement le contenu réel du tableau.
 
-This way, even if there is a way for bad actors to compromise your computer via Zettlr that we do not yet know about (a so-called "zero day exploit"), it won't work because you removed the potentially harmful code beforehand.
+Zettlr vise à vous faciliter la visualisation et l'écriture de Markdown. Pour cela, Zettlr doit pré-restituer certains éléments de vos documents. Par exemple, les liens de pré-rendu masquent les liens et affiche uniquement leur description. Une description de lien peut toutefois contenir du code HTML malveillant. Un problème similaire se produit avec le rendu des tableaux dans l'éditeur de tableaux : chaque cellule du tableau peut contenir du code HTML malveillant qui sera exécuté lors du rendu.
 
-!!! note
+Par conséquent, de nombreux moteurs de rendu qui rendent Markdown lisible peuvent exécuter du code malveillant dans les documents et mettre ainsi votre sécurité en danger.
 
-    **Rule of thumb**: If a Markdown document contains almost exclusively HTML code, this should raise your suspicion. Markdown syntax is not of much use for malicious actors, so they will try to inject their code with HTML instead.
+Si vous ouvrez uniquement des fichiers provenant de sources fiables, cela ne devrait pas poser de problème. Cependant, si vous devez fréquemment ouvrir des documents Markdown depuis Internet ou depuis des sources auxquelles vous ne pouvez pas entièrement faire confiance, il peut être judicieux de désactiver ces moteurs de rendu pour garantir qu'aucun document Markdown contenant un code malveillant ne puisse vous nuire.
 
-## Templates Downloaded from the Internet
+La désactivation de ces moteurs de rendu rendra votre code Markdown un peu plus difficile à lire, mais cela empêchera également l'exécution de tout code malveillant.
 
-Another attack vector is to distribute malicious templates. During exports, you can specify templates that will be used to typeset your Markdown documents. These can be HTML-files, LaTeX-files, or even Word documents. All of these files can contain malicious code.
+Il existe quelques moteurs de rendu qui peuvent exécuter du HTML arbitraire et devenir ainsi un problème de sécurité. Il s'agit de l'**Table Editor** ainsi que des moteurs de rendu pour **iframes**, **links** et **emphasis**.
 
-It is likely that at some point you wish to download a template in order to customize your exports. However, because of the ability to insert malicious code into templates, this can be an easy way for attackers to compromise your computer.
-
-Since templates are not written in Markdown, we recommend caution when you download templates from the internet. Unlike Markdown documents, which can be displayed safely, this is much harder with templates.
-
-If you really want to download a template from the internet, **make sure to have someone you trust with technical experience verify that the document is safe before you use it**!
+En désactivant ces moteurs de rendu dans les paramètres, Zettlr ne tentera pas d'exécuter le code contenu dans ces éléments.
 
 !!! note
 
-    **Rule of thumb**: Even if a colleague sends you a template, make sure to double-check it, since your colleague may have accidentally downloaded a harmful template and overlooked the malicious code.
+     **Règle générale** : même si d'autres moteurs de rendu, tels que le moteur de rendu d'images, ne devraient pas être capables d'exécuter du code, les images peuvent fournir une autre voie permettant aux acteurs malveillants d'infiltrer votre ordinateur. Pour être prudent, désactivez tous les moteurs de rendu.
 
-## Code Execution During Import and Export
+## Documents Markdown téléchargés depuis Internet
 
-While you can prevent any code execution when reading and writing Markdown documents by disabling all renderers, it is impossible to prevent code execution during import and export. In order to properly import or export your files, Zettlr must allow code execution.
+Un vecteur d’attaque tristement célèbre consiste à distribuer des documents Markdown contenant du code malveillant. Par conséquent, le mieux est de ne jamais télécharger de documents Markdown depuis Internet.
 
-For example, if you include equations in your document and then export it to HTML, code is executed that will properly render these equations. Likewise, some templates may require code or resources from the internet to work properly.
+Si vous devez télécharger un fichier Markdown et doutez de sa sécurité, nous vous recommandons de l'ouvrir au préalable avec un éditeur de texte classique (par exemple, Notepad sous Windows, TextEdit sur macOS ou l'un des différents éditeurs de texte disponibles sous Linux) et de supprimer tout fichier Markdown. HTML brut du fichier avant de l'ouvrir dans Zettlr.
 
-Even if you do not download any additional templates, exporting and importing could still pose a security risk. Specifically, some of the standard templates that ship with Zettlr include online resources. While these are deemed safe, it could under some circumstances happen that malicious actors gain access to these online resources and inject harmful code.
+Si vous avez désactivé tous les moteurs de rendu, vous pouvez également ouvrir en toute sécurité un tel document directement dans Zettlr.
 
-This means that even when you export a Markdown document that you yourself created without any specific template, there is still a small chance that this could pose a security risk.
-
-Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we recommend you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL#a-note-on-security).
-
-### Custom Export Commands
-
-Zettlr allows you to specify arbitrary commands for exporting in the settings. This comes in handy when you, for example, use a pre-made Docker container that contains a specialized install of Pandoc, or when you want to, e.g., upload the file somewhere. However, this means that you need to be able to trust whichever command you run. Do never, under any circumstances, add or run a custom command in the settings which you do not fully trust.
+De cette façon, même s'il existe un moyen pour des acteurs malveillants de compromettre votre ordinateur via Zettlr et que nous ne connaissons pas encore (un soi-disant "zero day exploit"), cela ne fonctionnera pas car vous avez préalablement supprimé le code potentiellement dangereux. .
 
 !!! note
 
-    **Rule of thumb**:  Always treat all exports and imports as potentially unsafe.
+     **Règle générale** : si un document Markdown contient presque exclusivement du code HTML, cela devrait éveiller vos soupçons. La syntaxe Markdown n'est pas d'une grande utilité pour les acteurs malveillants, ils essaieront donc d'injecter du code HTML à la place.
+
+
+## Modèles téléchargés depuis Internet
+
+Un autre vecteur d'attaque consiste à distribuer des modèles malveillants. Lors des exportations, vous pouvez spécifier des modèles qui seront utilisés pour composer vos documents Markdown. Il peut s'agir de fichiers HTML, de fichiers LaTeX ou même de documents Word. Tous ces fichiers peuvent contenir du code malveillant.
+
+Il est probable qu'à un moment donné vous souhaitiez télécharger un modèle afin de personnaliser vos exports. Cependant, en raison de la possibilité d’insérer du code malveillant dans les modèles, cela peut constituer un moyen simple pour les attaquants de compromettre votre ordinateur.
+
+Étant donné que les modèles ne sont pas écrits en Markdown, nous vous recommandons d'être prudent lorsque vous téléchargez des modèles depuis Internet. Contrairement aux documents Markdown, qui peuvent être affichés en toute sécurité, cela est beaucoup plus difficile avec les modèles.
+
+Si vous souhaitez vraiment télécharger un modèle depuis Internet, **assurez-vous qu'une personne de confiance possédant une expérience technique vérifie que le document est sûr avant de l'utiliser** !
+
+!!! note
+
+     **Règle générale** : Même si un collègue vous envoie un modèle, assurez-vous de le vérifier, car votre collègue a peut-être accidentellement téléchargé un modèle nuisible et ignoré le code malveillant.
+
+## Exécution de code pendant l'importation et l'exportation
+
+Bien que vous puissiez empêcher toute exécution de code lors de la lecture et de l'écriture de documents Markdown en désactivant tous les moteurs de rendu, il est impossible d'empêcher l'exécution de code lors de l'importation et de l'exportation. Afin d'importer ou d'exporter correctement vos fichiers, Zettlr doit autoriser l'exécution de code.
+
+Par exemple, si vous incluez des équations dans votre document et que vous l'exportez ensuite au format HTML, le code est exécuté pour restituer correctement ces équations. De même, certains modèles peuvent nécessiter du code ou des ressources Internet pour fonctionner correctement.
+
+Même si vous ne téléchargez aucun modèle supplémentaire, l'exportation et l'importation peuvent toujours présenter un risque de sécurité. Plus précisément, certains des modèles standard fournis avec Zettlr incluent des ressources en ligne. Bien que celles-ci soient considérées comme sûres, il peut, dans certaines circonstances, arriver que des acteurs malveillants accèdent à ces ressources en ligne et injectent du code nuisible.
+
+Cela signifie que même lorsque vous exportez un document Markdown que vous avez vous-même créé sans modèle spécifique, il existe toujours un petit risque que cela présente un risque de sécurité.
+
+Les importations et exportations sont toujours facilitées avec l’aide de Pandoc. Pandoc lui-même a rassemblé un ensemble de recommandations de sécurité que nous vous recommandons de lire, de comprendre et de suivre pour garantir votre sécurité et celle de votre ordinateur. [Lisez la note de sécurité de Pandoc ici](https://pandoc.org/MANUAL#a-note-on-security).
+
+### Commandes d'exportation personnalisées
+
+Zettlr vous permet de spécifier des commandes arbitraires pour l'exportation dans les paramètres. Cela s'avère pratique lorsque, par exemple, vous utilisez un conteneur Docker prédéfini contenant une installation spécialisée de Pandoc, ou lorsque vous souhaitez, par exemple, télécharger le fichier quelque part. Cependant, cela signifie que vous devez pouvoir faire confiance à la commande que vous exécutez. N'ajoutez ou n'exécutez en aucun cas une commande personnalisée dans les paramètres en laquelle vous n'avez pas entièrement confiance.
+
+!!! note
+
+     **Règle générale** : considérez toujours toutes les exportations et importations comme potentiellement dangereuses.
