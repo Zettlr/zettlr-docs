@@ -8,6 +8,11 @@ Zettlr utilise un certificat de signature de code comme le recommandent Microsof
 
 Dans beaucoup d'entreprises, le département d'informatique mets en place des restrictions qui empêchent d'ignorer un avertissement de sécurité et donc d'installer l'application.  Si vous travaillez dans un environnement avec ces restrictions, le mieux est de simplement discuter avec votre département informatique et leur demander d'autoriser l'installation de Zettlr afin que vous (ou votre administrateur système) puisse installer l'application.  Si le département informatique a des questions sur l'origine ou la fiabilité de Zettlr, le mieux est de leur donner l'adresse du [dépot GitHub de Zettlr](https://github.com/Zettlr/Zettlr).
 
+## macOS me demande si je souhaite installer les "outils de ligne de commande XCode" lorsque je démarre Zettlr
+
+Zettlr offre des fonctionnalités de base `git`, et pour cela, il doit vérifier si `git` est installé sur l'ordinateur. Sous Windows et Linux, il s'agit d'une simple vérification au démarrage, macOS remarquera que Zettlr est intéressé par la commande et, si `git` n'est pas encore installé, proposera l'installation des "outils de ligne de commande XCode" qui, entre autres , inclut `git`. Nous n'avons aucun moyen de supprimer ce message de manière fiable, vous devrez donc soit refuser chaque fois que vous ouvrez Zettlr, soit simplement installer les outils de ligne de commande. L'installation des outils de ligne de commande est une procédure sûre et vous ne remarquerez pas qu'ils sont installés. Ils pourraient même potentiellement apporter des avantages. Voir [ce fil de discussion Apple sur les outils de ligne de commande](https://developer.apple.com/forums/thread/13781). Voir également le [problème associé sur GitHub](https://github.com/Zettlr/Zettlr/issues/4709).
+
+
 ## J'ai supprimé le tutoriel de mon ordinateur, et je ne parviens pas à le retrouver !
 
 Quand Zettlr détecte qu'il est exécuté pour la première fois sur votre ordinateur, une copie automatique d'un dossier contenant quelques fichiers Markdown dans votre dossier "Documents".  Ces fichiers Markdown contiennent somes instructions de base sur l'utilisation de Zettlr, mais ils ne sont copiés qu'une seule fois.  Si vous voule retrouver ces fichiers après les avoir supprimés, vous avez deux options:
@@ -23,37 +28,37 @@ Nous recevons de plus en plus de demandes pour des versions mobile de Zettlr. No
 
 Markdown est un langage de balisage léger qui vous permet de rédiger un texte aussi complexe qu'un logiciel de bureautique standard, mais avec beaucoup moins d'encombrement. Au lieu de devoir sélectionner manuellement toutes les options de formatage, dans Markdown, il suffit de taper un `#` pour indiquer un titre ! Vous voulez en savoir plus ? Consultez notre [documentation sur les bases de Markdown](reference/markdown-basics.md) !
 
+## J'ai une limite très stricte de caractères ou de mots pour un texte, mais le nombre de caractères/mots de Zettlr est erroné !
+
+Lorsque vous écrivez du texte dans Zettlr, vous écrivez du *code source* qui est ensuite exporté au format PDF, dans un document Word ou dans tout autre format requis. Lors de cet export, le texte sera « compilé », ce qui signifie : les citations sont correctement rendues, une liste de références est ajoutée, les puces seront converties en une liste appropriée, etc. Zettlr lui-même « voit » uniquement le code source et donc compte les caractères présents dans votre fichier, qui seront différents du document exporté.
+
+Le nombre réel de mots ou de caractères dans le fichier final exporté peut donc varier en fonction de nombreuses variables :
+
+* Le style de citation que vous utilisez : certains sont plus verbeux que d'autres
+* Certains codes peuvent être entièrement supprimés
+* Certains modèles peuvent générer des pages de titre ou des tables des matières, ce qui augmente le nombre de mots/caractères.
+
+Zettlr ne peut pas prendre en compte toutes ces variables. Voici donc quelques conseils pour vous aider à atteindre votre objectif :
+
+1. La plupart des enseignants ne se soucieront pas si vous dépassez la limite de quelques mots ou caractères tant que cela est raisonnable.
+2. Si vous devez soumettre quelque chose au format PDF, personne ne s'assiéra et ne comptera réellement les caractères ou les mots visibles.
+3. Si, pour une raison quelconque, vous ne pouvez pas dépasser la limite, ne serait-ce que d'un seul mot ou caractère, essayez de la **sous-dépasser** et exportez-la lorsque vous atteignez la ligne d'arrivée pour afficher le nombre réel de caractères ou de mots. Après quelques fois, vous aurez une bonne idée de la durée pendant laquelle le document exporté sera basé sur le nombre de mots/caractères de Zettlr.
+
 ## Si je ne veux plus utiliser Zettlr, que dois-je faire pour changer de programme ?
 
 Il suffit de désinstaller Zettlr et de commencer à utiliser un autre programme de votre choix. Zettlr ne touche pas à vos fichiers. Si vous avez utilisé les Projets ou modifié les dossiers, il y aura de petits fichiers nommés `.ztr-directory` présents dans certains dossiers. Pour les supprimer, il suffit de réinitialiser le tri des répertoires par défaut et de supprimer tous les projets avant de désinstaller l'application (ou de supprimer manuellement ces fichiers par la suite).
 
-## J'utilise Linux et la suppression de fichiers ne les met pas à la corbeille !
+## Quel est le formatage URI correct pour les liens Markdown ?
 
-Zettlr ne supprime jamais complètement vos fichiers. Il ne fait que les déplacer vers la corbeille. Ainsi, si vous supprimez accidentellement un fichier dont vous avez besoin, vous pouvez toujours le restaurer. Sur les systèmes MacOS et Windows, la corbeille est activée par défaut, mais sur certaines distributions Linux, vous devez activer manuellement la fonctionnalité de la corbeille. Sous Linux, Zettlr (pour être plus précis : le framework Electron sous-jacent) utilise le binaire `gvfs-trash` pour déplacer les fichiers vers la corbeille. Pour utiliser cette fonctionnalité, veuillez vous assurer que vous avez installé le `gvfs-trash` ! Sur Debian/Ubuntu, vous pouvez le faire en exécutant le code suivant dans un terminal :
+Par défaut, Zettlr rend les liens Markdown au format « [Votre texte de lien] (votre-lien) » pour qu'ils soient cliquables (en maintenant enfoncé « Cmd » ou « Ctrl »). Cependant, les liens Markdown peuvent pointer à la fois vers des sites Web et vers d’autres fichiers sur votre ordinateur. Vous pouvez omettre de nombreuses informations de votre lien, et Zettlr utilise une heuristique pour déterminer les informations par lui-même, mais cela peut déduire un faux contexte pour ce que vous souhaitez. Voici comment cela fonctionne:
 
-```bash
-$ sudo apt install gvfs-bin
-```
+- Les liens avec toutes les informations présentes (un protocole et un chemin complet) ne seront pas modifiés. Exemples : `file:///home/foo/documents/test.md` et `http://www.example.com/`.
+- Les liens relatifs avec le protocole `file://` seront convertis en absolus. Exemple : `file://./relative/file.md` deviendra `file:///home/foo/documents/relative/file.md`.
+- Les liens sans protocole seront supposés avoir `https://`. Exemple : `www.zettlr.com` deviendra `https://www.zettlr.com`.
+- Les chemins de fichiers absolus, mais sans le protocole `file://` auront ce préfixe. Exemple : `/home/bar/documents/absolute.md` deviendra `file:///home/bar/documents/absolute.md`.
+- Les chemins de fichiers relatifs avec et sans l'indicateur relatif (`./`) seront convertis en chemins de fichiers absolus. Exemple : `./more/relative.md` et `more/relative.md` deviendront `file:///home/foo/documents/more/relative.md`. **Exception** : Ils résident dans le même dossier : `file.extension` sera dans ce cas traité comme un URI (sauf que le fichier est `.md`).
 
-> Si vous ne souhaitez pas utiliser la corbeille, vous pouvez également activer l'option dans l'onglet "Paramètres Avancées" des préférences demandant à Zettlr de supprimer définitivement les fichiers lorsque leur déplacement vers la corbeille échoue.  Cela supprimera les fichiers de façon irréversible !
-
-## Mes touches `Début ↖` et `Fin` ont un comportement étrange !  Comment le corriger ?
-
-Zettlr utilise l'éditeur CodeMirror en interne.  Par défaut, il est configuré pour que les touches `Début ↖` et `Fin` déplacent le curseur au début ou à la fin de la _vraie_ ligne.  Une _vraie_ ligne est définie comme une suite continue de caractères _sans retour à la ligne_.  Cela signifie que ce que l'on _voit_ comme un paragraph est en fait une seule ligne qui a été séparée quand elle devient trop longue (c'est-à-dire que l'éditeur de texte ajoute automatiquement des retours à la ligne uniquement visuels).
-
-Il y a une option dans les préférences de l'éditeur qui vous permet de configurer ce comportement.  Si l'option "Utilise les actions par défaut de CodeMirror pour `Home` et `End`" est activée, cela veut dire que appuyer sur les touches `Début ↖` et `Fin` vont déplacer le curseur au début ou à la fin de la _vraie_ ligne (c'est-à-dire au début ou à la fin du paragraphe que vous voyez).  Si l'option n'est pas activée, ces touches vont déplacer le curseur au début ou à la fin de la ligne _visible_ (les retours à la lignes insérés automatiquement par l'éditeur sont pris en compte).
-
-## Quelle est la bonne façon pour écrire une URI dans un lien Markdown ?
-
-Par défaut, Zettlr affiche un rendu des liens Markdown `[Your Link Text](your-link)` sous forme cliquable (en maintenant la touche `Cmd` ou `Ctrl`). Toutefois, les liens Markdown peuvent pointer à la fois vers des sites web et vers d'autres fichiers sur votre ordinateur. Vous pouvez omettre beaucoup d'informations de votre lien, et Zettlr utilise une méthode heuristique pour déterminer les informations par lui-même, qu'il faut connaître pour éviter qu'il déduise un mauvais contexte au lieu de ce que vous voulez. Voici comment cela fonctionne :
-
-- Les liens avec toutes les informations présentes (un protocole et un chemin pleinement qualifié) ne seront pas modifiés. Exemples : `file:///home/foo/documents/test.md` et `http://www.example.com/`.
-- Les liens relatifs avec le protocole `file://` seront convertis en valeur absolue. Exemple : `file://./relative/file.md` deviendra `file:///home/foo/documents/relative/file.md`.
-- Les liens sans protocole seront traités comme ayant `https://`. Exemple: `www.zettlr.com` devient `https://www.zettlr.com`.
-- Les chemins de fichiers absolus, mais sans le protocole `file://` seront traités comme ayant ce préfixe. Exemple : `/home/bar/documents/absolute.md` devient `file:///home/bar/documents/absolute.md`.
-- Les chemins d'accès relatifs aux fichiers avec et sans l'indicateur relatif (`./`) seront convertis en chemins d'accès absolus. Exemple : `./more/relative.md` et `more/relative.md` deviennent `file:///home/foo/documents/more/relative.md`. **Exception** s'ils résident dans le même dossier : `file.extension` sera dans ce cas traité comme un URI (sauf si le fichier est `.md`).
-
-Pour résumer : si vous vous inquiétez de la façon dont vos liens sont traités, soyez plus explicite. Deux règles générales peuvent être utilisées pour obliger Zettlr à traiter un lien comme un fichier ou un lien web : préfixer par `./`pour demander explicitement un lien _file_ et ajouter `/` pour demander explicitement un lien _web_.
+Pour résumer : si vous vous inquiétez de la façon dont vos liens sont traités, soyez plus explicite. Deux règles générales peuvent être utilisées pour forcer Zettlr à traiter un lien comme un fichier ou un lien Web : ajoutez un `./` pour demander explicitement un lien _file_, et ajoutez `/` pour demander explicitement un lien _web_.
 
 ## Les liens internes n'ouvrent pas le fichier correspondant !
 
@@ -67,6 +72,7 @@ Au cas où les liens internes utilisés pour relier les fichiers ne fonctionnera
 ## Je connais LaTeX et je veux l'utiliser aussi dans mes fichiers Markdown. Est-ce possible ?
 
 Oui, il suffit d'écrire vos déclarations LaTeX là où vous les voulez. Lorsque que vous exportez au format PDF, Pandoc les prend en compte et les déclarations sont interprétées par le moteur PDF. Malheureusement, le surlignage de la syntaxe LaTeX n'est pas supporté. Par ailleurs, veuillez noter que Pandoc va supprimer tout bloc LaTeX avant d'exporter vers un autre format que le PDF, ce qui signifie que les informations entre `\begin` et `\end`, par exemple, seront complètement absentes de l'export. Pour les exports en HTML, tous les blocs LaTeX sont conservés, mais pas convertis en autre chose.
+
 
 ## Je ne peux pas justifier le texte ou l'aligner à droite ?
 
@@ -86,7 +92,8 @@ Examples:
 # Ce titre sera à la fois non numéroté et absent de la TdM {- .unlisted}
 ```
 
-> Notez que les classes spéciales doivent être la dernière chose sur la ligne du titre. Un commentaire en fin de ligne, par exemple, empêche les attributs d'être pris en compte.
+!!! note
+    Notez que les classes spéciales doivent être la dernière chose sur la ligne du titre. Un commentaire en fin de ligne, par exemple, empêche les attributs d'être pris en compte.
 
 Pour en savoir plus, consulter [la documentation de Pandoc sur les attributs de titre](https://pandoc.org/MANUAL.html#heading-identifiers) (en anglais).
 
