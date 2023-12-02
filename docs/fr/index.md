@@ -4,7 +4,7 @@ Ceci est la documentation officielle de Zettlr. Vous trouverez ici des descripti
 
 !!! note
 
-    Cette documentation est disponible en plusieurs langues. Vous pouvez sélectionner une autre langue à partir de la [page de destination principale](https://docs.zettlr.com/). Veuillez noter que ces traductions peuvent être incomplètes. En cas de doute, consultez toujours cette version (anglaise) de la documentation, qui est régulièrement mise à jour.
+    Cette documentation est disponible en plusieurs langues. Vous pouvez sélectionner une autre langue à partir de la [page de destination principale](https://docs.zettlr.com/). Veuillez noter que ces traductions peuvent être incomplètes. En cas de doute, consultez toujours la version anglaise de la documentation, qui est régulièrement mise à jour.
 
     Si vous avez des questions auxquelles cette documentation ne répond pas, voud pouvez consulter la [Foire aux questions](reference/faq.md) et interrogez la communauté sur [Discord](https://discord.gg/PcfS3DM9Xj), [Discussions GitHub](https://github.com/Zettlr/Zettlr/discussions) et [Reddit](https://www.reddit.com/r/Zettlr/). Nous proposons également une [chaîne YouTube](https://www.youtube.com/c/Zettlr/) où nous mettons occasionnellement en ligne des vidéos sur la façon d'utiliser l'application et les outils associés.
 
