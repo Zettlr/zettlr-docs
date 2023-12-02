@@ -7,7 +7,7 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 1. **Raccourcis communs** : Certains raccourcis sont si courants qu'ils ne rentrent pas dans notre système de raccourcis, mais tout le monde les reconnaîtra. Un exemple est le raccourci des préférences (`Cmd/Ctrl+,`), un autre le raccourci pour terminer l'édition d'une note de bas de page (`Shift+Enter`). Nous essayons d'utiliser autant de ces raccourcis que possible pour réduire les difficultés.
 2. **Raccourcis de haute priorité** : Vous utiliserez _beaucoup_ de ces raccourcis lorsque vous utiliserez l'application. Il s'agit généralement de `Cmd/Ctrl` et d'une seule lettre. En nommant les raccourcis, nous essayons de nous en tenir aux noms anglais de la commande qu'elle déclenche (**N**ew, **R**emove, **F**ind, etc). Parfois, cela n'est pas possible (par exemple, le mode "Distraction Free" est déclenché via `Cmd/Ctrl+J`), car `Cmd/Ctrl+D` est déjà pris par l'éditeur).
 3. **Autres actions** : Nous prenons au sérieux la signification sémantique de la touche `Alt`. Par conséquent, prenez un raccourci de haute priorité, ajoutez-y un `Alt` et vous aurez normalement tendance à déclencher une action alternative sur la même cible. Les exceptions notables à cette règle sont le panneau des développeurs (qui s'ouvre avec `Cmd/Ctrl+Alt+I`), tandis que `Cmd/Ctrl+I` rend le texte en italique. **C'est vrai pour _toutes_ les actions que vous pouvez déclencher en utilisant des clics de souris. Toutes les actions alternatives de la souris sont déclenchées par un `Alt+Click`. Au cas où les `Alt-Click`s ne donnent pas les résultats attendus, les `Ctrl+Click`s fonctionnent également**.
-4. **Cibles alternatives** : Si vous voulez effectuer la même _action_, mais sur une cible différente, essayez d'utiliser une touche `Maj`. Dans la plupart des applications, les commandes `Shift` changent la cible du fichier sélectionné au répertoire sélectionné. La recherche utilise également cette fonction (`Cmd/Ctrl+F` recherche le fichier, tandis que `Cmd/Ctrl+Shift+F` recherche le répertoire entier).
+4. **Cibles alternatives** : Si vous voulez effectuer la même _action_, mais sur une cible différente, essayez d'utiliser une touche `Maj`. Dans la plupart des applications, les commandes `Maj` changent la cible du fichier sélectionné au répertoire sélectionné. La recherche utilise également cette fonction (`Cmd/Ctrl+F` recherche le fichier, tandis que `Cmd/Ctrl+Shift+F` recherche le répertoire entier).
 
 > Les actions dans l'éditeur qui nécessitent la souris impliquent généralement d'appuyer sur `Cmd / Ctrl` tout en cliquant, par exemple pour suivre les liens dans l'éditeur.
 
@@ -27,7 +27,7 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 * `Cmd/Ctrl+Shift+Delete`: Supprimez le répertoire actuel. Si aucun n'est sélectionné, la commande est désactivée.
 * `Cmd/Ctrl+Shift+F`: Permet de focaliser la recherche au niveau global.
 * `Cmd/Ctrl+Shift+E`: Donne le focus à l'éditeur.
-* `Cmd/Ctrl+Shift+T`: Donne le focus à l'arborescence.
+* `Cmd/Ctrl+Shift+T`: Donne le focus à l'arborescence (Champ _filtre_).
 * `Cmd/Ctrl+Alt+L`: Bascule le thème entre le mode clair et le mode foncé (_NdT : attention avec Ubuntu - verrouille l'écran_).
 * `Cmd/Ctrl+Alt+S`: Bascule l'affichage des bribes de texte (NdT ?).
 * `Cmd/Ctrl+Shift+1`: Bascule le mode barre latérale pour afficher soit la liste des fichiers, soit l'arborescence. Désactivé en mode barre latérale étendue.
@@ -36,11 +36,12 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 * `Cmd/Ctrl+W`: Fermez la fenêtre de l'application. Sous Windows et Linux, l'application se fermera également.
 * `Cmd/Ctrl+M`: Réduisez la fenêtre de l'application.
 * `F1`: Ouvrez cette documentation. Cela ouvrira le lien dans votre navigateur par défaut.
+* `clic bouton du milieu`: Cliquer Sur un fichier de l'arborescence, ouvre le fichier dans un nouvel onglet.
 
 **Si le mode de débogage est activé**
 
 * `F5`: Rechargez l'interface utilisateur graphique.
-* `Cmd+Alt+I` (macOs) `Ctrl+Shift+I` (Windows/Linux): Ouvrir les outils de développement Chrome.
+* `Cmd+Alt+I` (macOs) `Ctrl+Maj+I` (Windows/Linux): Ouvrir les outils de développement Chrome.
 
 ## Raccourcis de l'application liés aux champs de texte
 
@@ -69,11 +70,13 @@ Pour en faciliter la mémorisation, voici quelques réflexions que nous avons mi
 * `Cmd/Ctrl+[1-9]`: Sélectionner les onglets de 1 à 9.
 * `Cmd/Ctrl+Minus`: Diminuer la taille de la police de l'éditeur.
 * `Tab`: Indenter une liste.
-* `Shift-Tab`: Désindenter une liste.
-* `Cmd+Plus` (macOS) `Ctrl+Shift+Plus` (Windows/Linux): Augmenter la taille de la police de l'éditeur.
+* `Maj-Tab`: Désindenter une liste.
 * `Shift-Enter`: Lors de l'édition d'une note de bas de page, enregistre le texte de référence. Sinon, cela empêchera l'insertion automatique d'un nouvel élément de liste.
 * `Ctrl-Enter`: Insérez une ligne sous celle dans laquelle votre curseur se trouve actuellement, et placez le curseur au début de celle-ci.
 * `Ctrl-Shift-Enter`: Insérez une ligne au-dessus de celle où se trouve actuellement votre curseur, et placez le curseur au début de celle-ci.
+* Option/Alt+Flêche haut: Déplace la ligne où se trouve le curseur, vers le haut.
+* Option/Alt+Flêche bas: éplace la ligne où se trouve le curseur, vers le bas.
+
 
 ## Raccourcis de l'éditeur de tableau
 
@@ -82,15 +85,15 @@ Ces raccourcis fonctionnent dans chaque éditeur de tableau une fois que vous en
 * `Tab`: Passez à la cellule suivante. Si la dernière colonne est active, passez à la première cellule de la ligne suivante. Si votre curseur se trouvait dans la dernière colonne de la dernière ligne, une nouvelle ligne sera automatiquement ajoutée.
 * `Shift-Tab`: Passez à la cellule précédente. Si votre curseur était dans la première colonne, passez à la dernière cellule de la colonne précédente.
 * `Return`: Passez à la même colonne dans la rangée suivante. Si votre curseur se trouvait dans la dernière ligne, une nouvelle ligne sera automatiquement ajoutée.
-* `Arrow Up/Arrow Down`: Passez à la même colonne dans la ligne précédente/suivante. Aucune nouvelle ligne ne sera ajoutée si vous êtes dans la première ou la dernière ligne.
-* `Arrow Left/Arrow Right`: Déplacez le curseur à gauche/droite. Si le curseur se trouve au début/à la fin du contenu de la cellule, déplacez-vous vers la cellule précédente/suivante.
+* `Flêche Haut/Flêche Bas`: Passez à la même colonne dans la ligne précédente/suivante. Aucune nouvelle ligne ne sera ajoutée si vous êtes dans la première ou la dernière ligne.
+* `Flêche Gauche/Flêche Droite`: Déplacez le curseur à gauche/droite. Si le curseur se trouve au début/à la fin du contenu de la cellule, déplacez-vous vers la cellule précédente/suivante.
 
 ## Raccourcis liés à l'aperçu
 
-* `Arrow Up`: Open the previous file.
-* `Arrow Down`: Open the next file.
-* `Cmd/Ctrl+Arrow Up`: Passez en tête de liste.
-* `Cmd/Ctrl+Arrow Down`: Passez au bas de la liste.
+* `Flêche haut`: Ouvre le fichier précédent.
+* `Flêche bas`: Ouvre le fichier suivant.
+* `Cmd/Ctrl+Flêche haut`: Passez en tête de liste.
+* `Cmd/Ctrl+Flêche bas`: Passez au bas de la liste.
 
 ## Raccourcis liés aux popups
 
