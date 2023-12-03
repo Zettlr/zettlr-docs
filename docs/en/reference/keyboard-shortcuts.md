@@ -51,7 +51,7 @@ This page contains a list of all shortcuts available throughout the app.
 | <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> | Toggle dark mode        |
 | <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd> | Toggle file metadata    |
 | <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>!</kbd>                | Toggle file manager     |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>?</kbd>                | Toggle sidebar          |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>0</kbd>   | Toggle sidebar          |
 | <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>+</kbd>                | Zoom in                 |
 | <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>-</kbd>                | Zoom out                |
 | <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>0</kbd>                | Reset zoom              |
