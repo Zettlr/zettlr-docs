@@ -14,7 +14,7 @@ If you are interested in searching through the content of a specific file, you c
 
 You can also enter something into the replace field in order to replace matches with that string. The search also offers you some more common settings.
 
-Activating the "match case" checkbox, the search will be performed case sensitive. Activating the "by word" checkbox, the search will match on word boundaries (so that "paul" would match "paul", but not "paula"). Lastly, activating the "regexp" checkbox, the search will interpret your query as a regular expression instead of a fixed string. This way you can make use of JavaScript's regular expressions for more advanced searching.
+Activating the "match case" checkbox, the search will be performed case sensitive. Activating the "by word" checkbox, the search will match on word boundaries (so that "paul" would match "paul", but not "paula"). Lastly, activating the "regexp" checkbox, the search will interpret your query as a regular expression instead of a fixed string. This way you can make use of JavaScript's regular expressions for more advanced searching. Note, however, that you should not surround the regular expression with slashes as you would in JavaScript. In other words, use `(.+?)` and not `/(.+?)/` for regular expression searches.
 
 If you press <kbd>Enter</kbd> while the replace input is focused, Zettlr will replace the current search result and automatically highlight the next occurrence of your search term. Hit <kbd>Enter</kbd> repeatedly to replace multiple occurrences.
 
