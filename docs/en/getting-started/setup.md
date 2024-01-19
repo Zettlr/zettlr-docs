@@ -13,7 +13,7 @@ Zettlr aims to be resource-friendly. However, there are a few minimum requiremen
     *  Ubuntu 12.04 or newer
     *  Fedora 24 or newer
     *  Arch Linux
-    *  Any distribution supported by AppImages or Flatpack
+    *  Any distribution supported by AppImages or Flatpak
 * Processor: 1GHz Dual-Core Intel 64 bit or better (32 bit is not supported)
     * On Linux, an equivalent ARM 64 bit processor is supported
     * On macOS, Apple Silicon (M1, M2, etc.) is supported
@@ -68,13 +68,13 @@ Thanks to community efforts, Zettlr is available as a regular package for Arch L
 
 Zettlr is available as an [AppImage](https://appimage.org/) bundle for Linux. To install it, download the package from our [download page](https://www.zettlr.com/download). To install the AppImage, place the file into a directory of your choice, make it executable, and begin using it.
 
-### Flatpack
+### Flatpak
 
-Zettlr is available as a [Flatpack](https://flathub.org/home). To install the Flatpack version, download it from [Zettlr's FlatHub page](https://flathub.org/apps/details/com.zettlr.Zettlr) and follow the setup instructions.
+Zettlr is available as a [Flatpak](https://flathub.org/home). To install the Flatpak version, download it from [Zettlr's FlatHub page](https://flathub.org/apps/details/com.zettlr.Zettlr) and follow the setup instructions.
 
 !!! note
 
-    The Flatpack cannot access your file system by default. To give it access to your documents, you must first configure that with a package like, for example, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal). In case of problems, please get in contact with the Flatpack maintainer on the [corresponding GitHub repository](https://github.com/flathub/com.zettlr.Zettlr). Do not file reports on the main repository – we won't be able to help you.
+    The Flatpak cannot access your file system by default. To give it access to your documents, you must first configure that with a package like, for example, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal). In case of problems, please get in contact with the Flatpak maintainer on the [corresponding GitHub repository](https://github.com/flathub/com.zettlr.Zettlr). Do not file reports on the main repository – we won't be able to help you.
 
 ## Updating Zettlr
 
