@@ -41,6 +41,18 @@ Es gibt zwei Pakete für Arch Linux, die von der Community gepflegt werden. Das 
 
 Zettlr ist als `AppImage` Bundle für Linux-Systeme verfügbar und kann auf unserer [Downloadseite](https://www.zettlr.com/download) heruntergeladen werden. Für mehr Informationen über das Installieren von AppImage Bundles empfehlen wir den offiziellen [Leitfaden auf appimage.org](https://appimage.org/).
 
+### Flatpak
+
+Zettlr ist als `Flatpak` für Linux-Systeme verfügbar und kann auf [Flathub](https://flathub.org/apps/com.zettlr.Zettlr) heruntergeladen werden. Außerdem ist es von Vorteil, wenn du auch die `texlive`-Erweiterung für Flatpak installierst, da diese die Verwendung von LaTeX ermöglicht. LaTeX wird von Zettlr benötigt um z.B. Dateien als PDF zu exportieren.
+
+Die Installation von Zettlr kann auch komplett auf der Konsole ausgeführt werden, wenn Flatpak bereits [eingerichtet wurde](https://flathub.org/setup):
+
+```bash
+flatpak install flathub com.zettlr.Zettlr org.freedesktop.Sdk.Extension.texlive
+```
+> Um LaTeX nicht zu installieren, entferne `org.freedesktop.Sdk.Extension.texlive` aus dem Befehl. Beachte aber bitte, dass du dann nicht in der Lage bist, Funktionen zu verwenden, die LaTeX benötigen.
+
+
 ## Das Programm aktualisieren
 
 Jedes Mal, wenn du Zettlr startest, überprüft es, ob du die aktuellste Version hast. Du kannst auch manuell nach Updates suchen, wenn du auf Hilfe --> Auf Updates überprüfen klickst. Wenn eine neue Version verfügbar ist, zeigt dir Zettlr eine Box mit einigen Hinweisen an. Du kannst dann die Version herunterladen und installieren.

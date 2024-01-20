@@ -56,7 +56,7 @@ $ sudo dnf install texlive-scheme-medium
 $ sudo dnf install texlive-scheme-full
 ```
 
-### Flatpack
+### Flatpak
 Installez le plugin texlive pour Flatpak (attention, il s'agit de la version complète et elle est assez volumineuse) :
 
 ```shell
