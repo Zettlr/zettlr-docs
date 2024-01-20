@@ -43,14 +43,14 @@ Zettlr ist als `AppImage` Bundle für Linux-Systeme verfügbar und kann auf unse
 
 ### Flatpak
 
-Zettlr ist als `Flatpak` für Linux-Systeme verfügbar und kann auf [Flathub](https://flathub.org/apps/com.zettlr.Zettlr) heruntergeladen werden. Außerdem ist es von Vorteil wenn du auch die `texlive`-Erweiterung für Flatpak installierst, da diese die Verwendung von LaTeX ermöglicht. LaTeX wird von Zettlr benötigt um z.b. Dateien als PDF zu exportieren.
+Zettlr ist als `Flatpak` für Linux-Systeme verfügbar und kann auf [Flathub](https://flathub.org/apps/com.zettlr.Zettlr) heruntergeladen werden. Außerdem ist es von Vorteil, wenn du auch die `texlive`-Erweiterung für Flatpak installierst, da diese die Verwendung von LaTeX ermöglicht. LaTeX wird von Zettlr benötigt um z.B. Dateien als PDF zu exportieren.
 
 Die Installation von Zettlr kann auch komplett auf der Konsole ausgeführt werden, wenn Flatpak bereits [eingerichtet wurde](https://flathub.org/setup):
 
 ```bash
 flatpak install flathub com.zettlr.Zettlr org.freedesktop.Sdk.Extension.texlive
 ```
-> Um LaTeX nicht zu installieren entferne einfach `org.freedesktop.Sdk.Extension.texlive` aus dem Befehl. Beachte aber bitte, dass du dann nicht in der Lage bist Funktionen zu verwenden die LaTeX benötigen.
+> Um LaTeX nicht zu installieren, entferne `org.freedesktop.Sdk.Extension.texlive` aus dem Befehl. Beachte aber bitte, dass du dann nicht in der Lage bist, Funktionen zu verwenden, die LaTeX benötigen.
 
 
 ## Das Programm aktualisieren
