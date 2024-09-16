@@ -157,7 +157,7 @@ Currently, the following languages are supported by the engine (the names in bra
 - XML (`xml`)
 - YAML (`yaml`; `yml`)
 
-More languages can be implemented on your request. If you need a specific language, please first search online if there is a CodeMirror 6 compatible language mode available (either from CodeMirror directly or a third party), and open up an issue on GitHub, so that we know which one we should add. We cannot promise to implement it in the end, even if you found a compatible language pack, however. Also, we cannot create language packs ourselves.
+More languages can be implemented on your request. If you need a specific language, please first search online if there is a CodeMirror 6 compatible language mode available (either from CodeMirror directly or a third party), and open up an issue on GitHub. Many are available in a [legacy package](https://github.com/codemirror/legacy-modes). We cannot promise to implement it in the end, even if you found a compatible language pack, however. Also, we cannot create language packs ourselves.
 
 ## Zettlr Markdown additions
 
