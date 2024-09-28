@@ -1,83 +1,83 @@
-# Keyboard Shortcuts
+# 快捷键
 
-This page contains a list of all shortcuts available throughout the app.
+本页包含了软件内所有可用的快捷键。
 
-## Editor-related shortcuts
+## 编辑相关快捷键
 
-| Shortcut                                                 | Description                  |
+| 快捷键                                                   | 描述                         |
 |----------------------------------------------------------|------------------------------|
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>B</kbd>                | Bold                         |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>I</kbd>                | Italic                       |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>K</kbd>                | Insert link                  |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>I</kbd>   | Insert image                 |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>C</kbd>                | Copy as plain                |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>C</kbd> | Copy with formatting         |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>V</kbd>                | Paste with formatting        |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>V</kbd>   | Paste as plain               |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>X</kbd>                | Cut                          |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>A</kbd>                | Select all                   |
-| <kbd>↹</kbd>                                             | Indent list                  |
-| <kbd>↹</kbd>+<kbd>⇧</kbd>                                | Unindent list                |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>                | Unindent list                |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Z</kbd>                | Undo                         |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>Z</kbd>   | Redo                         |
-| <kbd>Alt</kbd>+<kbd>↑</kbd>                              | Swap line above              |
-| <kbd>Alt</kbd>+<kbd>↓</kbd>                              | Swap line below              |
-| <kbd>Alt</kbd>+<kbd>⇧</kbd>+<kbd>↑</kbd>                 | Copy line above              |
-| <kbd>Alt</kbd>+<kbd>⇧</kbd>+<kbd>↓</kbd>                 | Copy line below              |
-| <kbd>Ctrl</kbd>+<kbd>L</kbd> (macOS)                     | Select current line          |
-| <kbd>Alt</kbd>+<kbd>L</kbd> (Win/Linux)                  | Select current line          |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>F</kbd>                | Open search panel            |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>G</kbd>                | Next occurrence              |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>G</kbd>   | Previous occurrence          |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>D</kbd>                | Select next occurrence       |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>L</kbd>                | Insert Zettelkasten ID       |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>L</kbd>   | Copy current Zettelkasten ID |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>B</kbd>                | 粗体                         |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>I</kbd>                | 斜体                         |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>K</kbd>                | 插入链接                     |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>I</kbd>   | 插入图片                     |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>C</kbd>                | 复制纯文本                   |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>C</kbd> | 带格式复制                   |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>V</kbd>                | 带格式粘贴                   |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>V</kbd>   | 纯文本粘贴                   |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>X</kbd>                | 剪切                         |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>A</kbd>                | 全选                         |
+| <kbd>↹</kbd>                                             | 缩进列表                     |
+| <kbd>↹</kbd>+<kbd>⇧</kbd>                                | 取消缩进列表                 |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>                | 取消缩进列表                 |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Z</kbd>                | 撤消                         |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>Z</kbd>   | 重写                         |
+| <kbd>Alt</kbd>+<kbd>↑</kbd>                              | 与上文换行                   |
+| <kbd>Alt</kbd>+<kbd>↓</kbd>                              | 与下文换行                   |
+| <kbd>Alt</kbd>+<kbd>⇧</kbd>+<kbd>↑</kbd>                 | 复制上行                     |
+| <kbd>Alt</kbd>+<kbd>⇧</kbd>+<kbd>↓</kbd>                 | 复制下行                     |
+| <kbd>Ctrl</kbd>+<kbd>L</kbd> (macOS)                     | 选中当前行                   |
+| <kbd>Alt</kbd>+<kbd>L</kbd> (Win/Linux)                  | 选中当前行                   |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>F</kbd>                | 打开搜索面板                 |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>G</kbd>                | 下一个（搜索）符合项         |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>G</kbd>   | 上一个（搜索）符合项         |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>D</kbd>                | 选中下一个（搜索）符合项     |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>L</kbd>                | 插入Zettelkasten ID          |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>L</kbd>   | 复制当前Zettelkasten ID      |
 
-## App-wide shortcuts
+## 全局快捷键
 
-| Shortcut                                                 | Description             |
+| 快捷键                                                   | 描述                    |
 |----------------------------------------------------------|-------------------------|
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>,</kbd>                | Open preferences        |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd> | Open asset manager      |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Q</kbd>                | Quit Zettlr             |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>N</kbd>                | New file                |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>N</kbd>   | New window              |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>O</kbd>                | Open new workspace      |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>S</kbd>                | Save file               |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>E</kbd>                | Export                  |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>P</kbd>                | Print                   |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>T</kbd>   | Filter files            |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> | Toggle dark mode        |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd> | Toggle file metadata    |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>!</kbd>                | Toggle file manager     |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>0</kbd>   | Toggle sidebar          |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>+</kbd>                | Zoom in                 |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>-</kbd>                | Zoom out                |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>0</kbd>                | Reset zoom              |
-| <kbd>Ctrl</kbd>+<kbd>↹</kbd> (macOS)                     | Next tab                |
-| <kbd>Alt</kbd>+<kbd>↹</kbd> (Win/Linux)                  | Next tab                |
-| <kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>↹</kbd> (macOS)        | Previous tab            |
-| <kbd>Alt</kbd>+<kbd>⇧</kbd>+<kbd>↹</kbd> (Win/Linux)     | Previous tab            |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>W</kbd>                | Close current tab       |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>W</kbd>   | Close current window    |
-| <kbd>F1</kbd>                                            | Open this documentation |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>,</kbd>                | 打开偏好                |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd> | 打开资源管理器          |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Q</kbd>                | 退出Zettlr              |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>N</kbd>                | 新建文件                |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>N</kbd>   | 新建窗口                |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>O</kbd>                | 新建工作台              |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>S</kbd>                | 保存文件                |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>E</kbd>                | 导出                    |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>P</kbd>                | 打印                    |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>T</kbd>   | 筛选文件                |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> | 启用夜间模式            |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd> | 打开文件元数据          |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>!</kbd>                | 打开文件管理器          |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>0</kbd>   | 打开侧边栏              |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>+</kbd>                | 放大                    |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>-</kbd>                | 缩小                    |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>0</kbd>                | 重置缩放大小            |
+| <kbd>Ctrl</kbd>+<kbd>↹</kbd> (macOS)                     | 下一页                  |
+| <kbd>Alt</kbd>+<kbd>↹</kbd> (Win/Linux)                  | 下一页                  |
+| <kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>↹</kbd> (macOS)        | 上一页                  |
+| <kbd>Alt</kbd>+<kbd>⇧</kbd>+<kbd>↹</kbd> (Win/Linux)     | 上一页                  |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>W</kbd>                | 关闭当前（窗口）页      |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>W</kbd>   | 关闭当前窗口            |
+| <kbd>F1</kbd>                                            | 打开本说明文档          |
 
-## Debug-Mode
+## 调试模式
 
-| Shortcut                                                              | Description   |
+| 快捷键                                                                | 描述          |
 |-----------------------------------------------------------------------|---------------|
-| <kbd>⌘</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd> (macOS)                      | Open DevTools |
-| <kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>I</kbd> (Win/Linux)                 | Open DevTools |
-| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>⇧</kbd>+<kbd>L</kbd> | Open logs     |
-| <kbd>F5</kbd>                                                         | Reload window |
+| <kbd>⌘</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd> (macOS)                      | 打开开发工具  |
+| <kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>I</kbd> (Win/Linux)                 | 打开开发工具  |
+| <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>⇧</kbd>+<kbd>L</kbd> | 打开日志      |
+| <kbd>F5</kbd>                                                         | 刷新窗口      |
 
 ## Table editor shortcuts
 
-| Shortcut                  | Description          |
+| 快捷键                    | 描述                 |
 |---------------------------|----------------------|
-| <kbd>↹</kbd>              | Select next cell     |
-| <kbd>⇧</kbd>+<kbd>↹</kbd> | Select previous cell |
-| <kbd>↵</kbd>              | Select next row      |
-| <kbd>↑</kbd>              | Select previous row  |
-| <kbd>↓</kbd>              | Select next row      |
+| <kbd>↹</kbd>              | 选中下一词           |
+| <kbd>⇧</kbd>+<kbd>↹</kbd> | 选中上一词           |
+| <kbd>↵</kbd>              | 换行                 |
+| <kbd>↑</kbd>              | 选中上一列           |
+| <kbd>↓</kbd>              | 选中下一列           |
