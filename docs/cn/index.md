@@ -10,28 +10,27 @@
 
 ## 初见Zettlr
 
-If you have just found Zettlr and want to get started, head over to our [setup instructions](getting-started/setup.md) to install the app on your computer. There you can also find the [minimum system requirements](getting-started/setup.md#minimum-system-requirements). Additionally, this page also provides all the necessary information to fully uninstall Zettlr again, if you so wish.
-如果您刚发现Zettlr并想开始使用，请前往我们的[安装说明](getting-started/setup.md)以在计算机上安装它。在那里，你还可以找到[最低系统要求](getting-started/setup.md#minimum-system-requirements)。此外，该页还提供了完全卸载Zettlr所需的所有信息，供您参考。
+如果您刚发现Zettlr并想开始使用，请前往我们的[安装说明](getting-started/setup.md)并在计算机上安装它。在那里，你还可以找到[最低系统要求](getting-started/setup.md#minimum-system-requirements)。此外，该页还提供了完全卸载Zettlr所需的所有信息，供您参考。
 
-## How to Read this Documentation
+## 如何阅读本文
 
-This documentation utilizes a common and easy to use layout to help you find what you need quickly. On the left side, you can find the navigation panel. If you're on mobile, click the hamburger menu button to open the navigation panel.
+本文档采用了常见且易于使用的布局，帮助您快速找到所需内容。左侧是导航面板，如果你使用手机，请点击面板菜单按钮以打开导航面板。
 
-The navigation contains all pages of this documentation. It is ordered from top to bottom. **As a novice user**, you can simply follow the various pages by clicking the "Next" and "Previous" buttons at the bottom of the navigation panel and each page. You can also click on an entry to jump directly to it.
+导航包含了所有文档页面，按顺序从上到下排列。**作为新手**，你可以通过点击导航面板和每页底部的“下一页”和“上一页”按钮轻松浏览。也可以点击条目直接跳转。
 
-If you need to look something up, you can find a **search panel** on the top of the navigation that helps you find the relevant sections of interest immediately.
+如果需要查找内容，导航顶部有一个**搜索面板**，可帮助你立即找到相关部分。
 
-While most of the navigation builds up gradually, you may want to **take a look the references section intermittendly**, since it contains various glossarys, such as a list of keyboard shortcuts, a quick reference of Markdown, and other things that are always important.
+虽然大多数导航栏是依次逐步编辑的，你可能也想**间歇性查看参考部分内容**，比如说快捷键列表、Markdown快速参考或其它重要信息。
 
-Lastly, this documentation is [maintained on GitHub](https://github.com/Zettlr/zettlr-docs). If you spot an error, do not hesitate to mention it there, or directly edit the documentation pages. Each page features an "Edit on GitHub" link that brings you directly to the online editor (GitHub account required).
+最后，这份文档在[GitHub上维护](https://github.com/Zettlr/zettlr-docs)。如果你发现任何错误，请前往Github直接编辑文档页面。每个页面都有“在GitHub上编辑”的链接，它会直接帮你跳转到在线编辑器（需GitHub账户）。
 
-## Get Involved!
+## 加入我们！
 
-Zettlr is free and open source software, which means that its source code is publicly available, and the application comes at no cost. However, this also means that there is no paid staff behind the app – it is completely managed by the community. This means that **we actively encourage users to get involved with the app**. Depending on your skills and what you like most, there are various ways in which you can help Zettlr out:
+Zettlr是免费开源的软件，这意味着其源代码是公开的，应用程序无需付费。然而，这也意味着没有受雇员工在其背后进行支持，它完全由社区管理。以上表明**我们积极鼓励用户参与应用的开发**。根据您的技能和兴趣，你可以通过多种方式帮助Zettlr：
 
-- You can [translate the app](https://github.com/Zettlr/Zettlr/blob/develop/CONTRIBUTING.md#translation) (GitHub account required).
-- You can [translate and improve this documentation](https://github.com/Zettlr/zettlr-docs/) (GitHub account required).
-- You can join the community on [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.gg/PcfS3DM9Xj), and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) and help new and other users.
-- You can [tackle open issues on GitHub](https://github.com/Zettlr/Zettlr/issues) and help develop the application itself (GitHub account required).
+- 你可以[翻译应用程序](https://github.com/Zettlr/Zettlr/blob/develop/CONTRIBUTING.md#translation)（需要GitHub账户）。
+- 你可以[翻译和改进此文档](https://github.com/Zettlr/zettlr-docs/)（需要GitHub账户）。
+- 你可以加入[Reddit](https://www.reddit.com/r/Zettlr/)、[Discord](https://discord.gg/PcfS3DM9Xj)和[GitHub讨论区](https://github.com/Zettlr/Zettlr/discussions)帮助新用户和其他用户。
+- 你可以[处理GitHub上的开放问题](https://github.com/Zettlr/Zettlr/issues)，帮助开发应用程序本身（需要GitHub账户）。
 
-More information on how to get involved can be found [here in the documentation](getting-started/get-involved.md).
+有关如何参与的更多信息，请在[查阅此文档](getting-started/get-involved.md)。
