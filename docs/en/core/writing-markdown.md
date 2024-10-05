@@ -90,9 +90,14 @@ Despite never having to leave your keyboard when it comes to writing documents i
 
 ## Multi-Cursor Editing
 
-In addition to these keyboard shortcuts, Zettlr also offers multi-cursor editing. This means that you can add more than one cursor. Clicking while holding down <kbd>Cmd</kbd> or <kbd>Alt</kbd> will insert a new cursor at the given position. If you drag the mouse across text while holding down <kbd>Cmd</kbd> or <kbd>Alt</kbd>, you can create multiple selections.
+To save time during the editing process, you can use multi-cursor editing to make concurrent changes across your document. Then, your keystrokes apply simultaneously to all active cursors or selected areas.
 
-Whenever you have several cursor or selections, pressing any keys will do something to all of these cursor or selections simultaneously. You can use this to, e.g., correct multiple places of your document at once.
+To add cursors, hold down the following keys while clicking the desired positions:
+
+- <kbd>Cmd</kbd> (Mac)
+- <kbd>Ctrl</kbd> (Windows/Linux)
+
+To create multiple selections from the cursors, press the key you used to set the cursors, <kbd>Shift</kbd>, and any of the arrow keys.
 
 ## Working with footnotes
 
