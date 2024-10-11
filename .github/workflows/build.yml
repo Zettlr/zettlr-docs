@@ -29,7 +29,7 @@ jobs:
 
     # Deploy to the server
     - name: Deploy to production
-      uses: easingthemes/ssh-deploy@v4.1.8
+      uses: easingthemes/ssh-deploy@v5
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         ARGS: "-vzhr"
