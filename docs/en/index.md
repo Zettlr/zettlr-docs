@@ -1,6 +1,6 @@
 # Welcome
 
-This User Manual is the official documentation for Zettlr. Here you can find detailed descriptions for every feature and how you can tweak those to match your needs. Consult this manual any time you are stuck. You can open this manual from within the app by pressing `F1` or clicking on the menu item 'Help' &rarr; 'Open user manual' (internet connection required).
+This User Manual is the official documentation for Zettlr. Here you can find detailed descriptions for every feature and how you can tweak those to match your needs. Consult this manual any time you are stuck. You can open this manual from within the app by pressing <kbd>F1</kbd> or clicking on the menu item 'Help' &rarr; 'Open user manual' (internet connection required).
 
 !!! note
 

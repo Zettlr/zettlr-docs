@@ -83,7 +83,7 @@ zettlr:
 
 !!! note
 
-    Note that you may receive some errors while trying to export, indicating missing packages. [Read this to know how to fix them](../getting-started/installing-latex/#installing-additional-packages).
+    Note that you may receive some errors while trying to export, indicating missing packages. [Read this to know how to fix them](../getting-started/installing-latex.md#installing-additional-packages).
 
 Afterward, your PDF should open with the contents, but you may notice that there are tons of sample code still in there. This is what we now have to get to:
 

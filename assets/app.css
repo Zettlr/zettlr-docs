@@ -16,20 +16,22 @@ section.wy-nav-content-wrap a:hover {
 }
 
 /* Keyboard shortcuts */
-kbd {
-  background-color: #f0f0f0;
+/*
+  The selector comes from the readthedocs theme CSS file to match specificity
+  and successfully overwrite their styles.
+*/
+.rst-content :not(dl.option-list)>:not(dt):not(kbd):not(.kbd)>.kbd,
+.rst-content :not(dl.option-list)>:not(dt):not(kbd):not(.kbd)>kbd {
+  display: inline-block;
+  min-width: 20px;
+  background-color: #fbfbfb;
   color: #666;
   border: 1px solid #c7c6c6;
-  border-radius: 4px;
-  font-size: 60%;
-  cursor: default;
-  min-width: 26px; /* line-height + border bottom */
-  line-height: 24px;
+  border-radius: 3px;
   text-align: center;
-  display: inline-block;
-  padding: 0px 5px;
-  margin: 0 4px;
-  box-shadow: 1px 2px 0 0.5px #8685857e;
+  padding: 1px 3px;
+  vertical-align: middle;
+  box-shadow: inset 0px -1px 0 #c4c4c4;
 }
 
 nav.wy-nav-top a,

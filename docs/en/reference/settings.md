@@ -25,7 +25,7 @@ In the general tab you find options that you might want to adjust if you begin u
 
 Application language
 
-: Sets the language the application will be displayed in. Your changes are applied after a restart. Note that not all translations are complete, so you may see English strings in some places. If you want to improve a translation, [here we explain how](../getting-started/get-involved/#translating-the-app).
+: Sets the language the application will be displayed in. Your changes are applied after a restart. Note that not all translations are complete, so you may see English strings in some places. If you want to improve a translation, [here we explain how](../getting-started/get-involved.md#translating-the-app).
 
 Dark mode
 

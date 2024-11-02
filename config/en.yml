@@ -41,12 +41,14 @@ nav:
     - Table Editor: core/tables.md
     - Print and Preview: core/print-preview.md
     - Exporting: core/export.md
+    - Writing Statistics: core/writing-statistics.md
   - Advanced Usage:
     - YAML Frontmatter: advanced/yaml-frontmatter.md
     - Assets Manager: advanced/assets-manager.md
     - Defaults Files: advanced/defaults-files.md
     - Custom Templates: advanced/custom-templates.md
     - Custom CSS: advanced/custom-css.md
+    - Tag Manager: advanced/tag-manager.md
     - Projects: advanced/projects.md
     - Pomodoro Timer: advanced/pomodoro.md
     - Zettelkasten Methods: advanced/zkn-method.md

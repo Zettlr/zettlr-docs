@@ -48,7 +48,7 @@ The file manager has three modes that you can choose in the preferences:
 * **Expanded**: Same as the thin mode, but both the folder and file lists will be shown at the same time. Makes most sense if you have a wide monitor.
 * **Combined** (default): This is a more classic mode that will show both folders and files interleaved. It shows you less file information at a glance, but is much faster to navigate.
 
-At the top of the file manager, you can find a filter textbox that you can use to quickly search for files and folders inside your workspaces. You can search for any metadata here, including the file or folder name, the file title, or keywords you use inside your files. You can focus the textbox by pressing `Cmd/Ctrol+Shift+T`.
+At the top of the file manager, you can find a filter textbox that you can use to quickly search for files and folders inside your workspaces. You can search for any metadata here, including the file or folder name, the file title, or keywords you use inside your files. You can focus the textbox by pressing <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>.
 
 !!! tip
 
@@ -66,13 +66,13 @@ Editor panes will automatically close once you have closed the last open documen
 
 ## Opening new Windows
 
-You can not only split the editor area into multiple parts to view several documents at once, but you can also create additional windows. For this, simply press `Cmd/Ctrl+Shift+N`. You can open as many windows as you like, and split their editor area as finely grained as you want.
+You can not only split the editor area into multiple parts to view several documents at once, but you can also create additional windows. For this, simply press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>. You can open as many windows as you like, and split their editor area as finely grained as you want.
 
 There are other windows, too, which are introduced in the corresponding sections:
 
 * The [**settings window**](../reference/settings.md)
 * The [**assets manager**](../advanced/assets-manager.md)
-* The [**statistics window**](#TODO)
-* The [**tag manager**](#TODO)
+* The [**statistics window**](../core/writing-statistics.md)
+* The [**tag manager**](../advanced/tag-manager.md)
 
 This concludes the introduction to the user interface. We recommend you follow the guides in the tutorial to learn and experience Zettlr's UI more practically. After you are done going through the tutorial, you can come back here and learn about the various functions in the "Basic Usage" section.
