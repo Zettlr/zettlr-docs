@@ -26,7 +26,7 @@ Similar to Windows, macOS also features simple installers that will install one 
 
 ## Linux
 
-Linux distributions commonly have several LaTeX packages available to install directly from your software manager. There are also minimal and full packages. We list options for common distributions below.
+Linux distributions commonly have several LaTeX packages available to install directly from your software manager. If you're running the Flatpak version, you must install the Flatpak TeX Live extension, rather than a TeX distribution from your system software manager. There are also minimal and full packages. We list options for common distributions below.
 
 !!! note
 
