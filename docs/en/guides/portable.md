@@ -4,7 +4,7 @@ Even though most people will simply install and use Zettlr as a program like any
 
 !!! note
 
-    A "portable app" only makes sense in the context of Windows. Though this guide should work cross-platform, it is very uncommon for a Mac or Linux user to use a portable app.
+    Please note that we cannot provide support for portable setups as the app is intended to be run in a regular setup. If you encounter issues, please try to reproduce them in a regular install first before opening an issue. We provide this guide as a courtesy.
 
 ## What is a Portable App?
 
