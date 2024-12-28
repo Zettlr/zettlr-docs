@@ -19,3 +19,5 @@ done
 cp ./assets/index.html ./build
 # ... as well as the logo
 cp ./assets/logo.png ./build
+# ... and the robots.txt
+cp ./assets/robots.txt ./build
