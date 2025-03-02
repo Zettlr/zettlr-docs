@@ -131,7 +131,7 @@ These shortcuts are available across the entire app.
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>S</kbd>                    | Save file               |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>E</kbd>                    | Export                  |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>P</kbd>                    | Print                   |
-| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>   | Filter files            |
+| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>   | Focus file manager — activates arrow key navigation and type-to-filter |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd>     | Toggle dark mode        |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>     | Toggle file metadata    |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>!</kbd>                    | Toggle file manager     |
