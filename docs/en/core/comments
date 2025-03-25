@@ -26,7 +26,7 @@ To make inserting comments dead simple, Zettlr includes a comment keyboard short
 ![Creating a new comment with the keyboard shortcut.](../img/ConverttoComment.gif)
 ```
 
-If you've already written a block of text that you'd like to turn into a comment, you can simply highlight it with your cursor and _then_ type the `Ctrl-Shift-c` shortcut to convert the selected passage into a comment:
+If you've already written a block of text that you'd like to turn into a comment, you can simply highlight it with your cursor and _then_ press the `Ctrl-Shift-c` shortcut to convert the selected passage into a comment:
 
 ![Converting text to a comment with the keyboard shortcut.](../img/ConverttoComment.gif)
 
