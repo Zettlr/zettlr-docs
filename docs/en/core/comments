@@ -14,9 +14,13 @@ For a comment that spans multiple lines, it's simplest to place the opening comm
 <!--
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-Nunc et lobortis enim. Suspendisse ac sagittis lectus, eget consequat odio. Aliquam congue molestie justo in ullamcorper.
+Nunc et lobortis enim. Suspendisse ac sagittis lectus, eget consequat odio.
 
-Nulla blandit dignissim erat, sit amet luctus odio luctus et. Etiam euismod libero et lectus finibus, ac euismod metus iaculis.
+Aliquam congue molestie justo in ullamcorper.
+
+Nulla blandit dignissim erat, sit amet luctus odio luctus et.
+
+Etiam euismod libero et lectus finibus, ac euismod metus iaculis.
 -->
 ```
 
