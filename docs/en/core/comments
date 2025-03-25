@@ -24,13 +24,13 @@ Etiam euismod libero et lectus finibus, ac euismod metus iaculis.
 -->
 ```
 
-To make inserting comments dead simple, Zettlr includes a comment keyboard shortcut. Typing <kbd>Ctrl-Shift-c</kbd> will auto-complete the basic comment syntax, placing your cursor in the center, between the opening and closing angle brackets, so you can begin typing right away:
+To make inserting comments dead simple, Zettlr includes a comment keyboard shortcut. Typing <kbd>Ctrl-Shift-c</kbd> (<kbd>Cmd-Shift-c</kbd> on MacOS) will auto-complete the basic comment syntax, placing your cursor in the center, between the opening and closing angle brackets, so you can begin typing right away:
 
 ```html
 ![Creating a new comment with the keyboard shortcut.](../img/ConverttoComment.gif)
 ```
 
-If you've already written a block of text that you'd like to turn into a comment, you can simply highlight it with your cursor and _then_ press the <kbd>Ctrl-Shift-c</kbd> shortcut to convert the selected passage into a comment:
+If you've already written a block of text that you'd like to turn into a comment, you can simply highlight it with your cursor and _then_ press the <kbd>Ctrl-Shift-c</kbd> (<kbd>Cmd-Shift-c</kbd> on MacOS) shortcut to convert the selected passage into a comment:
 
 ![Converting text to a comment with the keyboard shortcut.](../img/ConverttoComment.gif)
 
