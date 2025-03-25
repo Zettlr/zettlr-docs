@@ -24,13 +24,13 @@ Etiam euismod libero et lectus finibus, ac euismod metus iaculis.
 -->
 ```
 
-To make inserting comments dead simple, Zettlr includes a comment keyboard shortcut. Typing <kbd>Ctrl-Shift-c</kbd> (<kbd>Cmd-Shift-c</kbd> on MacOS) will auto-complete the basic comment syntax, placing your cursor in the center, between the opening and closing angle brackets, so you can begin typing right away:
+To make inserting comments dead simple, Zettlr includes a comment keyboard shortcut. Typing <kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>c</kbd> will auto-complete the basic comment syntax, placing your cursor in the center, between the opening and closing angle brackets, so you can begin typing right away:
 
 ```html
 ![Creating a new comment with the keyboard shortcut.](../img/ConverttoComment.gif)
 ```
 
-If you've already written a block of text that you'd like to turn into a comment, you can simply highlight it with your cursor and _then_ press the <kbd>Ctrl-Shift-c</kbd> (<kbd>Cmd-Shift-c</kbd> on MacOS) shortcut to convert the selected passage into a comment:
+If you've already written a block of text that you'd like to turn into a comment, you can simply highlight it with your cursor and _then_ press the <kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>c</kbd> shortcut to convert the selected passage into a comment:
 
 ![Converting text to a comment with the keyboard shortcut.](../img/ConverttoComment.gif)
 
@@ -40,17 +40,17 @@ If you've already written a block of text that you'd like to turn into a comment
 
 ## Doing More With Comments
 
-While Zettlr is a dedicated writing tool, it borrows useful features inspired by the powerful text editors developers use for writing code. Developers have not one, but _two_ important uses for comments. The first is, as you would expect, to leave helpful remarks in their code they're writing. When it comes time to run the code, these remarks — wrapped in their special comment markup — aren't treated as part of the program.
+While Zettlr is a dedicated writing tool, it borrows useful features from the powerful text editors developers use for writing code. Developers have not one, but _two_ important uses for comments. The first is, as you would expect, to leave helpful remarks in the code they're writing. When it comes time to run the code, these remarks — wrapped in their special comment markup — aren't treated as part of the program.
 
-This hints at the second way developers commonly use comments, which is to "comment out" sections of their code. In other words, developers will take a chunk of the code they've written and wrap it in markup that tells the browser — or whatever's running their program — to ignore it, treating it as a comment instead of part of the program.
+This hints at the second way developers commonly use comments, which is to "comment out" sections of their code that they want to remove from a program, but are hesitant to delete entirely. In other words, they will take a chunk of the code they've written and wrap it in markup that tells the browser — or whatever's running their program — to ignore it, treating it as a comment instead of part of the program.
 
-Writers also have lots of use cases for which commenting out is handy functionality. We may want to leave notes to self in our documents. We may write sentences, paragraphs, or whole sections of articles that we're unsure whether to keep, or know we need to rewrite, but are hesitant to delete outright. Using comments in Zettlr is a neat way to address these problems.
+Writers also have lots of use cases for which commenting out is handy functionality. We may want to leave notes-to-self in our documents. We may write sentences, paragraphs, or whole sections of articles that we're unsure whether to keep, or know we need to rewrite, but are hesitant to delete outright. Using comments in Zettlr is a neat way to address these problems.
 
 If you're considering deleting a paragraph from your article, try commenting it out. When you do so, the text you've wrapped in comment markup will be visible to you in the editor, but will be omitted from previews and exported versions of your text. Similarly, you can place transcribed quotes from sources or reading notes for your lit review right into the document you're writing for reference. If you don't want those notes appearing when you export the finished article, simply comment them out.
 
 !!! note
 
-    It's worth noting here that, while commenting out passages will keep them from appearing in exported versions of your writing --- i.e., PDFs or Word documents --- if you share your original markdown file with a colleague, they will be able to view any comments you've left. This is handy if you want to annotate or leave questions in a document you're collaborating on, but it's also something to be aware of if you're leaving comments in your markdown that might be sensitive (e.g., human subjects data or protected human-resources information).
+    It's worth noting here that, while commenting out passages will keep them from appearing in exported versions of your writing --- i.e., PDFs or Word documents --- if you share your original markdown file with a colleague, they will be able to view any comments you've left. This is handy if you want to annotate or leave questions in a document you're collaborating on, but it's also something to be aware of if you're leaving comments in your markdown that might be sensitive (e.g., human subjects data or off-the-record quotes).
 
 ### Folding Your Comments
 
