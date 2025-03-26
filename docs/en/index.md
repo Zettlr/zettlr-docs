@@ -6,7 +6,7 @@ This User Manual is the official documentation for Zettlr. Here you can find det
 
     This documentation is available in several languages. You can select another language from the [main landing page](https://docs.zettlr.com/). Please note that these translations may be incomplete. If in doubt, always consult this (the English) version of the documentation, which is updated regularly.
 
-If you have any questions that are not answered by this documentation, make sure to consult the [Frequently Asked Questions](reference/faq.md) and ask the community on [Discord](https://discord.gg/PcfS3DM9Xj), [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions), and [Reddit](https://www.reddit.com/r/Zettlr/). We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools. You can also [Ask Zettlr Guru](https://gurubase.io/g/zettlr), it is a Zettlr-focused AI to answer your questions.
+If you have any questions that are not answered by this documentation, make sure to consult the [Frequently Asked Questions](reference/faq.md) and ask the community on [Discord](https://go.zettlr.com/discord), the [Community Forum](https://forum.zettlr.com/), or [Reddit](https://www.reddit.com/r/Zettlr/). We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools. The company Gurubase offers [an LLM-integration with this documentation](https://gurubase.io/g/zettlr) to peruse, allowing you to "chat" with the documentation.
 
 ## First Steps with Zettlr
 
