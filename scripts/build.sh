@@ -15,9 +15,9 @@ do
   mkdocs build --config-file ./config/$d.yml
 done
 
-# Add the index-file with language selection
+# Add the necessary additional files to the build directory:
 cp ./assets/index.html ./build
-# ... as well as the logo
+cp ./assets/404.html ./build
 cp ./assets/logo.png ./build
-# ... and the robots.txt
 cp ./assets/robots.txt ./build
+cp ./assets/.htaccess ./build

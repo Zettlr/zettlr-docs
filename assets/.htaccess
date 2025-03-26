@@ -1,0 +1,5 @@
+# Indicate our custom error document
+ErrorDocument 404 /404.html
+
+# Prevent any rogue directory listings from showing up
+Options -Indexes
