@@ -50,7 +50,22 @@ To install Zettlr on macOS, download the DMG-file from our [download page](https
 
 ### Ubuntu/Debian
 
-To install Zettlr on Ubuntu or Debian derivatives, download the `deb`-package from our [download page](https://www.zettlr.com/download) and execute the file.
+On Debian and Ubuntu as well as derivative distributions, you can install Zettlr using our APT repository.
+
+You can find all install instructions on [apt.zettlr.com](https://apt.zettlr.com/). Simply add our repository:
+
+```bash
+curl -s --compressed "https://apt.zettlr.com/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/zettlr_apt.gpg > /dev/null
+sudo curl -s --compressed -o /etc/apt/sources.list.d/zettlr.list "https://apt.zettlr.com/zettlr.list"
+sudo apt update
+sudo apt install zettlr
+```
+
+!!! note
+
+    These instructions may change in the future. Please always refer to the [APT repository](https://apt.zettlr.com/), which always contains the correct and up-to-date instructions.
+
+If your distribution does not support aptitude, or you want to manually install the file, you can download the `deb`-package from our [download page](https://www.zettlr.com/download) and execute the file.
 
 ### Fedora
 
