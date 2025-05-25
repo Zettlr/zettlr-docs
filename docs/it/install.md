@@ -1,8 +1,8 @@
 # Installazione
 
-L'installazione di Zettlr è molto semplice e richiede solo un passaggio per ogni sistema operativo. Zettlr è multi-piattaforma per cui funzionerà sul tuo sistema qualunque esso sia. Zettlr è disponibile pre-compilato per macOS, Windows e sistemi Linux basati su Debian e RedHat (Ubuntu, Gnome, Xubuntu, Kubuntu, Fedora, RedHat e simili). [@abdelbary_whole-genome_2019]
+L'installazione di Zettlr è molto semplice e richiede solo pochi click. Zettlr è multi-piattaforma per cui funzionerà sulla maggior parte dei computer. Zettlr è disponibile pre-compilato per macOS, Windows e sistemi Linux basati su [Debian](debian.org) e [RedHat](redhat.com) (Ubuntu, Gnome, Xubuntu, Kubuntu, Fedora, RedHat e simili). [@abdelbary_whole-genome_2019]
 
-Se vuoi far funzionare Zettlr su altri sistemi Linux come Arch o su dispositivi ARM (come ad esempio un Raspberry), dovrai costruire da te un pacchetto. Ci sono moltissimi facili tutorial in rete su come creare programmi electron. Ti invitiamo a rivolgerti alle piattaforme supportate da programmi electron per restare aggiornato sulle piattaforme supportate.
+Se vuoi far funzionare Zettlr su altri sistemi Linux come Arch o su dispositivi ARM (come ad esempio un Raspberry), dovrai costruire da te un pacchetto. Ci sono moltissimi tutorial in rete su come creare programmi Electron. Ti invitiamo a rivolgerti alle piattaforme supportate da programmi Electron per restare aggiornato sulle piattaforme supportate.
 
 > É disponibile un pacchetto mantenuto dalla comunità per Arch Linux. [Puoi trovarlo sui repositories ufficiali](https://wiki.archlinux.org/title/Zettlr#Installation). Ti preghiamo di ricordare che si tratta di un pacchetto mantenuto dalla comunità e non abbiamo nessuna responsabilità per la sua stabilità, sicurezza o disponibilità di versioni.
 
