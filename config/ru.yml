@@ -2,8 +2,8 @@ site_name: Zettlr User Manual
 site_url: https://docs.zettlr.com/ru
 repo_url: https://github.com/Zettlr/zettlr-docs
 site_description: >-
-    Our comprehensive documentation provides you with everything you need to
-    know about how to make the most of Zettlr.
+    Наша подробная документация содержит всю необходимую информацию о том, 
+    как максимально эффективно использовать Zettlr.
 site_author: Hendrik Erz
 copyright: "&copy; 2017-2023 by Zettlr"
 docs_dir: ../docs/ru
@@ -12,62 +12,62 @@ edit_uri: edit/master/docs/ru
 extra_css:
   - assets/app.css
 nav:
-  - Start: index.md
-  - Getting Started:
-    - Setup: getting-started/setup.md
-    - Migrating to a New Computer: getting-started/migrating.md
-    - Installing LaTeX: getting-started/installing-latex.md
-    - A Note on Security: getting-started/a-note-on-security.md
-    - Get involved: getting-started/get-involved.md
-    - Troubleshooting: getting-started/troubleshooting.md
-  - First Time Users:
-    - The User Interface: core/user-interface.md
-    - Importing Files: core/import.md
-  - Basic Usage:
-    - Workspaces and Folders: core/workspaces.md
-    - Files: core/files.md
-    - File Manager: core/file-manager.md
-    - Split View: core/split-view.md
-    - Sidebar: core/sidebar.md
-    - Writing Markdown: core/writing-markdown.md
-    - Working With Comments: core/comments.md
-    - Style and Grammar: core/style-and-grammar.md
-    - Readability: core/readability.md
-    - Statusbar: core/statusbar.md
-    - AutoCorrect and MagicQuotes: core/autocorrect.md
-    - Citations: core/citations.md
-    - Math: core/math.md
-    - Snippets: core/snippets.md
-    - Searching: core/search.md
-    - Table Editor: core/tables.md
-    - Print and Preview: core/print-preview.md
-    - Exporting: core/export.md
-    - Writing Statistics: core/writing-statistics.md
-  - Advanced Usage:
-    - YAML Frontmatter: advanced/yaml-frontmatter.md
-    - Assets Manager: advanced/assets-manager.md
-    - Defaults Files: advanced/defaults-files.md
-    - Custom Templates: advanced/custom-templates.md
-    - Custom CSS: advanced/custom-css.md
-    - Tag Manager: advanced/tag-manager.md
-    - Projects: advanced/projects.md
-    - Pomodoro Timer: advanced/pomodoro.md
-    - Zettelkasten Methods: advanced/zkn-method.md
-    - Graph View: advanced/graph.md
-  - Guides:
-    - LanguageTool Locally: guides/languagetool-local.md
-    - Presentations: guides/presentations.md
-    - Submitting to a Journal using a LaTeX Template: guides/journal-latex-template.md
-    - Portable App: guides/portable.md
-  - References:
+  - Начало: index.md
+  - Начало работы:
+    - Установка: getting-started/setup.md
+    - Переход на новый компьютер: getting-started/migrating.md
+    - Установка LaTeX: getting-started/installing-latex.md
+    - Примечание по безопасности: getting-started/a-note-on-security.md
+    - Присоединяйтесь: getting-started/get-involved.md
+    - Устранение неполадок: getting-started/troubleshooting.md
+  - Новым пользователям:
+    - Пользовательский интерфейс: core/user-interface.md
+    - Импорт файлов: core/import.md
+  - Основное использование:
+    - Рабочие пространства и папки: core/workspaces.md
+    - Файлы: core/files.md
+    - Файловый менеджер: core/file-manager.md
+    - Разделенный экран: core/split-view.md
+    - Боковая панель: core/sidebar.md
+    - Написание Markdown: core/writing-markdown.md
+    - Работа с комментариями: core/comments.md
+    - Стиль и грамматика: core/style-and-grammar.md
+    - Читаемость: core/readability.md
+    - Строка состояния: core/statusbar.md
+    - Автокоррекция и MagicQuotes: core/autocorrect.md
+    - Цитирование: core/citations.md
+    - Математические функции: core/math.md
+    - Фрагменты (отрывки): core/snippets.md
+    - Поиск: core/search.md
+    - Редактор таблиц: core/tables.md
+    - Печать и просмотр: core/print-preview.md
+    - Экспорт: core/export.md
+    - Статистика написания: core/writing-statistics.md
+  - Расширенное использование:
+    - Форматирование YAML: advanced/yaml-frontmatter.md
+    - Управление активами: advanced/assets-manager.md
+    - Файлы по умолчанию: advanced/defaults-files.md
+    - Пользовательские шаблоны: advanced/custom-templates.md
+    - Пользовательский CSS: advanced/custom-css.md
+    - Менеджер тегов: advanced/tag-manager.md
+    - Проекты: advanced/projects.md
+    - Таймер Помодоро: advanced/pomodoro.md
+    - Методы Zettelkasten: advanced/zkn-method.md
+    - Графическое представление: advanced/graph.md
+  - Руководства:
+    - Локальные LanguageTool: guides/languagetool-local.md
+    - Презентации: guides/presentations.md
+    - Отправка в журнал с использованием шаблона LaTeX: guides/journal-latex-template.md
+    - Портативное приложение: guides/portable.md
+  - Рекомендации:
     - FAQ: reference/faq.md
-    - Keyboard Shortcuts: reference/keyboard-shortcuts.md
-    - Markdown Basics: reference/markdown-basics.md
-    - Settings: reference/settings.md
-    - Spell Checking: reference/spell-checking.md
+    - Клавиатурные сокращения: reference/keyboard-shortcuts.md
+    - Основы Markdown: reference/markdown-basics.md
+    - Настройки: reference/settings.md
+    - Проверка орфографии: reference/spell-checking.md
 theme:
   name: readthedocs
-  locale: en
+  locale: ru
   custom_dir: ../theme_override
   highlightjs: True
   prev_next_buttons_location: both
