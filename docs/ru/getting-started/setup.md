@@ -91,7 +91,7 @@ Zettlr is available as a [Flatpak](https://flathub.org/home). To install the Fla
 
     The Flatpak cannot access your file system by default. To give it access to your documents, you must first configure that with a package like, for example, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal). In case of problems, please get in contact with the Flatpak maintainer on the [corresponding GitHub repository](https://github.com/flathub/com.zettlr.Zettlr). Do not file reports on the main repository – we won't be able to help you.
 
-## Updating Zettlr
+## Обновление Zettlr
 
 The application checks for new updates each time you start the app. You can also manually trigger the search for updates by clicking 'Help' &rarr; 'Check for updates'. If a new version is available, Zettlr will display a "download" symbol in the toolbar. If you click it, Zettlr will open a dialog which contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
 
@@ -113,7 +113,7 @@ If automatic updates don't work for you, you can always manually update by downl
 
     You can opt in to beta releases. To do so, activate "Notify me about beta releases" in the settings.
 
-## Uninstalling Zettlr
+## Удаление Zettlr
 
 If you are unsatisfied with Zettlr or need to remove the app, please follow these instructions.
 
@@ -131,7 +131,7 @@ On **Linux**, the uninstall procedure depends on your distribution and how you i
 
     Zettlr will also create so-called "hidden" files inside your workspaces that remember your directory settings. These files are named `.ztr-directory`. After uninstalling Zettlr, you can safely remove those files.
 
-## Nightly Releases
+## Ночные сборки
 
 Since 2.0.0, we offer so-called nightly releases. Nightlies are releases that are being built automatically every Monday at noon (UTC) (but sometimes we build them manually). They contain the most recent changes to the code base. This means that they are even more recent than the beta releases, **but** this also means that they may contain serious bugs which we haven't found yet.
 

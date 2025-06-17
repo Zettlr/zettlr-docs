@@ -83,39 +83,39 @@ Zettlr сам по себе реализует смесь различных д�
 
 ### Ссылки и изображения
 
-Links are inline elements and images are block elements, so they follow the same semantics as the elements discussed above. Yet they deserve a little bit more attention, because they offer you more options.
+Ссылки являются встроенными элементами, а изображения — блочными, поэтому они следуют той же семантике, что и элементы, описанные выше. Однако они заслуживают немного большего внимания, поскольку предлагают больше возможностей.
 
-Links are set using the following syntax: `[This text will appear in your final document](http://this-is-your-actual-link.tld)` Zettlr will automatically convert this syntax to a clickable link (follow the link target by clicking on it while holding down the `ALT` or `Ctrl` key) for the ease of access (and to shorten those rather long links).
+Ссылки задаются с помощью следующего синтаксиса: `[Этот текст появится в вашем окончательном документе](http://this-is-your-actual-link.tld)` Zettlr автоматически преобразует этот синтаксис в кликабельную ссылку (перейдите по ссылке, нажав на нее и удерживая клавишу `ALT` или `Ctrl`) для удобства доступа (и для сокращения довольно длинных ссылок).
 
-Images work exactly like links, except they start with an exclamation mark (!). Images of course also need a path, because you won't store them in a plain text document. Therefore you can use three different approaches to linking images in your document:
+Изображения работают точно так же, как ссылки, за исключением того, что они начинаются с восклицательного знака (!). Изображения, конечно, также нуждаются в пути, потому что вы не будете хранить их в текстовом документе. Поэтому вы можете использовать три разных подхода для связывания изображений в вашем документе:
 
-1. Use an absolute web URL, such as https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1000px-Markdown-mark.svg.pngMarkdown.
-2. Use an absolute path to a file on your own computer, such as `C:\Users\user-name\Pictures\my-image.jpg`.
-3. Use a relative path to a file on your own computer, such as `../img/my-image.png`.
-
-!!! tip
-
-    You can provide a default image path in the "Editor" tab in the preferences, which Zettlr will always use when you paste an image into the editor.
-
-The relative path is always relative to the document in which you place it. The directory `..` tells Zettlr to look for the image in the parent directory (i.e., to traverse up one directory). If you store your documents in a cloud and access them on different devices, you would naturally use relative image paths, because the absolute paths will definitely differ (especially if you work with two different operating systems).
+1. Используйте абсолютный веб-URL, например https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1000px-Markdown-mark.svg.png
+2. Используйте абсолютный путь к файлу на вашем компьютере, например `C:\Users\user-name\Pictures\my-image.jpg`.
+3. Используйте относительный путь к файлу на вашем компьютере, например `../img/my-image.png`.
 
 !!! tip
 
-    Try to insert images and links always using their shortcuts, `Cmd/Ctrl+K` for links and `Cmd/Ctrl+Shift+I` for images. If you have a valid path in your clipboard, it will even automatically insert it for you, making your life easy. The best way to insert a link, for instance, would therefore be to first copy the link to your clipboard, then select the text you want to link and third press `Cmd/Ctrl+K`. Then the selected text will become the displayed link text and the link from your clipboard will be used as the link target.
+    Вы можете указать путь к изображению по умолчанию на вкладке "Редактор" в настройках, который Zettlr будет всегда использовать при вставке изображения в редактор.
 
-### Footnotes
+Относительный путь всегда относится к документу, в котором вы его размещаете. Каталог `..` указывает Zettlr искать изображение в родительском каталоге (т. е. переходить на один уровень выше). Если вы храните свои документы в облаке и получаете к ним доступ с разных устройств, вам, естественно, следует использовать относительные пути к изображениям, поскольку абсолютные пути будут отличаться (особенно если вы работаете с двумя разными операционными системами).
 
-Footnotes are what most researchers in arts and humanities are of course interested in. So here some general rules for inserting footnotes and how Zettlr interacts with them. According to standard Markdown syntax, footnotes require two elements: First the reference somewhere in the text in the format `[^x]`. The `x` stands for a unique identifier. Basically, you can use anything you want, as long as this identifier is not used by a second footnote as well. But normally, you will want to stick with ascending numbers. (Also: These numbers don't have to be in order; as long as you export your Markdown document, Pandoc will automatically re-number the footnotes correctly. So if you decide to delete a footnote later on, don't worry that the numbers won't neatly match up in your document anymore.)
+!!! tip
 
-The second element footnotes require is a block element, the footnote _reference text_. It is always in the following format: `[^x]: Your reference text.` As you can see, the identifier is a replica of your reference that appears in the text, only now it is followed by a colon. It is common sense that you put your references in a list at the very end of your document. Yet, this jumping back and forth between the reference text and your footnote reference is cumbersome, and therefore Zettlr tries to ease your life. Move your mouse over a footnote reference to see the footnote text. Click it while holding down `Cmd` or `Ctrl` to edit the footnote. Press `Shift+Return` to save your changes.
+    Постарайтесь вставлять изображения и ссылки всегда с помощью горячих клавиш: `Cmd/Ctrl+K` для ссылок и `Cmd/Ctrl+Shift+I` для изображений. Если в буфере обмена есть действительный путь, он будет автоматически вставлен, что значительно упростит вам жизнь. Например, лучший способ вставить ссылку — сначала скопировать ее в буфер обмена, затем выделить текст, который хотите связать ссылкой, и нажать `Cmd/Ctrl+K`. После этого выделенный текст станет текстом ссылки, а ссылка из буфера обмена будет использована в качестве цели ссылки.
 
-### Fenced code blocks
+### Сноски
 
-Zettlr also supports so-called "fenced code blocks." These are the block-version of the inline code element. To start a code block, type three backticks "\`" in a row on an empty line. Close the code block again with three back ticks on an empty line. Everything in between those two "fences" will be rendered using monospace font to indicate that this is indeed code.
+Сноски, конечно же, интересуют большинство исследователей в области искусства и гуманитарных наук. Итак, вот несколько общих правил вставки сносок и того, как Zettlr с ними взаимодействует. Согласно стандартному синтаксису Markdown, сноски требуют двух элементов: во-первых, ссылка где-нибудь в тексте в формате `[^x]`. `x` обозначает уникальный идентификатор. В принципе, вы можете использовать что угодно, главное, чтобы этот идентификатор не использовался во второй сноске. Но обычно лучше использовать увеличивающиеся номера. (Кроме того, эти номера не обязательно должны быть в порядке; при экспорте документа Markdown Pandoc автоматически перенумерует сноски правильно. Поэтому, если вы решите удалить сноску позже, не беспокойтесь, что номера в вашем документе больше не будут аккуратно совпадать).
 
-Zettlr supports syntax highlighting for several script and programming languages. You have to tell Zettlr explicitly which language to use by simply adding its identifier _directly after the introducing code fence_. So to direct Zettlr to highlight a code fence using a JavaScript interpreter, you would need to begin the code block with three backticks, directly followed by the word "javascript".
+Второй элемент, необходимый для сносок, — это блочный элемент, текст ссылки на сноску. Он всегда имеет следующий формат: `[^x]: Текст вашей ссылки.` Как видите, идентификатор является копией вашей ссылки, которая появляется в тексте, только теперь за ним следует двоеточие. Обычно ссылки помещаются в список в самом конце документа. Однако переход между текстом ссылки и ссылкой в сноске является неудобным, поэтому Zettlr пытается облегчить вам жизнь. Наведите курсор мыши на ссылку в сноске, чтобы увидеть текст сноски. Нажмите на нее, удерживая клавишу `Cmd` или `Ctrl`, чтобы отредактировать сноску. Нажмите `Shift+Return`, чтобы сохранить изменения.
 
-Currently, the following languages are supported by the engine (the names in braces are the identifiers you'd need to indicate the language):
+### Обрамлённые блоки кода
+
+Zettlr также поддерживает так называемые "обрамленные блоки кода". Это блочная версия встроенного элемента кода. Чтобы начать блок кода, введите три обратных кавычки "\`" подряд в пустой строке. Закройте блок кода снова тремя обратными кавычками в пустой строке. Все, что находится между этими двумя "ограждениями", будет отображаться с помощью моноширинного шрифта, чтобы показать, что это действительно код.
+
+Zettlr поддерживает подсветку синтаксиса для нескольких скриптовых и программных языков. Вы должны явно указать Zettlr, какой язык использовать, просто добавив его идентификатор _сразу после вводного ограждения кода_. Таким образом, чтобы Zettlr подсвечивал кода, написанный на языке JavaScript, вам нужно начать блок кода с трех обратных кавычек, сразу за которыми следует слово "javascript".
+
+В настоящее время движок поддерживает следующие языки (имена в фигурных скобках — это идентификаторы, которые необходимо указать для обозначения языка):
 
 - C (`c`)
 - C# (`c#`; `csharp`; `cs`)
@@ -157,25 +157,25 @@ Currently, the following languages are supported by the engine (the names in bra
 - XML (`xml`)
 - YAML (`yaml`; `yml`)
 
-More languages can be implemented on your request. If you need a specific language, please first search online if there is a CodeMirror 6 compatible language mode available (either from CodeMirror directly or a third party), and open up an issue on GitHub. Many are available in a [legacy package](https://github.com/codemirror/legacy-modes). We cannot promise to implement it in the end, even if you found a compatible language pack, however. Also, we cannot create language packs ourselves.
+По вашему запросу могут быть реализованы дополнительные языки. Если вам нужен конкретный язык, сначала проверьте в Интернете, есть ли доступный режим языка, совместимый с CodeMirror 6 (либо от CodeMirror напрямую, либо от третьей стороны), и откройте заявку на GitHub. Многие из них доступны в [устаревшем пакете](https://github.com/codemirror/legacy-modes). Однако мы не можем обещать, что в конечном итоге реализуем его, даже если вы нашли совместимый языковой пакет. Кроме того, мы не можем создавать языковые пакеты самостоятельно.
 
-## Zettlr Markdown additions
+## Дополнения к Zettlr Markdown
 
-In addition to GitHub flavored markdown extensions (marked with "(extension)" in the [spec](https://github.github.com/gfm/)), Zettlr provides the following:
+В дополнение к расширениям GitHub flavored markdown (отмеченным как "(расширение)" в [спецификации](https://github.github.com/gfm/)), Zettlr предоставляет следующее:
 
 !!! warning
 
-    Pages in iframes can get unrestricted access to your local filesystem! 'Frame-busting' techniques can be used by pages to escape the iframe and [interact with the Electron backend directly](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) - you should assume any pages in iframes (or an attacker of that page) have access to all of the data on your computer.
+    Страницы в iframe могут получить неограниченный доступ к вашей локальной файловой системе! Страницы могут использовать техники "разрушения фреймов" для выхода из iframe и [прямого взаимодействия с бэкэндом Electron](https://www.electronjs.org/docs/tutorial/security#isolation-for-untrusted-content) — вы должны исходить из того, что любые страницы в iframe (или злоумышленник, атакующий эту страницу) имеют доступ ко всем данным на вашем компьютере.
 
- - Support for `<iframe src="https://example.com"></iframe>` elements
+ - Поддержка элементов `<iframe src="https://example.com"></iframe>`
 
- - KaTeX equation rendering via either inline (`$`) or fenced (`$$`) blocks: `$x/y$` or
+ - Отображение уравнений KaTeX с помощью встроенных (`$`) или огражденных (`$$`) блоков: `$x/y$` или
 
         $$
         x / y
         $$
 
- - [mermaid.js](https://mermaid-js.github.io/mermaid/) diagram rendering via fenced code blocks:
+ - [mermaid.js](https://mermaid-js.github.io/mermaid/) отображение диаграммы с помощью огражденных блоков кода:
 
         ```mermaid
         graph TD
@@ -184,6 +184,6 @@ In addition to GitHub flavored markdown extensions (marked with "(extension)" in
             B --> D[Server02]
         ```
 
-## Resources on Markdown
+## Ресурсы по Markdown
 
-Do you want to learn _all_ about Markdown? That is great! A good resource that covers all elements is to be found on [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). If you want to get used to writing clean and unambiguous Markdown, [view the specifications by CommonMark](https://spec.commonmark.org/current/). Also, there's a "book" on the GitHub flavoured Markdown syntax. [View it here](https://gitbookio.gitbooks.io/markdown/content/).  For those engaged in scholarly writing, the [Pandoc manual's section on it's extended Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) is worth reading.
+Хотите узнать все о Markdown? Отлично! Хороший ресурс, охватывающий все элементы, можно найти на сайте [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/). Если вы хотите научиться писать чистый и однозначный Markdown, [ознакомьтесь со спецификациями CommonMark](https://spec.commonmark.org/current/). Кроме того, есть "книга" о синтаксисе Markdown в стиле GitHub - [просмотрите ее здесь](https://gitbookio.gitbooks.io/markdown/content/).  Тем, кто занимается научным письмом, стоит прочитать [раздел руководства Pandoc, посвященный расширенному Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown).
