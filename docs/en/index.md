@@ -20,7 +20,7 @@ The navigation contains all pages of this documentation. It is ordered from top 
 
 If you need to look something up, you can find a **search panel** on the top of the navigation that helps you find the relevant sections of interest immediately.
 
-While most of the navigation builds up gradually, you may want to **take a look the references section intermittendly**, since it contains various glossarys, such as a list of keyboard shortcuts, a quick reference of Markdown, and other things that are always important.
+While most of the navigation builds up gradually, you may want to **take a look the references section intermittently**, since it contains various glossarys, such as a list of keyboard shortcuts, a quick reference of Markdown, and other things that are always important.
 
 Lastly, this documentation is [maintained on GitHub](https://github.com/Zettlr/zettlr-docs). If you spot an error, do not hesitate to mention it there, or directly edit the documentation pages. Each page features an "Edit on GitHub" link that brings you directly to the online editor (GitHub account required).
 
