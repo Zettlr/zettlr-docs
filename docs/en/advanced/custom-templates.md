@@ -195,4 +195,4 @@ To export a Zettlr file using your custom Word styles, simply choose the custom 
 
 ## Final Thoughts
 
-Zettlr strives to give you full command over what you can do with your files. What we've outlined on this page is only the start. How do you use Zettlr's possibilities to do weird things? Tell us on [BlueSky]([https://www.twitter.com/Zettlr](https://bsky.app/profile/zettlr.com)), [Discord](https://go.zettlr.com/discord), or on [Reddit](https://www.reddit.com/r/Zettlr)!
+Zettlr strives to give you full command over what you can do with your files. What we've outlined on this page is only the start. How do you use Zettlr's possibilities to do weird things? Tell us on [BlueSky](https://bsky.app/profile/zettlr.com), [Discord](https://go.zettlr.com/discord), or on [Reddit](https://www.reddit.com/r/Zettlr)!
