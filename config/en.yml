@@ -37,6 +37,7 @@ nav:
     - AutoCorrect and MagicQuotes: core/autocorrect.md
     - Citations: core/citations.md
     - Math: core/math.md
+    - Code Blocks: core/code-blocks.md
     - Snippets: core/snippets.md
     - Searching: core/search.md
     - Table Editor: core/tables.md
