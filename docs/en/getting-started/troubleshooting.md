@@ -68,7 +68,7 @@ Make sure to include:
 * A concise description of what happens, and what you expect to happen
 * How can you trigger this issue? Be precise here so that we can reproduce the issue on our side
 * Include screenshots or entire screencasts to demonstrate the issue. Very often, images "say more than a thousand words."
-* Also provide log entries. You can find the logs by enabling the debug mode, then selecting "Develop" &rarr; "Open logs"
+* Also provide log entries. You can find the logs by enabling the debug mode, then selecting "Develop" &rarr; "Open logs". The logs can also be found in Zettlr's application data path (see step 4 above) in the "logs" folder, if you can't use the app to view them.
 
 !!! note
 
