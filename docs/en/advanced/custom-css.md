@@ -130,46 +130,20 @@ body.dark .main-editor-wrapper .cm-editor .cm-content .typewriter-active-line {
 }
 ```
 
-!!! warning
-
-    The example CSS Code Snippets above have been updated and tested with v3.0.1 and so should work with newer versions of Zettlr, but the ones below haven't been updated in some time, and are unlikely to work out of the box.
-
-
 ### Set a maximum width for the text
 
 If you have a large screen, you may find that lines of your text are very long.
 If you wish to have shorter lines in the editor, with margins on both sides, you can use the following CSS snippet:
 
 ```css
-#editor {
-  --side-margin: calc( 50vw - 30em ); 
+.main-editor-wrapper .cm-content {
+  max-width: <preferred-line-width>;
+  margin-right: auto;
 }
 
-#editor .CodeMirror {
-  margin-left: var(--side-margin);
-}
-
-#editor .CodeMirror-scroll {
-  padding-right: var(--side-margin);
+.main-editor-wrapper .cm-gutters {
+  margin-left: auto;
 }
 ```
 
 ![A preview of Zettlr using above snippet](../img/custom_css_maxwidth.png)
-
-For the distraction free mode, the CSS snippet needs to be modified as follows:
-
-```css
-#editor.fullscreen {
-  --side-margin-fullscreen: calc( 50vw - 30em ); 
-}
-  
-#editor.fullscreen .CodeMirror-fullscreen {
-  margin-left: var(--side-margin-fullscreen) !important;
-}
-    
-#editor.fullscreen .CodeMirror-fullscreen .CodeMirror-scroll { 
-  padding-right: var(--side-margin-fullscreen) !important; 
-}
-```
-
-By adjusting the calc functions for the two different modes, the same line width can be achieved with and without the file manager/sidebar. 
