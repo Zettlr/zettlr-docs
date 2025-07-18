@@ -38,7 +38,7 @@ By default, Zettlr will create a Markdown file for you. However, Zettlr can also
 
 After creating files, you may also want to move them around or rename them. Most of these features work very similar to your file browser:
 
-When you right-click a file, you will have a selection of actions available: You can rename, delete, or duplicate files. Duplicating files will create an exact copy of the file in the same directory and append "copy" to it.
+When you right-click a file, you will have a selection of actions available: You can rename, delete, or duplicate files. Duplicating a file will create an exact copy of the file in the same directory and append "copy" to it.
 
 Also, you can drag files around. You can drag them on a different folder to move them there, or out of the app in order to open it in another application, or upload it to a website.
 
