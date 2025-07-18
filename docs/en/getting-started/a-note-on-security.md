@@ -20,7 +20,7 @@ Sometimes, however, viewing plain Markdown text can become arduous. For example,
 
 Zettlr aims to make viewing and writing Markdown easier for you. For this, Zettlr needs to pre-render some elements in your documents. For example, pre-rendering links hides the links and only displays their description. A link description could, however, contain malicious HTML code. A similar issue occurs with rendering tables in the Table Editor: each cell in the table could contain malicious HTML code that will be executed upon rendering it.
 
-Therefore, many of the renderers that make Markdown readable can execute malicious code in documents and therefore put your safety at risk.
+Therefore, many of the renderers that make Markdown readable can execute malicious code in documents and put your safety at risk.
 
 If you only open files from sources you trust, this should not be an issue. However, if you frequently have to open Markdown documents from the internet or from sources you cannot fully trust, it may make sense to disable these renderers to ensure that no Markdown document with malicious code can harm you.
 
@@ -76,7 +76,7 @@ Imports and exports are always facilitated with the help of Pandoc. Pandoc itsel
 
 ### Custom Export Commands
 
-Zettlr allows you to specify arbitrary commands for exporting in the settings. This comes in handy when you, for example, use a pre-made Docker container that contains a specialized install of Pandoc, or when you want to, e.g., upload the file somewhere. However, this means that you need to be able to trust whichever command you run. Do never, under any circumstances, add or run a custom command in the settings which you do not fully trust.
+Zettlr allows you to specify arbitrary commands for exporting in the settings. This comes in handy when you, for example, use a pre-made Docker container that contains a specialized install of Pandoc, or when you want to, e.g., upload the file somewhere. However, this means that you need to be able to trust whichever command you run. Never, under any circumstances, add or run a custom command in the settings which you do not fully trust.
 
 !!! note
 
