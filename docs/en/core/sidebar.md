@@ -6,7 +6,7 @@ The sidebar is a context-sensitive element that displays relevant additional inf
 
     Please note that strictly speaking Zettlr features two sidebars: The sidebar to the left is referred to as the [File Manager](file-manager.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
 
-After you open the sidebar, you can see that it has four tabs. These are (from left to right): Table of Contents, References, Related Files, and other files.
+After you open the sidebar, you can see that it has four tabs. These are (from left to right): Table of Contents, References, Related Files, and Other Files.
 
 ## Table of Contents
 
