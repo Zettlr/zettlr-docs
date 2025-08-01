@@ -43,6 +43,7 @@ If you're quoting a passage in your document that itself contains quoted text, y
 …becomes…
 
 > Lisa Parks argues that "during this time the meanings of 'liveness' and 'presence' were indistinguishable from Western discourses of modernization."
+
 Certain style guides may also specify a preference for single versus double quotes. These two transforms help you to toggle easily between these scenarios.
 
 _Emdash — Add spaces around_ and _Emdash — Remove spaces around_
