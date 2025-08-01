@@ -46,6 +46,7 @@ nav:
     - Writing Statistics: core/writing-statistics.md
   - Advanced Usage:
     - YAML Frontmatter: advanced/yaml-frontmatter.md
+    - Text Transforms: advanced/text-transforms.md
     - Assets Manager: advanced/assets-manager.md
     - Defaults Files: advanced/defaults-files.md
     - Custom Templates: advanced/custom-templates.md
