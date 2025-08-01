@@ -32,13 +32,14 @@ Many documents contain smart quotes (a.k.a. curly quotes) that at best are usele
 
 _Ensure double quotes_
 
-Some page designers replace double-quotes with a pair of single quotes for visual effect. If you're cutting and pasting from a PDF of a book or journal article with this issue, you can transform those pairs of single quotes back to double quotes with `Ensure double quotes`. This transform also works for text pasted from LaTeX documents, in which the direction of curly double-quotes is often specified by using a pair of backticks (<code>``</code>) or single quotes (`''`).
+Some page designers replace double-quotes with a pair of single quotes for visual effect. If you're cutting and pasting from a PDF of a book or journal article with this issue, you can transform those pairs of single quotes back to double quotes with `Ensure double quotes`. This transform also works for text pasted from LaTeX documents, in which the direction of curly double-quotes is often specified by using a pair of backticks (\`\`) or single quotes ('').
 
 _Double quotes to single_ and _Single quotes to double_
 
 If you're quoting a passage in your document that itself contains quoted text, you may need to transform the double quotes in the original to single quotes. For example, the passage…
 
 > During this time the meanings of "liveness" and "presence" were indistinguishable from Western discourses of modernization.
+
 …becomes…
 
 > Lisa Parks argues that "during this time the meanings of 'liveness' and 'presence' were indistinguishable from Western discourses of modernization."
