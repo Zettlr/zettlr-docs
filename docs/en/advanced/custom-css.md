@@ -24,7 +24,7 @@ Everything is always namespaced to the `body`, which has a class `.dark` if the 
 
 Zettlr's styles are subject to constant changes. While they should remain fairly stable, changes can be introduced in any version, and therefore, instead of providing you with ready-made examples, this page covers how you can find the correct selectors easily.
 
-First of all, make sure to enable the debug mode in the advanced [preferences](../reference/settings.md) in order to enable the Develop menu. Next, open the developer tools from within this menu and make sure to select the "Elements" tab.
+First of all, make sure to "Enable the debug mode" in the [Advanced preferences](../reference/settings.md#advanced) in order to enable the "Develop" menu. Next, open the developer tools from within this menu and make sure to select the "Elements" tab.
 
 ![Zettlr with the developer tools open](../img/zettlr_developer_tools.png)
 
@@ -63,16 +63,12 @@ body .main-editor-wrapper .cm-editor{
 
 With the following code, you can make your editor have a different background image everytime you start it. The images are taken from Unsplash.com, a nice site with free photos. It uses the `Source API`, which will simply spit out a different image every time the URL is visited. You can test it out by simply [visiting the page and refreshing a few times](https://source.unsplash.com/random)! Please refer to the [Unsplash Source API reference](https://source.unsplash.com/) for more options (such as using an image of the day).
 
-!!! tip
-
-    You can also use a local image as a background image by replacing the corresponding line by `background-image: url('file:////absolute/path/to/your/file.jpg');`
-
 ```css
-/* Enter your custom CSS here */
-
 .main-editor-wrapper .cm-editor{
     background-color: transparent;
     background-image: url('https://source.unsplash.com/random');
+    /* or use a local image */
+    /* background-image: url('file:////absolute/path/to/your/file.jpg');   */
     background-size: cover;
     background-position: center center;
 }
@@ -87,6 +83,7 @@ body.dark .main-editor-wrapper .cm-editor .cm-content{
     background-color: rgba(0, 0, 0, .8);
 }
 ```
+
 *Light Mode*
 ![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash_light.png)
 
@@ -147,3 +144,142 @@ If you wish to have shorter lines in the editor, with margins on both sides, you
 ```
 
 ![A preview of Zettlr using above snippet](../img/custom_css_maxwidth.png)
+
+### Customize font colors
+
+It's possible to change font colors of some markdown elements in other to make them more prominent.
+
+```css
+/* Quotes */
+body.dark .cm-editor .cm-quote {
+   color: rgba(250, 160, 85, 1);
+}
+
+/* Bold */
+body.dark .cm-editor .cm-strong {
+   color: rgba(182, 249, 250, 1);
+}
+
+/* Italics */
+body.dark .cm-editor .cm-emphasis {
+  color: rgba(255, 165, 230, 1);
+}
+```
+(replace ``body.dark``with ``body`` to apply to light mode instead)
+
+Before: ![A preview of Zettlr using above snippet](../img/custom_css_font_colors_before.png),
+After: ![A preview of Zettlr using above snippet](../img/custom_css_font_colors_after.png)
+
+You can also change the color of markdown syntax elements, like the `_` for italics or the `*` for bold, making them closer to the background color to reduce distractions.
+
+```css
+/* Bold marks */
+body.dark .cm-editor .cm-strong.cm-code-mark {
+   color: rgba(204, 204, 204, 0.4);
+}
+
+/* Italic marks */
+body.dark .cm-editor .cm-emphasis.cm-code-mark {
+   color: rgba(204, 204, 204, 0.4);
+}
+```
+(replace ``body.dark``with ``body`` to apply to light mode instead)
+
+Before: ![A preview of Zettlr using above snippet](../img/custom_css_font_colors_md_before.png),
+After: ![A preview of Zettlr using above snippet](../img/custom_css_font_colors_md_after.png)
+
+### Customize your tags
+
+You can change the appearance of tags, adding custom colors for each different tag:
+
+```css
+/* Generic tags */
+body.dark .cm-zkn-tag {
+   background-color: rgba(200, 200, 200, 1);
+   color: rgba(74, 74, 74, 1);
+   padding: 2px;
+   border-radius:5px;
+}
+
+/* Custom colors for custom tags */
+body.dark .cm-zkn-tag-todo > .cm-zkn-tag {
+  background-color: rgba(275,171,171, 1);
+  color: rgba(138,0,0, 1);
+}
+
+body.dark :is(.cm-zkn-tag-done, .cm-zkn-tag-completed)  > .cm-zkn-tag {
+  background-color: #d8ead2;
+  color: #274e13;
+}
+```
+(replace ``body.dark``with ``body`` to apply to light mode instead)
+
+Before: ![A preview of Zettlr using above snippet](../img/custom_css_tags_before.png),
+After: ![A preview of Zettlr using above snippet](../img/custom_css_tags_after.png)
+
+### Customize scroll bar
+
+You can customize the scrollbar in order to minimize its size at rest, and expand it only when hovering over it.
+
+```css
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ababab;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  border: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+```
+
+### Customize horizontal ruler
+
+You can modify the default horizontal ruler `***` to display an actual ruler that extends to the whole text width.
+
+```css
+body.dark .cm-editor .cm-hr {
+    display: inline-block;
+    width: 100%;
+    line-height: 0.25;
+    color: transparent;
+    background: linear-gradient(90deg, #7fe5f5,  #7beac3, transparent);
+}
+```
+(replace ``body.dark``with ``body`` to apply to light mode instead)
+
+Before:  ![A preview of Zettlr using above snippet](../img/custom_css_horizontal_ruler_before.png),
+After: ![A preview of Zettlr using above snippet](../img/custom_css_horizontal_ruler_after.png)
+
+### Customize code blocks
+
+When using dark mode, code blocks might be harder to read. Therefore you can customize them to make them more appealing:
+
+```css
+body.dark .cm-editor .cm-monospace {
+   color: rgba(255, 255, 255, 1);
+   background-color: rgba(70, 70, 70, 1);
+   padding: 2px;
+   padding-right: 5px;
+   padding-left: 5px;
+   border-radius: 5px;
+}
+
+.code-block-line {
+   background-color: rgba(70, 70, 70, 1);
+}
+```
+(replace ``body.dark``with ``body`` to apply to light mode instead)
+
+Before: ![A preview of Zettlr using above snippet](../img/custom_css_code_before.png),
+After: ![A preview of Zettlr using above snippet](../img/custom_css_code_after.png)
