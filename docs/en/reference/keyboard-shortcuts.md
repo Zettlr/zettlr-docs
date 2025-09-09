@@ -85,7 +85,7 @@ These shortcuts work when editing Markdown files.
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>V</kbd>                    | Paste with formatting        |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>   | Paste as plain               |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>L</kbd>                    | Insert Zettelkasten ID       |
-| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd>   | Copy current Zettelkasten ID |
+| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd>     | Copy current Zettelkasten ID |
 
 ## Autocomplete and AutoCorrect shortcuts
 
@@ -132,7 +132,7 @@ These shortcuts are available across the entire app.
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>E</kbd>                    | Export                  |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>P</kbd>                    | Print                   |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>   | Focus file manager — activates arrow key navigation and type-to-filter |
-| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd>     | Toggle dark mode        |
+| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd>     | Toggle dark mode        |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>     | Toggle file metadata    |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>!</kbd>                    | Toggle file manager     |
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>   | Toggle sidebar          |
@@ -162,10 +162,13 @@ These shortcuts work when the debug mode is active.
 
 These shortcuts work while in Markdown tables.
 
-| Shortcut                        | Description          |
-|---------------------------------|----------------------|
-| <kbd>Tab</kbd>                  | Select next cell     |
-| <kbd>Shift</kbd>+<kbd>Tab</kbd> | Select previous cell |
-| <kbd>Enter</kbd>                | Select next row      |
-| <kbd>↑</kbd>                    | Select previous row  |
-| <kbd>↓</kbd>                    | Select next row      |
+| Shortcut                                                     | Description          |
+|--------------------------------------------------------------|----------------------|
+| <kbd>Tab</kbd>                                               | Select next cell     |
+| <kbd>Shift</kbd>+<kbd>Tab</kbd>                              | Select previous cell |
+| <kbd>Enter</kbd>                                             | Select next row      |
+| <kbd>↑</kbd>                                                 | Select previous row  |
+| <kbd>↓</kbd>                                                 | Select next row      |
+| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> | Left align column    |
+| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> | Center align column  |
+| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> | Right align column   |
