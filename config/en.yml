@@ -21,9 +21,14 @@ nav:
     - Get involved: getting-started/get-involved.md
     - Troubleshooting: getting-started/troubleshooting.md
   - First Time Users:
-    - The User Interface: core/user-interface.md
-    - Importing Files: core/import.md
+    - First Steps: first-time-users/first-steps.md
+    - Workspaces: first-time-users/workspaces.md
+    - Creating Files: first-time-users/creating-files.md
+    - Writing Markdown: first-time-users/writing-markdown.md
+    - Migrating from Word: first-time-users/import.md
+    - Exporting files: first-time-users/exporting-files.md
   - Basic Usage:
+    - The User Interface: core/user-interface.md
     - Workspaces and Folders: core/workspaces.md
     - Files: core/files.md
     - File Manager: core/file-manager.md

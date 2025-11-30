@@ -1,12 +1,14 @@
-# Importing files
+# Migrating from Word
 
-If you are en route to migrating from a Word processor such as Microsoft Word or LibreOffice, you will have a set of `docx` or `odt`-files that contain valuable content. However, Zettlr cannot open and read those files, because it is a Markdown-based editor.
+Most new users of Zettlr have primarily used Word, LibreOffice, or some other word processor to do their writing. However, Zettlr cannot directly open Word or OpenDocument files. But what it can do is import them. Here we explain how to do that.
 
-In order to make these files accessible for Zettlr, you'll need to import them.
+The process is straightforward.
 
-The process is straightforward: First, select the folder into which you would like to import the files from the file manager. Then, select "File" &rarr; "Import files" and choose all the files you would like to import. Zettlr will then convert them one by one from whichever format they are in into Markdown.
+First, click “File” → “Import Files.” This will open a dialog that allows you to select the **import destination**. Select the folder into which you want to import your files. Confirm your selection.
 
-Afterwards, they should show up in the chosen folder so that you can immediately begin to work on them.
+Now, another dialog will open that allows you to select **which files you wish to import**. Navigate to the folder where your Word documents or other files are located, and select all you want to import.
+
+Repeat this process for every destination and set of files to import.
 
 ## Supported File Types
 
@@ -47,10 +49,18 @@ Zettlr will look at the file extension to determine the type of document and sel
 
     Zettlr will search for the first import profile that has the appropriate reader to understand some file. Therefore, if you have multiple Pandoc profiles installed that support the same reader, be mindful of the sorting order of the profiles.
 
+## Customizing How Zettlr Imports Files
+
+By default, Zettlr will apply sensible defaults to your imported files. However, it might be that you wish to customize how it imports files. To do so, you can adapt the import profiles. You can do so in the assets manager (“Zettlr” → “Assets Manager” on macOS, “File” → “Settings” → “Assets Manager” on Windows and Linux).
+
+The assets manager has a section for file imports. The list to the left shows you all currently available import profiles. If you select one, you can edit the settings Zettlr uses for it using the YAML editor on the right. You can also create entirely new profiles if you have files that are not supported by Zettlr out of the box.
+
+![assets_manager_importing.png](../img/assets_manager_importing.png)
+
+Please see the [corresponding documentation page for defaults files](../advanced/defaults-files.md) to learn how to adjust imports.
+
 ## Working with Co-Workers
 
 The same process also works if you work with colleagues who work exclusively with Word: For them, you can export Markdown files to `docx` and have them, e.g., comment on your files. After they send you back your file, you can re-import it again to Zettlr.
 
-You can finetune how the importer works by modifying its profile. For example, by default Zettlr will direct Pandoc to extract images and other media files from Word documents into an asset directory so that you get to keep those media files.
-
-To see how to modify an import profile, have a look [at the defaults files documentation](../advanced/defaults-files.md).
+You can finetune how the importer works by modifying its profile. For example, by default Zettlr will direct Pandoc to extract images and other media files from Word documents into an asset directory so that you get to keep those media files. You can also adjust whether any comments your coworkers have made should be accepted, rejected, or kept as comments.
