@@ -8,7 +8,11 @@ We aim to make Zettlr as frictionless as possible. Since we all need to work wit
 
 When you first opened Zettlr, there was already one workspace open: The Zettlr Tutorial. The tutorial is simply a folder full of documents that the app has automatically created in your “Documents” folder, and then added to the list of open workspaces.
 
-We believe that having some folders in which you collect all your writings is much more organized and easy to follow compared to, e.g., a bunch of notes in your Downloads folder or on your Desktop.
+We believe that the concept of folders is perfectly suited for anyone’s needs when writing. First, using folders is much more organized than a bunch of nodes in your Downloads folder or on your Desktop. But second, and more crucially, by explicitly not storing your data in a database, we avoid what is known as “vendor lock-in,” where you are suddenly dependent on some vendor because all your data is in an otherwise unreadable database.
+
+However, folders on your computer contain many more things, and not all of them are relevant for your writing process. That’s why we use workspaces: A few, explicitly selected folders in which you will only store Markdown documents and related files. This keeps your writing at one single location so you never lose anything, and it keeps any unrelated documents elsewhere so the file browser of Zettlr will only show you relevant files.
+
+And all, without vendor lock-in: If you want to move your files around, you just move your files around.
 
 ## Adding Workspaces
 
@@ -24,7 +28,11 @@ To add a folder as a workspace to Zettlr, select “File” → “Open Workspac
 
 ## Conceptualizing Your Workspaces
 
-For example, one such principle is called **[PARA](https://fortelabs.com/blog/para/)** by Tiago Forte, which stands for “Projects,” “Areas,” “Resources,” and “Archive.” The principle is organized around these four folders, in which you are supposed to place your documents.
+Having dedicated folders for your work is great, but only if those workspaces match your workflow. As an academic, you will likely need different workspaces than a journalist.
+
+There are two general ways of thinking about your workspaces: first by broad organizing principles, and second by your profession. First, let us think about organizing principles.
+
+One such principle is called **[PARA](https://fortelabs.com/blog/para/)** by Tiago Forte, which stands for “Projects,” “Areas,” “Resources,” and “Archive.” The principle is organized around these four folders, in which you are supposed to place your documents.
 
 The idea is that any project which has a defined start and end date goes into the “Projects” folder. Responsibilities without any defined time span, like your hobbies, go into “Areas.” “Resources” contains useful information and things you have found which may be of interest. And “Archive” is a form of “trash bin” for anything from one of these three folders, which allows you to archive things without actually throwing them away.
 
@@ -32,7 +40,7 @@ However, there is no right solution to thinking about how you personally work, s
 
 We invite you to search the internet for inspiration.
 
-Here are some suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
+Besides PARA, below you can find a few subjective suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
 
 !!! note
 

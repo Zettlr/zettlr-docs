@@ -5,7 +5,7 @@ site_description: >-
     Our comprehensive documentation provides you with everything you need to
     know about how to make the most of Zettlr.
 site_author: Hendrik Erz
-copyright: "&copy; 2017-2023 by Zettlr"
+copyright: "&copy; 2017-2025 by Zettlr"
 docs_dir: ../docs/en
 site_dir: ../build/en
 edit_uri: edit/master/docs/en
@@ -80,6 +80,7 @@ theme:
   prev_next_buttons_location: both
   hljs_languages:
     - javascript
+    - markdown
     - css
     - yaml
     - latex
@@ -91,3 +92,8 @@ markdown_extensions:
 plugins:
   - search:
       lang: en
+validation:
+  omitted_files: warn
+  absolute_links: warn  # Or 'relative_to_docs' - new in MkDocs 1.6
+  unrecognized_links: warn
+  anchors: warn  # New in MkDocs 1.6
