@@ -10,7 +10,7 @@ Whoever you are — as long as you need to do some writing, Zettlr is here to su
 
 ## First Steps with Zettlr
 
-If you have just found Zettlr and want to get started, head over to our [setup instructions](getting-started/setup.md) to install the app on your computer. There you can also find the [minimum system requirements](getting-started/setup.md#minimum-system-requirements). Then, we invite you to read the first steps guide.
+If you have just found Zettlr and want to get started, head over to our [setup instructions](getting-started/setup.md) to install the app on your computer. There you can also find the [minimum system requirements](getting-started/setup.md#minimum-system-requirements). Then, we invite you to read the [first steps guide](./first-time-users/first-steps.md).
 
 ## How to Read this Documentation
 

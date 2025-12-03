@@ -26,13 +26,13 @@ The first setting you can choose is the export profile to use. The “Format” 
 
 Next, you can select where the exported file will end up. You can choose between three options:
 
-1. “Temporary directory”: This will export the file to the temporary directory. This is great if you don’t want to keep the exported file, and simply want to take a quick look at what it will look like.
-2. “Current directory”: This will export the file into the same folder where the Markdown file is in. So if you want to export “my-file.md,” and decide to export to PDF, it will create a new file “my-file.pdf” in the same folder.
-3. “Select directory”: This will prompt you to pick a folder after you click “Export”
+1. **Temporary directory**: This will export the file to the temporary directory. This is great if you don’t want to keep the exported file, and simply want to take a quick look at what it will look like.
+2. **Current directory**: This will export the file into the same folder where the Markdown file is in. So if you want to export “my-file.md,” and decide to export to PDF, it will create a new file “my-file.pdf” in the same folder.
+3. **Select directory**: This will prompt you to pick a folder after you click “Export”
 
 !!! tip
 
-	Both the last-used export profile and your directory setting are remembered, so you only have to click "Export" the next time you want to export using the same settings.
+	Both the last-used export profile and your directory setting are remembered, so the next time you want to export a file using the same settings, you only have to click "Export."
 
 ## Special Export Formats
 
@@ -42,11 +42,11 @@ Besides allowing you to export to a great variety of formats, Zettlr also allows
 
 Exporting as a PDF is probably the most common use-case. However, PDF is also the most complex target format. To export regular, fully-featured PDF files, you will need a LaTeX installation on your computer. If you do not yet have LaTeX on your computer, [follow our guide to do so](../getting-started/installing-latex.md).
 
-If you do not want to set up LaTeX, or cannot use it due to any other reason, you can also utilize the **Simple PDF** export. This profile also creates a PDF, but avoids LaTeX entirely. What Zettlr will do in this case is export your file to HTML, and then use Chrome’s “Print Website” dialog to export that HTML file to PDF.
+If you do not want to set up LaTeX, or cannot use it due to any other reason, you can also utilize the **Simple PDF** export. This profile also creates a PDF, but avoids LaTeX. What Zettlr will do in this case is export your file to HTML, and then use Chrome’s “Print Website” method to export that HTML file to PDF.
 
 !!! note
 
-	Zettlr can do so, because it is built on Electron, which essentially consists of the Google Chrome browser.
+	Zettlr can "print" HTML files, because it is built on Electron, which essentially consists of the Google Chrome browser.
 
 ### TextBundle and TextPack
 

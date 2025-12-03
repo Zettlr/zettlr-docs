@@ -1,4 +1,4 @@
-# Creating Files
+# Creating Files and Folders
 
 With your workspaces set up, you can finally start adding files and start typing away.
 
@@ -20,6 +20,10 @@ And then accept or change the suggested filename:
 
 ![create_file_input.png](../img/create_file_input.png)
 
+!!! tip
+
+	New folders can be created exactly the same way, and we recommend doing it this way.
+
 ## 2. Via the Menu or Shortcut
 
 Creating a file by choosing the menu item “File” → “New File…” or via the shortcut <kbd>Cmd/Ctrl</kbd>+<kbd>N</kbd> is the next-best option. This time, Zettlr will open a dialog that lets you pick both the location of your new file and a filename.
@@ -33,6 +37,10 @@ With this method, you can also create a file outside your loaded workspaces. Thi
 The last method is to create files automatically when linking them. This is a feature which is part of the PKMS (Personal Knowledge Management System), or “Zettelkasten” functionality of Zettlr. For that to work, you’ll need to have a dedicated “Zettelkasten” workspace, and need to link the file.
 
 This workflow will be introduced in the corresponding section.
+
+## Creating Folders
+
+Creating folders works almost analogous to creating files. You can either choose the corresponding menu shortcut “File” → “New directory…”, which will prompt you to enter a new folder name, or, what we recommend, right-click on a folder in which you wish to create a new folder. The process is exactly the same as creating files via the file manager (see above).
 
 ## Changing the Default Filename
 

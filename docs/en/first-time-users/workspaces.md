@@ -8,7 +8,7 @@ We aim to make Zettlr as frictionless as possible. Since we all need to work wit
 
 When you first opened Zettlr, there was already one workspace open: The Zettlr Tutorial. The tutorial is simply a folder full of documents that the app has automatically created in your “Documents” folder, and then added to the list of open workspaces.
 
-We believe that the concept of folders is perfectly suited for anyone’s needs when writing. First, using folders is much more organized than a bunch of nodes in your Downloads folder or on your Desktop. But second, and more crucially, by explicitly not storing your data in a database, we avoid what is known as “vendor lock-in,” where you are suddenly dependent on some vendor because all your data is in an otherwise unreadable database.
+We believe that the concept of folders is perfectly suited for anyone’s needs when writing. First, using folders is much more organized than a bunch of notes in your Downloads folder or on your Desktop. But second, and more crucially, by explicitly not storing your data in a database, we avoid what is known as “vendor lock-in,” where you are suddenly dependent on some vendor because all your data is in an otherwise unreadable database.
 
 However, folders on your computer contain many more things, and not all of them are relevant for your writing process. That’s why we use workspaces: A few, explicitly selected folders in which you will only store Markdown documents and related files. This keeps your writing at one single location so you never lose anything, and it keeps any unrelated documents elsewhere so the file browser of Zettlr will only show you relevant files.
 
@@ -18,13 +18,13 @@ And all, without vendor lock-in: If you want to move your files around, you just
 
 To create workspaces for your own work, you should start by thinking which workspaces you need. For this, there are some organizing principles that you can follow. See the section “Conceptualizing your workspaces” below for some suggestions. First, we want to show you how to add those workspaces that you have to Zettlr.
 
-Adding workspaces in Zettlr requires two steps. First, you need to create a folder for your workspace somewhere on your computer. Second, you need to load that folder as a workspace in Zettlr.
+Adding workspaces in Zettlr requires two steps. First, you need to create a folder for your workspace somewhere on your computer. Many of you probably already have such a folder. Second, you need to load that folder as a workspace in Zettlr.
 
 To add a folder as a workspace to Zettlr, select “File” → “Open Workspace…” or click the folder-icon in the toolbar. This will open a dialog that lets you select a folder. Navigate to your desired folder and confirm your choice.
 
 !!! warning
 
-	If you import an existing workspace that already contains documents, it will take a while to load it. Zettlr first needs to collect some metadata for each document so that the app can help you link between files, show you the actual file titles, and so forth. Once the indexing process is finished, the workspace folder will appear.
+	If you import an existing workspace that already contains documents, it will take a while to load it. Zettlr first needs to collect some metadata for each document so that the app can help you link between files, show you the actual file titles, or calculate some statistics. Once the indexing process is finished, the workspace folder will appear.
 
 ## Conceptualizing Your Workspaces
 
@@ -36,11 +36,9 @@ One such principle is called **[PARA](https://fortelabs.com/blog/para/)** by Tia
 
 The idea is that any project which has a defined start and end date goes into the “Projects” folder. Responsibilities without any defined time span, like your hobbies, go into “Areas.” “Resources” contains useful information and things you have found which may be of interest. And “Archive” is a form of “trash bin” for anything from one of these three folders, which allows you to archive things without actually throwing them away.
 
-However, there is no right solution to thinking about how you personally work, so we recommend that you play around with some ideas, and not fully commit to any organizing principle if you are not certain what works for you.
+However, there is no right solution to thinking about how you personally work, so we recommend that you play around with some ideas, and not fully commit to any organizing principle if you are not certain what works for you. We invite you to search the internet for inspiration, and look at various organizing principles, not just PARA.
 
-We invite you to search the internet for inspiration.
-
-Besides PARA, below you can find a few subjective suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
+Below you can find a few subjective suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
 
 !!! note
 
@@ -54,6 +52,10 @@ If you are a student in an undergrad or graduate program (Bachelor and Master le
 * **Reading Notes**: One workspace for all your reading notes. Whenever you read a paper, book, or other resource, you should take notes, and by having one “Reading Notes” folder, you ensure that all your notes with actual sources are contained within this one folder.
 * **Lecture Notes**: As a student, you will frequently visit lectures outside your core curriculum. This could be a place to collect all notes from this. This also includes workshops, etc.
 * **Campus**: If you are active in the student life of your university or college (which we recommend ;), you could create a campus workspace with subfolders for every activity (e.g., for student radio, a sports club, reading circles, and so on).
+
+!!! tip
+
+	What we mean by "namespacing" is that your computer and Zettlr will both sort folders based on their names. This makes sorting projects that you do over time very simple if you follow a simple rule. If you prepend the date of your project to its folder in the form of year-month-day (or year-1/2 for semesters), this means that all projects from the same year will appear together, then all from the same month (or semester), and so on. This may seem odd at first, you will thank us later when you have a few dozen projects and can almost without looking find the correct folder when you search for it.
 
 ### For PhD-Students
 

@@ -20,58 +20,78 @@ nav:
     - A Note on Security: getting-started/a-note-on-security.md
     - Get involved: getting-started/get-involved.md
     - Troubleshooting: getting-started/troubleshooting.md
+    - FAQ: reference/faq.md
   - First Time Users:
     - First Steps: first-time-users/first-steps.md
     - Workspaces: first-time-users/workspaces.md
-    - Creating Files: first-time-users/creating-files.md
+    - Creating Files and Folders: first-time-users/creating-files-and-folders.md
     - Writing Markdown: first-time-users/writing-markdown.md
     - Migrating from Word: first-time-users/import.md
     - Exporting files: first-time-users/exporting-files.md
-  - Basic Usage:
-    - The User Interface: core/user-interface.md
-    - Workspaces and Folders: core/workspaces.md
-    - Files: core/files.md
-    - File Manager: core/file-manager.md
-    - Split View: core/split-view.md
-    - Sidebar: core/sidebar.md
-    - Writing Markdown: core/writing-markdown.md
+  - File Manager:
+    - File Manager: file-manager/index.md
+    - Workspaces and Root Files: file-manager/workspaces-root-files.md
+    - Choosing Files: file-manager/choosing-files.md
+    - Appearance (Modes): file-manager/appearance.md
+    - File List: file-manager/file-list.md
+    - Properties: file-manager/properties.md
+    - Filtering: file-manager/filtering.md
+    - Global Search: file-manager/search.md
+    - Projects: file-manager/projects.md
+  - Split View:
+    - Split View: split-view/index.md
+    - Document Tab Bar: split-view/document-tab-bar.md
+    - Markdown Editor: split-view/markdown-editor.md
+    - Code Editor: split-view/code-editor.md
+    - Image Viewer: split-view/image-viewer.md
+    - PDF Viewer: split-view/pdf-viewer.md
+  - Markdown Editor:
+    - Markdown Editor: editor/index.md
+    - Markdown Compendium: editor/markdown-compendium.md
+    - Appearance: editor/appearance.md
+    - Search: editor/search.md
+    - Footnotes: editor/footnotes.md
+    - Citations: editor/citations.md
     - Working With Comments: core/comments.md
+    - Statusbar: core/statusbar.md
+    - Table Editor: core/tables.md
+    - Spell Checking: reference/spell-checking.md
     - Style and Grammar: core/style-and-grammar.md
     - Readability: core/readability.md
-    - Statusbar: core/statusbar.md
-    - AutoCorrect and MagicQuotes: core/autocorrect.md
-    - Citations: core/citations.md
     - Math: core/math.md
     - Code Blocks: core/code-blocks.md
     - Snippets: core/snippets.md
-    - Searching: core/search.md
-    - Table Editor: core/tables.md
-    - Print and Preview: core/print-preview.md
-    - Exporting: core/export.md
-    - Writing Statistics: core/writing-statistics.md
-  - Advanced Usage:
     - YAML Frontmatter: advanced/yaml-frontmatter.md
     - Text Transforms: advanced/text-transforms.md
-    - Assets Manager: advanced/assets-manager.md
+  - Exporting:
+    - Print and Preview: core/print-preview.md
+    - Exporting: core/export.md
     - Defaults Files: advanced/defaults-files.md
     - Custom Templates: advanced/custom-templates.md
-    - Custom CSS: advanced/custom-css.md
-    - Tag Manager: advanced/tag-manager.md
-    - Projects: advanced/projects.md
-    - Pomodoro Timer: advanced/pomodoro.md
+  - Basic Usage:
+    - The User Interface: core/user-interface.md
+    - Workspaces and Folders: core/workspaces.md
+    - Sidebar: core/sidebar.md
+    - AutoCorrect and MagicQuotes: core/autocorrect.md
+    - Writing Statistics: core/writing-statistics.md
+  - PKMS/Zettelkasten:
     - Zettelkasten Methods: advanced/zkn-method.md
     - Graph View: advanced/graph.md
+  - Advanced Usage:
+    - Assets Manager: advanced/assets-manager.md
+    - Custom CSS: advanced/custom-css.md
+    - Tag Manager: advanced/tag-manager.md
+    - Pomodoro Timer: advanced/pomodoro.md
   - Guides:
+    - Zotero Integration: guides/reference-manager-integration.md
     - LanguageTool Locally: guides/languagetool-local.md
     - Presentations: guides/presentations.md
     - Submitting to a Journal using a LaTeX Template: guides/journal-latex-template.md
     - Portable App: guides/portable.md
   - References:
-    - FAQ: reference/faq.md
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
     - Markdown Basics: reference/markdown-basics.md
     - Settings: reference/settings.md
-    - Spell Checking: reference/spell-checking.md
 theme:
   name: readthedocs
   locale: en

@@ -2,8 +2,6 @@
 
 Most new users of Zettlr have primarily used Word, LibreOffice, or some other word processor to do their writing. However, Zettlr cannot directly open Word or OpenDocument files. But what it can do is import them. Here we explain how to do that.
 
-The process is straightforward.
-
 First, click “File” → “Import Files.” This will open a dialog that allows you to select the **import destination**. Select the folder into which you want to import your files. Confirm your selection.
 
 Now, another dialog will open that allows you to select **which files you wish to import**. Navigate to the folder where your Word documents or other files are located, and select all you want to import.
@@ -16,7 +14,7 @@ Zettlr utilizes Pandoc to import files, and therefore we can support a wide vari
 
 !!! note
 
-    It may be that your computer does not show some or all of these file extensions. You can adapt the settings of your file browser to view all file extensions.
+    It may be that your computer does not show some or all of these file extensions. You can adapt the settings of your computer's file browser (such as Explorer or Finder) to view all file extensions.
 
 Zettlr will look at the file extension to determine the type of document and select the appropriate import workflow. Here is the list of file type extensions currently supported:
 
@@ -47,7 +45,7 @@ Zettlr will look at the file extension to determine the type of document and sel
 
 !!! note
 
-    Zettlr will search for the first import profile that has the appropriate reader to understand some file. Therefore, if you have multiple Pandoc profiles installed that support the same reader, be mindful of the sorting order of the profiles.
+    Zettlr will use the first import profile that has the appropriate reader to import a file. Therefore, if you have added Pandoc profiles that support the same reader, be mindful of the sorting order of the profiles. If this is your first time using the app, Zettlr will only have one profile per file type.
 
 ## Customizing How Zettlr Imports Files
 
