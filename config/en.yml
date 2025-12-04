@@ -31,7 +31,7 @@ nav:
   - File Manager:
     - File Manager: file-manager/index.md
     - Workspaces and Root Files: file-manager/workspaces-root-files.md
-    - Choosing Files: file-manager/choosing-files.md
+    - Choosing Which Files To Display: file-manager/choosing-files.md
     - Appearance (Modes): file-manager/appearance.md
     - File List: file-manager/file-list.md
     - Properties: file-manager/properties.md
@@ -53,16 +53,19 @@ nav:
     - Footnotes: editor/footnotes.md
     - Citations: editor/citations.md
     - Working With Comments: core/comments.md
-    - Statusbar: core/statusbar.md
-    - Table Editor: core/tables.md
-    - Spell Checking: reference/spell-checking.md
-    - Style and Grammar: core/style-and-grammar.md
-    - Readability: core/readability.md
+    - Status bar: editor/statusbar.md
+    - Table Editor: editor/tables.md
     - Math: core/math.md
     - Code Blocks: core/code-blocks.md
     - Snippets: core/snippets.md
     - YAML Frontmatter: advanced/yaml-frontmatter.md
     - Text Transforms: advanced/text-transforms.md
+  - Language and Style:
+    - Language and Style: language-style/index.md
+    - Spellchecking: language-style/spellchecking.md
+    - LanguageTool: language-style/languagetool.md
+    - Markdown Syntax: language-style/syntax.md
+    - Readability: language-style/readability.md
   - Exporting:
     - Print and Preview: core/print-preview.md
     - Exporting: core/export.md

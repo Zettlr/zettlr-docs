@@ -1,4 +1,4 @@
-# Choosing Files
+# Choosing Which Files To Display
 
 By default, the file manager only displays a small set of all files inside your workspaces: Markdown files, plain text files, JSON and YAML data files, and LaTeX files.
 

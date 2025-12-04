@@ -1,10 +1,8 @@
 # Setup
 
-The installation of Zettlr is very easy and takes only a few clicks. Zettlr is cross-platform, so it will run on most computers. Zettlr comes pre-built for macOS, Windows and several Linux systems. It is also available in many package managers and software repositories.
+Zettlr is available for Windows, Linux, and macOS.
 
 ## Minimum System Requirements
-
-Zettlr aims to be resource-friendly. However, there are a few minimum requirements that need to be met.
 
 * Operating System:
     * Windows 10 or newer
@@ -14,8 +12,8 @@ Zettlr aims to be resource-friendly. However, there are a few minimum requiremen
     * Fedora 24 or newer
     * Arch Linux
     * Any distribution supported by AppImage or Flatpak
-* Processor: 1GHz Dual-Core Intel 64 bit or better (32 bit is not supported)
-    * On Linux, an equivalent ARM 64 bit processor is supported
+* Processor: 1GHz Dual-Core Intel 64-bit or better (32-bit is not supported)
+    * On Linux, an equivalent ARM 64-bit processor is supported
     * On macOS, Apple Silicon (M1, M2, etc.) is supported
 * RAM: 1 GB
 * Disk Space: At least 500 MB free disk space
@@ -26,9 +24,19 @@ Zettlr aims to be resource-friendly. However, there are a few minimum requiremen
 
 ## Installing Zettlr
 
-!!! note
+!!! warning "Disclaimer"
 
-    **Disclaimer**: We compile and distribute the app directly for macOS (Intel and Apple Silicon), Windows (x64), Debian-based and Fedora-based Linux as well as AppImage. Any other source, such as various package managers or the Arch Linux repository are maintained and provided by volunteers, and not by us. In almost a decade of offering Zettlr, we have never heard any complaints with any of the sources we list here in the documentation, so we deem them safe. However, as we do not control how these binaries get built, we cannot take responsibility for any of these. Things may change at any time.
+    The Zettlr team compiles and distributes the app directly for:
+    
+    * macOS (Intel and Apple Silicon, `.dmg`)
+    * Windows (x64, `.exe`)
+    * Debian-based Linux ( `.deb` + APT)
+    * Fedora-based Linux (`.rpm`)
+    * AppImage (`.AppImage`)
+    
+    All other sources, such as various package managers or the Arch Linux repository are maintained and provided by volunteers, and not the Zettlr team. In almost ten years, we have never heard any complaints with any of the sources we list here in the documentation. We list them here because we deem them safe.
+    
+    However, we do not control these build stages and cannot take responsibility for any of these third-party sources. Peruse them at your own discretion.
 
 ### Windows
 
