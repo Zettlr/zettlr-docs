@@ -105,6 +105,8 @@ theme:
   locale: en
   custom_dir: ../theme_override
   highlightjs: True
+  hljs_style: github
+  hljs_style_dark: github_dark
   prev_next_buttons_location: both
   hljs_languages:
     - javascript
