@@ -33,7 +33,7 @@ author:
 
 ## Front Matters versus Defaults Files
 
-Front matters can be used to override defaults set by either Pandoc internally or one of the defaults files which Zettlr uses to export your files. For more information, make sure to read the [documentation on defaults files](defaults-files.md) to avoid confusion!
+Front matters can be used to override defaults set by either Pandoc internally or one of the defaults files which Zettlr uses to export your files. For more information, make sure to read the [documentation on defaults files](../export/defaults-files.md) to avoid confusion!
 
 ## Important Front Matter Variables
 

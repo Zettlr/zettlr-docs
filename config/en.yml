@@ -45,6 +45,12 @@ nav:
     - Code Editor: split-view/code-editor.md
     - Image Viewer: split-view/image-viewer.md
     - PDF Viewer: split-view/pdf-viewer.md
+  - Sidebar:
+    - Sidebar: sidebar/index.md
+    - Table of Contents: sidebar/table-of-contents.md
+    - References: sidebar/bibliography.md
+    - Related Files: sidebar/related-files.md
+    - Other Files: sidebar/other-files.md
   - Markdown Editor:
     - Markdown Editor: editor/index.md
     - Markdown Compendium: editor/markdown-compendium.md
@@ -53,7 +59,7 @@ nav:
     - Autocomplete: editor/autocomplete.md
     - Footnotes: editor/footnotes.md
     - Citations: editor/citations.md
-    - Working With Comments: core/comments.md
+    - Working With Comments: editor/comments.md
     - Status bar: editor/statusbar.md
     - Table Editor: editor/tables.md
     - Text Transforms: editor/text-transforms.md
@@ -67,28 +73,24 @@ nav:
     - AutoCorrect and MagicQuotes: language-style/autocorrect.md
     - Readability: language-style/readability.md
   - Exporting:
-    - Print and Preview: core/print-preview.md
-    - Exporting: core/export.md
-    - Defaults Files: advanced/defaults-files.md
-    - Custom Templates: advanced/custom-templates.md
+    - Exporting: export/index.md
+    - Print and Preview: export/print-preview.md
+    - Exporting: export/export.md
+    - Defaults Files: export/defaults-files.md
+    - Custom Templates: export/custom-templates.md
+    - Assets Manager: export/assets-manager.md
   - Scientific & Technical:
     - Math: scientific-technical/math.md
     - Code Blocks: scientific-technical/code-blocks.md
     - Mermaid Diagrams: scientific-technical/mermaid.md
     - Pomodoro Timer: scientific-technical/pomodoro.md
     - Writing Statistics: scientific-technical/writing-statistics.md
-  - Basic Usage:
-    - The User Interface: core/user-interface.md
-    - Workspaces and Folders: core/workspaces.md
-    - Sidebar: core/sidebar.md
   - PKMS/Zettelkasten:
-    - Zettelkasten Methods: advanced/zkn-method.md
-    - Graph View: advanced/graph.md
-  - Advanced Usage:
-    - Assets Manager: advanced/assets-manager.md
-    - Custom CSS: advanced/custom-css.md
-    - Tag Manager: advanced/tag-manager.md
+    - Zettelkasten Methods: pkms/zkn-method.md
+    - Graph View: pkms/graph.md
+    - Tag Manager: pkms/tag-manager.md
   - Guides:
+    - Customizing Zettlr with CSS: guides/custom-css.md
     - Zotero Integration: guides/reference-manager-integration.md
     - LanguageTool Locally: guides/languagetool-local.md
     - Presentations: guides/presentations.md
@@ -110,6 +112,7 @@ theme:
     - css
     - yaml
     - latex
+    - lua
 markdown_extensions:
     - def_list
     - admonition

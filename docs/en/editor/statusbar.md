@@ -122,7 +122,7 @@ Interaction
 
 ![statusbar_diagnostics.png](../img/statusbar_diagnostics.png)
 
-This control displays a list of diagnostic messages. As we outline in the [Style and Grammar](style-and-grammar.md) section, Zettlr runs a variety of different linters that can all flag potential problems, style issues, and suggestions. The diagnostics counter gives you a comprehensive overview over how you are doing.
+This control displays a list of diagnostic messages. As we outline in the [Language & Style](../language-style/index.md) section, Zettlr runs a variety of different linters that can all flag potential problems, style issues, and suggestions. The diagnostics counter gives you a comprehensive overview over how you are doing.
 
 The counter displays the total of all three types of issues: informational messages (the “i” icon), warnings (the triangle with exclamation mark), and errors (the circled “x”).
 

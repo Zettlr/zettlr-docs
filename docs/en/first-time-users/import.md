@@ -55,7 +55,7 @@ The assets manager has a section for file imports. The list to the left shows yo
 
 ![assets_manager_importing.png](../img/assets_manager_importing.png)
 
-Please see the [corresponding documentation page for defaults files](../advanced/defaults-files.md) to learn how to adjust imports.
+Please see the [corresponding documentation page for defaults files](../export/defaults-files.md) to learn how to adjust imports.
 
 ## Working with Co-Workers
 

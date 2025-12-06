@@ -121,7 +121,7 @@ For more information on how to use citations in line with Pandoc's citeproc engi
 
 ## Bibliography
 
-As you cite, Zettlr will automatically generate a preview bibliography in the [Sidebar](../core/sidebar.md). You can open the sidebar with the right-most toolbar button and then navigate to the bibliography tab. This bibliography will be automatically appended to your document when you export it.
+As you cite, Zettlr will automatically generate a preview bibliography in the [Sidebar](../sidebar/index.md). You can open the sidebar with the right-most toolbar button and then navigate to the bibliography tab. This bibliography will be automatically appended to your document when you export it.
 
 !!! note
 
@@ -129,7 +129,7 @@ As you cite, Zettlr will automatically generate a preview bibliography in the [S
 
 ## Using a file-specific library
 
-Sometimes you may want to add a few citation keys on a per-file basis. To do so, you must add the bibliography file to your file's [YAML frontmatter](../advanced/yaml-frontmatter.md). If Zettlr detects the `bibliography` property in a file's frontmatter, it will automatically load that file and offer you items from that file instead of your main library.
+Sometimes you may want to add a few citation keys on a per-file basis. To do so, you must add the bibliography file to your file's [YAML frontmatter](./yaml-frontmatter.md). If Zettlr detects the `bibliography` property in a file's frontmatter, it will automatically load that file and offer you items from that file instead of your main library.
 
 Example:
 
@@ -180,7 +180,7 @@ Pandoc will replace the three-colon-curly-bracket construction with your list of
 
 ### Setting a Section Header in the YAML Frontmatter
 
-If you do not want to always specify the section title manually, you can also automate this process. In your file’s [YAML frontmatter](../advanced/yaml-frontmatter.md), you can add a property `reference-section-title: Bibliography`. Replace “Bibliography” with whatever the title should be called.
+If you do not want to always specify the section title manually, you can also automate this process. In your file’s [YAML frontmatter](./yaml-frontmatter.md), you can add a property `reference-section-title: Bibliography`. Replace “Bibliography” with whatever the title should be called.
 
 !!! note
 

@@ -134,7 +134,7 @@ Each file and each folder also has properties. You can view them by right-clicki
 
 ![A properties dialog for a directory](../img/directory_properties.png)
 
-Each folder can be turned into a [Project](../advanced/projects.md) by clicking the switch in its property popover. Afterwards you can fine-tune its project settings. Also, you can select a directory icon which makes it easier to identify the directory visually. Lastly, you can sort directories in their property popovers. Files, on the other hand, show you their tags, ID, and other useful information. You can also set writing targets in the properties of a file.
+Each folder can be turned into a [Project](./projects.md) by clicking the switch in its property popover. Afterwards you can fine-tune its project settings. Also, you can select a directory icon which makes it easier to identify the directory visually. Lastly, you can sort directories in their property popovers. Files, on the other hand, show you their tags, ID, and other useful information. You can also set writing targets in the properties of a file.
 
 ![Writing Targets Counter](../img/writing_targets.png)
 

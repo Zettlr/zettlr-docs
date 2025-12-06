@@ -95,7 +95,7 @@ As you can see, there is still sample code in the abstract section, sample autho
 
 !!! note
 
-    In the following, we will not explain too much of what we are doing, since the basics are explained at length in our [documentation on custom templates](../advanced/custom-templates.md). Here we simply apply those guidelines to turn the static template into a dynamic Pandoc template.
+    In the following, we will not explain too much of what we are doing, since the basics are explained at length in our [documentation on custom templates](../export/custom-templates.md). Here we simply apply those guidelines to turn the static template into a dynamic Pandoc template.
 
 First, let us turn the title into a variable. For this, we search for the `\title` directive and replace it with a Pandoc style variable:
 

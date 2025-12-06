@@ -30,7 +30,7 @@ Lastly, the popover contains a small graph that plots the amount of words over t
 
 ## The Stats Window
 
-The statistics window contains a lot of comprehensive data on your files and your writing process. It is also the window that includes the [graph view](../advanced/graph.md).
+The statistics window contains a lot of comprehensive data on your files and your writing process. It is also the window that includes the [graph view](../pkms/graph.md).
 
 ![writing_statistics_calendar.png](../img/writing_statistics_calendar.png)
 
@@ -46,4 +46,4 @@ The second tab in the window includes the same information, but in form of bar p
 
 The third view contains data on the files you have loaded into the app. It shows you a variety of summary statistics on the files, folders, and your largest and smallest files.
 
-The fourth view contains the graph view. [Refer to its dedicated section in this documentation to learn more](../advanced/graph.md).
+The fourth view contains the graph view. [Refer to its dedicated section in this documentation to learn more](../pkms/graph.md).

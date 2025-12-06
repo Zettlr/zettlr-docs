@@ -8,9 +8,9 @@ You can access the assets manager via 'Zettlr' &rarr; 'Assets Manager' (macOS) o
 
 The assets manager allows you to edit your files using correct syntax highlighting and makes it easier than external editors. To see what you can edit and how to do so productively, see the corresponding parts of the documentation:
 
-* [Defaults files](defaults-files.md)
-* [Custom CSS](custom-css.md)
-* [Snippets](../core/snippets.md)
+* [Defaults files](./defaults-files.md)
+* [Custom CSS](../guides/custom-css.md)
+* [Snippets](../editor/snippets.md)
 
 ## How to Adapt the PDF Preferences
 

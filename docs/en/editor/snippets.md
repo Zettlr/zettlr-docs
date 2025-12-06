@@ -12,7 +12,7 @@ But the use-cases for snippets go beyond this. Snippets can be defined to accomp
 
 ## Managing Your Snippets
 
-You can manage your snippets in the [assets manager](../advanced/assets-manager.md). Open the assets manager by selecting “File” → “Preferences” → “Assets Manager” (macOS: “Zettlr” → “Assets Manager”) or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>.
+You can manage your snippets in the [assets manager](../export/assets-manager.md). Open the assets manager by selecting “File” → “Preferences” → “Assets Manager” (macOS: “Zettlr” → “Assets Manager”) or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>.
 
 !!! tip
 

@@ -14,7 +14,7 @@ The two main benefits of Markdown are that you can format your entire document w
 
 !!! note
 
-    To learn how to customize how your documents look once you export them, head over to the [defaults files](../advanced/defaults-files.md) documentation.
+    To learn how to customize how your documents look once you export them, head over to the [defaults files](../export/defaults-files.md) documentation.
 
 ## Formatting Markdown
 
@@ -152,7 +152,7 @@ Inserting citations is straight forward:
 This is some text [see @Citekey, p. 123].
 ```
 
-As you can see, adding citations involves merely writing out what you wish to cite, with one crucial difference: Instead of literally typing “Author, Year” you need to provide a citation ID, or Citekey. For more information on what Citekeys are, and how to connect your reference manager with Zettlr, please [see the documentation page on citations](../core/citations.md).
+As you can see, adding citations involves merely writing out what you wish to cite, with one crucial difference: Instead of literally typing “Author, Year” you need to provide a citation ID, or Citekey. For more information on what Citekeys are, and how to connect your reference manager with Zettlr, please [see the documentation page on citations](./citations.md).
 
 ### Element Attributes
 

@@ -1,6 +1,6 @@
 # Defaults Files
 
-Defaults files are a way to define default values for many of the variables that Pandoc uses internally to facilitate both your imports and exports. Defaults files resemble [YAML frontmatters](yaml-frontmatter.md), but are more powerful and apply to all your files instead of just a single one.
+Defaults files are a way to define default values for many of the variables that Pandoc uses internally to facilitate both your imports and exports. Defaults files resemble [YAML frontmatters](../editor/yaml-frontmatter.md), but are more powerful and apply to all your files instead of just a single one.
 
 Previously, Zettlr would use defaults files internally, but Zettlr 2.0 finally gives you the ability to edit these files yourself.
 
@@ -10,7 +10,7 @@ Previously, Zettlr would use defaults files internally, but Zettlr 2.0 finally g
 
 ## What are Defaults Files?
 
-Defaults files, also known as profiles, are YAML files which contain settings that control the Pandoc behaviour for a given export or import format. They reside in your user data folder and can be edited in the [assets manager](assets-manager.md).
+Defaults files, also known as profiles, are YAML files which contain settings that control the Pandoc behaviour for a given export or import format. They reside in your user data folder and can be edited in the [assets manager](./assets-manager.md).
 
 Zettlr requires a certain set of defaults files. You can identify these files in the assets manager by their lock icon that indicates their status as "protected". Whenever you rename such a protected file, Zettlr will immediately recreate it. You can leverage this behavior to effectively make a copy of one of these default files. Likewise, when you delete a protected file, Zettlr will recreate it, which allows you to effectively reset the file to default.
 
@@ -50,7 +50,7 @@ First, Pandoc will load its own internal defaults which are hard-coded into the 
 
 Then, Pandoc will load in the defaults file Zettlr provides. Every variable defined in there will replace the default inside Pandoc's configuration.
 
-Lastly, Pandoc will parse the YAML frontmatter(s) of the file(s) you are currently trying to import or export. These variables can replace those set by the defaults files, but usually not all. You may notice that defaults files can contain a metadata field, and any value in there can generally be replaced by a YAML frontmatter property. Please see the documentation on [YAML frontmatters](yaml-frontmatter.md) for more information.
+Lastly, Pandoc will parse the YAML frontmatter(s) of the file(s) you are currently trying to import or export. These variables can replace those set by the defaults files, but usually not all. You may notice that defaults files can contain a metadata field, and any value in there can generally be replaced by a YAML frontmatter property. Please see the documentation on [YAML frontmatters](../editor/yaml-frontmatter.md) for more information.
 
 **Example**: Let us assume you have defined a `title` for all your Word exports in the defaults file for the `docx` writer. If you do not use any frontmatter, this variable will be used for each and every export to Word. But if you specify the `title` property inside a YAML frontmatter, this file – when exported to Word – will have its own title set.
 

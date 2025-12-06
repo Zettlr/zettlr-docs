@@ -45,4 +45,4 @@ You can find a documentation on how to utilize its syntax on its homepage: [mhch
 
 While Zettlr uses KaTeX for preview purposes, exported math may differ. Exporting to PDF will cause the standard LaTeX math engine to take care of rendering the code, while exporting to HTML will by default make use of MathTeX.
 
-You can customize how math is being treated on export by adapting your [YAML frontmatter](../advanced/yaml-frontmatter.md) or [profiles](../advanced/defaults-files.md).
+You can customize how math is being treated on export by adapting your [YAML frontmatter](../editor/yaml-frontmatter.md) or [profiles](../export/defaults-files.md).
