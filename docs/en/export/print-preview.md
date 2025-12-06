@@ -1,11 +1,17 @@
 # Printing and Previewing
 
-As Zettlr is a WYSIWYM ("What You See Is What You Mean") editor, you define the structure of the document, but not how it will look like in the final output.
+While most exports are intended to end up as files on your computer, you may, at times, want to preview or even print a document. This can help you preview what the document may look like once exported, and it can allow you to quickly print out a draft to read it on paper, rather than on your computer.
 
-This means that you should view all your Markdown documents as **source code** that must be "compiled" before it can be presented to a third party. To do so, Zettlr has a powerful exporting engine. But when you simply want to preview how something looks like quickly, or if you need to print something out, you can do so.
+You can open the print preview for any document by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>P</kbd>.
 
-## The Print Preview
+![print_preview.png](../img/print_preview.png)
 
-You can open the print preview for any file by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>P</kbd>. This will internally export your document to HTML and display the results in a new window. This can be used for a quick preview of your file. Especially when Zettlr doesn't seem to correctly render more complex syntax, this is a good way to see if the exporting engine can make sense of it.
+This will internally export your document to HTML and display the results in a new window.
 
-From there, you can also click the print icon to actually print out the HTML file. This can be useful for situations in which it is easier for you to proofread a document in its printed state rather than on screen. The HTML template has special layouts for the needs of printing out a document.
+!!! note
+
+	The print preview does not actually use Pandoc. Instead, it uses Zettlr's internal Abstract Syntax Tree representation of your document. This means that there might be some differences in how Pandoc vs. Zettlr will export a document. However, Zettlr aligns as closely as possible with Pandoc's default styles for an HTML export.
+
+Click the print icon to actually print out the HTML file. This will call Chrome’s built-in printing dialog and allow you to print out the document directly from within Zettlr.
+
+If you want a more customizable layout of your document, exporting the file first to, say, PDF, and then printing from that application is the right way to go.

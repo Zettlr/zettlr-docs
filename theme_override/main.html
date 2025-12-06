@@ -22,7 +22,24 @@
 
 {% block extrahead %}
 {%- if config.theme.highlightjs %}
+<!-- Allow custom hljs styles for the readthedocs theme -->
 <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/{{ config.theme.hljs_style }}.min.css" {% if config.theme.color_mode != "light" %}disabled{% endif %}>
 <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/{{ config.theme.hljs_style_dark }}.min.css" {% if config.theme.color_mode != "dark" %}disabled{% endif %}>
 {%- endif %}
+{% endblock %}
+
+{% block content %}
+{{ page.content }}
+
+<!-- This section adds support for localized revision dates -->
+{% if page.meta.git_revision_date_localized %}
+<div id="git-revision-status" style="margin-bottom: 10px;">
+  <small>This page has been last modified on {{ page.meta.git_revision_date_localized }}</small>
+</div>
+{% endif %}
+{% if page.meta.git_created_date_localized %}
+<div id="git-revision-status">
+  <small>Created: {{ page.meta.git_created_date_localized }}</small>
+</div>
+{% endif %}
 {% endblock %}

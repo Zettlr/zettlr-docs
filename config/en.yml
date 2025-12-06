@@ -74,11 +74,12 @@ nav:
     - Readability: language-style/readability.md
   - Exporting:
     - Exporting: export/index.md
-    - Print and Preview: export/print-preview.md
-    - Exporting: export/export.md
-    - Defaults Files: export/defaults-files.md
-    - Custom Templates: export/custom-templates.md
+    - Workflow: export/workflow.md
+    - Defaults Files (Profiles): export/defaults-files.md
     - Assets Manager: export/assets-manager.md
+    - Custom Templates: export/custom-templates.md
+    - Print and Preview: export/print-preview.md
+    - Lua Filters: export/lua-filters.md
   - Scientific & Technical:
     - Math: scientific-technical/math.md
     - Code Blocks: scientific-technical/code-blocks.md
@@ -86,6 +87,7 @@ nav:
     - Pomodoro Timer: scientific-technical/pomodoro.md
     - Writing Statistics: scientific-technical/writing-statistics.md
   - PKMS/Zettelkasten:
+    - PKMS/Zettelkasten: pkms/index.md
     - Zettelkasten Methods: pkms/zkn-method.md
     - Graph View: pkms/graph.md
     - Tag Manager: pkms/tag-manager.md
@@ -123,6 +125,7 @@ markdown_extensions:
 plugins:
   - search:
       lang: en
+  - git-revision-date-localized
 validation:
   omitted_files: warn
   absolute_links: warn  # Or 'relative_to_docs' - new in MkDocs 1.6
