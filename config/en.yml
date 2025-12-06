@@ -50,33 +50,37 @@ nav:
     - Markdown Compendium: editor/markdown-compendium.md
     - Appearance: editor/appearance.md
     - Search: editor/search.md
+    - Autocomplete: editor/autocomplete.md
     - Footnotes: editor/footnotes.md
     - Citations: editor/citations.md
     - Working With Comments: core/comments.md
     - Status bar: editor/statusbar.md
     - Table Editor: editor/tables.md
-    - Math: core/math.md
-    - Code Blocks: core/code-blocks.md
-    - Snippets: core/snippets.md
-    - YAML Frontmatter: advanced/yaml-frontmatter.md
-    - Text Transforms: advanced/text-transforms.md
+    - Text Transforms: editor/text-transforms.md
+    - Snippets: editor/snippets.md
+    - YAML Front Matter: editor/yaml-frontmatter.md
   - Language and Style:
     - Language and Style: language-style/index.md
     - Spellchecking: language-style/spellchecking.md
     - LanguageTool: language-style/languagetool.md
     - Markdown Syntax: language-style/syntax.md
+    - AutoCorrect and MagicQuotes: language-style/autocorrect.md
     - Readability: language-style/readability.md
   - Exporting:
     - Print and Preview: core/print-preview.md
     - Exporting: core/export.md
     - Defaults Files: advanced/defaults-files.md
     - Custom Templates: advanced/custom-templates.md
+  - Scientific & Technical:
+    - Math: scientific-technical/math.md
+    - Code Blocks: scientific-technical/code-blocks.md
+    - Mermaid Diagrams: scientific-technical/mermaid.md
+    - Pomodoro Timer: scientific-technical/pomodoro.md
+    - Writing Statistics: scientific-technical/writing-statistics.md
   - Basic Usage:
     - The User Interface: core/user-interface.md
     - Workspaces and Folders: core/workspaces.md
     - Sidebar: core/sidebar.md
-    - AutoCorrect and MagicQuotes: core/autocorrect.md
-    - Writing Statistics: core/writing-statistics.md
   - PKMS/Zettelkasten:
     - Zettelkasten Methods: advanced/zkn-method.md
     - Graph View: advanced/graph.md
@@ -84,7 +88,6 @@ nav:
     - Assets Manager: advanced/assets-manager.md
     - Custom CSS: advanced/custom-css.md
     - Tag Manager: advanced/tag-manager.md
-    - Pomodoro Timer: advanced/pomodoro.md
   - Guides:
     - Zotero Integration: guides/reference-manager-integration.md
     - LanguageTool Locally: guides/languagetool-local.md

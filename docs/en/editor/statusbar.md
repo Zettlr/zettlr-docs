@@ -40,6 +40,8 @@ Interaction
 
 This control allows you to toggle the rendering mode between “preview” (WYSIWYG) and “raw” (WYSIWYM). This allows you to quickly switch between pure Markdown syntax, and seeing pre-rendered elements.
 
+![statusbar_rendering.png](../img/statusbar_rendering.png)
+
 Displays
 
 : Always
