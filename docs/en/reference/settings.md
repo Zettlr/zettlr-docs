@@ -1,6 +1,6 @@
 # Settings
 
-Zettlr offers you a plethora of options to customise your experience with the app. It comes with three major settings dialogs, one of which is the [assets manager explained elsewhere](../advanced/assets-manager.md), a general preferences dialog, and a tag manager.
+Zettlr offers you a plethora of options to customise your experience with the app. It comes with three major settings dialogs, one of which is the [assets manager explained elsewhere](../export/assets-manager.md), a general preferences dialog, and a tag manager.
 
 ## General Preferences
 
@@ -173,7 +173,7 @@ Accept spaces during autocompletion
 
 Enable TableEditor
 
-: This setting enables or disables the built in [TableEditor](../core/tables.md). The TableEditor gives you a convenient way of creating and editing Markdown tables in a graphical way.
+: This setting enables or disables the built in [TableEditor](../editor/tables.md). The TableEditor gives you a convenient way of creating and editing Markdown tables in a graphical way.
 
 Count characters instead of words
 
@@ -307,7 +307,7 @@ Render Links
 
 Render Math
 
-: Renders any [math content](../core/math.md) in your files (surrounded with Dollar signs).
+: Renders any [math content](../scientific-technical/math.md) in your files (surrounded with Dollar signs).
 
 Render Tasks
 
@@ -323,7 +323,7 @@ Render emphasis
 
 Theme
 
-: The theme selector allows you to select one of the available themes. You can further customize the appearance of Zettlr using [Custom CSS](../advanced/custom-css.md).
+: The theme selector allows you to select one of the available themes. You can further customize the appearance of Zettlr using [Custom CSS](../guides/custom-css.md).
 
 Use the operating system's accent colour instead of the theme colour
 
@@ -377,7 +377,7 @@ LanguageTool API key
 
 Spellchecking
 
-: Use this list to select spellchecking dictionaries to use. You can activate multiple, but we recommend activating no more than two or three. You can install additional dictionaries [by following this explanation](../core/style-and-grammar.md).
+: Use this list to select spellchecking dictionaries to use. You can activate multiple, but we recommend activating no more than two or three. You can install additional dictionaries [by following this explanation](../language-style/spellchecking.md).
 
 User dictionary
 
