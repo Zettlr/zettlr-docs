@@ -109,7 +109,8 @@ While editing a table, the following keyboard shortcuts are available:
 
 - <kbd>Tab</kbd>: Move to the next cell. If the last column is active, move to the first cell in the next row. If your cursor was in the last column of the last row, a new row will be added automatically.
 - <kbd>Shift</kbd>+<kbd>Tab</kbd>: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
-- <kbd>Return</kbd>: Move to the same column in the next row. If your cursor was in the last row, a new row will be added automatically.
+- <kbd>Return</kbd>: Move to the same column in the next row.
+- <kbd>Shift</kbd>+<kbd>Enter</kbd>: Move to the same column in the previous row.
 - <kbd>Arrow Up</kbd>/<kbd>Arrow Down</kbd>: Move to the same column in the previous/next row. No new rows will be added if you are in the first or last row.
 - <kbd>Arrow Left</kbd>/<kbd>Arrow Right</kbd>: Move the cursor left/right. If the cursor is at the beginning/end of the cell's contents, move to the previous/next cell.
 

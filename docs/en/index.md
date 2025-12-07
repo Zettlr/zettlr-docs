@@ -8,36 +8,61 @@ For **authors**, Zettlr ships with extensive support for **taking notes**, creat
 
 And for anyone else, it allows the easy setup of an all-inclusive **Zettelkasten** or **PKMS** workflow.
 
-Whoever you are — as long as you need to do some writing, Zettlr is here to support you.
-
 !!! note
 
-    This documentation is available in several languages. You can select another language from the [main landing page](https://docs.zettlr.com/). Please note that these translations may be incomplete. If in doubt, always consult this (the English) version of the documentation, which is updated regularly.
+    This documentation is available in several languages. Select another language from the [main page](https://docs.zettlr.com/). Please note that these translations are community-provided and may be incomplete. If in doubt, always consult this (the English) version of the documentation.
 
-## First Steps with Zettlr
+## Contents
 
-If you have just found Zettlr and want to get started, head over to our [setup instructions](getting-started/setup.md) to install the app on your computer. There you can also find the [minimum system requirements](getting-started/setup.md#minimum-system-requirements). Then, we invite you to read the [first steps guide](./first-time-users/first-steps.md).
+This documentation is divided into various sections that describe different aspects of the app. Click on a section to view it.
 
-## How to Read this Documentation
+[🏁 Getting Started](./getting-started/setup.md)
 
-This documentation is organized into six major sections:
+: Set up Zettlr, how to make Zettlr secure, and find troubleshooting help.
 
-1. **Getting Started**: This section includes guides on installing, uninstalling, and updating Zettlr. It contains troubleshooting steps, security notes, and a few other important things before you start working with the app.
-2. **First Time Users**: This section includes crucial information for new users of Zettlr. It familiarizes you with the basic concepts of the app, its philosophy, and how we intend you to use it.
-3. **Basic Usage**: This section includes one page for any feature that is essential for all users.
-4. **Advanced Usage**: This section also includes one page for each feature, but only for those who need more advanced things.
-5. **Guides**: This section includes a series of guides. This section includes anything from relatively simple instructions on creating presentations to complex steps like running Zettlr as a portable app.
-6. **References**: This section contains a set of pages with references, such as keyboard shortcuts, or an FAQ.
+[🧑‍💻 First Time Users](./first-time-users/first-steps.md)
 
-This documentation utilizes a common and easy to use layout to help you find what you need quickly. On the left side, you can find the navigation panel. If you're on mobile, click the hamburger menu button to open the navigation panel.
+: Read this after installing the app for the first time. Use the “Next”- and “Previous”-buttons to navigate through this section, because it is meant to be read start to finish.
 
-The navigation contains all pages of this documentation. It is ordered from top to bottom. **As a novice user**, you can simply follow the various pages by clicking the “Next” and “Previous” buttons at the bottom of the navigation panel and each page. You can also click on an entry to jump directly to it.
+[🗄️ File Manager](./file-manager/index.md)
 
-If you need to look something up, you can find a **search panel** on the top of the navigation that helps you find the relevant sections of interest immediately.
+: Describes the file manager, and how it displays your files. This section also includes descriptions on central concepts of the app, such as workspaces.
 
-While most of the navigation builds up gradually, you may want to **take a look the references section intermittently**, since it contains various glossaries, such as a list of keyboard shortcuts, a quick reference of Markdown, and other things that are always important.
+[🪟 Split View](./split-view/index.md)
 
-Lastly, this documentation is [maintained on GitHub](https://github.com/Zettlr/zettlr-docs). If you spot an error, do not hesitate to mention it there, or directly edit the documentation pages. Each page features an “Edit on GitHub” link that brings you directly to the online editor (GitHub account required).
+: Introduces the split view, and how you can use it efficiently.
+
+[📋 Sidebar](./sidebar/index.md)
+
+: Describes the sidebar, and how you can use it.
+
+[📝 Markdown Editor](./editor/index.md)
+
+: Describes the central Markdown document editor and all its functionality.
+
+[🪮 Language and Style](./language-style/index.md)
+
+: Learn how Zettlr can help you write good prose with spell checkers, grammar checkers, and style checkers.
+
+[🤖 Exporting](./export/index.md)
+
+: In-depth explainer of how the exporting system works and how you can use it to your advantage.
+
+[🧪 Scientific and Technical](./scientific-technical/index.md)
+
+: Describes features of the app primarily relevant to scientists or technical writers.
+
+[🗃️ PKMS/Zettelkasten](./pkms/index.md)
+
+: Set up Zettlr as a personal knowledge management system.
+
+[💡 Guides](./guides/index.md)
+
+: Contains step-by-step guides to realizing some more complex features; from customizations to full journal or conference templates.
+
+[⚙️ Reference](./reference/index.md)
+
+: Includes descriptions on available keyboard shortcuts and settings.
 
 !!! note
 

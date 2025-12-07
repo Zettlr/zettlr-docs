@@ -8,7 +8,7 @@ The basic idea, therefore, is to let you create relationships between small note
 
 ## Manage a Zettelkasten with Zettlr
 
-Three central functions are available in Zettlr to kickstart your Zettelkasten:
+Three central functions are available in Zettlr to start your Zettelkasten:
 
 1. Generating IDs for files
 2. Linking searches and files
@@ -16,28 +16,64 @@ Three central functions are available in Zettlr to kickstart your Zettelkasten:
 
 ## File IDs
 
-In order to create links between files, the first step is to consider whether to use IDs or file names. You can create links in Zettlr between files using either IDs or file names. The benefit of file names is that they are self-explanatory. The drawback is that you cannot change the file title even slightly, if the content of the note turns out to be slightly different from what you thought it was when you created the file.
+In order to create links between files, consider first whether to use IDs or file names. You can create links in Zettlr between files using either.
+
+The benefit of file names is that they are self-explanatory. The drawback is that you cannot change the file title, if the content of the note turns out to be slightly different from what you thought it was when you created the file.
 
 That’s why IDs can be a good remedy. By naming files using only numerical IDs, you detach the file ID from its content — the title of the note can change, but the ID remains the same.
 
-By default, Zettlr uses the current timestamp for IDs, in the format `YYYYMMDDHHMMSS`. You can adapt this format in the preferences → “Zettelkasten.”
+By default, Zettlr uses the current timestamp for IDs, in the format `YYYYMMDDHHMMSS`. You can adapt this format in the preferences → “Zettelkasten” → “Zettelkasten IDs.” Here, you have two options: First, you can determine how Zettlr will generate new IDs, and second you will need to tell Zettlr how to detect such IDs.
 
-This ID will be used by default for new filenames, although you can adapt this in the preferences, too. If you like to give your files descriptive names, but still want to add IDs to them, you can at any point press <kbd>Cmd/Ctrl</kbd>+<kbd>L</kbd> to generate a new ID.
+![preferences_zettelkasten_ids.png](../img/preferences_zettelkasten_ids.png)
 
-Zettlr recognizes IDs (using the ID pattern in the preferences) both in the filename and in the file’s content. The first ID found will take precedence. You can also generate IDs when using snippets by using the variable `$ZKN_ID`.
+This ID pattern will be used for new filenames, although you can adapt this in the preferences. Using the setting “Advanced” → “Pattern for new file names” you can change the default suggested filename for new files. By default it generates a Zettelkasten ID, but you have other options.
+
+![preferences_pattern_new_filename.png](../img/preferences_pattern_new_filename.png)
+
+If you like to give your files descriptive file names, but still want to add IDs to them, make sure that your file is focused and then press <kbd>Cmd/Ctrl</kbd>+<kbd>L</kbd> to generate a new ID and insert it at the cursor position.
 
 !!! tip
 
-    Take a look at the [Settings page](../reference/settings.md) to see options on how to customise all Zettelkasten functionality to your liking.
+	Zettlr recognizes IDs (using the ID pattern in the preferences) both in the filename and in the file’s content. The first ID found will take precedence. You can also generate IDs when using snippets by using the variable `$ZKN_ID`.
 
 ## Linking Files
 
-Once the problem of Identification was solved, another occurred: How to link files across the app without jeopardising the above-mentioned aims of Zettlr to make files application-independent? Many apps, such as nvALT or The Archive implement an internal linking system that makes it possible to reference files from each other to make navigation through the system as easy as possible. Zettlr also includes such a system.
+With the question of file identification answered, the next question is how to connect files. Zettlr supports two types of links: **implicit links** based on shared keywords, and **explicit links** via wiki links (or Zettelkasten links, or internal links).
 
-An internal link is written with the syntax of `[[This is the link]]`. If you `Cmd` or `Ctrl` click a link, it will trigger **two** distinct functions. First, it will try to find an exact match of the link's contents in the app. This means that it tries to find a file that reports that the content perfectly matches it. Such an exact match can be found in two ways: First, if the contents of the link (in the above example "This is the link") **exactly** matches a filename, excluding its extension, the appropriate file will report that it is indeed an exact match. The above example would exactly match the files `This is the link.md`, `This is the link.markdown` and `This is the link.txt`. Note that the filename matching is done **case-insensitive**. macOS for instance is by default case insensitive (so `filename.md` would match the same file as `FILENAME.MD`). The second way that such a link may yield an exact match would be if the link's contents contain an ID in the format `[[<your-id>]]`. If any file has the ID `<your-id>`, Zettlr will also yield an exact match. **If an exact match is found somewhere in the system, an Alt-Click on an internal link will immediately open the first matched file**. This means that you can use such links to navigate through your system. You could, for example, accommodate this by creating index files that contain internal links to several files, and in each file, place a link that back-links to the respective index file.
+### Linking Files Implicitly via Keywords
 
-The second function triggered by such a link is a global search inside your currently selected directory. It will merely take the link contents, place it in your search field and automatically "press Enter", to initiate the search. This way you can not only open exact files, but also find all other files that link to the file you just opened. So a link in the format `[[<your-id>]]` would open that specific file and also search for all files that link back to this file.
+As you write your notes, add keywords to your files to classify them using these tags. You can add keywords in one of two ways.
 
-## Tagging
+First, you can add a tag using the common Twitter-style hashtag format. A `#`-character followed by letters, numbers, and a few other characters will be interpreted as a tag. Zettlr provides syntax highlighting to indicate what it will determine to be a tag. You can hold down <kbd>Cmd/Ctrl</kbd> while clicking on a tag to start a search for other files that have this tag.
 
-Tagging may be the easiest form of internal searching. If you `Cmd` or `Ctrl` click on a tag, this will simply render a search for all files in your current directory that are tagged with this tag. As tags in the form `#keyword` are not used anywhere in the markdown syntax, using this approach enables Zettlr to use such tags as the perfect means to create a tagging system.
+Second, you can add your tags or keywords to a file using a YAML front matter. This has benefits, and drawbacks compared to simple Twitter-style hashtags. The benefits include that these keywords won’t show up in the note content directly, but are still associated with the file. Also, you can use spaces in these keywords. The drawbacks include that you can’t easily search for these tags by clicking them and that it takes a little longer to insert such hashtags.
+
+You can view all your tags in the tag cloud. Open it by clicking the corresponding toolbar icon. Furthermore, you can manage your tags in the tag manager. This includes renaming or replacing them.
+
+### Linking Files Explicitly via Links
+
+The second option to link files is to create explicit links between them. Such links are known by the names “**wiki links**” (because they use the same syntax as Wikipedia uses), “**Zettelkasten links**” (because they are primarily intended to be used for Zettelkästen), or “**internal links**” (because they require contextual knowledge by the app on where to find files).
+
+To insert such a link, start by typing two square brackets: `[[`. This will open an autocompletion that lets you search for a file, and link to it. Start typing to filter the list of suggested files, and accept a suggestion via <kbd>Tab</kbd>. This will insert the link.
+
+Zettlr supports link titles for such internal links. These are separated from the link target with a vertical pipe character (`|`). Because it is not obvious from the context which of the two parts of a link is the link target, and which is the link title, you need to specify this in the preferences. To do so, go to “Zettelkasten” → “Internal links.” In the “link format” section you can choose how Zettlr views your links.
+
+![preferences_internal_links.png](../img/preferences_internal_links.png)
+
+!!! tip
+
+	Most systems that support internal links follow the common link-first-syntax. Only a few systems implement a title-first syntax. If you don't know which one to use, keep the setting at the recommended link-first syntax.
+
+The two additional settings help you determine how Zettlr will autocomplete your links. The setting “Always use the file title as label for internal links” means that Zettlr will automatically complete an internal link to `[[filename|file title]]` when you accept a suggestion. Otherwise, it will not add a title, and complete only to `[[filename]]`.
+
+The setting “Use the file ID as link target if possible” means that Zettlr uses the ID of the file if applicable, instead of the filename. This allows you to use descriptive filenames without running into the risk that your links break when you rename the file.
+
+## Zettelkasten Directory
+
+It is customary to have one folder into which all your notes go. You can specify one in the preferences. Once you have specified this directory, you can create links to notes that do not exist yet. For example, as you are writing a note, you may decide that you probably need a note on a related concept which you do not yet have.
+
+When you click while holding <kbd>Cmd/Ctrl</kbd> on such a link to a file that does not yet exist, Zettlr can automatically create a new note with that name for you. For that, you need to tell Zettlr which folder you designate for your notes.
+
+You need to have this folder open in Zettlr for this feature to work.
+
+

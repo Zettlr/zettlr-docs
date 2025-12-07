@@ -65,8 +65,8 @@ nav:
     - Text Transforms: editor/text-transforms.md
     - Snippets: editor/snippets.md
     - YAML Front Matter: editor/yaml-frontmatter.md
-  - Language and Style:
-    - Language and Style: language-style/index.md
+  - Language & Style:
+    - Language & Style: language-style/index.md
     - Spellchecking: language-style/spellchecking.md
     - LanguageTool: language-style/languagetool.md
     - Markdown Syntax: language-style/syntax.md
@@ -78,9 +78,11 @@ nav:
     - Defaults Files (Profiles): export/defaults-files.md
     - Assets Manager: export/assets-manager.md
     - Custom Templates: export/custom-templates.md
+    - Custom Commands: export/custom-commands.md
     - Print and Preview: export/print-preview.md
     - Lua Filters: export/lua-filters.md
   - Scientific & Technical:
+    - Scientific & Technical: scientific-technical/index.md
     - Math: scientific-technical/math.md
     - Code Blocks: scientific-technical/code-blocks.md
     - Mermaid Diagrams: scientific-technical/mermaid.md
@@ -92,13 +94,15 @@ nav:
     - Graph View: pkms/graph.md
     - Tag Manager: pkms/tag-manager.md
   - Guides:
+    - Guides: guides/index.md
     - Customizing Zettlr with CSS: guides/custom-css.md
     - Zotero Integration: guides/reference-manager-integration.md
     - LanguageTool Locally: guides/languagetool-local.md
     - Presentations: guides/presentations.md
     - Submitting to a Journal using a LaTeX Template: guides/journal-latex-template.md
     - Portable App: guides/portable.md
-  - References:
+  - Reference:
+    - Reference: reference/index.md
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
     - Markdown Basics: reference/markdown-basics.md
     - Settings: reference/settings.md

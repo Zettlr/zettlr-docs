@@ -10,7 +10,7 @@ As other applications, Zettlr features a graph view that allows you to view the 
 
 ## What is a graph?
 
-First, let's start with a crash course in network science. A graph view of a personal knowledge management (PKM) database is only loosely related to empirical networks such as social networks, but it can help nevertheless.
+First, let's start with a crash course in network science. A graph view of a personal knowledge management system (PKMS) database is only loosely related to empirical networks such as social networks, but it can help nevertheless.
 
 A graph is mathematically defined as a set of **vertices** (or nodes), which are connected by a set of **edges** (or links). Edges are called **arcs** when they are directed. Vertices can be either connected to a single other vertex (a dyad), to two other vertices (a triad), or more than that. Vertices can also be isolated, i.e. unconnected. A cluster of connected vertices within a network is called a **component**. Furthermore, a graph can be either **directed** (that is, the arcs between two vertices have a direction, i.e. the arc from A to B is not the same as the arc from B to A) or **undirected** (meaning that the edge from A to B also implies the edge from B to A). A graph can also be **weighted**, in which case its edges will have some number attached to them. Finally, a graph can be either simple or **multiplex**. A multiplex graph does not just have one type of edge, but multiple.
 
