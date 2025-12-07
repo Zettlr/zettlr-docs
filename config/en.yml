@@ -104,7 +104,6 @@ nav:
   - Reference:
     - Reference: reference/index.md
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
-    - Markdown Basics: reference/markdown-basics.md
     - Settings: reference/settings.md
 theme:
   name: readthedocs
