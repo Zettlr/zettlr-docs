@@ -35,7 +35,7 @@ jobs:
       uses: easingthemes/ssh-deploy@v5.1.0
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        ARGS: "-vzhr"
+        ARGS: "-vzhr --delete" # verbose, compress, human-readble, recursive, delete
         SOURCE: "build/"
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
