@@ -24,7 +24,7 @@ Therefore, many of the renderers that make Markdown readable can execute malicio
 
 If you only open files from sources you trust, this should not be an issue. However, if you frequently have to open Markdown documents from the internet or from sources you cannot fully trust, it may make sense to disable these renderers to ensure that no Markdown document with malicious code can harm you. Disabling these renderers will make your Markdown code a bit more difficult to read, but it will also prevent any malicious code from putting you in harm's way.
 
-By disabling all renderers, Zettlr will not accidentally execute any unsafe code contained within Markdown files. You can quickly switch between Zettlr’s Preview mode and Zettlr’s raw mode using the statusbar toggle. Otherwise, you can use the corresponding setting.
+By disabling all renderers, Zettlr will not accidentally execute any unsafe code contained within Markdown files. You can quickly switch between Zettlr’s Preview mode and Zettlr’s raw mode using the status bar toggle. Otherwise, you can use the corresponding setting.
 
 !!! note
 
@@ -68,7 +68,7 @@ Even if you do not download any additional templates, exporting and importing co
 
 This means that even when you export a Markdown document that you yourself created without any specific template, there is still a small chance that this could pose a security risk.
 
-Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we recommend you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL#a-note-on-security).
+Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we recommend you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL.html#a-note-on-security).
 
 ### Custom Export Commands
 

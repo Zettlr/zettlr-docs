@@ -49,7 +49,9 @@ On your new machine, install Zettlr and launch it. This will create the configur
 
 Once you've quit the app, copy all the application settings backups you wish to keep from your old install into the new configuration directory (see the guidance above on determining the correct application data path for your operating system). If you're prompted whether it's okay to replace existing files, you can confirm. You’ve now copied over the application settings from your old computer.
 
-**A Note of Reassurance on `config.json`:** The backup you made of `config.json` contains the location of the various workspaces and notes on your *old* computer. When you re-launch the new Zettlr install after adding the backup of your old `config.json` file, it will automatically remove the paths to the workspaces of your old setup, since they are not valid anymore. At the same time, if you add any workspaces or notes to the new Zettlr install before restoring the backup `config.json` file, Zettlr will forget the location of those folders and files. In short, don't worry when you're greeted with an empty window. Your notes and workspaces will be restored as soon as you re-open them in the next step.
+!!! note "Note of Reassurance"
+
+	The backup you made of `config.json` contains the location of the various workspaces and notes on your *old* computer. When you re-launch the new Zettlr install after adding the backup of your old `config.json` file, it will automatically remove the paths to the workspaces of your old setup, since they are not valid anymore. At the same time, if you add any workspaces or notes to the new Zettlr install before restoring the backup `config.json` file, Zettlr will forget the location of those folders and files. In short, don't worry when you're greeted with an empty window. Your notes and workspaces will be restored as soon as you re-open them in the next step.
 
 ## Migrate the Workspaces Containing your Notes to the New Machine
 

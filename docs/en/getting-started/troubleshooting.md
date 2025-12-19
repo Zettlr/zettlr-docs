@@ -44,20 +44,21 @@ If you want to completely reset your local Zettlr installation, follow these ste
 
 1. First ensure that the application is closed (in some error cases, there is a “zombie” process, which you can close from within your Task Manager or Activity Monitor)
 2. Make sure to optionally back up these files and folders:
-    * `stats.json` (your writing statistics)
-    * `config.json` (the app settings — including the location of your workspaces and open files)
-    * `custom.css` (your custom CSS, if any)
-    * `tags.json` (your color-coded tags)
-    * `targets.json` (your writing targets)
-    * `user.dic` (your own custom dictionary)
-    * `snippets` (a folder of your Snippets)
-    * `profiles` (a folder of your profiles)
+    * `stats.json`: your writing statistics
+    * `config.json`: the app settings
+    * `custom.css`: your custom CSS
+    * `tags.json`: information on your color-coded tags (regular tags are automatically migrated because these are part of your data)
+    * `targets.json`: your writing targets
+    * `user.dic`: your own custom dictionary
+    * `defaults`: your import and export profiles
+    * `snippets`: your snippets
+    * `lua-filter`: The Lua filters used for exports
 3. Select everything in this directory and delete it.
 4. Restart the application. Some of these files will be re-created.
 
 ## 5. Ask the Community for Help
 
-If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active both on [Discord](https://go.zettlr.com/discord) and on the [Zettlr Subreddit](https://www.reddit.com/r/Zettlr).
+If none of the above steps seem to help, you can ask the community. Sometimes, someone else has encountered a similar problem and might be able to help you. The community is active on [the official community forum](https://forum.zettlr.com/), [Discord](https://go.zettlr.com/discord) and on the [Zettlr Subreddit](https://www.reddit.com/r/Zettlr).
 
 ## 6. Open a GitHub Issue
 

@@ -13,7 +13,7 @@ Zettlr has a vibrant community helping each other all around the net. The follow
 * The [official Bluesky account](https://bsky.app/profile/zettlr.com) — The same as our Mastodon Account
 * [Our YouTube channel](https://www.youtube.com/c/Zettlr) — If you are more the visual type, you can find some introductory videos here. Note that we do not regularly maintain the channel, so the videos may be outdated.
 * [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) — A slightly more modern version of classic internet forums.
-* [The GitHub issue tracker](https://github.com/Zettlr/Zettlr/issues) — This is the core of our endeavors to make the app better. If you spot a bug, have a suggestion or want to propose a feature, here's the right place. Nevertheless, especially when it comes to questions regarding the user workflow or new features, **it's best to discuss your ideas on the GitHub Discussions section or on Discord first**.
+* [The GitHub issue tracker](https://github.com/Zettlr/Zettlr/issues) — This is the core of our endeavors to make the app better. If you spot a bug, have a suggestion or want to propose a feature, here's the right place. Nevertheless, especially when it comes to questions regarding the user workflow or new features, **it's best to discuss your ideas on the forum or on Discord first**.
 
 ## User Contributions
 

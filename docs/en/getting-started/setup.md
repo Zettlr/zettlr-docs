@@ -1,6 +1,6 @@
 # Setup
 
-Zettlr is available for Windows, Linux, and macOS.
+Zettlr is available for Windows, Linux, and macOS. It can be installed directly from our website or via one of several supported package managers.
 
 ## Minimum System Requirements
 
@@ -95,7 +95,7 @@ If your distribution does not support aptitude, or you want to manually install 
 
 #### Fedora
 
-To install Zettlr or Fedora or Red Hat derivatives, download the `rpm`-package from our [download page](https://www.zettlr.com/download) and execute the file.
+To install Zettlr on Fedora or Red Hat derivatives, download the `rpm`-package from our [download page](https://www.zettlr.com/download) and execute the file.
 
 #### Arch Linux
 
@@ -116,6 +116,8 @@ To update, click the download button and wait for the download to finish. Then, 
     Do not use this update procedure if you installed Zettlr via a package manager, e.g., Homebrew. In that case, please update according to your package manager's procedure to avoid conflicts. You can disable the setting "Automatically check for updates" in your preferences to prevent Zettlr from checking for updates automatically.
 
 After any update, be prepared to **wait up to a few minutes** for Zettlr to launch. After each update, the file cache is being cleared, and when the newer version of Zettlr boots for the first time, it has to recreate this file cache. The more files and folders you have opened, the longer this process may take.
+
+### Manual Updates
 
 If automatic updates don't work for you, you can always manually update by downloading the appropriate installer for your system (see above). There is no (technical) difference between the first setup and an update; the files are the same.
 

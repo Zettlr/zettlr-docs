@@ -26,7 +26,7 @@ This documentation is divided into various sections that describe different aspe
 
 [🗄️ File Manager](./file-manager/index.md)
 
-: Describes the file manager, and how it displays your files. This section also includes descriptions on central concepts of the app, such as workspaces.
+: Describes the file manager, and how it displays your files. This section also includes descriptions of central concepts of the app, such as workspaces.
 
 [🪟 Split View](./split-view/index.md)
 
@@ -66,7 +66,7 @@ This documentation is divided into various sections that describe different aspe
 
 !!! note
 
-	You can always access this documentation from your app. To do so, press <kbd>F1</kbd> or choose “Help” → “Open user manual” from the menu (internet connection required).
+	You can always access this documentation from the app. To do so, press <kbd>F1</kbd> or choose “Help” → “Open user manual” from the menu (internet connection required).
 
 ## FAQ
 

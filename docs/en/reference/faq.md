@@ -25,7 +25,7 @@ We are getting more and more requests for mobile versions of Zettlr. We are very
 
 ## What is Markdown?
 
-Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](markdown-basics.md)!
+Markdown is a simple markup language that enables you to write text just as complex as using standard office software, but with much less clutter. Instead of having to manually select all formatting options, in Markdown, typing a `#` suffices to indicate a heading! Want to hear more? Then head over to the [documentation on Markdown](../first-time-users/writing-markdown.md)!
 
 ## I have a very strict character or word limit for a text, but Zettlr's character/word counts are off!
 

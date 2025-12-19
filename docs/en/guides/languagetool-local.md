@@ -35,10 +35,6 @@ Now, LanguageTool will be running, and you can point Zettlr to the server at <ht
 	Setting up LanguageTool following this guide will install another app called "Eloquent," which is an Open Source application that happens to ship with a LanguageTool server. You can view and inspect its source code [on GitHub](https://github.com/sonnyp/Eloquent). As soon as you start the app, this will also start a LanguageTool server.
     
     **If you prefer to only install LanguageTool itself, please follow the Docker instructions below**.
-    
-!!! note
-
-	Installing via Flatpak will not start LanguageTool automatically when you start your computer. You will have to always start "Eloquent" to have LanguageTool available.
 
 In case you run Linux and have Flatpak available, you can install LanguageTool via Flatpak. There is a Flatpak available that installs the app “Eloquent” which includes a LanguageTool server that you can point Zettlr to.
 

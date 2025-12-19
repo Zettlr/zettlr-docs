@@ -72,7 +72,7 @@ We recommend you don't install packages unless Zettlr complains during exports. 
 
 !!! note
 
-    On Windows, LaTeX will attempt to install the missing packages automatically and will ask you if it should do so.
+    On Windows, LaTeX will attempt to install the missing packages automatically and will ask you if it should do so. This means you only need to confirm a dialog (once per missing package). On macOS and Linux, you'll need to use the command line.
 
 1. All LaTeX packages are listed in the [“Comprehensive TeX Archive Network” (CTAN)](https://www.ctan.org/). Take the filename (including its extension, `.sty`) or the command, and search for it using the search bar.
 2. For example, if LaTeX complains that the command `\hypertarget` is not defined, [search for it like this](https://www.ctan.org/search?phrase=hypertarget).
