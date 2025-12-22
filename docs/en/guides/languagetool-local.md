@@ -86,7 +86,7 @@ A new window will pop up allowing you to “Run a new container.” At this poin
 
 Give your container a readable name, such as “LanguageTool.” If you do not do so, Docker will generate a random name that does not describe what the container actually does.
 
-The second important setting you want to change is for the ports. Enter a port number (must be between 1025 and 9999; the default is 8010). This is crucial. You can also leave it blank to have it randomly generated, but you will need this number.
+The second important setting you want to change is for the ports. Enter a port number (must be between 1025 and 65535; the default is 8010). This is crucial. You can also leave it blank to have it randomly generated, but you will need this number.
 
 Finally, you can set a few environment variables to fine-tune the behavior of LanguageTool. These are optional. If you want to learn more, please [see the README file of the image](https://hub.docker.com/r/erikvl87/languagetool).
 
