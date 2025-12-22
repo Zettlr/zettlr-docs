@@ -2,17 +2,25 @@
 
 Zettlr is designed around the concept of “workspaces.” Workspaces are simply folders somewhere on your computer designated to house all your documents and notes.
 
+!!! note "Definition"
+
+	A **workspace** is a regular folder on your computer that is designated to working with your Markdown documents. When you load a folder into Zettlr as a workspace, you tell Zettlr that you want to primarily store your documents in this folder.
+
 ## Why Workspaces?
 
-We aim to make Zettlr as frictionless as possible. Since we all need to work with documents somewhere on our computer, the app provides a file manager that essentially serves as a view on top of some folders which you designate to contain all your notes.
+We aim to make Zettlr as frictionless as possible. To offer you many of its perks and features, such as automatic linking between files, Zettlr needs to know where your documents live on your computer. By loading those folders into Zettlr as “workspaces” you point the app to these folders. The app will then index the documents in these workspaces and collect all tags, links, and other metadata from these documents. Finally, Zettlr uses this information to, e.g., offer you tag and file link autocompletion.
 
 When you first opened Zettlr, there was already one workspace open: The Zettlr Tutorial. The tutorial is simply a folder full of documents that the app has automatically created in your “Documents” folder, and then added to the list of open workspaces.
 
-We believe that the concept of folders is perfectly suited for anyone’s needs when writing. First, using folders is much more organized than a bunch of notes in your Downloads folder or on your Desktop. But second, and more crucially, by explicitly not storing your data in a database, we avoid what is known as “vendor lock-in,” where you are suddenly dependent on some vendor because all your data is in an otherwise unreadable database.
+We believe that the concept of folders is perfectly suited for anyone’s needs when writing. First, using folders is much more organized than a bunch of notes in your Downloads folder or on your Desktop. But second, and more crucially, by explicitly *not* storing your data in a database, we avoid what is known as “vendor lock-in,” where you are suddenly dependent on some vendor because all your data is in an otherwise unreadable database.
 
-However, folders on your computer contain many more things, and not all of them are relevant for your writing process. That’s why we use workspaces: A few, explicitly selected folders in which you will only store Markdown documents and related files. This keeps your writing at one single location so you never lose anything, and it keeps any unrelated documents elsewhere so the file browser of Zettlr will only show you relevant files.
+However, folders on your computer often contain many more things, and not all of them are relevant for your writing process. That’s why we use workspaces: A few, explicitly selected folders in which you will only store Markdown documents and related files. This keeps your documents in one single location so you never lose anything, and it keeps any unrelated documents elsewhere so the file browser of Zettlr will only show you relevant files.
 
 And all, without vendor lock-in: If you want to move your files around, you just move your files around.
+
+!!! warning
+
+	We **strongly** recommend that you regularly back up your workspaces. The simplest method is to use a cloud storage provider (such as Dropbox, Google Drive, OneDrive, or iCloud), and create the workspaces in there. This way, all your files will be automatically backed up. In addition, you should also back up the files onto an external storage device from time to time.
 
 ## Adding Workspaces
 
@@ -36,9 +44,9 @@ One such principle is called **[PARA](https://fortelabs.com/blog/para/)** by Tia
 
 The idea is that any project which has a defined start and end date goes into the “Projects” folder. Responsibilities without any defined time span, like your hobbies, go into “Areas.” “Resources” contains useful information and things you have found which may be of interest. And “Archive” is a form of “trash bin” for anything from one of these three folders, which allows you to archive things without actually throwing them away.
 
-However, there is no right solution to thinking about how you personally work, so we recommend that you play around with some ideas, and not fully commit to any organizing principle if you are not certain what works for you. We invite you to search the internet for inspiration, and look at various organizing principles, not just PARA.
+However, there is no right solution to thinking about how you personally work, so we recommend that you play around with some ideas, and not fully commit to any organizing principle if you are not certain what works for you. We invite you to search the internet for inspiration, and look at various organizing principles beyond PARA.
 
-Below you can find a few subjective suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
+Below you can find a few **subjective** suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
 
 !!! note
 
