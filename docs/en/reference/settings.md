@@ -1,476 +1,381 @@
 # Settings
 
-Zettlr offers you a plethora of options to customise your experience with the app. It comes with three major settings dialogs, one of which is the [assets manager explained elsewhere](../advanced/assets-manager.md), a general preferences dialog, and a tag manager.
+In this reference document, we describe the various preferences Zettlr has.
 
-## General Preferences
+## Navigating the Preference Window
 
-You can display the general preference dialog using either the shortcut <kbd>Cmd/Ctrl</kbd>+<kbd>,</kbd>, the toolbar button (the cog) or the respective menu item. The dialog will then show up and present to you all configuration options you may customise. They are ordered in ten tabs that you can see at the top of the dialog.
+The preference window groups all available settings by categories and settings “cards.”
 
-* [General](#general): These options affect Zettlr as a whole
-* [Editor](#editor): These settings concern only the editor itself
-* [Export](#export): Control how your files are exported in this tab
-* [Citations](#citations): Control how to cite within Zettlr
-* [Zettelkasten](#zettelkasten): Adapt Zettlr to match your Zettelkasten system
-* [Display](#display): Control anything display-related
-* [Spellchecking](#spellchecking): Spellchecking and LanguageTool live here
-* [AutoCorrect](#autocorrect): AutoCorrect and MagicQuotes settings
-* [Advanced](#advanced): Options for experienced users
-* [Toolbar](#toolbar): Customize the toolbar buttons
+You can navigate the window in one of two ways. You can click on the categories in the list to the left and then scroll through all settings that are part of this category. Or, you can enter a search term in the search bar to filter all settings based on their text content.
 
-### General
+In the following, we describe each setting based on their categories.
 
-![settings_general.png](../img/settings_general.png)
+!!! note
 
-In the general tab you find options that you might want to adjust if you begin using Zettlr to fit it to your general needs.
+	The settings may be called differently in your language.
+
+## General
+
+General, app-related settings.
+
+![preferences_general.png](../img/preferences_general.png)
 
 Application language
 
-: Sets the language the application will be displayed in. Your changes are applied after a restart. Note that not all translations are complete, so you may see English strings in some places. If you want to improve a translation, [here we explain how](../getting-started/get-involved.md#translating-the-app).
-
-Dark mode
-
-: Whether the application uses dark or light colors. Usually automatically applied depending on your settings on "Automatically switch to dark mode" (see below). Can also be triggered using <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd>.
-
-Show file information
-
-: Controls whether the file *list* (available in thin and expanded file manager modes) shows some meta information about your files, such as tags, or writing targets.
-
-Always load remote changes to the current file
-
-: If checked, Zettlr will silently reload any remote changes to your files. If unchecked, you will be asked whether you want to load remote changes for each file individually.
-
-Avoid opening files in new tabs if possible
-
-: By default, Zettlr will open each file in its own tab. Selecting this will make Zettlr attempt to exchange tabs if possible.
-
-Automatically switch to dark mode
-
-: **Off**: Zettlr will never change the dark mode setting automatically>
-
-: **Schedule**: Zettlr will switch to and from dark mode at the times specified in "Start/End dark mode at …"
-
-: **Follow Operating System**: Follow your operating system's dark mode setting (not available on Linux).
-
-Start dark mode at
-
-: Specifies a time (format: HH:MM) at which Zettlr will once automatically switch from light mode to dark mode if applicable.
-
-End dark mode at
-
-: Specifies a time (format: HH:MM) at which Zettlr will once automatically switch from dark mode to light mode if applicable.
-
-File manager mode
-
-: Controls how the file manager in the left panel will display your workspaces and files.
-
-: **Thin**: Shows your directories and files separately. Select a directory to have its contents displayed in the file list. Switch between file list and directory tree by clicking on directories or the arrow button which appears at the top left corner of the file list.
-
-: **Expanded**: Shows your directories and files separately, but both at the same time. Select a directory to have its contents displayed in the file list.
-
-: **Combined**: Shows your directories and files in the same file tree. The file list is not available in this mode.
-
-Display files using…
-
-: **Filename only**: Always display just the filename of each file, never a title or heading level 1.
-
-: **Title if applicable**: Display the YAML frontmatter title of your files, if applicable. Otherwise, fall back to the filename.
-
-: **First heading level 1 if applicable**: Display the first heading level 1 of your files, if applicable. Otherwise, fall back to the filename.
-
-: **Title or first heading level 1 if applicable**: Display a YAML frontmatter title if applicable. Fall back to the first heading level 1 if applicable. If none are available, fall back to the filename.
-
-Display Markdown file extensions
-
-: If checked, Zettlr will display the filename extensions of Markdown files (e.g., `*.txt`, `*.md`, `*.markdown`). Only available if you choose to display files using their filenames only.
-
-Sorting order for files (used for sorting by name)
-
-: **Natural order (10 after 2)**: This setting will sort your files logical, such that a number 10 would follow after a 2, even though the 2 has no preceeding 0.
-
-: **ASCII order (2 after 10)**: This setting sorts your file character by character, meaning that a 2 follows after a 1. To sort the 2 before the 10, prepend it with a leading zero.
-
-Show folders above files
-
-: By default Zettlr first displays your files, then the folders. Activating this setting will first display folders. Requires a restart to apply.
-
-When sorting by time, sort by
-
-: **Last modification time**: The time at which you modified the file.
-
-: **File creation time**: Sort the files by the times at which you created them.
-
-In the file metadata display
-
-: **Last modification time**: Display the last time you modified a file in appropriate places (e.g. the meta information in the file list).
-
-: **File creation time**: Display the file's creation time in appropriate places.
-
-### Editor
-
-![settings_editor.png](../img/settings_editor.png)
-
-The editor tab controls most functionality of the main editor.
-
-Choose the formatting characters that the bold/emphasis commands should use
-
-: When you press <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd> or <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd> to make text italic or bold, Zettlr will either use asterisks (`*`) or underscores (`_`) depending on your settings here.
+: Sets the language used for the entire app. Requires a restart.
 
 Autosave
 
-: **Off**: No autosave. You need to manually save using <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd>.
+: Determines whether you need to manually save files using <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd>, or whether Zettlr will automatically save the files aggressively (“immediately”) or with a short delay. The latter will need less resources.
 
-: **Immediately**: Save every modification immediately. This is done after a very short delay of 250ms so that the stress on your hard drive is reduced.
+Default image folder
 
-**After a short delay**: This will automatically save your files five seconds after you stopped typing.
+: Specify a relative or absolute path that will be assumed to be the default image folder. The default, “assets” means that Zettlr will save images into a folder “assets” relative to the Markdown file in question.
 
-Default image path (relative or absolute)
+Behavior
 
-: Where to store images that you paste into a document. If set to `assets`, for example, Zettlr will put images into an `assets` folder relative to your Markdown file. If set to an absolute path, every image will be put into the same folder. A relative folder is recommended.
+: Sets some general behavioral settings for the app. “Always load remote changes” means that Zettlr will automatically reload any external changes to documents currently open in its editors. If turned off, you need to confirm whether changes will be reloaded. The setting “avoid opening files in new tabs” will replace the currently open document when you open another one.
 
-Indent by the following number of spaces
+Updates
 
-: Specifically has an effect on exporting your files. If set too low, some parsers might not be able to properly indent your lists. Four is a recommended setting and should work with most parsers, two spaces may be too few for some older parsers.
+: Controls whether Zettlr automatically checks for new updates. *Please disable this setting, if you have installed Zettlr via a package manager. The package manager will be able to update Zettlr for you.*
 
-Indent using tabs
+## Appearance
 
-: Whether to use tabulator characters rather then spaces to indent your files. Note that YAML disallows tab characters, so when activating this setting, make sure to use spaces to indent YAML frontmatters, as they will otherwise break.
+Controls the visual behavior of Zettlr.
 
-Editor font size
+![preferences_appearance.png](../img/preferences_appearance.png)
 
-: Select the font size of the editor (in pixels). If setting the "Zoom behavior" setting to the editor font size option in the advanced settings tab, you can also control this with the zoom shortucts <kbd>Cmd/Ctrl</kbd>+<kbd>+</kbd> and <kbd>Cmd/Ctrl</kbd>+<kbd>-</kbd>.
+Dark mode
 
-Algorithm used for the readability mode
-
-: Select an algorithm to use whenever you activate the readability mode; you have four modes available. Please refer to [our documentation on the readability mode](https://www.zettlr.com/readability) to learn which mode does what.
-
-Editor input mode
-
-: **Normal**: Zettlr will work like a regular text editor.
-
-: **Emacs**: Add Emacs shortcuts and keybindings to the editor.
-
-: **Vim**: Activate the Vim mode, which implements several functions of the Vim editor. _This setting is recommended for advanced users only, since it changes the very way you can enter text into the editor!_
-
-Check Markdown for style issues
-
-: Activates a Markdown linter that will highlight potential formatting issues with your Markdown syntax.
-
-Show statusbar
-
-: Activates a statusbar for each editor (similar to how Word or LibreOffice implement them) that gives you additional metadata on the file as well as shows you more information on all issues (including spelling errors) and the LanguageTool status.
-
-Mute non-focused lines in distraction-free mode
-
-: Dims all lines except the one you are currently editing while you are using the distraction free mode.
-
-Automatically close matching character pairs
-
-: This allows you to type brackets and quotes, and the editor will automatically add the matching one afterwards.
-
-Accept spaces during autocompletion
-
-: To minimize the impact autocomplete has on your writing flow, spaces end autocomplete by default. If you need to have spaces to search for things inside autocompletes, activate this setting. _This setting does not affect tags and headings autocompletes, since no spaces are allowed in these either way._
-
-Enable TableEditor
-
-: This setting enables or disables the built in [TableEditor](../core/tables.md). The TableEditor gives you a convenient way of creating and editing Markdown tables in a graphical way.
-
-Count characters instead of words
-
-: If you write in a language where words are represented by single glyphs, such as Japanese or Chinese, activate this setting so that Zettlr counts these single glyphs rather than continuous strings of letters demarcated by whitespace. You can also activate this setting if you generally prefer to see character counts rather than word counts.
-
-### Export
-
-![settings_export.png](../img/settings_export.png)
-
-The export tab allows you to tweak all preferences concerning how your files are exported.
-
-Use the internal Pandoc for exports
-
-: By default, Zettlr uses its own Pandoc. If you want or have to use a system-wide installed Pandoc (must be in PATH), disable this setting. After restarting the application, Zettlr will use the system-wide Pandoc.
-
-Remove tags from files
-
-: If checked, Zettlr will run a special Lua-filter that removes tags which are defined within your files (not the ones in the YAML frontmatter).
-
-Remove internal links completely
-
-: If checked, internal links in the format `[[<ID>]]` (default: `[[20220117101322]]`) will be completely removed upon export.
-
-Unlink internal links
-
-: If checked, internal links in the format `[[<ID>]]` will have their links stripped, so that only the contents of the link remain.
-
-Don't touch internal links
-
-: This leaves internal links as they are.
-
-Target directory for exported files
-
-: **Temporary directory**: This directs Zettlr to put any file exports that you have into the temporary directory. This is intended so that you can export frequently, and once you are happy with how a file looks like, use the "Save as …" function of the default application (e.g. Adobe Reader for PDF) to save it in your preferred folder. Files in the temporary directory are automatically removed when you restart your computer, or at other convenient times. _This is the recommended setting._
-
-: **Current working directory**: This directs Zettlr to always put exports into the directory of the source file. Subsequent exports will overwrite previous exports. While you do not have to "Save as …" in order to keep an exported file, this may lead to cluttered directories, which is why we do not recommend this setting.
-
-: **Ask for directory**: Ask you where to export a file to on every export.
-
-Custom Commands
-
-: This section allows you to specify custom export commands. The display name will be shown to you in the single-file export popover as well as the project settings. The command is what will be actually run (as a child process). Here, you should paste something that can be run in a terminal (e.g., bash or zsh on Unixoid systems, or PowerShell or the command line on Windows).
-
-: The command will receive a single argument: the absolute path to the file that is being exported (in the case of a single-file export) or an entire absolute folder path (in the case of a project export). Your command can then use this information as it sees fit.
-
-: > **Attention**: Do not add arbitrary commands that you do not understand. This could put your data or computer at risk. Please read our [notes on security](../getting-started/a-note-on-security.md) before modifying this section.
-
-### Citations
-
-![settings_citations.png](../img/settings_citations.png)
-
-How would you like autocomplete to insert your citations?
-
-: Choose the setting which will cite in a way which you use most often. If you need one of the other formats, you can always modify the autocompleted citation. _Note: This only applies if you autocomplete a cite key._
-
-: `[@Author2015, p. 123]`: When you start typing a citation, Zettlr will automatically surround it in square brackets so that you can create a "full" citation that will render as, e.g., `(Author 2015, 123)`.
-
-: `@Author2015`: Activating this setting means that Zettlr will simply complete the citekey and do nothing else. Useful if you frequently cite with author names in-text. This will render as, e.g., `Author (2015)`.
-
-: `@Author2015 [p. 123]`: This will tell Zettlr to add square brackets _after_ the citation key, which will result in, e.g., `Author(2015, 123)`.
-
-Citation Database (CSL JSON or BibTex)
-
-: Select a global main library which contains your citations. This applies only to files which do not have a file-specific database in its frontmatter `bibliography` key. Those files will receive cite keys from their own library instead of this main library. _Note: BibLaTeX is not (yet) supported._
-
-CSL-Style (optional)
-
-: Select a default CSL stylesheet to overwrite the default citation style (APA). You can download any file from the [Zotero style repository](https://www.zotero.org/styles). _Note: This only affects exports. Zettlr will internally always use an in-text citation style for preview purposes. Note further that you can select specific CSL stylesheets per each profile, and per each file._
-
-### Zettelkasten
-
-![settings_zettelkasten.png](../img/settings_zettelkasten.png)
-
-In this tab you can customise the way Zettlr works with your existing Zettelkasten system. In most cases you won't need to touch these options, except you want to use a custom system.
-
-ID regular expression
-
-: This is a JavaScript regular expression which should match the IDs you use inside your Zettelkasten system (default: `(\d{14})`). Zettlr will use this expression to find IDs for your files. The first found ID will be used. Zettlr first searches the file name (e.g., when you use `20220117102945.md` as the filenames), then the content.
-
-Pattern used to generate new IDs
-
-: Use variables to have variable IDs. This should be matched by your regular expression. Available variables: `%Y` (Year, four digits), `%y` (Year, two digits), `%M` (Month, two digits), `%D` (Day, two digits), `%W` (Week, two digits), `%h` (Hour, two digits), `%m` (Minute, two digits), `%s` (Seconds, two digits), `%X` (Unix timestamp), `%uuid4` (UUID v4).
-
-Link with filename only
-
-: If selected, Zettlr will always link using filenames, and never the IDs of the file. Useful for some Zettelkasten systems.
-
-When linking files, add the filename …
-
-: _Note: This setting is only available when "Link with filename only" is disabled._
-
-: **always**: Always add the filename, even if the file has no ID, thus potentially duplicating the filename (e.g., `[[Filename.md]] Filename.md`).
-
-: **only when linking using the ID**: Add the filename if the file you are linking has an ID (e.g., `[[20220117102945]] Filename.md` if the file has an ID, `[[Filename.md]]` otherwise).
-
-: **never**: Never add the filename, even when linking using IDs (e.g., `[[20220117102945]]` if the file has an ID, or `[[Filename.md]]` if it does not).
-
-Start a search when following Zettelkasten-links
-
-: When checked, Zettlr will start a full-text search for the contents of the link you just followed.
-
-Automatically create non-existing files when following internal links
-
-: If checked, Zettlr will automatically create new files matching the file link, if it could not find the file (e.g., clicking on `[[non-existing-file]]` will automatically create the file `non-existing-file.md`).
-
-Put auto-created files into this directory (must be loaded in Zettlr)
-
-: This setting is useful if you have a Zettelkasten loaded into Zettlr alongside other directories. If you set this to a directory which is loaded in Zettlr, the app will never auto-create any files in any other directory except this one. _Note: This setting only applies to when you click an internal link, not when you create a new file manually._
-
-### Display
-
-![settings_display.png](../img/settings_display.png)
-
-This tab controls how the editor displays certain elements. Zettlr uses a semi-preview approach to Markdown and only renders some elements. On this tab you can control which elements will be rendered.
-
-Render Citations
-
-: Renders citations in a preview-format (always in-text). Requires a citation database to be loaded in the [Citations](#citations) tab, or the file to possess a file-specific database in its `bibliography` frontmatter key.
-
-Render Iframes
-
-: Renders embedded content (e.g., YouTube or Vimeo videos).
-
-Render Images
-
-: Renders images in your files.
-
-Render Links
-
-: Renders links in your files.
-
-Render Math
-
-: Renders any [math content](../core/math.md) in your files (surrounded with Dollar signs).
-
-Render Tasks
-
-: Renders task lists (`- [ ]`) in your files
-
-Hide heading characters
-
-: Instead of seeing the heading characters (`#`) this will display an element indicating the heading level. Clicking on that element allows you to change the heading level.
-
-Render emphasis
-
-: Sets the editor into a pseudo-WYSIWYG mode, attempting to completely hide all formatting characters unless you move your cursor inside.
+: Controls whether the app will use a dark theme, or a light theme. Use the schedule setting to determine if Zettlr automatically switches between light and dark modes. “Follow Operating System” means that Zettlr will switch between dark and light mode as soon as your operating system does. You can also manually schedule with the “On” setting. Determine the time when the dark mode should be turned on (24-hour clock), and when it should return to the light mode (also 24-hour clock).
 
 Theme
 
-: The theme selector allows you to select one of the available themes. You can further customize the appearance of Zettlr using [Custom CSS](../advanced/custom-css.md).
+: Determines the editor’s theme. These are curated settings that determine font family, size, and some color options in the editor.
 
-Use the operating system's accent colour instead of the theme colour
+Toolbar options
 
-: If disabled, Zettlr uses the theme's accent color to highlight certain elements. If selected, Zettlr will use your operating system's accent color, which you can select in the corresponding system preferences. _Note: On Linux, this will be ineffective and set the highlighting color to Zettlr's Crayola Green._
+: Lets you turn on or off toolbar buttons as you require them. Some toolbar buttons are required and cannot be turned off here.
 
-Hide toolbar in distraction free mode
+Status bar
 
-: If selected, Zettlr will remove the toolbar in distraction free mode.
+: Determines whether Zettlr will show a status bar for documents.
 
-Maximum width of images (percent)
+Custom CSS
 
-: Select the maximum width of images in the editor (in percent of the total editor width). Smaller images will not be stretched.
+: Provides a shortcut to open the Custom CSS tab of the assets manager.
 
-Maximum height of images (percent)
+## File Manager
 
-: Select the maximum height of images in the editor (in percent of the total window height). Smaller images will not be stretched.
+Controls the behavior of the file manager.
 
-### Spellchecking
+![preferences_file_manager.png](../img/preferences_file_manager.png)
 
-![settings_spellchecking.png](../img/settings_spellchecking.png)
+Display mode
 
-In this dialog, you can control spellchecking and grammar settings in the editor.
+: Selects the file manager display mode. “Thin” only shows either your folder tree, or the file list. “Expanded” shows both the folder tree and the file list. “Combined” shows folders and files interleaved in a directory tree.
 
-Use LanguageTool
+Show file information
 
-: Activates LanguageTool as a spelling, grammar, and style checker for your files. **Note**: By default, Zettlr will conntect to the official LanguageTool servers and send your file's contents there to have the service check it. If you would like to keep your files private, [set up LanguageTool locally](../guides/languagetool-local.md) first and enter the appropriate URL in the "Custom server" field.
+: Shows metadata in the file list, if active.
+
+Show folders above files
+
+: Determines if folders are sorted on top of the files in the file manager. If turned off, folders will show interleaved with your files, sorted according to your settings.
+
+Markdown Document Name display
+
+: Determines how Zettlr displays your Markdown documents in the file manager. “Filename only” means that it will always simply use the filename. If this is selected, you can additionally determine whether Zettlr should show the file extensions, or hide them. “Title if applicable” uses the `title` property of the YAML front matter, if available; otherwise use the filename. “First heading level 1 if applicable” uses the first heading level 1 as the file name, if available; otherwise use the filename. “Title or first heading level 1 if applicable” uses the `title` property, if available, then the first heading level 1, and only if neither are available, it falls back to the file name.
+
+Time display
+
+: To indicate when a file was last modified, or created, select the option you want here. This affects both the display in the file manager, as well as the timestamp which is used to sort files based on time.
+
+Sorting
+
+: When sorting folder contents by name, select whether to use a simple ASCII order, or a more natural ordering which takes into account logical groups.
+
+## Editor
+
+Controls the editor behavior.
+
+![preferences_editor.png](../img/preferences_editor.png)
+
+Input mode
+
+: Choose between normal, Vim, and Emacs. Emacs defines different keyboard shortcuts to navigate your documents. Vim offers a completely different editing experience. We recommend “Normal” for most users.
+
+Markdown rendering
+
+: Determines how Markdown will be rendered. “Preview” means that Zettlr will show a rich text-experience, “raw” means that Zettlr will show you the Markdown syntax. When “Preview” is selected, you can fine-tune which elements should be rendered.
+
+Formatting characters for bold and italics
+
+: Markdown allows you to format bold and italic either with underscores or asterisks. This setting selects which characters Zettlr uses when you use keyboard shortcuts to make text bold or italic.
+
+Check Markdown for style issues
+
+: If turned on, Zettlr will run a linter that tells you whether your Markdown documents are properly formatted.
+
+Table Editor
+
+: Turn on to render Markdown tables using actual table elements. This setting is also controled by the rendering mode (tables will not be rendered if you switch to “raw”).
+
+Distraction-free mode
+
+: Controls how the distraction-free mode works. You can mute non-focused lines, and hide the toolbar in the distraction-free mode.
+
+Word Counter
+
+: Determines if the word counters show you words or characters. Internally, Zettlr will always count both. Also, the status bar will always show you both.
+
+Readability mode
+
+: Select the algorithm to use when using the readability mode.
+
+Image Size
+
+: Use this to restrict images to a maximum size within the editor, regardless of the actual image size.
+
+Font size
+
+: Sets the font size of the editor.
+
+Indentation size
+
+: Determines how many spaces Zettlr will insert when you indent using <kbd>Tab</kbd>. You can also insert tabs instead.
+
+Show formatting toolbar when text is selected
+
+: Displays a small toolbar with some common formatting tools next to selected text. Similar to Microsoft Word.
+
+Show line numbers for Markdown files
+
+: When turned on, Zettlr will also show line numbers in Markdown files. Zettlr always shows line numbers for code files.
+
+Highlight Whitespace
+
+: Check to have Zettlr highlight whitespace in your documents.
+
+Suggest emojis during autocompletion
+
+: Turn on to include emojis when autocompleting using the colon character.
+
+Show link previews
+
+: If this is turned on, Zettlr will contact the server behind a link to show you a rich preview of the link. Turn off to prevent Zettlr from contacting the websites before you visit the link.
+
+Automatically close matching character pairs
+
+: If turned on, characters such as brackets will be automatically inserted in pairs. Can make writing links or other syntactic elements quicker.
+
+## Spellchecking
+
+Adjust spellchecking and other language tools.
+
+![preferences_spellchecking.png](../img/preferences_spellchecking.png)
+
+LanguageTool
+
+: Controls the LanguageTool integration. If turned on, Zettlr will run your text through LanguageTool to provide rich grammatical and spelling feedback.
 
 Strictness
 
-: Selects the strictness level for LanguageTool. "Picky" will activate a few additional rules that are more appropriate for academic or journalistic texts.
+: Chooses between a basic “Standard” mode and a more strict “Picky” mode. Controls how many suggestions LanguageTool provides.
 
-Mother tongue
+Mother language
 
-: This optional setting allows LanguageTool to check for "false friends".
+: Select your own native language. Helps LanguageTool check for potential fallacies such as “false friends.”
+
+Preferred Variants
+
+: Helps LanguageTool determine which language you likely meant when you type in one of them.
 
 LanguageTool Provider
 
-: Select whether you would like to use the official LanguageTool service, or a custom server that, e.g., you or a friend has set up.
+: Select a provider for LanguageTool. You can either choose their official servers, or select a custom one here.
 
-Custom server
+LanguageTool Premium
 
-: Enter a custom server URL here. If you followed our guide on setting up LanguageTool locally, this will probably look something like this: `http://localhost:8010/`.
+: If you subscribe to LanguageTool, enter your username and API key here to get more feedback on your text. Note that Zettlr will ignore your custom server if you enter anything in here. Leave these fields blank to use a custom server.
 
-LanguageTool Username
+LanguageTool: Ignored Rules
 
-: If you are subscribed to LanguageTool Premium, you can enter your username here to use your premium subscription in Zettlr. **Note**: Entering a username here will **disable** any custom server setting. If either Username or API key are set, Zettlr will ignore these settings and always contact the official service.
-
-LanguageTool API key
-
-: If you are subscribed to LanguageTool Premium, you can enter your API key here to use your premium subscription in Zettlr. **Note**: Entering an API key here will **disable** any custom server setting. If either Username or API key are set, Zettlr will ignore these settings and always contact the official service.
+: Shows a list of all rules that you have disabled in the editor. Click the button to re-enable the rule.
 
 Spellchecking
 
-: Use this list to select spellchecking dictionaries to use. You can activate multiple, but we recommend activating no more than two or three. You can install additional dictionaries [by following this explanation](../core/style-and-grammar.md).
+: Allows you to select Hunspell-compatible dictionaries for simple spellchecks.
 
-User dictionary
+User Dictionary
 
-: This list contains all words that you have manually added to the user dictionary and allows you to delete them.
+: Contains all terms you have added to your user dictionary. Click the button to remove them.
 
-### AutoCorrect
+## Autocorrect
 
-![settings_autocorrect.png](../img/settings_autocorrect.png)
+Controls your autocorrect and Magic Quotes settings.
 
-This tab controls Zettlr's AutoCorrect features that you might already know from LibreOffice or Word.
+![preferences_autocorrect.png](../img/preferences_autocorrect.png)
 
-Turn on AutoCorrect
+Autocorrect
 
-: This activates both the MagicQuotes and the AutoCorrect settings. If you want to enable AutoCorrect but prefer regular ("non-magic") quotes, select the option "Disable Magic Quotes" in the dropdown lists below.
+: If enabled, perform autocorrections, and enable magic quotes.
 
-Primary Magic Quotes
+Smart quotes
 
-: Set this to your local quote characters for primary quotations. **Note**: You can also control the MagicQuotes from the statusbar of each editor if you activate the statusbar in the editor settings.
+: Controls which typographical quotation marks Zettlr inserts as you type.
 
-Secondary Magic Quotes
+Text-Replacement Patterns
 
-: The same as the previous setting, only for secondary quotations. Secondary quotes are usually used to quote inside quotes.
+: Controls which sequences of characters Zettlr will replace with what. You can add new patterns with the text fields at the bottom of the table.
 
-AutoCorrect Replacement Table
+Match whole words
 
-: Below the settings, you can see a replacement table that ships with a default list of common replacements to turn, e.g., ASCII-arrows (`-->`) into proper arrow symboles (`→`). Zettlr will continously check what you type and, as soon as it finds a match, it will replace this match after you press <kbd>Space</kbd> or <kbd>Enter</kbd>.
+: If active, Zettlr will never replace parts of words.
 
-: You can delete any key-value pair, and also add more by scrolling down to the end of the list.
+## Citations
 
-### Advanced
+Controls citation-related settings
 
-![settings_advanced.png](../img/settings_advanced.png)
+![preferences_citations.png](../img/preferences_citations.png)
 
-Pattern for new filenames
+Citation Autocomplete
 
-: This can be used to customize the default filename for new files. You can always adapt the filename, this is only used as a placeholder. Available variables: `%id` (an ID according to the pattern from the [Zettelkasten](#zettelkasten) tab), `%Y` (Year, four digits), `%y` (Year, two digits), `%M` (Month, two digits), `%D` (Day, two digits), `%W` (Week, two digits), `%h` (Hour, two digits), `%m` (Minute, two digits), `%s` (Seconds, two digits), `%X` (Unix timestamp), `%uuid4` (UUID v4).
+: Controls how Zettlr autocompletes citation keys when you accept a suggestion. This will make Zettlr add the appropriate scaffolding around citations so that they turn out how you like.
+
+Citation database
+
+: Select a CSL JSON, BibTeX, or BibLaTeX file so that Zettlr can offer you citations and tell Pandoc how to format your citations during export.
+
+CSL Style
+
+: Provide a CSL Style from [zotero.org/styles](https://www.zotero.org/styles) to customize how your citations will be formatted. Only applies during exports.
+
+## Zettelkasten
+
+Controls PKMS-related functionality of Zettlr.
+
+![preferences_zettelkasten.png](../img/preferences_zettelkasten.png)
+
+Zettelkasten IDs
+
+: Tell Zettlr how it should generate IDs for your files. In addition, provide Zettlr with a regular expression it can use to identify your IDs.
+
+Internal Links
+
+: Controls how Zettlr autocompletes when you create an internal link. When “Always use the file title as label for internal links” is active, Zettlr will insert both the filename or ID as the link target, as well as the file title as the link label. If turned off, Zettlr will only provide the link target. “Use the file ID as link target” controls whether Zettlr will always only use file names to link between files, or if it uses the file ID if available.
+
+Link Format
+
+: Controls how links in your system work. Most systems recognize Links first, but some systems require the link title to be placed first. If you need to interact with such a system, change this setting accordingly.
+
+Start a Full-Text Search when Following Internal Links
+
+: If active, Zettlr will not just follow a link if you <kbd>Cmd/Ctrl</kbd>-click on it, but also search for the contents of this link in the global search.
+
+Automatically create non-existing files in this folder when following internal links
+
+: Specifies a folder in which Zettlr will create files that do not yet exist when you click on a link to a non-existing file. The folder must be loaded in Zettlr.
+
+## Snippets
+
+Only provides a shortcut to open the snippets tab of the assets manager.
+
+![preferences_snippets.png](../img/preferences_snippets.png)
+
+## Import and Export
+
+Controls behavior of the import/export engine.
+
+![preferences_import_export.png](../img/preferences_import_export.png)
+
+Import and export profiles
+
+: Contains shortcuts to the import and export tabs of the assets manager.
+
+Use Zettlr’s Internal Pandoc for Exports
+
+: If you disable this setting, Zettlr will use your computer’s separately installed Pandoc for exports.
+
+Automatically open successfully exported files
+
+: If enabled, Zettlr automatically opens files after export. Does not apply to project exports.
+
+Enforce highlight extension on export
+
+: Controls whether highlights will be recognized (`==mark==`) on export. Will forcefully enable the `mark` extension during exports, regardless of settings in the profile.
+
+Remove tags from files when exporting
+
+: Controls the tag removal Lua filter. When checked, the filter will remove any tags it finds. If disabled, leaves tags as-is.
+
+Internal Links
+
+: Controls the behavior of the link Lua filter. “Remove completely” means that it will act like the tag filter and remove links entirely. “Unlink” means that it will replace the links just with the link target. “Don’t touch” means that the filter will not modify your links at all.
+
+Destination folder for exported files
+
+: Controls where Zettlr will export your files to. “Temporary folder” means that they will be removed by your computer if you do not use the files. “Same as file location” means to place the exported file into the same folder as the source file. “Ask” will show a folder selection dialog upon export.
+
+Custom export commands
+
+: Allows you to specify custom commands to circumvent Zettlr’s own export engine.
+
+## Advanced
+
+Controls miscellaneous advanced settings.
+
+![preferences_advanced.png](../img/preferences_advanced.png)
+
+Pattern for new file names
+
+: Determines how Zettlr calculates new file names.
 
 Do not prompt for filename when creating new files
 
-: When checked, Zettlr will immediately create a file using this pattern instead of prompting you for a filename. You can change the filename by renaming the file.
+: By default, you have the chance to choose a different file name. Select this to have Zettlr immediately create the file.
 
-Enable debug mode
+Use native window appearance
 
-: This enables a small set of functionality that is relevant for either developers, or if you have been asked to provide logs. When enabled, you have an additional application menu available ("Develop"), and context menus will feature an "Inspect Element" item which works as you know it from browsers.
+: Only available on Linux. If selected, Zettlr will use the default window decorations of your distribution. If disabled, Zettlr will render its own Window chrome.
 
-Notify me about beta releases
+Enable window vibrancy
 
-: If selected, Zettlr will also inform you about new beta releases, not just stable releases.
-
-Use native window appearance (Linux only)
-
-: Due to the plethora of available window managers on Linux, you can select this setting to have windows display with whatever window chrome your window manager uses. You have to close and reopen existing windows for this setting to take effect. Zettlr will offer you to restart after changing this setting.
-
-Enable Vibrancy (macOS only)
-
-: macOS windows are slightly translucent and change their background color based on whatever is behind them. However, this can sometimes make moving windows between different displays a little bit laggy. If you find this annoying, you can disable this setting. Zettlr will offer to restart after changing this setting.
-
-Delete items irreversibly, if moving them to trash fails
-
-: By default, Zettlr will put deleted files into the trash bin so you can restore them if necessary, and not do anything if it cannot put the files into the trash bin. If you have disabled the trash bin or something else prevents Zettlr from trashing your files, you can select this setting, which will instruct Zettlr to irreversibly remove the files instead.
+: Makes the background of windows on macOS slightly transparent.
 
 Show app in the notification area
 
-: If selected, display a small Zettlr icon in the notification area or tray bar. On Windows and Linux, this has the additional effect that the app will not quit if you close all windows. Click the icon to restore Zettlr's main window.
+: If enabled, displays a Zettlr icon in the menubar (on macOS) or the tray area (on Windows and Linux).
 
-Enter all file extensions that you want to see in your attachment sidebar
+Zoom Behavior
 
-: Zettlr works only with a small set of plain text files. As such, it cannot display, e.g., Excel spreadsheets. By adding extensions here, Zettlr will display those files in the sidebar so you can link them inside your files or open them with the external default program.
+: What happens when you press <kbd>Cmd/Ctrl</kbd>+<kbd>+</kbd> and <kbd>Cmd/Ctrol</kbd>+<kbd>-</kbd>.
 
-iFrame rendering whitelist
+File Treatment
 
-: iFrames can pose a security risk. As such, you have to confirm that you would like to display iFrames. This list contains all hostnames which you have whitelisted so you can remove them if you accidentally whitelisted a hostname which you do not trust.
+: Controls where Zettlr displays which types of files, and how it will open them when you click them. “Display in file manager” makes these files show up in the file manager. “Display in sidebar” shows these files in the sidebar. “Open with” determines whether Zettlr will open the files internally, or let your computer open them with the system default app.
 
-Activate Watchdog polling (legacy setting; subject to removal)
+Custom Filename Extensions
 
-: If you work with large files, or your computer is somewhat slower, you can activate this setting. By default, Zettlr listens to your computer to get notified if some file changes remotely. If you activate this setting, Zettlr will wait the defined timespan, before it considers a change to be ready.
+: This control allows you to specify additional, arbitrary filename extensions for files to show. These files will only be shown in the sidebar.
 
-Time to wait before writing a file is considered done (in ms)
+Iframe rendering whitelist
 
-: Increase this threshold, if Zettlr recognizes too many remote changes.
+: By default, Zettlr will ask you before loading any iframe for security reasons. This control lists all domains for which Zettlr will not ask before immediately loading the iframe. This should only include trusted domains. Remove all for maximum security.
 
-### Toolbar
+Watchdog polling
 
-![settings_toolbar.png](../img/settings_toolbar.png)
+: Deprecated.
 
-The toolbar settings allow you to determine which buttons are visible on your toolbar. You can enable or disable most buttons. Note, however, that a few buttons (such as the file manager three-way button and the sidebar button) cannot be disabled.
+Deleting items
 
-## Tag Manager
+: Mainly relevant for Linux distributions where “trash” functionality is optional. If no trash folder is specified, deleting files will fail. Enable this setting to just irreversibly delete the items in that case.
 
-![The Tags settings dialog](../img/tags_settings.png)
+Debug mode
 
-The tags dialog does not have a shortcut associated, so you'll need to call it using the respective menu item. Here you can assign colours and descriptions to tags.
+: Enables debug mode. Provides a new app menu (“Develop”) and shows “Inspect element” on context menus.
 
-To add a new tag-colour-relationship, simply press the `+` button at the bottom of the dialog. In the first field, enter your tag without the preceding hashtag symbol (e.g., if you wanted to assign a colour to the hashtag `#todo`, simply enter `todo`). Next, choose a colour to be assigned to that tag. If you click the second bar after the tag name field, a color picker should appear that lets you choose a colour. In the third field, you can enter a short description for that tag. This description will be shown if you hover over the tag symbols in the file list.
+Beta releases
 
-If you want to remove a tag-colour-association, simply click the `-` button at the end of such a tagline (pun intended).
+: Offers you to install beta releases if checked. Only works if you enable update checks.

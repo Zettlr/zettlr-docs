@@ -5,7 +5,7 @@ site_description: >-
     Our comprehensive documentation provides you with everything you need to
     know about how to make the most of Zettlr.
 site_author: Hendrik Erz
-copyright: "&copy; 2017-2023 by Zettlr"
+copyright: "&copy; 2017-2025 by Zettlr"
 docs_dir: ../docs/en
 site_dir: ../build/en
 edit_uri: edit/master/docs/en
@@ -20,64 +20,106 @@ nav:
     - A Note on Security: getting-started/a-note-on-security.md
     - Get involved: getting-started/get-involved.md
     - Troubleshooting: getting-started/troubleshooting.md
+    - FAQ: reference/faq.md
   - First Time Users:
-    - The User Interface: core/user-interface.md
-    - Importing Files: core/import.md
-  - Basic Usage:
-    - Workspaces and Folders: core/workspaces.md
-    - Files: core/files.md
-    - File Manager: core/file-manager.md
-    - Split View: core/split-view.md
-    - Sidebar: core/sidebar.md
-    - Writing Markdown: core/writing-markdown.md
-    - Working With Comments: core/comments.md
-    - Style and Grammar: core/style-and-grammar.md
-    - Readability: core/readability.md
-    - Statusbar: core/statusbar.md
-    - AutoCorrect and MagicQuotes: core/autocorrect.md
-    - Citations: core/citations.md
-    - Math: core/math.md
-    - Code Blocks: core/code-blocks.md
-    - Snippets: core/snippets.md
-    - Searching: core/search.md
-    - Table Editor: core/tables.md
-    - Print and Preview: core/print-preview.md
-    - Exporting: core/export.md
-    - Writing Statistics: core/writing-statistics.md
-  - Advanced Usage:
-    - YAML Frontmatter: advanced/yaml-frontmatter.md
-    - Text Transforms: advanced/text-transforms.md
-    - Assets Manager: advanced/assets-manager.md
-    - Defaults Files: advanced/defaults-files.md
-    - Custom Templates: advanced/custom-templates.md
-    - Custom CSS: advanced/custom-css.md
-    - Tag Manager: advanced/tag-manager.md
-    - Projects: advanced/projects.md
-    - Pomodoro Timer: advanced/pomodoro.md
-    - Zettelkasten Methods: advanced/zkn-method.md
-    - Graph View: advanced/graph.md
+    - First Steps: first-time-users/first-steps.md
+    - Workspaces: first-time-users/workspaces.md
+    - Creating Files and Folders: first-time-users/creating-files-and-folders.md
+    - Writing Markdown: first-time-users/writing-markdown.md
+    - Migrating from Word: first-time-users/import.md
+    - Exporting files: first-time-users/exporting-files.md
+  - File Manager:
+    - File Manager: file-manager/index.md
+    - Workspaces and Root Files: file-manager/workspaces-root-files.md
+    - Choosing Which Files To Display: file-manager/choosing-files.md
+    - Appearance (Modes): file-manager/appearance.md
+    - File List: file-manager/file-list.md
+    - Properties: file-manager/properties.md
+    - Filtering: file-manager/filtering.md
+    - Global Search: file-manager/search.md
+    - Projects: file-manager/projects.md
+  - Split View:
+    - Split View: split-view/index.md
+    - Document Tab Bar: split-view/document-tab-bar.md
+    - Markdown Editor: split-view/markdown-editor.md
+    - Code Editor: split-view/code-editor.md
+    - Image Viewer: split-view/image-viewer.md
+    - PDF Viewer: split-view/pdf-viewer.md
+  - Sidebar:
+    - Sidebar: sidebar/index.md
+    - Table of Contents: sidebar/table-of-contents.md
+    - References: sidebar/bibliography.md
+    - Related Files: sidebar/related-files.md
+    - Other Files: sidebar/other-files.md
+  - Markdown Editor:
+    - Markdown Editor: editor/index.md
+    - Markdown Compendium: editor/markdown-compendium.md
+    - Appearance: editor/appearance.md
+    - Search: editor/search.md
+    - Autocomplete: editor/autocomplete.md
+    - Footnotes: editor/footnotes.md
+    - Citations: editor/citations.md
+    - Working With Comments: editor/comments.md
+    - Status bar: editor/statusbar.md
+    - Table Editor: editor/tables.md
+    - Text Transforms: editor/text-transforms.md
+    - Snippets: editor/snippets.md
+    - YAML Front Matter: editor/yaml-frontmatter.md
+  - Language & Style:
+    - Language & Style: language-style/index.md
+    - Spellchecking: language-style/spellchecking.md
+    - LanguageTool: language-style/languagetool.md
+    - Markdown Syntax: language-style/syntax.md
+    - AutoCorrect and MagicQuotes: language-style/autocorrect.md
+    - Readability: language-style/readability.md
+  - Exporting:
+    - Exporting: export/index.md
+    - Workflow: export/workflow.md
+    - Defaults Files (Profiles): export/defaults-files.md
+    - Assets Manager: export/assets-manager.md
+    - Custom Templates: export/custom-templates.md
+    - Custom Commands: export/custom-commands.md
+    - Print and Preview: export/print-preview.md
+    - Lua Filters: export/lua-filters.md
+  - Scientific & Technical:
+    - Scientific & Technical: scientific-technical/index.md
+    - Math: scientific-technical/math.md
+    - Code Blocks: scientific-technical/code-blocks.md
+    - Mermaid Diagrams: scientific-technical/mermaid.md
+    - Pomodoro Timer: scientific-technical/pomodoro.md
+    - Writing Statistics: scientific-technical/writing-statistics.md
+  - PKMS/Zettelkasten:
+    - PKMS/Zettelkasten: pkms/index.md
+    - Zettelkasten Methods: pkms/zkn-method.md
+    - Graph View: pkms/graph.md
+    - Tag Manager: pkms/tag-manager.md
   - Guides:
+    - Guides: guides/index.md
+    - Customizing Zettlr with CSS: guides/custom-css.md
+    - Zotero Integration: guides/reference-manager-integration.md
     - LanguageTool Locally: guides/languagetool-local.md
     - Presentations: guides/presentations.md
     - Submitting to a Journal using a LaTeX Template: guides/journal-latex-template.md
     - Portable App: guides/portable.md
-  - References:
-    - FAQ: reference/faq.md
+  - Reference:
+    - Reference: reference/index.md
     - Keyboard Shortcuts: reference/keyboard-shortcuts.md
-    - Markdown Basics: reference/markdown-basics.md
     - Settings: reference/settings.md
-    - Spell Checking: reference/spell-checking.md
 theme:
   name: readthedocs
   locale: en
   custom_dir: ../theme_override
   highlightjs: True
+  hljs_style: github
+  hljs_style_dark: github_dark
   prev_next_buttons_location: both
   hljs_languages:
     - javascript
+    - markdown
     - css
     - yaml
     - latex
+    - lua
 markdown_extensions:
     - def_list
     - admonition
@@ -86,3 +128,9 @@ markdown_extensions:
 plugins:
   - search:
       lang: en
+  - git-revision-date-localized
+validation:
+  omitted_files: warn
+  absolute_links: warn  # Or 'relative_to_docs' - new in MkDocs 1.6
+  unrecognized_links: warn
+  anchors: warn  # New in MkDocs 1.6

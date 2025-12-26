@@ -14,6 +14,8 @@ jobs:
     # For setup, see https://www.mkdocs.org/#installation
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Needed for the revisions plugin to work
     - name: Set up Python 3.10
       uses: actions/setup-python@v5
       with:
@@ -22,6 +24,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install mkdocs
+        pip install mkdocs-git-revision-date-localized-plugin
         
     # Now we can build the thing
     - name: Build the documentation
@@ -32,7 +35,7 @@ jobs:
       uses: easingthemes/ssh-deploy@v5.1.0
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        ARGS: "-vzhr"
+        ARGS: "-vzhr --delete" # verbose, compress, human-readble, recursive, delete
         SOURCE: "build/"
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}

@@ -1,28 +1,82 @@
-# Welcome
+# Welcome!
 
-This User Manual is the official documentation for Zettlr. Here you can find detailed descriptions for every feature and how you can tweak those to match your needs. Consult this manual any time you are stuck. You can open this manual from within the app by pressing <kbd>F1</kbd> or clicking on the menu item 'Help' &rarr; 'Open user manual' (internet connection required).
+Thank you for choosing Zettlr as your new One-Stop Publication Workbench! Zettlr is a powerful writing tool for all your needs. It is designed for anyone with a serious need to write, and goes out of your way to allow you to write frictionless.
 
 !!! note
 
-    This documentation is available in several languages. You can select another language from the [main landing page](https://docs.zettlr.com/). Please note that these translations may be incomplete. If in doubt, always consult this (the English) version of the documentation, which is updated regularly.
+	If you are a new user, head over to our [first time users guide](./first-time-users/first-steps.md) to get started with the app.
 
-If you have any questions that are not answered by this documentation, make sure to consult the [Frequently Asked Questions](reference/faq.md) and ask the community on [Discord](https://go.zettlr.com/discord), the [Community Forum](https://forum.zettlr.com/), or [Reddit](https://www.reddit.com/r/Zettlr/). We also feature a [YouTube channel](https://www.youtube.com/c/Zettlr/) where we occasionally upload videos on how to use the app and the associated tools. The company Gurubase offers [an LLM-integration with this documentation](https://gurubase.io/g/zettlr) to peruse, allowing you to "chat" with the documentation.
+For **academics** at every level, from student to faculty, Zettlr offers comprehensive support for **citations** and **project support**, and it includes a powerful **templating engine** that enables you to quickly typeset **camera-ready paper drafts**.
 
-## First Steps with Zettlr
+For **authors**, Zettlr ships with extensive support for **taking notes**, creating **wikis**, and **reference files** as you write.
 
-If you have just found Zettlr and want to get started, head over to our [setup instructions](getting-started/setup.md) to install the app on your computer. There you can also find the [minimum system requirements](getting-started/setup.md#minimum-system-requirements). Additionally, this page also provides all the necessary information to fully uninstall Zettlr again, if you so wish.
+And for anyone else, it allows the easy setup of an all-inclusive **Zettelkasten** or **PKMS** workflow.
 
-## How to Read this Documentation
+!!! note
 
-This documentation utilizes a common and easy to use layout to help you find what you need quickly. On the left side, you can find the navigation panel. If you're on mobile, click the hamburger menu button to open the navigation panel.
+    This documentation is available in several languages. Select another language from the [main page](https://docs.zettlr.com/). Please note that these translations are community-provided and may be incomplete. If in doubt, always consult this (the English) version of the documentation.
 
-The navigation contains all pages of this documentation. It is ordered from top to bottom. **As a novice user**, you can simply follow the various pages by clicking the "Next" and "Previous" buttons at the bottom of the navigation panel and each page. You can also click on an entry to jump directly to it.
+## Contents
 
-If you need to look something up, you can find a **search panel** on the top of the navigation that helps you find the relevant sections of interest immediately.
+This documentation is divided into various sections that describe different aspects of the app. Click on a section to view it.
 
-While most of the navigation builds up gradually, you may want to **take a look the references section intermittently**, since it contains various glossarys, such as a list of keyboard shortcuts, a quick reference of Markdown, and other things that are always important.
+[🏁 Getting Started](./getting-started/setup.md)
 
-Lastly, this documentation is [maintained on GitHub](https://github.com/Zettlr/zettlr-docs). If you spot an error, do not hesitate to mention it there, or directly edit the documentation pages. Each page features an "Edit on GitHub" link that brings you directly to the online editor (GitHub account required).
+: Set up Zettlr, how to make Zettlr secure, and find troubleshooting help.
+
+[🧑‍💻 First Time Users](./first-time-users/first-steps.md)
+
+: Read this after installing the app for the first time. Use the “Next”- and “Previous”-buttons to navigate through this section, because it is meant to be read start to finish.
+
+[🗄️ File Manager](./file-manager/index.md)
+
+: Describes the file manager, and how it displays your files. This section also includes descriptions of central concepts of the app, such as workspaces.
+
+[🪟 Split View](./split-view/index.md)
+
+: Introduces the split view, and how you can use it efficiently.
+
+[📋 Sidebar](./sidebar/index.md)
+
+: Describes the sidebar, and how you can use it.
+
+[📝 Markdown Editor](./editor/index.md)
+
+: Describes the central Markdown document editor and all its functionality.
+
+[🪮 Language and Style](./language-style/index.md)
+
+: Learn how Zettlr can help you write good prose with spell checkers, grammar checkers, and style checkers.
+
+[🤖 Exporting](./export/index.md)
+
+: In-depth explainer of how the exporting system works and how you can use it to your advantage.
+
+[🧪 Scientific and Technical](./scientific-technical/index.md)
+
+: Describes features of the app primarily relevant to scientists or technical writers.
+
+[🗃️ PKMS/Zettelkasten](./pkms/index.md)
+
+: Set up Zettlr as a personal knowledge management system.
+
+[💡 Guides](./guides/index.md)
+
+: Contains step-by-step guides to realizing some more complex features; from customizations to full journal or conference templates.
+
+[⚙️ Reference](./reference/index.md)
+
+: Includes descriptions on available keyboard shortcuts and settings.
+
+!!! note
+
+	You can always access this documentation from the app. To do so, press <kbd>F1</kbd> or choose “Help” → “Open user manual” from the menu (internet connection required).
+
+## FAQ
+
+This documentation includes a comprehensive [Frequently Asked Questions](reference/faq.md) section. If neither the documentation nor the FAQ can answer your question, we invite you to join our community on [Discord](https://go.zettlr.com/discord), the [Community Forum](https://forum.zettlr.com/), or [Reddit](https://www.reddit.com/r/Zettlr/).
+
+The company Gurubase offers [an LLM-integration with this documentation](https://gurubase.io/g/zettlr) to peruse, allowing you to “chat” with the documentation.
 
 ## Get Involved!
 
@@ -30,7 +84,7 @@ Zettlr is free and open source software, which means that its source code is pub
 
 - You can [translate the app](https://github.com/Zettlr/Zettlr/blob/develop/CONTRIBUTING.md#translation) (GitHub account required).
 - You can [translate and improve this documentation](https://github.com/Zettlr/zettlr-docs/) (GitHub account required).
-- You can join the community on [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.gg/PcfS3DM9Xj), and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) and help new and other users.
+- You can join the community on [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://go.zettlr.com/discord), and [GitHub Discussions](https://github.com/Zettlr/Zettlr/discussions) and help new and other users.
 - You can [tackle open issues on GitHub](https://github.com/Zettlr/Zettlr/issues) and help develop the application itself (GitHub account required).
 
 More information on how to get involved can be found [here in the documentation](getting-started/get-involved.md).
