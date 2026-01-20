@@ -116,6 +116,11 @@ You can change how Zettlr autocompletes citekeys by navigating into the preferen
 
     Please note that citation *styles* can sometimes further customize how citations are actually being rendered. For instance, some citation styles in the natural sciences require citations to be referred to only by number. This specific requirement will be applied once you export a file. **Zettlr itself will always use a default in-text citation style to preview your files. Your exports therefore may differ.**
 
+!!! tip
+
+	Zettlr's auto-suggest feature for inserting citekeys is extremely helpful. That said, there may be times when you want to cut and paste a citekey directly from your reference manager. If you're using Zotero with the BetterBibTeX plugin, the plugin comes with features for streamlining this process, which require a one-time setup. In Zotero, go to the `Settings` menu and select the `Better BibTex` from the sidebar to bring up the plugin settings. Scroll to the section labeled `Quick-Copy` and choose `Pandoc citation` from the `Quick-Copy format` menu. Next, select `Export` from the `Settings` sidebar. From the dropdown menu labeled `Item Format`, select the option labeled `Better BibTeX Citation Key Quick Copy`. This completes the necessary setup.
+
+	Going forward, you can select one, or multiple, items in Zotero and drag them onto the Zettlr editor pane to insert citations. If you prefer to cut and paste citekeys, you can do so by selecting an entry in Zotero and using the key combo <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd><kbd>C</kbd> to copy the citekey to the clipboard.
 
 For more information on how to use citations in line with Pandoc's citeproc engine, [please refer to the guide](https://pandoc.org/MANUAL.html#citations).
 
