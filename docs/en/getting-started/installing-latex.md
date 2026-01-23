@@ -4,6 +4,10 @@ Zettlr allows exporting into a variety of file formats, including PDF. There are
 
 To export more advanced PDF files, you'll need to install [LaTeX](https://en.wikipedia.org/wiki/LaTeX). LaTeX is a typesetting language that allows for a large amount of customization, but because it is a relatively large program, it does not come bundled with Zettlr. Here we show you how to install it.
 
+!!! tip
+
+    Zettlr supports several engines to create PDF files, not just LaTeX. For example, Zettlr also supports Tectonic or Typst. Across this documentation, we focus on LaTeX, as it is the most reliable system for creating PDF files. However, you can select which PDF-engine you want to use by modifying your [export profiles ("Defaults files")](../export/defaults-files/).
+
 LaTeX distributions usually come in two flavors: A “full” installation featuring a host of graphical programs for writing TeX directly, and a “minimal” installation that only contains the actual compilers. Zettlr is happy with only a minimal installation (because it just needs the compiler), but if you want to fiddle around with LaTeX more you are free to install the full package.
 
 !!! note
