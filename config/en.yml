@@ -76,6 +76,7 @@ nav:
     - Exporting: export/index.md
     - Workflow: export/workflow.md
     - Defaults Files (Profiles): export/defaults-files.md
+    - Selecting the PDF Engine: export/pdf-engine.md
     - Assets Manager: export/assets-manager.md
     - Custom Templates: export/custom-templates.md
     - Custom Commands: export/custom-commands.md

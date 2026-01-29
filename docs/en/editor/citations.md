@@ -31,7 +31,7 @@ From now on, Zettlr will autocomplete any citation that you type. However, to en
 Every citation consists of **four part**, only one of which is mandatory:
 
 * a **prefix** that precedes the citation
-* a **citekey** that specifies the piece of work that shall be cited
+* a **citekey** that specifies the piece of work that shall be cited. This key is mandatory.
 * a **locator** that specifies the exact location within the work cited
 * a **suffix** that includes further information
 
@@ -45,7 +45,7 @@ You can see the prefix in yellow, the actual citation in green, the locator in p
 
 	Only the citekey is required to create a citation. All other parts are optional.
 
-The first thing to recognize is that **Zettlr does not use Zotero’s citation picker**. Instead it utilizes Pandoc’s citation syntax. Pandoc’s citation syntax is equivalent to the citation picker, but instead of using a graphical interface to modify your citation, you write out all the parts of your citation directly. This can be much faster once you are attuned to the syntax.
+The first thing to recognize is that **Zettlr does not use Zotero’s citation picker**. Instead, it utilizes Pandoc’s citation syntax. Pandoc’s citation syntax is equivalent to the citation picker, but instead of using a graphical interface to modify your citation, you write out all the parts of your citation directly. This can be much faster once you are attuned to the syntax.
 
 The syntax for writing a citation using Pandoc syntax is almost the same as what it will look like when rendered:
 
@@ -134,7 +134,7 @@ As you cite, Zettlr will automatically generate a preview bibliography in the [S
 
 ## Using a file-specific library
 
-Sometimes you may want to add a few citation keys on a per-file basis. To do so, you must add the bibliography file to your file's [YAML frontmatter](./yaml-frontmatter.md). If Zettlr detects the `bibliography` property in a file's frontmatter, it will automatically load that file and offer you items from that file instead of your main library.
+Sometimes you may want to add a few citation keys on a per-file basis. To do so, you must add the bibliography file to your file's [YAML frontmatter](./yaml-frontmatter.md). If Zettlr detects the `bibliography` property in a file's front matter, it will automatically load that file and offer you items from that file instead of your main library.
 
 Example:
 
@@ -156,32 +156,38 @@ Internally, Zettlr will always use the Chicago style to render citations. Theref
 
 But of course you can use different citation styles, depending on either the journal requirements for which you are writing, or your personal preferences. To change the citation style, you need to download the corresponding CSL file. A very good starting point is the [Zotero style repository](https://www.zotero.org/styles). There you can search for specific citation styles, preview them and download them. Another good option is the [Citation Style Language styles repository](https://github.com/citation-style-language/styles)
 
-You can point Zettlr to a CSL file in two ways. First in the general preferences. In the `Export` tab, beneath the field for your citation database file, you can select your preferred CSL style. This will be used for all single-page exports using the toolbar button.
+You can point Zettlr to a CSL file in three ways. First in the general preferences. In the `Export` tab, beneath the field for your citation database file, you can select your preferred CSL style. This will be used for all exports.
 
 Second, you can set specify a CSL style for a specific project. With your project folder visible in the file manager, right-click on the project folder and select “Properties” → “Project Settings….” In the “Files” tab you can specify the CSL file to use when exporting your project.
 
+Third, you can specify a CSL style only for one particular file, by providing it in the file’s YAML front matter. For example:
+
+```yaml
+csl: ./styles/acta-philosophica.csl
+```
+
 ## Customizing the List of References
 
-By default, Pandoc will simply append a list of references to the end of your documents without any decoration. Therefore, you need to perform a few housekeeping steps to ensure bibliographies are properly rendered.
+By default, Pandoc will simply append a list of references to the end of your documents without any decoration. This is usually not desirable, especially since reference lists should have at least a heading.
 
 ### Adding a Section Header
 
-The simplest task is to provide a section header for the list of references. The easiest way to do so is to append a heading called “References,” “Bibliography,” or similar to the end of your document. While this may look a little off when looking at the document in Zettlr, this will ensure that the bibliography has an appropriate heading on export. Since Pandoc will simply append the rendered bibliography to your document, this “lone” heading will then become the heading for your list of references upon export.
+The easiest way to add a section header to your list of references is to append a heading called “References,” “Bibliography,” or similar to the end of your document. While this may look a little off when viewing the document in Zettlr, this will ensure that the bibliography has an appropriate heading on export. Since Pandoc will simply append the rendered bibliography to your document, this “lone” heading will then become the heading for your list of references upon export.
 
-However, this may become cumbersome quickly, as you create more and more files. It would be great if you could automate this process. Fortunately, you can do so.
+However, this can quickly become cumbersome, as you create more and more files. It would be great if you could automate this process. Fortunately, you can do so.
 
-Instead of specifying the heading section everytime, you can provide a default name for each export profile. To do so, head into the [Assets Manager](../export/assets-manager.md), e.g., by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>. In the “Export” tab, select the profile you wish to provide a default reference section for, and add the following code:
+Instead of specifying the heading section every time, you can provide a default name for each export profile. To do so, head into the [Assets Manager](../export/assets-manager.md), e.g., by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>. In the “Export” tab, select the profile you wish to provide a default reference section for, and add the following code:
 
 ```yaml
 metadata:
   reference-section-title: "References"
 ```
 
-Customize “References” to your liking (e.g., “Bibliography,” or a translation thereof). If the profile already has the propery `metadata`, place the `reference-section-title` in there instead of duplicating the property. Ensure proper indentation.
+Customize “References” to your liking (e.g., “Bibliography,” or a translation thereof). If the profile already has the property `metadata`, place the `reference-section-title` in there instead of duplicating the property. Ensure proper indentation.
 
 ### Customizing the `reference-section-title` on a per-file basis
 
-Specifying the `reference-section-title` in an export profile has the benefit that you won't have to remember to add a heading anymore, but it will also mean that all your files will receive the default wording. What if you want certain files to have a different section header? Pandoc allows you to also provide this label using the [YAML frontmatter](./yaml-frontmatter.md). To do so, simply place the `reference-section-title` on its own line (not indented) within a file's YAML frontmatter. This will overwrite the default you have provided in the defaults file (hence the name!).
+Specifying the `reference-section-title` in an export profile will apply this title to all files. But what if you want certain files to have a different section header? Pandoc allows you to also provide this label using the [YAML frontmatter](./yaml-frontmatter.md). To do so, simply place the `reference-section-title` on its own line (not indented) within a file's YAML front matter.
 
 !!! warning
 
@@ -190,10 +196,6 @@ Specifying the `reference-section-title` in an export profile has the benefit th
 ### Specifying the Location of the List of References
 
 By default, Pandoc will append the rendered reference section to your document, which in almost all cases is sufficient. However, in some rare circumstances, this is not ideal. For example, imagine you are writing a report with a few appendices. Usually, you want the list of references to appear after the main body of the report, but before any of the appendices.
-
-!!! warning
-
-	If you explicitly specify the location of your references by placing a `#refs`-container, Pandoc will ignore your `reference-section-title`. In this case, you must specify the heading manually.
 
 To do so, you can tell Pandoc explicitly where to place the list of references. You do so by creating a container with the ID `#refs`. Pandoc recognizes this, and will place the bibliography into this container, instead of just appending the list. For example:
 
@@ -213,6 +215,10 @@ Some appendix information...
 ```
 
 Pandoc will replace the three-colon-curly-bracket construction with your list of references.
+
+!!! warning
+
+	If you explicitly specify the location of your references by placing a `#refs`-container, Pandoc will ignore your `reference-section-title`. In this case, you must specify the heading manually (as shown in the example).
 
 !!! tip
 
