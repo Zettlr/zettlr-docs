@@ -16,9 +16,9 @@ In case some of your changes cause unwanted behavior, and you cannot remove the 
 
 ## Anatomy of Zettlr’s CSS
 
-Zettlr uses primarily identifiers (IDs) and classes to assign styles to elements. Unique elements (such as the file manager) commonly have an ID that you can target, while elements of which there are multiple ones (e.g., tree items in the file manager) usually have classes.
+Zettlr uses primarily identifiers (IDs), classes, and CSS-variables to assign styles to elements. Unique elements (such as the file manager) commonly have an ID that you can target, while elements of which there are multiple ones (e.g., tree items in the file manager) usually have classes.
 
-Since the Custom CSS will be loaded last, you can typically target elements easily without being too specific. However, if you need to override a specific rule, you may have to be more specific. In some instances, we apply styles directly to the element (using its style-property). In this case, it may be necessary to use `!important` to ensure your changes get applied. You should generally use `!important` cautiously, since it is a sort of “nuclear option” for overriding CSS.
+Since your Custom CSS will be loaded last, you can typically target elements easily without being too specific. However, sometimes, you will need to provide a specific path to override certain rules. In some instances, we apply styles directly to the element (using its style-property). In this case, it may be necessary to use `!important` to ensure your changes get applied. You should generally use `!important` cautiously, since it is a sort of “nuclear option” for overriding CSS.
 
 Now, a few words on some peculiarities of Zettlr’s CSS. To retrieve some global information about the app’s status, you can target the `body`-element. It will get assigned classes based on certain contextual data. Some important classes are:
 
@@ -58,7 +58,7 @@ Since the tree-structure of HTML is not always visually obvious from the app’s
 2. Click the arrow in the top-left corner of the developer tools. As you move through the app, various elements will be highlighted. Move over the element you want to inspect, and click the left mouse button.
 3. This will now navigate directly through the HTML tree structure to the element you just clicked.
 
-Then click the arrow in the top-left corner of the developer tools. Now you can click any element in the application to focus it in the developer tools. In the bottom area of the developer tools, you will then see the CSS directives used to style all elements of this particular shape.
+In the bottom area of the developer tools, you will then see the CSS directives used to style all elements of this particular shape.
 
 ## Using the Styles Section to Modify Elements
 
@@ -80,6 +80,49 @@ body div.class {
 ```
 
 Where `body div.class` is the rule from the styles panel, and everything within curly brackets are the styles you have found to look well.
+
+## Styling the Editor
+
+While the editor makes the same use of CSS classes and IDs, there are more elements that can be styled. To make especially simple changes (e.g., colors) easier for you, Zettlr implements a variety of CSS variables to make it easier for you to target certain elements.
+
+At the time of writing (May 2nd, 2026), the following variables are implemented:
+
+```ts
+interface ThemeVars {
+  '--zettlr-editor-primary-color': string
+  '--zettlr-editor-secondary-color': string
+  '--zettlr-editor-scroller-color': string
+  '--zettlr-editor-scroller-bg': string
+  '--zettlr-editor-selection-color': string
+  '--zettlr-editor-highlight-color': string
+  '--zettlr-editor-font': string
+  '--zettlr-editor-code-font': string
+  '--zettlr-editor-font-size': string,
+  '--zettlr-editor-line-height': string,
+  '--zettlr-editor-code-style': string,
+  '--zettlr-editor-emphasis-style': string
+  '--zettlr-editor-strong-style': string
+  '--zettlr-editor-header-style': string
+  '--zettlr-editor-citation-color': string
+  '--zettlr-editor-citation-bg': string
+  '--zettlr-editor-code-color': string
+  '--zettlr-editor-code-bg': string
+  '--zettlr-editor-escape-color': string
+  '--zettlr-editor-accent-color': string
+  '--zettlr-editor-accent-bg': string
+  '--zettlr-editor-header-1-size': string
+  '--zettlr-editor-header-2-size': string
+  '--zettlr-editor-header-3-size': string
+  '--zettlr-editor-header-4-size': string
+  '--zettlr-editor-header-5-size': string
+  '--zettlr-editor-header-6-size': string
+  '--zettlr-editor-error-color': string
+  '--zettlr-editor-opacity': string|number
+  '--zettlr-editor-line-decoration': string
+}
+```
+
+As with any other styles, this list of variables can change at any moment and we do not guarantee any stability for it. Currently, you can find an up-to-date list of available CSS variables [in this file](https://github.com/Zettlr/Zettlr/blob/develop/source/common/modules/markdown-editor/theme/editor.ts).
 
 ## CSS Code Examples
 
