@@ -83,46 +83,52 @@ Where `body div.class` is the rule from the styles panel, and everything within 
 
 ## Styling the Editor
 
-While the editor makes the same use of CSS classes and IDs, there are more elements that can be styled. To make especially simple changes (e.g., colors) easier for you, Zettlr implements a variety of CSS variables to make it easier for you to target certain elements.
+While the editor makes the same use of CSS classes and IDs, there are more elements that can be styled. To make styling the editor easier and allow you to change entire groups of elements, Zettlr implements a variety of [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties).
 
-At the time of writing (May 2nd, 2026), the following variables are implemented:
+To use a variable, you need to simply target the `.cm-editor`-element, and change the variables accordingly, e.g.:
 
-```ts
-interface ThemeVars {
-  '--zettlr-editor-primary-color': string
-  '--zettlr-editor-secondary-color': string
-  '--zettlr-editor-scroller-color': string
-  '--zettlr-editor-scroller-bg': string
-  '--zettlr-editor-selection-color': string
-  '--zettlr-editor-highlight-color': string
-  '--zettlr-editor-font': string
-  '--zettlr-editor-code-font': string
-  '--zettlr-editor-font-size': string,
-  '--zettlr-editor-line-height': string,
-  '--zettlr-editor-code-style': string,
-  '--zettlr-editor-emphasis-style': string
-  '--zettlr-editor-strong-style': string
-  '--zettlr-editor-header-style': string
-  '--zettlr-editor-citation-color': string
-  '--zettlr-editor-citation-bg': string
-  '--zettlr-editor-code-color': string
-  '--zettlr-editor-code-bg': string
-  '--zettlr-editor-escape-color': string
-  '--zettlr-editor-accent-color': string
-  '--zettlr-editor-accent-bg': string
-  '--zettlr-editor-header-1-size': string
-  '--zettlr-editor-header-2-size': string
-  '--zettlr-editor-header-3-size': string
-  '--zettlr-editor-header-4-size': string
-  '--zettlr-editor-header-5-size': string
-  '--zettlr-editor-header-6-size': string
-  '--zettlr-editor-error-color': string
-  '--zettlr-editor-opacity': string|number
-  '--zettlr-editor-line-decoration': string
+```css
+.cm-editor {
+  --zettlr-editor-font: 'Inter', sans-serif;
 }
 ```
 
-As with any other styles, this list of variables can change at any moment and we do not guarantee any stability for it. Currently, you can find an up-to-date list of available CSS variables [in this file](https://github.com/Zettlr/Zettlr/blob/develop/source/common/modules/markdown-editor/theme/editor.ts).
+Different variables take different values, such as colors, fonts, or numbers. What you will need to provide usually becomes clear from the variable's name. In case of uncertainty, please take a look at [this file](https://github.com/Zettlr/Zettlr/blob/develop/source/common/modules/markdown-editor/theme/editor.ts), where you can also find descriptive comments for all variables. Also, it will always show you the exact variables supported.
+
+At the time of writing (May 2nd, 2026), the following variables are implemented:
+
+* `--zettlr-editor-primary-color`
+* `--zettlr-editor-secondary-color`
+* `--zettlr-editor-scroller-color`
+* `--zettlr-editor-scroller-bg`
+* `--zettlr-editor-selection-color`
+* `--zettlr-editor-highlight-color`
+* `--zettlr-editor-font`
+* `--zettlr-editor-code-font`
+* `--zettlr-editor-font-size`
+* `--zettlr-editor-line-height`
+* `--zettlr-editor-code-style`
+* `--zettlr-editor-emphasis-style`
+* `--zettlr-editor-strong-style`
+* `--zettlr-editor-header-style`
+* `--zettlr-editor-citation-color`
+* `--zettlr-editor-citation-bg`
+* `--zettlr-editor-code-color`
+* `--zettlr-editor-code-bg`
+* `--zettlr-editor-escape-color`
+* `--zettlr-editor-accent-color`
+* `--zettlr-editor-accent-bg`
+* `--zettlr-editor-header-1-size`
+* `--zettlr-editor-header-2-size`
+* `--zettlr-editor-header-3-size`
+* `--zettlr-editor-header-4-size`
+* `--zettlr-editor-header-5-size`
+* `--zettlr-editor-header-6-size`
+* `--zettlr-editor-error-color`
+* `--zettlr-editor-opacity`
+* `--zettlr-editor-line-decoration`
+
+As with any other styles, this list of variables can change at any moment and we do not guarantee any stability for it. You can find an up-to-date list of available CSS variables [in this file](https://github.com/Zettlr/Zettlr/blob/develop/source/common/modules/markdown-editor/theme/editor.ts).
 
 ## CSS Code Examples
 
