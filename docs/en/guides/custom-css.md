@@ -83,9 +83,20 @@ Where `body div.class` is the rule from the styles panel, and everything within 
 
 ## Styling the Editor
 
-While the editor makes the same use of CSS classes and IDs, there are more elements that can be styled. To make styling the editor easier and allow you to change entire groups of elements, Zettlr implements a variety of [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties).
+Most users will probably want to change colors or fonts within the main editor. Since the editor is based on [CodeMirror 6](https://www.codemirror.net), it follows its structure in applying styles to the various elements. To be able to find the correct elements, we give you a few guiding instructions to help you navigate the DOM structure that CodeMirror creates.
 
-To use a variable, you need to simply target the `.cm-editor`-element, and change the variables accordingly, e.g.:
+First, the editor is separated into **layers**. To ensure that features such as backgrounds, cursors, and selections are ordered appropriately, CodeMirror offers various layers on which Zettlr draws its elements. There are four primary layers:
+
+1. The **text** layer. That is what you will mostly style when you change colors or fonts. It is accessible directly within the scrolling element.
+2. The **cursor** layer. Text cursors are rendered on a different layer to ensure they always stay on top of everything else.
+3. The **selection** layer. Selections should be rendered both behind the cursors and the text so that they actually look like selections, even when they are rendered using solid colors.
+4. The **code background** layer. This is a custom layer that Zettlr implements code backgrounds. To make code distinct against the surrounding text, all inline and block-code has a background color assigned to it. All of these backgrounds are implemented as distinct elements -- not as a background color -- on this code background layer. You can modify this layer to change how code backgrounds are rendered. It is the lowest layer to ensure that the code backgrounds remain behind all cursors, text, and selections.
+
+To learn more about the general structure of the editor and be able to style elements here, please [see this guide to CodeMirror's structure](https://codemirror.net/examples/styling/).
+
+While styling specific elements can be difficult due to the complex structure of the editor, Zettlr implements a variety of [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties). These make styling specific elements much simpler, since they allow you to apply common styles to specific elements by simply changing a CSS variable, instead of having to specifically target a bunch of elements in the editor.
+
+To use such a variable, you simply need to target the `.cm-editor`-element, and change the variables accordingly, e.g.:
 
 ```css
 .cm-editor {
@@ -93,7 +104,7 @@ To use a variable, you need to simply target the `.cm-editor`-element, and chang
 }
 ```
 
-Different variables take different values, such as colors, fonts, or numbers. What you will need to provide usually becomes clear from the variable's name. In case of uncertainty, please take a look at [this file](https://github.com/Zettlr/Zettlr/blob/develop/source/common/modules/markdown-editor/theme/editor.ts), where you can also find descriptive comments for all variables. Also, it will always show you the exact variables supported.
+Different variables take different values, such as colors, fonts, or numbers. What you will need to provide usually becomes clear from the variable's name. In case of uncertainty, please take a look at [this file](https://github.com/Zettlr/Zettlr/blob/develop/source/common/modules/markdown-editor/theme/editor.ts), where you can find descriptive comments for all variables. Additionally, it will always show you the exact variables supported.
 
 At the time of writing (May 2nd, 2026), the following variables are implemented:
 
