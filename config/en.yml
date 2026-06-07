@@ -15,6 +15,7 @@ nav:
   - Start: index.md
   - Getting Started:
     - Setup: getting-started/setup.md
+    - Migrating from Obsidian: getting-started/migrating-from-obsidian.md
     - Migrating to a New Computer: getting-started/migrating.md
     - Installing LaTeX: getting-started/installing-latex.md
     - A Note on Security: getting-started/a-note-on-security.md
