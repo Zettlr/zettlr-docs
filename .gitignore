@@ -2,6 +2,7 @@
 !.gitignore
 /build/
 /resources/
+.venv/
 
 # Hidden files and stuff
 /**/.DS_Store
