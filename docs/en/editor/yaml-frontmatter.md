@@ -35,6 +35,10 @@ author:
 
 Front matters can be used to override defaults set by either Pandoc internally or one of the defaults files which Zettlr uses to export your files. For more information, make sure to read the [documentation on defaults files](../export/defaults-files.md) to avoid confusion!
 
+!!! tip
+
+    Head's up! You can specify variables either in a file's frontmatter, or in a default file (or export profile). If you specify a variable in the frontmatter, it is only valid for that file, but if you specify it in a profile, it is valid for all files you export with it. In a profile, you need to specify a front matter variable under the `metadata` key. Finally, there are variables that only have an effect in profiles, but not in front matters.
+
 ## Important Front Matter Variables
 
 The front matter serves to hold a lot of useful information for Zettlr and Pandoc alike. With such a front matter, you can control many aspects of how your document will be rendered, such as the locale to be used, or a list of references that you do not cite within the main text. Zettlr can understand a subset of these variables to show you additional information across the program.
