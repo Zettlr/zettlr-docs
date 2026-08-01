@@ -2,7 +2,8 @@
 !.gitignore
 /build/
 /resources/
-
+.yarn
+node_modules
 # Hidden files and stuff
 /**/.DS_Store
 

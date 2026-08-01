@@ -1,0 +1,19 @@
+{
+  "name": "zettlr-docs",
+  "description": "The official documentation for Zettlr",
+  "author": {
+    "name": "Hendrik Erz",
+    "email": "info@zettlr.com",
+    "url": "https://www.zettlr.com"
+  },
+  "homepage": "https://docs.zettlr.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zettlr/zettlr-docs.git"
+  },
+  "packageManager": "yarn@4.18.0",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.31",
+    "@vuepress/theme-default": "^2.0.0-rc.132"
+  }
+}
