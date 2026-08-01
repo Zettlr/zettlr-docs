@@ -283,22 +283,29 @@ You can change the appearance of tags, adding custom colors for each different t
 
 ```css
 /* Generic tags */
-body .cm-zkn-tag {
-   background-color: rgba(200, 200, 200, 1);
-   color: rgba(74, 74, 74, 1);
-   padding: 2px;
-   border-radius:5px;
+
+/*   - Outer element */
+body.dark [class*="cm-zkn-tag-"]:not(.cm-zkn-tag-mark) {
+  background-color: rgba(200, 200, 200, 1);
+  padding: 2px 2px 0px;
+  border-radius:5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+/*   - Apply font color to all children */
+body.dark [class*="cm-zkn-tag-"] * {
+   color: rgba(74, 74, 74, 1) !important;
+}
+/*   - Smaller hastags */
+.cm-zkn-tag-mark {
+   font-size: 0.85em !important;
 }
 
-/* Custom colors for custom tags */
-body .cm-zkn-tag-todo > .cm-zkn-tag {
-  background-color: rgba(275,171,171, 1);
-  color: rgba(138,0,0, 1);
-}
-
-body :is(.cm-zkn-tag-done, .cm-zkn-tag-completed)  > .cm-zkn-tag {
-  background-color: #d8ead2;
-  color: #274e13;
+/*   - Custom tag colors */
+body.dark .cm-zkn-tag-todo,
+body.dark .cm-zkn-tag-todo * {
+  background-color: rgba(275,171,171, 1) !important;
+  color: rgba(138,0,0, 1) !important;
 }
 ```
 
@@ -341,17 +348,39 @@ You can customize the scrollbar in order to minimize its size at rest, and expan
 When using dark mode, code blocks might be harder to read. Therefore, you can customize them to make them more readable:
 
 ```css
-body.dark .cm-editor .cm-monospace {
-   color: rgba(255, 255, 255, 1);
-   background-color: rgba(70, 70, 70, 1);
-   padding: 2px;
-   padding-right: 5px;
-   padding-left: 5px;
-   border-radius: 5px;
+/* Code blocks */
+/* Div located in .cm-layer in the HTML, after .cm-content */
+body.dark [class*="code-block"] {
+  background-color: rgba(50, 50, 50, 1) !important;
+  margin: -4px;
+}
+body.dark .code-block-line-background.bottom {
+  /* Match the color of your background */
+  border-bottom: 4px solid rgba(50, 50, 50, 1) !important;
+  /* Make sure the border box is added to the element's total size */
+  box-sizing: content-box !important;
 }
 
-.code-block-line {
-   background-color: rgba(70, 70, 70, 1);
+/* Text before code block (e.g. JSON, YAML, etc) */
+.cm-info-string {
+  color: rgba(52, 97, 112, 1);
+  font-family: monospace;
+  font-size: 0.7em;
+}
+
+/* Monospace (inline code) */
+body.dark .cm-editor .cm-monospace {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(70, 70, 70, 1);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+/* Reverts monospace formatting if inside a code block */
+.cm-line:has(> .code:only-child) .code > .cm-monospace:only-child {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 ```
 
