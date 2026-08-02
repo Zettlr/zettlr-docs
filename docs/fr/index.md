@@ -33,4 +33,4 @@ Zettlr est un logiciel gratuit et open source, ce qui signifie que son code sour
 - Vous pouvez rejoindre la communauté sur [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.gg/PcfS3DM9Xj) et [GitHub Discussions](https : //github.com/Zettlr/Zettlr/discussions) et aider les nouveaux et autres utilisateurs.
 - Vous pouvez [résoudre les problèmes ouverts sur GitHub](https://github.com/Zettlr/Zettlr/issues) et aider à développer l'application elle-même (compte GitHub requis).
 
-Plus d’informations sur la façon de s’impliquer peuvent être trouvées [ici dans la documentation](getting-started/get-involved.md).
+Plus d’informations sur la façon de s’impliquer peuvent être trouvées [ici dans la documentation](get-involved.md).

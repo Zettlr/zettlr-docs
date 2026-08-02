@@ -2,10 +2,17 @@
 !.gitignore
 /build/
 /resources/
-.yarn
-node_modules
 # Hidden files and stuff
 /**/.DS_Store
 
-# Ignore these pesky Zettlr directory files
+# In case someone edits the documentation with Zettlr.
 /**/.ztr-directory
+
+.yarn
+node_modules
+# VuePress default temp directory
+/**/.vuepress/.temp
+# VuePress default cache directory
+/**/.vuepress/.cache
+# VuePress default build output directory
+/**/.vuepress/dist

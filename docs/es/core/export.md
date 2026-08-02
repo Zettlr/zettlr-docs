@@ -8,7 +8,7 @@ Zettlr le permite exportar a muchos formatos de archivo comunes para que pueda c
 
 Hay dos formas de exportar archivos con Zettlr: exportaciones de archivos individuales y exportaciones de proyectos. La exportación de una sola página se encuentra en la barra de herramientas y se puede abrir con `Cmd / Ctrl + E`. Le permite exportar en una variedad de formatos. Después de elegir el formato apropiado, a veces puede ajustar algunas opciones para el exportador especificado. También puede seleccionar si desea exportar al directorio temporal o al directorio del archivo actual (esta configuración también se puede modificar en las preferencias).
 
-El segundo método para exportar archivos es exportar [proyectos completos](../académico/proyectos.md). Puede exportar un proyecto haciendo click con el botón derecho en el directorio del proyecto y eligiendo la opción de exportación.
+El segundo método para exportar archivos es exportar [proyectos completos](../academic/projects.md). Puede exportar un proyecto haciendo click con el botón derecho en el directorio del proyecto y eligiendo la opción de exportación.
 
 > Tenga en cuenta que exportar a un PDF LaTeX puede producir errores en forma de `archivo <nombre> .sty no encontrado`. Estos se pueden resolver instalando los paquetes LaTeX que faltan. Consulte, por ejemplo, [esta guía](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages) sobre cómo instalar paquetes LaTeX adicionales.
 

@@ -47,7 +47,7 @@ Para ayudarlo a escribir tablas, Zettlr viene con un poderoso editor de tablas q
 
 ![Una tabla como la muestra el editor de tablas.](../img/zettlr_table.png)
 
-Mucho mejor, ¿verdad? El editor de tablas de Zettlr toma todas las tablas de Markdown que se encuentran en su documento, las convierte en una representación HTML con celdas de contenido editables y las muestra en lugar del Markdown subyacente. Esto oculta completamente la fuente de Markdown, pero en este caso este enfoque es mucho más favorable que el [enfoque LQVELQQD](../conceptos/wysiwym.md).
+Mucho mejor, ¿verdad? El editor de tablas de Zettlr toma todas las tablas de Markdown que se encuentran en su documento, las convierte en una representación HTML con celdas de contenido editables y las muestra en lugar del Markdown subyacente. Esto oculta completamente la fuente de Markdown, pero en este caso este enfoque es mucho más favorable que el [enfoque LQVELQQD](../concepts/wysiwym.md).
 
 El editor de tablas debe estar habilitado en Preferencias, en la pestaña `Editor`. Cuando está habilitado, reconocerá las tablas en el documento activo y las hará fácilmente editables. Puede **ingresar al modo de edición** simplemente haciendo click en cualquiera de las celdas dentro de la tabla y agregando su contenido. La celda activa se resaltará para usted. Además, la navegación con el teclado que conoce de los procesadores de texto famosos también se implementó para que pueda usar `Tab`,` Return` y las teclas de flecha para navegar por la tabla. Además, también es posible agregar y eliminar columnas y filas con los **botones de borde** del editor de tablas. Estos son botones que aparecerán cuando se desplaza sobre la tabla y le permiten realizar varias acciones sobre la tabla.
 

@@ -21,7 +21,7 @@ Nous recevons de plus en plus de demandes pour des versions mobile de Zettlr. No
 
 ## Qu'est-ce que Markdown ?
 
-Markdown est un langage de balisage léger qui vous permet de rédiger un texte aussi complexe qu'un logiciel de bureautique standard, mais avec beaucoup moins d'encombrement. Au lieu de devoir sélectionner manuellement toutes les options de formatage, dans Markdown, il suffit de taper un `#` pour indiquer un titre ! Vous voulez en savoir plus ? Consultez notre [documentation sur les bases de Markdown](reference/markdown-basics.md) !
+Markdown est un langage de balisage léger qui vous permet de rédiger un texte aussi complexe qu'un logiciel de bureautique standard, mais avec beaucoup moins d'encombrement. Au lieu de devoir sélectionner manuellement toutes les options de formatage, dans Markdown, il suffit de taper un `#` pour indiquer un titre ! Vous voulez en savoir plus ? Consultez notre [documentation sur les bases de Markdown](markdown-basics.md) !
 
 ## Si je ne veux plus utiliser Zettlr, que dois-je faire pour changer de programme ?
 

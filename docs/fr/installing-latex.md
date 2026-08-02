@@ -77,5 +77,5 @@ Dans les deux cas, il est probable que la commande ou le fichier soit fourni dan
 1. Tous les packages LaTeX sont répertoriés dans le ["Comprehensive TeX Archive Network" (CTAN)](https://www.ctan.org/). Prenez le nom du fichier (y compris son extension, « .sty ») ou la commande et recherchez-le à l'aide de la barre de recherche.
 2. Par exemple, si LaTeX vous informe que la commande `\hypertarget` n'est pas définie, [recherchez-la comme ceci](https://www.ctan.org/search?phrase=hypertarget).
 3. Dans le cas de « hypertarget », il vous donnera un seul paquet : `gmiflink`. S'il y a plusieurs résultats, essayez de rechercher sur Google celui dont vous avez besoin.
-4. Pour l'installer sur macOS ou Linux, tapez « sudo tlmgr install <packagename> » dans une fenêtre de terminal.
+4. Pour l'installer sur macOS ou Linux, tapez « sudo tlmgr install `<packagename>` » dans une fenêtre de terminal.
 5. Ensuite, réessayez l’exportation. Alors ça devrait marcher ; sinon, répétez ces étapes.
