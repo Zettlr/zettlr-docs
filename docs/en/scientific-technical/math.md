@@ -19,9 +19,9 @@ e^{i \pi} & = -1
 $$
 ```
 
-!!! note
-
-    To prevent confusion with amounts of money, spaces between inline math and the dollar signs are not allowed.
+::: note
+To prevent confusion with amounts of money, spaces between inline math and the dollar signs are not allowed.
+:::
 
 By default, math is rendered using syntax highlighting. However, Zettlr can also pre-render math content. To do so, ensure to activate the corresponding renderer in the settings, and make sure your rendering mode is set to “Preview,” not “raw.”
 

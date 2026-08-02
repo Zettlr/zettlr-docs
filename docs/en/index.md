@@ -1,10 +1,10 @@
-# Welcome!
+# Welcome
 
 Thank you for choosing Zettlr as your new One-Stop Publication Workbench! Zettlr is a powerful writing tool for all your needs. It is designed for anyone with a serious need to write, and goes out of your way to allow you to write frictionless.
 
-!!! note
-
-	If you are a new user, head over to our [first time users guide](./first-time-users/first-steps.md) to get started with the app.
+::: note
+If you are a new user, head over to our [first time users guide](./first-time-users/first-steps.md) to get started with the app.
+:::
 
 For **academics** at every level, from student to faculty, Zettlr offers comprehensive support for **citations** and **project support**, and it includes a powerful **templating engine** that enables you to quickly typeset **camera-ready paper drafts**.
 
@@ -12,9 +12,9 @@ For **authors**, Zettlr ships with extensive support for **taking notes**, creat
 
 And for anyone else, it allows the easy setup of an all-inclusive **Zettelkasten** or **PKMS** workflow.
 
-!!! note
-
-    This documentation is available in several languages. Select another language from the [main page](https://docs.zettlr.com/). Please note that these translations are community-provided and may be incomplete. If in doubt, always consult this (the English) version of the documentation.
+::: note
+This documentation is available in several languages. Select another language from the [main page](https://docs.zettlr.com/). Please note that these translations are community-provided and may be incomplete. If in doubt, always consult this (the English) version of the documentation.
+:::
 
 ## Contents
 
@@ -68,9 +68,9 @@ This documentation is divided into various sections that describe different aspe
 
 : Includes descriptions on available keyboard shortcuts and settings.
 
-!!! note
-
-	You can always access this documentation from the app. To do so, press <kbd>F1</kbd> or choose “Help” → “Open user manual” from the menu (internet connection required).
+::: note
+You can always access this documentation from the app. To do so, press <kbd>F1</kbd> or choose “Help” → “Open user manual” from the menu (internet connection required).
+:::
 
 ## FAQ
 

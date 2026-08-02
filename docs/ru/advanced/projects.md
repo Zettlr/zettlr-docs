@@ -14,9 +14,9 @@ After you have activated the project switch in the directory's properties, click
 
 On the second tab, you can modify various files. The first list allows you to select and sort the files from the project folder which will form the final export. Use the corresponding buttons to add or remove files, or move individual files up and down in the list.
 
-!!! note
-
-    Note that this list is static, which means that, if you remove or rename files, this list will not automatically update. However, the app will check the existence on files during export and warn you that some files haven't been found and won't be included in the exported file. This allows you to go back into the properties panel, find the missing files, and adjust the selected files.
+::: note
+Note that this list is static, which means that, if you remove or rename files, this list will not automatically update. However, the app will check the existence on files during export and warn you that some files haven't been found and won't be included in the exported file. This allows you to go back into the properties panel, find the missing files, and adjust the selected files.
+:::
 
 ## Building Projects
 
@@ -28,13 +28,13 @@ Second, Zettlr will read the settings you have given the project itself and basi
 
 Once your project has been exported, it is saved into the project directory.
 
-!!! note
+::: note
+Please note that especially the generation of a table of contents from bigger projects may take an extraordinary amount of time. If you wish to generate a table of contents, LaTeX has to actually build the PDF twice — first to detect on which pages your headings end up after the conversion to PDF, and then a second time to actually include the table of contents. In a test I did, on a new Windows 10 computer the generation of a whole directory of excerpts that rendered to about 150 pages took approximately five minutes in which it seemed as if it didn't work. So please be patient — as long as Pandoc or LaTeX don't complain about anything, they are still working.
+:::
 
-    Please note that especially the generation of a table of contents from bigger projects may take an extraordinary amount of time. If you wish to generate a table of contents, LaTeX has to actually build the PDF twice — first to detect on which pages your headings end up after the conversion to PDF, and then a second time to actually include the table of contents. In a test I did, on a new Windows 10 computer the generation of a whole directory of excerpts that rendered to about 150 pages took approximately five minutes in which it seemed as if it didn't work. So please be patient — as long as Pandoc or LaTeX don't complain about anything, they are still working.
-
-!!! tip
-
-    **Pro-Tip**: As you may know from the FAQ section, Zettlr and Pandoc will not attempt to filter out TeX commands you have written into your markdown documents. Remember this while working on your projects: You can add additional pages or do other funky stuff with your files that will actually be present in the final document! You can also create `.tex` documents by providing the extension when creating new files. These `.tex` documents support LaTeX syntax highlighting and can be included in the export of your project!
+::: tip
+**Pro-Tip**: As you may know from the FAQ section, Zettlr and Pandoc will not attempt to filter out TeX commands you have written into your markdown documents. Remember this while working on your projects: You can add additional pages or do other funky stuff with your files that will actually be present in the final document! You can also create `.tex` documents by providing the extension when creating new files. These `.tex` documents support LaTeX syntax highlighting and can be included in the export of your project!
+:::
 
 ## Removing Projects
 

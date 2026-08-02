@@ -18,9 +18,9 @@ To do so, open Zettlr's preferences, navigate to “Citations” and locate your
 
 ![preferences_citations.png](../img/preferences_citations.png)
 
-!!! tip
-
-    If you need to use library files on a per-file-basis rather than globally, you can specify the file with the `bibliography` keyword in the YAML frontmatter. We have included instructions [further down on this page](#using-a-file-specific-library).
+::: tip
+If you need to use library files on a per-file-basis rather than globally, you can specify the file with the `bibliography` keyword in the YAML frontmatter. We have included instructions [further down on this page](#using-a-file-specific-library).
+:::
 
 ### Enable “Render Citations” Setting
 
@@ -102,9 +102,9 @@ In this case, Zettlr will automatically suggest citekeys from your library to au
 
 As you can see in the screenshot, as you move through the entries, Zettlr shows you the bibliographic information in an additional tooltip next to the entry. This helps you verify that you have the correct entry, especially in instances (as you can see in the screenshot) where you have multiple publications per year.
 
-!!! note
-
-    If you are not presented with a list of possible references, there may be a problem with the database file you set up previously.
+::: note
+If you are not presented with a list of possible references, there may be a problem with the database file you set up previously.
+:::
 
 One the autocomplete completes the citekey, it will use your preferred syntax to insert the citation. This includes inserting a closing square bracket, if necessary, or adding square brackets behind the citekey, depending on your setting.
 
@@ -112,9 +112,9 @@ One the autocomplete completes the citekey, it will use your preferred syntax to
 
 You can change how Zettlr autocompletes citekeys by navigating into the preferences → “Citations” section. Here you can choose one of the three types of citations that have been introduced above. This is helpful especially if you usually use in-text references.
 
-!!! tip
-
-    Please note that citation *styles* can sometimes further customize how citations are actually being rendered. For instance, some citation styles in the natural sciences require citations to be referred to only by number. This specific requirement will be applied once you export a file. **Zettlr itself will always use a default in-text citation style to preview your files. Your exports therefore may differ.**
+::: tip
+Please note that citation *styles* can sometimes further customize how citations are actually being rendered. For instance, some citation styles in the natural sciences require citations to be referred to only by number. This specific requirement will be applied once you export a file. **Zettlr itself will always use a default in-text citation style to preview your files. Your exports therefore may differ.**
+:::
 
 !!! tip
 
@@ -146,9 +146,9 @@ bibliography: ./assets/references.json
 ---
 ```
 
-!!! note
-
-    Note that, while you can add multiple library files to this property, Zettlr can only handle one and therefore will only select the first bibliography file.
+::: note
+Note that, while you can add multiple library files to this property, Zettlr can only handle one and therefore will only select the first bibliography file.
+:::
 
 ## Changing the Citation Style
 
@@ -220,9 +220,9 @@ Pandoc will replace the three-colon-curly-bracket construction with your list of
 
 	If you explicitly specify the location of your references by placing a `#refs`-container, Pandoc will ignore your `reference-section-title`. In this case, you must specify the heading manually (as shown in the example).
 
-!!! tip
-
-    This also implies that you can provide the list of references multiple times. Pandoc will place the list of references into any container with the ID `#refs`. You can read more on placing the bibliography in the [Pandoc manual](https://pandoc.org/MANUAL.html#placement-of-the-bibliography).
+::: tip
+This also implies that you can provide the list of references multiple times. Pandoc will place the list of references into any container with the ID `#refs`. You can read more on placing the bibliography in the [Pandoc manual](https://pandoc.org/MANUAL.html#placement-of-the-bibliography).
+:::
 
 ### Formatting the List of References
 
@@ -269,9 +269,9 @@ The above example would render the reference list with a negative indent of minu
 
 The above example is a good place to start. You can search for more lengths to tweak and adjust them to your liking.
 
-!!! tip
-
-    If you are submitting, e.g., to a STEM journal which provides its own LaTeX template, you can directly use that template to export your file, ensuring that everything already works as expected.
+::: tip
+If you are submitting, e.g., to a STEM journal which provides its own LaTeX template, you can directly use that template to export your file, ensuring that everything already works as expected.
+:::
 
 ## Accessing a Reference’s PDF From Zettlr
 

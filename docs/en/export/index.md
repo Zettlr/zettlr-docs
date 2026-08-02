@@ -34,6 +34,6 @@ The **Simple PDF** export option is meant for situations in which you cannot ins
 
 When Zettlr exports to Simple PDF, what it will do is export your file to HTML and then print it using the same process your browser uses to print websites.
 
-!!! note
-
-    Because Simple PDF converts your files to HTML first, if you want to customize that export, you will have to adapt the HTML template, not the PDF one.
+::: note
+Because Simple PDF converts your files to HTML first, if you want to customize that export, you will have to adapt the HTML template, not the PDF one.
+:::

@@ -64,9 +64,9 @@ You can even insert the contents of the variable by typing $my-variable$.
 $endif$
 ```
 
-!!! note
-
-    Note that this is just an example. A more full-fledged example that arguably drives the principle of variables to the max, see [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
+::: note
+Note that this is just an example. A more full-fledged example that arguably drives the principle of variables to the max, see [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
+:::
 
 While many variables are optional, there is one Pandoc variable that needs to be present at all times:
 
@@ -86,9 +86,9 @@ $common.latex()$
 
 This directive tells Pandoc to include some code that will ensure that your content will be exported without errors.
 
-!!! warning
-
-    With new Pandoc updates, the steps necessary to ensure your template works with Pandoc may change. Always refer to the [current default Pandoc LaTeX template](https://github.com/jgm/pandoc/blob/main/data/templates/default.latex) if something looks off.
+::: warning
+With new Pandoc updates, the steps necessary to ensure your template works with Pandoc may change. Always refer to the [current default Pandoc LaTeX template](https://github.com/jgm/pandoc/blob/main/data/templates/default.latex) if something looks off.
+:::
 
 ### Create a Profile for Your Template
 
@@ -173,9 +173,9 @@ pandoc -o custom-reference.pptx --print-default-data-file reference.pptx
 
 Then, you can open these files and adapt the styles as explained above.
 
-!!! tip
-
-    If you're using Microsoft Word as your word processor and you would like to export using Word's default style sheet, you can open the `custom-reference.docx` file in Word and select the down-pointing chevron (⌄) that appears next to the style palette. This will spawn a dropdown menu that includes a submenu titled "Manage Default Styles." Navigate to this submenu and choose "Reset Document to Word Default Styles." This will apply all of Microsoft Word's default styles to your reference doc.
+::: tip
+If you're using Microsoft Word as your word processor and you would like to export using Word's default style sheet, you can open the `custom-reference.docx` file in Word and select the down-pointing chevron (⌄) that appears next to the style palette. This will spawn a dropdown menu that includes a submenu titled "Manage Default Styles." Navigate to this submenu and choose "Reset Document to Word Default Styles." This will apply all of Microsoft Word's default styles to your reference doc.
+:::
 
 ![Menu location of the option to apply MS Word's default styles.](../img/word-default-styles.png)
 

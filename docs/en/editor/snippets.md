@@ -24,9 +24,9 @@ The snippets tab is built analogously to the other available tabs in the assets 
 
 You can add or remove snippets from Zettlr using the “+”- and “-“-buttons at the bottom of the list. When you press “+”, Zettlr will ask you for a snippet name. Provide a usable name, and press <kbd>Enter</kbd> to create your snippet.
 
-!!! note
-
-    Snippet names can only contain the letters A to Z, numbers, hyphens, and underscores. The reason is that the snippet name is used for the autocompletion in the editor. If you type other letters, they will be replaced with a hyphen.
+::: note
+Snippet names can only contain the letters A to Z, numbers, hyphens, and underscores. The reason is that the snippet name is used for the autocompletion in the editor. If you type other letters, they will be replaced with a hyphen.
+:::
 
 Like import and export profiles, snippets are simply Markdown files. These files must have the filename extension `.tpl.md` to be recognized by Zettlr as templates. You do not need to edit these files in Zettlr, albeit using Zettlr has the benefit that it supports correct syntax highlighting for the snippet syntax.
 

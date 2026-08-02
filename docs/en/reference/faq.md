@@ -90,9 +90,9 @@ Examples:
 # This heading will both be unnumbered, and hidden from the ToC {- .unlisted}
 ```
 
-!!! note
-
-    Note that these brackets need to be the last thing on the line. Even comments afterward will break this behaviour.
+::: note
+Note that these brackets need to be the last thing on the line. Even comments afterward will break this behaviour.
+:::
 
 ## I want to use single line breaks and not create new paragraphs. When I simply hit Enter once, it removes the single line break!
 
@@ -112,9 +112,9 @@ The most common error looks like this:
 
 This simply means that a certain package was not found (they end in `.sty`). On Windows, these packages should be installed automatically as soon as they are needed (a window might pop up asking you for confirmation); on macOS and Linux you simply need to run the command `tlmgr install <some name>`.
 
-!!! note
-
-    Note that some `.sty`-files are part of larger packages. The easiest way to find out which package to install, go to [the CTAN homepage](https://ctan.org/) and search for the package name (the file name without the `.sty`). You will then see in the "Contained in"-section the actual name of the package you have to install. Example: [The `footnote.sty`-package](https://ctan.org/pkg/footnote) is contained in the package `mdwtools`, so instead of running `tlmgr install footnote` you must run `tlmgr install mdwtools`.
+::: note
+Note that some `.sty`-files are part of larger packages. The easiest way to find out which package to install, go to [the CTAN homepage](https://ctan.org/) and search for the package name (the file name without the `.sty`). You will then see in the "Contained in"-section the actual name of the package you have to install. Example: [The `footnote.sty`-package](https://ctan.org/pkg/footnote) is contained in the package `mdwtools`, so instead of running `tlmgr install footnote` you must run `tlmgr install mdwtools`.
+:::
 
 In case of other errors, Zettlr enables you to copy and paste text from the error message, because in almost all cases, a short Google search leads to a solution. And if it doesn't the community can better help you if they see the error you are getting.
 

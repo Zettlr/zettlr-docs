@@ -24,9 +24,9 @@ Magic Quotes is a setting that controls which quotation marks the editor will in
 
 The status bar control for your Magic Quotes is not as flexible as the preferences setting, since it only allows you to select predefined quotation symbols, but this allows you to quickly change them during a writing session.
 
-!!! note
-
-    Depending on which language you select, the context menu will have more than one checked entry. Many countries use the same set of primary and secondary quotes.
+::: note
+Depending on which language you select, the context menu will have more than one checked entry. Many countries use the same set of primary and secondary quotes.
+:::
 
 Displays
 

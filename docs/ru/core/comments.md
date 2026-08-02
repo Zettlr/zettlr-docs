@@ -32,9 +32,9 @@ If you've already written a block of text that you'd like to turn into a comment
 
 ![Converting text to a comment with the keyboard shortcut.](../img/ConverttoComment.gif)
 
-!!! note
-
-    As a Markdown editor, Zettlr does not natively support margin comments like those used in Google Docs or Microsoft Word. If you are [collaborating with editors or co-authors on these platforms](https://docs.zettlr.com/en/core/import/#working-with-co-workers), you can use Zettlr's export feature to generate a `.docx` or `.odt` document for them to comment on. After reviewing and incorporating your collaborator's comments in a word processor, you can then re-import the resulting document into Zettlr to continue working on it in the app.
+::: note
+As a Markdown editor, Zettlr does not natively support margin comments like those used in Google Docs or Microsoft Word. If you are [collaborating with editors or co-authors on these platforms](https://docs.zettlr.com/en/core/import/#working-with-co-workers), you can use Zettlr's export feature to generate a `.docx` or `.odt` document for them to comment on. After reviewing and incorporating your collaborator's comments in a word processor, you can then re-import the resulting document into Zettlr to continue working on it in the app.
+:::
 
 ## Doing More With Comments
 
@@ -46,9 +46,9 @@ Writers also have lots of use cases for which commenting out is handy functional
 
 If you're considering deleting a paragraph from your article, try commenting it out. When you do so, the text you've wrapped in comment markup will be visible to you in the editor, but will be omitted from previews and exported versions of your text. Similarly, you can place transcribed quotes from sources or reading notes for your lit review right into the document you're writing for reference. If you don't want those notes appearing when you export the finished article, simply comment them out.
 
-!!! note
-
-    It's worth noting here that, while commenting out passages will keep them from appearing in exported versions of your writing --- i.e., PDFs or Word documents --- if you share your original markdown file with a colleague, they will be able to view any comments you've left. This is handy if you want to annotate or leave questions in a document you're collaborating on, but it's also something to be aware of if you're leaving comments in your markdown that might be sensitive (e.g., human subjects data or off-the-record quotes).
+::: note
+It's worth noting here that, while commenting out passages will keep them from appearing in exported versions of your writing --- i.e., PDFs or Word documents --- if you share your original markdown file with a colleague, they will be able to view any comments you've left. This is handy if you want to annotate or leave questions in a document you're collaborating on, but it's also something to be aware of if you're leaving comments in your markdown that might be sensitive (e.g., human subjects data or off-the-record quotes).
+:::
 
 ### Folding Your Comments
 

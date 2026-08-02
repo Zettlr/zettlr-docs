@@ -4,15 +4,15 @@ Zettlr allows exporting into a variety of file formats, including PDF. There are
 
 To export more advanced PDF files, you'll need to install [LaTeX](https://en.wikipedia.org/wiki/LaTeX). LaTeX is a typesetting language that allows for a large amount of customization, but because it is a relatively large program, it does not come bundled with Zettlr. Here we show you how to install it.
 
-!!! tip
-
-    Zettlr supports several engines to create PDF files, not just LaTeX. For example, Zettlr also supports Tectonic or Typst. Across this documentation, we focus on LaTeX, as it is the most reliable system for creating PDF files. You can select which PDF-engine you want to use by modifying your [export profiles ("Defaults files")](../export/defaults-files.md). If you do not wish to use LaTeX for PDF exports, you do not need to install LaTeX. We have written an easy guide to [choosing the right PDF engine](../export/pdf-engine.md) here in the documentation.
+::: tip
+Zettlr supports several engines to create PDF files, not just LaTeX. For example, Zettlr also supports Tectonic or Typst. Across this documentation, we focus on LaTeX, as it is the most reliable system for creating PDF files. You can select which PDF-engine you want to use by modifying your [export profiles ("Defaults files")](../export/defaults-files.md). If you do not wish to use LaTeX for PDF exports, you do not need to install LaTeX. We have written an easy guide to [choosing the right PDF engine](../export/pdf-engine.md) here in the documentation.
+:::
 
 LaTeX distributions usually come in two flavors: A “full” installation featuring a host of graphical programs for writing TeX directly, and a “minimal” installation that only contains the actual compilers. Zettlr is happy with only a minimal installation (because it just needs the compiler), but if you want to fiddle around with LaTeX more you are free to install the full package.
 
-!!! note
-
-    Especially if you only install the minimal setup, you'll need to install additional packages afterwards. Read to the end of this guide to see how.
+::: note
+Especially if you only install the minimal setup, you'll need to install additional packages afterwards. Read to the end of this guide to see how.
+:::
 
 ## Windows
 
@@ -32,9 +32,9 @@ Similar to Windows, macOS also features simple installers that will install one 
 
 Linux distributions commonly have several LaTeX packages available to install directly from your software manager. If you're running the Flatpak version, you must install the Flatpak TeX Live extension, rather than a TeX distribution from your system software manager. There are also minimal and full packages. We list options for common distributions below.
 
-!!! note
-
-    It doesn't really matter which of the versions you install, but there is one requirement: You need to install the `xetex` binary, since that is the compiler that Zettlr uses by default. If in doubt, consult your distribution's manual for more information on how to correctly install TeX.
+::: note
+It doesn't really matter which of the versions you install, but there is one requirement: You need to install the `xetex` binary, since that is the compiler that Zettlr uses by default. If in doubt, consult your distribution's manual for more information on how to correctly install TeX.
+:::
 
 ### Debian/Ubuntu
 
@@ -74,9 +74,9 @@ Most LaTeX features come in the form of packages. By default, minimal installati
 
 We recommend you don't install packages unless Zettlr complains during exports. If you are missing some package, Zettlr will give you one of two errors: either `Command \somecommand not defined` or `File somefile.sty not found`. In both cases it is likely that the command or file will be provided by a package. It's easy to install the missing packages using the following procedure.
 
-!!! note
-
-    On Windows, LaTeX will attempt to install the missing packages automatically and will ask you if it should do so. This means you only need to confirm a dialog. On macOS and Linux, you'll need to use the command line. More specifically, on macOS and Linux, you need to use a tool called `tlmgr` (TeXLive Manager).
+::: note
+On Windows, LaTeX will attempt to install the missing packages automatically and will ask you if it should do so. This means you only need to confirm a dialog. On macOS and Linux, you'll need to use the command line. More specifically, on macOS and Linux, you need to use a tool called `tlmgr` (TeXLive Manager).
+:::
 
 1. All LaTeX packages are listed in the [“Comprehensive TeX Archive Network” (CTAN)](https://www.ctan.org/). Take the filename (including its extension, `.sty`) or the command, and search for it using the search bar.
 2. For example, if LaTeX complains that the command `\hypertarget` is not defined, [search for it like this](https://www.ctan.org/search?phrase=hypertarget).
@@ -84,6 +84,6 @@ We recommend you don't install packages unless Zettlr complains during exports. 
 4. To install it on macOS or Linux, type `sudo tlmgr install <packagename>` into a terminal window.
 5. Then, try the export again. Repeat these steps until all missing packages are installed.
 
-!!! tip
-
-    Sometimes, the CTAN search gives you no results for your searches. An alternative to searching CTAN directly is to use `tlmgr`. You can query which packages contain a file by calling `tlmgr info <filename>`. For example, say Zettlr displays an error message that reads "File `biblatex.sty' not found." You can then query `tlmgr` for this file by running `tlmgr info biblatex.sty`. It will provide you several search results, which includes the package `biblatex`. You can then proceed to install it by running `tlmgr install biblatex` and wait until the command has finished. Then, try exporting again.
+::: tip
+Sometimes, the CTAN search gives you no results for your searches. An alternative to searching CTAN directly is to use `tlmgr`. You can query which packages contain a file by calling `tlmgr info <filename>`. For example, say Zettlr displays an error message that reads "File `biblatex.sty' not found." You can then query `tlmgr` for this file by running `tlmgr info biblatex.sty`. It will provide you several search results, which includes the package `biblatex`. You can then proceed to install it by running `tlmgr install biblatex` and wait until the command has finished. Then, try exporting again.
+:::

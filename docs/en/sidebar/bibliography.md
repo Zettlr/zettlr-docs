@@ -8,6 +8,6 @@ This list consists of any element that is cited somewhere in your document, plus
 
 To learn more about citing literature with Zettlr, take a look at the documentation page for [citations](../editor/citations.md).
 
-!!! note
-
-    Please note that the references will be displayed using the built-in CSL style. If you have specified a custom CSL style, Pandoc will use that one during export. The references in the sidebar are for preview purposes.
+::: note
+Please note that the references will be displayed using the built-in CSL style. If you have specified a custom CSL style, Pandoc will use that one during export. The references in the sidebar are for preview purposes.
+:::

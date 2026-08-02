@@ -2,17 +2,17 @@
 
 Like any software, Zettlr might cause problems from time to time. This page contains instructions on how to resolve many of these issues, and also how to help the developers fix your issues faster, should they occur. We have years of experience, and as such the options listed below should work in most cases.
 
-!!! note
-
-    Please attempt the steps listed here and consult [the FAQ](../reference/faq.md) first if you encounter any problems. If these steps do not solve your issue, please [ask our community](get-involved.md/#join-the-community). If our community cannot help you as well, please open an issue on GitHub. Read the instructions below to find out how to provide all information we need.
+::: note
+Please attempt the steps listed here and consult [the FAQ](../reference/faq.md) first if you encounter any problems. If these steps do not solve your issue, please [ask our community](get-involved.md/#join-the-community). If our community cannot help you as well, please open an issue on GitHub. Read the instructions below to find out how to provide all information we need.
+:::
 
 ## 1. Try Turning it Off and On Again
 
 Many issues can be solved by simply quitting Zettlr and restarting it. Sometimes, a restart of your computer might help, too.
 
-!!! note
-
-    If you can reliably reproduce the problem, that is: the problem *always* appears after you perform a specific action, this indicates that you've found a replicable bug. In that case, please provide us with these steps when you open an issue.
+::: note
+If you can reliably reproduce the problem, that is: the problem *always* appears after you perform a specific action, this indicates that you've found a replicable bug. In that case, please provide us with these steps when you open an issue.
+:::
 
 ## 2. Install the Most Recent Version
 
@@ -24,9 +24,9 @@ Sometimes, Zettlr can experience a hiccup, which may corrupt the FSAL cache. Thi
 
 The app will immediately restart and recreate the FSAL cache. Especially if you have a slower computer, a slower disk, or simply have a lot of files loaded, this restart will take some time. Zettlr will only show you the application window after it has completed the recreation of the FSAL cache, so it can take several seconds or even longer. Please be patient during this process – the next restart of the app will be fast again.
 
-!!! note
-
-    Alternatively, there are two manual ways of doing the same, which we list here only in case you may need them. In both instances, first ensure that Zettlr is closed. Then, for option (a) head over to Zettlr's config folder and just remove the `fsal/cache` directory. Option (b) is to start Zettlr from the command-line with the flag `--clear-cache`.
+::: note
+Alternatively, there are two manual ways of doing the same, which we list here only in case you may need them. In both instances, first ensure that Zettlr is closed. Then, for option (a) head over to Zettlr's config folder and just remove the `fsal/cache` directory. Option (b) is to start Zettlr from the command-line with the flag `--clear-cache`.
+:::
 
 ## 4. Try Resetting the App
 
@@ -71,17 +71,17 @@ Make sure to include:
 * Include screenshots or entire screencasts to demonstrate the issue. Very often, images “say more than a thousand words.”
 * Also provide log entries. You can find the logs by enabling the debug mode, then selecting “Develop” → “Open logs.” The logs can also be found in Zettlr's application data path (see step 4 above) in the “logs” folder, if you can't use the app to view them.
 
-!!! note
-
-    If you open an issue on GitHub, make sure you receive notifications. We usually have follow-up questions regarding your issue. The faster you respond, the faster we can fix your issue. If no one responds to your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
+::: note
+If you open an issue on GitHub, make sure you receive notifications. We usually have follow-up questions regarding your issue. The faster you respond, the faster we can fix your issue. If no one responds to your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
+:::
 
 ## 7. Revert to a previous version
 
 Sometimes, an issue can hinder your productivity. Some users decide to revert to a previous version until we are able to fix the issue. We do not recommend this, as it can cause a host of other problems, so do this at your own risk.
 
-!!! warning
-
-    Always backup everything before reverting! Never just run an older version. This may lead to data loss or corrupt the configuration files that Zettlr needs.
+::: warning
+Always backup everything before reverting! Never just run an older version. This may lead to data loss or corrupt the configuration files that Zettlr needs.
+:::
 
 While our homepage only displays the latest stable release, you can always find all releases (even the antique ones) on [our GitHub releases page](https://github.com/Zettlr/Zettlr/releases).
 

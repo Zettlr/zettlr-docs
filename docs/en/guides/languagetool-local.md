@@ -50,9 +50,9 @@ Now, a LanguageTool server will be running, and you can point Zettlr to the serv
 
 If you do not wish to use the terminal app, or install a different application to have LanguageTool available, you can use Docker to set up a standalone LanguageTool server.
 
-!!! note
-
-    The following guide requires administrative permissions on your computer. Furthermore, approximately 1.5 GB of free disk space are required. You do not need technical knowledge to follow this guide.
+::: note
+The following guide requires administrative permissions on your computer. Furthermore, approximately 1.5 GB of free disk space are required. You do not need technical knowledge to follow this guide.
+:::
 
 ### Prerequisites
 

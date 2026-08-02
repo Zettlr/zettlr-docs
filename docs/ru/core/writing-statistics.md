@@ -14,9 +14,9 @@ This strategy is fairly simple and straight forward, but comes with some caveats
 * The counters are designed to be fast, not precise, so they employ very basic heuristics and may not accurately reflect especially character counts in non-latin scripts such as Arabic, Tamil, Chinese, or Japanese.
 * Up until November 2024, Zettlr only tracked word counts, not character counts, so there will be a difference in historic data
 
-!!! tip
-
-    If you want to adapt your writing statistics manually after the fact, you can modify the file `stats.json` in the app's data directory. Note that Zettlr must be closed before you can adapt the file, otherwise the app will overwrite your changes. You can find the data directory in the [setup instructions](../getting-started/setup.md).
+::: tip
+If you want to adapt your writing statistics manually after the fact, you can modify the file `stats.json` in the app's data directory. Note that Zettlr must be closed before you can adapt the file, otherwise the app will overwrite your changes. You can find the data directory in the [setup instructions](../getting-started/setup.md).
+:::
 
 ## Viewing Writing Statistics
 

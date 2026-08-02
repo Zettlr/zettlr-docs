@@ -28,17 +28,17 @@ To prevent autocorrect even when inserting a space, hold down <kbd>Shift</kbd> w
 
 Lastly, by default, Autocorrect will also replace parts of words. While this can be helpful, the “Match whole words” setting in the preferences ensures that only whole words (=separated with spaces) are replaced.
 
-!!! note
-
-    AutoCorrect only works in Markdown text. It does not apply in code or comments.
+::: note
+AutoCorrect only works in Markdown text. It does not apply in code or comments.
+:::
 
 ## Magic Quotes
 
 Magic Quotes is an extension that helps you write typographically correct quotation marks, instead of the default (`"` and `'`). Zettlr includes typographically correct quotation marks for many languages.
 
-!!! note
-
-    Magic Quotes are only active in Markdown text. The feature does not apply in code or comments, because there regular quotes are important.
+::: note
+Magic Quotes are only active in Markdown text. The feature does not apply in code or comments, because there regular quotes are important.
+:::
 
 To understand quotation marks, it helps to define three terms:
 
