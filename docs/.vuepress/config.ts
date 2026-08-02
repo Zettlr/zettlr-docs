@@ -127,20 +127,16 @@ export default defineUserConfig({
           match: /^(?!^\/en\/).+/,
           title: 'Community Translation',
           contentType: "markdown",
-          content: `This is a **community** translation of the official English documentation.
-This means that its contents could be only partially translated, or outdated. If in doubt, always
-consult the official, English documentation, which is being maintained by the development team directly.`,
+          content: `This is a **community translation** of the official English documentation.
+This means that its contents could be partially translated, or outdated.
+If in doubt, consult the official, English documentation, which is being maintained by the development team directly.`,
           confirm: true, // Make them actually click one of the buttons
           fullscreen: true, // Overlay mode
           // The next two settings ensure that this warning will only be shown once.
           key: "community-translation-notice",
           showOnce: true,
           actions: [
-            {
-              text: 'Switch to English',
-              link: '/en/',
-              type: 'default',
-            },
+            { text: 'Switch to English', link: '/en/', type: 'default', },
             { text: 'Ok', type: "primary" },
           ],
         },
