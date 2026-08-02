@@ -168,7 +168,7 @@ const navigation: NavbarOptions|SidebarOptions = [
       {
         text: "Guides",
         prefix: "/en/guides/",
-        link: "index.md",
+        link: "/en/guides/index.md",
         children: [
           "custom-css.md",
           "reference-manager-integration.md",
