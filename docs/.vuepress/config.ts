@@ -1,11 +1,16 @@
+// VuePress dependencies
 import { viteBundler } from "@vuepress/bundler-vite"
 import { defaultTheme } from "@vuepress/theme-default"
 import { defineUserConfig } from "vuepress"
+// Plugins
 import { searchPlugin } from "@vuepress/plugin-search"
 import { redirectPlugin } from "@vuepress/plugin-redirect"
 import { GitContributorInfo } from "@vuepress/plugin-git"
 import { noticePlugin } from '@vuepress/plugin-notice'
 import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
+import { markdownExtPlugin } from '@vuepress/plugin-markdown-ext'
+import { markdownPreviewPlugin } from '@vuepress/plugin-markdown-preview'
+// Language configuration
 import configEn from "../../config/en.config"
 import configDe from "../../config/de.config"
 
@@ -105,19 +110,25 @@ export default defineUserConfig({
     }
   },
   plugins: [
-    searchPlugin(),
-    markdownMathPlugin({
-      copy: true,
-      mhchem: true,
-      type: "katex"
-    }),
+    searchPlugin({ maxSuggestions: 10 }),
+    markdownMathPlugin({ copy: true, mhchem: true, type: "katex" }),
     redirectPlugin({
       autoLocale: true,
       defaultLocale: "en-US",
       localeConfig: {
-        "/en/": ["en-US", "en-UK", "en"]
+        "/en/": ["en-US", "en-UK", "en"],
+        "/de/": ["de-DE", "de-AT", "de-CH", "de"]
       }
     }),
+    markdownExtPlugin({
+      gfm: true,
+      footnote: true,
+      tasklist: true,
+      breaks: false,
+      linkify: true,
+      component: false
+    }),
+    markdownPreviewPlugin({}),
     // Display a notice on all community translations to inform users that the
     // English one is the reference.
     noticePlugin({

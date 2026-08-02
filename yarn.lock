@@ -283,7 +283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdit/helper@npm:1.0.1":
+"@mdit/helper@npm:1.0.1, @mdit/helper@npm:^1.0.1":
   version: 1.0.1
   resolution: "@mdit/helper@npm:1.0.1"
   dependencies:
@@ -322,6 +322,31 @@ __metadata:
     markdown-it:
       optional: true
   checksum: 10c0/68267eb9f8621ff16a724e34621337df969ae6aca1929c15fa13a32a383b08c04335492de005f63196fbca349b27f4834c52c56643e018fcd652a17fb42a0140
+  languageName: node
+  linkType: hard
+
+"@mdit/plugin-demo@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@mdit/plugin-demo@npm:1.0.1"
+  dependencies:
+    "@types/markdown-it": "npm:^14.1.2"
+  peerDependencies:
+    markdown-it: ^14.2.0
+  peerDependenciesMeta:
+    markdown-it:
+      optional: true
+  checksum: 10c0/00276706d839988fb5b94771d28b9196232f65f2a604e59309b5d404435e10d5be077702736f87b11992fdafa0a36b14692a0b89437425b072b980ff6cb34bd5
+  languageName: node
+  linkType: hard
+
+"@mdit/plugin-footnote@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@mdit/plugin-footnote@npm:1.0.1"
+  dependencies:
+    "@types/markdown-it": "npm:^14.1.2"
+  peerDependencies:
+    markdown-it: ^14.2.0
+  checksum: 10c0/6922dab0f5f3c3fbd06778227b24f86cd7f07ab622938a452fab9bdb745527a27c6d8629e3c107cec50cf80bcb35c7313882640afeb7976d56c7aaee09f14e3b
   languageName: node
   linkType: hard
 
@@ -377,6 +402,20 @@ __metadata:
     markdown-it:
       optional: true
   checksum: 10c0/f8807e23f8e83a07bb3a4acb564ad340419f8f6dab92ef71065626c1adbd0cefef303b13bb74e40574137577357006a09d07b24348c9d8b1673bac249a436852
+  languageName: node
+  linkType: hard
+
+"@mdit/plugin-tasklist@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@mdit/plugin-tasklist@npm:1.0.1"
+  dependencies:
+    "@types/markdown-it": "npm:^14.1.2"
+  peerDependencies:
+    markdown-it: ^14.2.0
+  peerDependenciesMeta:
+    markdown-it:
+      optional: true
+  checksum: 10c0/c61b94deb1c853be6b4019d8988bbcc82c7deb8a1d66f9df9c7635b8a178f22e86b9adc875ab70aa5559ccaf8b06c6bcf4c9a2ea18f452b37c97588c60533882
   languageName: node
   linkType: hard
 
@@ -1307,6 +1346,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vuepress/plugin-markdown-ext@npm:^2.0.0-rc.132":
+  version: 2.0.0-rc.132
+  resolution: "@vuepress/plugin-markdown-ext@npm:2.0.0-rc.132"
+  dependencies:
+    "@mdit/plugin-container": "npm:^1.0.1"
+    "@mdit/plugin-footnote": "npm:^1.0.1"
+    "@mdit/plugin-tasklist": "npm:^1.0.1"
+    "@types/markdown-it": "npm:^14.1.2"
+    "@vuepress/helper": "npm:2.0.0-rc.131"
+    js-yaml: "npm:^5.2.1"
+    markdown-it-cjk-friendly: "npm:^2.0.2"
+  peerDependencies:
+    vuepress: 2.0.0-rc.30
+  checksum: 10c0/a140b19718b3234255288d0f1954da8a766039220f71f422b2ed3f490549bd23478b887754d534105f32062492e1ad2852605fa9f53afb88208a331cfe1ccd4b
+  languageName: node
+  linkType: hard
+
 "@vuepress/plugin-markdown-hint@npm:2.0.0-rc.132":
   version: 2.0.0-rc.132
   resolution: "@vuepress/plugin-markdown-hint@npm:2.0.0-rc.132"
@@ -1341,6 +1397,22 @@ __metadata:
     katex:
       optional: true
   checksum: 10c0/2bee2ac24926546048fc9bf5e1ec9ba8564f9b748ebc6c7aeed269260db55173f9f8879533da06ce374fd13c7c45da24b7d54e3ce5005a1dec128f53375025c8
+  languageName: node
+  linkType: hard
+
+"@vuepress/plugin-markdown-preview@npm:^2.0.0-rc.132":
+  version: 2.0.0-rc.132
+  resolution: "@vuepress/plugin-markdown-preview@npm:2.0.0-rc.132"
+  dependencies:
+    "@mdit/helper": "npm:^1.0.1"
+    "@mdit/plugin-demo": "npm:^1.0.1"
+    "@types/markdown-it": "npm:^14.1.2"
+    "@vuepress/helper": "npm:2.0.0-rc.131"
+    "@vueuse/core": "npm:^14.3.0"
+    vue: "npm:^3.5.39"
+  peerDependencies:
+    vuepress: 2.0.0-rc.30
+  checksum: 10c0/623547eefa64e5a6857791e11da1e7867dc50b29c8c7a2d59e957e9836494a3da61cab8dc9b589b69a2151dc590a43686d1bf52af9953dc118fd3faef0abef74
   languageName: node
   linkType: hard
 
@@ -2132,7 +2204,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-east-asian-width@npm:^1.5.0":
+"get-east-asian-width@npm:^1.4.0, get-east-asian-width@npm:^1.5.0":
   version: 1.6.0
   resolution: "get-east-asian-width@npm:1.6.0"
   checksum: 10c0/7e72e9550fd49ca5b246f9af6bb2afc129c96412845ff6556b3274fd44817a381702ca17028efe9866b261a3d44254cbf21e6c90cf05b4b61675630af776d431
@@ -2368,6 +2440,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-yaml@npm:^5.2.1":
+  version: 5.2.2
+  resolution: "js-yaml@npm:5.2.2"
+  dependencies:
+    argparse: "npm:^2.0.1"
+  bin:
+    js-yaml: bin/js-yaml.mjs
+  checksum: 10c0/e8ded203b235b3d562818c67bf362122abbcee89e507b62bddcdd3085b2f2dd866071e5e78f8e617d41d1a0c0baa1cec12a8fdec5859c571bf862adf585e2684
+  languageName: node
+  linkType: hard
+
 "jsesc@npm:^3.0.2":
   version: 3.1.0
   resolution: "jsesc@npm:3.1.0"
@@ -2599,6 +2682,21 @@ __metadata:
     "@types/markdown-it": "*"
     markdown-it: "*"
   checksum: 10c0/0c21f277e7253c429f0480dbb7d618fca415127318556d09cadaf6fdf59e31067e04420cd0ad29ced0cb7aa391102e0c0410a77398a700bb868047d65711d45d
+  languageName: node
+  linkType: hard
+
+"markdown-it-cjk-friendly@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "markdown-it-cjk-friendly@npm:2.0.2"
+  dependencies:
+    get-east-asian-width: "npm:^1.4.0"
+  peerDependencies:
+    "@types/markdown-it": "*"
+    markdown-it: "*"
+  peerDependenciesMeta:
+    "@types/markdown-it":
+      optional: true
+  checksum: 10c0/ff00ff2987fa8e5ced763379c4f649df66a67f39a889dd9138929655856135efb07fc2251e6fd246c60aebe26681b253fcb9471073cab2af187836c4b8d48ca3
   languageName: node
   linkType: hard
 
@@ -4018,7 +4116,9 @@ __metadata:
   resolution: "zettlr-docs@workspace:."
   dependencies:
     "@vuepress/bundler-vite": "npm:^2.0.0-rc.31"
+    "@vuepress/plugin-markdown-ext": "npm:^2.0.0-rc.132"
     "@vuepress/plugin-markdown-math": "npm:^2.0.0-rc.132"
+    "@vuepress/plugin-markdown-preview": "npm:^2.0.0-rc.132"
     "@vuepress/plugin-notice": "npm:^2.0.0-rc.131"
     "@vuepress/plugin-redirect": "npm:^2.0.0-rc.131"
     "@vuepress/plugin-search": "npm:^2.0.0-rc.131"

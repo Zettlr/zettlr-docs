@@ -2,22 +2,7 @@
 
 Zettlr supports writing math and formulae using the KaTeX library.
 
-To insert math code, enclose your formulae with dollar signs (`$...$`). To add a math block, use (`$$...$$`) instead.
-
-Some examples:
-
-```markdown
-Everybody should know Euler's formula: $e^{ \pm i\theta } = \cos \theta \pm i\sin \theta$ 
-
-These are Euler's most famous equations:
-
-$$
-\begin{aligned}
-e^{ \pm i\theta } & = \cos \theta \pm i\sin \theta    \\
-e^{i \pi} & = -1
-\end{aligned}
-$$
-```
+To insert math code, enclose your formulae with dollar signs (`$…$`). To add a math block, use (`$$…$$`) instead.
 
 ::: note
 To prevent confusion with amounts of money, spaces between inline math and the dollar signs are not allowed.
@@ -25,8 +10,8 @@ To prevent confusion with amounts of money, spaces between inline math and the d
 
 By default, math is rendered using syntax highlighting. However, Zettlr can also pre-render math content. To do so, ensure to activate the corresponding renderer in the settings, and make sure your rendering mode is set to “Preview,” not “raw.”
 
-::: note The above example is rendered like this:
-Everybody should know Euler's formula: $e^{ \pm i\theta } = \cos \theta \pm i\sin \theta$ 
+::: preview Examples of math equations. Click to view Markdown source:
+Everybody should know Euler's formula: $e^{ \pm i\theta } = \cos \theta \pm i\sin \theta$
 
 These are Euler's most famous equations:
 
