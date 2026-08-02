@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+[[toc]]
+
+***
+
 ## I tried to install Zettlr on Windows, but there's a security warning saying I shouldn't install the app!
 
 Zettlr uses code signing as recommended by both Microsoft and Apple to ensure that you install only trustworthy software. However, on Windows, an application needs a sufficiently large amount of installations in order to suppress this security warning. This "trust" is assigned to a code signing certificate, not the application itself. As Zettlr uses private-issued certificates, these have a limited lifetime. The current certificate is valid until 2025, after which Zettlr will be signed using a new certificate which has to go through the whole process once again. As long as you download Zettlr either [from our homepage](https://www.zettlr.com/download) or from the [GitHub releases page](https://github.com/Zettlr/Zettlr/releases) (both are the same files) you can safely install the application and dismiss the warning.
