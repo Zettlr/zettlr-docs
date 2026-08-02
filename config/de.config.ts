@@ -1,7 +1,41 @@
 import { DefaultThemeLocaleData, NavbarOptions, SidebarOptions } from "@vuepress/theme-default"
 import { LocaleConfig } from "vuepress"
 
-const navigation: NavbarOptions|SidebarOptions = [
+// Top navbar options (shown above sidebar on mobile)
+const navbar: NavbarOptions = [
+  {
+    text: "Installation",
+    link: "/de/install.md"
+  },
+  {
+    text: "Hilfe",
+    link: "/en/getting-started/troubleshooting.md"
+  },
+  {
+    text: "FAQ",
+    link: "/en/reference/faq.md"
+  },
+  {
+    text: "Zettlr",
+    children: [
+      {
+        text: "Über Zettlr",
+        link: "https://www.zettlr.com/"
+      },
+      {
+        text: "Zettlr herunterladen",
+        link: "https://www.zettlr.com/download"
+      },
+      {
+        text: "GitHub",
+        link: "https://github.com/Zettlr/Zettlr"
+      }
+    ]
+  }
+]
+
+// Sidebar (shown to the side; always shows the current page's ToC at the correct place)
+const sidebar: SidebarOptions = [
   {
     text: "Start",
     collapsible: true,
@@ -64,24 +98,6 @@ const navigation: NavbarOptions|SidebarOptions = [
       "settings.md",
       "spell-checking.md"
     ]
-  },
-  {
-    text: "Mehr",
-    collapsible: true,
-    children: [
-      {
-        text: "Über Zettlr",
-        link: "https://www.zettlr.com/"
-      },
-      {
-        text: "Zettlr herunterladen",
-        link: "https://www.zettlr.com/download"
-      },
-      {
-        text: "GitHub",
-        link: "https://github.com/Zettlr/Zettlr"
-      }
-    ]
   }
 ]
 
@@ -100,8 +116,8 @@ export default {
     // NOTE: We have to explicitly cast the navigation for the navbar since it
     // contains "collapsible" options, which the navbar type doesn't include,
     // but which the code will just ignore.
-    navbar: navigation as NavbarOptions,
-    sidebar: navigation,
+    navbar,
+    sidebar,
     // Language selector
     selectLanguageName: 'Deutsch',
     selectLanguageText: 'Sprache',
