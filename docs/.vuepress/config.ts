@@ -4,6 +4,7 @@ import { defineUserConfig } from "vuepress"
 import { searchPlugin } from "@vuepress/plugin-search"
 import { redirectPlugin } from "@vuepress/plugin-redirect"
 import { GitContributorInfo } from "@vuepress/plugin-git"
+import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import configEn from "../../config/en.config"
 import configDe from "../../config/de.config"
 
@@ -104,6 +105,11 @@ export default defineUserConfig({
   },
   plugins: [
     searchPlugin(),
+    markdownMathPlugin({
+      copy: true,
+      mhchem: true,
+      type: "katex"
+    }),
     redirectPlugin({
       autoLocale: true,
       defaultLocale: "en-US",

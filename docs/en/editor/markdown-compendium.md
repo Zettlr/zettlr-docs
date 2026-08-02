@@ -38,8 +38,8 @@ To format Markdown documents, there are a few basic formatting rules that you sh
 | Footnotes          | `Some text[^1].`              | Some text&sup1;.                      |
 | Footnote reference | `[^1]: Footnote text.`        | &sup1; Footnote text.                 |
 | Comment            | `<!-- Commented out -->`      | (Not visible)                         |
-| Inline math        | `$E = mc^2$`                  | ![E = mc^2](../img/Emc2.png)          |
-| Block math         | `$$\nE = mc^2\n$`             | ![E = mc^2](../img/Emc2.png)          |
+| Inline math        | `$E = mc^2$`                  | $E = mc^2$                            |
+| Block math         | `$$\nE = mc^2\n$`             | $E = mc^2$                            |
 | Horizontal line    | `***` or `---`                | <hr>                                  |
 | Block quote        | `> Some quote`                | &nbsp;&nbsp;&nbsp;&nbsp;*Some quote*  |
 
