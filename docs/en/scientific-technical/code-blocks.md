@@ -19,9 +19,9 @@ You need to use at least three backticks or tilde characters to start and end su
 
 As you can see in the example above, the beginning of the code block can be followed by a so-called “info string.” This info string gives the app a hint as to which programming language the code block contains. This will enable syntax highlighting. If you provide no such info string, syntax highlighting will be turned off. 
 
-!!! note
-
-	Some systems will try to guess a code language if you do not provide such an info string. This means that, once you leave the context of Zettlr, other systems may try to enforce syntax highlighting.
+::: note
+Some systems will try to guess a code language if you do not provide such an info string. This means that, once you leave the context of Zettlr, other systems may try to enforce syntax highlighting.
+:::
 
 In order to ensure your code is correctly highlighted, you will need to provide the correct language identifier in the info string. At the time of writing, Zettlr supports syntax highlighting of 53 different languages. This means it may be difficult to remember all the various info strings, especially since Zettlr sometimes supports multiple identifiers for a single language (e.g., `typescript` and `ts` for TypeScript).
 

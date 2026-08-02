@@ -6,9 +6,9 @@ The image viewer is a component that can load and show images inside Zettlr. Thi
 
 Zettlr supports most image types by default, including JPEG- and PNG-images.
 
-!!! note
-
-	To enable the image viewer, you need to choose "Zettlr" as the application to open images with in the preferences.
+::: note
+To enable the image viewer, you need to choose "Zettlr" as the application to open images with in the preferences.
+:::
 
 ## Enabling the Image Viewer
 
@@ -30,6 +30,6 @@ Next, you can choose a background for the image viewer. You can choose between *
 
 Finally, the image viewer is just that: a viewer. If you need to open the image in your system viewer, click the corresponding button.
 
-!!! tip
-
-	You can also right-click the image's document tab, and choose to show the file in your file browser. This way you can manually select which software you want to open the image in.
+::: tip
+You can also right-click the image's document tab, and choose to show the file in your file browser. This way you can manually select which software you want to open the image in.
+:::

@@ -20,9 +20,9 @@ And then accept or change the suggested filename:
 
 ![create_file_input.png](../img/create_file_input.png)
 
-!!! tip
-
-	New folders can be created exactly the same way, and we recommend doing it this way.
+::: tip
+New folders can be created exactly the same way, and we recommend doing it this way.
+:::
 
 ## 2. Via the Menu or Shortcut
 
@@ -75,6 +75,6 @@ Zettlr is a Markdown editor, and as such it will by default create Markdown file
 * `.json`: This will create a JSON data file (these are used for bibliographies if you connect your reference manager; these will be introduced later)
 * `.yaml`: This will create a YAML data file (used, e.g., to configure how Zettlr exports your files)
 
-!!! tip
-
-	You can also create Markdown files using other filename extensions than `.md`. For example, you can create `.Rmd`-files, `.qmd`-files, or `.txt`-files. You saw that correctly: Zettlr can easily open and display RMarkdown and Quarto files. Also, if you have plain-text files, these will, by definition, be interpreted as Markdown.
+::: tip
+You can also create Markdown files using other filename extensions than `.md`. For example, you can create `.Rmd`-files, `.qmd`-files, or `.txt`-files. You saw that correctly: Zettlr can easily open and display RMarkdown and Quarto files. Also, if you have plain-text files, these will, by definition, be interpreted as Markdown.
+:::

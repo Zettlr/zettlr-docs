@@ -10,9 +10,9 @@ Since projects are essentially just folders, starting a new project is as simple
 
 Let’s say you want to start a new paper, and give it some preliminary name, say “Vote Defection.” So you could create a folder and give it that name.
 
-!!! hint
-
-	The examples in this section are not arbitrary: They are taken from the PhD project of the maintainer, Hendrik Erz. Therefore, they give you a glimpse into how this feature can be used in the real world.
+::: hint
+The examples in this section are not arbitrary: They are taken from the PhD project of the maintainer, Hendrik Erz. Therefore, they give you a glimpse into how this feature can be used in the real world.
+:::
 
 Then, you can start creating files in this folder. For a regular paper, you might want to create one file per each section of the paper, as well as a general “Notes” file to jot down some thoughts:
 
@@ -48,9 +48,9 @@ The first tab, “General,” shows you two settings. At the top, you can define
 
 ![project_settings_general.png](../img/project_settings_general.png)
 
-!!! note
-
-	The "Project Title" essentially fulfills the same function as the YAML frontmatter property `title`. If you have set a `title` manually somewhere in your project files, this will override it.
+::: note
+The "Project Title" essentially fulfills the same function as the YAML frontmatter property `title`. If you have set a `title` manually somewhere in your project files, this will override it.
+:::
 
 Below the title, you will see a long list with all your export profiles. This allows you to determine the export formats into which your project should be exported. You can select as many as you want, and Zettlr will export all of them at once.
 
@@ -72,9 +72,9 @@ To add a file to your project, click the “+”-icon next to its name. This wil
 
 To adjust the order of the files, use the arrow-buttons to move the files up or down.
 
-!!! tip
-
-	This setting also influences the display of your project in the file manager. As soon as you modify the list of included files, the file manager will display those files also on top of your project folder. All other files and folders will still obey your defined sorting order, but your project files will override this setting, and be displayed directly beneath the folder name, in the order you define here.
+::: tip
+This setting also influences the display of your project in the file manager. As soon as you modify the list of included files, the file manager will display those files also on top of your project folder. All other files and folders will still obey your defined sorting order, but your project files will override this setting, and be displayed directly beneath the folder name, in the order you define here.
+:::
 
 The following screenshot highlights what this means: To the left you can see the project settings dialog, and which files are included in the export. To the right, you can see how this is displayed in the file manager: The included project files are at the top, in the correct order, while all other files are sorted using the regular sort order below that.
 
@@ -101,9 +101,9 @@ During each project export, Zettlr will follow the same process as with single-f
 5. It will always place the exported files in the “current directory,” regardless of your settings.
 6. It will not open the files upon successful export automatically.
 
-!!! warning
-
-	If you add, rename, or remove files while you are working on your project, the list of included files will become outdated. Zettlr does not automatically watch what you do in your project and adjust the list of included files. It only checks for the existence of included files when you export. If it detects that a file that you have selected to be included no longer exists, it will warn you so that you can check the list of files. Likewise, you need to remember to manually add any additional file you create and want to include in the export in the project properties.
+::: warning
+If you add, rename, or remove files while you are working on your project, the list of included files will become outdated. Zettlr does not automatically watch what you do in your project and adjust the list of included files. It only checks for the existence of included files when you export. If it detects that a file that you have selected to be included no longer exists, it will warn you so that you can check the list of files. Likewise, you need to remember to manually add any additional file you create and want to include in the export in the project properties.
+:::
 
 ## Removing Projects
 

@@ -14,9 +14,9 @@ Below, we list all three methods of installing LanguageTool and describe how to 
 
 ## Setting up via `brew` (macOS)
 
-!!! note
-
-	This setup guide requires you to run commands in your terminal app.
+::: note
+This setup guide requires you to run commands in your terminal app.
+:::
 
 LanguageTool is available via [Homebrew](https://brew.sh/) and will take approximately 500 MB of disk space. You lose some customizability, but this route will be the easiest one – provided, you are comfortable running commands on the terminal.
 
@@ -30,11 +30,11 @@ Now, LanguageTool will be running, and you can point Zettlr to the server at <ht
 
 ## Setting up via Flatpak (Linux)
 
-!!! warning
-
-	Setting up LanguageTool following this guide will install another app called "Eloquent," which is an Open Source application that happens to ship with a LanguageTool server. You can view and inspect its source code [on GitHub](https://github.com/sonnyp/Eloquent). As soon as you start the app, this will also start a LanguageTool server.
+::: warning
+Setting up LanguageTool following this guide will install another app called "Eloquent," which is an Open Source application that happens to ship with a LanguageTool server. You can view and inspect its source code [on GitHub](https://github.com/sonnyp/Eloquent). As soon as you start the app, this will also start a LanguageTool server.
     
-    **If you prefer to only install LanguageTool itself, please follow the Docker instructions below**.
+**If you prefer to only install LanguageTool itself, please follow the Docker instructions below**.
+:::
 
 In case you run Linux and have Flatpak available, you can install LanguageTool via Flatpak. There is a Flatpak available that installs the app “Eloquent” which includes a LanguageTool server that you can point Zettlr to.
 
@@ -58,9 +58,9 @@ The following guide requires administrative permissions on your computer. Furthe
 
 The LanguageTool server can be found online [in this repository](https://github.com/languagetool-org/languagetool). In this guide, we will be setting this up with [Docker](https://en.wikipedia.org/wiki/Docker_(software)). The primary reason is that LanguageTool requires Java, which is difficult to set up. Docker makes this process much simpler.
 
-!!! note
-
-	On macOS, this guide will work as-is. On non-Apple-computers, you will have to enable Hardware virtualization. This must sometimes be enabled in the computer's BIOS, and/or in the Windows settings. [Here is one guide](https://www.windowscentral.com/software-apps/windows-11/how-to-enable-virtualization-on-windows-11).
+::: note
+On macOS, this guide will work as-is. On non-Apple-computers, you will have to enable Hardware virtualization. This must sometimes be enabled in the computer's BIOS, and/or in the Windows settings. [Here is one guide](https://www.windowscentral.com/software-apps/windows-11/how-to-enable-virtualization-on-windows-11).
+:::
 
 ### Setting up Docker Desktop
 
@@ -76,9 +76,9 @@ After you've set up Docker, it is time to install LanguageTool. To do so, you'll
 
 After you're done, click in the large search bar at the top of the Docker window and type `erikvl87/languagetool`. This will bring up a list of search results. In the “Images” tab, you'll need to select the entry `erikvl87/languagetool` and click “Pull.”
 
-!!! note
-
-	To “pull” a Docker image just means to download it on your computer. The LanguageTool image needs roughly 500 MB of disk space.
+::: note
+To “pull” a Docker image just means to download it on your computer. The LanguageTool image needs roughly 500 MB of disk space.
+:::
 
 Once the download is finished, click on “Images” in the left sidebar of Docker. You will see the image displayed there. In the “Actions” column click on the “Play” button to start the image.
 

@@ -2,9 +2,9 @@
 
 Zettlr is designed around the concept of “workspaces.” Workspaces are simply folders somewhere on your computer designated to house all your documents and notes.
 
-!!! note "Definition"
-
-	A **workspace** is a regular folder on your computer that is designated to working with your Markdown documents. When you load a folder into Zettlr as a workspace, you tell Zettlr that you want to primarily store your documents in this folder.
+::: note Definition
+A **workspace** is a regular folder on your computer that is designated to working with your Markdown documents. When you load a folder into Zettlr as a workspace, you tell Zettlr that you want to primarily store your documents in this folder.
+:::
 
 ## Why Workspaces?
 
@@ -18,9 +18,9 @@ However, folders on your computer often contain many more things, and not all of
 
 And all, without vendor lock-in: If you want to move your files around, you just move your files around.
 
-!!! warning
-
-	We **strongly** recommend that you regularly back up your workspaces. The simplest method is to use a cloud storage provider (such as Dropbox, Google Drive, OneDrive, or iCloud), and create the workspaces in there. This way, all your files will be automatically backed up. In addition, you should also back up the files onto an external storage device from time to time.
+::: warning
+We **strongly** recommend that you regularly back up your workspaces. The simplest method is to use a cloud storage provider (such as Dropbox, Google Drive, OneDrive, or iCloud), and create the workspaces in there. This way, all your files will be automatically backed up. In addition, you should also back up the files onto an external storage device from time to time.
+:::
 
 ## Adding Workspaces
 
@@ -30,9 +30,9 @@ Adding workspaces in Zettlr requires two steps. First, you need to create a fold
 
 To add a folder as a workspace to Zettlr, select “File” → “Open Workspace…” or click the folder-icon in the toolbar. This will open a dialog that lets you select a folder. Navigate to your desired folder and confirm your choice.
 
-!!! warning
-
-	If you import an existing workspace that already contains documents, it will take a while to load it. Zettlr first needs to collect some metadata for each document so that the app can help you link between files, show you the actual file titles, or calculate some statistics. Once the indexing process is finished, the workspace folder will appear.
+::: warning
+If you import an existing workspace that already contains documents, it will take a while to load it. Zettlr first needs to collect some metadata for each document so that the app can help you link between files, show you the actual file titles, or calculate some statistics. Once the indexing process is finished, the workspace folder will appear.
+:::
 
 ## Conceptualizing Your Workspaces
 
@@ -48,9 +48,9 @@ However, there is no right solution to thinking about how you personally work, s
 
 Below you can find a few **subjective** suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
 
-!!! note
-
-	It is really important to recognize that your personal workspaces should follow how your own brain works. Everyone thinks differently, and using a system that does not "click" for you will make your work slow. Start with one of the existing principles or one of our suggestions, but reflect on which parts of it work for you, and which don't.
+::: note
+It is really important to recognize that your personal workspaces should follow how your own brain works. Everyone thinks differently, and using a system that does not "click" for you will make your work slow. Start with one of the existing principles or one of our suggestions, but reflect on which parts of it work for you, and which don't.
+:::
 
 ### For Students
 
@@ -61,9 +61,9 @@ If you are a student in an undergrad or graduate program (Bachelor and Master le
 * **Lecture Notes**: As a student, you will frequently visit lectures outside your core curriculum. This could be a place to collect all notes from this. This also includes workshops, etc.
 * **Campus**: If you are active in the student life of your university or college (which we recommend ;), you could create a campus workspace with subfolders for every activity (e.g., for student radio, a sports club, reading circles, and so on).
 
-!!! tip
-
-	What we mean by "namespacing" is that your computer and Zettlr will both sort folders based on their names. This makes sorting projects that you do over time very simple if you follow a simple rule. If you prepend the date of your project to its folder in the form of year-month-day (or year-1/2 for semesters), this means that all projects from the same year will appear together, then all from the same month (or semester), and so on. This may seem odd at first, you will thank us later when you have a few dozen projects and can almost without looking find the correct folder when you search for it.
+::: tip
+What we mean by "namespacing" is that your computer and Zettlr will both sort folders based on their names. This makes sorting projects that you do over time very simple if you follow a simple rule. If you prepend the date of your project to its folder in the form of year-month-day (or year-1/2 for semesters), this means that all projects from the same year will appear together, then all from the same month (or semester), and so on. This may seem odd at first, you will thank us later when you have a few dozen projects and can almost without looking find the correct folder when you search for it.
+:::
 
 ### For PhD-Students
 

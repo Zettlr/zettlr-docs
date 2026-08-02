@@ -38,13 +38,13 @@ This section gives you many options for how Markdown is rendered. First, you can
 
 This setting determines if Markdown rendering is enabled at all. If you select the “Preview mode” you can then, in a next step, specify which elements shall be pre-rendered. Some people, for example, may prefer to only render images and links, but not citations. To get the “full” rich text-experience, check all boxes.
 
-!!! tip
+::: tip
+You do not have to use the preferences to toggle between preview and raw mode. If you activate the editor's statusbar, you can click the "Rendering" statusbar item to switch between the two modes immediately.
+:::
 
-	You do not have to use the preferences to toggle between preview and raw mode. If you activate the editor's statusbar, you can click the "Rendering" statusbar item to switch between the two modes immediately.
-
-!!! note
-
-	Even the preview rendering mode is only an approximation of how your document will look like when you export it to Word, HTML, or PDF. This has two reasons. First, each export format has its own styles that it will apply. Headings in a Word document *will* look different from headings in a PDF file. And this becomes even more true if you utilize export profiles with your own custom templates. The second reason is that you still need to be able to edit the file. If we were to produce a truthful representation of the Markdown document in an exported state, we would also need to sometimes collapse linebreaks, move elements around, and so on. We can't do this without introducing the risk of potential data loss or other glitches.
+::: note
+Even the preview rendering mode is only an approximation of how your document will look like when you export it to Word, HTML, or PDF. This has two reasons. First, each export format has its own styles that it will apply. Headings in a Word document *will* look different from headings in a PDF file. And this becomes even more true if you utilize export profiles with your own custom templates. The second reason is that you still need to be able to edit the file. If we were to produce a truthful representation of the Markdown document in an exported state, we would also need to sometimes collapse linebreaks, move elements around, and so on. We can't do this without introducing the risk of potential data loss or other glitches.
+:::
 
 ## Custom CSS
 
@@ -54,6 +54,6 @@ The final stage of customizing your editor is to use custom CSS. CSS, or Cascadi
 
 Many of our users are using custom CSS to individualize their experience. This starts with custom font selection, and goes to implementing some advanced style changes.
 
-!!! danger
-
-	Custom CSS is very powerful, but this also means that you can literally break the app, if you are not careful. We recommend you only implement subtle changes and abstain from changing margins, sizes, or positions. In case you accidentally do break the app, you can fix it by quitting the app, and removing the `custom.css` file from your app data directory. See the [troubleshooting guide](../getting-started/troubleshooting.md) for more information.
+::: danger
+Custom CSS is very powerful, but this also means that you can literally break the app, if you are not careful. We recommend you only implement subtle changes and abstain from changing margins, sizes, or positions. In case you accidentally do break the app, you can fix it by quitting the app, and removing the `custom.css` file from your app data directory. See the [troubleshooting guide](../getting-started/troubleshooting.md) for more information.
+:::

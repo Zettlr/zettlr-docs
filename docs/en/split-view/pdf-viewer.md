@@ -4,9 +4,9 @@ The PDF viewer is a component that can load and show PDF files inside Zettlr. Th
 
 ![pdf_viewer_example.png](../img/pdf_viewer_example.png)
 
-!!! note
-
-	To enable the PDF viewer, you need to choose "Zettlr" as the application to open PDF files with in the preferences.
+::: note
+To enable the PDF viewer, you need to choose "Zettlr" as the application to open PDF files with in the preferences.
+:::
 
 ## Enabling the PDF Viewer
 
@@ -22,6 +22,6 @@ If you have ever used Google Chrome (or a derivative browser), you will immediat
 
 **However**, there is one important point: Because the PDF viewer needs a lot of mouse interaction, by default the PDF viewer is **disabled**. In order to navigate a PDF file, you first need to focus the PDF viewer. You do so simply by clicking inside the document. Then you can use the viewer as you normally do.
 
-!!! hint
-
-	When a PDF viewer is active, you can see a colored border around it. Click outside the PDF viewer to un-focus it.
+::: hint
+When a PDF viewer is active, you can see a colored border around it. Click outside the PDF viewer to un-focus it.
+:::

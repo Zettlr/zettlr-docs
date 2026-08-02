@@ -6,9 +6,9 @@ Once you have [installed Zettlr](../getting-started/setup.md) and started the ap
 
 You can also choose to skip this setup wizard and change any setting later after the fact.
 
-!!! note
-
-	You can't make any mistake here. This setup guide simply changes preference settings that you can change later on in the preferences dialog yourself, if you are dissatisfied with some of your choices in the setup guide.
+::: note
+You can't make any mistake here. This setup guide simply changes preference settings that you can change later on in the preferences dialog yourself, if you are dissatisfied with some of your choices in the setup guide.
+:::
 
 ## A First Glance at Zettlr
 
@@ -20,9 +20,9 @@ Once you have completed the setup wizard, Zettlr’s main window will show. The 
 
 ![user_interface_first_start.png](../img/user_interface_first_start.png)
 
-!!! note
-
-	There is also a fourth section, a sidebar, to the right. It is not shown by default. You can click the sidebar icon to the right of the toolbar to make it appear. This sidebar includes sections for a table of contents, references, related files, and assets related to whichever file you currently view.
+::: note
+There is also a fourth section, a sidebar, to the right. It is not shown by default. You can click the sidebar icon to the right of the toolbar to make it appear. This sidebar includes sections for a table of contents, references, related files, and assets related to whichever file you currently view.
+:::
 
 ## The Importance of Workspaces
 
@@ -32,9 +32,9 @@ Zettlr allows you to open arbitrary files, too, because sometimes you receive a 
 
 Thus, to make the most of Zettlr, we strongly recommend that you designate one or more folders somewhere on your computer as workspaces where you primarily work in. For some inspiration as to what folders you may want to create, the [next section explains workspaces in depth](./workspaces.md).
 
-!!! warning
-
-	We **strongly** recommend that you regularly back up your workspaces. The simplest method is to use a cloud storage provider (such as Dropbox, Google Drive, OneDrive, or iCloud), and create the workspaces in there. This way, all your files will be automatically backed up. In addition, you should also back up the files onto an external storage device.
+::: warning
+We **strongly** recommend that you regularly back up your workspaces. The simplest method is to use a cloud storage provider (such as Dropbox, Google Drive, OneDrive, or iCloud), and create the workspaces in there. This way, all your files will be automatically backed up. In addition, you should also back up the files onto an external storage device.
+:::
 
 ## Working Through the Tutorial
 

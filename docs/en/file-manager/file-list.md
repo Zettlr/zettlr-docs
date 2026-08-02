@@ -97,9 +97,9 @@ If you now instead want to display **all** your papers, you can **hold down <kbd
 * Third term paper
 * Notes.md
 
-!!! tip
-
-	As you can see, navigating the file list resembles a form of "filtering." If you need to focus on a particular type of work, you can navigate "down" the file list until only those files that you care about are displayed. At the same time, if you need a broader overview over your projects, you can navigate "up" until you see all files you need.
+::: tip
+As you can see, navigating the file list resembles a form of "filtering." If you need to focus on a particular type of work, you can navigate "down" the file list until only those files that you care about are displayed. At the same time, if you need a broader overview over your projects, you can navigate "up" until you see all files you need.
+:::
 
 ## How the File List Sorts
 

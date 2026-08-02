@@ -8,9 +8,9 @@ You can start an exporting process in two ways. You can either export your curre
 
 The second way of invoking the exporter is by exporting a project. You can do so by right-clicking a project folder in the file manager and choosing “Export project.” This entry will be disabled if you have not yet selected at least one profile to export the project to.
 
-!!! tip
-
-	Read more on how to invoke the exporter in our guides on [exporting individual files](../first-time-users/exporting-files.md) and for [projects](../file-manager/projects.md).
+::: tip
+Read more on how to invoke the exporter in our guides on [exporting individual files](../first-time-users/exporting-files.md) and for [projects](../file-manager/projects.md).
+:::
 
 ## Customizing Export Profiles
 

@@ -108,9 +108,9 @@ Zettlr supports one of the most comprehensive and all-encompassing dialects: Pan
 * Citations and cross-references
 * … and more
 
-!!! warning
-
-	While Markdown dialects are, for the most part, compatible with each other, this is not always the case. Some dialects may, for example, not support citation syntax, or use a slightly different way to create tables. If you want to write Markdown for a specific system, always make sure to check which elements that system supports.
+::: warning
+While Markdown dialects are, for the most part, compatible with each other, this is not always the case. Some dialects may, for example, not support citation syntax, or use a slightly different way to create tables. If you want to write Markdown for a specific system, always make sure to check which elements that system supports.
+:::
 
 ## Special Elements in Zettlr Markdown
 
@@ -130,9 +130,9 @@ This is some text.[^1]
 
 Instead of numbers, you can also use letters and words, e.g., `[^a custom label]`. However, Zettlr assumes that, most of the time, you want simple numerical footnote labels. Therefore, when you stick to a simple footnote numbering scheme, Zettlr will automatically ensure that all your footnotes remain correctly numbered.
 
-!!! tip
-
-	Regardless of what labelling system you choose for your footnotes, the only important part is that each label must be unique. Whenever you export your files, the footnotes will be correctly numbered ascending, regardless of what your labels look like.
+::: tip
+Regardless of what labelling system you choose for your footnotes, the only important part is that each label must be unique. Whenever you export your files, the footnotes will be correctly numbered ascending, regardless of what your labels look like.
+:::
 
 You can also define footnotes inline, if you don’t want to create two elements. To do so, you would place the circumflex symbol (`^`) in front of the square bracket:
 

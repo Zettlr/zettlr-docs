@@ -23,9 +23,9 @@ This instructs Pandoc, when you use this profile, to convert a Markdown document
 
 As of the time of writing (January 2026), Pandoc supports the following PDF engines: `pdflatex`, `lualatex`, `xelatex`, `latexmk`, `tectonic`, `wkhtmltopdf`, `weasyprint`, `pagedjs-cli`, `prince`, `context`, `groff`, `pdfroff`, and `typst`.
 
-!!! warning
-
-	Since all of these engines are external programs, you need to make sure you have the engine of your choice installed on your computer. Refer to their corresponding documentation to see how to install them. If you select an engine that is not installed, Zettlr will show you an error message.
+::: warning
+Since all of these engines are external programs, you need to make sure you have the engine of your choice installed on your computer. Refer to their corresponding documentation to see how to install them. If you select an engine that is not installed, Zettlr will show you an error message.
+:::
 
 You can change the PDF engine directly in the XeLaTeX PDF profile. However, we recommend against doing so, since this will lead to confusion if the profile called “XeLaTeX PDF” suddenly requires, say, Typst to be installed.
 

@@ -6,9 +6,9 @@ A central feature of Zettlr is its tight integration with citations. Zettlr dire
 
 Before Zettlr can access your references, you will need to export your library into a file that Zettlr can read. To learn how that works, we have [compiled a comprehensive guide on doing so with Zotero](../guides/reference-manager-integration.md).
 
-!!! tip
-
-	If you are already using BibTeX or BibLaTeX reference libraries, you don't need to do anything except load the file into Zettlr. If you use Zotero, EndNote, or a reference manager that doesn't work directly with files, you will need to export it first.
+::: tip
+If you are already using BibTeX or BibLaTeX reference libraries, you don't need to do anything except load the file into Zettlr. If you use Zotero, EndNote, or a reference manager that doesn't work directly with files, you will need to export it first.
+:::
 
 ## Enabling Citations
 
@@ -41,9 +41,9 @@ The screenshot demonstrates this with the Zotero picker that you may be familiar
 
 You can see the prefix in yellow, the actual citation in green, the locator in pink, and the suffix in teal.
 
-!!! note
-
-	Only the citekey is required to create a citation. All other parts are optional.
+::: note
+Only the citekey is required to create a citation. All other parts are optional.
+:::
 
 The first thing to recognize is that **Zettlr does not use Zotero’s citation picker**. Instead, it utilizes Pandoc’s citation syntax. Pandoc’s citation syntax is equivalent to the citation picker, but instead of using a graphical interface to modify your citation, you write out all the parts of your citation directly. This can be much faster once you are attuned to the syntax.
 
@@ -55,11 +55,11 @@ This is some text [see @Ermakoff2013, p. 45ff for a discussion].
 
 As you can see, the citation syntax exactly mirrors how regular in-text citations are written. The benefit? Zettlr and Pandoc are smart enough to take these pieces of information and format them **regardless of which citation style you use**!
 
-!!! tip
+::: tip
+While the Zotero picker offers a checkbox to "omit the author" of a work (that is, only display the year), you can achieve the same functionality by prepending the citationkey with a hyphen (`-`).
 
-	While the Zotero picker offers a checkbox to "omit the author" of a work (that is, only display the year), you can achieve the same functionality by prepending the citationkey with a hyphen (`-`).
-
-    Example: The citation `[-@Ermakoff2013]` would render as `(2013)` without the author.
+Example: The citation `[-@Ermakoff2013]` would render as `(2013)` without the author.
+:::
 
 ## Types of Citations
 
@@ -116,11 +116,11 @@ You can change how Zettlr autocompletes citekeys by navigating into the preferen
 Please note that citation *styles* can sometimes further customize how citations are actually being rendered. For instance, some citation styles in the natural sciences require citations to be referred to only by number. This specific requirement will be applied once you export a file. **Zettlr itself will always use a default in-text citation style to preview your files. Your exports therefore may differ.**
 :::
 
-!!! tip
+::: tip
+Zettlr's auto-suggest feature for inserting citekeys is extremely helpful. That said, there may be times when you want to cut and paste a citekey directly from your reference manager. If you're using Zotero with the BetterBibTeX plugin, the plugin comes with features for streamlining this process, which require a one-time setup. In Zotero, go to the `Settings` menu and select `Better BibTeX` from the sidebar to bring up the plugin settings. Scroll to the section labeled `Quick-Copy` and choose `Pandoc citation` from the `Quick-Copy format` menu. Next, select `Export` from the `Settings` sidebar. From the dropdown menu labeled `Item Format`, select the option labeled `Better BibTeX Citation Key Quick Copy`. This completes the necessary setup.
 
-	Zettlr's auto-suggest feature for inserting citekeys is extremely helpful. That said, there may be times when you want to cut and paste a citekey directly from your reference manager. If you're using Zotero with the BetterBibTeX plugin, the plugin comes with features for streamlining this process, which require a one-time setup. In Zotero, go to the `Settings` menu and select `Better BibTeX` from the sidebar to bring up the plugin settings. Scroll to the section labeled `Quick-Copy` and choose `Pandoc citation` from the `Quick-Copy format` menu. Next, select `Export` from the `Settings` sidebar. From the dropdown menu labeled `Item Format`, select the option labeled `Better BibTeX Citation Key Quick Copy`. This completes the necessary setup.
-
-	Going forward, you can select one, or multiple, items in Zotero and drag them onto the Zettlr editor pane to insert citations. If you prefer to cut and paste citekeys, you can do so by selecting an entry in Zotero and using the key combo <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> to copy the citekey to the clipboard.
+Going forward, you can select one, or multiple, items in Zotero and drag them onto the Zettlr editor pane to insert citations. If you prefer to cut and paste citekeys, you can do so by selecting an entry in Zotero and using the key combo <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> to copy the citekey to the clipboard.
+:::
 
 For more information on how to use citations in line with Pandoc's citeproc engine, [please refer to the guide](https://pandoc.org/MANUAL.html#citations).
 
@@ -128,9 +128,9 @@ For more information on how to use citations in line with Pandoc's citeproc engi
 
 As you cite, Zettlr will automatically generate a preview bibliography in the [Sidebar](../sidebar/index.md). You can open the sidebar with the right-most toolbar button and then navigate to the bibliography tab. This bibliography will be automatically appended to your document when you export it.
 
-!!! note
-
-	Just with in-text citations, the bibliography will be rendered with a simple style in the sidebar. Whenever you export your file, the bibliography will also be formatted properly using your citation style of choice.
+::: note
+Just with in-text citations, the bibliography will be rendered with a simple style in the sidebar. Whenever you export your file, the bibliography will also be formatted properly using your citation style of choice.
+:::
 
 ## Using a file-specific library
 
@@ -189,9 +189,9 @@ Customize “References” to your liking (e.g., “Bibliography,” or a transl
 
 Specifying the `reference-section-title` in an export profile will apply this title to all files. But what if you want certain files to have a different section header? Pandoc allows you to also provide this label using the [YAML frontmatter](./yaml-frontmatter.md). To do so, simply place the `reference-section-title` on its own line (not indented) within a file's YAML front matter.
 
-!!! warning
-
-	The export profile overwrites the `reference-section-title` from the frontmatter. This means, if you specify `reference-section-title: Bibliography` in your frontmatter, but have placed a `reference-section-title: References` in the `metadata` property of your export profile, Pandoc will use the latter, and not the former. This is why Zettlr's built-in profiles do not ship with a default for `reference-section-title` built-in. For some use-cases, it may be easier to leave out the `reference-section-title` from the export profile entirely and specify it manually for each file. You can also use [Snippets](./snippets.md) to provide templates for various types of reports that come with the correct `reference-section-title`.
+::: warning
+The export profile overwrites the `reference-section-title` from the frontmatter. This means, if you specify `reference-section-title: Bibliography` in your frontmatter, but have placed a `reference-section-title: References` in the `metadata` property of your export profile, Pandoc will use the latter, and not the former. This is why Zettlr's built-in profiles do not ship with a default for `reference-section-title` built-in. For some use-cases, it may be easier to leave out the `reference-section-title` from the export profile entirely and specify it manually for each file. You can also use [Snippets](./snippets.md) to provide templates for various types of reports that come with the correct `reference-section-title`.
+:::
 
 ### Specifying the Location of the List of References
 
@@ -216,9 +216,9 @@ Some appendix information...
 
 Pandoc will replace the three-colon-curly-bracket construction with your list of references.
 
-!!! warning
-
-	If you explicitly specify the location of your references by placing a `#refs`-container, Pandoc will ignore your `reference-section-title`. In this case, you must specify the heading manually (as shown in the example).
+::: warning
+If you explicitly specify the location of your references by placing a `#refs`-container, Pandoc will ignore your `reference-section-title`. In this case, you must specify the heading manually (as shown in the example).
+:::
 
 ::: tip
 This also implies that you can provide the list of references multiple times. Pandoc will place the list of references into any container with the ID `#refs`. You can read more on placing the bibliography in the [Pandoc manual](https://pandoc.org/MANUAL.html#placement-of-the-bibliography).
@@ -239,9 +239,9 @@ The class `hanging-indent` will forcefully enable a hanging indent even for cita
 
 The attributes `entry-spacing` and `line-spacing` respectively determine how much space there should be between individual entries, and lines. They are provided in percentage points, where `1` equals 100%. So, an entry-spacing of `0` will ensure that the individual entries are back-to-back, while an entry-spacing of `2` will mean that there are two lines of distance between each entry.
 
-!!! note
-
-	Support for these formatting rules is not fully clear. Some citation styles and some export profiles appear to be impervious to changing the line-spacing. Use these with caution. To better control formatting, continue reading.
+::: note
+Support for these formatting rules is not fully clear. Some citation styles and some export profiles appear to be impervious to changing the line-spacing. Use these with caution. To better control formatting, continue reading.
+:::
 
 The second route to adjust the formatting of the list of references is to directly overwrite the styles. This gives you more control over the list of references, but depending on how you do it, you may restrict yourself to only a single export target. For example, to change how the references are displayed in HTML, you will need to use CSS. To change how they are displayed in PDF files, you will need to use LaTeX directives (or Typst or tectonic directives, depending on which engine you utilize).
 

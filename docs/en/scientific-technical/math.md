@@ -29,9 +29,9 @@ The above example is rendered like this:
 
 ![Rendered LaTeX equations](../img/math_example.png)
 
-!!! tip
-
-	KaTeX is almost fully compatible with MathTeX. However, some discrepancies remain. If you export a document containing math to LaTeX, ensure that the code blocks render appropriately. For HTML exports, you can specify the KaTeX library (the default is MathJax).
+::: tip
+KaTeX is almost fully compatible with MathTeX. However, some discrepancies remain. If you export a document containing math to LaTeX, ensure that the code blocks render appropriately. For HTML exports, you can specify the KaTeX library (the default is MathJax).
+:::
 
 A complete documentation for all supported functions and symbols can be found on the KaTeX homepage: [katex.org/docs/supported.html](https://katex.org/docs/supported.html).
 

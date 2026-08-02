@@ -30,9 +30,9 @@ Next, you can select where the exported file will end up. You can choose between
 2. **Current directory**: This will export the file into the same folder where the Markdown file is in. So if you want to export “my-file.md,” and decide to export to PDF, it will create a new file “my-file.pdf” in the same folder.
 3. **Select directory**: This will prompt you to pick a folder after you click “Export”
 
-!!! tip
-
-	Both the last-used export profile and your directory setting are remembered, so the next time you want to export a file using the same settings, you only have to click "Export."
+::: tip
+Both the last-used export profile and your directory setting are remembered, so the next time you want to export a file using the same settings, you only have to click "Export."
+:::
 
 ## Special Export Formats
 
@@ -44,9 +44,9 @@ Exporting as a PDF is probably the most common use-case. However, PDF is also th
 
 If you do not want to set up LaTeX, or cannot use it due to any other reason, you can also utilize the **Simple PDF** export. This profile also creates a PDF, but avoids LaTeX. What Zettlr will do in this case is export your file to HTML, and then use Chrome’s “Print Website” method to export that HTML file to PDF.
 
-!!! note
-
-	Zettlr can "print" HTML files, because it is built on Electron, which essentially consists of the Google Chrome browser.
+::: note
+Zettlr can "print" HTML files, because it is built on Electron, which essentially consists of the Google Chrome browser.
+:::
 
 ### TextBundle and TextPack
 

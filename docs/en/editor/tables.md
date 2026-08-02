@@ -93,9 +93,9 @@ With the table editor, the above-mentioned table looks like this:
 
 ![A table as displayed by the table editor](../img/zettlr_table.png)
 
-!!! note
-
-	Due to the complexity of grid tables, and especially the ability to produce very complex layouts, the table editor only supports pipe tables.
+::: note
+Due to the complexity of grid tables, and especially the ability to produce very complex layouts, the table editor only supports pipe tables.
+:::
 
 ### Editing Tables
 

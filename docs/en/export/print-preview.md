@@ -8,9 +8,9 @@ You can open the print preview for any document by pressing <kbd>Cmd/Ctrl</kbd>+
 
 This will internally export your document to HTML and display the results in a new window.
 
-!!! note
-
-	The print preview does not actually use Pandoc. Instead, it uses Zettlr's internal Abstract Syntax Tree representation of your document. This means that there might be some differences in how Pandoc vs. Zettlr will export a document. However, Zettlr aligns as closely as possible with Pandoc's default styles for an HTML export.
+::: note
+The print preview does not actually use Pandoc. Instead, it uses Zettlr's internal Abstract Syntax Tree representation of your document. This means that there might be some differences in how Pandoc vs. Zettlr will export a document. However, Zettlr aligns as closely as possible with Pandoc's default styles for an HTML export.
+:::
 
 Click the print icon to actually print out the HTML file. This will call Chrome’s built-in printing dialog and allow you to print out the document directly from within Zettlr.
 

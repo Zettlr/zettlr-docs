@@ -6,11 +6,11 @@ Besides a simple spellcheck using dictionaries, Zettlr also features a more comp
 
 LanguageTool is a service similar to Grammarly. However, unlike Grammarly, it is possible to set up LanguageTool locally. Zettlr integrates with it, as the solution itself is offered as an Open Source-tool.
 
-!!! danger
+::: danger
+By default, Zettlr uses the official servers of LanguageTool. This means that your texts will be transmitted over the internet to LanguageTool.org to check for issues, making the usage subject to [LanguageTool's privacy policy](https://languagetool.org/legal/privacy). To avoid that, you will need to set-up LanguageTool on your computer. [We describe how to do so in our guide](../guides/languagetool-local.md).
 
-	By default, Zettlr uses the official servers of LanguageTool. This means that your texts will be transmitted over the internet to LanguageTool.org to check for issues, making the usage subject to [LanguageTool's privacy policy](https://languagetool.org/legal/privacy). To avoid that, you will need to set-up LanguageTool on your computer. [We describe how to do so in our guide](../guides/languagetool-local.md).
-
-    Another benefit of installing LanguageTool locally is that it will also work offline, in trains or on planes.
+Another benefit of installing LanguageTool locally is that it will also work offline, in trains or on planes.
+:::
 
 ## Activating LanguageTool
 
@@ -34,15 +34,15 @@ Next, you can select your preferred variants, which is useful for languages with
 
 The third section allows you to pick between the official LanguageTool servers or your own, custom one.
 
-!!! tip
-
-	We strongly recommend setting up LanguageTool locally. We provide an [extensive guide](../guides/languagetool-local.md) for this.
+::: tip
+We strongly recommend setting up LanguageTool locally. We provide an [extensive guide](../guides/languagetool-local.md) for this.
+:::
 
 The last section of the main LanguageTool configuration allows you to insert your LanguageTool username and API key, if you subscribe to LanguageTool Premium.
 
-!!! warning
-
-	Leave these fields empty if you run LanguageTool locally. As soon as you enter any text into any of these two fields, Zettlr will automatically switch to the LanguageTool Premium servers, because it cannot distinguish random letters from a valid username/key combination.
+::: warning
+Leave these fields empty if you run LanguageTool locally. As soon as you enter any text into any of these two fields, Zettlr will automatically switch to the LanguageTool Premium servers, because it cannot distinguish random letters from a valid username/key combination.
+:::
 
 The other LanguageTool section on “Ignored Rules” lists any rule that you have disabled from LanguageTool. Remove the rule from this list to re-enable it.
 
@@ -86,8 +86,8 @@ The control can have three different states:
 
 You can also click on the control to view a list of all languages that the tool supports. By default, the tool will automatically detect the language, but you can override this here.
 
-!!! tip
-
-	The list of available languages is provided by the server itself. Depending on which version of LanguageTool you use, or if you use the Premium service, this list may differ.
+::: tip
+The list of available languages is provided by the server itself. Depending on which version of LanguageTool you use, or if you use the Premium service, this list may differ.
+:::
 
 All suggestions produced by LanguageTool are collected in the diagnostics panel. You can see a count of all the various issues in the diagnostics control, which can also open the panel.

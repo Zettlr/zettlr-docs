@@ -52,9 +52,9 @@ Here is a list of some common shortcuts and how they work in Zettlr:
 
 There are many more available shortcuts. You can find all in the [corresponding reference page](../reference/keyboard-shortcuts.md).
 
-!!! note
-
-	When we type <kbd>Cmd/Ctrl</kbd>, we mean "press the Command-key if you are using a Mac, and the Control-key, if you are using a Windows- or Linux-computer."
+::: note
+When we type <kbd>Cmd/Ctrl</kbd>, we mean "press the Command-key if you are using a Mac, and the Control-key, if you are using a Windows- or Linux-computer."
+:::
 
 ## More on Writing Markdown
 

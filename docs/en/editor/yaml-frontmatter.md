@@ -49,9 +49,9 @@ For a full list of available variables and more instructions on how to use these
 On this page we only list certain important variables for use with Pandoc, but YAML front matters are also supported by other engines, such as the [Jekyll static site generator](https://jekyllrb.com/docs/front-matter/). Therefore, if you plan to use a different tool to convert your Markdown files, you should consult their documentation for a list of available variables.
 :::
 
-!!! note
-
-	Often, the format of variables can change, even between templates. For example, the `author` variable may either take a list of strings, or objects with names, affiliations, and email addresses. Always consult the template or engine documentation to learn about the correct syntax.
+::: note
+Often, the format of variables can change, even between templates. For example, the `author` variable may either take a list of strings, or objects with names, affiliations, and email addresses. Always consult the template or engine documentation to learn about the correct syntax.
+:::
 
 ### `title`
 

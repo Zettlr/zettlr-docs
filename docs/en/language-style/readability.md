@@ -6,9 +6,9 @@ Another tool that Zettlr integrates is one to determine the “readability” of
 
 Readability is a scientific term that originates in the mid-20th century for a set of rules that have been determined to improve the ease with which people can understand a text. Zettlr incorporates four established algorithms to calculate and visualize the readability of your texts.
 
-!!! note
-
-	Since most work on readability comes from U.S.-American education researchers, the mode works best with English texts. Since these algorithms often use word- and syllable-counts, they also generalize to other languages, but they do require a Latin script.
+::: note
+Since most work on readability comes from U.S.-American education researchers, the mode works best with English texts. Since these algorithms often use word- and syllable-counts, they also generalize to other languages, but they do require a Latin script.
+:::
 
 ## Enabling the Readability Mode
 

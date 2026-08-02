@@ -4,11 +4,11 @@ While the profiles that Zettlr ships with will be sufficient for many use-cases,
 
 Regardless of what your use-case is, you will need to adapt an existing template to work with Pandoc.
 
-!!! note
+::: note
+We will be using two terms in this section: "template" and "reference document." A template is a file that contains Pandoc's template syntax to allow Pandoc to insert your Markdown documents into that template. A reference document is just that: a *reference* from which Pandoc can *copy* styles to populate a new file with.
 
-	We will be using two terms in this section: "template" and "reference document." A template is a file that contains Pandoc's template syntax to allow Pandoc to insert your Markdown documents into that template. A reference document is just that: a *reference* from which Pandoc can *copy* styles to populate a new file with.
-
-    Almost all export formats use templates, with the exception being complex binary formats. Currently, this includes Word files, LibreOffice files, and Powerpoint presentations. Read more in Pandoc's [template documentation](https://pandoc.org/MANUAL.html#templates).
+Almost all export formats use templates, with the exception being complex binary formats. Currently, this includes Word files, LibreOffice files, and Powerpoint presentations. Read more in Pandoc's [template documentation](https://pandoc.org/MANUAL.html#templates).
+:::
 
 ## About Custom Templates and Reference Documents
 
@@ -28,9 +28,9 @@ Each custom template roughly consists of at least two, sometimes three files, wh
 2. A profile that uses this template.
 3. Optional: Especially if you define many custom variables for a template, it is a good idea to create a snippet to go alongside the template.
 
-!!! tip
-
-	For a full guide to taking an existing template, and adapting it for usage in Zettlr, see our [templating guide for journal submissions](../guides/journal-latex-template.md).
+::: tip
+For a full guide to taking an existing template, and adapting it for usage in Zettlr, see our [templating guide for journal submissions](../guides/journal-latex-template.md).
+:::
 
 Let's write your first LaTeX template, which can be done directly in Zettlr. When complete, your template file will be passed to Zettlr, Citeproc (if applicable), Pandoc, and then finally LaTeX. 
 
@@ -107,9 +107,9 @@ template: "/path/to/your/template.tex" # <-- new
 
 Surround the path to your template with quotation marks, just in case. Of course, depending on what is necessary to make the template work well, you may want to adapt further settings.
 
-!!! danger
-
-	As soon as you specify a `template` in a profile, do not specify a template in your project properties, and do not use this profile with a project that requires a custom template! If you specify a custom project template in the project properties, this will overwrite the template defined in your profile. That means that Zettlr will use the settings of your custom profile, but without the accompanying template, which will lead to unexpected results.
+::: danger
+As soon as you specify a `template` in a profile, do not specify a template in your project properties, and do not use this profile with a project that requires a custom template! If you specify a custom project template in the project properties, this will overwrite the template defined in your profile. That means that Zettlr will use the settings of your custom profile, but without the accompanying template, which will lead to unexpected results.
+:::
 
 ### Optional: Define a New Snippet for This Template
 
@@ -193,13 +193,13 @@ reference-doc: /path/to/your/custom-reference.docx
 
 You may change any additional settings as you wish and as is necessary for your custom export.
 
-!!! note
-
-	Windows users need to make sure of two things. First, be sure to use forward slashes (`/`) rather than backslashes (`\`) when specifying the location of your reference doc. Windows users should also place the file location in quotes, like so:
+::: note
+Windows users need to make sure of two things. First, be sure to use forward slashes (`/`) rather than backslashes (`\`) when specifying the location of your reference doc. Windows users should also place the file location in quotes, like so:
     
-    ```
-	reference-doc: "C:/Users/user/Documents/Custom Templates/custom-reference.docx"
-	```
+```
+reference-doc: "C:/Users/user/Documents/Custom Templates/custom-reference.docx"
+```
+:::
 
 ## Using Your Custom Template
 

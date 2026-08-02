@@ -32,9 +32,9 @@ This ID pattern will be used for new filenames, although you can adapt this in t
 
 If you like to give your files descriptive file names, but still want to add IDs to them, make sure that your file is focused and then press <kbd>Cmd/Ctrl</kbd>+<kbd>L</kbd> to generate a new ID and insert it at the cursor position.
 
-!!! tip
-
-	Zettlr recognizes IDs (using the ID pattern in the preferences) both in the filename and in the file’s content. The first ID found will take precedence. You can also generate IDs when using snippets by using the variable `$ZKN_ID`.
+::: tip
+Zettlr recognizes IDs (using the ID pattern in the preferences) both in the filename and in the file’s content. The first ID found will take precedence. You can also generate IDs when using snippets by using the variable `$ZKN_ID`.
+:::
 
 ## Linking Files
 
@@ -60,9 +60,9 @@ Zettlr supports link titles for such internal links. These are separated from th
 
 ![preferences_internal_links.png](../img/preferences_internal_links.png)
 
-!!! tip
-
-	Most systems that support internal links follow the common link-first-syntax. Only a few systems implement a title-first syntax. If you don't know which one to use, keep the setting at the recommended link-first syntax.
+::: tip
+Most systems that support internal links follow the common link-first-syntax. Only a few systems implement a title-first syntax. If you don't know which one to use, keep the setting at the recommended link-first syntax.
+:::
 
 The two additional settings help you determine how Zettlr will autocomplete your links. The setting “Always use the file title as label for internal links” means that Zettlr will automatically complete an internal link to `[[filename|file title]]` when you accept a suggestion. Otherwise, it will not add a title, and complete only to `[[filename]]`.
 

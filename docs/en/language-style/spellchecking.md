@@ -12,9 +12,9 @@ This section provides two central settings for spellchecking. First, it allows y
 
 You can activate multiple dictionaries if you write commonly in multiple languages.
 
-!!! tip
-
-	Zettlr will check each word against all of the active dictionaries. Only when no dictionary reports that a word is correct will Zettlr mark it as a spelling error.
+::: tip
+Zettlr will check each word against all of the active dictionaries. Only when no dictionary reports that a word is correct will Zettlr mark it as a spelling error.
+:::
 
 By default, Zettlr ships with several common dictionaries:
 
@@ -34,9 +34,9 @@ You can filter the list of available dictionaries by typing a search key into th
 
 As soon as you activate a dictionary with the checkbox in its row, Zettlr will load the dictionary and start checking your texts against it.
 
-!!! note
-
-	Loading a dictionary may take a moment. Especially larger ones may make the app briefly unresponsive.
+::: note
+Loading a dictionary may take a moment. Especially larger ones may make the app briefly unresponsive.
+:::
 
 ## Disable spellchecking
 

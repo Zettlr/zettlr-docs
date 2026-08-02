@@ -18,9 +18,9 @@ Autocorrect is essentially a replacement table. Zettlr will constantly scan your
 
 Zettlr comes with a variety of useful replacements predefined. This includes arrows, mathematical operators, and common fractions.
 
-!!! tip
-
-	Being able to replace simple ASCII-characters like three dots (`...`) with the correct ellipsis symbol (`…`) is useful especially on Windows, where inserting special typographical symbols usually requires a number block and ALT-codes.
+::: tip
+Being able to replace simple ASCII-characters like three dots (`...`) with the correct ellipsis symbol (`…`) is useful especially on Windows, where inserting special typographical symbols usually requires a number block and ALT-codes.
+:::
 
 Autocorrect can be finetuned to your needs. First, Autocorrect will *always* replace a sequence of characters *only* if you type a space or insert a newline. This is meant to prevent aggressive autocorrect in instances where this would not be appropriate.
 
@@ -54,9 +54,9 @@ Many authors write in at least two different languages. For these users, it is c
 
 To use it, you need to enable the status bar. The status bar includes a control for Magic Quotes which shows you the currently active quotation marks. To switch them quickly, click the control and select your language from the list.
 
-!!! note
-
-	The status bar is intended to switch quotation marks quickly. This means that you cannot change primary and secondary quotation marks independently.
+::: note
+The status bar is intended to switch quotation marks quickly. This means that you cannot change primary and secondary quotation marks independently.
+:::
 
 ### Turning Magic Quotes into Regular Quotes
 

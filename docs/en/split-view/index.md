@@ -41,9 +41,9 @@ Zettlr does not allow empty split views, to remove a split view, you can simply 
 
 To close a split element with various open documents, you can also right-click on an empty spot on its document tab bar, and select “Close leaf.”
 
-!!! note
-
-	Since the split view is more a concept to organize documents, and less a specific "thing," terms can get confusing. What we call "Split View" usually means the entirety of all split elements. You can also call individual split elements "panes," since that is how we call them internally.
+::: note
+Since the split view is more a concept to organize documents, and less a specific "thing," terms can get confusing. What we call "Split View" usually means the entirety of all split elements. You can also call individual split elements "panes," since that is how we call them internally.
+:::
 
 ## Resizing Split Views
 
