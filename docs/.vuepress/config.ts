@@ -4,6 +4,7 @@ import { defineUserConfig } from "vuepress"
 import { searchPlugin } from "@vuepress/plugin-search"
 import { redirectPlugin } from "@vuepress/plugin-redirect"
 import { GitContributorInfo } from "@vuepress/plugin-git"
+import { noticePlugin } from '@vuepress/plugin-notice'
 import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import configEn from "../../config/en.config"
 import configDe from "../../config/de.config"
@@ -116,6 +117,34 @@ export default defineUserConfig({
       localeConfig: {
         "/en/": ["en-US", "en-UK", "en"]
       }
+    }),
+    // Display a notice on all community translations to inform users that the
+    // English one is the reference.
+    noticePlugin({
+      config: [
+        {
+          // Matches all paths that don't start with /en/
+          match: /^(?!^\/en\/).+/,
+          title: 'Community Translation',
+          contentType: "markdown",
+          content: `This is a **community** translation of the official English documentation.
+This means that its contents could be only partially translated, or outdated. If in doubt, always
+consult the official, English documentation, which is being maintained by the development team directly.`,
+          confirm: true, // Make them actually click one of the buttons
+          fullscreen: true, // Overlay mode
+          // The next two settings ensure that this warning will only be shown once.
+          key: "community-translation-notice",
+          showOnce: true,
+          actions: [
+            {
+              text: 'Switch to English',
+              link: '/en/',
+              type: 'default',
+            },
+            { text: 'Ok', type: "primary" },
+          ],
+        },
+      ]
     })
   ]
 })

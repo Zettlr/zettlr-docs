@@ -1372,6 +1372,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vuepress/plugin-notice@npm:^2.0.0-rc.131":
+  version: 2.0.0-rc.131
+  resolution: "@vuepress/plugin-notice@npm:2.0.0-rc.131"
+  dependencies:
+    "@vuepress/helper": "npm:2.0.0-rc.131"
+    "@vueuse/core": "npm:^14.3.0"
+    chokidar: "npm:^5.0.0"
+    vue: "npm:^3.5.39"
+  peerDependencies:
+    vuepress: 2.0.0-rc.30
+  checksum: 10c0/43938b7348ce33e5cd04aef4c391f53a584b6c6a2e0f21511efed93c6339b32f27643778bc94bb68a2417a4e9c8c6835b21bc2ff92d04c73c30ad1093b8e2431
+  languageName: node
+  linkType: hard
+
 "@vuepress/plugin-nprogress@npm:2.0.0-rc.131":
   version: 2.0.0-rc.131
   resolution: "@vuepress/plugin-nprogress@npm:2.0.0-rc.131"
@@ -4005,6 +4019,7 @@ __metadata:
   dependencies:
     "@vuepress/bundler-vite": "npm:^2.0.0-rc.31"
     "@vuepress/plugin-markdown-math": "npm:^2.0.0-rc.132"
+    "@vuepress/plugin-notice": "npm:^2.0.0-rc.131"
     "@vuepress/plugin-redirect": "npm:^2.0.0-rc.131"
     "@vuepress/plugin-search": "npm:^2.0.0-rc.131"
     "@vuepress/theme-default": "npm:^2.0.0-rc.132"
