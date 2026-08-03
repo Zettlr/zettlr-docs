@@ -13,6 +13,12 @@ import { markdownPreviewPlugin } from '@vuepress/plugin-markdown-preview'
 // Language configuration
 import configEn from "../../config/en.config"
 import configDe from "../../config/de.config"
+import configES from "../../config/es.config"
+import configFR from "../../config/fr.config"
+import configIT from "../../config/it.config"
+import configJA from "../../config/ja.config"
+import configPT from "../../config/pt.config"
+import configRU from "../../config/ru.config"
 
 export default defineUserConfig({
   title: "Zettlr Documentation",
@@ -24,7 +30,13 @@ export default defineUserConfig({
     docsRepo: "Zettlr/zettlr-docs",
     locales: {
       ...configEn,
-      ...configDe
+      ...configDe,
+      ...configES,
+      ...configFR,
+      ...configIT,
+      ...configJA,
+      ...configPT,
+      ...configRU
     },
     themePlugins: {
       activeHeaderLinks: true,
@@ -106,11 +118,41 @@ export default defineUserConfig({
       title: 'Zettlr Documentation',
       description: 'The official documentation for the Zettlr Markdown editor. Available in multiple languages.',
     },
+    '/es/': {
+      lang: 'es-ES',
+      title: 'Documentación de Zettlr',
+      description: 'La documentación oficial del editor Markdown Zettlr, disponible en múltiples idiomas.'
+    },
     '/de/': {
       lang: 'de-DE',
       title: 'Zettlr Handbuch',
       description: 'Die offizielle Dokumentation für den Zettlr Markdown-Editor. Verfügbar in mehreren Sprachen.',
-    }
+    },
+    '/fr/': {
+      lang: 'fr-FR',
+      title: 'Documentation Zettlr',
+      description: 'La documentation officielle de l\'éditeur Markdown Zettlr. Disponible en plusieurs langues.',
+    },
+    '/it/': {
+      lang: 'it-IT',
+      title: 'Documentazione Zettlr',
+      description: 'La documentazione ufficiale dell\'editor Markdown Zettlr. Disponibile diverse lingue.',
+    },
+    '/ja/': {
+      lang: 'ja-JP',
+      title: 'Zettlr のドキュメント',
+      description: 'Zettlr Markdown エディタの公式ドキュメントです。複数の言語でご利用いただけます。',
+    },
+    '/pt/': {
+      lang: 'pt-PT',
+      title: 'Documentação Zettlr',
+      description: 'A documentação oficial do editor Markdown Zettl. Disponível em diversos idiomas.',
+    },
+    '/ru/': {
+      lang: 'ru-RU',
+      title: 'Документация Zettlr',
+      description: 'Официальная документация для редактора Markdown Zettel. Доступна на многих языках.',
+    },
   },
   plugins: [
     searchPlugin({ maxSuggestions: 10 }),

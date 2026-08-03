@@ -1,5 +1,6 @@
 import { DefaultThemeLocaleData, NavbarOptions, SidebarOptions } from "@vuepress/theme-default"
 import { LocaleConfig } from "vuepress"
+import sharedOptions from "../docs/.vuepress/shared-locale.config"
 
 // Top navbar options (shown above sidebar on mobile)
 const navbar: NavbarOptions = [
@@ -37,44 +38,34 @@ const navbar: NavbarOptions = [
 // Sidebar (shown to the side; always shows the current page's ToC at the correct place)
 const sidebar: SidebarOptions = [
   {
+    text: "Welcome",
+    link: "/en/index.md"
+  },
+  {
     text: "Getting started",
+    prefix: "/en/getting-started/",
     collapsible: true,
     children: [
-      {
-        text: "Getting started",
-        prefix: "/en/getting-started/",
-        link: "/en/getting-started/setup.md",
-        children: [
-          "setup.md",
-          "migrating-from-obsidian.md",
-          "migrating.md",
-          "installing-latex.md",
-          "a-note-on-security.md",
-          "get-involved.md",
-          "troubleshooting.md",
-        ]
-      },
-      {
-        text: "First Time Users",
-        prefix: "/en/first-time-users/",
-        link: "/en/first-time-users/first-steps.md",
-        children: [
-          "first-steps.md",
-          "workspaces.md",
-          "creating-files-and-folders",
-          "writing-markdown.md",
-          "import.md",
-          "exporting-files.md"
-        ]
-      },
-      {
-        text: "More",
-        prefix: "/en/reference/",
-        link: "/en/reference/faq.md",
-        children: [
-          "faq.md"
-        ]
-      }
+        "setup.md",
+        "migrating-from-obsidian.md",
+        "migrating.md",
+        "installing-latex.md",
+        "a-note-on-security.md",
+        "get-involved.md",
+        "troubleshooting.md",
+    ]
+  },
+  {
+    text: "First Time Users",
+    prefix: "/en/first-time-users/",
+    collapsible: true,
+    children: [
+      "first-steps.md",
+      "workspaces.md",
+      "creating-files-and-folders",
+      "writing-markdown.md",
+      "import.md",
+      "exporting-files.md"
     ]
   },
   {
@@ -198,41 +189,31 @@ const sidebar: SidebarOptions = [
   {
     text: "Guides",
     collapsible: true,
+    prefix: "/en/guides/",
+    link: "/en/guides/index.md",
     children: [
-      {
-        text: "Guides",
-        prefix: "/en/guides/",
-        link: "/en/guides/index.md",
-        children: [
-          "custom-css.md",
-          "reference-manager-integration.md",
-          "languagetool-local.md",
-          "presentations.md",
-          "journal-latex-template.md",
-          "portable.md"
-        ]
-      },
+      "custom-css.md",
+      "reference-manager-integration.md",
+      "languagetool-local.md",
+      "presentations.md",
+      "journal-latex-template.md",
+      "portable.md"
     ]
   },
   {
     text: "Reference",
     collapsible: true,
+    prefix: "/en/reference/",
+    link: "/en/reference/index.md",
     children: [
+      "keyboard-shortcuts.md",
+      "settings.md",
       {
-        text: "Reference",
-        prefix: "/en/reference/",
-        link: "/en/reference/index.md",
-        children: [
-          "keyboard-shortcuts.md",
-          "settings.md",
-          {
-            text: "Frequently Asked Questions",
-            link: "faq.md"
-          }
-        ]
-      },
+        text: "Frequently Asked Questions",
+        link: "faq.md"
+      }
     ]
-  }
+  },
 ]
 
 // This is the theme localization. Provide both a navigation bar and sidebar
@@ -245,7 +226,7 @@ export default {
   // This must be the language part of the URL (e.g., /en/). It should be a two-
   // letter language abbreviation surrounded by forward slashes.
   '/en/': {
-    colorMode: 'auto', // Automatic theme
+    ...sharedOptions,
     // Both navbar and sidebar should show the same contents
     // NOTE: We have to explicitly cast the navigation for the navbar since it
     // contains "collapsible" options, which the navbar type doesn't include,

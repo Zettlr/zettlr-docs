@@ -5,26 +5,26 @@ import sharedOptions from "../docs/.vuepress/shared-locale.config"
 // Top navbar options (shown above sidebar on mobile)
 const navbar: NavbarOptions = [
   {
-    text: "Installation",
-    link: "/de/install.md"
+    text: "Instalación",
+    link: "/es/install.md"
   },
   {
-    text: "Hilfe",
-    link: "/en/getting-started/troubleshooting.md"
+    text: "Solución de problemas",
+    link: "/es/troubleshooting.md"
   },
   {
-    text: "FAQ",
-    link: "/en/reference/faq.md"
+    text: "Preguntas frecuentes",
+    link: "/es/faq.md"
   },
   {
     text: "Zettlr",
     children: [
       {
-        text: "Über Zettlr",
+        text: "Acerca de Zettlr",
         link: "https://www.zettlr.com/"
       },
       {
-        text: "Zettlr herunterladen",
+        text: "Descargar Zettlr",
         link: "https://www.zettlr.com/download"
       },
       {
@@ -36,41 +36,66 @@ const navbar: NavbarOptions = [
 ]
 
 // Sidebar (shown to the side; always shows the current page's ToC at the correct place)
+// Note: Assuming the SidebarOptions type structure remains the same.
+
 const sidebar: SidebarOptions = [
   {
-    text: "Willkommen",
-    link: "/de/index.md"
+    text: "Bienvenida",
+    collapsible: false,
+    link: "/es/index.md",
   },
   {
-    text: "Start",
+    text: "Primeros pasos",
     collapsible: true,
-    prefix: "/de/",
+    link: "/es/install.md",
     children: [
       "install.md",
-      "5-minutes.md",
+      "portable.md",
+      "installing-latex.md",
+      "get-started.md",
       "get-involved.md",
-      "faq.md"
+      "faq.md",
+      "troubleshooting.md"
     ]
   },
   {
-    text: "Zentrale Komponenten",
+    text: "Conceptos",
     collapsible: true,
-    prefix: "/de/core/",
+    prefix: "/es/concepts/",
+    children: [
+      "workspaces.md",
+      "context.md",
+      "wysiwym.md"
+    ]
+  },
+  {
+    text: "Núcleo",
+    collapsible: true,
+    prefix: "/es/core/",
     children: [
       "editor.md",
-      "file-list.md",
+      "tabs.md",
+      "file-manager.md",
+      "assets-manager.md",
+      "defaults-files.md",
+      "custom-css.md",
+      "snippets.md",
+      "autocorrect.md",
       "search.md",
+      "import.md",
       "export.md",
       "tables.md",
-      "custom-css.md",
       "localisation.md",
-      "attachments.md"
+      "sidebar.md",
+      "yaml-frontmatter.md",
+      "print-preview.md",
+      "math.md"
     ]
   },
   {
-    text: "Wissenschaftliche Werkzeuge",
+    text: "Herramientas académicas",
     collapsible: true,
-    prefix: "/de/academic/",
+    prefix: "/es/academic/",
     children: [
       "citations.md",
       "projects.md",
@@ -82,21 +107,11 @@ const sidebar: SidebarOptions = [
     ]
   },
   {
-    text: "Anleitungen",
+    text: "Referencias",
     collapsible: true,
-    prefix: "/de/guides/",
+    prefix: "/es/reference",
     children: [
-      "guide-notes.md",
-      "guide-zettelkasten.md",
-      "guide-ide.md"
-    ]
-  },
-  {
-    text: "Referenz",
-    collapsible: true,
-    prefix: "/de/reference/",
-    children: [
-      "shortcuts.md",
+      "keyboard-shortcuts.md",
       "markdown-basics.md",
       "settings.md",
       "spell-checking.md"
@@ -113,36 +128,34 @@ const sidebar: SidebarOptions = [
 export default {
   // This must be the language part of the URL (e.g., /en/). It should be a two-
   // letter language abbreviation surrounded by forward slashes.
-  '/de/': {
+  '/es/': {
     ...sharedOptions,
-    // Both navbar and sidebar should show the same contents
-    // NOTE: We have to explicitly cast the navigation for the navbar since it
-    // contains "collapsible" options, which the navbar type doesn't include,
-    // but which the code will just ignore.
+    // Both navbar and sidebar should show the some contents
+    // NOTE: We have to explicitly cast the navigation forthe navbar since it
+    // contains "collapsible" options, which the navbar type doesn's include,
+    // but which the code will just ignore
     navbar,
     sidebar,
     // Language selector
-    selectLanguageName: 'Deutsch',
-    selectLanguageText: 'Sprache',
-    selectLanguageAriaLabel: 'Sprache',
+    selectLanguageName: 'Español',
+    selectLanguageText: 'Idioma',
+    selectLanguageAriaLabel: 'Idioma',
     // page meta
-    editLinkText: 'Auf GitHub bearbeiten',
-    lastUpdatedText: 'Zuletzt bearbeitet',
-    contributorsText: 'Mitwirkende',
+    editLinkText: 'Editar en GitHub',
+    lastUpdatedText: 'Última actualización',
+    contributorsText: 'Colaboradores',
     // custom containers
-    tip: 'Tip',
-    warning: 'Warnung',
-    danger: 'Achtung',
+    tip: 'Consejo',
+    warning: 'Advertencia',
+    danger: 'Peligro',
     // 404 page
     notFound: [
-      'Die gewünschte Seite wurde leider nicht gefunden.',
+      'Esta página no fue encontrada.',
     ],
-    backToHome: 'Zur Startseite',
+    backToHome: 'Volver al inicio',
     // a11y
-    openInNewWindow: 'In neuem Fenster öffnen',
-    toggleColorMode: 'Thema',
-    toggleSidebar: 'Seitenleiste',
-    prev: "Zurück",
-    next: "Weiter"
+    openInNewWindow: 'Abrir en una nueva ventana',
+    toggleColorMode: 'Tema',
+    toggleSidebar: 'Barra lateral',
   }
 } satisfies LocaleConfig<DefaultThemeLocaleData>

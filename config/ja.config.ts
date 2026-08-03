@@ -5,26 +5,26 @@ import sharedOptions from "../docs/.vuepress/shared-locale.config"
 // Top navbar options (shown above sidebar on mobile)
 const navbar: NavbarOptions = [
   {
-    text: "Installation",
-    link: "/de/install.md"
+    text: "インストール",
+    link: "/ja/install.md"
   },
   {
-    text: "Hilfe",
-    link: "/en/getting-started/troubleshooting.md"
+    text: "トラブルシューティング",
+    link: "/ja/troubleshooting.md"
   },
   {
-    text: "FAQ",
-    link: "/en/reference/faq.md"
+    text: "よくある質問",
+    link: "/ja/faq.md"
   },
   {
     text: "Zettlr",
     children: [
       {
-        text: "Über Zettlr",
+        text: "Zettlrについて",
         link: "https://www.zettlr.com/"
       },
       {
-        text: "Zettlr herunterladen",
+        text: "Zettlrのダウンロード",
         link: "https://www.zettlr.com/download"
       },
       {
@@ -38,39 +38,63 @@ const navbar: NavbarOptions = [
 // Sidebar (shown to the side; always shows the current page's ToC at the correct place)
 const sidebar: SidebarOptions = [
   {
-    text: "Willkommen",
-    link: "/de/index.md"
+    text: "ようこそ",
+    collapsible: true,
+    prefix: "/ja/",
+    link: "/ja/index.md"
   },
   {
-    text: "Start",
+    text: "最初のステップ",
     collapsible: true,
-    prefix: "/de/",
+    prefix: "/ja",
     children: [
       "install.md",
-      "5-minutes.md",
+      "portable.md",
+      "installing-latex.md",
+      "get-started.md",
       "get-involved.md",
-      "faq.md"
+      "faq.md",
+      "troubleshooting.md"
     ]
   },
   {
-    text: "Zentrale Komponenten",
+    text: "概念",
+    prefix: "/ja/concepts/",
     collapsible: true,
-    prefix: "/de/core/",
+    children: [
+      "workspaces.md",
+      "context.md",
+      "wysiwym.md"
+    ]
+  },
+  {
+    text: "主要機能",
+    prefix: "/ja/core/",
+    collapsible: true,
     children: [
       "editor.md",
-      "file-list.md",
+      "tabs.md",
+      "file-manager.md",
+      "assets-manager.md",
+      "defaults-files.md",
+      "custom-css.md",
+      "snippets.md",
+      "autocorrect.md",
       "search.md",
+      "import.md",
       "export.md",
       "tables.md",
-      "custom-css.md",
       "localisation.md",
-      "attachments.md"
+      "sidebar.md",
+      "yaml-frontmatter.md",
+      "print-preview.md",
+      "math.md"
     ]
   },
   {
-    text: "Wissenschaftliche Werkzeuge",
+    text: "学術ツール",
     collapsible: true,
-    prefix: "/de/academic/",
+    prefix: "/ja/academic/",
     children: [
       "citations.md",
       "projects.md",
@@ -82,26 +106,16 @@ const sidebar: SidebarOptions = [
     ]
   },
   {
-    text: "Anleitungen",
+    text: "参考資料",
     collapsible: true,
-    prefix: "/de/guides/",
+    prefix: "/ja/reference/",
     children: [
-      "guide-notes.md",
-      "guide-zettelkasten.md",
-      "guide-ide.md"
-    ]
-  },
-  {
-    text: "Referenz",
-    collapsible: true,
-    prefix: "/de/reference/",
-    children: [
-      "shortcuts.md",
+      "keyboard-shortcuts.md",
       "markdown-basics.md",
       "settings.md",
       "spell-checking.md"
     ]
-  }
+  },
 ]
 
 // This is the theme localization. Provide both a navigation bar and sidebar
@@ -113,7 +127,7 @@ const sidebar: SidebarOptions = [
 export default {
   // This must be the language part of the URL (e.g., /en/). It should be a two-
   // letter language abbreviation surrounded by forward slashes.
-  '/de/': {
+  '/ja/': {
     ...sharedOptions,
     // Both navbar and sidebar should show the same contents
     // NOTE: We have to explicitly cast the navigation for the navbar since it
@@ -122,27 +136,25 @@ export default {
     navbar,
     sidebar,
     // Language selector
-    selectLanguageName: 'Deutsch',
-    selectLanguageText: 'Sprache',
-    selectLanguageAriaLabel: 'Sprache',
+    selectLanguageName: '日本語',
+    selectLanguageText: '言語',
+    selectLanguageAriaLabel: '言語',
     // page meta
-    editLinkText: 'Auf GitHub bearbeiten',
-    lastUpdatedText: 'Zuletzt bearbeitet',
-    contributorsText: 'Mitwirkende',
+    editLinkText: 'GitHubで編集する',
+    lastUpdatedText: '最終更新日',
+    contributorsText: '貢献者',
     // custom containers
-    tip: 'Tip',
-    warning: 'Warnung',
-    danger: 'Achtung',
+    tip: 'ヒント',
+    warning: '警告',
+    danger: '警告',
     // 404 page
     notFound: [
-      'Die gewünschte Seite wurde leider nicht gefunden.',
+      'このページは見つかりませんでした',
     ],
-    backToHome: 'Zur Startseite',
+    backToHome: 'ホームに戻る',
     // a11y
-    openInNewWindow: 'In neuem Fenster öffnen',
-    toggleColorMode: 'Thema',
-    toggleSidebar: 'Seitenleiste',
-    prev: "Zurück",
-    next: "Weiter"
+    openInNewWindow: '新しいウィンドウで開く',
+    toggleColorMode: 'テーマ',
+    toggleSidebar: 'サイドバー',
   }
 } satisfies LocaleConfig<DefaultThemeLocaleData>
