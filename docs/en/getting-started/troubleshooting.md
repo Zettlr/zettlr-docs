@@ -3,7 +3,7 @@
 Like any software, Zettlr might cause problems from time to time. This page contains instructions on how to resolve many of these issues, and also how to help the developers fix your issues faster, should they occur. We have years of experience, and as such the options listed below should work in most cases.
 
 ::: note
-Please attempt the steps listed here and consult [the FAQ](../reference/faq.md) first if you encounter any problems. If these steps do not solve your issue, please [ask our community](get-involved.md/#join-the-community). If our community cannot help you as well, please open an issue on GitHub. Read the instructions below to find out how to provide all information we need.
+Please attempt the steps listed here and consult [the FAQ](../reference/faq.md) first if you encounter any problems. If these steps do not solve your issue, please [ask our community](./get-involved.html#join-the-community). If our community cannot help you as well, please open an issue on GitHub. Read the instructions below to find out how to provide all information we need.
 :::
 
 ## 1. Try Turning it Off and On Again

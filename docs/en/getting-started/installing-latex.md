@@ -74,7 +74,7 @@ Most LaTeX features come in the form of packages. By default, minimal installati
 
 We recommend you don't install packages unless Zettlr complains during exports. If you are missing some package, Zettlr will give you one of two errors: either `Command \somecommand not defined` or `File somefile.sty not found`. In both cases it is likely that the command or file will be provided by a package. It's easy to install the missing packages using the following procedure.
 
-::: note
+::: tip
 On Windows, LaTeX will attempt to install the missing packages automatically and will ask you if it should do so. This means you only need to confirm a dialog. On macOS and Linux, you'll need to use the command line. More specifically, on macOS and Linux, you need to use a tool called `tlmgr` (TeXLive Manager).
 :::
 
@@ -85,5 +85,27 @@ On Windows, LaTeX will attempt to install the missing packages automatically and
 5. Then, try the export again. Repeat these steps until all missing packages are installed.
 
 ::: tip
-Sometimes, the CTAN search gives you no results for your searches. An alternative to searching CTAN directly is to use `tlmgr`. You can query which packages contain a file by calling `tlmgr info <filename>`. For example, say Zettlr displays an error message that reads "File `biblatex.sty' not found." You can then query `tlmgr` for this file by running `tlmgr info biblatex.sty`. It will provide you several search results, which includes the package `biblatex`. You can then proceed to install it by running `tlmgr install biblatex` and wait until the command has finished. Then, try exporting again.
+Sometimes, the CTAN search gives you no results for your searches. An alternative to searching CTAN directly is to use `tlmgr`. You can query which packages contain a file by running the `tlmgr info` command. For example, to search for the file "realscripts.sty," run the following:
+
+```bash
+tlmgr info realscripts.sty
+```
+
+This will output something along these lines:
+
+```
+tlmgr: cannot find package realscripts.sty,
+searching for other matches:
+
+Packages containing `realscripts.sty' in
+their title/description:
+
+Packages containing files matching `realscripts.sty':
+lwarp:
+	texmf-dist/tex/latex/lwarp/lwarp-realscripts.sty
+realscripts:
+	texmf-dist/tex/latex/realscripts/realscripts.sty
+```
+
+In this case, it will tell you that there are two packages that matched your search. In this case, you'd want to install the package `realscripts`.
 :::

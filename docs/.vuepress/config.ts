@@ -60,7 +60,10 @@ export default defineUserConfig({
       },
       linksCheck: true,
       prismjs: {
-        whitespace: "leading"
+        whitespace: "leading",
+        // Disable line numbers in code blocks globally. Enable individually
+        // with `:line-numbers`
+        lineNumbers: false
       },
       seo: {
         hostname: "docs.zettlr.com",
