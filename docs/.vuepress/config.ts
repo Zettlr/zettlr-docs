@@ -20,10 +20,45 @@ import configJA from "../../config/ja.config"
 import configPT from "../../config/pt.config"
 import configRU from "../../config/ru.config"
 
+const jsonLD = `{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zettlr",
+  "url": "https://www.zettlr.com",
+  "logo": "https://docs.zettlr.com/logo.png",
+  "sameAs": [
+    "https://www.twitter.com/zettlr",
+    "https://facebook.com/zettlrapp",
+    "https://www.youtube.com/channel/UCso4Cjcv5gNt9LVBEZWi1cw",
+    "https://www.linkedin.com/company/zettlr",
+    "https://github.com/Zettlr/"
+  ]
+}`
+
+const matomoTag = `var _paq = window._paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(["setDomains", ["*.docs.zettlr.com"]]);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+  var u="https://matomo.zettlr.com/";
+  _paq.push(['setTrackerUrl', u+'matomo.php']);
+  _paq.push(['setSiteId', '7']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();`
+
 export default defineUserConfig({
   title: "Zettlr Documentation",
   description: "The official documentation for the Zettlr Markdown editor. Available in multiple languages.",
   bundler: viteBundler(),
+  head: [
+    [ 'link', { rel: 'icon', type: 'image/png', sizes: '256x256', href: `/favicon.ico` } ],
+    [ 'meta', { name: 'application-name', content: 'Zettlr Documentation' } ],
+    [ 'meta', { name: 'theme-color', content: '#1cb27e' } ],
+    [ 'script', { type: 'application/ld+json' }, jsonLD ],
+    [ 'script', { type: 'text/javascript' }, matomoTag ],
+  ],
   theme: defaultTheme({
     logo: "/logo.png",
     logoAlt: "Zettlr Logo",
