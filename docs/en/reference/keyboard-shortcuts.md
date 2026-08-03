@@ -43,7 +43,7 @@ These shortcuts work when editing both Markdown files and code files.
 | Shortcut                                                                                   | Description                                                                                                                                     |
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | <kbd>Tab</kbd>, <kbd>Cmd/Ctrl</kbd>+<kbd>[</kbd>                                | Indent selection                                                                                                                                |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>\</kbd>                                 | Indent selection                                                                                                                                |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>\\</kbd>                                 | Indent selection                                                                                                                                |
 | <kbd>Shift</kbd>+<kbd>Tab</kbd>, <kbd>Cmd/Ctrl</kbd>+<kbd>]</kbd>               | Unindent selection                                                                                                                              |
 | <kbd>←</kbd>, <kbd>→</kbd>, <kbd>↑</kbd>, <kbd>↓</kbd>                                     | Move the cursor by one character or line                                                                                                        |
 | <kbd>Ctrl</kbd>+<kbd>←</kbd>, <kbd>Ctrl</kbd>+<kbd>→</kbd> (Win/Linux)                     | Move cursor to the next/previous syntactic element, or by one group of word- or non-word characters                                             |
@@ -84,8 +84,8 @@ These shortcuts work when editing both Markdown files and code files.
 | <kbd>Alt</kbd>+<kbd>L</kbd> (Win/Linux)                                                    | Select the current line                                                                                                                         |
 | <kbd>Ctrl</kbd>+<kbd>L</kbd> (macOS)                                                       | Select the current line                                                                                                                         |
 | <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>                               | Delete the current line                                                                                                                         |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd>                               | If the cursor touches a bracket, move to the matching bracket                                                                                   |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>\</kbd>                                                | Toggle comment                                                                                                                                  |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\\</kbd>                               | If the cursor touches a bracket, move to the matching bracket                                                                                   |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>\\</kbd>                                                | Toggle comment                                                                                                                                  |
 | <kbd>Alt</kbd>+<kbd>A</kbd> (Win/Linux)                                                    | Toggle a block-comment                                                                                                                          |
 | <kbd>Ctrl</kbd>+<kbd>M</kbd> (Win/Linux)                                                   | Toggle whether `Tab` can be used to tab away from the editor                                                                                    |
 | <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>M</kbd> (macOS)                                       | Toggle whether `Tab` can be used to tab away from the editor                                                                                    |
@@ -101,7 +101,7 @@ These shortcuts work when editing both Markdown files and code files.
 | <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>                               | Redo                                                                                                                                            |
 | <kbd>Cmd/Ctrl</kbd>+<kbd>U</kbd>                                                | Undo selection                                                                                                                                  |
 | <kbd>Alt</kbd>+<kbd>U</kbd> (Win/Linux)                                                    | Redo selection                                                                                                                                  |
-| <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd> (macOS)                                       | Redo selection                                                                                                                                  |
+| <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd> (macOS)                                       | Redo selection                                                                                                                                  |-->
 
 ## Markdown-specific shortcuts
 

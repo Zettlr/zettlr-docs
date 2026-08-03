@@ -8,7 +8,7 @@ Vous pouvez visionner une série de vidéos de présentation en suivant [ce lien
 
 > Le tutoriel interactif vous proposera d'installer Pandoc et LaTeX sur votre ordinateur. Zettlr dépend de ces programmes pour importer et exporter des fichiers. Sans Pandoc, vous ne pourrez exporter que des documents HTML et l'importation est désactivée. Sans LaTeX, vous ne pourrez pas exporter de fichiers PDF. Mais si vous n'avez pas l'intention d'importer ou d'exporter quoi que ce soit, vous n'en avez pas besoin - ils peuvent être installés à tout moment, si vous changez d'avis.
 
-![An impression of the application on first start on macOS](img/first_start.png)
+![An impression of the application on first start on macOS](./img/first_start.png)
 
 Toutes les fonctionnalités utilisées dans ce didacticiel sont décrites dans la documentation, donc si vous souhaitez en savoir plus sur elles, recherchez simplement la fonctionnalité ici. Il est recommandé de suivre le tutoriel lors de votre premier démarrage de l'application pour vous habituer à différents concepts tels que la barre latérale, l'arborescence des fichiers, les liens internes et les onglets de documents.
 

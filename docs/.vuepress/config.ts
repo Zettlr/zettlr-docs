@@ -121,7 +121,8 @@ export default defineUserConfig({
       localeConfig: {
         "/en/": ["en-US", "en-UK", "en"],
         "/de/": ["de-DE", "de-AT", "de-CH", "de"]
-      }
+      },
+      localeFallback: true,
     }),
     markdownExtPlugin({
       gfm: true,

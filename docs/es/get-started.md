@@ -8,7 +8,7 @@ Puedes ver una serie de videos introductorios siguiendo [este enlace a nuestra l
 
 > El tutorial interactivo sugerirá instalar LaTeX en su computador. Zettlr depende de LaTeX para la exportación avanzada de PDFs. Sin LaTeX sólo será capaz de hacer la exportación básica de PDFs. Si no necesita la exportación avanzada de  PDFs, no necesitará LaTeX. Puede ser instalado en cualquier momento, en caso de que cambie de parecer.
 
-![Una captura de pantalla de la aplicación en su primer arranque en  macOS](img/first_start.png)
+![Una captura de pantalla de la aplicación en su primer arranque en  macOS](./img/first_start.png)
 
 Todas estas características usadas en este tutorial se describen en esta documentación, así que en caso de que quiera leer más sobre ellas, simplemente busca la característica que necesitas aquí. Se recomienda que sigas el tutorial durante tu primer arranque de la aplicación para acostumbrarse a diferentes conceptos como la barra lateral, el árbol de archivos, los enlaces internos y las pestañas de documentos.
 

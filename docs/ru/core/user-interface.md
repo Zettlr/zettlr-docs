@@ -12,7 +12,7 @@ Within this documentation, you will mostly find screenshots of only one operatin
 
 Let us first have a look at the main application window. The screenshot shows the layout on macOS, but the position of the elements is the same on all other platforms.
 
-![Zettlr's main application window upon the first start](img/../../img/main_window_v3.png)
+![Zettlr's main application window upon the first start](./img/../../img/main_window_v3.png)
 
 Let us introduce the various components one by one.
 

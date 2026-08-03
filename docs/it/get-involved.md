@@ -27,7 +27,7 @@ Accettiamo ogni aiuto per tradurre il programma in tutte le lingue del pianeta. 
 
 Tradurre è semplice. Basta cliccare su qualsiasi lingua sulla pagina principale per vedere la lista di tutti gli identificativi e tutte le traduzioni esistenti:
 
-![Translation Keys](img/translations_list.png)
+![Translation Keys](./img/translations_list.png)
 
 Nella prima colonna è possibile vedere tutti gli ID delle traduzioni. Saranno per la gran parte piuttosto intuitivi. Se non sai da dove cominciare, guarda la traduzione in inglese e all'interno del programma, in modo da capire a quale elemento corrisponda ciascun ID.
 

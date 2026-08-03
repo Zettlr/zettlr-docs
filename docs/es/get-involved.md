@@ -26,7 +26,7 @@ Cualquier ayuda con la traducción de esta app en cualquier idioma del planeta e
 
 Traducir es simple.  Sólo dale click a cualquier idioma en  a página principal para ver la lista de todos los identificadores y traducciones existentes:
 
-![Claves de traducción](img/translations_list.png)
+![Claves de traducción](./img/translations_list.png)
 
 En el lado izquierdo verá los identificadores de traducción (o IDs). Serán principalmente auto explicativos. Si sumercé no sabe dónde empezar, simplemente dale una mirada a la traducción en inglés y a la de la app. Luego sabrá qué identificador de traducción corresponde a qué elemento.
 
