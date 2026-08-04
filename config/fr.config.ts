@@ -119,7 +119,12 @@ const sidebar: SidebarOptions = [
   }
 ]
 
-// This is the theme localization.
+// This is the theme localization. Provide both a navigation bar and sidebar
+// structure as well as localized strings for various GUI elements. Take a look
+// at the English config for a mostly comprehensive example, and consult the
+// documentation for the LocaleConfig of the VuePress default theme for more
+// information:
+// https://ecosystem.vuejs.press/themes/default/config.html#locale-config
 export const themeConfigFR: LocaleConfig<DefaultThemeLocaleData> = {
   // Updated language root
   '/fr/': {
@@ -150,6 +155,8 @@ export const themeConfigFR: LocaleConfig<DefaultThemeLocaleData> = {
   }
 }
 
+// This is the app's generic locale option. Provide general descriptions here,
+// using the same /xx/ prefix that you have provided to the theme config above.
 export const localeConfigFR: SiteLocaleConfig = {
   '/fr/': {
     lang: 'fr-FR',

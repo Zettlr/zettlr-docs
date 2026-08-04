@@ -147,6 +147,8 @@ export const themeConfigDE: LocaleConfig<DefaultThemeLocaleData> = {
   }
 }
 
+// This is the app's generic locale option. Provide general descriptions here,
+// using the same /xx/ prefix that you have provided to the theme config above.
 export const localeConfigDE: SiteLocaleConfig = {
   '/de/': {
     lang: 'de-DE',
