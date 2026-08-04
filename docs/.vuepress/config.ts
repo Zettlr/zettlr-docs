@@ -120,21 +120,7 @@ export default defineUserConfig({
           email: "info@zettlr.com"
         },
         autoDescription: true,
-        fallBackImage: undefined, // TODO
-        jsonLd: {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Zettlr",
-          "url": "https://www.zettlr.com",
-          "logo": "https://docs.zettlr.com/logo.png",
-          "sameAs": [
-            "https://www.twitter.com/zettlr",
-            "https://facebook.com/zettlrapp",
-            "https://www.youtube.com/channel/UCso4Cjcv5gNt9LVBEZWi1cw",
-            "https://www.linkedin.com/company/zettlr",
-            "https://github.com/Zettlr/"
-          ]
-        } as any
+        fallBackImage: undefined // TODO
       },
       sitemap: {
         hostname: "docs.zettlr.com",
