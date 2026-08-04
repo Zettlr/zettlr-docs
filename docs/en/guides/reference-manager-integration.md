@@ -2,11 +2,11 @@
 
 In this guide, we lead you through integrating Zettlr with Zotero, one of the most commonly used reference managers. The purpose of this guide is to enable you to cite in Zettlr and have these citations properly show up whenever you export a document or project.
 
-!!! tip
+::: tip
+Zettlr directly supports JabRef, because JabRef works on a plain citation database that you can directly import. The same holds true for BibTeX and BibLaTeX libraries, which are directly supported. This guide only applies for apps that use a database format, like Zotero.
 
-	Zettlr directly supports JabRef, because JabRef works on a plain citation database that you can directly import. The same holds true for BibTeX and BibLaTeX libraries, which are directly supported. This guide only applies for apps that use a database format, like Zotero.
-
-    While this guide specifically targets Zotero, similar steps apply to any other reference manager, too. Essentially, what you will need to do is find a way to export your reference library to a file format that Zettlr understands.
+While this guide specifically targets Zotero, similar steps apply to any other reference manager, too. Essentially, what you will need to do is find a way to export your reference library to a file format that Zettlr understands.
+:::
 
 ## Step 1: Install BetterBibTex
 
@@ -26,9 +26,9 @@ In the dialog that now appears, select as format “Better CSL JSON.” Make sur
 
 Next, Zotero will ask you for a location for this file. We recommend that you pick a folder that is easy to locate. Remember the choice you make.
 
-!!! note
-
-	You can also choose to export the library as either Better BibTeX or Better BibLaTeX. Those formats are also supported by Zettlr. CSL JSON is faster and easier to load, and that is why we recommend this format, unless you have a reason to choose BibTeX or BibLaTeX (e.g., for support with Overleaf).
+::: note
+You can also choose to export the library as either Better BibTeX or Better BibLaTeX. Those formats are also supported by Zettlr. CSL JSON is faster and easier to load, and that is why we recommend this format, unless you have a reason to choose BibTeX or BibLaTeX (e.g., for support with Overleaf).
+:::
 
 ## Step 3: Load your Library
 

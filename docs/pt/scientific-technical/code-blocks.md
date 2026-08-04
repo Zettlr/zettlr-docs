@@ -4,7 +4,7 @@ Como muitos outros editores baseados em Markdown, o Zettlr permite inserir códi
 
 ## Inserindo Blocos de Código
 
-Os blocos de código do Zettlr são simplesmente [Blocos de Código Protegidos](https://spec.commonmark.org/0.31.2/#fenced-code-blocks) de acordo com o CommonMark. Você pode inseri-los usando crases (<code>`</code>) ou tildes (`~`):
+Os blocos de código do Zettlr são simplesmente [Blocos de Código Protegidos](https://spec.commonmark.org/0.31.2/#fenced-code-blocks) de acordo com o CommonMark. Você pode inseri-los usando crases (<code>\`</code>) ou tildes (`~`):
 
 <!-- Note: Indended to ensure the backticks are rendered -->
     ```typescript

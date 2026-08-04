@@ -1,3 +1,8 @@
+---
+prev: ../first-time-users/exporting-files.md
+next: ./workspaces-root-files.md
+---
+
 # The File Manager
 
 The file manager is basically a built-in file browser (like Explorer or Finder) tuned to the needs of Zettlr. It is one of the core components of the app.

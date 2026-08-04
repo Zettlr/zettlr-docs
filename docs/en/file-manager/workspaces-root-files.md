@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Workspaces and Root Files
 
 The file manager first and foremost displays both workspaces and root files to you. For the most part, these work like files and folders within your workspaces. However, since workspaces and root files form the roots in the file manager, they expose some special behavior.

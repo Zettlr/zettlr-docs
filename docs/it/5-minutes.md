@@ -6,13 +6,13 @@ Okay, hai scaricato e installato il programma. Hai un cronometro e sei pronto pe
 
 Per aprire cartelle o file, basta trascinarli su qualsiasi parte della finestra del programma. Saranno aperti automaticamente. Puoi anche usare la combinazione di tasti`Cmd/Ctrl+O` per aprire la finestra di selezione della cartella, se risulta più rapido per il percorso che ti interessa.
 
-![open.png](img/open.png)
+![open.png](./img/open.png)
 
 ## 2. Crea file e cartelle
 
 Dopo aver aperto una cartella, avrai bisogno di un file. Usa la combinazione di tasti `Cmd/Ctrl+N` per creare un nuovo file. Digita un nome per il file, premi `Invio` e seleziona l'editor. Hai bisogno di una nuova cartella? Usa `Cmd/Ctrl+Shift+N`.
 
-![create.png](img/create.png)
+![create.png](./img/create.png)
 
 > Puoi aggiungere anche altri tipi di file, non solo files Markdown! Se non sei tu a digitare un'estensione, Zettlr aggiungerà per te l'estensione `.md`. Ma puoi anche creare files `.txt` e files `.tex`, devi solo digitare quelle estensioni! 
 
@@ -27,7 +27,7 @@ Scrivere tocca a te, ma ecco le più importanti combinazioni da tastiera da rico
 - `Cmd/Ctrl+J`: abilita la modalità senza-distrazioni
 - `Cmd/Ctrl+Alt+L`: cambia il tema tra le modalità chiara e scura
 
-![markdown.png](img/markdown.png)
+![markdown.png](./img/markdown.png)
 
 Altre comandi senza combinazioni, ma comunque importanti:
 
@@ -38,7 +38,7 @@ Altre comandi senza combinazioni, ma comunque importanti:
 ## 4. Che altro?
 Se usi la barra laterale in modalità sottile (la modalità di default), vedrai o l'elenco di file oppure l'albero delle cartelle. Sposta il cursore sull'angolo in alto a sinistra dell'elenco di file e clicca sulla freccia per mostrare l'albero delle cartelle. Per passare tra la lista dei file e l'albero delle cartelle puoi anche usare la combinazione `Cmd/Ctrl+!`. Scegli nelle Preferenze la modalità estesa della barra laterale per avere sempre visibili sia l'elenco dei file sia l'albero delle cartelle.
 
-![back.png](img/back.png)
+![back.png](./img/back.png)
 
 Zettlr è basato strettamente sul contesto. Se non altrimenti specificato, i nuovi file e cartelle saranno creati nella cartella in uso in quel momento. Le operazioni sui file (rinominare o cancellare) agiscono di default sul file in uso in un dato momento. Usa il menu contestuale usando il tasto destro su qualunque file o cartella per selezionare file/cartelle specifiche.
 
@@ -56,7 +56,7 @@ Tre semplici passaggi:
 2. Clicca il pulsante condividi nella barra degli strumenti (o usa `Cmd/Ctrl+E`) e selezione il formato di destinazione. Il simbolo dell'otturatore rivela le presentazioni (sono create usando reveal.js - capito il gioco di parole?)
 3. Subito dopo l'esportazione, Zettlr apre automaticamente il file esportato nel programma predefinito. Da lì, premi `Cmd/Ctrl+Shift+S` (dovrebbe funzionare nella gran parte dei programmi) per salvare il file dove vuoi.
 
-![export.png](img/export.png)
+![export.png](./img/export.png)
 
 ## 6. Ok, sono finiti i 5 minuti, c'è qualcos'altro?
 

@@ -4,15 +4,15 @@ After you have installed and started Zettlr for the very first time, you will be
 
 On this page we want to introduce you to the user interface of the application.
 
-!!! note
-
-    Within this documentation, you will mostly find screenshots of only one operating system. While the buttons and elements look differently depending on the platform, their location will always be the same. In case of serious deviations, we will note them as appropriate.
+::: note
+Within this documentation, you will mostly find screenshots of only one operating system. While the buttons and elements look differently depending on the platform, their location will always be the same. In case of serious deviations, we will note them as appropriate.
+:::
 
 ## The Main Application Window
 
 Let us first have a look at the main application window. The screenshot shows the layout on macOS, but the position of the elements is the same on all other platforms.
 
-![Zettlr's main application window upon the first start](img/../../img/main_window_v3.png)
+![Zettlr's main application window upon the first start](./img/../../img/main_window_v3.png)
 
 Let us introduce the various components one by one.
 
@@ -34,9 +34,9 @@ Next, you will see the [**pomodoro**](../advanced/pomodoro.md) counter that you 
 
 The last button will open the [**sidebar**](sidebar.md) that contains information on the current document, such as a table of contents, a list of references, and related files.
 
-!!! note
-
-    You can enable or disable most of the buttons that will be shown here in the preferences to tailor the toolbar to your needs.
+::: note
+You can enable or disable most of the buttons that will be shown here in the preferences to tailor the toolbar to your needs.
+:::
 
 ### File Manager
 
@@ -50,9 +50,9 @@ The file manager has three modes that you can choose in the preferences:
 
 At the top of the file manager, you can find a filter textbox that you can use to quickly search for files and folders inside your workspaces. You can search for any metadata here, including the file or folder name, the file title, or keywords you use inside your files. You can focus the textbox by pressing <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>.
 
-!!! tip
-
-    When the filter textbox is focused, you can use the arrow keys to navigate through your files. Once the correct file or folder is highlighted, press Enter to select or open it. You can quickly navigate through longer lists by holding down `Ctrl` or `Cmd`, or `Shift`.
+::: tip
+When the filter textbox is focused, you can use the arrow keys to navigate through your files. Once the correct file or folder is highlighted, press Enter to select or open it. You can quickly navigate through longer lists by holding down `Ctrl` or `Cmd`, or `Shift`.
+:::
 
 ### The Editor Area
 

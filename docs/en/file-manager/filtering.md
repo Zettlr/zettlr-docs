@@ -20,8 +20,8 @@ Another benefit you get when you focus the filter field is that you can navigate
 
 As soon as the filter field is focused – either by clicking into it, or by using the shortcut – you can start using the arrow keys on your keyboard to move between the shown items.
 
-Use the <kbd>Arrow Up</kbd> and <kbd>Arrow Down</kbd> keys to move from item to item.
+Use the <kbd>&uarr;</kbd> and <kbd>&darr;</kbd> keys to move from item to item.
 
-When you are on a folder, you can use the <kbd>Arrow Left</kbd> key to collapse the folder (hide its contents), or the <kbd>Arrow Right</kbd> key to expand the folder (show its contents). This does not work when you are actively filtering, only when you leave the filter field empty.
+When you are on a folder, you can use the <kbd>&larr;</kbd> key to collapse the folder (hide its contents), or the <kbd>&rarr;</kbd> key to expand the folder (show its contents). This does not work when you are actively filtering, only when you leave the filter field empty.
 
 When you are on a file, you can press <kbd>Enter</kbd> to open the file.

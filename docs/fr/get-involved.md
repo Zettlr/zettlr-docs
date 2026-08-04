@@ -25,7 +25,7 @@ Toute aide à la traduction de l'application dans toutes les langues de la plan�
 
 Traduire est simple. Il suffit de cliquer sur n'importe quelle langue sur la page principale pour voir la liste de tous les identifiants et de toutes les traductions existantes :
 
-![Clés de traduction](img/translations_list.png)
+![Clés de traduction](./img/translations_list.png)
 
 Sur le côté gauche, vous verrez tous les ID de traduction. Elles seront pour la plupart explicites. Si vous ne savez pas par où commencer, jetez simplement un coup d'œil à la traduction anglaise et à l'application. Vous saurez alors à quels éléments correspondent les ID de traduction.
 

@@ -1,3 +1,7 @@
+---
+next: ../pkms/index.md
+---
+
 # Lua Filters
 
 The final component that can help you customize your experience with Zettlr are custom Lua Filters. You can view and modify Lua filters in the [assets manager](./assets-manager.md).

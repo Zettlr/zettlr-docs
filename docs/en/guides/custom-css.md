@@ -1,10 +1,14 @@
+---
+prev: ./index.md
+---
+
 # Custom CSS
 
 Zettlr allows you to fully customize the app’s appearance using Custom CSS ([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)). You can find the Custom CSS editor in the [assets manager](../export/assets-manager.md).
 
-!!! warning
-
-    Custom CSS is a feature for advanced users only. There is no official support for customizations, and you perform any customizations at your own risk. Using Custom CSS requires knowledge of HTML and CSS.
+::: warning
+Custom CSS is a feature for advanced users only. There is no official support for customizations, and you perform any customizations at your own risk. Using Custom CSS requires knowledge of HTML and CSS.
+:::
 
 If you are unfamiliar with CSS, we recommend that you follow a short [tutorial on CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS). There are many guides on the internet, and a quick Google search can also provide you with video tutorials, if you prefer those.
 
@@ -30,9 +34,9 @@ Below the `body` element, you will first find a container `<div>` with ID `app`,
 
 Then, depending on which window you are targeting, there are various contents within this content-container. To find them, you will need the developer tools.
 
-!!! note
-
-	Because Zettlr's CSS may change at any time, we do not provide any specific examples for how these contents look, and instead will tell you how to identify what to change below.
+::: note
+Because Zettlr's CSS may change at any time, we do not provide any specific examples for how these contents look, and instead will tell you how to identify what to change below.
+:::
 
 ## Finding Selectors with the Developer Tools
 
@@ -48,9 +52,9 @@ Now, the app should look like this:
 
 On the left side, you can see the window contents, while on the right side, you can see the elements tab. You will see that there are two sections in this tab (depending on the size of the developer tools these two section may be stacked vertically): First, the HTML structure, starting with `<!DOCTYPE html>`, and then the styles. As you navigate through the HTML-structure and click elements, the style section will update to reflect the styles of the currently selected element.
 
-!!! tip
-
-	These developer tools are the same as the Chrome developer tools. To learn more about how they work, check out [Google's documentation](https://developer.chrome.com/docs/devtools/overview#elements).
+::: tip
+These developer tools are the same as the Chrome developer tools. To learn more about how they work, check out [Google's documentation](https://developer.chrome.com/docs/devtools/overview#elements).
+:::
 
 Since the tree-structure of HTML is not always visually obvious from the app’s layout, it is usually cumbersome to navigate through the elements page until you find the correct element. Instead, we recommend the following approach:
 
@@ -183,9 +187,9 @@ If you use dates in your file names (e.g., `2025-12-03 Meeting Notes` or `2025-1
 }
 ```
 
-!!! note
-
-	The font itself must provide tabular (fixed-width) numbers for this to work. Many modern fonts do.
+::: note
+The font itself must provide tabular (fixed-width) numbers for this to work. Many modern fonts do.
+:::
 
 ### Change the Active Line Styling in Typewriter Mode
 

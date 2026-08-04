@@ -48,10 +48,10 @@ Zettlr will also ensure that, if you insert footnotes in between two existing fo
 
 However, you do not have to use numbers. The only hard requirement for a footnote label is that it is unique. This means you can also provide keywords to your footnotes. Zettlr will leave such non-numerical footnotes alone when you insert a new numerical footnote with the shortcut.
 
-!!! note
+::: note
+Whenever you export your document(s), regardless of whether the footnotes use character or numerical labels, these footnotes will be exported using numerical labels.
+:::
 
-	Whenever you export your document(s), regardless of whether the footnotes use character or numerical labels, these footnotes will be exported using numerical labels.
-
-!!! warning
-
-	Especially for projects where you have multiple independent documents that are exported together, you will end up in a situation where footnote labels are duplicated after the documents are concatenated. Pandoc supports an option called `file-scope` that ensures that all footnotes are made unique before the documents are concatenated together.
+::: warning
+Especially for projects where you have multiple independent documents that are exported together, you will end up in a situation where footnote labels are duplicated after the documents are concatenated. Pandoc supports an option called `file-scope` that ensures that all footnotes are made unique before the documents are concatenated together.
+:::

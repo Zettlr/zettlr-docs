@@ -1,3 +1,8 @@
+---
+prev: ../language-style/readability.md
+next: ./math.md
+---
+
 # Scientific & Technical
 
 This section describes technical and scientific tools Zettlr provides.

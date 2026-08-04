@@ -30,45 +30,49 @@ Instead of using a tree-like appearance to display your files, the file list cre
 
 Imagine you have the following folder structure:
 
-* Papers
-    * First term paper
-        * Introduction.md
-        * Background.md
-        * Results.md
-        * Conclusion.md
-        * Notes.md
-    * Second term paper
-        * Notes.md
-    * Third term paper
-        * Notes.md
-* Courses
-    * Political Science 101
-        * Lecture Notes.md
-        * Literature List.md
-    * Sociology 201
-        * Lecture Notes.md
-        * Literature List.md
+::: file-tree
+- Papers
+  - First term paper
+    - Introduction.md
+    - Background.md
+    - Results.md
+    - Conclusion.md
+    - Notes.md
+  - Second term paper
+    - Notes.md
+  - Third term paper
+    - Notes.md
+- Courses
+  - Political Science 101
+    - Lecture Notes.md
+    - Literature List.md
+  - Sociology 201
+    - Lecture Notes.md
+    - Literature List.md
+:::
 
 The file list essentially **displays this same structure, but as a list**. This means that sub-folders (such as the term papers and course folders) will be listed one after another on the same level:
 
-* Papers
-* First term paper
-* Introduction.md
-* Background.md
-* Results.md
-* Conclusion.md
-* Notes.md
-* Second term paper
-* Notes.md
-* Third term paper
-* Notes.md
-* Courses
-* Political Science 101
-* Lecture Notes.md
-* Literature List.md
-* Sociology 201
-* Lecture Notes.md
-* Literature List.md
+::: file-tree
+- Papers
+- First term paper
+- Introduction.md
+- Background.md
+- Results.md
+- Conclusion.md
+- Notes.md
+- Second term paper
+- Notes.md
+- Third term paper
+- Notes.md
+- Courses
+- Political Science 101
+- Lecture Notes.md
+- Literature List.md
+- Sociology 201
+- Lecture Notes.md
+- Literature List.md
+:::
 
 ## Navigating the File List
 
@@ -76,30 +80,34 @@ This may be difficult to navigate. This is why you can **restrict the file list 
 
 If you, say, click on the folder “First term paper” in your file list, this tells the file list to only display that folder’s contents, which looks like this:
 
-* First term paper
-* Introduction.md
-* Background.md
-* Results.md
-* Conclusion.md
-* Notes.md
+::: file-tree
+- First term paper
+- Introduction.md
+- Background.md
+- Results.md
+- Conclusion.md
+- Notes.md
+:::
 
 If you now instead want to display **all** your papers, you can **hold down <kbd>Alt</kbd> to navigate up, instead of down** when you click a folder. So, <kbd>Alt</kbd>-clicking the folder name “First term paper” moves up one level and displays you the contents of the “Papers” folder instead:
 
-* Papers
-* First term paper
-* Introduction.md
-* Background.md
-* Results.md
-* Conclusion.md
-* Notes.md
-* Second term paper
-* Notes.md
-* Third term paper
-* Notes.md
+::: file-tree
+- Papers
+- First term paper
+- Introduction.md
+- Background.md
+- Results.md
+- Conclusion.md
+- Notes.md
+- Second term paper
+- Notes.md
+- Third term paper
+- Notes.md
+:::
 
-!!! tip
-
-	As you can see, navigating the file list resembles a form of "filtering." If you need to focus on a particular type of work, you can navigate "down" the file list until only those files that you care about are displayed. At the same time, if you need a broader overview over your projects, you can navigate "up" until you see all files you need.
+::: tip
+As you can see, navigating the file list resembles a form of "filtering." If you need to focus on a particular type of work, you can navigate "down" the file list until only those files that you care about are displayed. At the same time, if you need a broader overview over your projects, you can navigate "up" until you see all files you need.
+:::
 
 ## How the File List Sorts
 
@@ -116,17 +124,17 @@ The file list shows you all directories and files inside the directory that is c
 
 If you turned off the meta information, both directories and files will be shown as one-liners. If you display the *file information*, you will see additional information: directories will show you the amount of files and folders they contain. The files, on the other hand, show their last modification date, any tags, an ID, and more.
 
-!!! tip
-
-    You can toggle the file information via the "View" menu, by pressing `Cmd/Ctrl+Alt+S`, or the relevant setting in the preferences dialog under the General tab
+::: tip
+You can toggle the file information via the "View" menu, by pressing `Cmd/Ctrl+Alt+S`, or the relevant setting in the preferences dialog under the General tab
+:::
 
 ![The possible meta information of files](../img/file_meta.png)
 
 Additionally, you can traverse the directory tree within the file list by clicking on the directories. A simple click will select the directory and move further down the tree, while `Alt+Click` will select its parent directory. This is useful if you have to switch directories often, but prefer the thin mode of the sidebar and don't want to switch to the tree view repeatedly.
 
-!!! note
-
-    Within the file manager, you can perform most actions that you can also perform in your Explorer/Finder/file browser as you would expect it, such as opening, duplicating, creating, and removing files, dragging them around, and more.
+::: note
+Within the file manager, you can perform most actions that you can also perform in your Explorer/Finder/file browser as you would expect it, such as opening, duplicating, creating, and removing files, dragging them around, and more.
+:::
 
 ### File and Folder Properties
 
@@ -138,9 +146,9 @@ Each folder can be turned into a [Project](./projects.md) by clicking the switch
 
 ![Writing Targets Counter](../img/writing_targets.png)
 
-!!! tip
-
-    To remove the writing target from a file, simply set the writing counter to zero.
+::: tip
+To remove the writing target from a file, simply set the writing counter to zero.
+:::
 
 Both file and folder property popovers show you some general information, like the last modification time, their creation time, and their size.
 
@@ -148,9 +156,9 @@ Both file and folder property popovers show you some general information, like t
 
 Each time you select a directory, the file list will display _all_ files and folders in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the file tree into a one-dimensional list. The list will always change its contents whenever you select a different directory in the tree view.
 
-!!! tip
-
-    The list only displays all directories and files _within_ the currently selected directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your root, this is a powerful way to only have those files in the list that you actually need.
+::: tip
+The list only displays all directories and files _within_ the currently selected directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your root, this is a powerful way to only have those files in the list that you actually need.
+:::
 
 As the file list flattens your complex directory tree, it has to make some assumptions on how to adequately _display_ the files. Therefore the following rules help you distinguish where the files are actually present on your disk:
 
@@ -161,6 +169,6 @@ As the file list flattens your complex directory tree, it has to make some assum
 
 So what is important to remember is: All directories will be displayed as if they reside on the very same level; as if they weren't nested. To identify which directories contain which, please refer to the tree view.
 
-!!! tip
-
-    If you do not like the "natural" sorting of Zettlr (so that 10 comes after 2), you can switch to "ASCII" sorting in the General tab of the settings dialog (so that 2 comes after 10).
+::: tip
+If you do not like the "natural" sorting of Zettlr (so that 10 comes after 2), you can switch to "ASCII" sorting in the General tab of the settings dialog (so that 2 comes after 10).
+:::

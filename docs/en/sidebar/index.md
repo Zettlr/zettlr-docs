@@ -1,10 +1,15 @@
+---
+prev: ../split-view/pdf-viewer.md
+next: ./table-of-contents.md
+---
+
 # The Sidebar
 
 The sidebar is a context-sensitive element that displays relevant information and metadata for your current file. You can open it by using either the sidebar icon in the toolbar or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>0</kbd>.
 
-!!! note
-
-    Zettlr has – strictly speaking – two sidebars: The sidebar to the left is referred to as the [File Manager](../file-manager/index.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
+::: info Definition
+Zettlr has – strictly speaking – two sidebars: The sidebar to the left is referred to as the [File Manager](../file-manager/index.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
+:::
 
 The sidebar contains four tabs with metadata. These are (from left to right):
 
@@ -21,6 +26,6 @@ The last section contains files that reside within the currently selected direct
 
 You can determine which files are being listed here by adding the file extensions in the advanced preferences tab. Those file extensions are case-insensitive, so adding `.jpeg` will show `.jpeg` files as well as `.JPEG` and `.JpEg`.
 
-!!! tip
-
-    This tab is especially useful if you want to add some images to your Markdown files. Simply drag and drop them onto the editor, and Zettlr will make sure to wrap them in an image tag.
+::: tip
+This tab is especially useful if you want to add some images to your Markdown files. Simply drag and drop them onto the editor, and Zettlr will make sure to wrap them in an image tag.
+:::

@@ -2,11 +2,11 @@
 
 Ceci est la documentation officielle de Zettlr. Vous trouverez ici des descriptions détaillées de chaque fonctionnalité et comment vous pouvez les modifier en fonction de vos besoins. Consultez ce manuel chaque fois que vous êtes bloqué. Vous pouvez ouvrir ce manuel depuis l'application en appuyant sur « F1 » ou en cliquant sur l'élément de menu « Aide » &rarr; « Ouvrir le manuel d'utilisation » (connexion Internet requise).
 
-!!! note
+::: note
+Cette documentation est disponible en plusieurs langues. Vous pouvez sélectionner une autre langue à partir de la [page de destination principale](https://docs.zettlr.com/). Veuillez noter que ces traductions peuvent être incomplètes. En cas de doute, consultez toujours la version anglaise de la documentation, qui est régulièrement mise à jour.
 
-    Cette documentation est disponible en plusieurs langues. Vous pouvez sélectionner une autre langue à partir de la [page de destination principale](https://docs.zettlr.com/). Veuillez noter que ces traductions peuvent être incomplètes. En cas de doute, consultez toujours la version anglaise de la documentation, qui est régulièrement mise à jour.
-
-    Si vous avez des questions auxquelles cette documentation ne répond pas, voud pouvez consulter la [Foire aux questions](reference/faq.md) et interrogez la communauté sur [Discord](https://discord.gg/PcfS3DM9Xj), [Discussions GitHub](https://github.com/Zettlr/Zettlr/discussions) et [Reddit](https://www.reddit.com/r/Zettlr/). Nous proposons également une [chaîne YouTube](https://www.youtube.com/c/Zettlr/) où nous mettons occasionnellement en ligne des vidéos sur la façon d'utiliser l'application et les outils associés.
+Si vous avez des questions auxquelles cette documentation ne répond pas, voud pouvez consulter la [Foire aux questions](reference/faq.md) et interrogez la communauté sur [Discord](https://go.zettlr.com/discord), [Discussions GitHub](https://github.com/Zettlr/Zettlr/discussions) et [Reddit](https://www.reddit.com/r/Zettlr/). Nous proposons également une [chaîne YouTube](https://www.youtube.com/c/Zettlr/) où nous mettons occasionnellement en ligne des vidéos sur la façon d'utiliser l'application et les outils associés.
+:::
 
 ## Premiers pas avec Zettlr
 
@@ -33,4 +33,4 @@ Zettlr est un logiciel gratuit et open source, ce qui signifie que son code sour
 - Vous pouvez rejoindre la communauté sur [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.gg/PcfS3DM9Xj) et [GitHub Discussions](https : //github.com/Zettlr/Zettlr/discussions) et aider les nouveaux et autres utilisateurs.
 - Vous pouvez [résoudre les problèmes ouverts sur GitHub](https://github.com/Zettlr/Zettlr/issues) et aider à développer l'application elle-même (compte GitHub requis).
 
-Plus d’informations sur la façon de s’impliquer peuvent être trouvées [ici dans la documentation](getting-started/get-involved.md).
+Plus d’informations sur la façon de s’impliquer peuvent être trouvées [ici dans la documentation](get-involved.md).

@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Document Tab Bar
 
 Each individual split element has a tab bar on top of its file editor or viewer area. The document tab bar shows you directly which documents are currently open within this split element.

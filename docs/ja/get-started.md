@@ -8,7 +8,7 @@ Zettlrのセットアップが終わったら、すぐに使い始めたいこ�
 
 > 付属の対話的チュートリアルでは、コンピュータにLaTeXをインストールすることを勧めています。LaTeXは、Zettlrで高度なPDFファイル出力を行うために必要です。LaTeXが無い場合、基本的なPDFファイルのエクスポートしか行うことができません。高度なPDF出力を行うつもりがないならLaTeXは不要です。後で必要になったときに、いつでもインストールすることができます。
 
-![An impression of the application on first start on macOS](img/first_start.png)
+![An impression of the application on first start on macOS](./img/first_start.png)
 
 このチュートリアルで使われている機能は、すべてこのドキュメンテーションにも書かれているので、詳細を知りたい場合はここで探してください。アプリケーションを使い始める際にはチュートリアルに従って操作し、サイドバー、ファイルツリー、内部リンク、ドキュメントタブなどのコンセプトに慣れることをおすすめします。
 

@@ -38,9 +38,9 @@ Result:
 |----------|----------|
 | Cell B:A | Cell B:B |
 
-!!! note
-
-    The entire syntax for grid tables can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#extension-grid_tables). The syntax for pipe tables are located [here](https://pandoc.org/MANUAL.html#extension-pipe_tables).
+::: note
+The entire syntax for grid tables can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#extension-grid_tables). The syntax for pipe tables are located [here](https://pandoc.org/MANUAL.html#extension-pipe_tables).
+:::
 
 Specify the alignment of the table columns with colons (`:`). A single left colon or none specifies the default left-alignment, whereas a right colon specifies right alignment, and two colons specify centered alignment:
 
@@ -93,9 +93,9 @@ With the table editor, the above-mentioned table looks like this:
 
 ![A table as displayed by the table editor](../img/zettlr_table.png)
 
-!!! note
-
-	Due to the complexity of grid tables, and especially the ability to produce very complex layouts, the table editor only supports pipe tables.
+::: note
+Due to the complexity of grid tables, and especially the ability to produce very complex layouts, the table editor only supports pipe tables.
+:::
 
 ### Editing Tables
 

@@ -4,9 +4,9 @@ Zettlr features an integration with LanguageTool, an online service that not onl
 
 However, one reason why Zettlr contains a LanguageTool integration is because there is also the possibility to install the service locally on your computer in which case none of your text makes it out into the internet.
 
-!!! note
-
-    The following guide requires administrative permissions on your computer. Furthermore, approximately 1.5 GB of free disk space are required. You do not need technical knowledge to follow this guide.
+::: note
+The following guide requires administrative permissions on your computer. Furthermore, approximately 1.5 GB of free disk space are required. You do not need technical knowledge to follow this guide.
+:::
 
 ## Prerequisites
 

@@ -1,0 +1,33 @@
+{
+  "name": "zettlr-docs",
+  "description": "The official documentation for Zettlr",
+  "author": {
+    "name": "Hendrik Erz",
+    "email": "info@zettlr.com",
+    "url": "https://www.zettlr.com"
+  },
+  "homepage": "https://docs.zettlr.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zettlr/zettlr-docs.git"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "packageManager": "yarn@4.18.0",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.31",
+    "@vuepress/plugin-markdown-ext": "^2.0.0-rc.132",
+    "@vuepress/plugin-markdown-file-tree": "^2.0.0-rc.132",
+    "@vuepress/plugin-markdown-math": "^2.0.0-rc.132",
+    "@vuepress/plugin-markdown-preview": "^2.0.0-rc.132",
+    "@vuepress/plugin-notice": "^2.0.0-rc.131",
+    "@vuepress/plugin-redirect": "^2.0.0-rc.131",
+    "@vuepress/plugin-search": "^2.0.0-rc.131",
+    "@vuepress/theme-default": "^2.0.0-rc.132",
+    "katex": "^0.18.1",
+    "sass-embedded": "^1.100.0",
+    "vuepress": "^2.0.0-rc.31"
+  }
+}

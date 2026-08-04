@@ -1,12 +1,16 @@
+---
+next: ../language-style/index.md
+---
+
 # YAML Front Matter
 
 Like Pandoc, Zettlr supports YAML front matters for your Markdown files. A [YAML front matter](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block) is a series of meta-variables describing information of the document that normally is not part of the text contents themselves, such as authors, keywords, and a title.
 
 YAML front matters can be defined at the beginning of a file, by starting on the first line with three dashes (`---`) and ending the front matter either with three dashes or three dots (the former variant is more common). They contain valid YAML and can be used to define arbitrary variables. They come in handy for a variety of use cases.
 
-!!! tip
-
-    For a more concise documentation of what you can do with YAML front matters, please refer to the [Pandoc documentation](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block).
+::: tip
+For a more concise documentation of what you can do with YAML front matters, please refer to the [Pandoc documentation](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block).
+:::
 
 ## Defining a YAML Front Matter
 
@@ -27,17 +31,17 @@ author:
 ---
 ```
 
-!!! warning
-
-    Indentation matters for YAML code. You must use spaces, not tabs, and pay special attention to it.
+::: warning
+Indentation matters for YAML code. You must use spaces, not tabs, and pay special attention to it.
+:::
 
 ## Front Matters versus Defaults Files
 
 Front matters can be used to override defaults set by either Pandoc internally or one of the defaults files which Zettlr uses to export your files. For more information, make sure to read the [documentation on defaults files](../export/defaults-files.md) to avoid confusion!
 
-!!! tip
-
-    Head's up! You can specify variables either in a file's frontmatter, or in a default file (or export profile). If you specify a variable in the frontmatter, it is only valid for that file, but if you specify it in a profile, it is valid for all files you export with it. In a profile, you need to specify a front matter variable under the `metadata` key. Finally, there are variables that only have an effect in profiles, but not in front matters.
+::: tip
+Head's up! You can specify variables either in a file's frontmatter, or in a default file (or export profile). If you specify a variable in the frontmatter, it is only valid for that file, but if you specify it in a profile, it is valid for all files you export with it. In a profile, you need to specify a front matter variable under the `metadata` key. Finally, there are variables that only have an effect in profiles, but not in front matters.
+:::
 
 ## Important Front Matter Variables
 
@@ -45,13 +49,13 @@ The front matter serves to hold a lot of useful information for Zettlr and Pando
 
 For a full list of available variables and more instructions on how to use these variables, refer to the [section on metadata blocks](https://pandoc.org/MANUAL.html#metadata-blocks) in the Pandoc manual as well as the [manual for Pandoc citeproc](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md).
 
-!!! tip
+::: tip
+On this page we only list certain important variables for use with Pandoc, but YAML front matters are also supported by other engines, such as the [Jekyll static site generator](https://jekyllrb.com/docs/front-matter/). Therefore, if you plan to use a different tool to convert your Markdown files, you should consult their documentation for a list of available variables.
+:::
 
-    On this page we only list certain important variables for use with Pandoc, but YAML front matters are also supported by other engines, such as the [Jekyll static site generator](https://jekyllrb.com/docs/front-matter/). Therefore, if you plan to use a different tool to convert your Markdown files, you should consult their documentation for a list of available variables.
-
-!!! note
-
-	Often, the format of variables can change, even between templates. For example, the `author` variable may either take a list of strings, or objects with names, affiliations, and email addresses. Always consult the template or engine documentation to learn about the correct syntax.
+::: note
+Often, the format of variables can change, even between templates. For example, the `author` variable may either take a list of strings, or objects with names, affiliations, and email addresses. Always consult the template or engine documentation to learn about the correct syntax.
+:::
 
 ### `title`
 
@@ -76,9 +80,9 @@ author:
     affiliation: University Y
 ```
 
-!!! note
-
-    Note the indentation of the property `affiliation`: It aligns with the `name` property.
+::: note
+Note the indentation of the property `affiliation`: It aligns with the `name` property.
+:::
 
 ### `keywords` / `tags`
 
@@ -108,9 +112,9 @@ This variable can be used to include works in your list of reference that have n
 
 Use this variable to define a heading for your list of references. This has the same effect as when you end your document with a heading (e.g., `## References`).
 
-!!! note
-
-    It might make sense to define this variable in one of the export defaults files, since Pandoc will not add such a heading by default. In general, remember that all of the variables that are described here can also be defined in a defaults file so they apply to *every* such export.
+::: note
+It might make sense to define this variable in one of the export defaults files, since Pandoc will not add such a heading by default. In general, remember that all of the variables that are described here can also be defined in a defaults file so they apply to *every* such export.
+:::
 
 ### `notes-after-punctuation`
 

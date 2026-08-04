@@ -25,7 +25,7 @@ Ein inklusives Programm zu schreiben heißt auch, es für alle einfach zu machen
 
 Übersetzen ist sehr einfach. Auf Zettlr Translate kannst du einfach eine der Sprachen anwählen und siehst dann eine Liste mit allen Identifikationsnummern der einzelnen Zeichenketten:
 
-![Translation Keys](img/translations_list.png)
+![Translation Keys](./img/translations_list.png)
 
 Auf der linken Seite siehst du alle Übersetzungs-IDs sowie die englische Übersetzung als Hilfestellung. Meistens sind das schon alle Infos, die du brauchst. Wenn du dir nicht sicher bist, wo ein bestimmter String vorkommt, kannst du einfach die App anschauen. Meistens findest du die Infos dann sehr schnell.
 
