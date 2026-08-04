@@ -19,6 +19,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.31",
     "@vuepress/plugin-markdown-ext": "^2.0.0-rc.132",
+    "@vuepress/plugin-markdown-file-tree": "^2.0.0-rc.132",
     "@vuepress/plugin-markdown-math": "^2.0.0-rc.132",
     "@vuepress/plugin-markdown-preview": "^2.0.0-rc.132",
     "@vuepress/plugin-notice": "^2.0.0-rc.131",

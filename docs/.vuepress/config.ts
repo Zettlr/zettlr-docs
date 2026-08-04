@@ -10,6 +10,7 @@ import { noticePlugin } from '@vuepress/plugin-notice'
 import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { markdownExtPlugin } from '@vuepress/plugin-markdown-ext'
 import { markdownPreviewPlugin } from '@vuepress/plugin-markdown-preview'
+import { markdownFileTreePlugin } from "@vuepress/plugin-markdown-file-tree"
 // Language configuration
 import { localeConfigEN, themeConfigEN } from "../../config/en.config"
 import { localeConfigDE, themeConfigDE } from "../../config/de.config"
@@ -188,7 +189,8 @@ If in doubt, consult the official, English documentation, which is being maintai
           ],
         },
       ]
-    })
+    }),
+    markdownFileTreePlugin()
   ],
   // With the following, we override the original useNavbarSelectLanguage
   // composable from the default theme in order to deduplicate the double

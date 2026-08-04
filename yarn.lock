@@ -1363,6 +1363,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vuepress/plugin-markdown-file-tree@npm:^2.0.0-rc.132":
+  version: 2.0.0-rc.132
+  resolution: "@vuepress/plugin-markdown-file-tree@npm:2.0.0-rc.132"
+  dependencies:
+    "@types/markdown-it": "npm:^14.1.2"
+    "@vuepress/helper": "npm:2.0.0-rc.131"
+    "@vueuse/core": "npm:^14.3.0"
+    vue: "npm:^3.5.39"
+  peerDependencies:
+    vuepress: 2.0.0-rc.30
+  checksum: 10c0/4e9c79ffad772dfc854af917042eb406e5927bb549895ebc7204b01fcf063678905d7371d1088cd3be1dfbebbd6a49ef6120f73873665da25f5bec757975cefb
+  languageName: node
+  linkType: hard
+
 "@vuepress/plugin-markdown-hint@npm:2.0.0-rc.132":
   version: 2.0.0-rc.132
   resolution: "@vuepress/plugin-markdown-hint@npm:2.0.0-rc.132"
@@ -4117,6 +4131,7 @@ __metadata:
   dependencies:
     "@vuepress/bundler-vite": "npm:^2.0.0-rc.31"
     "@vuepress/plugin-markdown-ext": "npm:^2.0.0-rc.132"
+    "@vuepress/plugin-markdown-file-tree": "npm:^2.0.0-rc.132"
     "@vuepress/plugin-markdown-math": "npm:^2.0.0-rc.132"
     "@vuepress/plugin-markdown-preview": "npm:^2.0.0-rc.132"
     "@vuepress/plugin-notice": "npm:^2.0.0-rc.131"
