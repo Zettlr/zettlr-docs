@@ -1,5 +1,21 @@
 ---
-next: ./getting-started/setup.md
+home: true
+actions:
+  - text: Browse the documentation
+    link: /en/getting-started/setup.md
+  - text: First-time users
+    link: /en/first-time-users/first-steps.md
+  - text: FAQ
+    link: /en/reference/faq.md
+features:
+  - title: Comprehensive
+    details: The reference for working with Zettlr
+  - title: Multilingual
+    details: Perfect for any audience
+  - title: Community-driven
+    details: This documentation is the work of an entire community
+footer: '&copy; 2017–2026 Zettlr | <a href="https://www.zettlr.com">Homepage</a> | <a href="https://www.zettlr.com/download">Download</a>'
+footerHtml: true
 ---
 
 # Welcome
