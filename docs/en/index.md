@@ -18,6 +18,8 @@ features:
     details: This documentation lives from contributions from a large community.
 footer: '&copy; 2017–2026 Zettlr | <a href="https://www.zettlr.com">Homepage</a> | <a href="https://www.zettlr.com/download">Download</a>'
 footerHtml: true
+heroImage: /logo.png
+heroAlt: "Zettlr Logo"
 ---
 
 # Welcome
