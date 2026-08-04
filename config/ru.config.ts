@@ -1,5 +1,5 @@
 import { DefaultThemeLocaleData, NavbarOptions, SidebarOptions } from "@vuepress/theme-default"
-import { LocaleConfig } from "vuepress"
+import { LocaleConfig, SiteLocaleConfig } from "vuepress"
 import sharedOptions from "../docs/.vuepress/shared-locale.config"
 
 // Top navbar options (shown above sidebar on mobile)
@@ -170,4 +170,12 @@ export const themeConfigRU: LocaleConfig<DefaultThemeLocaleData> = {
     toggleColorMode: 'Тема',
     toggleSidebar: 'Боковая панель',
   }
+}
+
+export const localeConfigRU: SiteLocaleConfig = {
+  '/ru/': {
+    lang: 'ru-RU',
+    title: 'Документация Zettlr',
+    description: 'Официальная документация для редактора Markdown Zettel. Доступна на многих языках.',
+  },
 }

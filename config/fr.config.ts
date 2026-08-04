@@ -1,5 +1,5 @@
 import { DefaultThemeLocaleData, NavbarOptions, SidebarOptions } from "@vuepress/theme-default"
-import { LocaleConfig } from "vuepress"
+import { LocaleConfig, SiteLocaleConfig } from "vuepress"
 import sharedOptions from "../docs/.vuepress/shared-locale.config"
 
 // Top navbar options (shown above sidebar, using French translations)
@@ -149,3 +149,12 @@ export const themeConfigFR: LocaleConfig<DefaultThemeLocaleData> = {
     toggleSidebar: 'Barre latérale',
   }
 }
+
+export const localeConfigFR: SiteLocaleConfig = {
+  '/fr/': {
+    lang: 'fr-FR',
+    title: 'Documentation Zettlr',
+    description: 'La documentation officielle de l\'éditeur Markdown Zettlr. Disponible en plusieurs langues.',
+  },
+}
+

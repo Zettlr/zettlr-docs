@@ -1,5 +1,5 @@
 import { DefaultThemeLocaleData, NavbarOptions, SidebarOptions } from "@vuepress/theme-default"
-import { LocaleConfig } from "vuepress"
+import { LocaleConfig, SiteLocaleConfig } from "vuepress"
 import sharedOptions from "../docs/.vuepress/shared-locale.config"
 
 // Top navbar options (shown above sidebar on mobile)
@@ -145,4 +145,12 @@ export const themeConfigDE: LocaleConfig<DefaultThemeLocaleData> = {
     prev: "Zurück",
     next: "Weiter"
   }
+}
+
+export const localeConfigDE: SiteLocaleConfig = {
+  '/de/': {
+    lang: 'de-DE',
+    title: 'Zettlr Handbuch',
+    description: 'Die offizielle Dokumentation für den Zettlr Markdown-Editor. Verfügbar in mehreren Sprachen.',
+  },
 }

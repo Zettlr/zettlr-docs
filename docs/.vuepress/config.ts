@@ -11,14 +11,15 @@ import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { markdownExtPlugin } from '@vuepress/plugin-markdown-ext'
 import { markdownPreviewPlugin } from '@vuepress/plugin-markdown-preview'
 // Language configuration
-import { themeConfigEN } from "../../config/en.config"
-import { themeConfigDE } from "../../config/de.config"
-import { themeConfigES } from "../../config/es.config"
-import { themeConfigFR } from "../../config/fr.config"
-import { themeConfigIT } from "../../config/it.config"
-import { themeConfigJA } from "../../config/ja.config"
-import { themeConfigPT } from "../../config/pt.config"
-import { themeConfigRU } from "../../config/ru.config"
+import { localeConfigEN, themeConfigEN } from "../../config/en.config"
+import { localeConfigDE, themeConfigDE } from "../../config/de.config"
+import { localeConfigES, themeConfigES } from "../../config/es.config"
+import { localeConfigFR, themeConfigFR } from "../../config/fr.config"
+import { localeConfigIT, themeConfigIT } from "../../config/it.config"
+import { localeConfigJA, themeConfigJA } from "../../config/ja.config"
+import { localeConfigPT, themeConfigPT } from "../../config/pt.config"
+import { localeConfigRU, themeConfigRU } from "../../config/ru.config"
+import { path } from "vuepress/utils"
 
 const jsonLD = `{
   "@context": "https://schema.org",
@@ -134,53 +135,21 @@ export default defineUserConfig({
   locales: {
     // NOTE: We need to leave out the "/" language, because otherwise
     // "autoLocale" would not be able to redirect users to their "own" language.
-    '/en/': {
-      lang: 'en-US',
-      title: 'Zettlr Documentation',
-      description: 'The official documentation for the Zettlr Markdown editor. Available in multiple languages.',
-    },
-    '/es/': {
-      lang: 'es-ES',
-      title: 'Documentación de Zettlr',
-      description: 'La documentación oficial del editor Markdown Zettlr, disponible en múltiples idiomas.'
-    },
-    '/de/': {
-      lang: 'de-DE',
-      title: 'Zettlr Handbuch',
-      description: 'Die offizielle Dokumentation für den Zettlr Markdown-Editor. Verfügbar in mehreren Sprachen.',
-    },
-    '/fr/': {
-      lang: 'fr-FR',
-      title: 'Documentation Zettlr',
-      description: 'La documentation officielle de l\'éditeur Markdown Zettlr. Disponible en plusieurs langues.',
-    },
-    '/it/': {
-      lang: 'it-IT',
-      title: 'Documentazione Zettlr',
-      description: 'La documentazione ufficiale dell\'editor Markdown Zettlr. Disponibile diverse lingue.',
-    },
-    '/ja/': {
-      lang: 'ja-JP',
-      title: 'Zettlr のドキュメント',
-      description: 'Zettlr Markdown エディタの公式ドキュメントです。複数の言語でご利用いただけます。',
-    },
-    '/pt/': {
-      lang: 'pt-PT',
-      title: 'Documentação Zettlr',
-      description: 'A documentação oficial do editor Markdown Zettl. Disponível em diversos idiomas.',
-    },
-    '/ru/': {
-      lang: 'ru-RU',
-      title: 'Документация Zettlr',
-      description: 'Официальная документация для редактора Markdown Zettel. Доступна на многих языках.',
-    },
+    ...localeConfigEN,
+    ...localeConfigES,
+    ...localeConfigDE,
+    ...localeConfigFR,
+    ...localeConfigIT,
+    ...localeConfigJA,
+    ...localeConfigPT,
+    ...localeConfigRU,
   },
   plugins: [
     searchPlugin({ maxSuggestions: 10 }),
     markdownMathPlugin({ copy: true, mhchem: true, type: "katex" }),
     redirectPlugin({
       autoLocale: true,
-      defaultLocale: "en-US",
+      defaultLocale: "en",
       localeConfig: {
         "/en/": ["en-US", "en-UK", "en"],
         "/de/": ["de-DE", "de-AT", "de-CH", "de"]
@@ -220,5 +189,14 @@ If in doubt, consult the official, English documentation, which is being maintai
         },
       ]
     })
-  ]
+  ],
+  // With the following, we override the original useNavbarSelectLanguage
+  // composable from the default theme in order to deduplicate the double
+  // English entry in the element.
+  alias: {
+    '@theme/useNavbarSelectLanguage': path.resolve(
+      __dirname,
+      './composables/useNavbarSelectLanguage.ts',
+    ),
+  }
 })

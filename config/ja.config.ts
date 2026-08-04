@@ -1,5 +1,5 @@
 import { DefaultThemeLocaleData, NavbarOptions, SidebarOptions } from "@vuepress/theme-default"
-import { LocaleConfig } from "vuepress"
+import { LocaleConfig, SiteLocaleConfig } from "vuepress"
 import sharedOptions from "../docs/.vuepress/shared-locale.config"
 
 // Top navbar options (shown above sidebar on mobile)
@@ -157,4 +157,12 @@ export const themeConfigJA: LocaleConfig<DefaultThemeLocaleData> = {
     toggleColorMode: 'テーマ',
     toggleSidebar: 'サイドバー',
   }
+}
+
+export const localeConfigJA: SiteLocaleConfig = {
+  '/ja/': {
+    lang: 'ja-JP',
+    title: 'Zettlr のドキュメント',
+    description: 'Zettlr Markdown エディタの公式ドキュメントです。複数の言語でご利用いただけます。',
+  },
 }
