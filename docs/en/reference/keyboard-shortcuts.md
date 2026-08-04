@@ -9,6 +9,14 @@ This page contains a list of all shortcuts available throughout the app.
 > [!note]
 > The key <kbd>Cmd/Ctrl</kbd> should be interpreted as follows: If you're on macOS, press the <kbd>Cmd</kbd> key. On any other platform, press <kbd>Ctrl</kbd>.
 
+## Custom Shortcuts
+
+While the shortcuts shown below are defaults that will work out of the box, it's also possible to apply custom keyboard shortcuts in Zettlr and to apply shortcuts to frequently-used actions actions that have no default keystroke. For instance, if you frequently use a text transform like "Straighten Quotes" or "Remove Line Breaks", you can apply a shortcut to speed up your work.
+
+To add a custom keyboard shortcut, open the `Preferences` dialogue, then browse to the `Shortcuts` option. There you will find a list of different areas of the app to which you can apply your shortcuts (at present: the table editor, the text transforms menu, and the broader application interface). Within these, locate the particular action to which you'd like to apply a shortcut. If a shortcut for that action exists, it will appear in gray hint text in the form field below. To change the shortcut, simply click in the form field beneath the action you're interested in. Once the form field comes into focus, the hint text will change to read "Recording…" and Zettlr will listen for the keyboard shortcut you wish to apply. At this point, simply type the keyboard shortcut you wish to use for that action. You're done.
+
+If you decide you don't like a shortcut you've applied, you can simply return to the `Shortcuts` preference section and click the "Reset" button to the right of the shortcut.
+
 ## App-wide shortcuts
 
 These shortcuts are available across the entire app.
