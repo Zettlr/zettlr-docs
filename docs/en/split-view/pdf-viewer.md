@@ -25,7 +25,3 @@ To enable Zettlr to open PDF files for you, go inside the Preferences window →
 If you have ever used Google Chrome (or a derivative browser), you will immediately recognize the PDF viewer. Since Zettlr is built upon the Chromium-browser, it contains the same PDF viewer. Everything you know from Chrome’s PDF viewer applies in Zettlr.
 
 **However**, there is one important point: Because the PDF viewer needs a lot of mouse interaction, by default the PDF viewer is **disabled**. In order to navigate a PDF file, you first need to focus the PDF viewer. You do so simply by clicking inside the document. Then you can use the viewer as you normally do.
-
-::: hint
-When a PDF viewer is active, you can see a colored border around it. Click outside the PDF viewer to un-focus it.
-:::
