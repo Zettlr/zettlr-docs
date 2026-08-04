@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Custom CSS
 
 Zettlr allows you to fully customize the app’s appearance using Custom CSS ([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)). You can find the Custom CSS editor in the [assets manager](../export/assets-manager.md).

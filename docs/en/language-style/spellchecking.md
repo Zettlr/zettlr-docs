@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Spellchecking
 
 Spellchecking is the traditional tool available in almost all writing-focused apps. The easiest way to check your texts for correctness is to use dictionaries. Zettlr supports the common [Hunspell](https://en.wikipedia.org/wiki/Hunspell) standard.

@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # The Zettelkasten method
 
 The idea to write Zettlr came to my mind several years ago, when we were trying to elaborate on good workflows for academic writing. We tested a lot of different styles and workflow ideas, and one that stuck was the Zettelkasten method. The problem back then was that most of the software did not really succeed in implementing it. But nowadays, there are more and more applications that support some variations of this method.

@@ -1,3 +1,8 @@
+---
+prev: ../scientific-technical/writing-statistics.md
+next: ./workflow.md
+---
+
 # Export
 
 Zettlr ships with a powerful exporting ecosystem, primarily powered by Pandoc. This section introduces the system, and how to customize it to your needs.

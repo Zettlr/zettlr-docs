@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Table of Contents
 
 The table of contents-tab contains a structured view over your document. It lists the headings it can find therein, and shows them in a numbered list.

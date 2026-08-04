@@ -1,3 +1,7 @@
+---
+next: ./getting-started/setup.md
+---
+
 # Welcome
 
 Thank you for choosing Zettlr as your new One-Stop Publication Workbench. Zettlr is a powerful writing tool for all your needs. It is designed for anyone with a serious need to write, and goes out of your way to allow you to write frictionless.

@@ -1,3 +1,7 @@
+---
+next: ../guides/index.md
+---
+
 # Tag Manager
 
 Zettlr features a comprehensive tagging system to add keywords to your files for a horizontal, non-hierarchical file sorting system. However, as the amount of files in your setup increases, it can become difficult to maintain overview over the tags. In addition, you may want to use some tags in a more functional way, such as `#todo` or `#needs-review`.

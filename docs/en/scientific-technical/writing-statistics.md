@@ -1,3 +1,7 @@
+---
+next: ../export/index.md
+---
+
 # Writing Statistics
 
 Zettlr offers a set of basic writing statistics that can help you understand the way you write. There are statistics based on how much you write day to day as well as general statistics on the Workspaces and files you have open in the app.

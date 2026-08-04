@@ -2,7 +2,7 @@
 
 Zettlr is designed around the concept of “workspaces.” Workspaces are simply folders somewhere on your computer designated to house all your documents and notes.
 
-::: note Definition
+::: info Definition
 A **workspace** is a regular folder on your computer that is designated to working with your Markdown documents. When you load a folder into Zettlr as a workspace, you tell Zettlr that you want to primarily store your documents in this folder.
 :::
 
@@ -24,13 +24,13 @@ We **strongly** recommend that you regularly back up your workspaces. The simple
 
 ## Adding Workspaces
 
-To create workspaces for your own work, you should start by thinking which workspaces you need. For this, there are some organizing principles that you can follow. See the section “Conceptualizing your workspaces” below for some suggestions. First, we want to show you how to add those workspaces that you have to Zettlr.
+To create workspaces for your own work, you should start by thinking which workspaces you need. For this, there are some organizing principles that you can follow. See the section [“Conceptualizing your workspaces”](#conceptualizing-your-workspaces) below for some suggestions. First, we want to show you how to add those workspaces that you have to Zettlr.
 
 Adding workspaces in Zettlr requires two steps. First, you need to create a folder for your workspace somewhere on your computer. Many of you probably already have such a folder. Second, you need to load that folder as a workspace in Zettlr.
 
 To add a folder as a workspace to Zettlr, select “File” → “Open Workspace…” or click the folder-icon in the toolbar. This will open a dialog that lets you select a folder. Navigate to your desired folder and confirm your choice.
 
-::: warning
+::: info
 If you import an existing workspace that already contains documents, it will take a while to load it. Zettlr first needs to collect some metadata for each document so that the app can help you link between files, show you the actual file titles, or calculate some statistics. Once the indexing process is finished, the workspace folder will appear.
 :::
 
@@ -48,7 +48,7 @@ However, there is no right solution to thinking about how you personally work, s
 
 Below you can find a few **subjective** suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
 
-::: note
+::: tip
 It is really important to recognize that your personal workspaces should follow how your own brain works. Everyone thinks differently, and using a system that does not "click" for you will make your work slow. Start with one of the existing principles or one of our suggestions, but reflect on which parts of it work for you, and which don't.
 :::
 
@@ -61,18 +61,116 @@ If you are a student in an undergrad or graduate program (Bachelor and Master le
 * **Lecture Notes**: As a student, you will frequently visit lectures outside your core curriculum. This could be a place to collect all notes from this. This also includes workshops, etc.
 * **Campus**: If you are active in the student life of your university or college (which we recommend ;), you could create a campus workspace with subfolders for every activity (e.g., for student radio, a sports club, reading circles, and so on).
 
-::: tip
+::: info Namespacing
 What we mean by "namespacing" is that your computer and Zettlr will both sort folders based on their names. This makes sorting projects that you do over time very simple if you follow a simple rule. If you prepend the date of your project to its folder in the form of year-month-day (or year-1/2 for semesters), this means that all projects from the same year will appear together, then all from the same month (or semester), and so on. This may seem odd at first, you will thank us later when you have a few dozen projects and can almost without looking find the correct folder when you search for it.
+:::
+
+::: file-tree An exemplary student workspace structure
+- Documents # This could also be your Dropbox, Google Drive, Nextcloud, etc. folder.
+  - Courses
+    - 2026-01 Political Science 101
+      - Lecture 1
+        - slides.pdf
+        - Notes.md
+      - Lecture 2
+        - slides.pdf
+        - Notes.md
+      - …
+    - 2026-01 Sociology 101
+      - Lecture 1
+        - slides.pdf
+        - Notes.md
+      - Lecture 2
+        - slides.pdf
+        - Notes.md
+      - …
+    - 2026-02 Statistics
+      - Lab 1
+        - assignment.R
+        - Notes.md
+      - Lab 2
+        - assignment.R
+        - Notes.md
+      - …
+    - 2026-02 Surveys
+      - Lab 1
+        - questionnaire.pdf
+        - Notes.md
+      - Lab 2
+        - Field Guide.pdf
+        - Notes.md
+      - …
+    - …
+  - Reading Notes
+    - Author 2015.md
+    - Another Author 2002.md
+    - …
+  - Campus
+    - Radio
+      - Schedule.md
+      - Meetings.md
+    - Newspaper
+      - Articles
+        - 2026-05-03 Some article.md
+        - …
+      - Meeting Notes.md
+    - …
 :::
 
 ### For PhD-Students
 
-As a PhD-Student, your requirements will be somewhat different from undergrad or graduate students. You might consider additional folders like this:
+As a PhD-Student, your requirements will be somewhat different from undergrad or graduate students. You might consider *additional* folders like this:
 
 * **Teaching**: Unlike undergrad or graduate students, PhD-Students are often expected to teach on their own. You could create a workspace for all the courses you need to teach, and collect teaching material here.
 * **Admin**: If you are an active participant in your institute or department, you may want to consider creating a workspace for all the admin work that amounts over time.
 * **Conferences**: As a PhD-Student, you are usually expected to visit conferences. You could create one folder per conference (possibly also namespaced by date), and collect both your submission abstract and notes here.
 * **Papers**: To finish a dissertation, you will need to write papers. So it is natural to collect them in their own workspace – one folder per paper.
+
+::: file-tree An exemplary PhD student workspace structure
+- Documents
+  - Teaching
+    - 2026 - Logic of Social Inquiry
+      - Seminar 1
+        - slides.pdf
+        - paper.pdf
+        - Notes.md
+      - Seminar 2
+        - slides.pdf
+        - paper.pdf
+        - Notes.md
+      - …
+      - Grading.md
+    - …
+  - Admin
+    - 2025 - Summer School
+      - Notes.md
+      - Attendees.md
+      - Call.pdf
+      - Budget.xlsx
+    - …
+  - Conferences
+    - 2026-06 INAS 2026
+      - Notes.md
+      - slides.pdf
+      - registration_confirmation.pdf
+    - 2026-03 Networks Conference
+      - Notes.md
+      - slides.pdf
+    - …
+  - Papers
+    - Paper 1 - Crisis
+      - assets
+        - plot_1.png
+        - table_1.md
+        - …
+      - Notes.md
+      - Introduction.md
+      - Background.md
+      - Methods.md
+      - Results.md
+      - Conclusion.md
+    - …
+:::
 
 ### For Faculty
 
@@ -80,6 +178,28 @@ Once you’ve left the realm of students, while many of the folders will remain 
 
 * **Grants**: Applying for grants is eerily similar to writing papers. To maintain an overview over all the material, sorting them into their own workspace can help.
 * **Projects**: As soon as you move from employee in a project to PI, you need to keep track of administrative overhead and the overall mission of your project. One workspace for this might be a great idea.
+
+::: file-tree An exemplary faculty workspace structure
+- Documents
+  - Grants
+    - 2026-09 Marie-Curie Proposal
+      - Notes.md
+      - Overview.md
+      - Meeting Notes.md
+      - Committee.md
+      - …
+    - …
+  - Projects
+    - Counterspeech online
+      - Paper A - Foundations
+        - Notes.md
+        - Intro.md
+        - Background.md
+        - …
+      - Website blurb.md
+      - …
+    - …
+:::
 
 ### For Authors or Journalists
 

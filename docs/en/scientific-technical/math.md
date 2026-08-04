@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Math
 
 Zettlr supports writing math and formulae using the KaTeX library.

@@ -1,3 +1,8 @@
+---
+prev: ../guides/portable.md
+next: ./keyboard-shortcuts.md
+---
+
 # Reference
 
 This section includes reference style/glossary style enumerations of keyboard shortcuts and the preferences.

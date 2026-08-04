@@ -1,8 +1,13 @@
+---
+prev: ../split-view/pdf-viewer.md
+next: ./table-of-contents.md
+---
+
 # The Sidebar
 
 The sidebar is a context-sensitive element that displays relevant information and metadata for your current file. You can open it by using either the sidebar icon in the toolbar or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>0</kbd>.
 
-::: note
+::: info Definition
 Zettlr has – strictly speaking – two sidebars: The sidebar to the left is referred to as the [File Manager](../file-manager/index.md), whereas the right one – this sidebar – is referred to as "the" sidebar.
 :::
 

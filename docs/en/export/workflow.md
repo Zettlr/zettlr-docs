@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Exporting Workflow
 
 To customize your exporting experience, it is necessary to understand what happens during an export, and how the various components interact to enable exports. On this page, we guide you through the various steps of the exporter, and reference other documentation pages as necessary for more details.

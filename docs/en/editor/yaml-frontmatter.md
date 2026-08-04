@@ -1,3 +1,7 @@
+---
+next: ../language-style/index.md
+---
+
 # YAML Front Matter
 
 Like Pandoc, Zettlr supports YAML front matters for your Markdown files. A [YAML front matter](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block) is a series of meta-variables describing information of the document that normally is not part of the text contents themselves, such as authors, keywords, and a title.

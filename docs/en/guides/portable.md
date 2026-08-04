@@ -1,3 +1,7 @@
+---
+next: ../reference/index.md
+---
+
 # Zettlr as a Portable App
 
 Even though most people will simply install and use Zettlr as a program like any other one, some of you might want to set it up to be used as a *portable* app. Here we describe how this works.

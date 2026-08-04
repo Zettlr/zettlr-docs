@@ -1,3 +1,7 @@
+---
+next: ../split-view/index.md
+---
+
 # Projects
 
 Projects are a way to group together multiple Markdown documents in such a way that you can split up longer work into smaller parts. This is especially relevant to paper projects, or even entire books. Therefore, this is the perfect tool especially for academics and authors.
@@ -10,7 +14,7 @@ Since projects are essentially just folders, starting a new project is as simple
 
 Let’s say you want to start a new paper, and give it some preliminary name, say “Vote Defection.” So you could create a folder and give it that name.
 
-::: hint
+::: note
 The examples in this section are not arbitrary: They are taken from the PhD project of the maintainer, Hendrik Erz. Therefore, they give you a glimpse into how this feature can be used in the real world.
 :::
 

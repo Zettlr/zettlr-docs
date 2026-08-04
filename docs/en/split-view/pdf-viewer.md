@@ -1,3 +1,7 @@
+---
+next: ../sidebar/index.md
+---
+
 # PDF Viewer
 
 The PDF viewer is a component that can load and show PDF files inside Zettlr. This feature allows you to, e.g., reference papers or exported paper projects as you write.

@@ -1,3 +1,7 @@
+---
+next: ../first-time-users/first-steps.md
+---
+
 # Troubleshooting
 
 Like any software, Zettlr might cause problems from time to time. This page contains instructions on how to resolve many of these issues, and also how to help the developers fix your issues faster, should they occur. We have years of experience, and as such the options listed below should work in most cases.

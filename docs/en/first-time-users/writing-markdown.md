@@ -6,7 +6,7 @@ Zettlr uses Markdown. More specifically, it uses a superset of various standards
 
 Even if you have never consciously worked with Markdown, you have surely used it already, because it is omnipresent. Look at the following text:
 
-```markdown
+```markdown:line-numbers
 # What is Markdown?
 
 Markdown is a **markup language** that can be used to *format* (but not
@@ -34,26 +34,26 @@ To get a quick start to Markdown syntax, we highly recommend the guide from [Lea
 
 ## Common Shortcuts for Formatting Text
 
-Most of the time, you don’t have to type out all the formatting characters to make text, say, bold. Zettlr incorporates many common keyboard shortcuts for elements, and some make the process even simpler!
+Most of the time, you don’t have to type out all the formatting characters to make text, say, bold. Zettlr incorporates many common keyboard shortcuts for elements, and some make the process even simpler.
 
 Here is a list of some common shortcuts and how they work in Zettlr:
 
-| Shortcut                                                       | Description                  |
-|----------------------------------------------------------------|------------------------------|
-| <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd>                    | Bold                         |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd>                    | Italic                       |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>                    | Insert link.                  |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>   | Insert image                 |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>T</kbd>                    | Create task-list             |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>   | Toggle comment               |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>C</kbd>     | Copy with formatting         |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>V</kbd>                    | Paste with formatting        |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>   | Paste as plain               |
+| Shortcut                                          | Description           |
+|---------------------------------------------------|-----------------------|
+| <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd>                  | Bold                  |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd>                  | Italic                |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>                  | Insert link           |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> | Insert image          |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>T</kbd>                  | Create task-list      |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> | Toggle comment        |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>C</kbd>   | Copy with formatting  |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>V</kbd>                  | Paste with formatting |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> | Paste as plain        |
 
-There are many more available shortcuts. You can find all in the [corresponding reference page](../reference/keyboard-shortcuts.md).
+There are many more available shortcuts. You can find all in the [keyboard shortcut reference](../reference/keyboard-shortcuts.md).
 
-::: note
-When we type <kbd>Cmd/Ctrl</kbd>, we mean "press the Command-key if you are using a Mac, and the Control-key, if you are using a Windows- or Linux-computer."
+::: info
+When we mention <kbd>Cmd/Ctrl</kbd>, we mean "press the Command-key if you are using a Mac, and the Control-key, if you are using a Windows- or Linux-computer."
 :::
 
 ## More on Writing Markdown

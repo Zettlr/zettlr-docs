@@ -34,9 +34,9 @@ With this method, you can also create a file outside your loaded workspaces. Thi
 
 ## 3. Via Automatic Linking
 
-The last method is to create files automatically when linking them. This is a feature which is part of the PKMS (Personal Knowledge Management System), or “Zettelkasten” functionality of Zettlr. For that to work, you’ll need to have a dedicated “Zettelkasten” workspace, and need to link the file.
+The last method is to create files automatically when linking them. This is a feature which is part of the [PKMS](../pkms/index.md) (Personal Knowledge Management System), or “Zettelkasten” functionality of Zettlr. For that to work, you’ll need to have a dedicated “Zettelkasten” workspace, and need to link the file.
 
-This workflow will be introduced in the corresponding section.
+This workflow will be introduced in [the section on Zettelkästen](../pkms/zkn-method.md).
 
 ## Creating Folders
 

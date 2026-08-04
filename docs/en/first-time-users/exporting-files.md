@@ -1,3 +1,7 @@
+---
+next: ../file-manager/index.md
+---
+
 # Exporting Files
 
 Until now, you have seen how to set up your workflows, creating files, and migrating your existing files to Markdown. The final, common step that you may wish to perform while using Zettlr is to export your documents into various export formats.
@@ -31,7 +35,7 @@ Next, you can select where the exported file will end up. You can choose between
 3. **Select directory**: This will prompt you to pick a folder after you click “Export”
 
 ::: tip
-Both the last-used export profile and your directory setting are remembered, so the next time you want to export a file using the same settings, you only have to click "Export."
+Both the last-used export profile and your directory setting are remembered, so the next time you want to export a file using the same settings, you only have to click "Export" or press <kbd>Enter</kbd>.
 :::
 
 ## Special Export Formats
@@ -40,11 +44,11 @@ Besides allowing you to export to a great variety of formats, Zettlr also allows
 
 ### PDF
 
-Exporting as a PDF is probably the most common use-case. However, PDF is also the most complex target format. To export regular, fully-featured PDF files, you will need a LaTeX installation on your computer. If you do not yet have LaTeX on your computer, [follow our guide to do so](../getting-started/installing-latex.md).
+Exporting as a PDF is probably the most common use-case. However, PDF is also the most complex target format. To export regular, fully-featured PDF files, you will need a LaTeX installation on your computer. If you do not yet have LaTeX installed on your computer, [follow our guide to do so](../getting-started/installing-latex.md).
 
 If you do not want to set up LaTeX, or cannot use it due to any other reason, you can also utilize the **Simple PDF** export. This profile also creates a PDF, but avoids LaTeX. What Zettlr will do in this case is export your file to HTML, and then use Chrome’s “Print Website” method to export that HTML file to PDF.
 
-::: note
+::: info
 Zettlr can "print" HTML files, because it is built on Electron, which essentially consists of the Google Chrome browser.
 :::
 
@@ -52,4 +56,4 @@ Zettlr can "print" HTML files, because it is built on Electron, which essentiall
 
 Another special format Zettlr supports is TextBundle and TextPack. [TextBundle](https://textbundle.org/) is a custom format to share Markdown files. It creates a folder that contains both your Markdown file as well as any images that you reference within the Markdown file. You can use this format to create standalone folders that contain everything someone else needs to view your file.
 
-TextPack is the same as TextBundle, but in a ZIP-container, so that it is easier to share it via, e.g., Email.
+TextPack is the same as TextBundle, but in a ZIP-container, so that it is easier to share via, e.g., Email.

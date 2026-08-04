@@ -1,3 +1,7 @@
+---
+next: ../scientific-technical/index.md
+---
+
 # Readability
 
 Another tool that Zettlr integrates is one to determine the “readability” of your texts. It calculates a “readability” score and assigns a background color for your sentences based on this score.

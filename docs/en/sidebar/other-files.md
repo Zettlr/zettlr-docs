@@ -1,3 +1,7 @@
+---
+next: ../editor/index.md
+---
+
 # Other Files
 
 The last tab in the sidebar shows other files that reside in the vicinity of the current document. You can define which files show up in this list, and click on them to view them, or drag them into the current editor to link them.

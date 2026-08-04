@@ -1,3 +1,8 @@
+---
+prev: ../pkms/tag-manager.md
+next: ./custom-css.md
+---
+
 # Guides
 
 This section contains some step-by-step guides to help you get started with some more complex parts of the application.

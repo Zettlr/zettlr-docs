@@ -30,45 +30,49 @@ Instead of using a tree-like appearance to display your files, the file list cre
 
 Imagine you have the following folder structure:
 
-* Papers
-    * First term paper
-        * Introduction.md
-        * Background.md
-        * Results.md
-        * Conclusion.md
-        * Notes.md
-    * Second term paper
-        * Notes.md
-    * Third term paper
-        * Notes.md
-* Courses
-    * Political Science 101
-        * Lecture Notes.md
-        * Literature List.md
-    * Sociology 201
-        * Lecture Notes.md
-        * Literature List.md
+::: file-tree
+- Papers
+  - First term paper
+    - Introduction.md
+    - Background.md
+    - Results.md
+    - Conclusion.md
+    - Notes.md
+  - Second term paper
+    - Notes.md
+  - Third term paper
+    - Notes.md
+- Courses
+  - Political Science 101
+    - Lecture Notes.md
+    - Literature List.md
+  - Sociology 201
+    - Lecture Notes.md
+    - Literature List.md
+:::
 
 The file list essentially **displays this same structure, but as a list**. This means that sub-folders (such as the term papers and course folders) will be listed one after another on the same level:
 
-* Papers
-* First term paper
-* Introduction.md
-* Background.md
-* Results.md
-* Conclusion.md
-* Notes.md
-* Second term paper
-* Notes.md
-* Third term paper
-* Notes.md
-* Courses
-* Political Science 101
-* Lecture Notes.md
-* Literature List.md
-* Sociology 201
-* Lecture Notes.md
-* Literature List.md
+::: file-tree
+- Papers
+- First term paper
+- Introduction.md
+- Background.md
+- Results.md
+- Conclusion.md
+- Notes.md
+- Second term paper
+- Notes.md
+- Third term paper
+- Notes.md
+- Courses
+- Political Science 101
+- Lecture Notes.md
+- Literature List.md
+- Sociology 201
+- Lecture Notes.md
+- Literature List.md
+:::
 
 ## Navigating the File List
 
@@ -76,26 +80,30 @@ This may be difficult to navigate. This is why you can **restrict the file list 
 
 If you, say, click on the folder “First term paper” in your file list, this tells the file list to only display that folder’s contents, which looks like this:
 
-* First term paper
-* Introduction.md
-* Background.md
-* Results.md
-* Conclusion.md
-* Notes.md
+::: file-tree
+- First term paper
+- Introduction.md
+- Background.md
+- Results.md
+- Conclusion.md
+- Notes.md
+:::
 
 If you now instead want to display **all** your papers, you can **hold down <kbd>Alt</kbd> to navigate up, instead of down** when you click a folder. So, <kbd>Alt</kbd>-clicking the folder name “First term paper” moves up one level and displays you the contents of the “Papers” folder instead:
 
-* Papers
-* First term paper
-* Introduction.md
-* Background.md
-* Results.md
-* Conclusion.md
-* Notes.md
-* Second term paper
-* Notes.md
-* Third term paper
-* Notes.md
+::: file-tree
+- Papers
+- First term paper
+- Introduction.md
+- Background.md
+- Results.md
+- Conclusion.md
+- Notes.md
+- Second term paper
+- Notes.md
+- Third term paper
+- Notes.md
+:::
 
 ::: tip
 As you can see, navigating the file list resembles a form of "filtering." If you need to focus on a particular type of work, you can navigate "down" the file list until only those files that you care about are displayed. At the same time, if you need a broader overview over your projects, you can navigate "up" until you see all files you need.

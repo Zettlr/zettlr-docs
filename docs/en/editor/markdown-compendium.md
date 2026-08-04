@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Markdown Compendium
 
 This section is a continuation from the first-time-user’s guide. It contains a more comprehensive introduction to the Markdown Syntax and introduces special elements that Markdown supports.

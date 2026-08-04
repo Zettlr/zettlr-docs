@@ -1,3 +1,8 @@
+---
+prev: ../sidebar/other-files.md
+next: ./markdown-compendium.md
+---
+
 # Markdown Editor
 
 At the heart of Zettlr sits its most powerful component: The Markdown editor.

@@ -1,3 +1,8 @@
+---
+prev: ../file-manager/projects.md
+next: ./document-tab-bar.md
+---
+
 # Split View
 
 At the heart of Zettlr, in the middle of the window and between the file manager and the sidebar, sits the split view.

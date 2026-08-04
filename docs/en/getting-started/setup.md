@@ -1,3 +1,7 @@
+---
+prev: ../index.md
+---
+
 # Setup
 
 Zettlr is available for Windows, Linux, and macOS. It can be installed directly [from our website](https://www.zettlr.com) or via one of several supported package managers.
