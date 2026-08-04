@@ -9,11 +9,11 @@ actions:
     link: /en/reference/faq.md
 features:
   - title: Comprehensive
-    details: The reference for working with Zettlr
+    details: The reference documentation for working effectively with Zettlr
   - title: Multilingual
-    details: Perfect for any audience
-  - title: Community-driven
-    details: This documentation is the work of an entire community
+    details: Perfect for any audience. Tramslations are provided by our community.
+  - title: User-driven
+    details: This documentation lives from contributions from a large community.
 footer: '&copy; 2017–2026 Zettlr | <a href="https://www.zettlr.com">Homepage</a> | <a href="https://www.zettlr.com/download">Download</a>'
 footerHtml: true
 ---
