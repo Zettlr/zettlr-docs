@@ -120,7 +120,7 @@ const sidebar: SidebarOptions = [
 ]
 
 // This is the theme localization.
-export default {
+export const themeConfigFR: LocaleConfig<DefaultThemeLocaleData> = {
   // Updated language root
   '/fr/': {
     ...sharedOptions,
@@ -148,4 +148,4 @@ export default {
     toggleColorMode: 'Thème',
     toggleSidebar: 'Barre latérale',
   }
-} satisfies LocaleConfig<DefaultThemeLocaleData>;
+}

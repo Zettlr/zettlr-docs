@@ -110,7 +110,7 @@ const sidebar: SidebarOptions = [
 // documentation for the LocaleConfig of the VuePress default theme for more
 // information:
 // https://ecosystem.vuejs.press/themes/default/config.html#locale-config
-export default {
+export const themeConfigDE: LocaleConfig<DefaultThemeLocaleData> = {
   // This must be the language part of the URL (e.g., /en/). It should be a two-
   // letter language abbreviation surrounded by forward slashes.
   '/de/': {
@@ -145,4 +145,4 @@ export default {
     prev: "Zurück",
     next: "Weiter"
   }
-} satisfies LocaleConfig<DefaultThemeLocaleData>
+}

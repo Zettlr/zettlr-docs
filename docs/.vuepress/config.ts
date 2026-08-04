@@ -11,14 +11,14 @@ import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { markdownExtPlugin } from '@vuepress/plugin-markdown-ext'
 import { markdownPreviewPlugin } from '@vuepress/plugin-markdown-preview'
 // Language configuration
-import configEn from "../../config/en.config"
-import configDe from "../../config/de.config"
-import configES from "../../config/es.config"
-import configFR from "../../config/fr.config"
-import configIT from "../../config/it.config"
-import configJA from "../../config/ja.config"
-import configPT from "../../config/pt.config"
-import configRU from "../../config/ru.config"
+import { themeConfigEN } from "../../config/en.config"
+import { themeConfigDE } from "../../config/de.config"
+import { themeConfigES } from "../../config/es.config"
+import { themeConfigFR } from "../../config/fr.config"
+import { themeConfigIT } from "../../config/it.config"
+import { themeConfigJA } from "../../config/ja.config"
+import { themeConfigPT } from "../../config/pt.config"
+import { themeConfigRU } from "../../config/ru.config"
 
 const jsonLD = `{
   "@context": "https://schema.org",
@@ -64,14 +64,14 @@ export default defineUserConfig({
     logoAlt: "Zettlr Logo",
     docsRepo: "Zettlr/zettlr-docs",
     locales: {
-      ...configEn,
-      ...configDe,
-      ...configES,
-      ...configFR,
-      ...configIT,
-      ...configJA,
-      ...configPT,
-      ...configRU
+      ...themeConfigEN,
+      ...themeConfigDE,
+      ...themeConfigES,
+      ...themeConfigFR,
+      ...themeConfigIT,
+      ...themeConfigJA,
+      ...themeConfigPT,
+      ...themeConfigRU
     },
     themePlugins: {
       activeHeaderLinks: true,
