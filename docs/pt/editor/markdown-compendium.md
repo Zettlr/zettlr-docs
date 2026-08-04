@@ -38,9 +38,9 @@ Para formatar documentos Markdown, existem algumas regras básicas de formataç�
 | Notas de rodapé | `Some text[^1].` | Algum texto.                      |
 | Referência de nota de rodapé | `[^1]: Footnote text.` | &sup1; Texto da nota de rodapé.                 |
 | Comentário | `<!-- Commented out -->` | (Não visível) |
-| Matemática embutida | `$E = mc^2$` | ![E = mc^2](../img/Emc2.png) |
-| Bloco de matemática | `$$\nE = mc^2\n$` | ![E = mc^2](../img/Emc2.png) |
-| Linha horizontal | `***` ou `---` | <h> |
+| Matemática embutida | `$E = mc^2$` | $E = mc^2$ |
+| Bloco de matemática | `$$E = mc^2$$` | $E = mc^2$ |
+| Linha horizontal | `***` ou `---` | <hr> |
 | Citação em bloco | `> Some quote` | &nbsp;&nbsp;&nbsp;&nbsp;*Algumas nacionais* |
 
 **Observação:**
@@ -106,7 +106,7 @@ Zettlr suporta um dos dialetos mais abrangentes e abrangentes: Pandoc Markdown. 
 * Figuras
 * Notas de rodapé
 * Citações e referências cruzadas
-*… e mais
+* … e mais
 
 **Aviso:**
 

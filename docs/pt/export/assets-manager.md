@@ -1,6 +1,6 @@
 # Gerente de Ativos
 
-O gerenciador de ativos permite editar diretamente muitos dos arquivos necessários para importar e exportar arquivos. Ele pode ser aberto via “Arquivo” → “Preferências” → “Gerenciador de Ativos” (macOS: “Zettlr” → “Gerenciador de Ativos”) ou pressionando <kbd>Cmd/Ctrl</kbd>+</kbd><kbd>Alt</kbd>+<kbd>,</kbd>.
+O gerenciador de ativos permite editar diretamente muitos dos arquivos necessários para importar e exportar arquivos. Ele pode ser aberto via “Arquivo” → “Preferências” → “Gerenciador de Ativos” (macOS: “Zettlr” → “Gerenciador de Ativos”) ou pressionando <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>.
 
 ![assets_manager_profiles.png](../img/assets_manager_profiles.png)
 
