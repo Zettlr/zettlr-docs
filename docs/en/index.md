@@ -5,8 +5,10 @@ actions:
     link: /en/getting-started/setup.md
   - text: First-time users
     link: /en/first-time-users/first-steps.md
+    type: secondary
   - text: FAQ
     link: /en/reference/faq.md
+    type: secondary
 features:
   - title: Comprehensive
     details: The reference documentation for working effectively with Zettlr
