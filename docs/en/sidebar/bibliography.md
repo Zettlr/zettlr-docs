@@ -4,7 +4,7 @@ The references tab contains a bibliography of all the references you cite within
 
 ![The sidebar with the second tab open, the references section](../img/sidebar_references.png)
 
-This list consists of any element that is cited somewhere in your document, plus the `nocite` elements. Any valid citekey that you place in a YAML front matter under the `nocite` key will be added to the bibliography, regardless of whether you actually cite the item in your main text, in agreement with [how Pandoc will render your references](https://pandoc.org/MANUAL.html#including-uncited-items-in-the-bibliography).
+This list consists of any element that is cited somewhere in your document, plus the `nocite` elements. Any valid citekey that you place in a [YAML frontmatter](../editor/yaml-frontmatter.md) under the `nocite` key will be added to the bibliography, regardless of whether you actually cite the item in your main text, in agreement with [how Pandoc will render your references](https://pandoc.org/MANUAL.html#including-uncited-items-in-the-bibliography).
 
 To learn more about citing literature with Zettlr, take a look at the documentation page for [citations](../editor/citations.md).
 

@@ -16,4 +16,4 @@ The file treatment setting is roughly divided into two sections. First, a tabula
 
 The other classes of common file types are images and PDF documents, Office documents (including Word and LibreOffice files, presentations, and Excel files), and data files (CSV files, State files, or RData files).
 
-You can choose whether those files will be shown in the file manager (first column), or in the sidebar (second column). For images and PDF files, you can also select to have them open directly within Zettlr using the image and PDF viewers.
+You can choose whether those files will be shown in the file manager (first column), or in the sidebar (second column). For images and PDF files, you can also select to have them open directly within Zettlr using the [image viewer](../split-view/image-viewer.md) or [PDF viewer](../split-view/pdf-viewer.md).

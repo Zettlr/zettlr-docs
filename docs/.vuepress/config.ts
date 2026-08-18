@@ -158,6 +158,9 @@ export default defineUserConfig({
         // The following option ensures that the ToC links in the sidebar
         // automatically adjust their color when the user scrolls to the heading
         linkClass: 'vp-sidebar-item'
+      },
+      headersOptions: {
+        levels: [2, 4]
       }
     }), // Provides a <Toc /> component that we use to render a sidebar
     markdownMathPlugin({ copy: true, mhchem: true, type: "katex" }),

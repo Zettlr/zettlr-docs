@@ -31,7 +31,7 @@ Adding workspaces in Zettlr requires two steps. First, you need to create a fold
 To add a folder as a workspace to Zettlr, select “File” → “Open Workspace…” or click the folder-icon in the toolbar. This will open a dialog that lets you select a folder. Navigate to your desired folder and confirm your choice.
 
 ::: info
-If you import an existing workspace that already contains documents, it will take a while to load it. Zettlr first needs to collect some metadata for each document so that the app can help you link between files, show you the actual file titles, or calculate some statistics. Once the indexing process is finished, the workspace folder will appear.
+If you import an existing workspace that already contains documents, it will take a while to load it. Zettlr first needs to collect some metadata for each document so that the app can help you link between files, show you the actual file titles, or calculate some statistics. Once the indexing process is finished, the workspace folder will appear. You can check the progress of indexing in the iris indicator that shows up in the top-right of the toolbar.
 :::
 
 ## Conceptualizing Your Workspaces
@@ -44,7 +44,7 @@ One such principle is called **[PARA](https://fortelabs.com/blog/para/)** by Tia
 
 The idea is that any project which has a defined start and end date goes into the “Projects” folder. Responsibilities without any defined time span, like your hobbies, go into “Areas.” “Resources” contains useful information and things you have found which may be of interest. And “Archive” is a form of “trash bin” for anything from one of these three folders, which allows you to archive things without actually throwing them away.
 
-However, there is no right solution to thinking about how you personally work, so we recommend that you play around with some ideas, and not fully commit to any organizing principle if you are not certain what works for you. We invite you to search the internet for inspiration, and look at various organizing principles beyond PARA.
+However, there is no right solution to thinking about how you personally work, so we recommend that you play around with some ideas, and not fully commit to any organizing principle if you are not certain what works for you. We invite you to search the internet for inspiration, and look at other organizing principles beyond PARA.
 
 Below you can find a few **subjective** suggestions from us that you can use for some initial inspiration, based on what you need Zettlr for.
 
@@ -59,10 +59,10 @@ If you are a student in an undergrad or graduate program (Bachelor and Master le
 * **Courses**: One workspace for all the courses you need to take. Create one folder per course, ideally namespaced by date (e.g., `2026-01 Political Science 101`, `2026-02 Political Science 201`, and so forth, where the “1” denotes the spring/summer semester, and the “2” denotes the autumn/winter semester).
 * **Reading Notes**: One workspace for all your reading notes. Whenever you read a paper, book, or other resource, you should take notes, and by having one “Reading Notes” folder, you ensure that all your notes with actual sources are contained within this one folder.
 * **Lecture Notes**: As a student, you will frequently visit lectures outside your core curriculum. This could be a place to collect all notes from this. This also includes workshops, etc.
-* **Campus**: If you are active in the student life of your university or college (which we recommend ;), you could create a campus workspace with subfolders for every activity (e.g., for student radio, a sports club, reading circles, and so on).
+* **Campus**: If you are active in the student life of your university or college (which we recommend ;)), you could create a campus workspace with subfolders for every activity (e.g., for student radio, a sports club, reading circles, and so on).
 
 ::: info Namespacing
-What we mean by "namespacing" is that your computer and Zettlr will both sort folders based on their names. This makes sorting projects that you do over time very simple if you follow a simple rule. If you prepend the date of your project to its folder in the form of year-month-day (or year-1/2 for semesters), this means that all projects from the same year will appear together, then all from the same month (or semester), and so on. This may seem odd at first, you will thank us later when you have a few dozen projects and can almost without looking find the correct folder when you search for it.
+What we mean by "namespacing" is that your computer and Zettlr will both sort folders based on their names. This makes sorting projects that you do over time very simple if you follow a simple rule. If you prepend the date of your project to its folder in the form of year-month-day (or year-1/2 for semesters), this means that all projects from the same year will appear together, then all from the same month (or semester), and so on. This may seem odd at first, but you will thank us later when you have a few dozen projects and can almost without looking find the correct folder when you search for it.
 :::
 
 ::: file-tree An exemplary student workspace structure
@@ -127,7 +127,7 @@ As a PhD-Student, your requirements will be somewhat different from undergrad or
 * **Papers**: To finish a dissertation, you will need to write papers. So it is natural to collect them in their own workspace – one folder per paper.
 
 ::: file-tree An exemplary PhD student workspace structure
-- Documents
+- Documents # This could also be your Dropbox, Google Drive, Nextcloud, etc. folder.
   - Teaching
     - 2026 - Logic of Social Inquiry
       - Seminar 1
@@ -180,7 +180,7 @@ Once you’ve left the realm of students, while many of the folders will remain 
 * **Projects**: As soon as you move from employee in a project to PI, you need to keep track of administrative overhead and the overall mission of your project. One workspace for this might be a great idea.
 
 ::: file-tree An exemplary faculty workspace structure
-- Documents
+- Documents # This could also be your Dropbox, Google Drive, Nextcloud, etc. folder.
   - Grants
     - 2026-09 Marie-Curie Proposal
       - Notes.md
@@ -206,7 +206,7 @@ Once you’ve left the realm of students, while many of the folders will remain 
 If you are not in academia, your requirements for workspaces will be different. Some suggestions:
 
 * **Notes**: Just a general workspace for any notes you may have – not necessarily coming from lectures, but maybe your own thoughts, or ideas for stories.
-* **Sources**: Even though, as a journalist, you work less with academic lecture, it is nonetheless important to keep track of where you got your information from. A workspace for your sources with a place for any material or contact details may be great.
+* **Sources**: Even though, as a journalist, you might work less with academic literature, it is nonetheless important to keep track of where you got your information from. A workspace for your sources with a place for any material or contact details may be great.
 * **Personas**: Authors need to think of convincing background stories for their protagonists and antagonists to keep their prose captivating. You might consider collecting these background stories in their dedicated folder.
 
 ### For Anybody Else

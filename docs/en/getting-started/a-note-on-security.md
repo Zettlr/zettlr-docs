@@ -52,7 +52,7 @@ It is likely that at some point you wish to download a template in order to cust
 
 Since templates are not written in Markdown, we recommend caution when you download templates from the internet. Unlike Markdown documents, which can be displayed safely, this is much harder with templates.
 
-If you really want to download a template from the internet, **make sure to have someone you trust with technical experience verify that the document is safe before you use it**!
+If you really want to download a template from the internet, **make sure to have someone you trust with technical expertise verify that the document is safe before you use it**!
 
 ::: tip Rule of thumb
 Even if a colleague sends you a template, make sure to double-check it, since your colleague may have accidentally downloaded a harmful template and overlooked the malicious code.
@@ -68,7 +68,9 @@ Even if you do not download any additional templates, exporting and importing co
 
 This means that even when you export a Markdown document that you yourself created without any specific template, there is still a small chance that this could pose a security risk.
 
-Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we recommend you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL.html#a-note-on-security).
+::: info Consult Pandoc's Security Information
+Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we implore you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL.html#a-note-on-security).
+:::
 
 ### Custom Export Commands
 

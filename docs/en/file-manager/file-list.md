@@ -18,9 +18,9 @@ As you can see in the screenshot above, the file list can display several pieces
 
 The first line always shows you the title of the file and the last modification date, or when the file was created. (You can determine which timestamp is displayed here in the preferences.)
 
-In the second line, the file list shows all keywords that are contained in the file. You can define keywords either using the common syntax on social media (`#this-is-a-tag`), or by adding them to the YAML frontmatter in the `keywords` or `tags`-property.
+In the second line, the file list shows all keywords that are contained in the file. You can define keywords either using the common syntax on social media (`#this-is-a-tag`), or by adding them to the [YAML frontmatter](../editor/yaml-frontmatter.md) in the `keywords` or `tags`-property.
 
-Some keywords here have colored circles. You can define which of your keywords have special meaning and assign a color in the tag manager.
+Some keywords here have colored circles. You can define which of your keywords have special meaning and assign a color in the [tag manager](../pkms/tag-manager.md).
 
 In the third line (second if the file does not contain any keywords), the file list displays a word count, indicating how big the file is. If you have set a writing target for this file, it shows the progress towards this target in addition to the current word count.
 

@@ -14,7 +14,7 @@ Since projects are essentially just folders, starting a new project is as simple
 
 Let’s say you want to start a new paper, and give it some preliminary name, say “Vote Defection.” So you could create a folder and give it that name.
 
-::: note
+::: info
 The examples in this section are not arbitrary: They are taken from the PhD project of the maintainer, Hendrik Erz. Therefore, they give you a glimpse into how this feature can be used in the real world.
 :::
 
@@ -53,7 +53,7 @@ The first tab, “General,” shows you two settings. At the top, you can define
 ![project_settings_general.png](../img/project_settings_general.png)
 
 ::: note
-The "Project Title" essentially fulfills the same function as the YAML frontmatter property `title`. If you have set a `title` manually somewhere in your project files, this will override it.
+The "Project Title" essentially fulfills the same function as the YAML frontmatter property `title`. If you have set a `title` manually somewhere in your project files, it will be overwritten by the title you specify in the project properties.
 :::
 
 Below the title, you will see a long list with all your export profiles. This allows you to determine the export formats into which your project should be exported. You can select as many as you want, and Zettlr will export all of them at once.
@@ -70,7 +70,7 @@ The second tab allows you to specify the files which will be included in the pro
 
 ![project_settings_files.png](../img/project_settings_files.png)
 
-The list of files shows you a few options. First, you can see the actual filename of the various files. Below that, you can see the relative path from the project root to the file. This is especially important if you choose to further categorize your files into subfolders within this project, and helps you identify the correct ones.
+The list of files shows you a few options. First, you can see the title of the various files. Below that, you can see the relative path from the project root to the file, including its actual filename. This is especially important if you choose to further categorize your files into subfolders within this project, and helps you identify the correct ones.
 
 To add a file to your project, click the “+”-icon next to its name. This will immediately move the file up, and change the “+”-icon to a “-“-icon. Zettlr will always show files that are included in your project on top of the other files.
 
@@ -96,6 +96,10 @@ Below the list of files to be included in the project export, you will find thre
 
 The final step in every project is an export. To do so, you simply need to right-click the project folder and click the entry “Export project.” This will direct Zettlr to start a full project export.
 
+::: tip
+You can observe the current status of your project export in the iris indicator in the top-right of the toolbar. It will show you all the conversions happening at the same time, how long they took, and by clicking on it, you can open the corresponding file directly.
+:::
+
 During each project export, Zettlr will follow the same process as with single-file exports, but with some important differences:
 
 1. Before the export, Zettlr will collect the files you specify, and provide those in the correct order to the exporter.
@@ -111,4 +115,8 @@ If you add, rename, or remove files while you are working on your project, the l
 
 ## Removing Projects
 
-To remove a project, simply uncheck the project switch in the directory properties. Note that this will immediately remove the project settings and is an irreversible action. If you choose to re-enable the project feature, you will have to re-apply all settings.
+To remove a project, simply uncheck the project switch in the directory properties.
+
+::: caution
+Note that this will immediately remove the project settings and is an irreversible action. If you choose to re-enable the project feature, you will have to re-apply all settings.
+:::

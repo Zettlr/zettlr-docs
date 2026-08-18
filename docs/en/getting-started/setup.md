@@ -4,7 +4,7 @@ prev: ../index.md
 
 # Setup
 
-Zettlr is available for Windows, Linux, and macOS. It can be installed directly [from our website](https://www.zettlr.com) or via one of several supported package managers.
+Zettlr is available for Windows, Linux, and macOS. It can be installed directly [from our website](https://www.zettlr.com/download) or via one of many supported package managers.
 
 ## Minimum System Requirements
 
@@ -19,14 +19,13 @@ Zettlr is available for Windows, Linux, and macOS. It can be installed directly 
 * Processor: 1GHz Dual-Core Intel 64-bit or better (32-bit is not supported)
     * On Linux, an equivalent ARM 64-bit processor is supported
     * On macOS, Apple Silicon (M1, M2, etc.) is supported
+    * Windows on ARM (e.g., "Copilot+" branded machines) is **not** supported
 * RAM: 1 GB
 * Disk Space: At least 500 MB free disk space
 
 ::: note
-Please note that the supported operating system versions may change at any time. The most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/latest/development/build-instructions-gn#platform-prerequisites).
+The supported operating system versions may change at any time. The most recent list of supported platforms can be found [here](https://www.electronjs.org/docs/latest/development/build-instructions-gn#platform-prerequisites). Zettlr supports all operating systems that its underlying framework, Electron, supports.
 :::
-
-## Installing Zettlr
 
 ::: warning Disclaimer
 The Zettlr team compiles and distributes the app directly for:
@@ -42,7 +41,7 @@ All other sources, such as package managers or the Arch Linux repository are mai
 However, we do not control these build stages and cannot take responsibility for any of these third-party sources. Peruse them at your own discretion.
 :::
 
-### Windows
+## Windows
 
 To install Zettlr on Windows, download the app from the [download page](https://www.zettlr.com/download) and double click to open the installer. By default, the installer will request administrative permission during setup to install the app for all users on the computer.
 
@@ -54,7 +53,7 @@ Zettlr is also [available on the chocolatey package manager](https://community.c
 We recommend to install Zettlr for all users.
 :::
 
-### macOS
+## macOS
 
 To install Zettlr on macOS, download the DMG-file from our [download page](https://www.zettlr.com/download) and mount it by double-clicking it. Then, drag the Zettlr icon into your Applications directory and wait for the application to be copied over.
 
@@ -64,23 +63,23 @@ Zettlr is also available via [Homebrew](https://formulae.brew.sh/cask/zettlr). T
 brew install --cask zettlr
 ```
 
-### Linux
+## Linux
 
 Linux distributions are legion, and many have their own preferred way of installing software. We aim to provide Zettlr as conveniently as possible for you, also thanks to community efforts.
 
-#### AppImage
+### AppImage
 
 Zettlr is available as an [AppImage](https://appimage.org/) bundle for Linux. To install it, download the package from our [download page](https://www.zettlr.com/download). To install the AppImage, place the file into a directory of your choice, make it executable, and begin using it.
 
-#### Flatpak
+### Flatpak
 
 Zettlr is available as a [Flatpak](https://flathub.org/home). To install the Flatpak version, download it from [Zettlr's FlatHub page](https://flathub.org/apps/details/com.zettlr.Zettlr) and follow the setup instructions.
 
-::: note
-Flatpak is designed with security in mind, and as such no flatpak app can access your file system by default. To give Zettlr access to your documents, you must first configure that with a package like, for example, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal). In case of problems, please get in contact with the Flatpak maintainer on the [corresponding GitHub repository](https://github.com/flathub/com.zettlr.Zettlr). Do not file reports on the main repository – we won't be able to help you.
+::: info
+Flatpak is designed with security in mind, and as such no flatpak app can access your file system by default. To give Zettlr access to your documents, you must first configure that with a package like [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal). In case of problems, please get in contact with the Flatpak maintainer on the [corresponding GitHub repository](https://github.com/flathub/com.zettlr.Zettlr). Do not file reports on the main repository – we won't be able to help you.
 :::
 
-#### Ubuntu/Debian
+### Ubuntu/Debian
 
 To install Zettlr on Debian and Ubuntu as well as derivative distributions, we recommend installing Zettlr using our APT repository. You can find all install instructions on [apt.zettlr.com](https://apt.zettlr.com/). Simply add our repository:
 
@@ -97,32 +96,40 @@ These instructions may change in the future. Please always refer to the [APT rep
 
 If your distribution does not support aptitude, or you want to manually install the file, you can download the `deb`-package from our [download page](https://www.zettlr.com/download) and execute the file.
 
-#### Fedora
+### Fedora
 
 To install Zettlr on Fedora or Red Hat derivatives, download the `rpm`-package from our [download page](https://www.zettlr.com/download) and execute the file.
 
-#### Arch Linux
+### Arch Linux
 
 Thanks to community efforts, Zettlr is available as a regular package for Arch Linux in the "Extra" repo. Therefore, you can install Zettlr regularly using `pacman` or derivatives. Read more on the [Zettlr Arch Wiki page](https://wiki.archlinux.org/title/Zettlr).
 
 ## Updating Zettlr
 
-If you installed Zettlr via a package manager, you don't have to check for updates. Simply update your packages using your package manager, which will automatically install any available updates for Zettlr.
+Zettlr will periodically check for updates. If an update becomes available, it will show you a prompt asking you whether you would like to download the new update. You can also choose to install the update later. In that case, Zettlr will show a "Download available" button in the right corner of the toolbar. Lastly, you can check manually for an update using the "Help" menu.
 
-If you installed Zettlr directly from the homepage, keep the update checks active. Zettlr will check regularly for new versions and notify you if it found one. You can also manually trigger the search for updates by clicking “Help” → “Check for updates.” If you click the update notification, Zettlr will open a dialog which contains the new version's number, your current version and a changelog with all features and bug fixes the new version contains.
+Regardless of which method you choose, once you click the corresponding button, Zettlr will show you an update dialog. The dialog shows you a series of information:
+
+* Which version of Zettlr you are currently running
+* The version number of the update
+* A changelog with everything that has changed since the last version
+* A button to download the new update
+
+Once you click the "Download" button, Zettlr will download the correct file for your operating system. During the download, the dialog will show you an estimate for the remaining time until the update has been downloaded. After the update has been successfully downloaded, the dialog will display a button to start the update. Click it to start the update process. The app will first verify that the downloaded file is the correct one by calculating the installer's checksum, and then close the app. If you have any unsaved changes, Zettlr will show you a dialog allowing you to save your progress before the app quits. It then starts the installer, allowing you to install the update. How installing the update works depends on your operating system. On Windows, the update will guide you through a setup guide, while on macOS, it will allow you to drag and drop the update into your Applications folder.
+
+After the update is complete, you can start the app again, and you will be greeted by an onboarding dialog confirming the successful update.
+
+::: note
+The updater will place the update file into your Downloads folder. Once the update is complete, you can remove the file. Also, if you quit the app before starting the update, you can manually initiate the update by executing the update file.
+:::
+
+After any update, be prepared to **wait a few minutes** for Zettlr to launch. After each update, the file cache is being cleared, and when the newer version of Zettlr boots for the first time, it has to recreate this file cache. The more files and folders you have opened, the longer this process may take.
+
+If you installed Zettlr via a package manager, you don't have to check for updates. Simply update your packages using your package manager, which will automatically install any available updates for Zettlr. In these cases, you can disable the automated update checks.
 
 ::: warning Never "jump over" versions!
 Sometimes, we change the configuration of Zettlr during an update. This may lead to data corruption during an update if you "leave out" the necessary version that will migrate your configuration. If you haven't updated Zettlr in a while, do **not** update directly to the latest version. Instead, install each update one after another. You can find all updates – not just the latest – on [GitHub](https://github.com/Zettlr/Zettlr/releases).
 :::
-
-Updating works in four simple steps:
-
-1. Click the "Update" notification to open the updater dialog.
-2. Read the changelog for the new version and click the corresponding button to download the correct update for your operating system.
-3. Wait until the download is finished, then click the button to start the update.
-4. Follow the instructions to install the update.
-
-After any update, be prepared to **wait a few minutes** for Zettlr to launch. After each update, the file cache is being cleared, and when the newer version of Zettlr boots for the first time, it has to recreate this file cache. The more files and folders you have opened, the longer this process may take.
 
 ### Manual Updates
 

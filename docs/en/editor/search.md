@@ -36,7 +36,7 @@ The editor search supports JavaScript Regular Expression syntax. [Learn more abo
 
 To make the editor interpret your query not literally, but as a regular expression, check the “regexp” checkbox. Now, it will perform regular pattern matching instead of exact matching. This means that, instead of searching for individual occurrences, you can search for patterns (e.g., you can search for four digits instead of individual years).
 
-::: warning
+::: info
 If you are already familiar with JavaScript regular expressions, you may know that these are usually written within forward-slashes, e.g.: `/\d{4}/`. For using the regular expression search in the editor, leave off these forward slashes, otherwise you will yield unexpected results.
 :::
 

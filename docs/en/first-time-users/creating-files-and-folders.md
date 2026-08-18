@@ -52,7 +52,7 @@ If you do not want to have files automatically be named like this, you can also 
 
 ![settings_filename_pattern.png](../img/settings_filename_pattern.png)
 
-Search for the setting “Pattern for new file names.” This setting offers you a text input, in which you can choose how Zettlr generates filenames. You can either insert a static string, such as “my-awesome-file.md” or make use of a certain set of variables. These variables are the following:
+Search for the setting “Pattern for new file names.” This setting offers you a text input, in which you can choose how Zettlr generates filenames. You can either insert a static string, such as “`my-awesome-file.md`” or make use of a certain set of variables. These variables are the following:
 
 * `%id`: Inserts a new ID, following another pattern which you can define in the Zettelkasten-section of the preferences. By default, it is just the current date.
 * `%Y`: The year, four-digits (e.g., 2025).

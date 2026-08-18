@@ -1,10 +1,8 @@
 # Writing Markdown
 
-Now that you have your workspaces set up and created a file, the next step is to simply start writing.
+Now that you have your workspaces set up and created a file, the next step is to simply start writing. Zettlr uses Markdown. More specifically, it uses a superset of various standards called “Pandoc Markdown.”
 
-Zettlr uses Markdown. More specifically, it uses a superset of various standards called “Pandoc Markdown.”
-
-Even if you have never consciously worked with Markdown, you have surely used it already, because it is omnipresent. Look at the following text:
+Even if you have never consciously worked with Markdown, you have surely used it already, because it is omnipresent. Most Chatbots and other LLMs typically produce Markdown code to format their responses. Look at the following text:
 
 ```markdown:line-numbers
 # What is Markdown?
@@ -28,6 +26,7 @@ As you will notice, this text is both easy to read — even in its “raw” for
 * … many forums
 * … GitHub
 * … Slack
+* … ChatGPT, Claude, Mistral, and all other LLMs
 * … and more.
 
 To get a quick start to Markdown syntax, we highly recommend the guide from [Learn X in Y Minutes](https://learnxinyminutes.com/markdown/). The guide is available in many languages, and everything you see there is supported in Zettlr. If you want to get used to writing clean and unambiguous Markdown, [view the specifications by CommonMark](https://spec.commonmark.org/current/). Also, there’s a [book on the GitHub flavored Markdown syntax](https://gitbookio.gitbooks.io/markdown/content/).  For those engaged in scholarly writing, the [Pandoc manual's section on its extended Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) is worth reading.

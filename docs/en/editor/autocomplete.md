@@ -25,7 +25,7 @@ In your citation settings, you can determine how Zettlr will autocomplete the ci
 To insert snippets, insert a colon-character (`:`). This will offer you available snippets to choose from.
 
 ::: note
-The character also allows you to insert Emojis, if you have activated this setting.
+You can customize which character triggers the autocompletion. Especially if you are writing using a French typographical style, you will space out your (normal) colons from your text, which will trigger the autocomplete. If this happens frequently, you can change the autocompletion trigger character to another one.
 :::
 
 ## Emoji Autocompletion

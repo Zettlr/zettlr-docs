@@ -9,13 +9,6 @@ actions:
   - text: FAQ
     link: /en/reference/faq.md
     type: secondary
-features:
-  - title: Comprehensive
-    details: The reference documentation for working effectively with Zettlr
-  - title: Multilingual
-    details: Perfect for any audience. Tramslations are provided by our community.
-  - title: User-driven
-    details: This documentation lives from contributions from a large community.
 footer: '&copy; 2017–2026 by Zettlr and Contributors'
 footerHtml: true
 heroImage: /logo.png
@@ -26,19 +19,32 @@ heroAlt: "Zettlr Logo"
 
 Thank you for choosing Zettlr as your new One-Stop Publication Workbench. Zettlr is a powerful writing tool for all your needs. It is designed for anyone with a serious need to write, and goes out of your way to allow you to write frictionless.
 
+In these pages, you will find everything you need to know in order to make the most of your experience with the app. And in case something is still unclear, you can always [find support in our community](#community).
+
 ::: tip
-To get started with the app, take a look at our [first time users guide](./first-time-users/first-steps.md).
+To get started with the app, take a look at our [first-time users' guide](./first-time-users/first-steps.md).
 :::
 
-For **academics** at every level, from student to faculty, Zettlr offers comprehensive support for [citations](./editor/citations.md) and [entire projects](./file-manager/projects.md), and it includes a [powerful templating engine](./export/custom-templates.md) that enables you to quickly typeset [camera-ready paper drafts](./guides/journal-latex-template.md). Zettlr further contains a set of crucial [scientific tools](./scientific-technical/index.md) for all disciplines.
+For **academics** at every level, from student to faculty, Zettlr offers comprehensive support for [citations](./editor/citations.md) and [entire projects](./file-manager/projects.md), and it includes a [powerful templating engine](./export/custom-templates.md) that enables you to quickly typeset [camera-ready paper drafts](./guides/journal-latex-template.md). Zettlr further contains a set of [scientific tools](./scientific-technical/index.md) for all disciplines.
 
-For **authors**, Zettlr ships with extensive support for [finding your notes](./editor/search.md), refining your [language and grammar](./language-style/index.md), and organizing your work with [tables](./editor/tables.md) and [charts](./scientific-technical/mermaid.md) as you write.
+For **authors**, Zettlr ships with extensive support for [full-text search](./editor/search.md), tools for refining your [language and grammar](./language-style/index.md), and organizing your work with [tables](./editor/tables.md) and [charts](./scientific-technical/mermaid.md) as you write.
 
-And for anyone else, it allows the easy setup of an all-inclusive [Zettelkasten or PKMS](./pkms/index.md) workflow.
+And for anyone else, it allows the easy setup of an all-inclusive [Zettelkasten or PKMS](./pkms/index.md) workflow with a built-in [graph-view](./pkms/graph.md).
 
 ::: info
-This documentation is available in several languages. Select another language from the language selector in the navigation. Please note that these translations are community-provided and may be incomplete or outdated. If in doubt, always consult this (the English) version of the documentation.
+This documentation is available in several languages. Select another language from the selector in the navigation. Please note that these translations are community-provided and may be incomplete or outdated. If in doubt, always consult this (the English) version of the documentation.
 :::
+
+## Navigating this Documentation
+
+This documentation is built on top of [VuePress](https://vuepress.vuejs.org/), which offers a set of features to make finding answers to your questions and discovering the right information straight-forward. Here we provide you with some pointers on how to navigate these pages:
+
+* At the top, you can find quick links to common documentation pages, such as troubleshooting info or general setup help.
+* Next to these navigation links, you can find a dropdown menu with common links to Zettlr's website or download the app.
+* Besides that, you can find a language selector to switch between languages. **Note: Some community translations do not contain all information from the official English documentation.**
+* Finally, there is a search bar that allows you to perform a full-text search across all documentation pages and jump directly to the relevant content.
+* When you click on ["Browse the Documentation"](/en/getting-started/setup.md), you can find all documentation pages in a sidebar to the left.
+* The table of contents for the current page is displayed in a sidebar to the right when you browse the documentation with a larger screen.
 
 ## Documentation Contents
 
@@ -80,9 +86,13 @@ Quickly jump into the section you want to consult:
 You can always access this documentation from the app. To do so, press <kbd>F1</kbd> or choose “Help” → “Open user manual” from the menu (internet connection required).
 :::
 
-## FAQ
+## Community
 
-This documentation includes a comprehensive [Frequently Asked Questions](reference/faq.md) section. If neither the documentation nor the FAQ can answer your question, we invite you to join our community on [Discord](https://go.zettlr.com/discord), the [Community Forum](https://forum.zettlr.com/), or [Reddit](https://www.reddit.com/r/Zettlr/).
+Some questions you have may not be answered by this documentation. This is completely normal, especially as you tweak Zettlr more to conform to your personal habits. In this case, we invite you to join the wider community of Zettlr and ask other users. Very often, you are not the first to have some specific issue, and you will find quick help among the members of our various platforms.
+
+* [The Community Forum](https://forum.zettlr.com/): In our community forum, you can ask questions publicly. This way, you can even help others who may encounter these questions only after you, since both your questions and others' answers become public records.
+* [The Zettlr Discord](https://go.zettlr.com/discord): On our Discord server, you can ask short and quick questions and typically get an answer very quickly. The short-messaging format is sometimes more convenient, especially if there is a lot of back and forth.
+* [The Zettlr Subreddit](https://www.reddit.com/r/Zettlr/): Here you can ask questions to the broader reddit community.
 
 The company Gurubase offers [an LLM-integration with this documentation](https://gurubase.io/g/zettlr) to peruse, allowing you to “chat” with the documentation.
 

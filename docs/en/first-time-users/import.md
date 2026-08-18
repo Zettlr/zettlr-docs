@@ -1,4 +1,4 @@
-# Migrating from Word
+# Importing Word- and other Documents into Zettlr
 
 Most new users of Zettlr have primarily used Word, LibreOffice, or some other word processor to do their writing. However, Zettlr cannot directly open Word or OpenDocument files. But what it can do is import them. Here we explain how to do that.
 
@@ -13,7 +13,7 @@ Repeat this process for every destination and set of files to import.
 Zettlr utilizes Pandoc to import files, and therefore we can support a wide variety of different files. The main requirement for importing a file is that Pandoc supports the file format, and that it can be converted into a Markdown file.
 
 ::: note
-It may be that your computer does not show some or all of these file extensions. You can adapt the settings of your computer's file browser (such as Explorer or Finder) to view all file extensions.
+It may be that your computer does not show file extensions. You can adjust the settings of your computer's file browser (such as Explorer or Finder) to view all file extensions.
 :::
 
 Zettlr will look at the file extension to determine the type of document and select the appropriate import workflow. Here is the list of file type extensions currently supported:
@@ -43,8 +43,8 @@ Zettlr will look at the file extension to determine the type of document and sel
 | `*.ipynb`            | Jupyter Notebook documents             |
 | `*.jira`             | Jira issues                            |
 
-::: note
-Zettlr will use the first import profile that has the appropriate reader to import a file. Therefore, if you have added Pandoc profiles that support the same reader, be mindful of the sorting order of the profiles. If this is your first time using the app, Zettlr will only have one profile per file type.
+::: tip
+Zettlr can actually import even more file formats than the ones listed. However, to keep the app more focused, it only ships with commonly found file formats, and not all of them. To allow Zettlr to import even more file formats, see the section on [creating profiles ("defaults files")](../export/defaults-files.html).
 :::
 
 ## Customizing How Zettlr Imports Files

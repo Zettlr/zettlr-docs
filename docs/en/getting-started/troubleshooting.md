@@ -70,13 +70,13 @@ If the community couldn't help you, or if it seems to be an actual bug, please o
 
 Make sure to include:
 
-* A concise description of what happens, and what you expect to happen
-* How can you trigger this issue? Be precise here so that we can reproduce the issue on our side
+* A concise description of what happens, and what you expect to happen instead.
+* How can you trigger this issue? Be precise here so that we can reproduce the issue on our side.
 * Include screenshots or entire screencasts to demonstrate the issue. Very often, images “say more than a thousand words.”
 * Also provide log entries. You can find the logs by enabling the debug mode, then selecting “Develop” → “Open logs.” The logs can also be found in Zettlr's application data path (see step 4 above) in the “logs” folder, if you can't use the app to view them.
 
 ::: note
-If you open an issue on GitHub, make sure you receive notifications. We usually have follow-up questions regarding your issue. The faster you respond, the faster we can fix your issue. If no one responds to your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
+If you open an issue on GitHub, enable your notifications. We usually have follow-up questions regarding your issue. The faster you respond, the faster we can fix your issue. If no one responds to your issue, this might indicate that we are not sure how to help you. In this case, it might help to rephrase the issue or add additional information.
 :::
 
 ## 7. Revert to a previous version
