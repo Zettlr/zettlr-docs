@@ -16,13 +16,13 @@ features:
     details: Perfect for any audience. Tramslations are provided by our community.
   - title: User-driven
     details: This documentation lives from contributions from a large community.
-footer: '&copy; 2017–2026 Zettlr | <a href="https://www.zettlr.com">Homepage</a> | <a href="https://www.zettlr.com/download">Download</a>'
+footer: '&copy; 2017–2026 by Zettlr and Contributors'
 footerHtml: true
 heroImage: /logo.png
 heroAlt: "Zettlr Logo"
 ---
 
-# Welcome
+***
 
 Thank you for choosing Zettlr as your new One-Stop Publication Workbench. Zettlr is a powerful writing tool for all your needs. It is designed for anyone with a serious need to write, and goes out of your way to allow you to write frictionless.
 
@@ -36,13 +36,13 @@ For **authors**, Zettlr ships with extensive support for [finding your notes](./
 
 And for anyone else, it allows the easy setup of an all-inclusive [Zettelkasten or PKMS](./pkms/index.md) workflow.
 
-::: tip
+::: info
 This documentation is available in several languages. Select another language from the language selector in the navigation. Please note that these translations are community-provided and may be incomplete or outdated. If in doubt, always consult this (the English) version of the documentation.
 :::
 
-## Contents
+## Documentation Contents
 
-This documentation is divided into sections that describe different aspects of the app. Click on a section to jump to it.
+Quickly jump into the section you want to consult:
 
 ### Introduction to Zettlr
 

@@ -11,6 +11,7 @@ import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { markdownExtPlugin } from '@vuepress/plugin-markdown-ext'
 import { markdownPreviewPlugin } from '@vuepress/plugin-markdown-preview'
 import { markdownFileTreePlugin } from "@vuepress/plugin-markdown-file-tree"
+import { tocPlugin } from "@vuepress/plugin-toc"
 // Language configuration
 import { localeConfigEN, themeConfigEN } from "../../config/en.config"
 import { localeConfigDE, themeConfigDE } from "../../config/de.config"
@@ -61,11 +62,28 @@ export default defineUserConfig({
     [ 'script', { type: 'application/ld+json' }, jsonLD ],
     [ 'script', { type: 'text/javascript' }, matomoTag ],
   ],
+  // Global locales configuration
+  locales: {
+    // NOTE: We need to leave out the "/" language, because otherwise
+    // "autoLocale" would not be able to redirect users to their "own" language.
+    ...localeConfigEN,
+    ...localeConfigES,
+    ...localeConfigDE,
+    ...localeConfigFR,
+    ...localeConfigIT,
+    ...localeConfigJA,
+    ...localeConfigPT,
+    ...localeConfigRU,
+  },
   theme: defaultTheme({
     logo: "/logo.png",
     logoAlt: "Zettlr Logo",
     docsRepo: "Zettlr/zettlr-docs",
+    // Theme locales configuration
     locales: {
+       '/': {
+        sidebarDepth: 0
+      },
       ...themeConfigEN,
       ...themeConfigDE,
       ...themeConfigES,
@@ -133,20 +151,15 @@ export default defineUserConfig({
     }
   }),
   dest: "./build",
-  locales: {
-    // NOTE: We need to leave out the "/" language, because otherwise
-    // "autoLocale" would not be able to redirect users to their "own" language.
-    ...localeConfigEN,
-    ...localeConfigES,
-    ...localeConfigDE,
-    ...localeConfigFR,
-    ...localeConfigIT,
-    ...localeConfigJA,
-    ...localeConfigPT,
-    ...localeConfigRU,
-  },
   plugins: [
     searchPlugin({ maxSuggestions: 10 }),
+    tocPlugin({
+      renderOptions: {
+        // The following option ensures that the ToC links in the sidebar
+        // automatically adjust their color when the user scrolls to the heading
+        linkClass: 'vp-sidebar-item'
+      }
+    }), // Provides a <Toc /> component that we use to render a sidebar
     markdownMathPlugin({ copy: true, mhchem: true, type: "katex" }),
     redirectPlugin({
       autoLocale: true,

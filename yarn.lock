@@ -1573,6 +1573,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vuepress/plugin-toc@npm:^2.0.0-rc.131":
+  version: 2.0.0-rc.131
+  resolution: "@vuepress/plugin-toc@npm:2.0.0-rc.131"
+  dependencies:
+    "@vuepress/helper": "npm:2.0.0-rc.131"
+    vue: "npm:^3.5.39"
+    vue-router: "npm:^5.1.0"
+  peerDependencies:
+    vuepress: 2.0.0-rc.30
+  checksum: 10c0/c440e38d84d82db5c4c2511981fd78813a75df0696bacb8f9c9c464141c3dbdd4ae9c1c47439d536bc48f8ce204f8555f31d7c2aff0c188139478ed6aee43e90
+  languageName: node
+  linkType: hard
+
 "@vuepress/shared@npm:2.0.0-rc.31":
   version: 2.0.0-rc.31
   resolution: "@vuepress/shared@npm:2.0.0-rc.31"
@@ -3974,7 +3987,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router@npm:^5.2.0":
+"vue-router@npm:^5.1.0, vue-router@npm:^5.2.0":
   version: 5.2.0
   resolution: "vue-router@npm:5.2.0"
   dependencies:
@@ -4137,6 +4150,7 @@ __metadata:
     "@vuepress/plugin-notice": "npm:^2.0.0-rc.131"
     "@vuepress/plugin-redirect": "npm:^2.0.0-rc.131"
     "@vuepress/plugin-search": "npm:^2.0.0-rc.131"
+    "@vuepress/plugin-toc": "npm:^2.0.0-rc.131"
     "@vuepress/theme-default": "npm:^2.0.0-rc.132"
     katex: "npm:^0.18.1"
     sass-embedded: "npm:^1.100.0"
