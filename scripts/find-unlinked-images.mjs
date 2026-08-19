@@ -84,6 +84,11 @@ async function findUnlinkedImages () {
     }
   }
 
+  if (orphanedImages.length === 0) {
+    console.log("Could not find any orphaned images!")
+    return
+  }
+
   console.log(`There are ${orphanedImages.length} orphaned images that are not referenced by any Markdown file.`)
 
   const shouldDelete = await new Promise((resolve, reject) => {
