@@ -152,7 +152,18 @@ export default defineUserConfig({
   }),
   dest: "./build",
   plugins: [
-    searchPlugin({ maxSuggestions: 10 }),
+    searchPlugin({
+      maxSuggestions: 10,
+      hotKeys: [
+        // Available shortcuts: Cmd/Ctrl+K, Cmd/Ctrl+Shift+S
+        // macOS shortcuts
+        { key: 'k', meta: true },
+        { key: 'f', meta: true, shift: true },
+        // Windows/Linux shortcuts
+        { key: 'k', ctrl: true },
+        { key: 'f', ctrl: true, shift: true },
+      ]
+    }),
     tocPlugin({
       renderOptions: {
         // The following option ensures that the ToC links in the sidebar
