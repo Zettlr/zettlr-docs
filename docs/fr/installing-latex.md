@@ -6,9 +6,9 @@ Pour exporter vos documents  vers des fichiers PDF plus personalisés , vous dev
 
 Les distributions LaTeX sont disponibles en deux versions : une installation « complète » comprenant une multitude de programmes graphiques pour écrire directement TeX, et une installation « minimale » qui ne contient que les compilateurs réels. Zettlr se contente d'une installation minimale (car il n'a besoin que du compilateur), mais si vous souhaitez jouer davantage avec LaTeX, vous êtes libre d'installer également le package complet.
 
-!!! note
-
-    si vous installez uniquement la configuration minimale, vous devrez ensuite installer des packages supplémentaires. Lisez ce guide jusqu'à la fin pour savoir comment faire.
+::: note
+si vous installez uniquement la configuration minimale, vous devrez ensuite installer des packages supplémentaires. Lisez ce guide jusqu'à la fin pour savoir comment faire.
+:::
 
 ## Windows
 
@@ -28,9 +28,9 @@ Comme pour Windows, vous avez pour macOs des installateurs simples qui installer
 
 Les distributions Linux disposent généralement de plusieurs packages LaTeX disponibles à installer directement à partir de votre gestionnaire de logiciels. Il existe également des paquets minimaux et complets. Nous répertorions ci-dessous les options pour les distributions courantes.
 
-!!! note
-
-    La version que vous installez n'a pas vraiment d'importance, mais il y a une condition : vous devez installer le binaire `xetex`, puisque c'est le compilateur que Zettlr utilise par défaut. En cas de doute, consultez le manuel de votre distribution pour plus d'informations sur la façon d'installer correctement TeX.
+::: note
+La version que vous installez n'a pas vraiment d'importance, mais il y a une condition : vous devez installer le binaire `xetex`, puisque c'est le compilateur que Zettlr utilise par défaut. En cas de doute, consultez le manuel de votre distribution pour plus d'informations sur la façon d'installer correctement TeX.
+:::
 
 ### Debian/Ubuntu
 
@@ -70,12 +70,12 @@ Nous vous recommandons de ne pas installer de packages à moins que Zettlr le de
 
 Dans les deux cas, il est probable que la commande ou le fichier soit fourni dans un paquets. Il est facile d'installer les paquets manquants en utilisant la procédure suivante.
 
-!!! note
-
-    Sous Windows, LaTeX tentera d'installer automatiquement les paquets manquants et vous demandera s'il doit le faire.
+::: note
+Sous Windows, LaTeX tentera d'installer automatiquement les paquets manquants et vous demandera s'il doit le faire.
+:::
 
 1. Tous les packages LaTeX sont répertoriés dans le ["Comprehensive TeX Archive Network" (CTAN)](https://www.ctan.org/). Prenez le nom du fichier (y compris son extension, « .sty ») ou la commande et recherchez-le à l'aide de la barre de recherche.
 2. Par exemple, si LaTeX vous informe que la commande `\hypertarget` n'est pas définie, [recherchez-la comme ceci](https://www.ctan.org/search?phrase=hypertarget).
 3. Dans le cas de « hypertarget », il vous donnera un seul paquet : `gmiflink`. S'il y a plusieurs résultats, essayez de rechercher sur Google celui dont vous avez besoin.
-4. Pour l'installer sur macOS ou Linux, tapez « sudo tlmgr install <packagename> » dans une fenêtre de terminal.
+4. Pour l'installer sur macOS ou Linux, tapez « sudo tlmgr install `<packagename>` » dans une fenêtre de terminal.
 5. Ensuite, réessayez l’exportation. Alors ça devrait marcher ; sinon, répétez ces étapes.

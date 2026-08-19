@@ -1,80 +1,88 @@
+---
+next: ./getting-started/setup.md
+---
+
 # Welcome!
 
-Thank you for choosing Zettlr as your new One-Stop Publication Workbench! Zettlr is a powerful writing tool for all your needs. It is designed for anyone with a serious need to write, and goes out of your way to allow you to write frictionless.
+Thank you for choosing Zettlr as your new One-Stop Publication Workbench. Zettlr is a powerful writing tool for all your needs. It is designed for anyone with a serious need to write, and goes out of your way to allow you to write frictionless.
 
-!!! note
+In these pages, you will find everything you need to know in order to make the most of your experience with the app. And in case something is still unclear, you can always [find support in our community](#community).
 
-	If you are a new user, head over to our [first time users guide](./first-time-users/first-steps.md) to get started with the app.
+::: tip
+To download and install Zettlr, please refer to our [setup guide](./getting-started/setup.md). To get started with the app, take a look at our [first-time users' guide](./first-time-users/first-steps.md).
+:::
 
-For **academics** at every level, from student to faculty, Zettlr offers comprehensive support for **citations** and **project support**, and it includes a powerful **templating engine** that enables you to quickly typeset **camera-ready paper drafts**.
+For **academics** at every level, from student to faculty, Zettlr offers comprehensive support for [citations](./editor/citations.md) and [entire projects](./file-manager/projects.md), and it includes a [powerful templating engine](./export/custom-templates.md) that enables you to quickly typeset [camera-ready paper drafts](./guides/journal-latex-template.md). Zettlr further contains a set of [scientific tools](./scientific-technical/index.md) for all disciplines.
 
-For **authors**, Zettlr ships with extensive support for **taking notes**, creating **wikis**, and **reference files** as you write.
+For **authors**, Zettlr ships with extensive support for [full-text search](./editor/search.md), tools for refining your [language and grammar](./language-style/index.md), and organizing your work with [tables](./editor/tables.md) and [charts](./scientific-technical/mermaid.md) as you write.
 
-And for anyone else, it allows the easy setup of an all-inclusive **Zettelkasten** or **PKMS** workflow.
+And for anyone else, it allows the easy setup of an all-inclusive [Zettelkasten or PKMS](./pkms/index.md) workflow with a built-in [graph-view](./pkms/graph.md).
 
-!!! note
+::: info
+This documentation is available in several languages. Select another language from the selector in the navigation. Please note that these translations are community-provided and may be incomplete or outdated. If in doubt, always consult this (the English) version of the documentation.
+:::
 
-    This documentation is available in several languages. Select another language from the [main page](https://docs.zettlr.com/). Please note that these translations are community-provided and may be incomplete. If in doubt, always consult this (the English) version of the documentation.
+## Navigating this Documentation
 
-## Contents
+This documentation is built on top of [VuePress](https://vuepress.vuejs.org/), which offers a set of features to make finding answers to your questions and discovering the right information straight-forward. Here we provide you with some pointers on how to navigate these pages:
 
-This documentation is divided into various sections that describe different aspects of the app. Click on a section to view it.
+* You can browse all documentation pages by category in the sidebar to the left.
+* At the top, you can find quick links to common documentation pages, such as troubleshooting info or general setup help.
+* Besides that, you can find a language selector to switch between languages. **Note: Some community translations do not contain all information from the official English documentation.**
+* The documentation includes a full-text search across all documentation pages and lets you jump directly to the relevant content.
+* The table of contents for the current page is displayed in a sidebar to the right when you browse the documentation with a larger screen.
 
-[🏁 Getting Started](./getting-started/setup.md)
+::: tip
+You can start searching by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>.
+:::
 
-: Set up Zettlr, how to make Zettlr secure, and find troubleshooting help.
+## Documentation Contents
 
-[🧑‍💻 First Time Users](./first-time-users/first-steps.md)
+Quickly jump into the section you want to consult:
 
-: Read this after installing the app for the first time. Use the “Next”- and “Previous”-buttons to navigate through this section, because it is meant to be read start to finish.
+### Introduction to Zettlr
 
-[🗄️ File Manager](./file-manager/index.md)
+[**🏁 Getting Started**](./getting-started/setup.md): Installing Zettlr, securing it, and find troubleshooting help.
 
-: Describes the file manager, and how it displays your files. This section also includes descriptions of central concepts of the app, such as workspaces.
+[**🧑‍💻 First Time Users**](./first-time-users/first-steps.md): Read this after installing the app for the first time. Use the “Next”- and “Previous”-buttons to navigate through this section, because it is meant to be read start to finish.
 
-[🪟 Split View](./split-view/index.md)
+### The Interface
 
-: Introduces the split view, and how you can use it efficiently.
+[**🗄️ File Manager**](./file-manager/index.md): Describes the file manager, and how it displays your files. This section also includes descriptions of central concepts of the app, such as workspaces.
 
-[📋 Sidebar](./sidebar/index.md)
+[**🪟 Split View**](./split-view/index.md): Introduces the split view, and how you can use it efficiently.
 
-: Describes the sidebar, and how you can use it.
+[**📋 Sidebar**](./sidebar/index.md): Describes the sidebar, and what information it can deliver during your workflows.
 
-[📝 Markdown Editor](./editor/index.md)
+### Writing in Zettlr
 
-: Describes the central Markdown document editor and all its functionality.
+[**📝 Markdown Editor**](./editor/index.md): Describes the central Markdown document editor and all its functionality.
 
-[🪮 Language and Style](./language-style/index.md)
+[**🪮 Language and Style**](./language-style/index.md): Learn how Zettlr can help you write good prose with spell checkers, grammar checkers, and style checkers.
 
-: Learn how Zettlr can help you write good prose with spell checkers, grammar checkers, and style checkers.
+[**🤖 Exporting**](./export/index.md): In-depth explainer of how the exporting system works and how you can use it to your advantage.
 
-[🤖 Exporting](./export/index.md)
+[**🧪 Scientific and Technical**](./scientific-technical/index.md): Describes features of the app primarily relevant to scientists or technical writers.
 
-: In-depth explainer of how the exporting system works and how you can use it to your advantage.
+[**🗃️ PKMS/Zettelkasten**](./pkms/index.md): Set up Zettlr as a personal knowledge management system.
 
-[🧪 Scientific and Technical](./scientific-technical/index.md)
+### Guides & Reference Material
 
-: Describes features of the app primarily relevant to scientists or technical writers.
+[**💡 Guides**](./guides/index.md): Contains step-by-step guides to realizing some more complex features; from customizations to full journal or conference templates.
 
-[🗃️ PKMS/Zettelkasten](./pkms/index.md)
+[**⚙️ Reference**](./reference/index.md): Includes descriptions on available keyboard shortcuts and settings.
 
-: Set up Zettlr as a personal knowledge management system.
+::: note
+You can always access this documentation from the app. To do so, press <kbd>F1</kbd> or choose “Help” → “Open user manual” from the menu (internet connection required).
+:::
 
-[💡 Guides](./guides/index.md)
+## Community
 
-: Contains step-by-step guides to realizing some more complex features; from customizations to full journal or conference templates.
+Some questions you have may not be answered by this documentation. This is completely normal, especially as you tweak Zettlr more to conform to your personal habits. In this case, we invite you to join the wider community of Zettlr and ask other users. Very often, you are not the first to have some specific issue, and you will find quick help among the members of our various platforms.
 
-[⚙️ Reference](./reference/index.md)
-
-: Includes descriptions on available keyboard shortcuts and settings.
-
-!!! note
-
-	You can always access this documentation from the app. To do so, press <kbd>F1</kbd> or choose “Help” → “Open user manual” from the menu (internet connection required).
-
-## FAQ
-
-This documentation includes a comprehensive [Frequently Asked Questions](reference/faq.md) section. If neither the documentation nor the FAQ can answer your question, we invite you to join our community on [Discord](https://go.zettlr.com/discord), the [Community Forum](https://forum.zettlr.com/), or [Reddit](https://www.reddit.com/r/Zettlr/).
+* [The Community Forum](https://forum.zettlr.com/): In our community forum, you can ask questions publicly. This way, you can even help others who may encounter these questions only after you, since both your questions and others' answers become public records.
+* [The Zettlr Discord](https://go.zettlr.com/discord): On our Discord server, you can ask short and quick questions and typically get an answer very quickly. The short-messaging format is sometimes more convenient, especially if there is a lot of back and forth.
+* [The Zettlr Subreddit](https://www.reddit.com/r/Zettlr/): Here you can ask questions to the broader reddit community.
 
 The company Gurubase offers [an LLM-integration with this documentation](https://gurubase.io/g/zettlr) to peruse, allowing you to “chat” with the documentation.
 

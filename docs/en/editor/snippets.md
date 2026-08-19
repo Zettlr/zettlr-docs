@@ -6,17 +6,17 @@ Snippets support variables, which means that you can define places within the sn
 
 But the use-cases for snippets go beyond this. Snippets can be defined to accompany a LaTeX template, ensuring that users of a template are able to peruse the correct variables, and utilize valid syntax. Please refer to the corresponding section below for some inspiration. In addition, our guide on setting up a custom LaTeX template includes an in-depth description of setting up a snippet to accompany your custom template.
 
-!!! tip
-
-	Zettlr's snippets-system is based on the TextMate syntax and as such to a certain degree interoperable with snippets from other supporting apps, such as Visual Studio Code.
+::: tip
+Zettlr's snippets-system is based on the TextMate syntax and as such to a certain degree interoperable with snippets from other supporting apps, such as Visual Studio Code.
+:::
 
 ## Managing Your Snippets
 
 You can manage your snippets in the [assets manager](../export/assets-manager.md). Open the assets manager by selecting “File” → “Preferences” → “Assets Manager” (macOS: “Zettlr” → “Assets Manager”) or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>.
 
-!!! tip
-
-	See below for an explanation of the supported snippet syntax.
+::: tip
+See below for an explanation of the supported snippet syntax.
+:::
 
 ![assets_manager_snippets.png](../img/assets_manager_snippets.png)
 
@@ -24,15 +24,15 @@ The snippets tab is built analogously to the other available tabs in the assets 
 
 You can add or remove snippets from Zettlr using the “+”- and “-“-buttons at the bottom of the list. When you press “+”, Zettlr will ask you for a snippet name. Provide a usable name, and press <kbd>Enter</kbd> to create your snippet.
 
-!!! note
-
-    Snippet names can only contain the letters A to Z, numbers, hyphens, and underscores. The reason is that the snippet name is used for the autocompletion in the editor. If you type other letters, they will be replaced with a hyphen.
+::: note
+Snippet names can only contain the letters A to Z, numbers, hyphens, and underscores. The reason is that the snippet name is used for the autocompletion in the editor. If you type other letters, they will be replaced with a hyphen.
+:::
 
 Like import and export profiles, snippets are simply Markdown files. These files must have the filename extension `.tpl.md` to be recognized by Zettlr as templates. You do not need to edit these files in Zettlr, albeit using Zettlr has the benefit that it supports correct syntax highlighting for the snippet syntax.
 
-!!! tip
-
-	To the bottom under the list of snippets, you will find a button that directly opens the snippets' folder. This allows you to copy and paste snippets in bulk.
+::: tip
+To the bottom under the list of snippets, you will find a button that directly opens the snippets' folder. This allows you to copy and paste snippets in bulk.
+:::
 
 After you have made changes to the snippet, make sure to click “Save” or press <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd> to persist your changes. To rename a snippet, simply type the new name into the name text field above the snippet editor and click the button.
 
@@ -44,19 +44,19 @@ Snippets can be inserted into any Markdown document at any point by triggering t
 
 You can use the keys <kbd>ArrowDown</kbd> and <kbd>ArrowUp</kbd> to navigate through the list. In order to limit the available snippets, you can start typing the name of the snippet you are searching for.
 
-!!! tip
-
-	The list will provide you with a preview of the snippets' contents to help you identify the correct snippet to insert.
+::: tip
+The list will provide you with a preview of the snippets' contents to help you identify the correct snippet to insert.
+:::
 
 To insert the snippet and begin the process of filling in the template, confirm your selection with <kbd>Tab</kbd>.
 
 This will start the “filling in”-process of snippets. Once you insert a snippet, Zettlr will scan it to determine where to place tab stops. Tab stops are variables defined within these snippets that you can navigate through, and fill with content.
 
-!!! note
+::: note
+While a snippet insertion process is active, <kbd>Tab</kbd> will always navigate to the next snippet, instead of performing its default behavior (such as indenting a list item).
 
-	While a snippet insertion process is active, <kbd>Tab</kbd> will always navigate to the next snippet, instead of performing its default behavior (such as indenting a list item).
-
-    You can abort the snippet insertion process at any time by pressing <kbd>Esc</kbd>.
+You can abort the snippet insertion process at any time by pressing <kbd>Esc</kbd>.
+:::
 
 ## Filling in a Snippet
 
@@ -110,9 +110,9 @@ Press <kbd>Tab</kbd> once more to move the cursor to the final tab stop:
 
 Since this was the last tab stop, the snippet insertion process is now over. The key <kbd>Tab</kbd> now performs as usual.
 
-!!! tip
-
-	You can abort the snippet insertion process at any time by pressing <kbd>Esc</kbd>. Zettlr will then remove all remaining tab stops and restore the default behavior of the <kbd>Tab</kbd> key.
+::: tip
+You can abort the snippet insertion process at any time by pressing <kbd>Esc</kbd>. Zettlr will then remove all remaining tab stops and restore the default behavior of the <kbd>Tab</kbd> key.
+:::
 
 ## Snippet Syntax
 

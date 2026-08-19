@@ -1,3 +1,7 @@
+---
+prev: ./index.md
+---
+
 # Workspaces and Root Files
 
 The file manager first and foremost displays both workspaces and root files to you. For the most part, these work like files and folders within your workspaces. However, since workspaces and root files form the roots in the file manager, they expose some special behavior.
@@ -8,7 +12,7 @@ Root files are files that you open in Zettlr that are not part of any of your wo
 
 Zettlr remembers these files, as sometimes you may need to open individual Markdown files in, say, code projects. While most work in Zettlr should be done within workspaces, we recognize that this is not always possible.
 
-This means that, if you no longer wish to see a file in your file manager, you need to explicitly close it, which you can do from the context menu. This will remove the file from Zettlr’s file manager without deleting them from your computer.
+This means that, if you no longer wish to see a file in your file manager, you need to explicitly close it, which you can do from the context menu. This will remove the file from Zettlr’s file manager without deleting it from your computer.
 
 ## Workspaces
 

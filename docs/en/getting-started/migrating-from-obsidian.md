@@ -15,25 +15,27 @@ Before you can work with your existing notes, you will have to point Zettlr to
 your Obsidian "vault." A "vault" is just a fancy term for folder, and all your
 notes are stored within that folder as regular Markdown documents.
 
-!!! tip
-
-    Obsidian's "vaults" are the equivalent of Zettlr's
-    [Workspaces](../first-time-users/workspaces.md).
+::: tip
+Obsidian's "vaults" are the equivalent of Zettlr's
+[Workspaces](../first-time-users/workspaces.md).
+:::
 
 To open this "vault" in Zettlr, simply open the app, select "Open Workspace"
 (shortcut: <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd>) and navigate to
 your "vault." Select it to open it as a workspace. Once Zettlr has indexed all
 files in that folder, it will show you the "vault" in the file manager.
 
-!!! caution
+::: caution Obsidian "vaults" vs. Zettlr's Workspaces
+Obsidian treats its "vaults" differently than Zettlr treats its workspaces.
+Zettlr is intended to use a more organized file structure, while Obsidian
+essentially dumps all notes into a single, large folder. That being said,
+Obsidian also allows you to manage multiple "vaults," which you might
+consider when planning to use Obsidian and Zettlr side by side. To get some
+inspiration, take a look at the
+[workspaces documentation](../first-time-users/workspaces.md).
+:::
 
-    Obsidian treats its "vaults" differently than Zettlr treats its workspaces.
-    Zettlr is intended to use a more organized file structure, while Obsidian
-    essentially dumps all notes into a single, large folder. That being said,
-    Obsidian also allows you to manage multiple "vaults," which you might
-    consider when planning to use Obsidian and Zettlr side by side.
-
-## Notable Differences between Obsidian and Zettlr
+## Differences between Obsidian and Zettlr
 
 While Zettlr is very flexible and can work with Markdown files created by
 Obsidian, there are some notable distinctions that you should keep in mind to

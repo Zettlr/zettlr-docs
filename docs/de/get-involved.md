@@ -25,7 +25,7 @@ Ein inklusives Programm zu schreiben heißt auch, es für alle einfach zu machen
 
 Übersetzen ist sehr einfach. Auf Zettlr Translate kannst du einfach eine der Sprachen anwählen und siehst dann eine Liste mit allen Identifikationsnummern der einzelnen Zeichenketten:
 
-![Translation Keys](img/translations_list.png)
+![Translation Keys](./img/translations_list.png)
 
 Auf der linken Seite siehst du alle Übersetzungs-IDs sowie die englische Übersetzung als Hilfestellung. Meistens sind das schon alle Infos, die du brauchst. Wenn du dir nicht sicher bist, wo ein bestimmter String vorkommt, kannst du einfach die App anschauen. Meistens findest du die Infos dann sehr schnell.
 
@@ -78,7 +78,6 @@ Zettlr bringt von Haus aus einen Haufen nützlicher Befehle zum Entwickeln mit. 
 * `release:win`: Baut einen Installer explizit für Windows.
 * `release:linux`: Baut einen Installer explizit für Linux.
 * `less`: Konvertiert die Quelldateien für die Stylesheets in `/resources/less` in das finale CSS unter `source/common/assets/css`. Nach allen Änderungen der Designs solltest du diesen Befehl ausführen.
-* `less:extract`: Liest alle IDs und Klassen aus den Rohdateien aus und schreibt sie in die Datei `/resources/css_list.md`. Damit erstellen wir eigentlich nur unsere [Custom CSS Referenzliste](core/custom-css.md#complete-css-class-and-id-reference).
 * `handlebars`: Hiermit kompilierst du die Templates für Dialoge und Popups und schreibt sie nach`/source/common/assets/tpl`. Führe diesen Befehl immer aus, wenn du irgendetwas an den Templates geändert hast.
 * `lang:refresh`: Lädt die aktuellsten Versionen der vier Standardsprachen (Britisches Englisch, Amerikanisches Englisch, Deutsch und Französisch) herunter und schreibt sie in die entsprechenden Verzeichnisse. Muss mittlerweile eigentlich nur noch vor einem Release ausgeführt werden.
 * `reveal:build`: Baut die nötigen Templates und Dateien für die revealJS-Präsentationen neu.

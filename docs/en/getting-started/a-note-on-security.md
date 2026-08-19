@@ -8,9 +8,9 @@ On this page, we outline the various ways in which working with Zettlr could exp
 
 As a general note: Zettlr gives you large amounts of freedom when it comes to working with your Markdown files. Therefore, Zettlr's ability to execute arbitrary code while importing, viewing, and exporting Markdown documents is not a security flaw but a conscious design decision. If we prevented any arbitrary code from executing, working with Markdown and exporting your documents would constrain you unreasonably. To cite an old adage: “With great power comes great responsibility.”
 
-!!! note
-
-    Zettlr is constantly vetted by security researchers who audit the app for any ways in which malicious actors could execute code where you would not expect it. If we receive notification of such a security-critical issue, we will rectify the issue as soon as possible, and inform you on our social media channels. So please make sure to follow Zettlr on Mastodon or Bluesky, or join our Discord.
+::: note
+Zettlr is constantly vetted by security researchers who audit the app for any ways in which malicious actors could execute code where you would not expect it. If we receive notification of such a security-critical issue, we will rectify the issue as soon as possible, and inform you on our social media channels. So please make sure to follow Zettlr on [Mastodon](https://fosstodon.org/@zettlr) or [Bluesky](https://bsky.app/profile/zettlr.com), or join our [Discord](https://go.zettlr.com/discord).
+:::
 
 ## Code Execution while Reading and Writing Markdown Documents
 
@@ -26,9 +26,9 @@ If you only open files from sources you trust, this should not be an issue. Howe
 
 By disabling all renderers, Zettlr will not accidentally execute any unsafe code contained within Markdown files. You can quickly switch between Zettlr’s Preview mode and Zettlr’s raw mode using the status bar toggle. Otherwise, you can use the corresponding setting.
 
-!!! note
-
-    This advice also applies to pasting something: As soon as you paste some text into a document with active preview mode, Zettlr will immediately attempt to render this. If this contains any harmful code, it would be immediately executed. So be vigilant when copying seemingly harmless text.
+::: warning Pasting Text
+As soon as you paste some text into a document with active preview mode, Zettlr will immediately attempt to render this. If the text in your clipboard contains any harmful code, it would be immediately executed. So be vigilant when copying seemingly harmless text.
+:::
 
 ## Markdown Documents Downloaded from the Internet
 
@@ -40,9 +40,9 @@ If you activate the raw mode, it is also safe to open such a document directly i
 
 This way, even if there is a way for bad actors to compromise your computer via Zettlr that we do not yet know about (a so-called “zero day exploit”), it won't work because you removed the potentially harmful code beforehand.
 
-!!! note
-
-    **Rule of thumb**: If a Markdown document contains almost exclusively HTML code, this should raise your suspicion. Markdown syntax is not of much use for malicious actors, so they will try to inject their code with HTML instead.
+::: tip Rule of thumb
+If a Markdown document contains almost exclusively HTML code, this should raise your suspicion. Markdown syntax is not of much use for malicious actors, so they will try to inject their code with HTML instead.
+:::
 
 ## Templates Downloaded from the Internet
 
@@ -52,11 +52,11 @@ It is likely that at some point you wish to download a template in order to cust
 
 Since templates are not written in Markdown, we recommend caution when you download templates from the internet. Unlike Markdown documents, which can be displayed safely, this is much harder with templates.
 
-If you really want to download a template from the internet, **make sure to have someone you trust with technical experience verify that the document is safe before you use it**!
+If you really want to download a template from the internet, **make sure to have someone you trust with technical expertise verify that the document is safe before you use it**!
 
-!!! note
-
-    **Rule of thumb**: Even if a colleague sends you a template, make sure to double-check it, since your colleague may have accidentally downloaded a harmful template and overlooked the malicious code.
+::: tip Rule of thumb
+Even if a colleague sends you a template, make sure to double-check it, since your colleague may have accidentally downloaded a harmful template and overlooked the malicious code.
+:::
 
 ## Code Execution During Import and Export
 
@@ -68,12 +68,14 @@ Even if you do not download any additional templates, exporting and importing co
 
 This means that even when you export a Markdown document that you yourself created without any specific template, there is still a small chance that this could pose a security risk.
 
-Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we recommend you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL.html#a-note-on-security).
+::: info Consult Pandoc's Security Information
+Imports and exports are always facilitated with the help of Pandoc. Pandoc itself has collected a set of security recommendations that we implore you to read, understand, and follow to ensure you and your computer remain safe. [Read the Pandoc security note here](https://pandoc.org/MANUAL.html#a-note-on-security).
+:::
 
 ### Custom Export Commands
 
 Zettlr allows you to specify arbitrary commands for exporting in the settings. This comes in handy when you, for example, use a pre-made Docker container that contains a specialized installation of Pandoc, or when you want to, e.g., upload the file somewhere. However, this means that you need to be able to trust whichever command you run. Never, under any circumstances, add or run a custom command in the settings which you do not fully trust.
 
-!!! note
-
-    **Rule of thumb**:  Always treat all exports and imports as potentially unsafe.
+::: tip Rule of thumb
+Always treat all exports and imports as potentially unsafe.
+:::

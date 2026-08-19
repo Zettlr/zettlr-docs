@@ -12,7 +12,6 @@ Dann kannst du dich direkt schon in unseren wirklich schnellen Schnellstart-Guid
 
 Unsere ausführlichen Anleitungen sind beispielhafte Vorgaben, wie Zettlr aussehen kann für bestimmte Zwecke.
 
-* [Zettlr als Notizprogramm](guides/guide-notes.md)
 * [Zettlr als Zettelkasten](guides/guide-zettelkasten.md)
 * [Zettlr als vollwertige Entwicklungsumgebung](guides/guide-ide.md)
 
@@ -20,26 +19,13 @@ Unsere ausführlichen Anleitungen sind beispielhafte Vorgaben, wie Zettlr ausseh
 
 Jede\*r kann natürlich schnell gut mit bestimmten Arbeitsabläufen und Programmen werden. Aber kann man _wirklich_ gut in einem Programm werden, ohne die kleinen Tipps und Tricks zu kennen? Tastaturkürzel für häufig verwendete Aufgaben oder versteckte Features werden in der Core-Sektion erklärt. Erfahre, wie du ganze Absätze hin und her verschieben kannst oder Hyperlinks mit nur einem Klick einfügen kannst.
 
-* [Der Editor](core/editor.md)
-* [Markdown 101](reference/markdown-basics.md)
-* [Die Dateiliste](core/file-list.md)
-* [Suchen und Finden](core/search.md)
-* [Exportieren](core/export.md)
-* [Benutzerdefiniertes CSS](core/custom-css.md)
-* [Übersetzungen](core/localisation.md)
-* [Die linke Seitenleiste](core/attachments.md)
-
 ## Wissenschaftliches Arbeiten
 
 Zettlr wird von Wissenschaftler\*innen für Wissenschaftler\*innen entwickelt. Daher gibt es besonders für diese Berufsgruppe viele nützliche Features. Du erfährst alles über die enge Integration mit Zotero und das Zitieren in diesen Anleitungen.
 
 * [Zitieren](academic/citations.md)
 * [Projekte nutzen](academic/projects.md)
-* [Präsentationen erstellen](academic/presentations.md)
-* [Pomodoro-Timer](academic/pomodoro.md)
-* [Lesbarkeits-Modus](academic/readability.md)
 * [Zettelkasten-Methoden](academic/zkn-method.md)
-* [Eigene LaTeX-Vorlagen](academic/custom-templates.md)
 
 ## Mach mit!
 

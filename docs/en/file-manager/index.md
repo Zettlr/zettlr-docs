@@ -1,3 +1,8 @@
+---
+prev: ../first-time-users/exporting-files.md
+next: ./workspaces-root-files.md
+---
+
 # The File Manager
 
 The file manager is basically a built-in file browser (like Explorer or Finder) tuned to the needs of Zettlr. It is one of the core components of the app.
@@ -31,12 +36,12 @@ The file manager allows you to do many things that you already know from your co
 
 ![file_manager_context.png](../img/file_manager_context.png)
 
-The context menu offers you a variety of actions depending on whether you click on a file or folder.
+The context menu offers you a variety of actions depending on whether you right-click on a file or folder.
 
 The most helpful entry in the context menu is the “Properties” entry. This allows you to view the file’s or folder’s properties. Learn more in the [properties documentation](./properties.md).
 
 Next, just like in your computer’s file browser, you can create, rename, or delete files and folders.
 
-In addition, you can copy both the name, and the entire path of a file or folder. This is important especially if you are a power user and work with command-line utensils. However, when you create a template, this is also helpful, as this allows you to copy the template’s path to your clipboard and use them in a defaults profile. Please refer to the documentation on profiles to learn more.
+In addition, you can copy both the name, and the entire path of a file or folder. This is important especially if you are a power user and work with command-line utensils. However, when you create a template, this is also helpful, as this allows you to copy the template’s path to your clipboard and use them in a defaults profile. Please refer to the [documentation on custom templates](../export/custom-templates.md) to learn more.
 
 Finally, the context menu allows you to show the file or folder in your computer’s file browser. This is helpful if you need to do something that Zettlr cannot do. Choosing this option (the wording depends on your computer; on macOS the option is called “Reveal in Finder”) will open your file browser and show you the file.

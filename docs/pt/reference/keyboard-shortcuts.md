@@ -44,7 +44,7 @@ Esses atalhos funcionam ao editar arquivos Markdown e arquivos de código.
 | Atalho | Descrição |
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | <kbd>Tab</kbd>, <kbd>Cmd/Ctrl</kbd>+<kbd>[</kbd> | Indentar seleção |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>\</kbd> | Indentar seleção |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>\\</kbd> | Indentar seleção |
 | <kbd>Shift</kbd>+<kbd>Tab</kbd>, <kbd>Cmd/Ctrl</kbd>+<kbd>]</kbd> | Remover indentação da seleção |
 | <kbd>←</kbd>, <kbd>→</kbd>, <kbd>↑</kbd>, <kbd>↓</kbd> | Mover o cursor em um caractere ou linha |
 | <kbd>Ctrl</kbd>+<kbd>←</kbd>, <kbd>Ctrl</kbd>+<kbd>→</kbd> (Win/Linux) | Mover o cursor para o próximo/anterior elemento sintático ou por grupo de caracteres de palavra ou não-palavra |
@@ -85,8 +85,8 @@ Esses atalhos funcionam ao editar arquivos Markdown e arquivos de código.
 | <kbd>Alt</kbd>+<kbd>L</kbd> (Win/Linux) | Selecionar a linha atual |
 | <kbd>Ctrl</kbd>+<kbd>L</kbd> (macOS) | Selecionar a linha atual |
 | <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | Excluir a linha atual |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd> | Se o cursor tocar um colchete, mover para o colchete correspondente |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>\</kbd> | Alternar comentário |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\\</kbd> | Se o cursor tocar um colchete, mover para o colchete correspondente |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>\\</kbd> | Alternar comentário |
 | <kbd>Alt</kbd>+<kbd>A</kbd> (Win/Linux) | Alternar comentário em bloco |
 | <kbd>Ctrl</kbd>+<kbd>M</kbd> (Win/Linux) | Alternar se <kbd>Tab</kbd> pode ser usado para sair do editor |
 | <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>M</kbd> (macOS) | Alternar se <kbd>Tab</kbd> pode ser usado para sair do editor |

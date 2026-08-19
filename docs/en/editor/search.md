@@ -4,9 +4,9 @@ You can quickly search through the contents of your current document by pressing
 
 ![editor_search_panel.png](../img/editor_search_panel.png)
 
-!!! tip
-
-	If you need to search several files simultaneously, use the global [full-text search](../file-manager/search.md) instead.
+::: tip
+If you need to search several files simultaneously, use the global [full-text search](../file-manager/search.md) instead.
+:::
 
 ## Searching for Terms
 
@@ -14,9 +14,9 @@ To start a search, simply start typing. The editor will immediately start the se
 
 Click “all” to select all matches at once.
 
-!!! note
-
-	There is a difference between "highlighting" and "selecting" search results. By default, your search results are only highlighted, meaning that the editor shows you where they are. But if you start typing, nothing will change. Once you select a result, though, you will overwrite it. Selecting "all" matches effectively means that you can start writing to replace all matches at the same time.
+::: note
+There is a difference between "highlighting" and "selecting" search results. By default, your search results are only highlighted, meaning that the editor shows you where they are. But if you start typing, nothing will change. Once you select a result, though, you will overwrite it. Selecting "all" matches effectively means that you can start writing to replace all matches at the same time.
+:::
 
 By default, the search will be case-insensitive (so that the term “search” will highlight any occurrence of “search,”“Search,” or “SeArCh”). To ensure that it only matches the exact term, enable “match case.”
 
@@ -36,9 +36,9 @@ The editor search supports JavaScript Regular Expression syntax. [Learn more abo
 
 To make the editor interpret your query not literally, but as a regular expression, check the “regexp” checkbox. Now, it will perform regular pattern matching instead of exact matching. This means that, instead of searching for individual occurrences, you can search for patterns (e.g., you can search for four digits instead of individual years).
 
-!!! warning
-
-	If you are already familiar with JavaScript regular expressions, you may know that these are usually written within forward-slashes, e.g.: `/\d{4}/`. For using the regular expression search in the editor, leave off these forward slashes, otherwise you will yield unexpected results.
+::: info
+If you are already familiar with JavaScript regular expressions, you may know that these are usually written within forward-slashes, e.g.: `/\d{4}/`. For using the regular expression search in the editor, leave off these forward slashes, otherwise you will yield unexpected results.
+:::
 
 Some examples of regular expressions to give you an impression of how they work:
 

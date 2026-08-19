@@ -2,7 +2,7 @@
 
 Zettlr puede exportar sus archivos de Markdown directamente como archivos de presentación utilizando el framework [revel.js](https://revealjs.com/#/). `revel.js` es una solución liviana para crear presentaciones usando HTML simple y JavaScript. Por lo tanto, estas presentaciones se pueden mostrar en _todos_ los equipos que ejecutan un navegador; hoy en día esto significa: se ejecutan en _todos_ equipos.
 
-Para exportar archivos Markdown a `revel.js`, debes asegurarte de que Pandoc esté instalado en tu computadora. Dirígete a la [guía de instalación de Pandoc](../installing-pandoc.md) para ver cómo instalar Pandoc.
+Para exportar archivos Markdown a `revel.js`, debes asegurarte de que Pandoc esté instalado en tu computadora. Dirígete a la guía de instalación de Pandoc para ver cómo instalar Pandoc.
 
 ## Consideraciones previas
 

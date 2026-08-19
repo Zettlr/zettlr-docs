@@ -20,9 +20,9 @@ And then accept or change the suggested filename:
 
 ![create_file_input.png](../img/create_file_input.png)
 
-!!! tip
-
-	New folders can be created exactly the same way, and we recommend doing it this way.
+::: tip
+New folders can be created exactly the same way, and we recommend doing it this way.
+:::
 
 ## 2. Via the Menu or Shortcut
 
@@ -34,9 +34,9 @@ With this method, you can also create a file outside your loaded workspaces. Thi
 
 ## 3. Via Automatic Linking
 
-The last method is to create files automatically when linking them. This is a feature which is part of the PKMS (Personal Knowledge Management System), or “Zettelkasten” functionality of Zettlr. For that to work, you’ll need to have a dedicated “Zettelkasten” workspace, and need to link the file.
+The last method is to create files automatically when linking them. This is a feature which is part of the [PKMS](../pkms/index.md) (Personal Knowledge Management System), or “Zettelkasten” functionality of Zettlr. For that to work, you’ll need to have a dedicated “Zettelkasten” workspace, and need to link the file.
 
-This workflow will be introduced in the corresponding section.
+This workflow will be introduced in [the section on Zettelkästen](../pkms/zkn-method.md).
 
 ## Creating Folders
 
@@ -52,7 +52,7 @@ If you do not want to have files automatically be named like this, you can also 
 
 ![settings_filename_pattern.png](../img/settings_filename_pattern.png)
 
-Search for the setting “Pattern for new file names.” This setting offers you a text input, in which you can choose how Zettlr generates filenames. You can either insert a static string, such as “my-awesome-file.md” or make use of a certain set of variables. These variables are the following:
+Search for the setting “Pattern for new file names.” This setting offers you a text input, in which you can choose how Zettlr generates filenames. You can either insert a static string, such as “`my-awesome-file.md`” or make use of a certain set of variables. These variables are the following:
 
 * `%id`: Inserts a new ID, following another pattern which you can define in the Zettelkasten-section of the preferences. By default, it is just the current date.
 * `%Y`: The year, four-digits (e.g., 2025).
@@ -75,6 +75,6 @@ Zettlr is a Markdown editor, and as such it will by default create Markdown file
 * `.json`: This will create a JSON data file (these are used for bibliographies if you connect your reference manager; these will be introduced later)
 * `.yaml`: This will create a YAML data file (used, e.g., to configure how Zettlr exports your files)
 
-!!! tip
-
-	You can also create Markdown files using other filename extensions than `.md`. For example, you can create `.Rmd`-files, `.qmd`-files, or `.txt`-files. You saw that correctly: Zettlr can easily open and display RMarkdown and Quarto files. Also, if you have plain-text files, these will, by definition, be interpreted as Markdown.
+::: tip
+You can also create Markdown files using other filename extensions than `.md`. For example, you can create `.Rmd`-files, `.qmd`-files, or `.txt`-files. You saw that correctly: Zettlr can easily open and display RMarkdown and Quarto files. Also, if you have plain-text files, these will, by definition, be interpreted as Markdown.
+:::

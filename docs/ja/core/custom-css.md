@@ -2,7 +2,7 @@
 
 > カスタムCSSは上級者向けの機能です。カスタマイズについては、公式にサポートしているわけではなく、すべて自己責任となります。何か問題が起きたら、Zettlrのデータディレクトリから`custom.css`を削除して、カスタムCSSをリセットしてください。
 
-CSS([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets))を利用して、アプリケーションの見た目を変更することができます。カスタムCSSエディタは、[アセットマネージャ](./assets-manager.md)の中にあります。
+CSS([Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets))を利用して、アプリケーションの見た目を変更することができます。カスタムCSSエディタは、アセットマネージャの中にあります。
 
 CSSはよくわからないけれど、このページのガイドをただコピー＆ペーストするだけでは嫌だという場合は、簡単な[CSSチュートリアル](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)を見てみるという選択肢もあります。インターネット上には多くのチュートリアルがあり、ちょっとGoogleで検索すればチュートリアル動画なども見つかります。
 

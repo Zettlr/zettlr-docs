@@ -6,29 +6,31 @@ on:
     branches:
       - master
 
+env:
+  NODE_VERSION: '24'
+
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    # For setup, see https://www.mkdocs.org/#installation
     steps:
-    - uses: actions/checkout@v4
+    - name: Clone repository (master branch)
+      uses: actions/checkout@v6
       with:
+        ref: master
         fetch-depth: 0 # Needed for the revisions plugin to work
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v5
+    - name: Enable Yarn 4.x
+      run: corepack enable
+    - name: Setup NodeJS ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v6
       with:
-        python-version: '3.10'
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'yarn'
+    # The scripts require some modules that we need to install.
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install mkdocs
-        pip install mkdocs-git-revision-date-localized-plugin
-        
+      run: yarn install --immutable    
     # Now we can build the thing
     - name: Build the documentation
-      run: ./scripts/build.sh
+      run: yarn docs:build
 
     # Deploy to the server
     - name: Deploy to production

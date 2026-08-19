@@ -1,3 +1,8 @@
+---
+prev: ../scientific-technical/writing-statistics.md
+next: ./workflow.md
+---
+
 # Export
 
 Zettlr ships with a powerful exporting ecosystem, primarily powered by Pandoc. This section introduces the system, and how to customize it to your needs.
@@ -8,9 +13,9 @@ You can start an exporting process in two ways. You can either export your curre
 
 The second way of invoking the exporter is by exporting a project. You can do so by right-clicking a project folder in the file manager and choosing “Export project.” This entry will be disabled if you have not yet selected at least one profile to export the project to.
 
-!!! tip
-
-	Read more on how to invoke the exporter in our guides on [exporting individual files](../first-time-users/exporting-files.md) and for [projects](../file-manager/projects.md).
+::: tip
+Read more on how to invoke the exporter in our guides on [exporting individual files](../first-time-users/exporting-files.md) and for [projects](../file-manager/projects.md).
+:::
 
 ## Customizing Export Profiles
 
@@ -34,6 +39,6 @@ The **Simple PDF** export option is meant for situations in which you cannot ins
 
 When Zettlr exports to Simple PDF, what it will do is export your file to HTML and then print it using the same process your browser uses to print websites.
 
-!!! note
-
-    Because Simple PDF converts your files to HTML first, if you want to customize that export, you will have to adapt the HTML template, not the PDF one.
+::: note
+Because Simple PDF converts your files to HTML first, if you want to customize that export, you will have to adapt the HTML template, not the PDF one.
+:::

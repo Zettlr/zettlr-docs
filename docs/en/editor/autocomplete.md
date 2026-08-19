@@ -4,9 +4,9 @@ Autocomplete helps you complete various pieces of text by searching for parts of
 
 Usually, you trigger autocomplete with a special character at a valid position. These characters differ for the types of autocomplete Zettlr supports, such as citations, tags, snippets, or code blocks. A “valid position” usually means that the character needs to be preceded by whitespace, or inserted at the beginning of a line.
 
-!!! tip
-
-	Because one not always wants to insert an autocompletion, you need to accept an autocomplete suggestion by either clicking it, or pressing <kbd>Tab</kbd>. Pressing the <kbd>Enter</kbd>-key will abort the insertion process. This prevents accidental autocompletions.
+::: tip
+Because one not always wants to insert an autocompletion, you need to accept an autocomplete suggestion by either clicking it, or pressing <kbd>Tab</kbd>. Pressing the <kbd>Enter</kbd>-key will abort the insertion process. This prevents accidental autocompletions.
+:::
 
 ## Tag Autocompletion
 
@@ -16,17 +16,17 @@ Zettlr can autocomplete tags, or keywords for you. To do so, insert a pound-sign
 
 When inserting citations, autocomplete helps you identify the correct citation key. To start a citation autocomplete, enter an `@`-character. Start typing parts of the citation key, author names, or parts of the title of the work to cite. Once you have identified the citation key, accept the suggestion with <kbd>Tab</kbd>.
 
-!!! tip
-
-	In your citation settings, you can determine how Zettlr will autocomplete the citation. There are three styles available, and Zettlr will add any required surrounding characters as necessary, and place your cursor accordingly.
+::: tip
+In your citation settings, you can determine how Zettlr will autocomplete the citation. There are three styles available, and Zettlr will add any required surrounding characters as necessary, and place your cursor accordingly.
+:::
 
 ## Snippets Autocompletion
 
 To insert snippets, insert a colon-character (`:`). This will offer you available snippets to choose from.
 
-!!! note
-
-	The character also allows you to insert Emojis, if you have activated this setting.
+::: note
+You can customize which character triggers the autocompletion. Especially if you are writing using a French typographical style, you will space out your (normal) colons from your text, which will trigger the autocomplete. If this happens frequently, you can change the autocompletion trigger character to another one.
+:::
 
 ## Emoji Autocompletion
 
@@ -34,9 +34,9 @@ Zettlr allows you to insert emojis based on string values (e.g., `:joy:`). Since
 
 When searching for an emoji, you can type various synonyms for the character.
 
-!!! note
-
-	Autocompleting an emoji will insert the actual Unicode-symbol for the emoji, not its string representation.
+::: note
+Autocompleting an emoji will insert the actual Unicode-symbol for the emoji, not its string representation.
+:::
 
 ## Code Blocks
 

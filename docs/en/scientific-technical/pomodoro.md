@@ -18,9 +18,9 @@ Access the Pomodoro timer by clicking on the circle in the top right corner of t
 - After each phase, a **Sound Effect** is played, which can be chosen using the drop-down menu (either Glass, Digital Alarm and Chime).
 - Adjust the **volume** with the slider (left means muted). When you change this, the selected sound will play to indicate the volume.
 
-!!! note
-
-    This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
+::: note
+This is not your system volume, so if your system's volume is only at 20 percent, even a volume of 100 percent inside Zettlr will only sound as loud as 20 percent.
+:::
 
 ![Initial display of the Pomodoro timer](../img/pomodoro_init.png)
 

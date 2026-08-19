@@ -4,9 +4,9 @@ Defaults files (which we also call “profiles”) are a way to define default v
 
 You can view and modify all defaults files in the [assets manager](./assets-manager.md).
 
-!!! tip
-
-    Zettlr's standard profiles work out of the box and should be sufficient for most use-cases. Should you see the need to edit them, expect to export a test file multiple times before you are done.
+::: tip
+Zettlr's standard profiles work out of the box and should be sufficient for most use-cases. Should you see the need to edit them, expect to export a test file multiple times before you are done.
+:::
 
 ## What are Defaults Files?
 
@@ -18,9 +18,9 @@ Whenever you rename such a protected profile, Zettlr will immediately recreate i
 
 Aside from these protected files, you can add as many additional profiles as you wish. Give them notable names so that you can find them in the export format dropdown list later on.
 
-!!! note
-
-    The full documentation for what you can do with defaults files can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#default-files). Make sure to refer to that manual when you edit defaults files.
+::: note
+The full documentation for what you can do with defaults files can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#default-files). Make sure to refer to that manual when you edit defaults files.
+:::
 
 ## Requirements for Defaults Files
 
@@ -32,9 +32,9 @@ If the `writer` property is a Markdown-compatible writer, this means that the pr
 
 If those properties are missing, Zettlr will indicate that the profile is invalid, and you’ll need to fix it before you can use it.
 
-!!! note
-
-    Zettlr includes a linter that checks the profiles for any errors. When you save a profile and Zettlr does not complain, this usually means that the file can be used. However, Zettlr cannot check whether, e.g., all your paths are correct, so this is merely a necessary, not a sufficient condition for the health of a profile.
+::: note
+Zettlr includes a linter that checks the profiles for any errors. When you save a profile and Zettlr does not complain, this usually means that the file can be used. However, Zettlr cannot check whether, e.g., all your paths are correct, so this is merely a necessary, not a sufficient condition for the health of a profile.
+:::
 
 Pandoc supports Markdown extensions (i.e., for smart quotes, emojis, etc.). These are specified by adding them after the `reader` or `writer` properties using `+`-signs. If you require extensions to the standard Markdown reader, you can add these to the `reader` or `writer` properties. Similarly, if an extension is enabled by default, you can use a `-`-sign to disable it.
 
@@ -56,6 +56,6 @@ Lastly, Pandoc will parse the YAML front matter(s) of the file(s) you are curren
 
 **Example**: Let us assume you have defined a `title` for all your Word exports in the defaults file for the `docx` writer. If you do not use any front matter, this variable will be used for each and every export to Word. But if you specify the `title` property inside a YAML front matter, this file – when exported to Word – will have its own title set.
 
-!!! tip
-
-    One common use-case for defining variables inside a defaults file which you could also define on the level of YAML frontmatters would be the `lang`-property. By default, Pandoc sets the language of each import and each export to `en-US`, yielding US-American number delimiters and quotes. If you regularly export into, say, French, it might make sense to set the `lang` property directly in your defaults files to `fr` so that files are being exported using that locale by default. Then you can still overwrite the property to something different within individual files by setting the corresponding YAML frontmatter variable.
+::: tip
+One common use-case for defining variables inside a defaults file which you could also define on the level of YAML frontmatters would be the `lang`-property. By default, Pandoc sets the language of each import and each export to `en-US`, yielding US-American number delimiters and quotes. If you regularly export into, say, French, it might make sense to set the `lang` property directly in your defaults files to `fr` so that files are being exported using that locale by default. Then you can still overwrite the property to something different within individual files by setting the corresponding YAML frontmatter variable.
+:::

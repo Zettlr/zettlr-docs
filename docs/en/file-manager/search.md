@@ -28,9 +28,9 @@ Finally, at the bottom, you can see some of the search results. The search resul
 
 As Zettlr finds more matches in your files, it populates the list of search results below the controls. Each file in which Zettlr has found a match is one result.
 
-!!! tip
-
-    Too many results? You can toggle the display of all results using the corresponding button, and then only expand those which deserve a second look.
+::: tip
+Too many results? You can toggle the display of all results using the corresponding button, and then only expand those which deserve a second look.
+:::
 
 Each result has two sections. At the top, you can see the filename. the `title` property, or the first heading of level 1, depending on your settings. Below it you will see, in gray, the **relative path** from the workspace root to this file. Zettlr does not show the entire path to the file on your computer to remove unnecessary clutter and make these paths short, but keep them long enough that you know where in your loaded workspaces the file is located.
 
@@ -61,9 +61,9 @@ Zettlr utilizes a boolean search. You can make use of several operators to speci
 * **Exact-Match operator:** Enclose your query in quotation marks (e.g.,`"Boat Ship"`) to search your files for that exact phrase.
 * **NOT operator:** Type `!Boat` to search only for files *not* containing that term. Works with exact matches as well: `!"Boat Ship"` would exclude all files containing the exact phrase “Boat Ship.”
 
-!!! warning
-
-    While the `AND`, `OR`, and `Exact-Match` operators work by assigning weights (a file that fulfills all search criteria will be considered very relevant, while files which do not match all search terms are considered less relevant), the `NOT` operator definitely excludes files. So while a search for `boat ship` would also include files containing only one of the two terms (albeit with a much lower relevancy score), a search for `!boat ship` will definitely exclude all files containing the word boat.
+::: warning
+While the `AND`, `OR`, and `Exact-Match` operators work by assigning weights (a file that fulfills all search criteria will be considered very relevant, while files which do not match all search terms are considered less relevant), the `NOT` operator definitely excludes files. So while a search for `boat ship` would also include files containing only one of the two terms (albeit with a much lower relevancy score), a search for `!boat ship` will definitely exclude all files containing the word boat.
+:::
 
 Of course, you can chain all of these operators. So you could search for `"Boat Ship" | vessel captain` to display only files that either contain the exact phrase “Boat Ship” or the word “vessel,” and which also include the word “captain.”
 

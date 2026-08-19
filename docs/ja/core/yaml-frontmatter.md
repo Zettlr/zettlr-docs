@@ -29,7 +29,7 @@ author:
 
 ## Frontmatters versus Defaults files
 
-Frontmatters can be used to override defaults set by either Pandoc internally or one of the defaults files which Zettlr uses to export your files. For more information, make sure to read the [documentation on defaults files](defaults-files.md) to avoid confusion!
+Frontmatters can be used to override defaults set by either Pandoc internally or one of the defaults files which Zettlr uses to export your files. For more information, make sure to read the documentation on defaults files to avoid confusion!
 
 ## frontmatter変数
 

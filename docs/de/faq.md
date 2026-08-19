@@ -14,7 +14,7 @@ Wir erhalten mehr und mehr Anfragen nach einer solchen mobilen Version. Wir find
 
 ## Was ist Markdown?
 
-Markdown ist eine vereinfachte Auszeichnungssprache, die es dir ermöglicht, genauso komplexen Text zu verfassen, wie mit Office-Programmen, allerdings ohne den unnötigen Ballast. Anstatt immer manuell die Formatierungen auszuwählen, reicht es bei Markdown zum Beispiel aus, ein `#`-Zeichen voranzustellen, um eine Überschrift zu erzeugen! Wenn du mehr wissen willst, schau dir [unsere Dokumentation](reference/markdown-basics.md) dazu an.
+Markdown ist eine vereinfachte Auszeichnungssprache, die es dir ermöglicht, genauso komplexen Text zu verfassen, wie mit Office-Programmen, allerdings ohne den unnötigen Ballast. Anstatt immer manuell die Formatierungen auszuwählen, reicht es bei Markdown zum Beispiel aus, ein `#`-Zeichen voranzustellen, um eine Überschrift zu erzeugen! Wenn du mehr wissen willst, schau dir [unsere Dokumentation](/en/first-time-users/writing-markdown.md) dazu an.
 
 ## Was muss ich aufräumen, wenn ich Zettlr nicht mehr benutzen will?
 

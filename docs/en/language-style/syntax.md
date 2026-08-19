@@ -12,10 +12,10 @@ The Markdown style checker uses the same mechanism as the spellchecking and Lang
 
 Unlike the other tools, Markdown style often affects entire blocks of text. Therefore, it uses its own gutter to display small warning signs whenever it has found an issue.
 
-!!! note
+::: note
+The style checker is opinionated. We believe that the rules it enforces ensure that your documents are well formatted. However, style can be subjective. This is why the tool will never use red lines to mark issues. In addition, you can disable the tool if you disagree with it.
+:::
 
-	The style checker is opinionated. We believe that the rules it enforces ensure that your documents are well formatted. However, style can be subjective. This is why the tool will never use red lines to mark issues. In addition, you can disable the tool if you disagree with it.
-
-!!! tip
-
-	The style issues are collected alongside any misspellings and LanguageTool annotations in the diagnostics control on the status bar.
+::: tip
+The style issues are collected alongside any misspellings and LanguageTool annotations in the diagnostics control on the status bar.
+:::

@@ -20,6 +20,10 @@ The third section is reserved for project settings. You can turn each folder int
 
 The last section in the popover lets you modify the appearance of the folder. You can pick from a selection of icons that will be displayed in the file manager instead of the standard folder icon. You can use this to, e.g., make a folder full of papers stand out more, or select more appropriate icons based on what you use the folder for.
 
+::: tip
+You can also choose from a color palette to further distinguish important folders in your file manager with a color.
+:::
+
 ## File Properties
 
 The file properties popover looks similar to the folder properties popover, but displays information more suitable for files.

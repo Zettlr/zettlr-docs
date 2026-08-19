@@ -1,20 +1,24 @@
+---
+prev: ./index.md
+---
+
 # Markdown Compendium
 
-This section is a continuation from the first-time-user’s guide. It contains a more comprehensive introduction to the Markdown Syntax and introduces special elements that Markdown supports.
+This section is a continuation from the first-time-user’s guide. It contains a more comprehensive introduction to the Markdown Syntax and introduces special elements that Zettlr supports.
 
 ## What is Markdown?
 
 Markdown is a very simple markup language that uses formatting symbols to format text instead of having you click around a formatting toolbar. You already know many of the conventions of Markdown. For example, to emphasize text, you simply need to surround it with `*` or `_` symbols. In fact, many applications that you may already know use Markdown, such as Slack, Discord, Microsoft Teams, and more.
 
-!!! note
-
-    Despite its simplicity, Markdown contains all formatting conventions you need to write full-fledged research articles. And, should you ever miss something, you can always drop in a few LaTeX commands or HTML tags.
+::: note
+Despite its simplicity, Markdown contains all formatting conventions you need to write full-fledged research articles. And, should you ever miss something, you can always drop in a few LaTeX commands or HTML tags.
+:::
 
 The two main benefits of Markdown are that you can format your entire document without using your mouse or trackpad and that it separates content from layout.
 
-!!! note
-
-    To learn how to customize how your documents look once you export them, head over to the [defaults files](../export/defaults-files.md) documentation.
+::: note
+To learn how to customize how your documents look once you export them, head over to the [defaults files](../export/defaults-files.md) documentation.
+:::
 
 ## Formatting Markdown
 
@@ -38,14 +42,14 @@ To format Markdown documents, there are a few basic formatting rules that you sh
 | Footnotes          | `Some text[^1].`              | Some text&sup1;.                      |
 | Footnote reference | `[^1]: Footnote text.`        | &sup1; Footnote text.                 |
 | Comment            | `<!-- Commented out -->`      | (Not visible)                         |
-| Inline math        | `$E = mc^2$`                  | ![E = mc^2](../img/Emc2.png)          |
-| Block math         | `$$\nE = mc^2\n$`             | ![E = mc^2](../img/Emc2.png)          |
+| Inline math        | `$E = mc^2$`                  | $E = mc^2$                            |
+| Block math         | `$$\nE = mc^2\n$`             | $E = mc^2$                            |
 | Horizontal line    | `***` or `---`                | <hr>                                  |
 | Block quote        | `> Some quote`                | &nbsp;&nbsp;&nbsp;&nbsp;*Some quote*  |
 
-!!! note
-
-    This list is not exhaustive. There are some more formatting symbols which can be enabled either with extensions or which will be introduced at a later stage of this documentation, for example citations.
+::: note
+This list is not exhaustive. There are some more formatting symbols which can be enabled either with extensions or which will be introduced at a later stage of this documentation, for example citations.
+:::
 
 If you want to learn even more about Markdown, there are many good resources out there. A good starter is the Markdown guide on [Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/).
 
@@ -55,9 +59,9 @@ Zettlr offers a plethora of keyboard shortcuts that make writing Markdown even m
 
 You can think of Zettlr’s keyboard shortcuts as being divided into two logical groups. The first group contains **common shortcuts** that most other apps also incorporate — it follows conventions such as using <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd> to make text bold. The second group however comes from **writing code** — it allows you to both move around your text, and move your text around much more efficiently than most word processors.
 
-!!! note
-
-    Across this documentation, you will often see the "key" <kbd>Cmd/Ctrl</kbd>. By that we mean that you'll need to press the Command-key on macOS, and the Control-key otherwise.
+::: note
+Across this documentation, you will often see the "key" <kbd>Cmd/Ctrl</kbd>. By that we mean that you'll need to press the Command-key on macOS, and the Control-key otherwise.
+:::
 
 * <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd>: Make text **bold**
 * <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd>: _Emphasize_ text
@@ -82,9 +86,9 @@ You can think of Zettlr’s keyboard shortcuts as being divided into two logical
 * <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>: Previous occurrence
 * <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd>: Select next occurrence
 
-!!! note
-
-    Zettlr also offers two advanced writing modes: Emacs and Vim. Whenever you activate one of these modes, they will change many keybindings and offer new ones. Those settings are recommended for advanced users only.
+::: note
+Zettlr also offers two advanced writing modes: Emacs and Vim. Whenever you activate one of these modes, they will change many keybindings and offer new ones. Those settings are recommended for advanced users only.
+:::
 
 ## Multi-Cursor Editing
 
@@ -108,9 +112,9 @@ Zettlr supports one of the most comprehensive and all-encompassing dialects: Pan
 * Citations and cross-references
 * … and more
 
-!!! warning
-
-	While Markdown dialects are, for the most part, compatible with each other, this is not always the case. Some dialects may, for example, not support citation syntax, or use a slightly different way to create tables. If you want to write Markdown for a specific system, always make sure to check which elements that system supports.
+::: warning
+While Markdown dialects are, for the most part, compatible with each other, this is not always the case. Some dialects may, for example, not support citation syntax, or use a slightly different way to create tables. If you want to write Markdown for a specific system, always make sure to check which elements that system supports.
+:::
 
 ## Special Elements in Zettlr Markdown
 
@@ -130,9 +134,9 @@ This is some text.[^1]
 
 Instead of numbers, you can also use letters and words, e.g., `[^a custom label]`. However, Zettlr assumes that, most of the time, you want simple numerical footnote labels. Therefore, when you stick to a simple footnote numbering scheme, Zettlr will automatically ensure that all your footnotes remain correctly numbered.
 
-!!! tip
-
-	Regardless of what labelling system you choose for your footnotes, the only important part is that each label must be unique. Whenever you export your files, the footnotes will be correctly numbered ascending, regardless of what your labels look like.
+::: tip
+Regardless of what labelling system you choose for your footnotes, the only important part is that each label must be unique. Whenever you export your files, the footnotes will be correctly numbered ascending, regardless of what your labels look like.
+:::
 
 You can also define footnotes inline, if you don’t want to create two elements. To do so, you would place the circumflex symbol (`^`) in front of the square bracket:
 

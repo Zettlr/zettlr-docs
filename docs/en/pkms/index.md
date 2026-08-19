@@ -1,3 +1,8 @@
+---
+prev: ../export/lua-filters.md
+next: ./zkn-method.md
+---
+
 # PKMS/Zettelkasten
 
 Zettlr ships with a set of features that allow you to maintain your own “Zettelkasten”.

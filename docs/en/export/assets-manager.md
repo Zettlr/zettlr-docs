@@ -1,6 +1,6 @@
 # Assets Manager
 
-The assets manager allows you to directly edit many of the files that are required to import and export files. It can be opened either via “File” → “Preferences” → “Assets Manager” (macOS: “Zettlr” → “Assets Manager”) or by pressing <kbd>Cmd/Ctrl</kbd>+</kbd><kbd>Alt</kbd>+<kbd>,</kbd>.
+The assets manager allows you to directly edit many of the files that are required to import and export files. It can be opened either via “File” → “Preferences” → “Assets Manager” (macOS: “Zettlr” → “Assets Manager”) or by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>,</kbd>.
 
 ![assets_manager_profiles.png](../img/assets_manager_profiles.png)
 

@@ -1,13 +1,21 @@
+---
+prev: ./index.md
+---
+
 # Math
 
 Zettlr supports writing math and formulae using the KaTeX library.
 
-To insert math code, enclose your formulae with dollar signs (`$...$`). To add a math block, use (`$$...$$`) instead.
+To insert math code, enclose your formulae with dollar signs (`$…$`). To add a math block, use (`$$…$$`) instead.
 
-Some examples:
+::: note
+To prevent confusion with amounts of money, spaces between inline math and the dollar signs are not allowed.
+:::
 
-```markdown
-Everybody should know Euler's formula: $e^{ \pm i\theta } = \cos \theta \pm i\sin \theta$ 
+By default, math is rendered using syntax highlighting. However, Zettlr can also pre-render math content. To do so, ensure to activate the corresponding renderer in the settings, and make sure your rendering mode is set to “Preview,” not “raw.”
+
+::: preview Examples of math equations. Click to view Markdown source:
+Everybody should know Euler's formula: $e^{ \pm i\theta } = \cos \theta \pm i\sin \theta$
 
 These are Euler's most famous equations:
 
@@ -17,21 +25,12 @@ e^{ \pm i\theta } & = \cos \theta \pm i\sin \theta    \\
 e^{i \pi} & = -1
 \end{aligned}
 $$
-```
 
-!!! note
+:::
 
-    To prevent confusion with amounts of money, spaces between inline math and the dollar signs are not allowed.
-
-By default, math is rendered using syntax highlighting. However, Zettlr can also pre-render math content. To do so, ensure to activate the corresponding renderer in the settings, and make sure your rendering mode is set to “Preview,” not “raw.”
-
-The above example is rendered like this:
-
-![Rendered LaTeX equations](../img/math_example.png)
-
-!!! tip
-
-	KaTeX is almost fully compatible with MathTeX. However, some discrepancies remain. If you export a document containing math to LaTeX, ensure that the code blocks render appropriately. For HTML exports, you can specify the KaTeX library (the default is MathJax).
+::: tip
+KaTeX is almost fully compatible with MathTeX. However, some discrepancies remain. If you export a document containing math to LaTeX, ensure that the code blocks render appropriately. For HTML exports, you can specify the KaTeX library (the default is MathJax).
+:::
 
 A complete documentation for all supported functions and symbols can be found on the KaTeX homepage: [katex.org/docs/supported.html](https://katex.org/docs/supported.html).
 

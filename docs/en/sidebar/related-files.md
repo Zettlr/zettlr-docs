@@ -1,19 +1,19 @@
 # Related Files
 
-The related files tab lists files which Zettlr deems related to the current document. This sidebar tab is primarily relevant for Zettelkasten/PKMS workflows. It helps you navigate your files not based on the hierarchical folder structure, but on semantic similarity based on textual indicators. This feature can help you identify connections between documents.
+The related files tab lists files which Zettlr deems related to the current document. This sidebar tab is primarily relevant for [Zettelkasten/PKMS](../pkms/index.md) workflows. It helps you navigate your files not based on the hierarchical folder structure, but on semantic similarity based on textual indicators. This feature can help you identify connections between documents.
 
 ![related_files_bidirectional.png](../img/related_files_bidirectional.png)
 
-The tab lists the filenames (or YAML front matter titles, or headings level 1, depending on your preferences) of the related file next to an icon that symbolizes the nature of this relationship.
+The tab lists the filenames (or YAML frontmatter titles, or headings level 1, depending on your preferences) of the related file next to an icon that symbolizes the nature of this relationship.
 
 There are four different types of relationships, identified with the following icons:
 
-| Relationship           | Symbol                              | Description |
-|------------------------|-------------------------------------|-------------|
-| **Shared keywords**    | ![](../img/icon_tag.png)            | Two files can be related if they have keywords (or tags) in common. |
-| **Inbound link**       | ![](../img/icon_arrow_left.png)    | A file is considered relevant if it contains a link to the current document. |
-| **Outbound link**      | ![](../img/icon_arrow_right.png)     | A file is considered relevant if the current documents links to it. |
-| **Bidirectional link** | ![](../img/icon_two_way_arrows.png) | A file is considered relevant if both the current document links to it, and the related file links back to the current document. |
+| Relationship           | Symbol                              | Description                                                                                  |
+|------------------------|-------------------------------------|----------------------------------------------------------------------------------------------|
+| **Shared keywords**    | ![](../img/icon_tag.png)            | The related file has at least one keyword (or tag) in common with the currently active file. |
+| **Inbound link**       | ![](../img/icon_arrow_left.png)     | The related file links to the currently active file.                                         |
+| **Outbound link**      | ![](../img/icon_arrow_right.png)    | The currently active file links to the related file.                                         |
+| **Bidirectional link** | ![](../img/icon_two_way_arrows.png) | The currently active file and the related file mutually link to each other.                  |
 
 ## Understanding how Zettlr Calculates Relatedness
 

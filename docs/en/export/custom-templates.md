@@ -4,11 +4,11 @@ While the profiles that Zettlr ships with will be sufficient for many use-cases,
 
 Regardless of what your use-case is, you will need to adapt an existing template to work with Pandoc.
 
-!!! note
+::: note
+We will be using two terms in this section: "template" and "reference document." A template is a file that contains Pandoc's template syntax to allow Pandoc to insert your Markdown documents into that template. A reference document is just that: a *reference* from which Pandoc can *copy* styles to populate a new file with.
 
-	We will be using two terms in this section: "template" and "reference document." A template is a file that contains Pandoc's template syntax to allow Pandoc to insert your Markdown documents into that template. A reference document is just that: a *reference* from which Pandoc can *copy* styles to populate a new file with.
-
-    Almost all export formats use templates, with the exception being complex binary formats. Currently, this includes Word files, LibreOffice files, and Powerpoint presentations. Read more in Pandoc's [template documentation](https://pandoc.org/MANUAL.html#templates).
+Almost all export formats use templates, with the exception being complex binary formats. Currently, this includes Word files, LibreOffice files, and Powerpoint presentations. Read more in Pandoc's [template documentation](https://pandoc.org/MANUAL.html#templates).
+:::
 
 ## About Custom Templates and Reference Documents
 
@@ -28,9 +28,9 @@ Each custom template roughly consists of at least two, sometimes three files, wh
 2. A profile that uses this template.
 3. Optional: Especially if you define many custom variables for a template, it is a good idea to create a snippet to go alongside the template.
 
-!!! tip
-
-	For a full guide to taking an existing template, and adapting it for usage in Zettlr, see our [templating guide for journal submissions](../guides/journal-latex-template.md).
+::: tip
+For a full guide to taking an existing template, and adapting it for usage in Zettlr, see our [templating guide for journal submissions](../guides/journal-latex-template.md).
+:::
 
 Let's write your first LaTeX template, which can be done directly in Zettlr. When complete, your template file will be passed to Zettlr, Citeproc (if applicable), Pandoc, and then finally LaTeX. 
 
@@ -64,9 +64,9 @@ You can even insert the contents of the variable by typing $my-variable$.
 $endif$
 ```
 
-!!! note
-
-    Note that this is just an example. A more full-fledged example that arguably drives the principle of variables to the max, see [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
+::: note
+Note that this is just an example. A more full-fledged example that arguably drives the principle of variables to the max, see [this template for a curriculum vitae](https://github.com/nathanlesage/cv).
+:::
 
 While many variables are optional, there is one Pandoc variable that needs to be present at all times:
 
@@ -86,9 +86,9 @@ $common.latex()$
 
 This directive tells Pandoc to include some code that will ensure that your content will be exported without errors.
 
-!!! warning
-
-    With new Pandoc updates, the steps necessary to ensure your template works with Pandoc may change. Always refer to the [current default Pandoc LaTeX template](https://github.com/jgm/pandoc/blob/main/data/templates/default.latex) if something looks off.
+::: warning
+With new Pandoc updates, the steps necessary to ensure your template works with Pandoc may change. Always refer to the [current default Pandoc LaTeX template](https://github.com/jgm/pandoc/blob/main/data/templates/default.latex) if something looks off.
+:::
 
 ### Create a Profile for Your Template
 
@@ -107,9 +107,9 @@ template: "/path/to/your/template.tex" # <-- new
 
 Surround the path to your template with quotation marks, just in case. Of course, depending on what is necessary to make the template work well, you may want to adapt further settings.
 
-!!! danger
-
-	As soon as you specify a `template` in a profile, do not specify a template in your project properties, and do not use this profile with a project that requires a custom template! If you specify a custom project template in the project properties, this will overwrite the template defined in your profile. That means that Zettlr will use the settings of your custom profile, but without the accompanying template, which will lead to unexpected results.
+::: danger
+As soon as you specify a `template` in a profile, do not specify a template in your project properties, and do not use this profile with a project that requires a custom template! If you specify a custom project template in the project properties, this will overwrite the template defined in your profile. That means that Zettlr will use the settings of your custom profile, but without the accompanying template, which will lead to unexpected results.
+:::
 
 ### Optional: Define a New Snippet for This Template
 
@@ -173,9 +173,9 @@ pandoc -o custom-reference.pptx --print-default-data-file reference.pptx
 
 Then, you can open these files and adapt the styles as explained above.
 
-!!! tip
-
-    If you're using Microsoft Word as your word processor and you would like to export using Word's default style sheet, you can open the `custom-reference.docx` file in Word and select the down-pointing chevron (⌄) that appears next to the style palette. This will spawn a dropdown menu that includes a submenu titled "Manage Default Styles." Navigate to this submenu and choose "Reset Document to Word Default Styles." This will apply all of Microsoft Word's default styles to your reference doc.
+::: tip
+If you're using Microsoft Word as your word processor and you would like to export using Word's default style sheet, you can open the `custom-reference.docx` file in Word and select the down-pointing chevron (⌄) that appears next to the style palette. This will spawn a dropdown menu that includes a submenu titled "Manage Default Styles." Navigate to this submenu and choose "Reset Document to Word Default Styles." This will apply all of Microsoft Word's default styles to your reference doc.
+:::
 
 ![Menu location of the option to apply MS Word's default styles.](../img/word-default-styles.png)
 
@@ -193,13 +193,13 @@ reference-doc: /path/to/your/custom-reference.docx
 
 You may change any additional settings as you wish and as is necessary for your custom export.
 
-!!! note
-
-	Windows users need to make sure of two things. First, be sure to use forward slashes (`/`) rather than backslashes (`\`) when specifying the location of your reference doc. Windows users should also place the file location in quotes, like so:
+::: note
+Windows users need to make sure of two things. First, be sure to use forward slashes (`/`) rather than backslashes (`\`) when specifying the location of your reference doc. Windows users should also place the file location in quotes, like so:
     
-    ```
-	reference-doc: "C:/Users/user/Documents/Custom Templates/custom-reference.docx"
-	```
+```
+reference-doc: "C:/Users/user/Documents/Custom Templates/custom-reference.docx"
+```
+:::
 
 ## Using Your Custom Template
 

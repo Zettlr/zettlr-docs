@@ -8,6 +8,6 @@ In addition, the code editor sports the same status bar as the main Markdown edi
 
 ![code_editor_example.png](../img/code_editor_example.png)
 
-Besides common features, the code editor also features a linter. A linter is a tool that checks some code for syntax errors, and highlights them for you.
+Besides common features, the code editor also features a linter. A linter is a tool that checks your code for syntax errors, and highlights them for you.
 
 This way you can quickly find and fix any errors in your files.

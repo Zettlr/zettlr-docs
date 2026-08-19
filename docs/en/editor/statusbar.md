@@ -6,9 +6,9 @@ The status bar is a component that displays contextual information for the curre
 
 To enable the status bar, go to the preferences → “Appearance” → “Status bar.” The status bar is available in all editable text documents, including Markdown, LaTeX, and the various code editors across the app.
 
-!!! note
-
-	The amount of available items in the status bar varies by file type and is context-sensitive.
+::: note
+The amount of available items in the status bar varies by file type and is context-sensitive.
+:::
 
 ## Overview
 
@@ -24,9 +24,9 @@ Magic Quotes is a setting that controls which quotation marks the editor will in
 
 The status bar control for your Magic Quotes is not as flexible as the preferences setting, since it only allows you to select predefined quotation symbols, but this allows you to quickly change them during a writing session.
 
-!!! note
-
-    Depending on which language you select, the context menu will have more than one checked entry. Many countries use the same set of primary and secondary quotes.
+::: note
+Depending on which language you select, the context menu will have more than one checked entry. Many countries use the same set of primary and secondary quotes.
+:::
 
 Displays
 

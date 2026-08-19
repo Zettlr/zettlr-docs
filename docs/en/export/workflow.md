@@ -1,10 +1,14 @@
+---
+prev: ./index.md
+---
+
 # Exporting Workflow
 
 To customize your exporting experience, it is necessary to understand what happens during an export, and how the various components interact to enable exports. On this page, we guide you through the various steps of the exporter, and reference other documentation pages as necessary for more details.
 
-!!! note
-
-	This workflow applies only if you run a standard export. If you use a custom export command, Zettlr will just invoke your command, and provide it with the path(s) to your input files. Your command is responsible to handle the export in that case. Please read the section on custom commands for more information.
+::: note
+This workflow applies only if you run a standard export. If you use a custom export command, Zettlr will just invoke your command, and provide it with the path(s) to your input files. Your command is responsible to handle the export in that case. Please read the section on custom commands for more information.
+:::
 
 ## What Happens During Single-File Exports?
 
@@ -28,9 +32,9 @@ Project exports differ from this process in a few central ways:
 
 As soon as the exporter is invoked, three steps happen in sequence: Collection of information including input and output files, generating a correct defaults file from that, and invoking Pandoc.
 
-!!! note
-
-	If you select a custom exporter command, these steps will be skipped. Instead, Zettlr will invoke your command and simply pass the absolute path to the file(s).
+::: note
+If you select a custom exporter command, these steps will be skipped. Instead, Zettlr will invoke your command and simply pass the absolute path to the file(s).
+:::
 
 ### 1. Determine the Input and Output Files and Working Directory
 
@@ -44,9 +48,9 @@ Lastly, the defaults file which is generated in the next step will be placed in 
 
 Next, the exporter will read in the defaults file for the selected profile. Then, it will proceed to adjust the file according to your settings.
 
-!!! note
-
-	Please read this section carefully. While you can customize your profiles in the assets manager, Zettlr will forcefully change some of these options. If you see unexpected results during exports, this might be the reason.
+::: note
+Please read this section carefully. While you can customize your profiles in the assets manager, Zettlr will forcefully change some of these options. If you see unexpected results during exports, this might be the reason.
+:::
 
 It will forcefully enable either the extension `wikilinks_title_after_pipe` or `wikilinks_title_before_pipe` depending on the setting for how your wiki links are set up. Next, it will enforce the `mark` extension which directs Pandoc to correctly interpret highlight-spans (`==mark==`). This will change your Markdown reader setting from the profile. If you have already specified both extensions correctly in your reader (e.g., `reader: gfm+mark+wikilinks_title_before_pipe`), this will not change anything.
 
@@ -62,9 +66,9 @@ Finally, Zettlr will ensure that the `filters` key exists, and add all filters f
 
 It now adds whatever special properties the corresponding plugin demands to the defaults file, and write the amended defaults file to disk. These properties include the `input-files` and `output-file` keys that tell Pandoc both which files to read, and where to export to. Both will always be provided as absolute paths.
 
-!!! tip
-
-	The various ways of specifying configuration for Pandoc can be difficult to grasp. To understand which configuration you can specify where, and how, please read the [documentation page on defaults files](./defaults-files.md).
+::: tip
+The various ways of specifying configuration for Pandoc can be difficult to grasp. To understand which configuration you can specify where, and how, please read the [documentation page on defaults files](./defaults-files.md).
+:::
 
 ### 3. Run Pandoc
 

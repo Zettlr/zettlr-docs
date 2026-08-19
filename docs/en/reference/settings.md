@@ -10,9 +10,9 @@ You can navigate the window in one of two ways. You can click on the categories 
 
 In the following, we describe each setting based on their categories.
 
-!!! note
-
-	The settings may be called differently in your language.
+::: note
+The settings may be called differently in your language.
+:::
 
 ## General
 
