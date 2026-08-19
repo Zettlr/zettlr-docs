@@ -14,7 +14,7 @@ const navbar: NavbarOptions = [
   },
   {
     text: "Preguntas frecuentes",
-    link: "/es/faq.md"
+    link: "/en/reference/faq.md"
   },
   {
     text: "Zettlr",
@@ -54,7 +54,6 @@ const sidebar: SidebarOptions = [
       "installing-latex.md",
       "get-started.md",
       "get-involved.md",
-      "faq.md",
       "troubleshooting.md"
     ]
   },
@@ -111,10 +110,7 @@ const sidebar: SidebarOptions = [
     collapsible: true,
     prefix: "/es/reference",
     children: [
-      "keyboard-shortcuts.md",
-      "markdown-basics.md",
-      "settings.md",
-      "spell-checking.md"
+      "keyboard-shortcuts.md"
     ]
   }
 ]

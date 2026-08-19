@@ -53,32 +53,13 @@ const sidebar: SidebarOptions = [
     ]
   },
   {
-    text: "Zentrale Komponenten",
-    collapsible: true,
-    prefix: "/de/core/",
-    children: [
-      "editor.md",
-      "file-list.md",
-      "search.md",
-      "export.md",
-      "tables.md",
-      "custom-css.md",
-      "localisation.md",
-      "attachments.md"
-    ]
-  },
-  {
     text: "Wissenschaftliche Werkzeuge",
     collapsible: true,
     prefix: "/de/academic/",
     children: [
       "citations.md",
       "projects.md",
-      "presentations.md",
-      "pomodoro.md",
-      "readability.md",
-      "zkn-method.md",
-      "custom-templates.md"
+      "zkn-method.md"
     ]
   },
   {
@@ -86,7 +67,6 @@ const sidebar: SidebarOptions = [
     collapsible: true,
     prefix: "/de/guides/",
     children: [
-      "guide-notes.md",
       "guide-zettelkasten.md",
       "guide-ide.md"
     ]
@@ -96,10 +76,7 @@ const sidebar: SidebarOptions = [
     collapsible: true,
     prefix: "/de/reference/",
     children: [
-      "shortcuts.md",
-      "markdown-basics.md",
-      "settings.md",
-      "spell-checking.md"
+      "settings.md"
     ]
   }
 ]

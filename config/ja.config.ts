@@ -39,8 +39,6 @@ const navbar: NavbarOptions = [
 const sidebar: SidebarOptions = [
   {
     text: "ようこそ",
-    collapsible: true,
-    prefix: "/ja/",
     link: "/ja/index.md"
   },
   {
@@ -51,7 +49,6 @@ const sidebar: SidebarOptions = [
       "install.md",
       "portable.md",
       "installing-latex.md",
-      "get-started.md",
       "get-involved.md",
       "faq.md",
       "troubleshooting.md"
@@ -63,8 +60,7 @@ const sidebar: SidebarOptions = [
     collapsible: true,
     children: [
       "workspaces.md",
-      "context.md",
-      "wysiwym.md"
+      "context.md"
     ]
   },
   {
@@ -73,19 +69,10 @@ const sidebar: SidebarOptions = [
     collapsible: true,
     children: [
       "editor.md",
-      "tabs.md",
-      "file-manager.md",
-      "assets-manager.md",
-      "defaults-files.md",
       "custom-css.md",
-      "snippets.md",
       "autocorrect.md",
       "search.md",
-      "import.md",
-      "export.md",
       "tables.md",
-      "localisation.md",
-      "sidebar.md",
       "yaml-frontmatter.md",
       "print-preview.md",
       "math.md"
@@ -101,8 +88,7 @@ const sidebar: SidebarOptions = [
       "presentations.md",
       "pomodoro.md",
       "readability.md",
-      "zkn-method.md",
-      "custom-templates.md"
+      "zkn-method.md"
     ]
   },
   {

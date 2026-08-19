@@ -6,15 +6,15 @@ import sharedOptions from "../docs/.vuepress/shared-locale.config"
 const navbar: NavbarOptions = [
   {
     text: "Установка",
-    link: "/ru/getting-started/setup.md"
+    link: "/en/getting-started/setup.md"
   },
   {
     text: "Устранение неполадок",
-    link: "/ru/getting-started/troubleshooting.md"
+    link: "/en/getting-started/troubleshooting.md"
   },
   {
     text: "Часто задаваемые вопросы",
-    link: "/ru/reference/faq.md"
+    link: "/en/reference/faq.md"
   },
   {
     text: "Zettlr",
@@ -42,91 +42,11 @@ const sidebar: SidebarOptions = [
     link: "/ru/index.md"
   },
   {
-    text: "Начало работы",
-    collapsible: true,
-    prefix: "/ru/getting-started/",
-    children: [
-      "setup.md",
-      "migrating.md",
-      "installing-latex.md",
-      "a-note-on-security.md",
-      "get-involved.md",
-      "troubleshooting.md"
-    ]
-  },
-  {
-    text: "Новым пользователям",
-    collapsible: true,
-    prefix: "/ru/core/",
-    children: [
-        "user-interface.md",
-        "import.md"
-    ]
-  },
-  {
-    text: "Основное использование",
-    collapsible: true,
-    prefix: "/ru/core",
-    children: [
-        "workspaces.md",
-        "files.md",
-        "file-manager.md",
-        "split-view.md",
-        "sidebar.md",
-        "writing-markdown.md",
-        "comments.md",
-        "style-and-grammar.md",
-        "readability.md",
-        "statusbar.md",
-        "autocorrect.md",
-        "citations.md",
-        "math.md",
-        "snippets.md",
-        "search.md",
-        "tables.md",
-        "print-preview.md",
-        "export.md",
-        "writing-statistics.md"
-    ]
-  },
-  {
-    text: "Расширенное использование",
-    collapsible: true,
-    prefix: "/ru/advanced/",
-    children: [
-        "yaml-frontmatter.md",
-        "assets-manager.md",
-        "defaults-files.md",
-        "custom-templates.md",
-        "custom-css.md",
-        "tag-manager.md",
-        "projects.md",
-        "pomodoro.md",
-        "zkn-method.md",
-        "graph.md"
-    ]
-  },
-  {
-    text: "Руководства",
-    collapsible: true,
-    prefix: "/ru/guides/",
-    children: [
-        "languagetool-local.md",
-        "presentations.md",
-        "journal-latex-template.md",
-        "portable.md"
-    ]
-  },
-  {
     text: "Рекомендации",
     collapsible: true,
     prefix: "/ru/reference/",
     children: [
-        "faq.md",
-        "keyboard-shortcuts.md",
-        "markdown-basics.md",
-        "settings.md",
-        "spell-checking.md"
+        "markdown-basics.md"
     ]
   }
 ]

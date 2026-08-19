@@ -52,7 +52,7 @@ const sidebar: SidebarOptions = [
       "a-note-on-security.md",
       "get-involved.md",
       "troubleshooting.md",
-      "faq.md"
+      "/pt/reference/faq.md"
     ]
   },
   {
@@ -139,7 +139,7 @@ const sidebar: SidebarOptions = [
       "languagetool.md",
       "syntax.md",
       "autocorrect.md",
-      "radability.md"
+      "readability.md"
     ]
   },
   {
