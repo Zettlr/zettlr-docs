@@ -13,7 +13,8 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "find-unlinked-images": "node scripts/find-unlinked-images.mjs"
   },
   "packageManager": "yarn@4.18.0",
   "devDependencies": {
