@@ -6,20 +6,24 @@ This repository holds the official documentation for the [Zettlr markdown app](h
 
 ## Improving the documentation
 
-The whole documentation is written in Markdown, which means that if you already use Zettlr, you have all the necessary skills. To improve a page, simply [browse the documentation](https://docs.zettlr.com/). If you wish to improve a page, click on the "Edit on GitHub" button on the bottom of that page. This will lead you to the correct file in this repository. Make your changes and then follow the guides to open a Pull Request. You can [use a set of special syntax elements](#special-features-of-vuepress-markdown) to improve the legibility of the documentation.
+The whole documentation is written in Markdown, which means that if you already use Zettlr, you have all the necessary skills. The framework we use supports many (but not all) features that Zettlr also supports. Typically, it is quite straight forward to edit the documentation in Zettlr, especially if you wish to make bigger changes. For simple improvements on individual pages, however, all you will need is a GitHub account.
 
-Of course, you can also edit the documentation using Zettlr. If you want to do so, or simply need to edit multiple pages at once, the suggested workflow is to clone the entire repository to your computer.
+### Editing a Single Page
 
-In this case, here are the necessary steps:
+To improve an individual page, simply [browse the documentation](https://docs.zettlr.com/) and navigate to the page you want to update. Click on the "Edit on GitHub" button on the bottom of that page. This will lead you to the correct file in this repository. Make your changes and then follow the guides to open a Pull Request. You can [use a set of special syntax elements](#special-features-of-vuepress-markdown) to improve the legibility of the documentation.
 
-First, fork this repository. You can do so at the top of this page. This will create a copy of the documentation in your own user account. Then, clone this repository:
+### Editing Multiple Pages & Editing the Documentation Locally
+
+Of course, you can also edit the documentation locally with an editor of your choice, such as Zettlr itself. If you want to do so, or simply want to edit multiple pages at once, the suggested workflow is to clone the entire repository to your computer.
+
+First, fork this repository. You can do so at the top of this page. This will create a copy of the documentation in your own user account. Then, clone this repository in your terminal:
 
 ```bash
 cd /path/to/where/you/want/it
 # Replace <your username> with your GitHub username where the fork lives.
 git clone https://github.com/\<your username\>/zettlr-docs.git
 cd zettlr-docs
-# It is highly recommended to work on a separate branch for this. Name it however you like.
+# It is highly recommended to work on a separate branch for this. Give it a descriptive name.
 git checkout -b my-changes
 ```
 
@@ -35,7 +39,7 @@ Finally, head back to your fork on GitHub which should now show you a button to 
 
 We will then review your changes and let you know if there are some additional changes we need you to make. Once everything looks good, we will merge your PR to include your improvements on the documentation website at https://docs.zettlr.com.
 
-If you wish to add a contribution after some time, but re-use the same repository on your computer, make sure to include any changes in between before starting your work. To do so, first go to your fork on GitHub and use the UI to pull any changes from upstream into your fork. Then, on your computer in the git repository, run the following steps:
+If you wish to add a new contribution later, but re-use the same repository on your computer, make sure to include any changes in between before starting your work. To do so, first go to your fork on GitHub and use the UI to synchronize your fork with the state of this repository. Then, on your computer in the git repository, run the following steps:
 
 ```bash
 # Fetch all changes that you have just added to your fork
@@ -50,21 +54,24 @@ git merge master
 
 Afterwards, make your changes as usual. You can also fully delete your old branch and create a new one from master. This could be easier for you.
 
-## New Pages and Changes to the Structure
+### New Pages and Changes to the Structure
 
-Sometimes, it makes most sense to create additional, new pages for a new feature or some description, rather than adjusting existing pages. Also, sometimes it makes sense to change the order of some pages around. This is typically fine, but to ensure we don't add bloat to the documentation, we would like you to discuss new pages or any structural adjustments you think are in order with the community. You can do so either on the [community forum](https://forum.zettlr.com) or on [Discord](https://go.zettlr.com/discord).
+Sometimes, it makes sense to create new pages for features or some guide, rather than adjusting existing pages. Also, sometimes it makes sense to change the order of pages. This is typically fine, but to ensure we don't add bloat to the documentation, we would like you to discuss new pages or any structural adjustments you think are in order with the community. You can do so either on the [community forum](https://forum.zettlr.com) or on [Discord](https://go.zettlr.com/discord).
 
 The reason we want you to discuss new pages or structural changes beforehand is that this serves as an additional sanity check. If no obvious arguments against your changes emerge, doing that and opening a PR is usually fine.
 
 ## Understanding the Structure of the Documentation
 
-These docs are multi-language. At the time of writing, the documentation is available in English (the official reference documentation), German, Spanish, French, Italian, Japanese, Portuguese, and Russian. There are three relevant folders for the documentation:
+These docs are multilingual. At the time of writing, the documentation is available in English (the official reference documentation), German, Spanish, French, Italian, Japanese, Portuguese, and Russian. There are three relevant folders for the documentation:
 
 1. `./docs`: This contains all the documentation, sorted into ISO-coded directories (e.g., `pt` for Portuguese). Inside these folders, you will find mostly the same files and the same structure, but obviously with the file contents translated into various languages.
-2. `./config`: This folder contains the language configuration for all available languages. Each language defines a set of translated strings for some UI elements, as well as translations for the navigation bar and a fully custom sidebar.
+2. `./config`: This folder contains the language configuration for all available languages. Each language defines a set of translated strings for UI elements, as well as translations for the navigation bar and a fully custom sidebar.
 3. `./docs/.vuepress`: This folder contains the configuration for VuePress, which is the framework these docs use.
 
 You should usually not need to make any changes to the VuePress configuration. If you wish to improve the translation for a navigation link or another UI element, you will find those in the corresponding config file. All the content lives in the relevant docs-folder for the language.
+
+> [!TIP]
+> Especially when translating additional pages for the community translations, you can make the lives of readers of the documentation easier by retaining *exactly the same file structure as the English official translation*. The language chooser in the navigation bar will try to find the same file in the wanted language folder, and if such a file exists, it will redirect the user to the same page, but in the different translation. If the language chooser cannot find the page in the target language, it will redirect users to the main page of the target language.
 
 ## Testing and Building
 
@@ -99,13 +106,17 @@ Want to add a language? Perfect, here's how you do it:
 
 1. First, follow the steps above to create a fork and clone it to your computer. Also, make sure you install the development dependencies, as you will need them.
 2. Copy the English config file from `./config/en.config.ts`. Rename it to the corresponding two-letter ISO-code for your language (e.g. `es` for Spanish, `fr` for French, and so on).
-3. Create a new folder under `./docs` using your two-letter ISO-code. Copy all the top-level documents into it.
-4. Begin translating using any way that suits you.
-5. Once you're done translating, head back to the config file that you have copied, and adjust it. If you kept the exact same folder structure, you will need to adjust both in the `navbar` and `sidebar` configuration the prefixes so that they don't point to `/` but to whichever language you translated in (e.g., `/fr/` for French). Furthermore, translate all UI strings (towards the bottom of the config) into the correct language, and do the same with any link texts in both `sidebar` and `navbar`.
-6. Test your changes by starting the dev server (`yarn docs:dev`) and browsing your language. The dev server utilizes hot module reloading (HMR), so any changes you make to the config or your translation should show up automatically. If not, restart the dev server.
-7. Commit your changes and open a PR.
+3. Create a new folder under `./docs` using your two-letter ISO-code.
+4. Begin translating using any way that suits you. To translate the pages, first copy the English original from the English translation into your folder, and then translate it.
+5. If you do not wish to translate all pages, simply leave them out of your folder.
+6. Once you're done translating, head back to the config file that you have copied, and adjust it. If you kept the exact same folder structure, you will need to adjust both in the `navbar` and `sidebar` configuration the prefixes so that they don't point to `/en/` but to whichever language you translated in (e.g., `/fr/` for French). Furthermore, translate all UI strings (towards the bottom of the config) into the correct language, and do the same with any link texts in both `sidebar` and `navbar`. Ensure that you include these translations into the main configuration file.
+7. Test your changes by starting the dev server (`yarn docs:dev`) and browsing your language. The dev server utilizes hot module reloading (HMR), so any changes you make to the config or your translation should show up automatically. If not, restart the dev server. Also test out that switching between English and your translation works.
+8. Commit your changes and open a PR.
 
-Lastly, check out the features of the documentation below to learn how VuePress behaves to use this to your advantage as you are translating.
+Check out the features of the documentation below to learn how VuePress behaves to use this to your advantage as you are translating.
+
+> [!CAUTION]
+> Never simply copy English files into your new translation if you do not want to translate them. All English documentation pages are available to everyone, and having copies of the English translation will make it harder to maintain the documentation. Also, **do not translate the filenames itself.** This ensures that VuePress can identify translations across languages.
 
 ## Features of the Documentation
 
