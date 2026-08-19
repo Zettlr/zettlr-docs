@@ -43,7 +43,7 @@ async function extractImageLinksFromMarkdownFile (mdFilePath) {
 
   // Within the documentation, we only use simple image links, and not reference
   // style links, so we can save ourselves a lot of work.
-  for (const match of contents.matchAll(/\!\[.+\]\((.+)\)/g)) {
+  for (const match of contents.matchAll(/\!\[.*\]\((.+)\)/g)) {
     const res = path.resolve(markdownDir, match[1])
     imgLinks.push(res)
   }
