@@ -26,15 +26,14 @@ This documentation is available in several languages. Select another language fr
 
 This documentation is built on top of [VuePress](https://vuepress.vuejs.org/), which offers a set of features to make finding answers to your questions and discovering the right information straight-forward. Here we provide you with some pointers on how to navigate these pages:
 
+* You can browse all documentation pages by category in the sidebar to the left.
 * At the top, you can find quick links to common documentation pages, such as troubleshooting info or general setup help.
-* Next to these navigation links, you can find a dropdown menu with common links to Zettlr's website or download the app.
 * Besides that, you can find a language selector to switch between languages. **Note: Some community translations do not contain all information from the official English documentation.**
-* Finally, there is a search bar that allows you to perform a full-text search across all documentation pages and jump directly to the relevant content.
-* When you click on ["Browse the Documentation"](/en/getting-started/setup.md), you can find all documentation pages in a sidebar to the left.
+* The documentation includes a full-text search across all documentation pages and lets you jump directly to the relevant content.
 * The table of contents for the current page is displayed in a sidebar to the right when you browse the documentation with a larger screen.
 
 ::: tip
-This documentation has a built-in full-text search. To focus the search input, you can press <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>.
+You can start searching by pressing <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>.
 :::
 
 ## Documentation Contents
