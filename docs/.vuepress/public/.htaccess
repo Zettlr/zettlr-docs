@@ -1,0 +1,28 @@
+# Apache2 config for serving VuePress pages
+
+# 1. Prevent rogue directory listings
+Options -Indexes
+# 2. Point the web server to VuePress's auto-generated 404 page
+ErrorDocument 404 /404.html
+
+# Next, some rewrite rules to ensure the server (and thus the users)
+# can find the correct files they are looking for (or, if not, at least
+# see a proper 404 page).
+RewriteEngine on
+
+# 1. If the user visits a directory that contains an index.html, serve that one.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^/(.+[^/])/?$ /$1/index.html [L]
+
+# 2. If the user visits a directory that does not, return a 404.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html !-f
+RewriteRule ^ - [R=404,L]
+
+# 3. If the user visits a path without the suffix ".html," but there is a file
+# with that name, serve that one instad.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/(.+)/?$
+RewriteCond %{DOCUMENT_ROOT}/%1.html -f
+RewriteRule !.*\.html$ /%1.html [L]
