@@ -24,7 +24,7 @@
     "@vuepress/plugin-markdown-preview": "^2.0.0-rc.132",
     "@vuepress/plugin-notice": "^2.0.0-rc.131",
     "@vuepress/plugin-redirect": "^2.0.0-rc.131",
-    "@vuepress/plugin-search": "^2.0.0-rc.131",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.131",
     "@vuepress/plugin-toc": "^2.0.0-rc.131",
     "@vuepress/theme-default": "^2.0.0-rc.132",
     "katex": "^0.18.4",

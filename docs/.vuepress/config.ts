@@ -3,7 +3,7 @@ import { viteBundler } from "@vuepress/bundler-vite"
 import { defaultTheme } from "@vuepress/theme-default"
 import { defineUserConfig } from "vuepress"
 // Plugins
-import { searchPlugin } from "@vuepress/plugin-search"
+import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 import { redirectPlugin } from "@vuepress/plugin-redirect"
 import { GitContributorInfo } from "@vuepress/plugin-git"
 import { noticePlugin } from '@vuepress/plugin-notice'
@@ -152,17 +152,9 @@ export default defineUserConfig({
   }),
   dest: "./build",
   plugins: [
-    searchPlugin({
-      maxSuggestions: 10,
-      hotKeys: [
-        // Available shortcuts: Cmd/Ctrl+K, Cmd/Ctrl+Shift+S
-        // macOS shortcuts
-        { key: 'k', meta: true },
-        { key: 'f', meta: true, shift: true },
-        // Windows/Linux shortcuts
-        { key: 'k', ctrl: true },
-        { key: 'f', ctrl: true, shift: true },
-      ]
+    slimsearchPlugin({
+      indexContent: true,
+      suggestion: false
     }),
     tocPlugin({
       renderOptions: {
