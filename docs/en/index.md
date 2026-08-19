@@ -33,6 +33,10 @@ This documentation is built on top of [VuePress](https://vuepress.vuejs.org/), w
 * When you click on ["Browse the Documentation"](/en/getting-started/setup.md), you can find all documentation pages in a sidebar to the left.
 * The table of contents for the current page is displayed in a sidebar to the right when you browse the documentation with a larger screen.
 
+::: tip
+This documentation has a built-in full-text search. To focus the search input, you can press <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>.
+:::
+
 ## Documentation Contents
 
 Quickly jump into the section you want to consult:
