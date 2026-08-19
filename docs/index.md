@@ -13,7 +13,7 @@ features:
   - title: Comprehensive
     details: The reference documentation for working effectively with Zettlr
   - title: Multilingual
-    details: Perfect for any audience. Tramslations are provided by our community.
+    details: Perfect for any audience. Translations are provided by our community.
   - title: User-driven
     details: This documentation lives from contributions from a large community.
 footer: '&copy; 2017–2026 by Zettlr and Contributors'
