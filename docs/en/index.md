@@ -1,28 +1,15 @@
 ---
-home: true
-actions:
-  - text: Browse the documentation
-    link: /en/getting-started/setup.md
-  - text: First-time users
-    link: /en/first-time-users/first-steps.md
-    type: secondary
-  - text: FAQ
-    link: /en/reference/faq.md
-    type: secondary
-footer: '&copy; 2017–2026 by Zettlr and Contributors'
-footerHtml: true
-heroImage: /logo.png
-heroAlt: "Zettlr Logo"
+next: ./getting-started/setup.md
 ---
 
-***
+# Welcome!
 
 Thank you for choosing Zettlr as your new One-Stop Publication Workbench. Zettlr is a powerful writing tool for all your needs. It is designed for anyone with a serious need to write, and goes out of your way to allow you to write frictionless.
 
 In these pages, you will find everything you need to know in order to make the most of your experience with the app. And in case something is still unclear, you can always [find support in our community](#community).
 
 ::: tip
-To get started with the app, take a look at our [first-time users' guide](./first-time-users/first-steps.md).
+To download and install Zettlr, please refer to our [setup guide](./getting-started/setup.md). To get started with the app, take a look at our [first-time users' guide](./first-time-users/first-steps.md).
 :::
 
 For **academics** at every level, from student to faculty, Zettlr offers comprehensive support for [citations](./editor/citations.md) and [entire projects](./file-manager/projects.md), and it includes a [powerful templating engine](./export/custom-templates.md) that enables you to quickly typeset [camera-ready paper drafts](./guides/journal-latex-template.md). Zettlr further contains a set of [scientific tools](./scientific-technical/index.md) for all disciplines.
