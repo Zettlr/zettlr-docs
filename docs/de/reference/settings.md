@@ -148,7 +148,7 @@ Dieser Tab sollte selbsterklärend sein: Hiermit kann das zu verwendende Theme a
 
 Hier können Wörterbücher ausgewählt werden — werden beispielsweise Deutsch und Englisch aktiviert, können Dateien sowohl auf deutsch als auch auf englisch verfasst werden. Erst, wenn beide Wörterbücher berichten, dass ein Wort falsch geschrieben sei, wird Zettlr dies auch so anzeigen. Auf der rechten Seite können Wörter aus dem benutzerdefinierten Wörterbuch entfernt werden.
 
-> **Tip**: Die Rechtschreibprüfung wird deaktiviert, indem alle Wörterbücher abgewählt werden. Weitere Wörterbücher können installiert werden, indem die Anweisungen [auf dieser Seite](../core/localisation.md) befolgt werden.
+> **Tip**: Die Rechtschreibprüfung wird deaktiviert, indem alle Wörterbücher abgewählt werden. Weitere Wörterbücher können installiert werden, indem die Anweisungen auf dieser Seite befolgt werden.
 
 ### AutoCorrect
 
@@ -180,7 +180,7 @@ Die Schalter haben folgende Funktion:
 
 Das Textfeld für die rechte Seitenleiste bestimmt, welche Dateien dort angezeigt werden sollen. Zusätzliche Dateien sind alle Nicht-Markdown-Dateien, die sich im aktuell ausgewählten Verzeichnis befinden. Sollen beispielsweise PowerPoint-Präsentationen _nicht_ in der Seitenleiste angezeigt werden, genügt es, die entsprechende Dateiendung hier zu entfernen.
 
-Der Pandoc-Befehl ermöglicht weitgehende Freiheiten in Bezug auf den Export von Dateien. Für mehr Informationen genügt ein Blick in die [Dokumentation zu benutzerdefinierten Vorlagen](../academic/custom-templates.md). Die verfügbaren Variablen sind:
+Der Pandoc-Befehl ermöglicht weitgehende Freiheiten in Bezug auf den Export von Dateien. Für mehr Informationen genügt ein Blick in die Dokumentation zu benutzerdefinierten Vorlagen. Die verfügbaren Variablen sind:
 
 - `$infile$`: Der absolute Pfad zur Quelldatei.
 - `$outfile$`: Der absolute Pfad zur Zieldatei.
@@ -198,7 +198,7 @@ Der Pandoc-Befehl ermöglicht weitgehende Freiheiten in Bezug auf den Export von
 
 Die PDF-Einstellungen ermöglichen es, die zentralen Angaben für PDF-Exporte zu bestimmen.
 
-Auf dem Tab „Metadaten“ kann der PDF-Autor und ggfs. Schlagworte für die Dateien angegeben werden. Ebenfalls kann hier eine von dem Standard-Template abweichende Vorlage ausgewählt werden (vgl. [benutzerdefinierte Vorlagen](../academic/custom-templates.md)). Die Seiten-Einstellungen funktionieren wie bei bekannten Word-Editoren.
+Auf dem Tab „Metadaten“ kann der PDF-Autor und ggfs. Schlagworte für die Dateien angegeben werden. Ebenfalls kann hier eine von dem Standard-Template abweichende Vorlage ausgewählt werden (vgl. benutzerdefinierte Vorlagen). Die Seiten-Einstellungen funktionieren wie bei bekannten Word-Editoren.
 
 Im Schriftarten-Tab lassen sich die Schriftart für Überschriften und für den Fließtext anpassen, ebenso wie Schriftgröße und der Zeilenabstand.
 

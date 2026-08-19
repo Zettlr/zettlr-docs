@@ -64,6 +64,5 @@ Drei einfache Schritte:
 
 Nein, das war es schon! Wenn du mehr wissen willst, kannst du natürlich auch weiter schauen:
 
-- [Zettlr als Notizprogramm](./guides/guide-notes.md)
 - [Zettlr als Zettelkasten](./guides/guide-zettelkasten.md)
 - [Zettlr als volle Entwicklungsumgebung](./guides/guide-ide.md)

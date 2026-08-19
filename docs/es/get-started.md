@@ -2,7 +2,7 @@
 
 Después de configurar  Zettlr, podrías querer empezar inmediatamente con él.  En su primer arranque, Zettlr copiará un directorio especial en su carpeta de  Documentos que contiene un muy útil tutorial interactivo que te lleva por  los primeros pasos de la aplicación de forma nativa. Solo sigue las instrucciones allí; que incluso te llevará a secciones específicas de esta documentación donde puede aprender más de esta app.
 
-Si tiene cualquier pregunta que no parece estar contestada en esta documentación, asegúrese de consultar las  [Preguntas frecuentes](faq.md) y preguntarle a la comunidad en  [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.com/invite/PcfS3DM9Xj)y [las discusiones de GitHub](https://github.com/Zettlr/Zettlr/discussions). También tenemos un  [Canal de YouTube](https://www.youtube.com/c/Zettlr/) donde ocasionalmente subimos videos sobre cómo usar la app y sus herramientas asociadas.
+Si tiene cualquier pregunta que no parece estar contestada en esta documentación, asegúrese de consultar las  [Preguntas frecuentes](/en/reference/faq.md) y preguntarle a la comunidad en  [Reddit](https://www.reddit.com/r/Zettlr/), [Discord](https://discord.com/invite/PcfS3DM9Xj)y [las discusiones de GitHub](https://github.com/Zettlr/Zettlr/discussions). También tenemos un  [Canal de YouTube](https://www.youtube.com/c/Zettlr/) donde ocasionalmente subimos videos sobre cómo usar la app y sus herramientas asociadas.
 
 Puedes ver una serie de videos introductorios siguiendo [este enlace a nuestra lista de reproducción de Cómo hacer en  Zettlr](https://www.youtube.com/playlist?list=PL2ydvDwV-1u5ncnkxQWZhbHQdwpY2fx5f).
 

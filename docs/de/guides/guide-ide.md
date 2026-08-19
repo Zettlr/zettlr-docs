@@ -32,8 +32,4 @@ Diese Anleitung ist recht kurz, denn sie zeigt dir nur, wie du Zettlr einrichten
 Hier sind weitere Ressourcen, die für Sie interessant sein könnten:
 
 - [Anleitung: Zettlr als Zettelkasten](guide-zettelkasten.md)
-- [Anleitung: Zettlr als Notiz-App](guide-notes.md)
 - [Zettlr-Projekte](../academic/projects.md)
-- [Präsentationen mit Zettlr erstellen](../academic/presentations.md)
-- [Markdown für Zettlr](../reference/markdown-basics.md)
-- [Exportieren nach PDF](../core/export.md)

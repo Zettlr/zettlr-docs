@@ -66,7 +66,7 @@ Pandocのciteprocエンジンにおける引用についての詳しい説明は
 
 ## 参考文献を確認する
 
-After you're done citing and want to check that you've cited everything you planned to, you can open the [Sidebar](../core/sidebar.md) and switch to the references section. If something's missing from there, it's probably not been cited in your file.
+After you're done citing and want to check that you've cited everything you planned to, you can open the Sidebar and switch to the references section. If something's missing from there, it's probably not been cited in your file.
 
 ## Using a file-specific library
 
