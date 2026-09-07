@@ -127,6 +127,7 @@ const sidebar: SidebarOptions = [
           "autocomplete.md",
           "footnotes.md",
           "citations.md",
+          "crossref.md",
           "comments.md",
           "statusbar.md",
           "tables.md",
