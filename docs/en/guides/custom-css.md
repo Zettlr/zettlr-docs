@@ -153,7 +153,7 @@ These examples may not work out of the box if we had to change the CSS and forgo
 
 ### Using a Custom Editor Font
 
-By default, Zettlr ships with some fonts for its themes that work out of the box and look good. However, you may want to change the editor font to something you find more visually pleasing. Or, if you suffer from dyslexia, you may have the wish to use the Dyslexia font in the editor to be better able to read text.
+By default, Zettlr ships with some fonts for its themes that work out of the box and look good. However, you may want to change the editor font to something you find more visually pleasing. Or, if you are dyslexic, you may have the wish to use the Dyslexia font in the editor to be better able to read text.
 
 In the snippet below, replace `<your-font-name here>` with the **full name** of the font you want to use for Zettlr. Please replace `<placeholder>` according to the font:
 
