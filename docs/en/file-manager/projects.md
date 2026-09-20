@@ -96,6 +96,9 @@ Below the list of files to be included in the project export, you will find thre
 
 The final step in every project is an export. To do so, you simply need to right-click the project folder and click the entry “Export project.” This will direct Zettlr to start a full project export.
 
+> [!caution]
+> When you export a project which contains footnotes, you will want to consider enabling Pandoc’s file-scope option. Read more in the guide on [footnotes](../syntax/footnotes.md#footnotes-and-projects).
+
 ::: tip
 You can observe the current status of your project export in the iris indicator in the top-right of the toolbar. It will show you all the conversions happening at the same time, how long they took, and by clicking on it, you can open the corresponding file directly.
 :::

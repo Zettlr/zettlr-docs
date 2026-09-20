@@ -17,15 +17,15 @@ In this particular subsection, you will find features that pertain directly to c
 
 Here is a brief overview over some of the unique features of Zettlr's editor:
 
-* [Introduction to the Markdown Syntax and the extensions Zettlr supports](./markdown-compendium.md)
+* [Introduction to the Markdown Syntax and the extensions Zettlr supports](./markdown.md)
 * [Search Functionality with regular expressions](./search.md)
 * [Autocompletion of many different elements](./autocomplete.md)
-* [Footnotes](./footnotes.md)
+* [Footnotes](../syntax/footnotes.md)
 * [The Status Bar](./statusbar.md)
 * [The Table Editor](./tables.md)
 * [Text Transforms](./text-transforms.md)
 * [Snippets](./snippets.md)
-* [YAML Frontmatters](./yaml-frontmatter.md)
+* [YAML Frontmatters](../syntax/yaml-frontmatter.md)
 
 Following this, you have a set of sections dedicated to introducing more advanced features:
 

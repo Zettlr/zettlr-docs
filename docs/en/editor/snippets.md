@@ -1,3 +1,7 @@
+---
+next: /en/syntax/index.md
+---
+
 # Snippets
 
 Snippets are re-usable pieces of Markdown code of varying length. They allow authors to define blocks of text they need to insert frequently. Moving such repeating blocks of text into Zettlr’s snippets-system ensures a consistent look and structure. By defining snippets, authors can automate the production of formal documents and ensure they always include the relevant information.

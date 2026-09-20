@@ -1,6 +1,6 @@
 # Writing Markdown
 
-Now that you have your workspaces set up and created a file, the next step is to simply start writing. Zettlr uses Markdown. More specifically, it uses a superset of various standards called “Pandoc Markdown.”
+Now that you have your workspaces set up and created a file, the next step is to simply start writing. Zettlr is a Markdown editor and as such lets you write using the Markdown syntax. More specifically, it uses a superset of various standards that we refer to as “Zettlr Markdown.”
 
 Even if you have never consciously worked with Markdown, you have surely used it already, because it is omnipresent. Most Chatbots and other LLMs typically produce Markdown code to format their responses. Look at the following text:
 
@@ -12,7 +12,7 @@ style!) text documents. It supports every common and some useful syntactic
 elements including [links](https://www.zettlr.com), `monospaced text`,
 or even more complex elements like blockquotes and lists:
 
-> This is a quotation.
+> This is a blockquote.
 
 1. List item One
 2. A second item
@@ -51,10 +51,9 @@ Here is a list of some common shortcuts and how they work in Zettlr:
 
 There are many more available shortcuts. You can find all in the [keyboard shortcut reference](../reference/keyboard-shortcuts.md).
 
-::: info
-When we mention <kbd>Cmd/Ctrl</kbd>, we mean "press the Command-key if you are using a Mac, and the Control-key, if you are using a Windows- or Linux-computer."
-:::
+> [!tip]
+> When we mention <kbd>Cmd/Ctrl</kbd>, we mean "press the Command-key if you are using a Mac, and the Control-key, if you are using a Windows- or Linux-computer."
 
 ## More on Writing Markdown
 
-This page just aims at getting you started in writing Markdown. There is a more comprehensive guide in what Markdown syntax Zettlr supports [in the section on the Markdown editor](../editor/markdown-compendium.md).
+This page just aims at getting you started in writing Markdown. Zettlr supports a staggering amount of elements to accommodate everyone’s needs. You can find the full documentation of all the syntax Zettlr understands in the [dedicated section on Zettlr’s Markdown](../syntax/index.md).

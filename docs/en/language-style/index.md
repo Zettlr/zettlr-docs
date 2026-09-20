@@ -1,5 +1,5 @@
 ---
-prev: ../editor/yaml-frontmatter.md
+prev: ../syntax/yaml-frontmatter.md
 next: ./spellchecking.md
 ---
 

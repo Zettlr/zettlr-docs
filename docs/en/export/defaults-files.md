@@ -1,6 +1,6 @@
 # Defaults Files (Profiles)
 
-Defaults files (which we also call “profiles”) are a way to define default values for many of the variables that Pandoc uses internally to facilitate both your imports and exports. Defaults files resemble [YAML front matters](../editor/yaml-frontmatter.md), but are more powerful and apply to all your files instead of just a single one.
+Defaults files (which we also call “profiles”) are a way to define default values for many of the variables that Pandoc uses internally to facilitate both your imports and exports. Defaults files resemble [YAML front matters](../syntax/yaml-frontmatter.md), but are more powerful and apply to all your files instead of just a single one.
 
 You can view and modify all defaults files in the [assets manager](./assets-manager.md).
 
@@ -52,7 +52,7 @@ First, Pandoc will load its own internal defaults which are hard-coded into the 
 
 Then, Pandoc will load in the defaults file Zettlr provides. Every variable defined in there will replace the default inside Pandoc's configuration.
 
-Lastly, Pandoc will parse the YAML front matter(s) of the file(s) you are currently trying to import or export. These variables can replace those set by the defaults files, but usually not all. You may notice that defaults files can contain a metadata field, and any value in there can generally be replaced by a YAML front matter property. Please see the documentation on [YAML front matters](../editor/yaml-frontmatter.md) for more information.
+Lastly, Pandoc will parse the YAML front matter(s) of the file(s) you are currently trying to import or export. These variables can replace those set by the defaults files, but usually not all. You may notice that defaults files can contain a metadata field, and any value in there can generally be replaced by a YAML front matter property. Please see the documentation on [YAML front matters](../syntax/yaml-frontmatter.md) for more information.
 
 **Example**: Let us assume you have defined a `title` for all your Word exports in the defaults file for the `docx` writer. If you do not use any front matter, this variable will be used for each and every export to Word. But if you specify the `title` property inside a YAML front matter, this file – when exported to Word – will have its own title set.
 

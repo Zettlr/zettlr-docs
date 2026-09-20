@@ -1,68 +1,6 @@
 # Table Editor
 
-On this page, we first introduce the anatomy of tables, and then the primary tool for working with Markdown tables: the Table Editor.
-
-## Introduction to Tables
-
-Tables in Markdown can be written in one of two styles: there are **grid** tables and there are **pipe** tables. These names refer to how the table will look.
-
-A grid table looks like this:
-
-```markdown
-+----------+----------+
-| Cell A:A | Cell A:B |
-+==========+==========+
-| Cell B:A | Cell B:B |
-+----------+----------+
-```
-
-Result:
-
-<!-- NOTE: MkDocs doesn't support grid tables -->
-
-| Cell A:A | Cell A:B |
-|----------|----------|
-| Cell B:A | Cell B:B |
-
-The same table can be produced with pipe characters:
-
-```markdown
-| Cell A:A | Cell A:B |
-|----------|----------|
-| Cell B:A | Cell B:B |
-```
-
-Result:
-
-| Cell A:A | Cell A:B |
-|----------|----------|
-| Cell B:A | Cell B:B |
-
-::: note
-The entire syntax for grid tables can be found in the [Pandoc manual](https://pandoc.org/MANUAL.html#extension-grid_tables). The syntax for pipe tables are located [here](https://pandoc.org/MANUAL.html#extension-pipe_tables).
-:::
-
-Specify the alignment of the table columns with colons (`:`). A single left colon or none specifies the default left-alignment, whereas a right colon specifies right alignment, and two colons specify centered alignment:
-
-```markdown
-| Amount | Description | Price |
-|:-------|:-----------:|------:|
-| 3      | Carottes    | $1    |
-| 1      | Celery      | $0.50 |
-| 1      | Bread       | $4.69 |
-```
-
-Result:
-
-| Amount | Description | Price |
-|:-------|:-----------:|------:|
-| 3      | Carottes    | $1    |
-| 1      | Celery      | $0.50 |
-| 1      | Bread       | $4.69 |
-
-It doesn't matter how you align the table's contents in your documents, as long as the colons are placed accordingly. The table will be exported using the correct alignment later on.
-
-Markdown tables tends to get rather wide due to the many characters involved and the fact that pipe tables do not support multiple lines per cell. Take for instance the following example:
+Markdown tables tend to get rather unwieldy due to the many characters involved and the fact that pipe tables do not support multiple lines per cell. Take for instance the following example:
 
 ```markdown
 | # | Name              | Description                                                                                                                                                                     | Price     | Quantity |
@@ -79,15 +17,12 @@ In Zettlr, it would look like the following:
 
 Even though the table cells are each aligned to fit the total width of each column, it is difficult to work with such a table.
 
-## Inserting Tables
-
-Since creating the basic structure of a table can be cumbersome, Zettlr includes a feature that can generate the correct syntax. To insert a table in your document, click on the corresponding toolbar button that looks like a table.
-
-A pop-up will open that shows you a grid. When you move your mouse over the grid, the top-left cells of this grid will be highlighted. Move the mouse cursor until the correct amount of columns and rows are highlighted, and click. Zettlr will then insert the basic scaffold for a pipe table of that size.
+> [!tip]
+> To learn how to manually insert a table and the supported Syntax for adding tables, read the [table syntax documentation](../syntax/tables.md).
 
 ## The Table Editor
 
-To make creating tables easier, Zettlr ships with a table editor. The table editor will detect Markdown pipe tables in your document and render them as actual tables that support line wrapping and contain less cluttered borders.
+Zettlr’s table editor will detect Markdown pipe tables in your document and render them as actual tables that support line wrapping and contain less cluttered borders.
 
 With the table editor, the above-mentioned table looks like this:
 
@@ -136,7 +71,10 @@ Through this context menu, you can add or remove rows and columns, swap rows and
 
 ## Keyboard Shortcuts
 
-You have several keyboard shortcuts available that will make working with tables easier and allow you to avoid opening the context menu in several instances:
+You have several keyboard shortcuts available that will make working with tables easier and allow you to avoid opening the context menu in several instances.
+
+> [!tip]
+> Many of these shortcuts can be customized to suit your preferences.
 
 | Keyboard Shortcut | Function |
 |-|-|
@@ -163,9 +101,9 @@ You have several keyboard shortcuts available that will make working with tables
 
 Sometimes, you will find the need to insert more complex tables with cells spanning multiple columns and/or rows. In this case, the table editor is not available.
 
-You can either use grid tables. Zettlr supports syntax highlighting of these, even though the table editor cannot handle them. Some keyboard shortcuts will still work, even in grid tables.
+You can use grid tables. Zettlr supports syntax highlighting of these, even though the table editor cannot handle them. Some keyboard shortcuts will still work, even in grid tables.
 
-If grid tables are insufficient, you can insert tables also in another language, such as HTML or LaTeX, depending on where you wish to export the document to.
+If grid tables are insufficient, you can also insert tables using HTML or LaTeX, depending on where you wish to export the document to.
 
 What you can do in this case is to include such tables as raw LaTeX or HTML source code. There are great tools out there to [transform your RDataset](https://tex.stackexchange.com/questions/364225/export-tables-from-r-to-latex) or STATA datafile into LaTeX or HTML and include complex regression tables via raw markup syntax.
 

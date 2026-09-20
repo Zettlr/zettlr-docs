@@ -117,15 +117,14 @@ const sidebar: SidebarOptions = [
     collapsible: true,
     children: [
       {
-        text: "Markdown Editor",
+        text: "Main Editor",
         prefix: "/en/editor/",
         link: "/en/editor/index.md",
         children: [
-          "markdown-compendium.md",
+          "markdown.md",
           "appearance.md",
           "search.md",
           "autocomplete.md",
-          "footnotes.md",
           "citations.md",
           "crossref.md",
           "comments.md",
@@ -133,7 +132,22 @@ const sidebar: SidebarOptions = [
           "tables.md",
           "text-transforms.md",
           "snippets.md",
-          "yaml-frontmatter.md"
+        ]
+      },
+      {
+        text: "Zettlr Markdown",
+        prefix: "/en/syntax/",
+        link: "/en/syntax/index.md",
+        children: [
+          "basic-syntax.md",
+          "inline-extensions.md",
+          "footnotes.md",
+          "tables.md",
+          "citations-and-crossref.md",
+          "attribute-syntax.md",
+          "bracketed-spans-fenced-divs.md",
+          "admonitions.md",
+          "yaml-frontmatter.md",
         ]
       },
       {
