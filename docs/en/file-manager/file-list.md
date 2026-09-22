@@ -26,7 +26,7 @@ In the third line (second if the file does not contain any keywords), the file l
 
 ## How the File List Displays Folder Contents
 
-Instead of using a tree-like appearance to display your files, the file list creates a long list from all the files displayed in your workspaces, or you narrow your view to a targeted folder that you select. You can imagine the process with a thought experiment.
+Instead of using a tree-like appearance to display your files, the file list creates a long list from all the files displayed in your workspaces, or you can narrow your view to a targeted folder that you select. You can imagine the process with a thought experiment.
 
 Imagine you have the following folder structure:
 
@@ -75,7 +75,7 @@ The file list essentially **takes the nested structure of the file tree format a
 :::
 
 ::: tip
-Notice in the example above that the way to delineate a individual file from the folder it is located within is whether there is an extension (such as `.md`) in the item title. 
+Notice in the example above that the way to delineate an individual file from the folder it is located within is whether there is an extension (such as `.md`) in the item title. 
 :::
 
 ## Navigating the File List
