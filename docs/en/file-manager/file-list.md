@@ -1,8 +1,8 @@
 # The File List
 
-The file list is a special view over your workspaces allows you to browse all your files as a list, instead of a tree.
+The file list is a special view of your workspaces that allows you to browse all your files as a list, instead of a tree.
 
-You can control the contents of the file list view by selecting a folder in the tree view. This will tell the file list to display you the contents of that folder, but as a list. For some people, this may be easier to navigate than a tree view.
+You can control the range of content displayed of the file list view by selecting a folder in the tree view. This will tell the file list to display the contents of the folder you selected, without the hierarchy that comes with the tree view. For some people, a list view may be easier to navigate.
 
 In addition, since the file list has more space to display file information, the file list allows you to view more metadata for each file and folder at a glance than the tree view.
 
@@ -26,7 +26,7 @@ In the third line (second if the file does not contain any keywords), the file l
 
 ## How the File List Displays Folder Contents
 
-Instead of using a tree-like appearance to display your files, the file list creates a long list from all a folder’s contents. You can imagine the process like follows.
+Instead of using a tree-like appearance to display your files, the file list creates a long list from all the files displayed in your workspaces, or you can narrow your view to a targeted folder that you select. You can imagine the process with a thought experiment.
 
 Imagine you have the following folder structure:
 
@@ -51,7 +51,7 @@ Imagine you have the following folder structure:
     - Literature List.md
 :::
 
-The file list essentially **displays this same structure, but as a list**. This means that sub-folders (such as the term papers and course folders) will be listed one after another on the same level:
+The file list essentially **takes the nested structure of the file tree format and displays it as a flattened list**. This means that sub-folders (such as the term papers and course folders) will be listed one after another on the same level:
 
 ::: file-tree
 - Papers
@@ -74,11 +74,15 @@ The file list essentially **displays this same structure, but as a list**. This 
 - Literature List.md
 :::
 
+::: tip
+Notice in the example above that the way to delineate an individual file from the folder it is located within is whether there is an extension (such as `.md`) in the item title. 
+:::
+
 ## Navigating the File List
 
 This may be difficult to navigate. This is why you can **restrict the file list more and more, by clicking on folders in it**. When you click with your mouse on a folder (not a file), this tells the file list you want to move into that folder, that is, you move “down” your folder tree.
 
-If you, say, click on the folder “First term paper” in your file list, this tells the file list to only display that folder’s contents, which looks like this:
+Using our example, clicking the folder “First term paper” in your file list tells Zettlr to only display that folder’s contents, which looks like this:
 
 ::: file-tree
 - First term paper
@@ -89,7 +93,7 @@ If you, say, click on the folder “First term paper” in your file list, this 
 - Notes.md
 :::
 
-If you now instead want to display **all** your papers, you can **hold down <kbd>Alt</kbd> to navigate up, instead of down** when you click a folder. So, <kbd>Alt</kbd>-clicking the folder name “First term paper” moves up one level and displays you the contents of the “Papers” folder instead:
+If you now instead want to display **all** your papers, you can **hold down <kbd>Alt</kbd> to navigate up, instead of down** when you click a folder. So, <kbd>Alt</kbd>-clicking the folder name “First term paper” moves up one level and displays the contents of the “Papers” folder instead:
 
 ::: file-tree
 - Papers
@@ -115,14 +119,14 @@ One important aspect in the file list is how it decides upon the sorting order o
 
 1. Whichever folder you select to view will always be displayed at the top. Clicking this folder will not do anything, but <kbd>Alt</kbd>-clicking it allows you to move “up” into the parent folder.
 2. If there are any files in the current folder, those will always be sorted directly beneath this folder.
-3. Any folders inside the current folder are sorted after the files.
+3. The files of nested folders (which reside in the folder you've opted to solely display are appended to the file list beneath the files that reside in the same folder the nested folder occupies.
 4. The files inside folders themselves will be sorted according to however you wish to sort them.
 
 ***
 
-The file list shows you all directories and files inside the directory that is currently selected in the tree view, but not like a normal file browser: **the file list treats all subdirectories as equals, and shows you all of them one after another!** Therefore you don't need to traverse further into the directory tree to reach buried directories.
+Because **the file list view treats all subdirectories as equals and shows them to you sequentially** you don't need to traverse further into the directory tree to reach directories nested within the folder you've selected to view.
 
-If you turned off the meta information, both directories and files will be shown as one-liners. If you display the *file information*, you will see additional information: directories will show you the amount of files and folders they contain. The files, on the other hand, show their last modification date, any tags, an ID, and more.
+If you turned off the meta information, both directories and files will be shown as one-liners. If you display the *file information*, you will see greater detail: directories will show you the amount of files and folders they contain. The files, on the other hand, will include data about their last modification date, any tags, an ID, and more.
 
 ::: tip
 You can toggle the file information via the "View" menu, by pressing `Cmd/Ctrl+Alt+S`, or the relevant setting in the preferences dialog under the General tab
@@ -154,7 +158,7 @@ Both file and folder property popovers show you some general information, like t
 
 ## Structural Implications for the File List
 
-Each time you select a directory, the file list will display _all_ files and folders in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the file tree into a one-dimensional list. The list will always change its contents whenever you select a different directory in the tree view.
+Each time you select a directory, the file list will display _all_ files and folders in this directory. Simply put, it flattens all your different subdirectories and files from the tree-like structure that is being resembled by the file tree into a one-dimensional list. The list will dynamically update depending on the directory or subdirectory you wish to display.
 
 ::: tip
 The list only displays all directories and files _within_ the currently selected directory. Therefore it works a little bit like a very fast search function. You only see the files in a specific directory and, when you move down level by level, less and less files are visible until only one directory and its files are visible. Given a good structure inside your root, this is a powerful way to only have those files in the list that you actually need.
@@ -167,7 +171,7 @@ As the file list flattens your complex directory tree, it has to make some assum
 3. All subdirectories that are _inside_ this directory will always be at the bottom of the file list, i.e., _after_ the files in the selected directory.
 4. If directories are empty, they will be placed immediately after each other with no files in between.
 
-So what is important to remember is: All directories will be displayed as if they reside on the very same level; as if they weren't nested. To identify which directories contain which, please refer to the tree view.
+**An important reminder:** All directories will be displayed as if they reside on the same structural level–as if they weren't nested. For a more unambiguous display of your file and directory structure please refer to the tree view.
 
 ::: tip
 If you do not like the "natural" sorting of Zettlr (so that 10 comes after 2), you can switch to "ASCII" sorting in the General tab of the settings dialog (so that 2 comes after 10).
