@@ -12,7 +12,7 @@ Projects are built upon the notion of aggregating work for a project inside its 
 
 Since projects are essentially just folders, starting a new project is as simple as creating a new folder for it.
 
-Let’s say you want to start a new paper, and give it some preliminary name, say “Vote Defection.” So you could create a folder and give it that name.
+Let’s say you want to start a new paper, and give it some preliminary name, say “Vote Defection.” You decide too create a folder and give it that name.
 
 ::: info
 The examples in this section are not arbitrary: They are taken from the PhD project of the maintainer, Hendrik Erz. Therefore, they give you a glimpse into how this feature can be used in the real world.
@@ -110,7 +110,7 @@ During each project export, Zettlr will follow the same process as with single-f
 3. It will use the custom CSL Stylesheet instead of your globally defined one, if applicable.
 4. It will override the templates specified in your export profile, if applicable.
 5. It will always place the exported files in the “current directory,” regardless of your settings.
-6. It will not open the files upon successful export automatically.
+6. It will not automatically open the newly generated files upon successful export.
 
 ::: warning
 If you add, rename, or remove files while you are working on your project, the list of included files will become outdated. Zettlr does not automatically watch what you do in your project and adjust the list of included files. It only checks for the existence of included files when you export. If it detects that a file that you have selected to be included no longer exists, it will warn you so that you can check the list of files. Likewise, you need to remember to manually add any additional file you create and want to include in the export in the project properties.
