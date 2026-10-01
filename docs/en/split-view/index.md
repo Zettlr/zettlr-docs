@@ -13,7 +13,7 @@ When you first start Zettlr, the app will already demonstrate the power of the s
 
 ## Understanding the Split View
 
-The split view allows you to have multiple files open side-by-side. This allows you, e.g., to reference other files or images as you write.
+The split view allows you to have multiple files open side-by-side. This allows you to reference other files or images as you write.
 
 Each split view has two components:
 
@@ -32,7 +32,7 @@ Release the mouse to create the split:
 
 ![split_bottom_result.png](../img/split_bottom_result.png)
 
-Now you have split the existing element into two. Note that both splits have their own document tab bar, with the bottom split only showing a single document — the one you used to create the split.
+Now you have split the existing element into two views. Note that both splits have their own document tab bar, with the bottom split only showing a single document—the one you used to create the split.
 
 ## Moving Documents Around
 
