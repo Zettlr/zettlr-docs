@@ -1,6 +1,6 @@
 ---
 prev: ../sidebar/other-files.md
-next: ./markdown-compendium.md
+next: ./markdown.md
 ---
 
 # Markdown Editor
