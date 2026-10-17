@@ -7,13 +7,13 @@ next: ./markdown.md
 
 At the heart of Zettlr sits its most powerful component: The Markdown editor.
 
-Zettlr's Markdown editor is the most advanced environment to write documents effectively using a combination of common shortcuts and plain text syntax. Over the years, we have steadily evolved the editor and by now it's the industry standard for comfortable writing.
+Zettlr's Markdown editor is the most advanced environment to write documents effectively using a combination of common shortcuts and plain text syntax. Over the years, we have refined the editor into an industry standard defining app for comfortable writing.
 
-Zettlr is, first and foremost, a Markdown editor, but without sacrificing creature comforts we know from word processors such as Microsoft Word, Pages, or LibreOffice. It offers a fully WYSIWYG view, while at the same time allowing you to define block elements by simply typing in the corresponding syntax elements. That means that you can write Markdown by combining shortcuts, such as <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd> with creating lists simply by starting a new line with an asterisk.
+Zettlr is, first and foremost, a Markdown editor, but without sacrificing creature comforts we know from word processors such as Microsoft Word, Pages, or LibreOffice. It offers a fully [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) view, while at the same time allowing you to define block elements by simply typing in the corresponding syntax elements. That means that you can write Markdown by combining shortcuts, such as <kbd>Cmd/Ctrl</kbd>+<kbd>B</kbd> with creating lists simply by starting a new line with an asterisk.
 
 Since the Markdown editor is so feature-rich, it has its own section in this documentation.
 
-In this particular subsection, you will find features that pertain directly to composing documents. The other sections introduce you to more advanced features that will improve your writing experience beyond the actual writing.
+In the subsections that follow, you will find features that pertain directly to composing documents. The other sections introduce you to more advanced features that will improve your writing experience beyond drafting text.
 
 Here is a brief overview over some of the unique features of Zettlr's editor:
 
