@@ -30,6 +30,10 @@ This section gives you two controls:
 1. Predefined data types (images, PDF documents, Office documents, and data files). You can also choose to show these files directly in the file manager.
 2. Arbitrary filename extensions for custom files you deem relevant. These additional filename extensions will only be shown in the sidebar.
 
+::: tip
+This tab is especially useful if you want to add some images to your Markdown files. Simply drag and drop them onto the editor, and Zettlr will make sure to wrap them in an image tag.
+:::
+
 ## Locations of Other Files
 
 Since the sidebar is **context-sensitive** and only shows files related to the current document, the content of this tab will change as soon as you change the current document.
