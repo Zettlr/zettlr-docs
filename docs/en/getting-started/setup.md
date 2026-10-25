@@ -10,9 +10,9 @@ Zettlr is available for Windows, Linux, and macOS. It can be installed directly 
 
 * Operating System:
     * Windows 10 or newer
-    * macOS 12.0 or newer
+    * macOS 13.0 or newer
     * Debian 8 or newer
-    * Ubuntu 12.04 or newer
+    * Ubuntu 17.10 or newer
     * Fedora 24 or newer
     * Arch Linux
     * Any distribution supported by AppImage or Flatpak
