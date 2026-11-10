@@ -11,6 +11,9 @@ In this section, we describe both types of syntax and explain how Zettlr aids yo
 
 Citations are at the heart of every academic document. Zettlr offers first-class features for supporting your claims with references.
 
+> [!tip]
+> Before Zettlr can access your references, you will need to export your library into a file that Zettlr can read. To learn how that works, we have [compiled a comprehensive guide on doing so with Zotero](../guides/reference-manager-integration.md).
+
 ### Anatomy of a Citation
 
 Every citation consists of up to four parts, only one of which is mandatory:
